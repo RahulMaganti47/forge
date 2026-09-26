@@ -1,0 +1,97 @@
+{
+  "schema_version": "forge.multireaction_lnpdb_config.v1",
+  "seed": 20260820,
+  "graph_identity": "canonical_constitutional_smiles",
+  "inputs": {
+    "lnpdb": {
+      "path": "data/vendor/lnpdb_fc7c389.csv",
+      "sha256": "3493f27306419facd0958589030ed37f272f05c81ad47dd7bc1b8ce0284a57b3"
+    },
+    "qualified_reaction_families": {
+      "path": "data/vendor/qualified_reaction_families_v1.json",
+      "sha256": "961dea191bbf6c8d169aab09f6aee18082e51696e4056fc4dc9f6fc97ff82587"
+    },
+    "source_reviews": {
+      "path": "configs/route/m0_09_lnpdb_paper_reviews.json",
+      "sha256": "57cfc457aeabdcbd6cd5d18460dbe215afe1176460448d07f7d87d3fa027846c"
+    },
+    "bl_2023_supplement": {
+      "path": "data/source_cache/m0_09_publishers/PMC10544676/assets/41587_2023_1679_MOESM1_ESM.pdf",
+      "sha256": "46be449ddcef11da686d499015c868c767f4c02714c54e3d5ef5db35c4a42490"
+    },
+    "lx_2024_supplement": {
+      "path": "data/source_cache/m0_09_review_assets/PMC10904786/41467_2024_45422_MOESM1_ESM.pdf",
+      "sha256": "7f5b1c6413e4db3b09cb86296139ba76848b06de96b7165942643233ad6a3e2c"
+    }
+  },
+  "split_policy": {
+    "name": "exact_component_disjoint_v1",
+    "train_fraction": 0.7,
+    "calibration_fraction": 0.15,
+    "heldout_fraction": 0.15,
+    "product_precedence": [
+      "heldout",
+      "calibration",
+      "train"
+    ],
+    "sampling": "equal_total_weight_per_program_within_fold"
+  },
+  "programs": [
+    {
+      "program_id": "bl_2023_repeated_aza_michael",
+      "source_study": "BL_2023",
+      "source_review_id": "bl_2023_subcomponent_review",
+      "source_asset": "bl_2023_supplement",
+      "source_locator": "General Procedure B, pages 9-10; Supplementary Figure S1, page 13",
+      "reaction_id": "aza_michael_amine_acrylate",
+      "accumulator_role": "amine_head",
+      "repeat_role": "alkyl_acrylate_or_acrylamide_tail",
+      "minimum_steps": 1,
+      "maximum_steps": 4,
+      "expected_source_rows": 773,
+      "expected_unique_lnpdb_products": 711,
+      "source_reported_library_size": 720,
+      "minimum_admitted_products": 576,
+      "evidence_basis": "exact_reported_library_execution",
+      "disposition": "admit_exact",
+      "require_identical_repeat_components": true,
+      "repeat_component_source": "derive_by_exact_reverse_program",
+      "abstain_component_labels": {}
+    },
+    {
+      "program_id": "lx_2024_repeated_reductive_amination",
+      "source_study": "LX_2024",
+      "source_review_id": "lx_2024_aldehyde_tail_transfer_review",
+      "source_asset": "lx_2024_supplement",
+      "source_locator": "Methods, synthesis of cationic-degradable lipid libraries; Supplementary Figure 18, page 8",
+      "reaction_id": "reductive_amination_amine_aldehyde",
+      "accumulator_role": "amine_head",
+      "repeat_role": "aldehyde_tail",
+      "minimum_steps": 1,
+      "maximum_steps": 6,
+      "expected_source_rows": 851,
+      "expected_unique_lnpdb_products": 180,
+      "source_reported_library_size": 180,
+      "minimum_admitted_products": 144,
+      "evidence_basis": "exact_reported_library_execution",
+      "disposition": "admit_exact",
+      "require_identical_repeat_components": true,
+      "repeat_component_source": "source_review_member_overlay",
+      "abstain_component_labels": {
+        "A3_T6b": "source_conflict: source structure and name indicate tris(2-methylhexanoate), but the representative quantitative procedure names heptanoic acid"
+      }
+    }
+  ],
+  "limits": {
+    "maximum_outcomes_per_step": 512,
+    "maximum_reverse_states": 4096,
+    "minimum_semantic_origin_fraction": 1.0,
+    "minimum_semantic_core_fraction": 1.0
+  },
+  "nonclaims": [
+    "Exact forward replay is transform consistency, not synthesis-success probability.",
+    "These records support L1 program supervision; L2 route and L3 procurement closure remain separate.",
+    "No reductive-amination substructure hit rate is computed or reported.",
+    "The dataset does not transfer biological activity labels into generation supervision."
+  ]
+}

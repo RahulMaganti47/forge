@@ -1,0 +1,38 @@
+{
+  "schema_version": "forge.experiment.v1",
+  "experiment_id": "phase1-shared-bias-parallel-program-role-seed0-h100-v2",
+  "description": "Train and evaluate the matched seed-0 program-role-source intervention on one dedicated exact H100.",
+  "root_seed": 20260828,
+  "profiles": ["full"],
+  "replicates": {"full": 1},
+  "stages": [
+    {
+      "id": "production",
+      "implementation": "model.transformer-mechanism-study.v1",
+      "needs": [],
+      "config": {"path": "configs/multireaction/shared_bias_parallel_shared_bias_program_role_source_v2.json", "sha256": "672e0fdb44c332411c6ce138740ea7733d0ed4291b6fe5c4bef7d8ab049b67db"},
+      "inputs": {
+        "base_design": {"path": "results/phase1/shared_synthesis_program_mixed_design_v1/design.json", "sha256": "c285361670917485233871be4c72b6b2bc6c641e9921e140296475376fb0d3d6"},
+        "production_cache": {"path": "results/phase1/shared_synthesis_program_mixed_cache_v1/cache.npz", "sha256": "249b92744c22109cd5994ad831555df85575bfb6bd58010dce71517e5e881114"},
+        "program_config": {"path": "configs/multireaction/lnpdb_reaction_programs_v1.json", "sha256": "a7aba87a63e3bcf34c61fa7951fbb7a77340641ed852993b4221d3b77072f021"},
+        "qualified_reaction_families": {"path": "data/vendor/qualified_reaction_families_v1.json", "sha256": "961dea191bbf6c8d169aab09f6aee18082e51696e4056fc4dc9f6fc97ff82587"},
+        "qualified_ugi_reactions": {"path": "data/vendor/qualified_reactions_v1.json", "sha256": "296bf06238ef22acc1f55117f5ce0adaee21b1bafaf5a83f89182b0f31cc4fcf"},
+        "ugi_assignments": {"path": "results/phase1/ugi_balanced_chemistry_corpus_v2/assignments.csv.gz", "sha256": "9a50c703ed6aa919b251678c04b7a44e93b3233a12fc13b5d6697683bb5b5184"},
+        "multireaction_atlas": {"path": "results/phase1/bl_lx_mixed_repeat_expansion_v2/reaction_program_atlas.csv.gz", "sha256": "6b5021e986e9e514ccca74dc6b6b0ccfef6dd2e9c40f209aedf6f64bb516e5c2"},
+        "multireaction_splits": {"path": "results/phase1/bl_lx_mixed_repeat_expansion_v2/component_family_splits.csv.gz", "sha256": "6c9f6a3d8d0668763a7f057a53f8782884f001f999303ce01dc68b9f28d42c8c"}
+      },
+      "outputs": {
+        "design": {"path": "study_design.json", "schema_version": "forge.synthesis_program_production_design_config.v1"},
+        "training_result": {"path": "training/result.json", "schema_version": "forge.synthesis_program_production_training_result.v1"},
+        "checkpoints": {"path": "training/checkpoints.tar", "schema_version": "forge.synthesis_program_production_checkpoint_archive.v1"},
+        "samples": {"path": "evaluation/samples.jsonl.gz", "schema_version": "forge.synthesis_program_production_samples.v1"},
+        "evaluation_result": {"path": "evaluation/result.json", "schema_version": "forge.synthesis_program_production_evaluation_result.v1"},
+        "result": {"path": "result.json", "schema_version": "forge.transformer_mechanism_study_result.v1"}
+      },
+      "resources": {"device": "cuda", "precision": "float32", "cpus": 4, "workers": 0, "memory_mb": 49152, "timeout_seconds": 86400, "gpu_type": "H100!"},
+      "determinism": {"mode": "strict", "stream": "shared-bias-parallel-program-role-seed0-v2"}
+    }
+  ],
+  "metadata": {"scientific_identity": "shared_bias_program_role_source_seed0_parallel_v2", "candidate_selection": false},
+  "nonclaims": ["The program-role source is a full-support noise law, not a component catalogue.", "Seed 0 alone does not establish across-seed robustness.", "Exact L1 replay is transform consistency, not synthesis-success probability."]
+}

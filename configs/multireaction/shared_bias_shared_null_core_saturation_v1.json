@@ -1,0 +1,146 @@
+{
+  "authorization": {
+    "authorized": true,
+    "date": "2026-08-28",
+    "profiles": [
+      "smoke",
+      "full"
+    ],
+    "scope": "Non-selecting null-conditioning control retrained on the program-role shared-bias architecture under the reaction-core saturation decoder.",
+    "source": "explicit user instruction to replace every GEM table value with the new core-saturation-decoded model"
+  },
+  "candidate_selection": false,
+  "checkpoint_selection": "fixed_final_step_without_calibration_selection",
+  "execution_scope": "production",
+  "expected_full_parameter_count": 5593463,
+  "full": {
+    "evaluation": {
+      "batch_size": 128,
+      "calibration_samples": 512,
+      "checkpoint_steps": [
+        9143
+      ],
+      "component_disjoint_record_limit": null,
+      "device": "cuda",
+      "heldout_samples": 3072,
+      "sample_steps": 32,
+      "terminal_decode_policy": "strict_reaction_core_saturation_argmax"
+    },
+    "training": {
+      "checkpoint_steps": [
+        100,
+        500,
+        1700,
+        4500,
+        9143
+      ],
+      "cpu_threads": 4,
+      "deterministic_algorithms": true,
+      "device": "cuda",
+      "effective_batch_size": 126,
+      "gradient_accumulation_steps": 2,
+      "gradient_clip_norm": 1.0,
+      "learning_rate": 0.0001,
+      "micro_batch_size": 63,
+      "optimizer_steps": 9143,
+      "precision": "float32",
+      "restart_interval_steps": 25,
+      "weight_decay": 5e-05
+    }
+  },
+  "inputs": {
+    "base_design": {
+      "path": "results/phase1/shared_synthesis_program_mixed_design_v1/design.json",
+      "sha256": "c285361670917485233871be4c72b6b2bc6c641e9921e140296475376fb0d3d6"
+    },
+    "multireaction_atlas": {
+      "path": "results/phase1/bl_lx_mixed_repeat_expansion_v2/reaction_program_atlas.csv.gz",
+      "sha256": "6b5021e986e9e514ccca74dc6b6b0ccfef6dd2e9c40f209aedf6f64bb516e5c2"
+    },
+    "multireaction_splits": {
+      "path": "results/phase1/bl_lx_mixed_repeat_expansion_v2/component_family_splits.csv.gz",
+      "sha256": "6c9f6a3d8d0668763a7f057a53f8782884f001f999303ce01dc68b9f28d42c8c"
+    },
+    "production_cache": {
+      "path": "results/phase1/shared_synthesis_program_mixed_cache_v1/cache.npz",
+      "sha256": "249b92744c22109cd5994ad831555df85575bfb6bd58010dce71517e5e881114"
+    },
+    "program_config": {
+      "path": "configs/multireaction/lnpdb_reaction_programs_v1.json",
+      "sha256": "a7aba87a63e3bcf34c61fa7951fbb7a77340641ed852993b4221d3b77072f021"
+    },
+    "qualified_reaction_families": {
+      "path": "data/vendor/qualified_reaction_families_v1.json",
+      "sha256": "961dea191bbf6c8d169aab09f6aee18082e51696e4056fc4dc9f6fc97ff82587"
+    },
+    "qualified_ugi_reactions": {
+      "path": "data/vendor/qualified_reactions_v1.json",
+      "sha256": "296bf06238ef22acc1f55117f5ce0adaee21b1bafaf5a83f89182b0f31cc4fcf"
+    },
+    "ugi_assignments": {
+      "path": "results/phase1/ugi_balanced_chemistry_corpus_v2/assignments.csv.gz",
+      "sha256": "9a50c703ed6aa919b251678c04b7a44e93b3233a12fc13b5d6697683bb5b5184"
+    }
+  },
+  "intervention": {
+    "exact_child_count_support": 3,
+    "model_parameters_trained_end_to_end": true,
+    "program_routed_output_heads": true,
+    "role_balanced_chemistry": true,
+    "source_control": "smoothed program-role full-support marginal with global backoff",
+    "topology_conditioned_chemistry_second_pass": true
+  },
+  "nonclaims": [
+    "Exact L1 replay is transform consistency, not synthesis-success probability.",
+    "Nulling every program coordinate removes conditioning, not capacity; the arm is matched in parameters.",
+    "Seed 0 alone does not establish across-seed robustness.",
+    "The source marginal is a full-support noise prior, not a finite component vocabulary."
+  ],
+  "oracle_calls": 0,
+  "repeat_consistency_weight": 0.25,
+  "route_calls": 0,
+  "schema_version": "forge.transformer_mechanism_study_config.v1",
+  "selected_arm_id": "shared_three_program_null",
+  "smoke": {
+    "evaluation": {
+      "batch_size": 2,
+      "calibration_samples": 2,
+      "checkpoint_steps": [
+        1,
+        2
+      ],
+      "component_disjoint_record_limit": 2,
+      "device": "cpu",
+      "heldout_samples": 2,
+      "sample_steps": 2,
+      "terminal_decode_policy": "strict_reaction_core_saturation_argmax"
+    },
+    "training": {
+      "checkpoint_steps": [
+        1,
+        2
+      ],
+      "cpu_threads": 2,
+      "deterministic_algorithms": true,
+      "device": "cpu",
+      "effective_batch_size": 3,
+      "gradient_accumulation_steps": 1,
+      "gradient_clip_norm": 1.0,
+      "learning_rate": 0.0001,
+      "micro_batch_size": 3,
+      "model_overrides": {
+        "adapter_dim": 16,
+        "attention_heads": 4,
+        "dropout": 0.0,
+        "hidden_dim": 32,
+        "layers": 1
+      },
+      "optimizer_steps": 2,
+      "precision": "float32",
+      "restart_interval_steps": 1,
+      "weight_decay": 5e-05
+    }
+  },
+  "source_backoff_strength": 1.0,
+  "study": "shared_bias_end_to_end_retraining"
+}

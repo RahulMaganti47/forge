@@ -1,0 +1,16 @@
+{
+  "scope": "Environment used for the release checks, not a historical training environment",
+  "python": "3.11.15",
+  "platform": "Darwin",
+  "packages": {
+    "numpy": "2.4.6",
+    "rdkit": "2026.3.5",
+    "torch": "2.13.0",
+    "pytest": "9.1.1",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.0",
+    "PyYAML": "6.0.3",
+    "tqdm": "4.70.0",
+    "threadpoolctl": "3.6.0"
+  }
+}

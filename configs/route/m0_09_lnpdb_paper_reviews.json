@@ -1,0 +1,1205 @@
+{
+  "schema_version": "m0_09_lnpdb_paper_reviews_config.v2",
+  "inputs": {
+    "source_review_index": {
+      "asset": "results/m0_09/source_review_index.json",
+      "expected_sha256": "2798f9e9ffda3f0d801158fce79b7d0b76011d97e109e58f15e50500a86fb9f3"
+    },
+    "component_source_ledger": {
+      "asset": "results/m0_09/component_source_ledger.csv",
+      "expected_sha256": "bda9ca826d7051060608e174d21415c8714736265814cd73ea93fed08dd88ff5"
+    },
+    "supporting_route_artifacts": [
+      {
+        "asset": "results/m0_09/agile_component_routes.json",
+        "expected_sha256": "d15010a1b55b6130eb20dad93c11431a21e99b4ab4d9662ccb60f6184ac844bb",
+        "expected_schema_version": "m0_09_agile_component_routes.v1",
+        "expected_route_count": 24,
+        "expected_component_labels": [
+          "B1",
+          "B2",
+          "B3",
+          "B4",
+          "B6",
+          "B7",
+          "B8",
+          "B9",
+          "B10",
+          "B11",
+          "B12",
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "B-identified-butyl-4-methylnonanoate",
+          "B-identified-butyl-e-dec-2-enoate",
+          "B-identified-butyl-octanoate",
+          "B-identified-butyl-oleate",
+          "C11",
+          "C17",
+          "B-identified-olealdehyde",
+          "B-identified-palmitaldehyde"
+        ]
+      }
+    ]
+  },
+  "reviews": [
+    {
+      "review_id": "bl_2023_subcomponent_review",
+      "pmc_id": "PMC10544676",
+      "pmid": "36997680",
+      "doi": "10.1038/s41587-023-01679-x",
+      "citation": "Li et al., Nature Biotechnology 41, 1410-1415 (2023)",
+      "source_asset": {
+        "filename": "41587_2023_1679_MOESM1_ESM.pdf",
+        "expected_sha256": "46be449ddcef11da686d499015c868c767f4c02714c54e3d5ef5db35c4a42490",
+        "chemistry_pages": [2, 3, 4, 5, 6, 7, 8, 9, 10, 13],
+        "review_status": "chemistry_pages_visually_reviewed"
+      },
+      "source_component_scope": {
+        "normalized_unique_components": 81,
+        "normalized_by_role": {
+          "head": 70,
+          "linker": 1,
+          "tail1": 10
+        },
+        "source_reported_head_count": 72,
+        "source_reported_tail_count": 10,
+        "count_note": "The source figure contains 72 amine headgroups and 10 alcohol tails. LNPDB normalizes these to 70 unique head structures, 10 tail structures, and one linker core."
+      },
+      "building_block_groups": [
+        {
+          "role": "head",
+          "source_labels": "R-1 through R-72",
+          "source_locator": "Supplementary Figure S1, page 13",
+          "source_reported_count": 72,
+          "normalized_component_count": 70,
+          "upstream_route_status": "not_reported",
+          "upstream_route_count": 0,
+          "procurement_evidence_status": "historical_blanket_vendor_claim",
+          "procurement_locator": "Supplementary Notes, page 2",
+          "procurement_note": "The source states that amines were purchased from Sigma-Aldrich, TCI America, Alfa Aesar, and Ambeed. Exact catalog identifiers and current availability were not reported."
+        },
+        {
+          "role": "tail1",
+          "source_labels": "CB-1 through CB-10",
+          "source_locator": "Supplementary Figure S1, page 13",
+          "source_reported_count": 10,
+          "normalized_component_count": 10,
+          "upstream_route_status": "not_reported",
+          "upstream_route_count": 0,
+          "procurement_evidence_status": "historical_blanket_vendor_claim",
+          "procurement_locator": "Supplementary Notes, page 2",
+          "procurement_note": "The source states that all other starting materials were obtained from commercial sources. It does not provide exact vendors or catalog identifiers for each alcohol tail."
+        }
+      ],
+      "l2_route_families": [
+        {
+          "route_family_id": "bl_2023_activated_ricinoleic_acrylate",
+          "level": "L2",
+          "source_locator": "Supplementary Notes, pages 2-4",
+          "route_evidence_status": "exact_route_extracted",
+          "route_instance_count": 1,
+          "reaction_instance_count": 5,
+          "component_assignment_status": "source_precursor_supports_linker_core_not_exact_component_identity",
+          "assignment_note": "The five-step route prepares the activated ricinoleic acrylate used before alcohol-tail and amine assembly. It is not an upstream synthesis of the ten alcohol tail components.",
+          "starting_material_procurement_status": "historical_blanket_vendor_claim",
+          "starting_material": {
+            "name": "methyl (Z)-12-hydroxyoctadec-9-enoate",
+            "smiles": "COC(=O)CCCCCCC/C=C\\CC(O)CCCCCC"
+          },
+          "target": {
+            "name": "(Z)-12-(((4-nitrophenoxy)carbonyl)oxy)octadec-9-en-1-yl acrylate",
+            "smiles": "C=CC(=O)OCCCCCCCC/C=C\\CC(OC(=O)Oc1ccc([N+](=O)[O-])cc1)CCCCCC"
+          },
+          "steps": [
+            {
+              "step_index": 1,
+              "transformation": "secondary_alcohol_tbdms_protection",
+              "reactant_smiles": "COC(=O)CCCCCCC/C=C\\CC(O)CCCCCC",
+              "product_smiles": "COC(=O)CCCCCCC/C=C\\CC(O[Si](C)(C)C(C)(C)C)CCCCCC",
+              "reagents": ["tert-butyldimethylsilyl chloride", "imidazole"],
+              "solvent": "dichloromethane",
+              "temperature": "room temperature",
+              "duration": "overnight or until completion",
+              "atmosphere": "argon",
+              "isolated_yield_percent": 88
+            },
+            {
+              "step_index": 2,
+              "transformation": "methyl_ester_to_primary_alcohol_reduction",
+              "reactant_smiles": "COC(=O)CCCCCCC/C=C\\CC(O[Si](C)(C)C(C)(C)C)CCCCCC",
+              "product_smiles": "OCCCCCCCC/C=C\\CC(O[Si](C)(C)C(C)(C)C)CCCCCC",
+              "reagents": ["lithium aluminium hydride"],
+              "solvent": "tetrahydrofuran",
+              "temperature": "0 degrees C addition, then room temperature",
+              "duration": "overnight or until completion",
+              "atmosphere": "argon",
+              "isolated_yield_percent": 77
+            },
+            {
+              "step_index": 3,
+              "transformation": "primary_alcohol_acryloylation",
+              "reactant_smiles": "OCCCCCCCC/C=C\\CC(O[Si](C)(C)C(C)(C)C)CCCCCC",
+              "product_smiles": "C=CC(=O)OCCCCCCCC/C=C\\CC(O[Si](C)(C)C(C)(C)C)CCCCCC",
+              "reagents": ["acryloyl chloride", "DIPEA"],
+              "solvent": "dichloromethane",
+              "temperature": "0 degrees C addition, then room temperature",
+              "duration": "overnight or until completion",
+              "atmosphere": "argon",
+              "isolated_yield_percent": 71
+            },
+            {
+              "step_index": 4,
+              "transformation": "tbdms_deprotection",
+              "reactant_smiles": "C=CC(=O)OCCCCCCCC/C=C\\CC(O[Si](C)(C)C(C)(C)C)CCCCCC",
+              "product_smiles": "C=CC(=O)OCCCCCCCC/C=C\\CC(O)CCCCCC",
+              "reagents": ["1% hydrochloric acid"],
+              "solvent": "methanol",
+              "temperature": "0 degrees C addition, then room temperature",
+              "duration": "overnight or until completion",
+              "atmosphere": "not reported",
+              "isolated_yield_percent": 63
+            },
+            {
+              "step_index": 5,
+              "transformation": "secondary_alcohol_p_nitrophenyl_carbonate_activation",
+              "reactant_smiles": "C=CC(=O)OCCCCCCCC/C=C\\CC(O)CCCCCC",
+              "product_smiles": "C=CC(=O)OCCCCCCCC/C=C\\CC(OC(=O)Oc1ccc([N+](=O)[O-])cc1)CCCCCC",
+              "reagents": ["4-nitrophenyl chloroformate", "pyridine"],
+              "solvent": "dichloromethane",
+              "temperature": "room temperature",
+              "duration": "overnight or until completion",
+              "atmosphere": "argon",
+              "isolated_yield_percent": 81
+            }
+          ]
+        }
+      ],
+      "l1_assembly_families": [
+        {
+          "assembly_family_id": "bl_2023_ricinoleic_carbonate_tail_subassembly",
+          "level": "L1",
+          "source_locator": "General Procedure A, pages 4-8",
+          "transformation": "activated_carbonate_substitution_with_alcohol",
+          "reactants": [
+            "(Z)-12-(((4-nitrophenoxy)carbonyl)oxy)octadec-9-en-1-yl acrylate",
+            "alcohol tail"
+          ],
+          "reagents": ["DIPEA", "DMAP"],
+          "solvent": "dichloromethane",
+          "temperature": "room temperature",
+          "duration": "overnight or until completion",
+          "member_count": 10,
+          "members": [
+            {
+              "label": "CB-1",
+              "name": "stearyl alcohol",
+              "component_id": "lnpdb-tail1-d45d967dd1a8af44",
+              "source_structure_status": "exact",
+              "isolated_yield_percent": 77
+            },
+            {
+              "label": "CB-2",
+              "name": "oleyl alcohol",
+              "component_id": "lnpdb-tail1-1d03a654f230236a",
+              "source_structure_status": "source_z_stereochemistry_missing_from_lnpdb",
+              "isolated_yield_percent": 84
+            },
+            {
+              "label": "CB-3",
+              "name": "linoleyl alcohol",
+              "component_id": "lnpdb-tail1-6a5ba9b1be92604a",
+              "source_structure_status": "source_name_and_product_locant_conflict_with_lnpdb_cumulene",
+              "isolated_yield_percent": 83
+            },
+            {
+              "label": "CB-4",
+              "name": "pent-2-yn-1-ol",
+              "component_id": "lnpdb-tail1-01b220249e3ac757",
+              "source_structure_status": "exact",
+              "isolated_yield_percent": 61
+            },
+            {
+              "label": "CB-5",
+              "name": "hex-2-yn-1-ol",
+              "component_id": "lnpdb-tail1-8cbbaed134b6b23f",
+              "source_structure_status": "exact",
+              "isolated_yield_percent": 66
+            },
+            {
+              "label": "CB-6",
+              "name": "hept-2-yn-1-ol",
+              "component_id": "lnpdb-tail1-0a1133f2e7e89d98",
+              "source_structure_status": "exact",
+              "isolated_yield_percent": 65
+            },
+            {
+              "label": "CB-7",
+              "name": "oct-2-yn-1-ol",
+              "component_id": "lnpdb-tail1-508bf001ff1ca948",
+              "source_structure_status": "exact",
+              "isolated_yield_percent": 77
+            },
+            {
+              "label": "CB-8",
+              "name": "non-2-yn-1-ol",
+              "component_id": "lnpdb-tail1-b828ef10c56b1400",
+              "source_structure_status": "exact",
+              "isolated_yield_percent": 84
+            },
+            {
+              "label": "CB-9",
+              "name": "oct-3-yn-1-ol",
+              "component_id": "lnpdb-tail1-ef9d622535e1565c",
+              "source_structure_status": "exact",
+              "isolated_yield_percent": 81
+            },
+            {
+              "label": "CB-10",
+              "name": "dec-3-yn-1-ol",
+              "component_id": "lnpdb-tail1-7f47e13afc1b0551",
+              "source_structure_status": "exact",
+              "isolated_yield_percent": 82
+            }
+          ],
+          "classification_note": "This procedure combines the activated linker precursor with alcohol tail building blocks. It is L1 subassembly evidence, not upstream synthesis of the alcohol tails."
+        },
+        {
+          "assembly_family_id": "bl_2023_aza_michael_final_lipid_assembly",
+          "level": "L1",
+          "source_locator": "General Procedure B, pages 9-10",
+          "transformation": "amine_aza_michael_addition_to_ricinoleic_acrylate",
+          "temperature": "90 degrees C",
+          "duration": "2-3 days or until amine conversion",
+          "primary_amine_tail_equivalents": 2.5,
+          "secondary_amine_tail_equivalents": 1.25,
+          "reported_library_size": 720,
+          "representative_product_yield_percent": 77
+        }
+      ],
+      "negative_outcomes": [],
+      "review_conclusion": {
+        "l2_route_families": 1,
+        "l2_route_instances": 1,
+        "l2_reaction_instances": 5,
+        "structure_resolved_l2_route_instances": 1,
+        "upstream_component_routes": 0,
+        "l1_assembly_families": 2,
+        "reported_negative_outcomes": 0,
+        "key_finding": "The source supplies a detailed linker-precursor route and product-specific tail-subassembly yields. The alcohol tails and amine heads are treated as commercial starting materials, so their upstream syntheses are not L2 labels from this source."
+      }
+    },
+    {
+      "review_id": "agile_2024_ugi3_subcomponent_review",
+      "pmc_id": "PMC11282250",
+      "pmid": "39060305",
+      "doi": "10.1038/s41467-024-50619-z",
+      "citation": "Xu et al., Nature Communications 15, 7530 (2024)",
+      "source_asset": {
+        "filename": "41467_2024_50619_MOESM1_ESM.pdf",
+        "expected_sha256": "ab21e9fa8ad4f2d991c97298c64232eec9942bce6b95f82419bfef67f5c830e9",
+        "chemistry_pages": [1, 2, 3, 4, 5, 6, 7],
+        "review_status": "chemistry_pages_visually_reviewed"
+      },
+      "source_component_scope": {
+        "normalized_unique_components": 36,
+        "normalized_by_role": {
+          "head": 20,
+          "tail1": 11,
+          "tail2": 5
+        },
+        "source_reported_head_count": 20,
+        "source_reported_aldehyde_tail_count": 18,
+        "source_reported_isocyanide_tail_count": 7,
+        "count_note": "The measured 20 by 12 by 5 Ugi-3 library contains 20 amines, 12 aldehydes, and 5 isocyanides. Supplementary Note 1 also reports routes for six additional aldehydes and two additional isocyanides. One measured aldehyde assignment, B5, remains unresolved against LNPDB, leaving 11 normalized aldehyde components linked to the source."
+      },
+      "building_block_groups": [
+        {
+          "role": "ugi3_amine_head",
+          "source_labels": "A1 through A20",
+          "source_locator": "AGILE measured library and Supplementary Note 1",
+          "source_reported_count": 20,
+          "normalized_component_count": 20,
+          "upstream_route_status": "not_reported",
+          "upstream_route_count": 0,
+          "procurement_evidence_status": "historical_blanket_vendor_claim",
+          "procurement_locator": "Methods, materials",
+          "procurement_note": "The source describes the amine heads as purchased reagents without closing current item-level procurement for every structure."
+        },
+        {
+          "role": "ugi3_aldehyde_tail",
+          "source_labels": "B1 through B12",
+          "source_locator": "Supplementary Note 1, pages 1-4",
+          "source_reported_count": 12,
+          "normalized_component_count": 11,
+          "upstream_route_status": "route_extracted",
+          "upstream_route_count": 12,
+          "procurement_evidence_status": "synthesized_upstream_route_reported",
+          "procurement_locator": "Supplementary Note 1, pages 1-4",
+          "procurement_note": "Each measured aldehyde tail is reported as a synthesized product. B5 is preserved as a source-to-LNPDB identity discrepancy."
+        },
+        {
+          "role": "ugi3_isocyanide_tail",
+          "source_labels": "C1 through C5",
+          "source_locator": "Supplementary Note 1, pages 4-5",
+          "source_reported_count": 5,
+          "normalized_component_count": 5,
+          "upstream_route_status": "route_extracted",
+          "upstream_route_count": 5,
+          "procurement_evidence_status": "synthesized_upstream_route_reported",
+          "procurement_locator": "Supplementary Note 1, pages 4-5",
+          "procurement_note": "All five measured isocyanides have a reported two-step route and product-specific proton NMR."
+        },
+        {
+          "role": "ugi3_aldehyde_tail",
+          "source_labels": "AGILE-identified aldehydes",
+          "source_locator": "Supplementary Note 1, pages 5-7",
+          "source_reported_count": 6,
+          "normalized_component_count": 6,
+          "upstream_route_status": "route_extracted",
+          "upstream_route_count": 6,
+          "procurement_evidence_status": "synthesized_upstream_route_reported",
+          "procurement_locator": "Supplementary Note 1, pages 5-7",
+          "procurement_note": "These six aldehydes expand the source chemistry beyond the measured 12-member aldehyde set."
+        },
+        {
+          "role": "ugi3_isocyanide_tail",
+          "source_labels": "AGILE-identified isocyanides",
+          "source_locator": "Supplementary Note 1, page 7",
+          "source_reported_count": 2,
+          "normalized_component_count": 2,
+          "upstream_route_status": "route_extracted",
+          "upstream_route_count": 2,
+          "procurement_evidence_status": "synthesized_upstream_route_reported",
+          "procurement_locator": "Supplementary Note 1, page 7",
+          "procurement_note": "The additional C11 and C17 isocyanides use the same formylation and dehydration route."
+        }
+      ],
+      "l2_route_families": [
+        {
+          "route_family_id": "agile_hexyl_aldehyde_two_step_series",
+          "level": "L2",
+          "source_locator": "Supplementary Note 1, pages 1-4",
+          "route_evidence_status": "general_procedure_product_series_extracted",
+          "component_assignment_status": "eleven_structure_resolved_one_source_conflict",
+          "assignment_note": "Eleven products map to stored structure-resolved LNPDB route records. B5 remains unresolved because the measured structure conflicts with the supplementary name and stereochemical evidence.",
+          "route_instance_count": 12,
+          "reaction_instance_count": 24,
+          "route_depth": 2,
+          "starting_material_procurement_status": "historical_blanket_vendor_claim",
+          "procedure": {
+            "step_sequence": [
+              "edc_dmap_esterification_of_fatty_acid_with_hexane_1_6_diol",
+              "dess_martin_oxidation_of_primary_alcohol_to_aldehyde"
+            ],
+            "step_1_conditions": "EDC hydrochloride, DIPEA, DMAP, hexane-1,6-diol, dichloromethane, room temperature, 18 hours, nitrogen",
+            "step_2_conditions": "Dess-Martin periodinane, dichloromethane, room temperature, 2 hours, nitrogen",
+            "purification": "Silica gel chromatography, 0-50% ethyl acetate in hexanes"
+          },
+          "members": [
+            {
+              "label": "B1",
+              "name": "6-oxohexyl nonanoate",
+              "product_smiles": "CCCCCCCCC(=O)OCCCCCC=O",
+              "yield_status": "not_reported",
+              "source_structure_status": "structure_resolved"
+            },
+            {
+              "label": "B2",
+              "name": "6-oxohexyl 4-methylnonanoate",
+              "product_smiles": "CCCCCC(C)CCC(=O)OCCCCCC=O",
+              "yield_status": "not_reported",
+              "source_structure_status": "structure_resolved"
+            },
+            {
+              "label": "B3",
+              "name": "6-oxohexyl decanoate",
+              "product_smiles": "CCCCCCCCCC(=O)OCCCCCC=O",
+              "yield_status": "not_reported",
+              "source_structure_status": "structure_resolved"
+            },
+            {
+              "label": "B4",
+              "name": "6-oxohexyl (E)-dec-2-enoate",
+              "product_smiles": "CCCCCCC/C=C/C(=O)OCCCCCC=O",
+              "yield_status": "not_reported",
+              "source_structure_status": "stereo_reconciled"
+            },
+            {
+              "label": "B5",
+              "name": "6-oxohexyl undec-2-enoate",
+              "yield_status": "not_reported",
+              "source_structure_status": "unresolved_source_to_lnpdb_conflict"
+            },
+            {
+              "label": "B6",
+              "name": "6-oxohexyl undecanoate",
+              "product_smiles": "CCCCCCCCCCC(=O)OCCCCCC=O",
+              "yield_status": "not_reported",
+              "source_structure_status": "structure_resolved"
+            },
+            {
+              "label": "B7",
+              "name": "6-oxohexyl undec-10-ynoate",
+              "product_smiles": "C#CCCCCCCCCC(=O)OCCCCCC=O",
+              "yield_status": "not_reported",
+              "source_structure_status": "structure_resolved"
+            },
+            {
+              "label": "B8",
+              "name": "6-oxohexyl undec-10-enoate",
+              "product_smiles": "C=CCCCCCCCCC(=O)OCCCCCC=O",
+              "yield_status": "not_reported",
+              "source_structure_status": "structure_resolved"
+            },
+            {
+              "label": "B9",
+              "name": "6-oxohexyl palmitate",
+              "product_smiles": "CCCCCCCCCCCCCCCC(=O)OCCCCCC=O",
+              "yield_status": "not_reported",
+              "source_structure_status": "structure_resolved"
+            },
+            {
+              "label": "B10",
+              "name": "6-oxohexyl stearate",
+              "product_smiles": "CCCCCCCCCCCCCCCCCC(=O)OCCCCCC=O",
+              "yield_status": "not_reported",
+              "source_structure_status": "structure_resolved"
+            },
+            {
+              "label": "B11",
+              "name": "6-oxohexyl oleate",
+              "product_smiles": "CCCCCCCC/C=C\\CCCCCCCC(=O)OCCCCCC=O",
+              "yield_status": "not_reported",
+              "source_structure_status": "structure_resolved"
+            },
+            {
+              "label": "B12",
+              "name": "6-oxohexyl (9Z,12Z)-octadeca-9,12-dienoate",
+              "product_smiles": "CCCCC/C=C\\C/C=C\\CCCCCCCC(=O)OCCCCCC=O",
+              "yield_status": "not_reported",
+              "source_structure_status": "structure_resolved"
+            }
+          ]
+        },
+        {
+          "route_family_id": "agile_isocyanide_two_step_series",
+          "level": "L2",
+          "source_locator": "Supplementary Note 1, pages 4-5",
+          "route_evidence_status": "general_procedure_product_series_extracted",
+          "component_assignment_status": "all_five_structure_resolved",
+          "assignment_note": "All five products map to exact or source-reconciled AGILE isocyanide components.",
+          "route_instance_count": 5,
+          "reaction_instance_count": 10,
+          "route_depth": 2,
+          "starting_material_procurement_status": "historical_blanket_vendor_claim",
+          "procedure": {
+            "step_sequence": [
+              "primary_amine_formylation",
+              "formamide_dehydration_to_isocyanide"
+            ],
+            "step_1_conditions": "Sodium formate and acetyl chloride formylation system, tetrahydrofuran, room temperature",
+            "step_2_conditions": "Triethylamine, phosphorus oxychloride, tetrahydrofuran, 0 degrees C, 1.5 hours",
+            "purification": "Column chromatography using a hexane and ethyl acetate system"
+          },
+          "members": [
+            {
+              "label": "C1",
+              "name": "1-isocyanododecane",
+              "product_smiles": "[C-]#[N+]CCCCCCCCCCCC",
+              "yield_status": "not_reported",
+              "source_structure_status": "structure_resolved"
+            },
+            {
+              "label": "C2",
+              "name": "1-isocyanotetradecane",
+              "product_smiles": "[C-]#[N+]CCCCCCCCCCCCCC",
+              "yield_status": "not_reported",
+              "source_structure_status": "source_string_reconciled"
+            },
+            {
+              "label": "C3",
+              "name": "1-isocyanohexadecane",
+              "product_smiles": "[C-]#[N+]CCCCCCCCCCCCCCCC",
+              "yield_status": "not_reported",
+              "source_structure_status": "structure_resolved"
+            },
+            {
+              "label": "C4",
+              "name": "1-isocyanooctadecane",
+              "product_smiles": "[C-]#[N+]CCCCCCCCCCCCCCCCCC",
+              "yield_status": "not_reported",
+              "source_structure_status": "structure_resolved"
+            },
+            {
+              "label": "C5",
+              "name": "(Z)-1-isocyanooctadec-9-ene",
+              "product_smiles": "[C-]#[N+]CCCCCCCC/C=C\\CCCCCCCC",
+              "yield_status": "not_reported",
+              "source_structure_status": "stereo_reconciled"
+            }
+          ]
+        },
+        {
+          "route_family_id": "agile_direct_aldehyde_oxidation_series",
+          "level": "L2",
+          "source_locator": "Supplementary Note 1, pages 5-6",
+          "route_evidence_status": "general_procedure_product_series_extracted",
+          "component_assignment_status": "both_source_products_structure_resolved",
+          "assignment_note": "The two structure-resolved aldehydes are AGILE-identified products outside the measured 12-member aldehyde set.",
+          "route_instance_count": 2,
+          "reaction_instance_count": 2,
+          "route_depth": 1,
+          "starting_material_procurement_status": "historical_blanket_vendor_claim",
+          "procedure": {
+            "step_sequence": ["dess_martin_oxidation_of_primary_alcohol_to_aldehyde"],
+            "conditions": "Dess-Martin periodinane, dichloromethane, room temperature"
+          },
+          "members": [
+            {
+              "label": "identified-aldehyde-1",
+              "name": "olealdehyde",
+              "product_smiles": "CCCCCCCC/C=C\\CCCCCCCC=O",
+              "yield_status": "not_reported",
+              "source_structure_status": "structure_resolved"
+            },
+            {
+              "label": "identified-aldehyde-2",
+              "name": "palmitaldehyde",
+              "product_smiles": "CCCCCCCCCCCCCCCC=O",
+              "yield_status": "not_reported",
+              "source_structure_status": "structure_resolved"
+            }
+          ]
+        },
+        {
+          "route_family_id": "agile_butyl_aldehyde_two_step_series",
+          "level": "L2",
+          "source_locator": "Supplementary Note 1, pages 6-7",
+          "route_evidence_status": "general_procedure_product_series_extracted",
+          "component_assignment_status": "all_four_source_products_structure_resolved",
+          "assignment_note": "The four structure-resolved aldehydes use a four-carbon spacer and expand beyond the measured six-carbon spacer set.",
+          "route_instance_count": 4,
+          "reaction_instance_count": 8,
+          "route_depth": 2,
+          "starting_material_procurement_status": "historical_blanket_vendor_claim",
+          "procedure": {
+            "step_sequence": [
+              "edc_dmap_esterification_of_fatty_acid_with_butane_1_4_diol",
+              "dess_martin_oxidation_of_primary_alcohol_to_aldehyde"
+            ],
+            "conditions": "Same esterification and Dess-Martin oxidation procedures as the measured aldehyde series"
+          },
+          "members": [
+            {
+              "label": "identified-butyl-aldehyde-1",
+              "name": "4-oxobutyl 4-methylnonanoate",
+              "product_smiles": "CCCCCC(C)CCC(=O)OCCCC=O",
+              "yield_status": "not_reported",
+              "source_structure_status": "structure_resolved"
+            },
+            {
+              "label": "identified-butyl-aldehyde-2",
+              "name": "4-oxobutyl (E)-dec-2-enoate",
+              "product_smiles": "CCCCCCC/C=C/C(=O)OCCCC=O",
+              "yield_status": "not_reported",
+              "source_structure_status": "structure_resolved"
+            },
+            {
+              "label": "identified-butyl-aldehyde-3",
+              "name": "4-oxobutyl octanoate",
+              "product_smiles": "CCCCCCCC(=O)OCCCC=O",
+              "yield_status": "not_reported",
+              "source_structure_status": "structure_resolved"
+            },
+            {
+              "label": "identified-butyl-aldehyde-4",
+              "name": "4-oxobutyl oleate",
+              "product_smiles": "CCCCCCCC/C=C\\CCCCCCCC(=O)OCCCC=O",
+              "yield_status": "not_reported",
+              "source_structure_status": "structure_resolved"
+            }
+          ]
+        },
+        {
+          "route_family_id": "agile_additional_isocyanide_two_step_series",
+          "level": "L2",
+          "source_locator": "Supplementary Note 1, page 7",
+          "route_evidence_status": "general_procedure_product_series_extracted",
+          "component_assignment_status": "both_source_products_structure_resolved",
+          "assignment_note": "The structure-resolved C11 and C17 products fill chain lengths absent from the measured isocyanide set.",
+          "route_instance_count": 2,
+          "reaction_instance_count": 4,
+          "route_depth": 2,
+          "starting_material_procurement_status": "historical_blanket_vendor_claim",
+          "procedure": {
+            "step_sequence": [
+              "primary_amine_formylation",
+              "formamide_dehydration_to_isocyanide"
+            ],
+            "conditions": "Same formylation and phosphorus oxychloride dehydration procedure as the measured isocyanide series"
+          },
+          "members": [
+            {
+              "label": "identified-isocyanide-1",
+              "name": "1-isocyanoundecane",
+              "product_smiles": "[C-]#[N+]CCCCCCCCCCC",
+              "yield_status": "not_reported",
+              "source_structure_status": "structure_resolved"
+            },
+            {
+              "label": "identified-isocyanide-2",
+              "name": "1-isocyanoheptadecane",
+              "product_smiles": "[C-]#[N+]CCCCCCCCCCCCCCCCC",
+              "yield_status": "not_reported",
+              "source_structure_status": "structure_resolved"
+            }
+          ]
+        }
+      ],
+      "l1_assembly_families": [
+        {
+          "assembly_family_id": "agile_amine_aldehyde_isocyanide_ugi3_final_lipid_assembly",
+          "level": "L1",
+          "source_locator": "Supplementary Note 1, pages 5 and 7",
+          "transformation": "amine_aldehyde_isocyanide_ugi_three_component_reaction",
+          "reactant_roles": [
+            "amine head",
+            "aldehyde tail",
+            "isocyanide tail"
+          ],
+          "theoretical_library_size": 1200,
+          "reported_library_size": 1200,
+          "unresolved_combination_count": 0,
+          "classification_note": "The Ugi-3 reaction assembles the final lipid and remains L1. The aldehyde and isocyanide preparations above are L2."
+        }
+      ],
+      "negative_outcomes": [],
+      "review_conclusion": {
+        "l2_route_families": 5,
+        "l2_route_instances": 25,
+        "l2_reaction_instances": 48,
+        "structure_resolved_l2_route_instances": 24,
+        "upstream_component_routes": 25,
+        "l1_assembly_families": 1,
+        "reported_negative_outcomes": 0,
+        "key_finding": "AGILE directly supports the Ugi-3 precursor problem with 18 aldehyde routes and 7 isocyanide routes. Twenty-four source products are structure-resolved; B5 remains the sole unresolved source-to-measured identity discrepancy."
+      }
+    },
+    {
+      "review_id": "jc_2023_ugi3_subcomponent_review",
+      "pmc_id": "PMC10723144",
+      "pmid": "38060560",
+      "doi": "10.1073/pnas.2309472120",
+      "citation": "Chen et al., Proceedings of the National Academy of Sciences 120, e2309472120 (2023)",
+      "source_asset": {
+        "filename": "pnas.2309472120.sapp.pdf",
+        "expected_sha256": "51bdaccf337fe8f6d19bc9dbddf99ec6d1f312006d4d1ef2152a4fc2f6e4f1c6",
+        "chemistry_pages": [
+          18,
+          19,
+          20
+        ],
+        "review_status": "chemistry_pages_visually_reviewed"
+      },
+      "source_component_scope": {
+        "normalized_unique_components": 25,
+        "normalized_by_role": {
+          "head": 16,
+          "tail1": 6,
+          "tail2": 3
+        },
+        "source_reported_head_count": 16,
+        "source_reported_aldehyde_tail_count": 6,
+        "source_reported_isocyanide_tail_count": 3,
+        "count_note": "The 16 by 6 by 3 Ugi-3 library contains 16 amine heads, 6 aldehyde tails, and 3 isocyanide tails. LNPDB links 25 normalized components to this source."
+      },
+      "building_block_groups": [
+        {
+          "role": "head",
+          "source_labels": "A1 through A16",
+          "source_locator": "Main-text Figure 1C",
+          "source_reported_count": 16,
+          "normalized_component_count": 16,
+          "upstream_route_status": "not_reported",
+          "upstream_route_count": 0,
+          "procurement_evidence_status": "not_reported",
+          "procurement_locator": "Reviewed chemistry pages 18-20",
+          "procurement_note": "The reviewed source pages identify the amine structures but do not report item-level procurement or upstream preparation. Current availability remains an independent L3 question."
+        },
+        {
+          "role": "tail1",
+          "source_labels": "B1 through B6",
+          "source_locator": "Main-text Figure 1C and Supporting Information page 19",
+          "source_reported_count": 6,
+          "normalized_component_count": 6,
+          "upstream_route_status": "route_extracted",
+          "upstream_route_count": 1,
+          "procurement_evidence_status": "not_reported",
+          "procurement_locator": "Supporting Information page 19",
+          "procurement_note": "A product-specific route is reported for B5, 6-oxohexyl 4-methylnonanoate. The other five aldehydes have structures but no upstream preparation or item-level procurement evidence in the reviewed pages."
+        },
+        {
+          "role": "tail2",
+          "source_labels": "C1 through C3",
+          "source_locator": "Main-text Figure 1C and Supporting Information pages 18-20",
+          "source_reported_count": 3,
+          "normalized_component_count": 3,
+          "upstream_route_status": "route_extracted",
+          "upstream_route_count": 3,
+          "procurement_evidence_status": "not_reported",
+          "procurement_locator": "Supporting Information pages 18-20",
+          "procurement_note": "The source reports two-step formamide-to-isocyanide routes for all three tails, but does not provide current item-level procurement evidence for the primary amines."
+        }
+      ],
+      "l2_route_families": [
+        {
+          "route_family_id": "jc_2023_b5_branched_hexyl_aldehyde_exact_route",
+          "level": "L2",
+          "source_locator": "Supporting Information page 19",
+          "route_evidence_status": "exact_route_extracted",
+          "route_instance_count": 1,
+          "reaction_instance_count": 2,
+          "component_assignment_status": "exact_canonical_component_match_and_independent_agile_b2_replication",
+          "assignment_note": "JC_2023 labels this aldehyde B5. Its canonical structure exactly matches AGILE component B2 and LNPDB component lnpdb-tail1-668dc43d423c6abc, providing an independent product-specific preparation rather than a new chemical identity.",
+          "starting_material_procurement_status": "not_reported",
+          "starting_material": {
+            "name": "4-methylnonanoic acid",
+            "smiles": "CCCCCC(C)CCC(=O)O"
+          },
+          "target": {
+            "name": "6-oxohexyl 4-methylnonanoate",
+            "smiles": "CCCCCC(C)CCC(=O)OCCCCCC=O"
+          },
+          "quantitative_consistency_status": "source_mass_mmol_inconsistencies_preserved",
+          "quantitative_consistency_note": "The reported intermediate and product masses are inconsistent with the stated mmol values and named molecular structures. The route, reported mmol values, and reported yields are retained without silently correcting the source.",
+          "steps": [
+            {
+              "step_index": 1,
+              "transformation": "edc_dmap_esterification_of_fatty_acid_with_hexane_1_6_diol",
+              "reactant_smiles": "CCCCCC(C)CCC(=O)O",
+              "product_smiles": "CCCCCC(C)CCC(=O)OCCCCCCO",
+              "co_reactants": [
+                "hexane-1,6-diol"
+              ],
+              "reagents": [
+                "EDC hydrochloride",
+                "DMAP",
+                "DIPEA"
+              ],
+              "solvent": "dichloromethane",
+              "temperature": "room temperature",
+              "duration": "24 h",
+              "atmosphere": "nitrogen",
+              "purification": "silica gel chromatography, 0-50% ethyl acetate in hexanes",
+              "reported_scale": "4-methylnonanoic acid 3.0 g, 17.7 mmol; hexane-1,6-diol 10.5 g, 88.5 mmol; EDC hydrochloride 5.1 g, 26.6 mmol; DMAP 1.1 g, 8.9 mmol; DIPEA 6.2 mL, 35.4 mmol; dichloromethane 200 mL",
+              "reported_outcome": "6-hydroxyhexyl 4-methylnonanoate 5.8 g, 15.2 mmol; product-specific proton NMR",
+              "isolated_yield_percent": 86
+            },
+            {
+              "step_index": 2,
+              "transformation": "dess_martin_oxidation_of_primary_alcohol_to_aldehyde",
+              "reactant_smiles": "CCCCCC(C)CCC(=O)OCCCCCCO",
+              "product_smiles": "CCCCCC(C)CCC(=O)OCCCCCC=O",
+              "reagents": [
+                "Dess-Martin periodinane"
+              ],
+              "solvent": "dichloromethane",
+              "temperature": "room temperature",
+              "duration": "2 h reaction plus 15 min thiosulfate treatment",
+              "atmosphere": "nitrogen",
+              "purification": "silica gel chromatography, 0-50% ethyl acetate in hexanes",
+              "reported_scale": "alcohol intermediate 5.8 g, 15.2 mmol; Dess-Martin periodinane 9.6 g, 22.8 mmol; dichloromethane 300 mL",
+              "reported_outcome": "6-oxohexyl 4-methylnonanoate 3.5 g, 9.2 mmol; product-specific proton NMR",
+              "isolated_yield_percent": 61
+            }
+          ]
+        },
+        {
+          "route_family_id": "jc_2023_saturated_isocyanide_two_step_series",
+          "level": "L2",
+          "source_locator": "Supporting Information page 18",
+          "route_evidence_status": "general_procedure_product_series_extracted",
+          "component_assignment_status": "both_source_products_structure_resolved_with_product_specific_nmr",
+          "assignment_note": "The C11 and C18 isocyanides are shown with their primary-amine, formamide, and isocyanide structures and have product-specific proton NMR. Main-text Figure 1C resolves C2 as C18 and C3 as C11, consistent with the LNPDB component fields. The source refers to the same two-step method but does not report product-specific quantities or yields.",
+          "route_instance_count": 2,
+          "reaction_instance_count": 4,
+          "route_depth": 2,
+          "starting_material_procurement_status": "not_reported",
+          "procedure": {
+            "step_sequence": [
+              "primary_amine_formylation_with_sodium_formate_and_acetyl_chloride",
+              "formamide_dehydration_with_triethylamine_and_phosphorus_oxychloride"
+            ],
+            "conditions": "Tetrahydrofuran at room temperature for formylation; tetrahydrofuran at 0 degrees C for dehydration. The page cites the same method without product-specific quantities."
+          },
+          "members": [
+            {
+              "label": "C2",
+              "name": "1-isocyanooctadecane",
+              "product_smiles": "[C-]#[N+]CCCCCCCCCCCCCCCCCC",
+              "yield_status": "not_reported",
+              "source_structure_status": "structure_resolved_with_product_specific_proton_nmr"
+            },
+            {
+              "label": "C3",
+              "name": "1-isocyanoundecane",
+              "product_smiles": "[C-]#[N+]CCCCCCCCCCC",
+              "yield_status": "not_reported",
+              "source_structure_status": "structure_resolved_with_product_specific_proton_nmr"
+            }
+          ]
+        },
+        {
+          "route_family_id": "jc_2023_oleyl_isocyanide_product_specific_route",
+          "level": "L2",
+          "source_locator": "Supporting Information pages 19-20",
+          "route_evidence_status": "general_procedure_product_series_extracted",
+          "component_assignment_status": "exact_source_structure_reconciled_against_malformed_lnpdb_tail2",
+          "assignment_note": "The source structure and chemistry identify (Z)-1-isocyanooctadec-9-ene. The linked LNPDB tail2 string CCCCCCCCC=CCCCCCCCCN=O is not an isocyanide and is retained as a raw-source discrepancy rather than overwritten.",
+          "route_instance_count": 1,
+          "reaction_instance_count": 2,
+          "route_depth": 2,
+          "starting_material_procurement_status": "not_reported",
+          "procedure": {
+            "procedure_specificity": "product_specific_full_conditions_with_crude_intermediate",
+            "step_sequence": [
+              "oleylamine_formylation_with_sodium_formate_and_acetyl_chloride",
+              "oleyl_formamide_dehydration_with_trifluoroacetic_acid_and_phosphorus_oxychloride"
+            ],
+            "step_1_conditions": "Sodium formate 2.2511 g, 0.031 mol in tetrahydrofuran 82.75 mL for 2 h; acetyl chloride 34.755 mL of 1.0 M solution in dichloromethane, 0.031 mol, then room temperature for 12 h; oleylamine 8.8473 g, 0.031 mol in tetrahydrofuran 33.1 mL, then room temperature for 4 h. The formamide was carried forward without purification.",
+            "step_2_conditions": "Crude oleyl formamide 9.1581 g, 0.031 mol in tetrahydrofuran at 0 degrees C for 10 min; trifluoroacetic acid 0.031 mol for 15 min; phosphorus oxychloride in tetrahydrofuran 50 mL added dropwise, then 1.5 h at 0 degrees C; BUCHI column, 0-10% ethyl acetate in hexanes.",
+            "analytical_evidence": "Product-specific proton NMR",
+            "final_isolated_yield_percent": 35
+          },
+          "members": [
+            {
+              "label": "C1",
+              "name": "(Z)-1-isocyanooctadec-9-ene",
+              "product_smiles": "[C-]#[N+]CCCCCCCC/C=C\\CCCCCCCC",
+              "isolated_yield_percent": 35,
+              "source_structure_status": "source_structure_resolved_and_stereochemistry_preserved"
+            }
+          ]
+        }
+      ],
+      "l1_assembly_families": [
+        {
+          "assembly_family_id": "jc_2023_amine_aldehyde_isocyanide_ugi3_final_lipid_assembly",
+          "level": "L1",
+          "source_locator": "Main-text Figure 1 and Supporting Information page 20",
+          "transformation": "phenylphosphinic_acid_catalyzed_amine_aldehyde_isocyanide_ugi_three_component_reaction",
+          "reactant_roles": [
+            "amine head",
+            "aldehyde tail",
+            "isocyanide tail"
+          ],
+          "theoretical_library_size": 288,
+          "reported_library_size": 288,
+          "unresolved_combination_count": 0,
+          "representative_product": {
+            "source_label": "iso-A11B5C1",
+            "alternate_source_label": "H3",
+            "amine": "2-(pyrrolidin-1-yl)ethan-1-amine",
+            "aldehyde": "6-oxohexyl 4-methylnonanoate",
+            "isocyanide": "(Z)-1-isocyanooctadec-9-ene",
+            "conditions": "87.57 micromol of each component in anhydrous methanol 5 mL with phenylphosphinic acid 17.51 micromol, capped vial, room temperature overnight",
+            "purification": "flash chromatography, 0.1% ammonium hydroxide with 0-10% methanol in dichloromethane",
+            "reported_mass": "41 mg",
+            "reported_amount": "6.2 mmol",
+            "reported_yield_percent": 70.71,
+            "analytical_evidence": "Calculated m/z 661.61; observed ESI-MS m/z 662.95; product-specific proton NMR",
+            "source_anomaly_note": "The reported 6.2 mmol amount is incompatible with the 87.57 micromol input scale and 41 mg product mass. It is preserved as printed and is not silently corrected."
+          },
+          "representative_product_yield_percent": 70.71,
+          "classification_note": "The source provides one isolated and analytically characterized final Ugi product in addition to the 288-member reported screen. This is L1 execution evidence; the aldehyde and isocyanide preparations remain L2."
+        }
+      ],
+      "negative_outcomes": [],
+      "review_conclusion": {
+        "l2_route_families": 3,
+        "l2_route_instances": 4,
+        "l2_reaction_instances": 8,
+        "structure_resolved_l2_route_instances": 4,
+        "upstream_component_routes": 4,
+        "l1_assembly_families": 1,
+        "reported_negative_outcomes": 0,
+        "key_finding": "JC_2023 adds native Ugi-3 supervision: an independently executed two-step route to the branched B5 aldehyde, two saturated isocyanide preparations, one product-specific unsaturated isocyanide route with 35% yield, and an isolated final Ugi product reported at 70.71%. Source numerical inconsistencies and the malformed LNPDB oleyl-isocyanide string are explicitly preserved."
+      }
+    },
+    {
+      "review_id": "lx_2024_aldehyde_tail_transfer_review",
+      "pmc_id": "PMC10904786",
+      "pmid": "38424061",
+      "doi": "10.1038/s41467-024-45422-9",
+      "citation": "Xu et al., Nature Communications 15, 1903 (2024)",
+      "source_asset": {
+        "filename": "41467_2024_45422_MOESM1_ESM.pdf",
+        "expected_sha256": "7f5b1c6413e4db3b09cb86296139ba76848b06de96b7165942643233ad6a3e2c",
+        "chemistry_pages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "review_status": "chemistry_pages_visually_reviewed"
+      },
+      "main_text_review": {
+        "expected_sha256": "70a269e6fd7d5d132fd4b2344ec7f34f4124263e6665bf51ba7383a0ccf1d0ac",
+        "review_status": "machine_readable_chemistry_sections_reviewed",
+        "section_locators": [
+          "Methods: materials",
+          "Methods: synthesis of aldehyde di-degradable tails",
+          "Methods: synthesis of aldehyde tri-degradable tails",
+          "Methods: synthesis of cationic-degradable lipid libraries"
+        ]
+      },
+      "source_component_scope": {
+        "normalized_unique_components": 28,
+        "normalized_by_role": {
+          "head": 12,
+          "tail1": 16
+        },
+        "source_reported_head_count": 12,
+        "source_reported_aldehyde_tail_count": 15,
+        "count_note": "The source reports a 12 by 15 reductive-amination library. LNPDB links 12 normalized heads and 16 tail1 records to this PMID. Fourteen source aldehydes match parsed LNPDB structures, A2-8 is recovered from a source structure whose LNPDB string has a trailing underscore, and one extra parsed LNPDB triheptanoate record is not among the 15 source-reported aldehydes."
+      },
+      "building_block_groups": [
+        {
+          "role": "head",
+          "source_labels": "amine heads 1 through 12",
+          "source_locator": "Main-text Figure 1C and Methods, materials",
+          "source_reported_count": 12,
+          "normalized_component_count": 12,
+          "upstream_route_status": "not_reported",
+          "upstream_route_count": 0,
+          "procurement_evidence_status": "historical_exact_vendor_identity_without_catalog",
+          "procurement_locator": "Methods, materials",
+          "procurement_note": "The source identifies all 12 amines and their historical vendors, with purity for ten TCI or Sigma entries and two vendor-only AmBeed entries. Catalog identifiers and current availability are not reported."
+        },
+        {
+          "role": "tail1",
+          "source_labels": "A2-6 through A2-9b2 and A3-6b through A3-9b2",
+          "source_locator": "Main-text Methods and Supplementary Figures 1-17, pages 2-7",
+          "source_reported_count": 15,
+          "normalized_component_count": 16,
+          "upstream_route_status": "route_extracted",
+          "upstream_route_count": 15,
+          "procurement_evidence_status": "synthesized_upstream_route_reported",
+          "procurement_locator": "Methods, materials and aldehyde-tail synthesis; Supplementary Figures 1-17",
+          "procurement_note": "All 15 source aldehydes have a reported one-step EDC and DMAP esterification family, exact source structures, and product-specific proton NMR. The two hydroxybenzaldehyde cores and ten fatty acids have historical exact identity and vendor evidence but no current item-level procurement closure."
+        }
+      ],
+      "l2_route_families": [
+        {
+          "route_family_id": "lx_2024_aromatic_diester_aldehyde_series",
+          "level": "L2",
+          "source_locator": "Methods, synthesis of aldehyde di-degradable tails; Supplementary Figures 1-11, pages 2-5",
+          "route_evidence_status": "general_procedure_product_series_extracted",
+          "component_assignment_status": "nine_exact_lnpdb_matches_plus_one_source_reconciled_invalid_string",
+          "assignment_note": "Nine products match parsed LNPDB components exactly. A2-8 is structure-resolved from the source scheme and NMR figure; its linked LNPDB string differs only by an invalid trailing underscore and is preserved as a raw-source defect.",
+          "route_instance_count": 10,
+          "reaction_instance_count": 10,
+          "route_depth": 1,
+          "starting_material_procurement_status": "historical_exact_vendor_identity_without_catalog",
+          "procedure": {
+            "transformation": "edc_dmap_esterification_of_3_5_dihydroxybenzaldehyde_with_two_fatty_acid_equivalents",
+            "representative_member": "A2-6",
+            "representative_scale": "3,5-dihydroxybenzaldehyde 1.38 g, 10 mmol; heptanoic acid 3.91 g, 30 mmol; EDC hydrochloride 5.75 g, 30 mmol; DMAP 366 mg, 3 mmol; anhydrous dichloromethane 50 mL",
+            "conditions": "Cool to 0 degrees C, then warm to room temperature overnight",
+            "workup": "Wash with 1% hydrochloric acid, brine, saturated sodium bicarbonate, and brine; dry over sodium sulfate",
+            "purification": "Flash chromatography, silica gel, hexanes to 2:1 dichloromethane/hexanes",
+            "yield_status": "not_reported",
+            "analytical_evidence": "Product-specific proton NMR for all ten members"
+          },
+          "frozen_ugi_forward_verification": {
+            "reaction_id": "ugi_3cr_agile",
+            "reference_amine": "CN(C)CCN",
+            "reference_isocyanide": "[C-]#[N+]CCCCCCCCCCCC",
+            "members_with_exactly_one_sanitized_product": 10,
+            "members_tested": 10,
+            "experimental_ugi_success_inferred": false
+          },
+          "members": [
+            {
+              "label": "A2-6",
+              "name": "5-formyl-1,3-phenylene diheptanoate",
+              "product_smiles": "CCCCCCC(=O)Oc1cc(C=O)cc(OC(=O)CCCCCC)c1",
+              "yield_status": "not_reported",
+              "source_structure_status": "exact_lnpdb_match_with_product_specific_proton_nmr"
+            },
+            {
+              "label": "A2-6b",
+              "name": "5-formyl-1,3-phenylene bis(2-methylhexanoate)",
+              "product_smiles": "CCCCC(C)C(=O)Oc1cc(C=O)cc(OC(=O)C(C)CCCC)c1",
+              "yield_status": "not_reported",
+              "source_structure_status": "exact_lnpdb_match_with_product_specific_proton_nmr"
+            },
+            {
+              "label": "A2-7",
+              "name": "5-formyl-1,3-phenylene dioctanoate",
+              "product_smiles": "CCCCCCCC(=O)Oc1cc(C=O)cc(OC(=O)CCCCCCC)c1",
+              "yield_status": "not_reported",
+              "source_structure_status": "exact_lnpdb_match_with_product_specific_proton_nmr"
+            },
+            {
+              "label": "A2-7b",
+              "name": "5-formyl-1,3-phenylene bis(2-methylheptanoate)",
+              "product_smiles": "CCCCCC(C)C(=O)Oc1cc(C=O)cc(OC(=O)C(C)CCCCC)c1",
+              "yield_status": "not_reported",
+              "source_structure_status": "exact_lnpdb_match_with_product_specific_proton_nmr"
+            },
+            {
+              "label": "A2-7b2",
+              "name": "5-formyl-1,3-phenylene bis(2-ethylhexanoate)",
+              "product_smiles": "CCCCC(CC)C(=O)Oc1cc(C=O)cc(OC(=O)C(CC)CCCC)c1",
+              "yield_status": "not_reported",
+              "source_structure_status": "exact_lnpdb_match_with_product_specific_proton_nmr"
+            },
+            {
+              "label": "A2-8",
+              "name": "5-formyl-1,3-phenylene dinonanoate",
+              "product_smiles": "CCCCCCCCC(=O)Oc1cc(C=O)cc(OC(=O)CCCCCCCC)c1",
+              "yield_status": "not_reported",
+              "source_structure_status": "source_resolved_lnpdb_trailing_underscore_preserved"
+            },
+            {
+              "label": "A2-8b",
+              "name": "5-formyl-1,3-phenylene bis(4-methyloctanoate)",
+              "product_smiles": "CCCCC(C)CCC(=O)Oc1cc(C=O)cc(OC(=O)CCC(C)CCCC)c1",
+              "yield_status": "not_reported",
+              "source_structure_status": "exact_lnpdb_match_with_product_specific_proton_nmr"
+            },
+            {
+              "label": "A2-9",
+              "name": "5-formyl-1,3-phenylene didecanoate",
+              "product_smiles": "CCCCCCCCCC(=O)Oc1cc(C=O)cc(OC(=O)CCCCCCCCC)c1",
+              "yield_status": "not_reported",
+              "source_structure_status": "exact_lnpdb_match_with_product_specific_proton_nmr"
+            },
+            {
+              "label": "A2-9b",
+              "name": "5-formyl-1,3-phenylene bis(4-methylnonanoate)",
+              "product_smiles": "CCCCCC(C)CCC(=O)Oc1cc(C=O)cc(OC(=O)CCC(C)CCCCC)c1",
+              "yield_status": "not_reported",
+              "source_structure_status": "exact_lnpdb_match_with_product_specific_proton_nmr"
+            },
+            {
+              "label": "A2-9b2",
+              "name": "5-formyl-1,3-phenylene bis(4-ethyloctanoate)",
+              "product_smiles": "CCCCC(CC)CCC(=O)Oc1cc(C=O)cc(OC(=O)CCC(CC)CCCC)c1",
+              "yield_status": "not_reported",
+              "source_structure_status": "exact_lnpdb_match_with_product_specific_proton_nmr"
+            }
+          ]
+        },
+        {
+          "route_family_id": "lx_2024_aromatic_triester_aldehyde_series",
+          "level": "L2",
+          "source_locator": "Methods, synthesis of aldehyde tri-degradable tails; Supplementary Figures 12-17, pages 5-7",
+          "route_evidence_status": "general_procedure_product_series_extracted",
+          "component_assignment_status": "all_five_source_products_exactly_match_lnpdb_components",
+          "assignment_note": "All five source products match parsed LNPDB components. The source-reported 15-member aldehyde set does not include the additional parsed LNPDB triheptanoate record lnpdb-tail1-4572dd58e6c6d409.",
+          "route_instance_count": 5,
+          "reaction_instance_count": 5,
+          "route_depth": 1,
+          "starting_material_procurement_status": "historical_exact_vendor_identity_without_catalog",
+          "procedure": {
+            "transformation": "edc_dmap_esterification_of_2_4_6_trihydroxybenzaldehyde_with_three_fatty_acid_equivalents",
+            "representative_member": "A3-6b",
+            "representative_scale": "2,4,6-trihydroxybenzaldehyde 1.54 g, 10 mmol; fatty acid 45 mmol; EDC hydrochloride 8.62 g, 45 mmol; DMAP 550 mg, 4.5 mmol; anhydrous dichloromethane 80 mL",
+            "conditions": "Cool to 0 degrees C, then warm to room temperature overnight",
+            "workup": "Wash with 1% hydrochloric acid, brine, saturated sodium bicarbonate, and brine; dry over sodium sulfate",
+            "purification": "Flash chromatography, silica gel, hexanes to 1:6 ethyl acetate/hexanes",
+            "yield_status": "not_reported",
+            "analytical_evidence": "Product-specific proton NMR for all five members",
+            "source_conflict": "The representative is named and drawn as A3-6b, the tris(2-methylhexanoate), but the main-text procedure names heptanoic acid. The conflict is preserved and prevents treating the quantitative reagent line as an unqualified exact-substrate procedure."
+          },
+          "frozen_ugi_forward_verification": {
+            "reaction_id": "ugi_3cr_agile",
+            "reference_amine": "CN(C)CCN",
+            "reference_isocyanide": "[C-]#[N+]CCCCCCCCCCCC",
+            "members_with_exactly_one_sanitized_product": 5,
+            "members_tested": 5,
+            "experimental_ugi_success_inferred": false
+          },
+          "members": [
+            {
+              "label": "A3-6b",
+              "name": "2-formylbenzene-1,3,5-triyl tris(2-methylhexanoate)",
+              "product_smiles": "CCCCC(C)C(=O)Oc1cc(OC(=O)C(C)CCCC)c(C=O)c(OC(=O)C(C)CCCC)c1",
+              "yield_status": "not_reported",
+              "source_structure_status": "exact_lnpdb_match_with_product_specific_proton_nmr_and_reagent_name_conflict"
+            },
+            {
+              "label": "A3-7b",
+              "name": "2-formylbenzene-1,3,5-triyl tris(2-methylheptanoate)",
+              "product_smiles": "CCCCCC(C)C(=O)Oc1cc(OC(=O)C(C)CCCCC)c(C=O)c(OC(=O)C(C)CCCCC)c1",
+              "yield_status": "not_reported",
+              "source_structure_status": "exact_lnpdb_match_with_product_specific_proton_nmr"
+            },
+            {
+              "label": "A3-7b2",
+              "name": "2-formylbenzene-1,3,5-triyl tris(2-ethylhexanoate)",
+              "product_smiles": "CCCCC(CC)C(=O)Oc1cc(OC(=O)C(CC)CCCC)c(C=O)c(OC(=O)C(CC)CCCC)c1",
+              "yield_status": "not_reported",
+              "source_structure_status": "exact_lnpdb_match_with_product_specific_proton_nmr"
+            },
+            {
+              "label": "A3-8b",
+              "name": "2-formylbenzene-1,3,5-triyl tris(4-methyloctanoate)",
+              "product_smiles": "CCCCC(C)CCC(=O)Oc1cc(OC(=O)CCC(C)CCCC)c(C=O)c(OC(=O)CCC(C)CCCC)c1",
+              "yield_status": "not_reported",
+              "source_structure_status": "exact_lnpdb_match_with_product_specific_proton_nmr"
+            },
+            {
+              "label": "A3-9b2",
+              "name": "2-formylbenzene-1,3,5-triyl tris(4-ethyloctanoate)",
+              "product_smiles": "CCCCC(CC)CCC(=O)Oc1cc(OC(=O)CCC(CC)CCCC)c(C=O)c(OC(=O)CCC(CC)CCCC)c1",
+              "yield_status": "not_reported",
+              "source_structure_status": "exact_lnpdb_match_with_product_specific_proton_nmr"
+            }
+          ]
+        }
+      ],
+      "l1_assembly_families": [
+        {
+          "assembly_family_id": "lx_2024_reductive_amination_final_lipid_assembly",
+          "level": "L1",
+          "source_locator": "Results and Methods, synthesis of cationic-degradable lipid libraries; Supplementary Figure 18, page 8",
+          "transformation": "amine_aldehyde_condensation_followed_by_sodium_borohydride_reduction",
+          "reactant_roles": [
+            "amine head",
+            "aromatic aldehyde degradable tail"
+          ],
+          "theoretical_library_size": 180,
+          "reported_library_size": 180,
+          "unresolved_combination_count": 0,
+          "representative_product": {
+            "source_label": "5-A2-7b2",
+            "conditions": "Amine head 5, 0.2 mmol, and A2-7b2, 0.24 mmol, in ethanol with acetic acid 0.48 mmol at 80 degrees C for 3 h; sodium borohydride 2 mmol at room temperature for 1 h",
+            "outcome": "Crude product used for screening without purification; purified and unpurified product compared by proton NMR",
+            "yield_status": "not_reported"
+          },
+          "classification_note": "This reductive-amination assembly is non-Ugi L1 evidence. The 15 aldehyde inputs are transferable to the Ugi aldehyde role because their exact source structures each pass the frozen Ugi forward transform, but Ugi execution is not established by this source."
+        }
+      ],
+      "negative_outcomes": [],
+      "review_conclusion": {
+        "l2_route_families": 2,
+        "l2_route_instances": 15,
+        "l2_reaction_instances": 15,
+        "structure_resolved_l2_route_instances": 15,
+        "upstream_component_routes": 15,
+        "l1_assembly_families": 1,
+        "reported_negative_outcomes": 0,
+        "key_finding": "LX_2024 contributes 15 experimentally prepared, product-characterized aldehyde tails spanning aromatic diester and triester architectures. All 15 pass the frozen Ugi forward transform with exactly one sanitized product, so they expand route-grounded Ugi aldehyde support without inheriting the source lipid products or biological labels. One invalid and one extra LNPDB tail record remain explicitly reconciled, and the A3-6b fatty-acid naming conflict is preserved."
+      }
+    }
+  ]
+}

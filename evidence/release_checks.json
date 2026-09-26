@@ -1,0 +1,328 @@
+{
+  "aggregates": {
+    "table1_exact_l1_percent": {
+      "conditioned": {
+        "bl_2023_repeated_aza_michael": {
+          "mean": 72.1896701388889,
+          "sample_sd": 1.6477700385914154,
+          "seeds": [
+            70.83333333333334,
+            71.71223958333334,
+            74.0234375
+          ]
+        },
+        "lx_2024_repeated_reductive_amination": {
+          "mean": 52.33289930555556,
+          "sample_sd": 3.3906293336079116,
+          "seeds": [
+            50.813802083333336,
+            56.217447916666664,
+            49.96744791666667
+          ]
+        },
+        "ugi_3cr_agile": {
+          "mean": 96.38671875,
+          "sample_sd": 2.142758039170886,
+          "seeds": [
+            95.1171875,
+            98.86067708333334,
+            95.18229166666666
+          ]
+        }
+      },
+      "cyclic_program": {
+        "bl_2023_repeated_aza_michael": {
+          "mean": 71.54947916666667,
+          "sample_sd": 2.2276187644434406,
+          "seeds": [
+            70.3125,
+            74.12109375,
+            70.21484375
+          ]
+        },
+        "lx_2024_repeated_reductive_amination": {
+          "mean": 50.68359375,
+          "sample_sd": 4.867271274303559,
+          "seeds": [
+            48.30729166666667,
+            56.282552083333336,
+            47.4609375
+          ]
+        },
+        "ugi_3cr_agile": {
+          "mean": 93.75,
+          "sample_sd": 4.245270934088839,
+          "seeds": [
+            93.359375,
+            98.17708333333334,
+            89.71354166666666
+          ]
+        }
+      },
+      "shared_null": {
+        "bl_2023_repeated_aza_michael": {
+          "mean": 19.16232638888889,
+          "sample_sd": 4.134798035150668,
+          "seeds": [
+            14.388020833333334,
+            21.516927083333336,
+            21.58203125
+          ]
+        },
+        "lx_2024_repeated_reductive_amination": {
+          "mean": 36.95746527777778,
+          "sample_sd": 2.1996956406006443,
+          "seeds": [
+            35.90494791666667,
+            39.48567708333333,
+            35.48177083333333
+          ]
+        },
+        "ugi_3cr_agile": {
+          "mean": 34.80902777777778,
+          "sample_sd": 7.0655519785922545,
+          "seeds": [
+            27.376302083333332,
+            41.43880208333333,
+            35.61197916666667
+          ]
+        }
+      }
+    },
+    "table2": {
+      "defog_unconditional": {
+        "distinct_exact_l1_per_1000": {
+          "mean": 280.5989583333333,
+          "sample_sd": 26.591286612512146,
+          "seeds": [
+            250.9765625,
+            288.4114583333333,
+            302.4088541666667
+          ]
+        },
+        "training_catalogue_component_novel_per_1000": {
+          "mean": 272.02690972222223,
+          "sample_sd": 24.429971668330317,
+          "seeds": [
+            244.46614583333334,
+            280.5989583333333,
+            291.015625
+          ]
+        }
+      },
+      "fact_generous": {
+        "distinct_exact_l1_per_1000": {
+          "mean": 288.3029513888889,
+          "sample_sd": 175.3062923322358,
+          "seeds": [
+            161.1328125,
+            488.28125,
+            215.49479166666666
+          ]
+        },
+        "training_catalogue_component_novel_per_1000": {
+          "mean": 287.76041666666663,
+          "sample_sd": 174.37801940321324,
+          "seeds": [
+            161.1328125,
+            486.6536458333333,
+            215.49479166666666
+          ]
+        }
+      },
+      "fact_matched": {
+        "distinct_exact_l1_per_1000": {
+          "mean": 50.78125,
+          "sample_sd": 14.422446560465966,
+          "seeds": [
+            48.828125,
+            66.08072916666667,
+            37.434895833333336
+          ]
+        },
+        "training_catalogue_component_novel_per_1000": {
+          "mean": 49.69618055555556,
+          "sample_sd": 13.04251666780965,
+          "seeds": [
+            48.828125,
+            63.151041666666664,
+            37.109375
+          ]
+        }
+      },
+      "finite_catalogue_oracle": {
+        "distinct_exact_l1_per_1000": {
+          "mean": 837.5651041666666,
+          "sample_sd": 8.21577439070571,
+          "seeds": [
+            841.4713541666666,
+            843.0989583333334,
+            828.125
+          ]
+        },
+        "training_catalogue_component_novel_per_1000": {
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "seeds": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "forge_transformer": {
+        "distinct_exact_l1_per_1000": {
+          "mean": 862.6302083333334,
+          "sample_sd": 19.21400333772621,
+          "seeds": [
+            872.3958333333334,
+            875.0,
+            840.4947916666666
+          ]
+        },
+        "training_catalogue_component_novel_per_1000": {
+          "mean": 839.1927083333334,
+          "sample_sd": 26.549412114718333,
+          "seeds": [
+            852.8645833333334,
+            856.1197916666666,
+            808.59375
+          ]
+        }
+      },
+      "genmol_safe": {
+        "distinct_exact_l1_per_1000": {
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "seeds": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "training_catalogue_component_novel_per_1000": {
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "seeds": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "learned_inventory_selector": {
+        "distinct_exact_l1_per_1000": {
+          "mean": 849.5008680555555,
+          "sample_sd": 13.677041021344385,
+          "seeds": [
+            862.9557291666666,
+            835.6119791666666,
+            849.9348958333334
+          ]
+        },
+        "training_catalogue_component_novel_per_1000": {
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "seeds": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "rgfn": {
+        "distinct_exact_l1_per_1000": {
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "seeds": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "training_catalogue_component_novel_per_1000": {
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "seeds": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "shared_three_program_null": {
+        "distinct_exact_l1_per_1000": {
+          "mean": 108.50694444444444,
+          "sample_sd": 9.658337157757662,
+          "seeds": [
+            109.70052083333333,
+            98.30729166666667,
+            117.51302083333333
+          ]
+        },
+        "training_catalogue_component_novel_per_1000": {
+          "mean": 108.3984375,
+          "sample_sd": 9.507214756842597,
+          "seeds": [
+            109.70052083333333,
+            98.30729166666667,
+            117.1875
+          ]
+        }
+      }
+    }
+  },
+  "checkpoint_check": {
+    "cache_fold_counts": {
+      "bl_2023_repeated_aza_michael": {
+        "calibration": 8000,
+        "heldout": 8000,
+        "train": 30000
+      },
+      "lx_2024_repeated_reductive_amination": {
+        "calibration": 8000,
+        "heldout": 8000,
+        "train": 30000
+      },
+      "ugi_3cr_agile": {
+        "calibration": 15800,
+        "heldout": 30122,
+        "train": 66464
+      }
+    },
+    "checkpoints": [
+      {
+        "seed_label": 0,
+        "sha256": "5da2ac426a11b5f56f7720d140feddf8a7bcee206a5f57f66873300cebcbbf66",
+        "strict_load": true
+      },
+      {
+        "seed_label": 1,
+        "sha256": "24d360e3d2eb06fb9e0b371c01bc1b8242b0014268d2af266dc5a29156338880",
+        "strict_load": true
+      },
+      {
+        "seed_label": 2,
+        "sha256": "849bb81d6f0c9606f310e109bb9c1d051801a30a2b6e2baf0bc7e43ad782ad7c",
+        "strict_load": true
+      }
+    ],
+    "scope": "CPU loading and state identity, not rerun generation or training"
+  },
+  "chemistry": {
+    "exact_replay_verified_rows": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "scope": "L1 structural consistency only"
+  },
+  "focused_tests_passed": 28,
+  "scope": "Local offline release validation, no training or production evaluation rerun",
+  "tampered_input_rejected": true
+}
