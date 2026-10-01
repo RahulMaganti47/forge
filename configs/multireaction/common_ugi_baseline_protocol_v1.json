@@ -1,0 +1,124 @@
+{
+  "schema_version": "forge.common_ugi_baseline_protocol.v1",
+  "benchmark_id": "phase1-common-ugi-generator-benchmark",
+  "scientific_question": "Under one component-disjoint Ugi split and one exact verifier, how do vocabulary-free whole-graph generation, reaction-space construction and finite-inventory selection trade exact-L1 yield against open-ended component discovery?",
+  "scope": {
+    "reaction_program": "ugi_3cr",
+    "constitutional_stereo_free": true,
+    "maximum_heavy_atoms": 194,
+    "maximum_closures": 3,
+    "training_folds": [
+      "train"
+    ],
+    "calibration_selects_checkpoint": false,
+    "heldout_selects_checkpoint_or_threshold": false
+  },
+  "inputs": {
+    "ugi_assignments": {
+      "path": "results/phase1/ugi_balanced_chemistry_corpus_v2/assignments.csv.gz",
+      "sha256": "9a50c703ed6aa919b251678c04b7a44e93b3233a12fc13b5d6697683bb5b5184"
+    },
+    "qualified_ugi_reactions": {
+      "path": "data/vendor/qualified_reactions_v1.json",
+      "sha256": "296bf06238ef22acc1f55117f5ce0adaee21b1bafaf5a83f89182b0f31cc4fcf"
+    },
+    "program_config": {
+      "path": "configs/multireaction/lnpdb_reaction_programs_v1.json",
+      "sha256": "a7aba87a63e3bcf34c61fa7951fbb7a77340641ed852993b4221d3b77072f021"
+    }
+  },
+  "randomness": {
+    "training_and_sampling_seeds": [
+      20260825,
+      20260826,
+      20260827
+    ],
+    "bootstrap_seed": 20260821,
+    "bootstrap_resamples": 10000,
+    "independent_unit": "training_seed",
+    "generated_molecules_are_independent_replicates": false
+  },
+  "sampling": {
+    "attempts_per_seed": 3072,
+    "attempt_denominator_includes_invalid_or_failed_generation": true,
+    "repair_or_retry_after_failed_attempt": false,
+    "candidate_selection": false,
+    "route_calls": 0,
+    "biological_oracle_calls": 0
+  },
+  "evaluation": {
+    "common_assessor_required": true,
+    "primary_metrics_per_1000_attempts": [
+      "valid_products",
+      "exact_l1_products",
+      "unique_exact_l1_products",
+      "open_ended_exact_l1_products",
+      "held_component_exact_l1_products"
+    ],
+    "secondary_metrics": [
+      "connectedness",
+      "decomposition_coverage",
+      "forward_replay_precision",
+      "abstention",
+      "ambiguity",
+      "whole_product_novelty",
+      "component_novelty",
+      "internal_diversity",
+      "effective_component_count"
+    ],
+    "forbidden_metrics": [
+      "reductive_amination_substructure_hit_rate"
+    ],
+    "coverage_and_precision_reported_separately": true,
+    "open_ended_definition": "valid connected product with exactly one verifier-returned exact-L1 decomposition and at least one recovered component constitution absent from the method-visible train catalogue"
+  },
+  "method_contract": {
+    "same_train_split": true,
+    "same_sampling_attempt_budget": true,
+    "same_seed_set": true,
+    "same_constitutional_identity_policy": true,
+    "same_exact_l1_assessor": true,
+    "published_original_dataset_numbers_allowed": false,
+    "native_method_failures_retained_in_attempt_denominator": true,
+    "finite_component_ceiling_reported_as_structural_zero_not_empirical_failure": true
+  },
+  "canonical_attempt_record": {
+    "schema_version": "forge.common_ugi_baseline_attempt.v1",
+    "required_fields": [
+      "method_id",
+      "seed",
+      "attempt_index",
+      "status",
+      "product_smiles",
+      "method_visible_component_ids",
+      "generator_calls",
+      "reaction_calls",
+      "route_calls",
+      "oracle_calls",
+      "wall_seconds"
+    ],
+    "allowed_status": [
+      "generated",
+      "invalid",
+      "failed"
+    ],
+    "failed_product_smiles": null
+  },
+  "methods": [
+    "rgfn",
+    "defog_unconditional",
+    "genmol_safe",
+    "finite_catalogue_oracle",
+    "learned_inventory_selector",
+    "shared_null_posthoc",
+    "fact_matched",
+    "fact_generous",
+    "forge_transformer"
+  ],
+  "nonclaims": [
+    "Exact L1 replay is transform consistency, not synthesis-success probability.",
+    "A finite reaction-space method may dominate exact-L1 yield while having zero component escape by construction.",
+    "A generic generator is not credited with a route unless the separately frozen common evidence assessor closes it.",
+    "No method output is a candidate source in this benchmark."
+  ]
+}

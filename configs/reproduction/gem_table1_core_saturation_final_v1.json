@@ -1,0 +1,18 @@
+{
+  "schema_version": "forge.gem_table1_final_evidence_config.v1",
+  "final_evaluations": [
+    {
+      "path": "runs/phase1-shared-bias-parallel-program-role-seed0-core-saturation-h100-v2/78f43e12b12db09f4bfac272e7d8c93954a11a5d71b9008921ea944fa97c04df/stages/evaluation/artifacts/result.json",
+      "sha256": "8431a7e7757e5de778926af0b37830644656bf6a0624e203bc1bf39cbef8e8e1"
+    },
+    {
+      "path": "runs/phase1-shared-bias-parallel-program-role-seed1-core-saturation-h100-v2/163577eaa14ad4a09cf87c61e4795dca47ac337c33a8ade5cfe166b18ff171c3/stages/evaluation/artifacts/result.json",
+      "sha256": "06cd2aeaedde97944d03ad12cd9ac5a7a06bf8f8b6faf34c271929b5e9322c0a"
+    },
+    {
+      "path": "runs/phase1-shared-bias-parallel-program-role-seed2-core-saturation-h100-v2/5aeb3827f3c50714f2cc4ea8025d0c97905d15b275acafde09c9ed100b12a3ef/stages/evaluation/artifacts/result.json",
+      "sha256": "5793086799eb2d736440461c8654146812fbd0e23bca1c3f3f2d19964a5dfedd"
+    }
+  ],
+  "candidate_selection": false
+}

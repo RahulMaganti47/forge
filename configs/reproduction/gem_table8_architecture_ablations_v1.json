@@ -1,0 +1,37 @@
+{
+  "schema_version": "forge.gem_table8_architecture_ablations_config.v1",
+  "status": "frozen_after_three_seed_core_saturation_evaluation",
+  "mechanism_seed_rows": {
+    "path": "results/phase1/transformer_mechanism_core_saturation_v1/seed_rows.jsonl",
+    "sha256": "39f129f295be29b89803fd4cf01f1f96904945ec0b3ce6eb52492bd7eeebf05f"
+  },
+  "mechanism_training_results": [
+    {
+      "path": "runs/phase1-transformer-mechanism-study/5f149b098c61a855dc1bf51b5ba1c3c31162d35fb5e84abeb174bde30a5eb54f/stages/study/artifacts/training/result.json",
+      "sha256": "878b655257241abf2d1823e5ea5e21be4d7f5f041aa88ef511ba5fe669961f56"
+    },
+    {
+      "path": "runs/phase1-transformer-mechanism-study/9f5633821b0234c367d7f1058703ba05034d2971c04ee45a7e9a26af83f311c1/stages/study/artifacts/training/result.json",
+      "sha256": "6c946471c2a8b39f881995679d46a2f9e46570d04bf0e0334893692c01b88a08"
+    },
+    {
+      "path": "runs/phase1-transformer-mechanism-study/3715b68bb7faaa8815ff575e07ff4c00f7983327322462ed8c2b463629172e46/stages/study/artifacts/training/result.json",
+      "sha256": "d59bf9fed863ed49bf22deaf55e441f09d9b268b8fbe46b2f175399ef2ba199a"
+    }
+  ],
+  "expected_seeds": [20260825, 20260826, 20260827],
+  "arm_order": [
+    "input_only_program",
+    "no_role_loss",
+    "no_core_loss",
+    "no_routed_adapters",
+    "no_gradient_conflict_control",
+    "fact_matched",
+    "fact_generous",
+    "full_transformer"
+  ],
+  "attempts_per_program_per_seed": 3072,
+  "optimizer_steps": 1700,
+  "effective_batch_size": 128,
+  "candidate_selection": false
+}

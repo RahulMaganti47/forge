@@ -1,0 +1,58 @@
+{
+  "schema_version": "phase1_ugi_continuous_novelty_matched_ranking_config.v1",
+  "status": "frozen_after_generation_and_confirmatory_null_before_novel_component_oracle_scoring",
+  "task": "Fresh matched evaluation of whether the decision-aligned high-potency morphology challenger enriches uncertainty-aware rankings among exact-new but continuously interpolative component patterns",
+  "endpoint": "expt_Hela",
+  "patterns": {
+    "amine_only": {
+      "unseen_roles": ["amine"],
+      "interpretation": "exact-new head with familiar aldehyde and isocyanide",
+      "claim_level": "exploratory_due_mixed_held_head_generalization"
+    },
+    "aldehyde_isocyanide_pair": {
+      "unseen_roles": ["aldehyde", "isocyanide"],
+      "interpretation": "familiar head with two exact-new continuously supported tail-bearing components",
+      "claim_level": "exploratory_until_simultaneous_held_component_or_prospective_confirmation"
+    }
+  },
+  "applicability": {
+    "exact_identity_is_not_an_automatic_veto": true,
+    "exact_l1_required": true,
+    "exact_measured_product_neutral": true,
+    "all_product_and_role_views_must_be_interpolative": true,
+    "unsupported_novelty_patterns_abstain": true,
+    "conservative_utility": "positive half of the pattern-specific LCB90 calibration ECDF"
+  },
+  "matched_design": {
+    "generator_calls_per_arm": 3072,
+    "oracle_budget": "for each novelty pattern, use the minimum eligible count across broad, support and potency arms",
+    "oracle_subset": "deterministic hash ordering independent of potency",
+    "common_draw_bootstrap_replicates": 10000,
+    "bootstrap_seed": 20261220
+  },
+  "decisions": {
+    "may_rank_for_exploratory_portfolio": true,
+    "may_override_oracle_abstention": false,
+    "potency_tilting_promoted_by_this_analysis": false,
+    "prospective_candidate_selection_authorized": false,
+    "new_component_absolute_potency_claim_authorized": false
+  },
+  "inputs": {
+    "matched_generation_result": {
+      "path": "results/phase1/ugi_high_potency_challenger_terminal_generation_v1/result.json",
+      "sha256": "e47ccb2c74f062bf3fa37f38d25df17deefd633ce38bd1b8e05207258a4cb606"
+    },
+    "matched_terminal_ledger": {
+      "path": "results/phase1/ugi_high_potency_challenger_terminal_generation_v1/terminal_ledger.jsonl.gz",
+      "sha256": "d3095af5bbacbc752c28390668cbb3ffe1e841a0d73f0db3a76de6cccd0df3e2"
+    },
+    "hela_diagnostic_policy": {
+      "path": "configs/bio/phase1_ugi_hela_potency_diagnostic_authorization_v1.json",
+      "sha256": "ffcc3f0c22ca46ad603950873f5e5eef262a3141af419b546d36c79c4f6ec26b"
+    },
+    "confirmatory_result": {
+      "path": "results/phase1/ugi_morphology_potency_matched_v1/result.json",
+      "sha256": "00d31aa474cabc0ffef225410d8bdd6e7cc00b8869e740f77bc3286c4755f3ca"
+    }
+  }
+}

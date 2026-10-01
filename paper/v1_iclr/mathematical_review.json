@@ -1,0 +1,242 @@
+{
+  "table_source": "configs/reproduction/gem_table1_core_saturation_final_v1.json",
+  "runs": [
+    {
+      "result_path": "runs/phase1-shared-bias-parallel-program-role-seed0-core-saturation-h100-v2/78f43e12b12db09f4bfac272e7d8c93954a11a5d71b9008921ea944fa97c04df/stages/evaluation/artifacts/result.json",
+      "result_hash_matches": true,
+      "run_source_sha256": "3e364c01e8a8f792c8fdfef58524ca714562c9cbed4aac225d39d41a8ebad052",
+      "terminal_decode_policy": "strict_reaction_core_saturation_argmax",
+      "pins": {
+        "training_result": {
+          "path": "results/phase1/shared_bias_parallel_program_role_seed0_v2/training_result.json",
+          "expected_sha256": "44fab52d5427f654d2a24e395b77c00d2d8c7122f5ed67b51cbcc8675f870485",
+          "matches": true
+        },
+        "production_design": {
+          "path": "results/phase1/shared_bias_parallel_program_role_seed0_v2/study_design.json",
+          "expected_sha256": "d0f206f52ae708e5ffa1e3150a5c8f1513db35d4c5d912160e89e907b7aaefbd",
+          "matches": true
+        },
+        "checkpoint_archive": {
+          "path": "results/phase1/shared_bias_parallel_program_role_seed0_v2/checkpoints.tar",
+          "expected_sha256": "10d77b9d8e947d40fe2aaa91ecd68448ff068e08339cecd4c47d862e96e39142",
+          "matches": true
+        }
+      },
+      "training_arms": {
+        "shared_bias_program_role_source": {
+          "candidate_source": false,
+          "conditioning": "program",
+          "evaluation_programs": [
+            "bl_2023_repeated_aza_michael",
+            "lx_2024_repeated_reductive_amination",
+            "ugi_3cr_agile"
+          ],
+          "model_overrides": {
+            "maximum_children": 3,
+            "program_routed_output_heads": true,
+            "repeat_group_conditioning": true,
+            "role_morphology_conditioning": true,
+            "semantic_objective": {
+              "chemistry_loss_balancing": "equal_present_role_mass",
+              "junction_consistency_weight": 0.5,
+              "offspring_weight": 1.0,
+              "repeat_consistency_weight": 0.25,
+              "topology_conditioned_chemistry_weight": 1.0
+            },
+            "source_marginal_mode": "program_role_full_support"
+          },
+          "program_mass": {
+            "bl_2023_repeated_aza_michael": 0.3333333333333333,
+            "lx_2024_repeated_reductive_amination": 0.3333333333333333,
+            "ugi_3cr_agile": 0.3333333333333333
+          },
+          "role": "end_to_end_intervention",
+          "source_marginal_mode": "program_role_full_support"
+        }
+      }
+    },
+    {
+      "result_path": "runs/phase1-shared-bias-parallel-program-role-seed1-core-saturation-h100-v2/163577eaa14ad4a09cf87c61e4795dca47ac337c33a8ade5cfe166b18ff171c3/stages/evaluation/artifacts/result.json",
+      "result_hash_matches": true,
+      "run_source_sha256": "8050c5ac500fd64bf6e3252cc537d3fb16f9d6ef8d06044fdb272618d4591e03",
+      "terminal_decode_policy": "strict_reaction_core_saturation_argmax",
+      "pins": {
+        "training_result": {
+          "path": "results/phase1/shared_bias_parallel_program_role_seed1_v2/training_result.json",
+          "expected_sha256": "baa32c6551c6098917c49c2910ac4067300430483bd05d5c3e36eb64a410701e",
+          "matches": true
+        },
+        "production_design": {
+          "path": "results/phase1/shared_bias_parallel_program_role_seed1_v2/study_design.json",
+          "expected_sha256": "d0f206f52ae708e5ffa1e3150a5c8f1513db35d4c5d912160e89e907b7aaefbd",
+          "matches": true
+        },
+        "checkpoint_archive": {
+          "path": "results/phase1/shared_bias_parallel_program_role_seed1_v2/checkpoints.tar",
+          "expected_sha256": "a3e1e15cb6d55e6a0bc8d161a0061762ef6190c22c957fd957493bbe3860d55d",
+          "matches": true
+        }
+      },
+      "training_arms": {
+        "shared_bias_program_role_source": {
+          "candidate_source": false,
+          "conditioning": "program",
+          "evaluation_programs": [
+            "bl_2023_repeated_aza_michael",
+            "lx_2024_repeated_reductive_amination",
+            "ugi_3cr_agile"
+          ],
+          "model_overrides": {
+            "maximum_children": 3,
+            "program_routed_output_heads": true,
+            "repeat_group_conditioning": true,
+            "role_morphology_conditioning": true,
+            "semantic_objective": {
+              "chemistry_loss_balancing": "equal_present_role_mass",
+              "junction_consistency_weight": 0.5,
+              "offspring_weight": 1.0,
+              "repeat_consistency_weight": 0.25,
+              "topology_conditioned_chemistry_weight": 1.0
+            },
+            "source_marginal_mode": "program_role_full_support"
+          },
+          "program_mass": {
+            "bl_2023_repeated_aza_michael": 0.3333333333333333,
+            "lx_2024_repeated_reductive_amination": 0.3333333333333333,
+            "ugi_3cr_agile": 0.3333333333333333
+          },
+          "role": "end_to_end_intervention",
+          "source_marginal_mode": "program_role_full_support"
+        }
+      }
+    },
+    {
+      "result_path": "runs/phase1-shared-bias-parallel-program-role-seed2-core-saturation-h100-v2/5aeb3827f3c50714f2cc4ea8025d0c97905d15b275acafde09c9ed100b12a3ef/stages/evaluation/artifacts/result.json",
+      "result_hash_matches": true,
+      "run_source_sha256": "8050c5ac500fd64bf6e3252cc537d3fb16f9d6ef8d06044fdb272618d4591e03",
+      "terminal_decode_policy": "strict_reaction_core_saturation_argmax",
+      "pins": {
+        "training_result": {
+          "path": "results/phase1/shared_bias_parallel_program_role_seed2_v2/training_result.json",
+          "expected_sha256": "95cfdd98b1aef89a4ac370947487016b3c3b342cd07e05f62db478a6e27ec7de",
+          "matches": true
+        },
+        "production_design": {
+          "path": "results/phase1/shared_bias_parallel_program_role_seed2_v2/study_design.json",
+          "expected_sha256": "d0f206f52ae708e5ffa1e3150a5c8f1513db35d4c5d912160e89e907b7aaefbd",
+          "matches": true
+        },
+        "checkpoint_archive": {
+          "path": "results/phase1/shared_bias_parallel_program_role_seed2_v2/checkpoints.tar",
+          "expected_sha256": "f500418e7cdfe6aa59b5d1261cb68c7ff715fa1a0e06498334eb727185f74506",
+          "matches": true
+        }
+      },
+      "training_arms": {
+        "shared_bias_program_role_source": {
+          "candidate_source": false,
+          "conditioning": "program",
+          "evaluation_programs": [
+            "bl_2023_repeated_aza_michael",
+            "lx_2024_repeated_reductive_amination",
+            "ugi_3cr_agile"
+          ],
+          "model_overrides": {
+            "maximum_children": 3,
+            "program_routed_output_heads": true,
+            "repeat_group_conditioning": true,
+            "role_morphology_conditioning": true,
+            "semantic_objective": {
+              "chemistry_loss_balancing": "equal_present_role_mass",
+              "junction_consistency_weight": 0.5,
+              "offspring_weight": 1.0,
+              "repeat_consistency_weight": 0.25,
+              "topology_conditioned_chemistry_weight": 1.0
+            },
+            "source_marginal_mode": "program_role_full_support"
+          },
+          "program_mass": {
+            "bl_2023_repeated_aza_michael": 0.3333333333333333,
+            "lx_2024_repeated_reductive_amination": 0.3333333333333333,
+            "ugi_3cr_agile": 0.3333333333333333
+          },
+          "role": "end_to_end_intervention",
+          "source_marginal_mode": "program_role_full_support"
+        }
+      }
+    }
+  ],
+  "matched_snapshot": {
+    "commit": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+    "source_sha256": "3e364c01e8a8f792c8fdfef58524ca714562c9cbed4aac225d39d41a8ebad052",
+    "files": {
+      "forge/flow/rstar.py": "6f4f5762215b4fe04ac4f8c59e0f2a802b71eccf7e698893cc6df60a7c2ee50c",
+      "forge/model/sparse_topology_feasibility.py": "c696a82a7027e77ad6b5503aaad26e66dd46615be04537c4f52fce5c5db7326b",
+      "forge/model/reaction_program_flow.py": "8102b41fbf8286a2f01d66bbd0558b32e700fd55ac9344fa89811af0c2ef1cac",
+      "forge/model/synthesis_program_sampling.py": "529e5095e5a8d9c42f61134e6993cda855a60848fee18237f872a420e28a5e9f",
+      "forge/model/reaction_program_transformer.py": "ff81e0a3a10b6520289dfbb8bbe9b13e68537449ec5ec0599d5105344f8bb898",
+      "forge/model/synthesis_program_layout.py": "8f36627bd3f975520bc993243bff53697ef6fc5bf47d21a713f8918dd512660d",
+      "experiments/phase1/multireaction/production_training.py": "9b4a1f00bbae5dac75225ff51c9a54a33f6f64a7040a4eb16305f81a4a81e0b5",
+      "forge/model/reaction_program_evaluation.py": "b57b0ac8f46a3b16364868bd44fffe6aef83834b8154dd8c5021d2d1579d0c28",
+      "forge/model/common_ugi_benchmark.py": "f08d099a9a11afe9b95c637b06da47d0307a233f586234043c77d9dd5fd7b0eb",
+      "forge/assembly/ugi3.py": "6970e0a345477aca64a1861dad9d46ab5cb519892032f0cdeda42cd6a4d6d1a4",
+      "forge/assembly/api.py": "bb77b94c91ee0bbba62ff9a83a1d3d31a4d280bf13b8a508537817b19d7efa60"
+    }
+  },
+  "limitations": [
+    "Seed 1 and 2 evaluation source fingerprint 8050c5ac... has no exact match among 36 retained commits dated Aug 25-Sep 2.",
+    "Training results and study designs are hash-pinned by evaluation manifests; no full training source manifest has yet been located.",
+    "Historical source from exact seed-0 evaluation snapshot and hash-verified per-seed settings govern corrections; current source is not accepted as historical proof."
+  ],
+  "reviewed_at": "2026-09-24T23:14:25.105976+00:00",
+  "manuscript_source_sha256": "92b3a6ffb42fb5843864f11870af51521959f263f51498d91771ec025b73f8e7",
+  "mathematical_review": {
+    "scope": "Informal proof and implementation-correspondence review, not machine-checked formal verification. No training or production evaluation rerun.",
+    "central_guarantee": "Exact reference-population CTMC marginals converge to the encoded training law as t approaches 1 from below; this is not a guarantee for the trained model or terminal readout.",
+    "dependencies": [
+      "bounded graph support and well-formed serialization",
+      "registered-chemistry forward preimages and recovered witnesses",
+      "reference loss posterior minimization",
+      "conditional coordinate flux, product path, and marginal forward equation",
+      "finite-time uniqueness and terminal limit of marginal laws",
+      "decoder contraction after terminal readout",
+      "independent attempt counts and conditional acceptance law",
+      "bounded route termination and explicit dossier admission invariant"
+    ],
+    "boundary_cases_reviewed": [
+      "single-vertex graphs and zero closure edges",
+      "empty catalogue and zero registered outcomes",
+      "singleton alphabets and no variable coordinates",
+      "time 0 and the singular limit at 1",
+      "zero denominators in empirical metrics",
+      "zero attempt budget and acceptance probabilities 0 and 1",
+      "ambiguous assembly roots",
+      "finite route depth and empty products in the completion predicate"
+    ]
+  },
+  "presentation_only_revision": {
+    "reviewed_source_sha256": "fe0458b4af80c42805780872274c43d3ee8b4eb99854a2a1587a0a81346f9d6f",
+    "changes": "Figure 1 centering; two-column Figure 2; Figure 3 spacing, bar colors, scale and MC3 reference line; monochrome molecular drawings and schemes; atlas precursor panels. No formal statements or proofs changed. Algorithm 1 uses a ruled caption and block with the existing numbered body unchanged."
+  },
+  "editorial_disclosure_revision": {
+    "scope": "AI-use, ethics and reproducibility statements; historical artifact-provenance subsection. Formal statements, proofs, algorithm and empirical macros unchanged.",
+    "prior_manuscript_sha256": "9414d1990468c830f7fd22ca83297279ca4b3e209c7f0994f8661f92da324a1c"
+  },
+  "page_budget_revision": {
+    "prior_manuscript_sha256": "3c225db54fdc4b92df9386cccbe3f5d84bda02a3a240667ded3ff98459e10958",
+    "scope": "Editorial compression and relocation of supporting material; all formal statements, proofs and algorithm steps unchanged.",
+    "formal_environment_counts": {
+      "algorithmic": 1,
+      "theorem": 2,
+      "lemma": 2,
+      "proposition": 4,
+      "corollary": 2,
+      "definition": 3,
+      "assumption": 0,
+      "invariant": 1,
+      "proof": 10
+    },
+    "review_type": "Preservation and consistency checks; no new scientific or implementation validation."
+  }
+}

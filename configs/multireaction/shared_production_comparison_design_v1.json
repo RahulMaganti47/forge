@@ -1,0 +1,250 @@
+{
+  "schema_version": "forge.synthesis_program_production_design_config.v1",
+  "seed": 20260825,
+  "inputs": {
+    "representation_config": {
+      "path": "configs/multireaction/shared_synthesis_program_representation_v1.json",
+      "sha256": "7ec8238aad7d5437baa2f8b8ebdc7b22ce48bbe48aff1982a242bf8423323886"
+    },
+    "representation_result": {
+      "path": "results/phase1/shared_synthesis_program_representation_v1/result.json",
+      "sha256": "487c7382af3a18099505aa1e01b981b2b9b9c7b191e0cd7a36b79ad5c318bb88"
+    },
+    "integration_qualification": {
+      "path": "results/phase1/shared_synthesis_program_training_integration_v1/qualification/result.json",
+      "sha256": "ecfd968181e3729843d4ccac6f3a7d046dc8475ff23e5ead49fbe2193c74cad1"
+    },
+    "atom_vocabulary": {
+      "path": "results/phase1/product_v3_atom_vocabulary.json",
+      "sha256": "90ab7430354a9ffd91cfd6e19f2a125020a6547c67cd462a11f77074fd2a0cc5"
+    },
+    "ugi_assignments": {
+      "path": "results/phase1/ugi_balanced_chemistry_corpus_v2/assignments.csv.gz",
+      "sha256": "9a50c703ed6aa919b251678c04b7a44e93b3233a12fc13b5d6697683bb5b5184"
+    },
+    "ugi_corpus_result": {
+      "path": "results/phase1/ugi_balanced_chemistry_corpus_v2/result.json",
+      "sha256": "1b655ce6389f50c7310a21a287997793c592ca93de064d53bafacaee24f663a6"
+    },
+    "multireaction_splits": {
+      "path": "results/phase1/multireaction_program_corpus_v1/component_disjoint_splits.csv.gz",
+      "sha256": "31e1157895c67644073e45d064563daa2cdeecdadba8c7fc21a42facd4214923"
+    },
+    "multireaction_corpus_result": {
+      "path": "results/phase1/multireaction_program_corpus_v1/result.json",
+      "sha256": "df6f06fc1a4f9239ee24cbd46e0de8805a5e5063e3e9087379182868695e401d"
+    }
+  },
+  "programs": {
+    "ugi_3cr_agile": {
+      "source": "ugi_assignments",
+      "record_id_field": "product_id",
+      "fold_field": "primary_product_fold",
+      "weight_field": "family_balance_weight_raw",
+      "expected_fold_counts": {
+        "train": 66464,
+        "calibration": 15800,
+        "heldout": 30122
+      },
+      "evidence_role": "deep_primary"
+    },
+    "bl_2023_repeated_aza_michael": {
+      "source": "multireaction_splits",
+      "record_id_field": "record_id",
+      "fold_field": "product_fold",
+      "weight_field": "source_balanced_weight",
+      "expected_fold_counts": {
+        "train": 258,
+        "calibration": 158,
+        "heldout": 194
+      },
+      "evidence_role": "full_computational_second_family"
+    },
+    "lx_2024_repeated_reductive_amination": {
+      "source": "multireaction_splits",
+      "record_id_field": "record_id",
+      "fold_field": "product_fold",
+      "weight_field": "source_balanced_weight",
+      "expected_fold_counts": {
+        "train": 70,
+        "calibration": 38,
+        "heldout": 46
+      },
+      "evidence_role": "light_computational_stress_test"
+    }
+  },
+  "model": {
+    "architecture": "reaction_program_sparse_whole_lipid_flow",
+    "hidden_dim": 192,
+    "layers": 4,
+    "dropout": 0.15,
+    "bond_classes": 4,
+    "maximum_heavy_atoms": 194,
+    "maximum_closures": 3,
+    "source_probability_floor": 0.00001,
+    "component_ids_enter_neural_tensors": false,
+    "fragment_tokens_enter_neural_tensors": false
+  },
+  "training": {
+    "replicate_seeds": [20260825, 20260826, 20260827],
+    "folds": ["train"],
+    "optimizer": "adamw",
+    "optimizer_steps": 1700,
+    "micro_batch_size": 32,
+    "gradient_accumulation_steps": 4,
+    "effective_batch_size": 128,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.00005,
+    "gradient_clip_norm": 1.0,
+    "precision": "float32",
+    "deterministic_algorithms": true,
+    "early_stopping": false,
+    "checkpoint_steps": [100, 500, 1000, 1500, 1700],
+    "checkpoint_selection": "fixed_final_step",
+    "source_marginal_policy": "shared_three_program_training_mixture_for_every_arm",
+    "arms": {
+      "ugi_only_conditioned": {
+        "role": "primary_baseline",
+        "conditioning": "program",
+        "program_mass": {
+          "ugi_3cr_agile": 1.0,
+          "bl_2023_repeated_aza_michael": 0.0,
+          "lx_2024_repeated_reductive_amination": 0.0
+        },
+        "candidate_source": false
+      },
+      "shared_three_program_conditioned": {
+        "role": "primary_challenger",
+        "conditioning": "program",
+        "program_mass": {
+          "ugi_3cr_agile": 0.3333333333333333,
+          "bl_2023_repeated_aza_michael": 0.3333333333333333,
+          "lx_2024_repeated_reductive_amination": 0.3333333333333333
+        },
+        "candidate_source": false
+      },
+      "shared_three_program_null": {
+        "role": "nonselecting_control",
+        "conditioning": "null_all_program_coordinates",
+        "program_mass": {
+          "ugi_3cr_agile": 0.3333333333333333,
+          "bl_2023_repeated_aza_michael": 0.3333333333333333,
+          "lx_2024_repeated_reductive_amination": 0.3333333333333333
+        },
+        "candidate_source": false
+      },
+      "shared_three_program_program_id_cyclic": {
+        "role": "nonselecting_control",
+        "conditioning": "cyclic_program_id_only_roles_core_and_depth_retained",
+        "program_id_mapping": {
+          "ugi_3cr_agile": "bl_2023_repeated_aza_michael",
+          "bl_2023_repeated_aza_michael": "lx_2024_repeated_reductive_amination",
+          "lx_2024_repeated_reductive_amination": "ugi_3cr_agile"
+        },
+        "program_mass": {
+          "ugi_3cr_agile": 0.3333333333333333,
+          "bl_2023_repeated_aza_michael": 0.3333333333333333,
+          "lx_2024_repeated_reductive_amination": 0.3333333333333333
+        },
+        "candidate_source": false
+      }
+    }
+  },
+  "execution": {
+    "backend": "modal",
+    "device": "cuda",
+    "gpu_type": "L4",
+    "gpu_count": 1,
+    "cpu_threads": 4,
+    "workers": 4,
+    "memory_mb": 32768,
+    "production_launch_authorized": false
+  },
+  "evaluation": {
+    "native_sampling": {
+      "layout_source": "training_fold_factorized_count_only_program_prior",
+      "flow_steps": 32,
+      "repairs_or_retries": false,
+      "calibration_samples_per_supported_program_per_checkpoint_per_seed": 512,
+      "heldout_samples_per_supported_program_at_final_checkpoint_per_seed": 3072
+    },
+    "checkpoint_policy": {
+      "selection_fold": "none_fixed_final_step",
+      "calibration_is_diagnostic_only": true,
+      "heldout_selects_model_or_threshold": false,
+      "render_random_and_worst_case_molecules": true
+    },
+    "per_family_metrics": [
+      "raw_valid_fraction",
+      "connected_fraction",
+      "exact_l1_decomposition_coverage",
+      "exact_forward_replay_precision",
+      "decomposition_abstention_fraction",
+      "decomposition_ambiguity_fraction",
+      "internal_diversity",
+      "unique_fraction",
+      "effective_component_count",
+      "component_novelty_fraction",
+      "whole_lipid_novelty_fraction",
+      "fixed_state_failures",
+      "support_overflow_count"
+    ],
+    "component_disjoint_metrics": [
+      "fixed_noise_exact_tensor_fraction",
+      "exact_l1_decomposition_coverage",
+      "exact_forward_replay_precision"
+    ],
+    "held_reaction_family": {
+      "reported": true,
+      "hard_gate": false,
+      "status": "secondary_robustness_stress_test"
+    },
+    "forbidden_metrics": ["reductive_amination_substructure_hit_rate"],
+    "route_calls": 0,
+    "oracle_calls": 0,
+    "candidate_selection": false
+  },
+  "ugi_retention": {
+    "baseline_arm": "ugi_only_conditioned",
+    "challenger_arm": "shared_three_program_conditioned",
+    "decision_rule": {
+      "method": "paired_seed_hierarchical_bootstrap",
+      "confidence_level": 0.95,
+      "resamples": 10000,
+      "seed": 20260828,
+      "pass_rule": "point_estimate_and_one_sided_upper_confidence_bound_within_margin"
+    },
+    "relative_noninferiority_gates": {
+      "raw_valid_fraction": {"maximum_absolute_drop": 0.02},
+      "connected_fraction": {"maximum_absolute_drop": 0.01},
+      "exact_l1_decomposition_coverage": {"maximum_absolute_drop": 0.03},
+      "exact_forward_replay_precision": {
+        "maximum_absolute_drop": 0.01,
+        "minimum_absolute_value": 0.95
+      },
+      "internal_diversity": {"maximum_absolute_drop": 0.05},
+      "effective_component_count": {"minimum_ratio": 0.8},
+      "component_novelty_fraction": {"maximum_absolute_drop": 0.05},
+      "held_component_exact_l1_decomposition_coverage": {
+        "maximum_absolute_drop": 0.05
+      }
+    },
+    "absolute_gates": {
+      "fixed_state_failures": {"maximum": 0},
+      "support_overflow_count": {"maximum": 0}
+    }
+  },
+  "decision": {
+    "design_scope": "Freeze a matched production-qualification comparison without launching training or sampling.",
+    "primary_comparison": "ugi_only_conditioned_vs_shared_three_program_conditioned",
+    "controls_are_nonselecting": true,
+    "production_training_authorized": false,
+    "next_authority_required": "explicit_user_authorization_after_review_of_this_frozen_design"
+  },
+  "nonclaims": [
+    "This design receipt is not a production training result or production launch authorization.",
+    "Auxiliary-family exact replay is transform consistency, not synthesis-success probability or route certification.",
+    "BL and LX are computational extensions and do not inherit Ugi prospective or biological validation.",
+    "The held-reaction-family analysis is a secondary stress test and is not a hard pass/fail gate."
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": "forge.gem_table1_complete_config.v1",
+  "final_evidence_config": {
+    "path": "configs/reproduction/gem_table1_core_saturation_final_v1.json",
+    "sha256": "3b648226df1f904ec4d6745d1c3a8a9c9088af5e656c55740e4be713490f4f63"
+  },
+  "control_evaluations": {
+    "shared_null": [
+      {
+        "path": "runs/phase1-shared-bias-shared-null-core-saturation-h100/a17790ab1dd92566bf4fb0802301ba372b57cbb773e2ea3132ea7c3f71fdc513/stages/production/artifacts/evaluation/result.json",
+        "sha256": "4292f50a4dc64a6ab246eeb5c5c8567b7b07f85fcfc41e638771369a6f64c209"
+      },
+      {
+        "path": "runs/phase1-shared-bias-shared-null-core-saturation-h100/6c4d067206a91f4a11ac75509b27346422aeee78421aa968ee91b28a52351169/stages/production/artifacts/evaluation/result.json",
+        "sha256": "a5470806c97aef5f37013ece5cef9e8c992f81a9f5dc9dfbc0f588bd8c75321a"
+      },
+      {
+        "path": "runs/phase1-shared-bias-shared-null-core-saturation-h100/8e373479710297630cf16b1687a96eed6a2645dae79f88b854ffdce703c29331/stages/production/artifacts/evaluation/result.json",
+        "sha256": "7a9bb5cf80be2079a479f53efc5166be6ab7da7b4f6e0c063f89561ef51c58ea"
+      }
+    ],
+    "cyclic_program": [
+      {
+        "path": "runs/phase1-shared-bias-cyclic-core-saturation-h100/374a2e47c5d53bef8e855fd7852ce489f09719e86cbf52198e8e05f214fcd6fe/stages/production/artifacts/evaluation/result.json",
+        "sha256": "18c7beab6d85b8fc6d8fc830061e69e74b20a728aea490ccfb7bde3326f9b7c5"
+      },
+      {
+        "path": "runs/phase1-shared-bias-cyclic-core-saturation-h100/60b828956edcddfa8bea0ee8392710d1bfb9868c58bd24cafc084029d855aba4/stages/production/artifacts/evaluation/result.json",
+        "sha256": "79d083d2577b93b41c714f7b50d22b6e9d254ac3a1b8c1b0efeeb827b84ca283"
+      },
+      {
+        "path": "runs/phase1-shared-bias-cyclic-core-saturation-h100/cc58972834ae863b97de8649e2b412d4bd3218ae21f52a85fad84f5ddfc6b29a/stages/production/artifacts/evaluation/result.json",
+        "sha256": "094a04ad3ae401518c711160faafd2a1c5d6e5b562a2d45153c8a7c7c8d3cae7"
+      }
+    ]
+  },
+  "expected_seeds": [20260825, 20260826, 20260827],
+  "candidate_selection": false
+}

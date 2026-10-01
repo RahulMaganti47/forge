@@ -1,0 +1,15 @@
+{
+  "schema_version": "forge.gem_table9_catalogue_comparison_config.v1",
+  "status": "frozen_after_final_model_evaluations",
+  "final_evidence_config": {
+    "path": "configs/reproduction/gem_table1_core_saturation_final_v1.json",
+    "sha256": "3b648226df1f904ec4d6745d1c3a8a9c9088af5e656c55740e4be713490f4f63"
+  },
+  "catalogue_adjudication": {
+    "path": "results/phase1/final_bl_core_production_adjudication_v1/result.json",
+    "sha256": "80bee35bdb6a583b0bf722ceb96e8dc2d761ada85e5775b41a8963551d3f1e7a"
+  },
+  "attempts_per_program_per_seed": 3072,
+  "expected_seeds": [20260825, 20260826, 20260827],
+  "candidate_selection": false
+}

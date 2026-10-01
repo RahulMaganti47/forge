@@ -1,0 +1,18 @@
+{
+  "date": "2026-09-26",
+  "operation": "Add the supplied anonymous repository link to the reproducibility statement",
+  "url": "https://anonymous.4open.science/r/forge-iclr-review-FBF8/",
+  "public_file_listing_verified": true,
+  "main_tex_before_sha256": "a8efb6c79311a7e6709edd303ca3639516588fe80e960abb8d9f9d936eeb485c",
+  "main_tex_after_sha256": "36aba6ea556cc6b62a436d3b2df48d79e39813773f549592df053a163f78fafa",
+  "pdf_sha256": "7ea7cf2e51922e5e58cd6659dc183409e465ede2eb1586fc8d0ec39935c4fd53",
+  "pages": 35,
+  "hyperlink_target_verified": true,
+  "visually_reviewed_pages": [
+    10,
+    11
+  ],
+  "unresolved_references_or_citations": 0,
+  "overfull_boxes": 0,
+  "scope": "One paragraph added to the reproducibility statement; all existing prose preserved."
+}

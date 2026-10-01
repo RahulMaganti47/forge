@@ -1,0 +1,518 @@
+{
+  "schema_version": "forge.paper_model_bundle.v1",
+  "version": "paper-model-v1",
+  "workspace": "kosha-labs",
+  "environment": "main",
+  "volume": "forge-paper-artifacts",
+  "prefix": "/paper-model-v1",
+  "reference_manifest_sha256": "d64bb8691776b213e03cd8086248257b2d7f19baa0900c1ca3d8a664bcb28e80",
+  "reference_pr_commit": "2568f091ae530fa50dab24bdd5d15b231f6e1da0",
+  "repository_head": "413767a3a12df3392ebb9492522bf8f2dab68085",
+  "scope": "Three historical paper model seeds, direct generation dependencies and all 72 indexed historical evidence inputs. Not a complete recursive training reproduction or qualification of current inference code.",
+  "files": [
+    {
+      "repo_path": "configs/multireaction/lnpdb_reaction_programs_v1.json",
+      "bundle_path": "shared-inputs/configs/multireaction/lnpdb_reaction_programs_v1.json",
+      "bytes": 4020,
+      "sha256": "a7aba87a63e3bcf34c61fa7951fbb7a77340641ed852993b4221d3b77072f021"
+    },
+    {
+      "repo_path": "configs/multireaction/shared_bias_parallel_program_role_seed0_core_saturation_v2.json",
+      "bundle_path": "shared-inputs/configs/multireaction/shared_bias_parallel_program_role_seed0_core_saturation_v2.json",
+      "bytes": 2336,
+      "sha256": "4ccd6c859dcd126508b38fa1c61eb6e7c20572755009d5f5846e4b0e028bb074"
+    },
+    {
+      "repo_path": "configs/multireaction/shared_bias_parallel_program_role_seed1_core_saturation_v2.json",
+      "bundle_path": "shared-inputs/configs/multireaction/shared_bias_parallel_program_role_seed1_core_saturation_v2.json",
+      "bytes": 2336,
+      "sha256": "dd5e2f3cbd685e7d397982ba5708f5d3b525b0651820dad1dbb9462dca551c15"
+    },
+    {
+      "repo_path": "configs/multireaction/shared_bias_parallel_program_role_seed2_core_saturation_v2.json",
+      "bundle_path": "shared-inputs/configs/multireaction/shared_bias_parallel_program_role_seed2_core_saturation_v2.json",
+      "bytes": 2336,
+      "sha256": "aaf1af77ee45598bf3922212be76bcd82b0defe1012a5c66b1bd1b1d9055bd29"
+    },
+    {
+      "repo_path": "configs/reproduction/gem_table1_core_saturation_final_v1.json",
+      "bundle_path": "evaluation-inputs/configs/reproduction/gem_table1_core_saturation_final_v1.json",
+      "bytes": 1011,
+      "sha256": "3b648226df1f904ec4d6745d1c3a8a9c9088af5e656c55740e4be713490f4f63"
+    },
+    {
+      "repo_path": "data/vendor/qualified_reaction_families_v1.json",
+      "bundle_path": "shared-inputs/data/vendor/qualified_reaction_families_v1.json",
+      "bytes": 31686,
+      "sha256": "961dea191bbf6c8d169aab09f6aee18082e51696e4056fc4dc9f6fc97ff82587"
+    },
+    {
+      "repo_path": "data/vendor/qualified_reactions_v1.json",
+      "bundle_path": "shared-inputs/data/vendor/qualified_reactions_v1.json",
+      "bytes": 5116,
+      "sha256": "296bf06238ef22acc1f55117f5ce0adaee21b1bafaf5a83f89182b0f31cc4fcf"
+    },
+    {
+      "repo_path": "paper/v1_iclr/mathematical_review.json",
+      "bundle_path": "shared-inputs/paper/v1_iclr/mathematical_review.json",
+      "bytes": 12464,
+      "sha256": "66c3d1e598b5080889fa99c2fa208d38cf057a9fd596872d64927c62183f653c"
+    },
+    {
+      "repo_path": "results/phase1/bl_lx_mixed_repeat_expansion_v2/component_family_splits.csv.gz",
+      "bundle_path": "shared-inputs/results/phase1/bl_lx_mixed_repeat_expansion_v2/component_family_splits.csv.gz",
+      "bytes": 3418046,
+      "sha256": "6c9f6a3d8d0668763a7f057a53f8782884f001f999303ce01dc68b9f28d42c8c"
+    },
+    {
+      "repo_path": "results/phase1/bl_lx_mixed_repeat_expansion_v2/reaction_program_atlas.csv.gz",
+      "bundle_path": "shared-inputs/results/phase1/bl_lx_mixed_repeat_expansion_v2/reaction_program_atlas.csv.gz",
+      "bytes": 2674081,
+      "sha256": "6b5021e986e9e514ccca74dc6b6b0ccfef6dd2e9c40f209aedf6f64bb516e5c2"
+    },
+    {
+      "repo_path": "results/phase1/common_lipid_realism_core_saturation_v1/final_aggregate/result.json",
+      "bundle_path": "evaluation-inputs/results/phase1/common_lipid_realism_core_saturation_v1/final_aggregate/result.json",
+      "bytes": 22320,
+      "sha256": "f5ca71c234480582f6e39e780e47567b0d48585d919f6dcafebed5bdd10f72d4"
+    },
+    {
+      "repo_path": "results/phase1/common_ugi_method_blind_route_adjudication_core_saturation_v2/result.json",
+      "bundle_path": "evaluation-inputs/results/phase1/common_ugi_method_blind_route_adjudication_core_saturation_v2/result.json",
+      "bytes": 47912,
+      "sha256": "a11e51611b3e9ba51dd16aef7f56f2e1adabde36945fe259248e2d5097ef23bf"
+    },
+    {
+      "repo_path": "results/phase1/common_ugi_method_blind_route_evidence_core_saturation_v2/result.json",
+      "bundle_path": "evaluation-inputs/results/phase1/common_ugi_method_blind_route_evidence_core_saturation_v2/result.json",
+      "bytes": 2264,
+      "sha256": "f829cb6a1da7d5c1bb83fca10aadf07b54fd171c8992ff3682e011f981c2c65b"
+    },
+    {
+      "repo_path": "results/phase1/fact_generous_common_assessment_seed0_v1/result.json",
+      "bundle_path": "evaluation-inputs/results/phase1/fact_generous_common_assessment_seed0_v1/result.json",
+      "bytes": 7146,
+      "sha256": "1ce9a0eeabb93520e02105208d7625cb2caf351ba5ca2d8bde380f7d5b49d97c"
+    },
+    {
+      "repo_path": "results/phase1/fact_generous_common_assessment_seed1_v1/result.json",
+      "bundle_path": "evaluation-inputs/results/phase1/fact_generous_common_assessment_seed1_v1/result.json",
+      "bytes": 7175,
+      "sha256": "6ca648afe09beb50c6fbe3ff82dfb91c231032404d8bf49fbcac75e406b7d1e1"
+    },
+    {
+      "repo_path": "results/phase1/fact_generous_common_assessment_seed2_v1/result.json",
+      "bundle_path": "evaluation-inputs/results/phase1/fact_generous_common_assessment_seed2_v1/result.json",
+      "bytes": 7176,
+      "sha256": "f9dc26860136c5dc38ef20894f3e52fd43d3aa844801fbc16e1bc3c370b2d6f9"
+    },
+    {
+      "repo_path": "results/phase1/fact_matched_common_assessment_seed0_v1/result.json",
+      "bundle_path": "evaluation-inputs/results/phase1/fact_matched_common_assessment_seed0_v1/result.json",
+      "bytes": 7115,
+      "sha256": "7e0a3ca039ac85255c55f8eefcde73963a79997d263aa43e894ae5488d84a2a0"
+    },
+    {
+      "repo_path": "results/phase1/fact_matched_common_assessment_seed1_v1/result.json",
+      "bundle_path": "evaluation-inputs/results/phase1/fact_matched_common_assessment_seed1_v1/result.json",
+      "bytes": 7202,
+      "sha256": "b0192b7a72514f2542294e294f942e1e3984d75f385a1845fc89e2e466ccc904"
+    },
+    {
+      "repo_path": "results/phase1/fact_matched_common_assessment_seed2_v1/result.json",
+      "bundle_path": "evaluation-inputs/results/phase1/fact_matched_common_assessment_seed2_v1/result.json",
+      "bytes": 7176,
+      "sha256": "b092f69e9a758572f6d35499b2e415c6b5fb5e2f3bfac5f8937765801ab13950"
+    },
+    {
+      "repo_path": "results/phase1/final_bl_core_production_adjudication_v1/result.json",
+      "bundle_path": "evaluation-inputs/results/phase1/final_bl_core_production_adjudication_v1/result.json",
+      "bytes": 281751,
+      "sha256": "80bee35bdb6a583b0bf722ceb96e8dc2d761ada85e5775b41a8963551d3f1e7a"
+    },
+    {
+      "repo_path": "results/phase1/finite_catalogue_common_assessment_seed0_v1/result.json",
+      "bundle_path": "evaluation-inputs/results/phase1/finite_catalogue_common_assessment_seed0_v1/result.json",
+      "bytes": 7037,
+      "sha256": "2b8676765a33fa363bd3ba7ce8371f9d95d5a6551501234e08334afb121f8504"
+    },
+    {
+      "repo_path": "results/phase1/finite_catalogue_common_assessment_seed1_v1/result.json",
+      "bundle_path": "evaluation-inputs/results/phase1/finite_catalogue_common_assessment_seed1_v1/result.json",
+      "bytes": 7033,
+      "sha256": "b09ca42366f0662da381cc72650b9185457ee0164a4265094a383b3613b9517a"
+    },
+    {
+      "repo_path": "results/phase1/finite_catalogue_common_assessment_seed2_v1/result.json",
+      "bundle_path": "evaluation-inputs/results/phase1/finite_catalogue_common_assessment_seed2_v1/result.json",
+      "bytes": 7049,
+      "sha256": "fdf5af01fdba76578eaec6251c40660de5c3d406bb408de6f4cf293721737139"
+    },
+    {
+      "repo_path": "results/phase1/forge_generated_sample_atlas_core_saturation_v1/result.json",
+      "bundle_path": "evaluation-inputs/results/phase1/forge_generated_sample_atlas_core_saturation_v1/result.json",
+      "bytes": 7573,
+      "sha256": "95f693296ac8da68ef0bc4e25991a9d13c96b5c93f97400facf45f48723d655e"
+    },
+    {
+      "repo_path": "results/phase1/forge_generated_sample_figure_core_saturation_v1/result.json",
+      "bundle_path": "evaluation-inputs/results/phase1/forge_generated_sample_figure_core_saturation_v1/result.json",
+      "bytes": 2728,
+      "sha256": "ac5c94505b9299e8c577b1b8c94a47eeec7934f5f5d9462be49b3e7214a5dbe1"
+    },
+    {
+      "repo_path": "results/phase1/forge_role_novelty_route_breakdown_v1/result.json",
+      "bundle_path": "evaluation-inputs/results/phase1/forge_role_novelty_route_breakdown_v1/result.json",
+      "bytes": 3808,
+      "sha256": "c389dd7e93e0059325c94da3f1cbc5a684652cf84b9bee8a4df7ab6806503efa"
+    },
+    {
+      "repo_path": "results/phase1/forge_transformer_core_saturation_common_assessment_seed0_v2/result.json",
+      "bundle_path": "evaluation-inputs/results/phase1/forge_transformer_core_saturation_common_assessment_seed0_v2/result.json",
+      "bytes": 7216,
+      "sha256": "9a382239ee17b37697c14d17dc423f84117217319166289fa8e140a113a8ec41"
+    },
+    {
+      "repo_path": "results/phase1/forge_transformer_core_saturation_common_assessment_seed1_v2/result.json",
+      "bundle_path": "evaluation-inputs/results/phase1/forge_transformer_core_saturation_common_assessment_seed1_v2/result.json",
+      "bytes": 7197,
+      "sha256": "e5e70a7bf80d9685437b0772d0b0ac298f30efab48f7bd37b4721a75a9b60d65"
+    },
+    {
+      "repo_path": "results/phase1/forge_transformer_core_saturation_common_assessment_seed2_v2/result.json",
+      "bundle_path": "evaluation-inputs/results/phase1/forge_transformer_core_saturation_common_assessment_seed2_v2/result.json",
+      "bytes": 7230,
+      "sha256": "89a33fb7ab1abd828d69961a13e786e6fd41d978bf56bc494acd868258ca8c40"
+    },
+    {
+      "repo_path": "results/phase1/genmol_safe_common_assessment_seed0_v1/result.json",
+      "bundle_path": "evaluation-inputs/results/phase1/genmol_safe_common_assessment_seed0_v1/result.json",
+      "bytes": 6835,
+      "sha256": "1702e839253fffe4ae1860f145a7c38124a4b0d06842d520ec7be084e9e3da0e"
+    },
+    {
+      "repo_path": "results/phase1/genmol_safe_common_assessment_seed1_v1/result.json",
+      "bundle_path": "evaluation-inputs/results/phase1/genmol_safe_common_assessment_seed1_v1/result.json",
+      "bytes": 6815,
+      "sha256": "6aabb367c6e2204a5584d882d0ba39d8bcf2a924636a80f2daa4518954a5bb96"
+    },
+    {
+      "repo_path": "results/phase1/genmol_safe_common_assessment_seed2_v1/result.json",
+      "bundle_path": "evaluation-inputs/results/phase1/genmol_safe_common_assessment_seed2_v1/result.json",
+      "bytes": 6834,
+      "sha256": "ba402185811d38c5285161621a715b4203f67856c509312abbf7e8632016822c"
+    },
+    {
+      "repo_path": "results/phase1/shared_bias_parallel_program_role_seed0_v2/checkpoints.tar",
+      "bundle_path": "seed0/checkpoints.tar",
+      "bytes": 112568320,
+      "sha256": "10d77b9d8e947d40fe2aaa91ecd68448ff068e08339cecd4c47d862e96e39142"
+    },
+    {
+      "repo_path": "results/phase1/shared_bias_parallel_program_role_seed0_v2/study_design.json",
+      "bundle_path": "seed0/study_design.json",
+      "bytes": 10098,
+      "sha256": "d0f206f52ae708e5ffa1e3150a5c8f1513db35d4c5d912160e89e907b7aaefbd"
+    },
+    {
+      "repo_path": "results/phase1/shared_bias_parallel_program_role_seed0_v2/training_result.json",
+      "bundle_path": "seed0/training_result.json",
+      "bytes": 31378,
+      "sha256": "44fab52d5427f654d2a24e395b77c00d2d8c7122f5ed67b51cbcc8675f870485"
+    },
+    {
+      "repo_path": "results/phase1/shared_bias_parallel_program_role_seed1_v2/checkpoints.tar",
+      "bundle_path": "seed1/checkpoints.tar",
+      "bytes": 112568320,
+      "sha256": "a3e1e15cb6d55e6a0bc8d161a0061762ef6190c22c957fd957493bbe3860d55d"
+    },
+    {
+      "repo_path": "results/phase1/shared_bias_parallel_program_role_seed1_v2/study_design.json",
+      "bundle_path": "seed1/study_design.json",
+      "bytes": 10098,
+      "sha256": "d0f206f52ae708e5ffa1e3150a5c8f1513db35d4c5d912160e89e907b7aaefbd"
+    },
+    {
+      "repo_path": "results/phase1/shared_bias_parallel_program_role_seed1_v2/training_result.json",
+      "bundle_path": "seed1/training_result.json",
+      "bytes": 31564,
+      "sha256": "baa32c6551c6098917c49c2910ac4067300430483bd05d5c3e36eb64a410701e"
+    },
+    {
+      "repo_path": "results/phase1/shared_bias_parallel_program_role_seed2_v2/checkpoints.tar",
+      "bundle_path": "seed2/checkpoints.tar",
+      "bytes": 112568320,
+      "sha256": "f500418e7cdfe6aa59b5d1261cb68c7ff715fa1a0e06498334eb727185f74506"
+    },
+    {
+      "repo_path": "results/phase1/shared_bias_parallel_program_role_seed2_v2/study_design.json",
+      "bundle_path": "seed2/study_design.json",
+      "bytes": 10098,
+      "sha256": "d0f206f52ae708e5ffa1e3150a5c8f1513db35d4c5d912160e89e907b7aaefbd"
+    },
+    {
+      "repo_path": "results/phase1/shared_bias_parallel_program_role_seed2_v2/training_result.json",
+      "bundle_path": "seed2/training_result.json",
+      "bytes": 31558,
+      "sha256": "95cfdd98b1aef89a4ac370947487016b3c3b342cd07e05f62db478a6e27ec7de"
+    },
+    {
+      "repo_path": "results/phase1/shared_null_posthoc_common_assessment_seed0_v1/result.json",
+      "bundle_path": "evaluation-inputs/results/phase1/shared_null_posthoc_common_assessment_seed0_v1/result.json",
+      "bytes": 7216,
+      "sha256": "6efd6179b150d8780f07b2a97214b176d95782335f4c12627899069eb8941347"
+    },
+    {
+      "repo_path": "results/phase1/shared_null_posthoc_common_assessment_seed1_v1/result.json",
+      "bundle_path": "evaluation-inputs/results/phase1/shared_null_posthoc_common_assessment_seed1_v1/result.json",
+      "bytes": 7168,
+      "sha256": "d05a81d3d438c48ab92159e60fbeaae2cbf27e4b7cb8c01adb6a5aeb81d19225"
+    },
+    {
+      "repo_path": "results/phase1/shared_null_posthoc_common_assessment_seed2_v1/result.json",
+      "bundle_path": "evaluation-inputs/results/phase1/shared_null_posthoc_common_assessment_seed2_v1/result.json",
+      "bytes": 7229,
+      "sha256": "2fff4d9e07afaf3ba76ba38673abee2b9e217039c24b3ae174d532b8a0743aa6"
+    },
+    {
+      "repo_path": "results/phase1/shared_synthesis_program_mixed_cache_v1/cache.npz",
+      "bundle_path": "shared-inputs/results/phase1/shared_synthesis_program_mixed_cache_v1/cache.npz",
+      "bytes": 13727905,
+      "sha256": "249b92744c22109cd5994ad831555df85575bfb6bd58010dce71517e5e881114"
+    },
+    {
+      "repo_path": "results/phase1/transformer_mechanism_core_saturation_v1/seed_rows.jsonl",
+      "bundle_path": "evaluation-inputs/results/phase1/transformer_mechanism_core_saturation_v1/seed_rows.jsonl",
+      "bytes": 15613,
+      "sha256": "39f129f295be29b89803fd4cf01f1f96904945ec0b3ce6eb52492bd7eeebf05f"
+    },
+    {
+      "repo_path": "results/phase1/ugi_balanced_chemistry_corpus_v2/assignments.csv.gz",
+      "bundle_path": "shared-inputs/results/phase1/ugi_balanced_chemistry_corpus_v2/assignments.csv.gz",
+      "bytes": 4044135,
+      "sha256": "9a50c703ed6aa919b251678c04b7a44e93b3233a12fc13b5d6697683bb5b5184"
+    },
+    {
+      "repo_path": "results/phase1/ugi_bounded_hybrid_route_cascade_v1/result.json",
+      "bundle_path": "evaluation-inputs/results/phase1/ugi_bounded_hybrid_route_cascade_v1/result.json",
+      "bytes": 18730,
+      "sha256": "3066e306e3ab77ded09fbb8d76c9d0aab46540e8fa689063b896e17c8ed0eb20"
+    },
+    {
+      "repo_path": "results/phase1/ugi_high_potency_challenger_adjudication_v1/result.json",
+      "bundle_path": "evaluation-inputs/results/phase1/ugi_high_potency_challenger_adjudication_v1/result.json",
+      "bytes": 3578,
+      "sha256": "a508b45d455b7b164e54a8345b0dff1f8e4de928eec5e2f631e145dc0d981cc3"
+    },
+    {
+      "repo_path": "results/phase1/ugi_novelty_audit_v1/result.json",
+      "bundle_path": "evaluation-inputs/results/phase1/ugi_novelty_audit_v1/result.json",
+      "bytes": 7137,
+      "sha256": "d58678ef37510c7abf95de1eef12d7648bbaf87fb3d1087524acd2f49ba44025"
+    },
+    {
+      "repo_path": "results/phase1/ugi_synthesis_guidance_failure_audit_v1/result.json",
+      "bundle_path": "evaluation-inputs/results/phase1/ugi_synthesis_guidance_failure_audit_v1/result.json",
+      "bytes": 6638,
+      "sha256": "bbbf1d2305a78a2220d9a179d1abc957abea9433974416eb389c28cd68b9a9c2"
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed0/request.json",
+      "bundle_path": "evaluation-inputs/runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed0/request.json",
+      "bytes": 3597,
+      "sha256": "eb62dfe005e907605cd8f4664008efcc0d8ff119c266f1136de79439ac2ae174"
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed1/request.json",
+      "bundle_path": "evaluation-inputs/runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed1/request.json",
+      "bytes": 3597,
+      "sha256": "2f68602b078ee73e285b0dc7d8f3d1289f64146b4df2ff91976fae155f3b9b48"
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed2/request.json",
+      "bundle_path": "evaluation-inputs/runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed2/request.json",
+      "bytes": 3597,
+      "sha256": "8b610760341fc6b1cd6708a0177c8d946695983a819f9e1660b8d07282339186"
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed0/request.json",
+      "bundle_path": "evaluation-inputs/runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed0/request.json",
+      "bytes": 3543,
+      "sha256": "00523be5a471084d8672e55c9536c6916f01b78046dca50162f205f1c26567a0"
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed1/request.json",
+      "bundle_path": "evaluation-inputs/runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed1/request.json",
+      "bytes": 3543,
+      "sha256": "9bd93f2e921fad53b42996518d750be0540f626d391734c3b5f7c4e234344347"
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed2/request.json",
+      "bundle_path": "evaluation-inputs/runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed2/request.json",
+      "bytes": 3543,
+      "sha256": "2f2b692e854dba36d8e2bc0c9d351999e79e23dae8184c5a60874e9ac5f88865"
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed0/request.json",
+      "bundle_path": "evaluation-inputs/runs/phase1-external-ugi-native-requests-v3/rgfn/seed0/request.json",
+      "bytes": 3408,
+      "sha256": "456e0b7bc6bbf21d456932c4919edaa9d055f1c0b99058db9be6070490cb56b5"
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed1/request.json",
+      "bundle_path": "evaluation-inputs/runs/phase1-external-ugi-native-requests-v3/rgfn/seed1/request.json",
+      "bytes": 3408,
+      "sha256": "a0ca50e22d877c840dc0a21067694f51cb3621debfb8c5f270e8a0057115718f"
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed2/request.json",
+      "bundle_path": "evaluation-inputs/runs/phase1-external-ugi-native-requests-v3/rgfn/seed2/request.json",
+      "bytes": 3408,
+      "sha256": "4ee2275b0706f40734510640639a4041309469ffc33c95f6090fc818b5c72f44"
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-results-v3/defog_unconditional/seed0/common_assessment/result.json",
+      "bundle_path": "evaluation-inputs/runs/phase1-external-ugi-native-results-v3/defog_unconditional/seed0/common_assessment/result.json",
+      "bytes": 7197,
+      "sha256": "9475283fec53517b08e471aad3436788b9833a77dd992ecfc01802ac3dafcc38"
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-results-v3/defog_unconditional/seed1/common_assessment/result.json",
+      "bundle_path": "evaluation-inputs/runs/phase1-external-ugi-native-results-v3/defog_unconditional/seed1/common_assessment/result.json",
+      "bytes": 7239,
+      "sha256": "43b35d2170511ed8dda9a02c5ebc7cc2951c5f64ba8f9bf4bc5e980c28f93aa2"
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-results-v3/defog_unconditional/seed2/common_assessment/result.json",
+      "bundle_path": "evaluation-inputs/runs/phase1-external-ugi-native-results-v3/defog_unconditional/seed2/common_assessment/result.json",
+      "bytes": 7211,
+      "sha256": "afaabc5e52cbccd2309698adec0b19adb1b2da3604a4c38fd81e9d0d76e6a891"
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-results-v3/rgfn/seed0/common_assessment/result.json",
+      "bundle_path": "evaluation-inputs/runs/phase1-external-ugi-native-results-v3/rgfn/seed0/common_assessment/result.json",
+      "bytes": 6740,
+      "sha256": "6db8687c0dc1705609b647875fc4e413d941b513d15ea0d5a62279938f338181"
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-results-v3/rgfn/seed1/common_assessment/result.json",
+      "bundle_path": "evaluation-inputs/runs/phase1-external-ugi-native-results-v3/rgfn/seed1/common_assessment/result.json",
+      "bytes": 6740,
+      "sha256": "40cbcb859d3c4e4b499ad059fb8b9d866a13892749e315a0fd9a79314bcfc595"
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-results-v3/rgfn/seed2/common_assessment/result.json",
+      "bundle_path": "evaluation-inputs/runs/phase1-external-ugi-native-results-v3/rgfn/seed2/common_assessment/result.json",
+      "bytes": 6740,
+      "sha256": "553c26699f17e2ce1da19769b9aea8f278d7f48bfc8ec3330761d864c30d65ea"
+    },
+    {
+      "repo_path": "runs/phase1-learned-inventory-selector/2024106a25c36eea9c2e9585bd59d345c29edf957b1452abe1631db1befa5eb0/stages/selector/artifacts/result.json",
+      "bundle_path": "evaluation-inputs/runs/phase1-learned-inventory-selector/2024106a25c36eea9c2e9585bd59d345c29edf957b1452abe1631db1befa5eb0/stages/selector/artifacts/result.json",
+      "bytes": 7884,
+      "sha256": "c5a22fc5d76fa2dbaf7ed045013b066646fd3a369827ede0a598e33e77403530"
+    },
+    {
+      "repo_path": "runs/phase1-learned-inventory-selector/7e6e19c564269c904fe531938d6e50a96f9cf1c7a13210dbd571981657f5ca1d/stages/selector/artifacts/result.json",
+      "bundle_path": "evaluation-inputs/runs/phase1-learned-inventory-selector/7e6e19c564269c904fe531938d6e50a96f9cf1c7a13210dbd571981657f5ca1d/stages/selector/artifacts/result.json",
+      "bytes": 7868,
+      "sha256": "567bc08c3aa11a0a36550ac469bc99a2a1746d6ecc280e9670950732987044c6"
+    },
+    {
+      "repo_path": "runs/phase1-learned-inventory-selector/feb7af6d929fafb58b74ba9e5ff3ed83d0abf2c1357bb24cebe84572ebe823a7/stages/selector/artifacts/result.json",
+      "bundle_path": "evaluation-inputs/runs/phase1-learned-inventory-selector/feb7af6d929fafb58b74ba9e5ff3ed83d0abf2c1357bb24cebe84572ebe823a7/stages/selector/artifacts/result.json",
+      "bytes": 7873,
+      "sha256": "40ec6f6a2a63ff41846c6e91739c227d59b8642be43c14d30daea7f95817b0db"
+    },
+    {
+      "repo_path": "runs/phase1-shared-bias-cyclic-core-saturation-h100/374a2e47c5d53bef8e855fd7852ce489f09719e86cbf52198e8e05f214fcd6fe/stages/production/artifacts/evaluation/result.json",
+      "bundle_path": "evaluation-inputs/runs/phase1-shared-bias-cyclic-core-saturation-h100/374a2e47c5d53bef8e855fd7852ce489f09719e86cbf52198e8e05f214fcd6fe/stages/production/artifacts/evaluation/result.json",
+      "bytes": 43961,
+      "sha256": "18c7beab6d85b8fc6d8fc830061e69e74b20a728aea490ccfb7bde3326f9b7c5"
+    },
+    {
+      "repo_path": "runs/phase1-shared-bias-cyclic-core-saturation-h100/60b828956edcddfa8bea0ee8392710d1bfb9868c58bd24cafc084029d855aba4/stages/production/artifacts/evaluation/result.json",
+      "bundle_path": "evaluation-inputs/runs/phase1-shared-bias-cyclic-core-saturation-h100/60b828956edcddfa8bea0ee8392710d1bfb9868c58bd24cafc084029d855aba4/stages/production/artifacts/evaluation/result.json",
+      "bytes": 43713,
+      "sha256": "79d083d2577b93b41c714f7b50d22b6e9d254ac3a1b8c1b0efeeb827b84ca283"
+    },
+    {
+      "repo_path": "runs/phase1-shared-bias-cyclic-core-saturation-h100/cc58972834ae863b97de8649e2b412d4bd3218ae21f52a85fad84f5ddfc6b29a/stages/production/artifacts/evaluation/result.json",
+      "bundle_path": "evaluation-inputs/runs/phase1-shared-bias-cyclic-core-saturation-h100/cc58972834ae863b97de8649e2b412d4bd3218ae21f52a85fad84f5ddfc6b29a/stages/production/artifacts/evaluation/result.json",
+      "bytes": 43820,
+      "sha256": "094a04ad3ae401518c711160faafd2a1c5d6e5b562a2d45153c8a7c7c8d3cae7"
+    },
+    {
+      "repo_path": "runs/phase1-shared-bias-parallel-global-seed0-core-saturation-h100-v2/f309fcf0d36c68922ef266a1b46198d5ee70731e1a35bea74535d3c40bb86434/stages/evaluation/artifacts/result.json",
+      "bundle_path": "evaluation-inputs/runs/phase1-shared-bias-parallel-global-seed0-core-saturation-h100-v2/f309fcf0d36c68922ef266a1b46198d5ee70731e1a35bea74535d3c40bb86434/stages/evaluation/artifacts/result.json",
+      "bytes": 43824,
+      "sha256": "e41518ca2e48e9a1299878c56fb0a964910d7e856e17de2bed81fc05b7b6e5e4"
+    },
+    {
+      "repo_path": "runs/phase1-shared-bias-parallel-program-role-seed0-core-saturation-h100-v2/78f43e12b12db09f4bfac272e7d8c93954a11a5d71b9008921ea944fa97c04df/stages/evaluation/artifacts/result.json",
+      "bundle_path": "evaluation-inputs/runs/phase1-shared-bias-parallel-program-role-seed0-core-saturation-h100-v2/78f43e12b12db09f4bfac272e7d8c93954a11a5d71b9008921ea944fa97c04df/stages/evaluation/artifacts/result.json",
+      "bytes": 43995,
+      "sha256": "8431a7e7757e5de778926af0b37830644656bf6a0624e203bc1bf39cbef8e8e1"
+    },
+    {
+      "repo_path": "runs/phase1-shared-bias-parallel-program-role-seed0-evaluation-h100-v2/bd78a19342c52561cc40ecad85a3ddd8b0e6e2e12a6816a1f406bb413d480c60/stages/evaluation/artifacts/result.json",
+      "bundle_path": "evaluation-inputs/runs/phase1-shared-bias-parallel-program-role-seed0-evaluation-h100-v2/bd78a19342c52561cc40ecad85a3ddd8b0e6e2e12a6816a1f406bb413d480c60/stages/evaluation/artifacts/result.json",
+      "bytes": 43322,
+      "sha256": "b4d2ab2b685e756e30a75c500a873e37216d1b985a0069752d98fbb905d0665c"
+    },
+    {
+      "repo_path": "runs/phase1-shared-bias-parallel-program-role-seed1-core-saturation-h100-v2/163577eaa14ad4a09cf87c61e4795dca47ac337c33a8ade5cfe166b18ff171c3/stages/evaluation/artifacts/result.json",
+      "bundle_path": "evaluation-inputs/runs/phase1-shared-bias-parallel-program-role-seed1-core-saturation-h100-v2/163577eaa14ad4a09cf87c61e4795dca47ac337c33a8ade5cfe166b18ff171c3/stages/evaluation/artifacts/result.json",
+      "bytes": 44033,
+      "sha256": "06cd2aeaedde97944d03ad12cd9ac5a7a06bf8f8b6faf34c271929b5e9322c0a"
+    },
+    {
+      "repo_path": "runs/phase1-shared-bias-parallel-program-role-seed2-core-saturation-h100-v2/5aeb3827f3c50714f2cc4ea8025d0c97905d15b275acafde09c9ed100b12a3ef/stages/evaluation/artifacts/result.json",
+      "bundle_path": "evaluation-inputs/runs/phase1-shared-bias-parallel-program-role-seed2-core-saturation-h100-v2/5aeb3827f3c50714f2cc4ea8025d0c97905d15b275acafde09c9ed100b12a3ef/stages/evaluation/artifacts/result.json",
+      "bytes": 43899,
+      "sha256": "5793086799eb2d736440461c8654146812fbd0e23bca1c3f3f2d19964a5dfedd"
+    },
+    {
+      "repo_path": "runs/phase1-shared-bias-shared-null-core-saturation-h100/6c4d067206a91f4a11ac75509b27346422aeee78421aa968ee91b28a52351169/stages/production/artifacts/evaluation/result.json",
+      "bundle_path": "evaluation-inputs/runs/phase1-shared-bias-shared-null-core-saturation-h100/6c4d067206a91f4a11ac75509b27346422aeee78421aa968ee91b28a52351169/stages/production/artifacts/evaluation/result.json",
+      "bytes": 43725,
+      "sha256": "a5470806c97aef5f37013ece5cef9e8c992f81a9f5dc9dfbc0f588bd8c75321a"
+    },
+    {
+      "repo_path": "runs/phase1-shared-bias-shared-null-core-saturation-h100/8e373479710297630cf16b1687a96eed6a2645dae79f88b854ffdce703c29331/stages/production/artifacts/evaluation/result.json",
+      "bundle_path": "evaluation-inputs/runs/phase1-shared-bias-shared-null-core-saturation-h100/8e373479710297630cf16b1687a96eed6a2645dae79f88b854ffdce703c29331/stages/production/artifacts/evaluation/result.json",
+      "bytes": 43514,
+      "sha256": "7a9bb5cf80be2079a479f53efc5166be6ab7da7b4f6e0c063f89561ef51c58ea"
+    },
+    {
+      "repo_path": "runs/phase1-shared-bias-shared-null-core-saturation-h100/a17790ab1dd92566bf4fb0802301ba372b57cbb773e2ea3132ea7c3f71fdc513/stages/production/artifacts/evaluation/result.json",
+      "bundle_path": "evaluation-inputs/runs/phase1-shared-bias-shared-null-core-saturation-h100/a17790ab1dd92566bf4fb0802301ba372b57cbb773e2ea3132ea7c3f71fdc513/stages/production/artifacts/evaluation/result.json",
+      "bytes": 43492,
+      "sha256": "4292f50a4dc64a6ab246eeb5c5c8567b7b07f85fcfc41e638771369a6f64c209"
+    },
+    {
+      "repo_path": "runs/phase1-transformer-mechanism-study/3715b68bb7faaa8815ff575e07ff4c00f7983327322462ed8c2b463629172e46/stages/study/artifacts/training/result.json",
+      "bundle_path": "evaluation-inputs/runs/phase1-transformer-mechanism-study/3715b68bb7faaa8815ff575e07ff4c00f7983327322462ed8c2b463629172e46/stages/study/artifacts/training/result.json",
+      "bytes": 59383,
+      "sha256": "d59bf9fed863ed49bf22deaf55e441f09d9b268b8fbe46b2f175399ef2ba199a"
+    },
+    {
+      "repo_path": "runs/phase1-transformer-mechanism-study/5f149b098c61a855dc1bf51b5ba1c3c31162d35fb5e84abeb174bde30a5eb54f/stages/study/artifacts/training/result.json",
+      "bundle_path": "evaluation-inputs/runs/phase1-transformer-mechanism-study/5f149b098c61a855dc1bf51b5ba1c3c31162d35fb5e84abeb174bde30a5eb54f/stages/study/artifacts/training/result.json",
+      "bytes": 59367,
+      "sha256": "878b655257241abf2d1823e5ea5e21be4d7f5f041aa88ef511ba5fe669961f56"
+    },
+    {
+      "repo_path": "runs/phase1-transformer-mechanism-study/9f5633821b0234c367d7f1058703ba05034d2971c04ee45a7e9a26af83f311c1/stages/study/artifacts/training/result.json",
+      "bundle_path": "evaluation-inputs/runs/phase1-transformer-mechanism-study/9f5633821b0234c367d7f1058703ba05034d2971c04ee45a7e9a26af83f311c1/stages/study/artifacts/training/result.json",
+      "bytes": 59398,
+      "sha256": "6c946471c2a8b39f881995679d46a2f9e46570d04bf0e0334893692c01b88a08"
+    },
+    {
+      "repo_path": "tools/paper_model_bundle.py",
+      "bundle_path": "shared-inputs/tools/paper_model_bundle.py",
+      "bytes": 2868,
+      "sha256": "5e27402d0ddd8de20cf28ac1945e57656f3be1bdff4062596dffd1af5cf0cd94"
+    }
+  ]
+}

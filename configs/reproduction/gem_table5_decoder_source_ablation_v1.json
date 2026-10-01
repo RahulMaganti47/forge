@@ -1,0 +1,45 @@
+{
+  "schema_version": "forge.gem_table5_decoder_source_ablation_config.v1",
+  "status": "frozen_after_seed0_evaluations",
+  "checkpoint_step": 9143,
+  "program_id": "ugi_3cr_agile",
+  "split": "heldout",
+  "attempts_per_row": 3072,
+  "seed": 20260825,
+  "rows": [
+    {
+      "source_label": "Program-role",
+      "decoder_label": "Core saturation",
+      "arm_id": "shared_bias_program_role_source",
+      "terminal_decode_policy": "strict_reaction_core_saturation_argmax",
+      "highlight": true,
+      "result": {
+        "path": "runs/phase1-shared-bias-parallel-program-role-seed0-core-saturation-h100-v2/78f43e12b12db09f4bfac272e7d8c93954a11a5d71b9008921ea944fa97c04df/stages/evaluation/artifacts/result.json",
+        "sha256": "8431a7e7757e5de778926af0b37830644656bf6a0624e203bc1bf39cbef8e8e1"
+      }
+    },
+    {
+      "source_label": "Program-role",
+      "decoder_label": "Valence topology only",
+      "arm_id": "shared_bias_program_role_source",
+      "terminal_decode_policy": "strict_valence_topology_argmax",
+      "highlight": false,
+      "result": {
+        "path": "runs/phase1-shared-bias-parallel-program-role-seed0-evaluation-h100-v2/bd78a19342c52561cc40ecad85a3ddd8b0e6e2e12a6816a1f406bb413d480c60/stages/evaluation/artifacts/result.json",
+        "sha256": "b4d2ab2b685e756e30a75c500a873e37216d1b985a0069752d98fbb905d0665c"
+      }
+    },
+    {
+      "source_label": "Global",
+      "decoder_label": "Core saturation",
+      "arm_id": "shared_bias_global_source_control",
+      "terminal_decode_policy": "strict_reaction_core_saturation_argmax",
+      "highlight": false,
+      "result": {
+        "path": "runs/phase1-shared-bias-parallel-global-seed0-core-saturation-h100-v2/f309fcf0d36c68922ef266a1b46198d5ee70731e1a35bea74535d3c40bb86434/stages/evaluation/artifacts/result.json",
+        "sha256": "e41518ca2e48e9a1299878c56fb0a964910d7e856e17de2bed81fc05b7b6e5e4"
+      }
+    }
+  ],
+  "candidate_selection": false
+}

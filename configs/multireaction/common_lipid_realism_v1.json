@@ -1,0 +1,65 @@
+{
+  "schema_version": "forge.common_lipid_realism_config.v1",
+  "scientific_question": "Per requested generation attempt, does each method produce diverse complete molecular graphs that occupy the empirical structural manifold of source-study-held-out observed lipids?",
+  "inputs": {
+    "r0_constitutional": {
+      "path": "results/m0_03/r0_constitutional.csv.gz",
+      "sha256": "fc8bcb6ed618abf4e571a26564f59c716a80b6e6ecf919f451101fb32f552823"
+    },
+    "r0_fold_assignments": {
+      "path": "data/splits/m0_03_constitutional/r0_fold_assignments.csv",
+      "sha256": "c9e616f4a80090c92b16fc9cdceefa4d1163da34659cb43319813fcac5e0ac4d"
+    }
+  },
+  "policy": {
+    "allowed_elements": [
+      "C",
+      "N",
+      "O",
+      "P",
+      "S"
+    ],
+    "maximum_heavy_atoms": 194,
+    "train_reference_limit": 4096,
+    "heldout_reference_limit": 2048,
+    "selection_seed": 20260821,
+    "manifold_neighbors": 5,
+    "fingerprint_radius": 2,
+    "fingerprint_bits": 2048,
+    "distance_chunk_size": 128,
+    "internal_diversity_limit": 1024,
+    "c2st_folds": 5,
+    "c2st_minimum_rows_per_class": 50,
+    "c2st_maximum_rows_per_class": 2048,
+    "c2st_max_iterations": 200,
+    "c2st_seed": 20260821
+  },
+  "metrics": {
+    "primary": [
+      "fingerprint_manifold_precision_per_requested_attempt",
+      "fingerprint_manifold_coverage",
+      "descriptor_manifold_precision_per_requested_attempt",
+      "descriptor_manifold_coverage"
+    ],
+    "secondary": [
+      "connected_fraction_per_attempt",
+      "unique_fraction_among_connected",
+      "effective_molecule_count",
+      "within_declared_support_fraction_per_attempt",
+      "mean_pairwise_ecfp4_distance_among_unique",
+      "nearest_reference_tanimoto",
+      "normalized_descriptor_wasserstein",
+      "grouped_classifier_two_sample_auc"
+    ],
+    "attempt_denominator_includes_invalid_failed_duplicate_and_out_of_support": true,
+    "fingerprint_and_descriptor_manifolds_reported_separately": true,
+    "no_result_selected_thresholds": true,
+    "qed_excluded": true
+  },
+  "nonclaims": [
+    "Structural realism is not ionization, formulation, delivery or biological activity.",
+    "Manifold membership is not proof that a molecule is synthesizable.",
+    "This assessment performs no route, proposal-engine or biological-oracle calls.",
+    "No assessed output is a candidate source."
+  ]
+}

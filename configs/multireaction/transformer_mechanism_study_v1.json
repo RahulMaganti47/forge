@@ -1,0 +1,53 @@
+{
+  "schema_version": "forge.transformer_mechanism_study_config.v1",
+  "study": "mechanism_and_factorized",
+  "inputs": {
+    "base_design": {"path": "configs/multireaction/shared_production_comparison_transformer_v1.json", "sha256": "c54d03038a2370dc41b0deebe1438eccbc5e90dbce5b1d9ec308e2f2d7c2ff4a"},
+    "production_cache": {"path": "results/phase1/bl_core_constrained_production_cache_v1/cache.npz", "sha256": "3744e066325f3e203139797ab48eb54725f95ce09b39209905fb656df53c5973"},
+    "program_config": {"path": "configs/multireaction/lnpdb_reaction_programs_v1.json", "sha256": "a7aba87a63e3bcf34c61fa7951fbb7a77340641ed852993b4221d3b77072f021"},
+    "qualified_reaction_families": {"path": "data/vendor/qualified_reaction_families_v1.json", "sha256": "961dea191bbf6c8d169aab09f6aee18082e51696e4056fc4dc9f6fc97ff82587"},
+    "qualified_ugi_reactions": {"path": "data/vendor/qualified_reactions_v1.json", "sha256": "296bf06238ef22acc1f55117f5ce0adaee21b1bafaf5a83f89182b0f31cc4fcf"},
+    "ugi_assignments": {"path": "results/phase1/ugi_balanced_chemistry_corpus_v2/assignments.csv.gz", "sha256": "9a50c703ed6aa919b251678c04b7a44e93b3233a12fc13b5d6697683bb5b5184"},
+    "multireaction_atlas": {"path": "results/phase1/multireaction_program_corpus_v1/reaction_program_atlas.csv.gz", "sha256": "421facddd3b4893be9f358be59f40da25b54d4de7ed8b43844a5d9efebfb28e1"},
+    "multireaction_splits": {"path": "results/phase1/multireaction_program_corpus_v1/component_disjoint_splits.csv.gz", "sha256": "31e1157895c67644073e45d064563daa2cdeecdadba8c7fc21a42facd4214923"}
+  },
+  "authorization": {
+    "authorized": true,
+    "date": "2026-08-24",
+    "scope": "Five one-at-a-time Transformer mechanism ablations plus FACT-matched and FACT-generous around the final BL-core-constrained repeat-aware conditioned model; computational comparison only."
+  },
+  "smoke": {
+    "training": {
+      "device": "cpu", "precision": "float32", "deterministic_algorithms": true,
+      "cpu_threads": 2, "optimizer_steps": 2, "micro_batch_size": 3,
+      "gradient_accumulation_steps": 1, "effective_batch_size": 3,
+      "learning_rate": 0.0001, "weight_decay": 0.00005, "gradient_clip_norm": 1.0,
+      "checkpoint_steps": [1, 2], "restart_interval_steps": 1,
+      "model_overrides": {"hidden_dim": 32, "layers": 1, "attention_heads": 4, "adapter_dim": 16, "dropout": 0.0}
+    },
+    "evaluation": {
+      "device": "cpu", "checkpoint_steps": [1, 2], "sample_steps": 2, "batch_size": 2,
+      "calibration_samples": 1, "heldout_samples": 2, "component_disjoint_record_limit": 2,
+      "terminal_decode_policy": "strict_valence_topology_argmax"
+    }
+  },
+  "full": {
+    "training": {
+      "device": "cuda", "precision": "float32", "deterministic_algorithms": true,
+      "cpu_threads": 4, "optimizer_steps": 1700, "micro_batch_size": 32,
+      "gradient_accumulation_steps": 4, "effective_batch_size": 128,
+      "learning_rate": 0.0001, "weight_decay": 0.00005, "gradient_clip_norm": 1.0,
+      "checkpoint_steps": [100, 500, 1000, 1500, 1700], "restart_interval_steps": 25
+    },
+    "evaluation": {
+      "device": "cuda", "checkpoint_steps": [100, 500, 1000, 1500, 1700],
+      "sample_steps": 32, "batch_size": 32, "calibration_samples": 512,
+      "heldout_samples": 3072, "component_disjoint_record_limit": null,
+      "terminal_decode_policy": "strict_valence_topology_argmax"
+    }
+  },
+  "checkpoint_selection": "fixed_final_step",
+  "candidate_selection": false,
+  "route_calls": 0,
+  "oracle_calls": 0
+}

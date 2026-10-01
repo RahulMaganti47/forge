@@ -1,0 +1,1363 @@
+{
+  "reference_pdf_sha256": "7ea7cf2e51922e5e58cd6659dc183409e465ede2eb1586fc8d0ec39935c4fd53",
+  "modules": [
+    {
+      "module": "forge",
+      "original_module": "forge",
+      "source_sha256": "686172cff1bc979af050cf8f98384a1e0d5a745518f906cc1518ceaa280b9040",
+      "release_sha256": "1459d63e7a21f703993ba3091f35ac9d90769466dfac1bf9f74c05d5c37c625e",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.core.io",
+      "path": "src/forge/__init__.py"
+    },
+    {
+      "module": "forge.assembly",
+      "original_module": "forge.assembly",
+      "source_sha256": "89582f59633c237da38d81b45cdcd9b7c5aba1f6c97779d20f4045eaf73f7db5",
+      "release_sha256": "89582f59633c237da38d81b45cdcd9b7c5aba1f6c97779d20f4045eaf73f7db5",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.model.reaction_program_conditioning",
+      "path": "src/forge/assembly/__init__.py"
+    },
+    {
+      "module": "forge.assembly.api",
+      "original_module": "forge.assembly.api",
+      "source_sha256": "bb77b94c91ee0bbba62ff9a83a1d3d31a4d280bf13b8a508537817b19d7efa60",
+      "release_sha256": "bb77b94c91ee0bbba62ff9a83a1d3d31a4d280bf13b8a508537817b19d7efa60",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.assembly.program",
+      "path": "src/forge/assembly/api.py"
+    },
+    {
+      "module": "forge.assembly.program",
+      "original_module": "forge.assembly.program",
+      "source_sha256": "c6195066488fcc89f2ff352afa9319342e24ad6df397b37a83d302c1dca75d4e",
+      "release_sha256": "c6195066488fcc89f2ff352afa9319342e24ad6df397b37a83d302c1dca75d4e",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.assembly.ugi3",
+      "path": "src/forge/assembly/program.py"
+    },
+    {
+      "module": "forge.assembly.registry",
+      "original_module": "forge.assembly.registry",
+      "source_sha256": "72373e01d930651221d7a1365d96e94c817232a3706333f99a7a01a5e20f7037",
+      "release_sha256": "72373e01d930651221d7a1365d96e94c817232a3706333f99a7a01a5e20f7037",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.assembly.program",
+      "path": "src/forge/assembly/registry.py"
+    },
+    {
+      "module": "forge.assembly.ugi3",
+      "original_module": "forge.assembly.ugi3",
+      "source_sha256": "6970e0a345477aca64a1861dad9d46ab5cb519892032f0cdeda42cd6a4d6d1a4",
+      "release_sha256": "6970e0a345477aca64a1861dad9d46ab5cb519892032f0cdeda42cd6a4d6d1a4",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.assembly",
+      "path": "src/forge/assembly/ugi3.py"
+    },
+    {
+      "module": "forge.chemistry",
+      "original_module": "forge.chemistry",
+      "source_sha256": "25230eda3ccf72d4d589e4019d3fa49ce05d692325610f4db454624bc5e753be",
+      "release_sha256": "3530f1cfaa13a1ab07cb51ad1bbbf5c149c2a457fe58613d90837b5eccc91269",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.chemistry.reactive_sites",
+      "path": "src/forge/chemistry/__init__.py"
+    },
+    {
+      "module": "forge.chemistry.reactive_sites",
+      "original_module": "forge.chemistry.reactive_sites",
+      "source_sha256": "e85e455ea0a2ab730456dbfe13692423ad5542adea8ec895fe11a9a9261c5964",
+      "release_sha256": "e85e455ea0a2ab730456dbfe13692423ad5542adea8ec895fe11a9a9261c5964",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.corpus.r1_prime_audit",
+      "path": "src/forge/chemistry/reactive_sites.py"
+    },
+    {
+      "module": "forge.core",
+      "original_module": "forge.core",
+      "source_sha256": "e0340d1055ea58bd2bf18a22cf08a124529606d5688524776cd23fb844a3f5a3",
+      "release_sha256": "b99ed7e34521cf4f9ccc0d379380270edb0ead00797c623976f0ad0facd6ac9d",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.core.io",
+      "path": "src/forge/core/__init__.py"
+    },
+    {
+      "module": "forge.core.hashing",
+      "original_module": "forge.core.hashing",
+      "source_sha256": "02677e865bbba6e587603db6d78bbb77cac16fb71846cabff3f5e2182cbbd494",
+      "release_sha256": "02677e865bbba6e587603db6d78bbb77cac16fb71846cabff3f5e2182cbbd494",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge_paper.gem_table1",
+      "path": "src/forge/core/hashing.py"
+    },
+    {
+      "module": "forge.core.io",
+      "original_module": "forge.core.io",
+      "source_sha256": "ba75c512988109feba889d75ef153c20b5493f5ce0e6acd6c777c6573af0f914",
+      "release_sha256": "ba75c512988109feba889d75ef153c20b5493f5ce0e6acd6c777c6573af0f914",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge_paper.gem_table1",
+      "path": "src/forge/core/io.py"
+    },
+    {
+      "original_module": "forge.core.seeds",
+      "module": "forge.core.seeds",
+      "path": "src/forge/core/seeds.py",
+      "source_sha256": "a12f3a68190db0a82f0dcd60cf410ab14e13a842702494ed1d2ed1a5360b75a6",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "a12f3a68190db0a82f0dcd60cf410ab14e13a842702494ed1d2ed1a5360b75a6"
+    },
+    {
+      "module": "forge.core.types",
+      "original_module": "forge.core.types",
+      "source_sha256": "0aaa29e944aefdb4def69813a2158816f2faca0599a571db65761c41a8c066a7",
+      "release_sha256": "0aaa29e944aefdb4def69813a2158816f2faca0599a571db65761c41a8c066a7",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.core.hashing",
+      "path": "src/forge/core/types.py"
+    },
+    {
+      "module": "forge.corpus",
+      "original_module": "forge.corpus",
+      "source_sha256": "98531f0cd4472216893c4350231d5da60adf5f3ba5a135abdae5b4865a3a68af",
+      "release_sha256": "e28d976413fa244d3f91b809ae9d8996cb06a3e4f2fb8dc9ceaffb13f90d9d7d",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.corpus.ugi_held_component_gate",
+      "path": "src/forge/corpus/__init__.py"
+    },
+    {
+      "module": "forge.corpus.component_splits",
+      "original_module": "forge.corpus.component_splits",
+      "source_sha256": "abb60b998b1eac2d20c32a18f0e3601ebe960fe7c4d4c1947adc6524007b6a63",
+      "release_sha256": "abb60b998b1eac2d20c32a18f0e3601ebe960fe7c4d4c1947adc6524007b6a63",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.corpus.ugi_component_expansion",
+      "path": "src/forge/corpus/component_splits.py"
+    },
+    {
+      "module": "forge.corpus.r0_splits",
+      "original_module": "forge.corpus.r0_splits",
+      "source_sha256": "76998944cec6c2db378339cd3bdcb7eca77f8b4337ce5cf387bd381b033f37f2",
+      "release_sha256": "0f39d09585460e743c497f820cfbe59e06a31ff2e6083c31eccfbbaaa92c94c5",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.model.phase1_flow",
+      "path": "src/forge/corpus/r0_splits.py"
+    },
+    {
+      "module": "forge.corpus.r1_prime_audit",
+      "original_module": "forge.corpus.r1_prime_audit",
+      "source_sha256": "7d1c9bdbfc760efa5a3f58fb24eded687fc34727e7109fa2765e3f3e86f361b0",
+      "release_sha256": "8e57e64d3adb703ba73365c2b6e839678b24e610f678c894a9d7dd4766e906c3",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.corpus.ugi_component_expansion",
+      "path": "src/forge/corpus/r1_prime_audit.py"
+    },
+    {
+      "module": "forge.corpus.reaction_program_records",
+      "original_module": "forge.corpus.reaction_program_records",
+      "source_sha256": "8bdc85b6300ee1b3c5ad76414e8c0cb87cb6a5e5bfb1c253f207830be8a4608f",
+      "release_sha256": "8bdc85b6300ee1b3c5ad76414e8c0cb87cb6a5e5bfb1c253f207830be8a4608f",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.corpus.synthesis_program_representation",
+      "path": "src/forge/corpus/reaction_program_records.py"
+    },
+    {
+      "module": "forge.corpus.reaction_program_training",
+      "original_module": "forge.corpus.reaction_program_training",
+      "source_sha256": "d71dd249e0d114e5297d1f93ed9d47211f07d34974643adbf4f4ab3fcb8ac13c",
+      "release_sha256": "e76b20a91218602e5aba9353a18fae4032049f3fb9a3b71492f20af31e453c68",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "experiments.phase1.multireaction.production_evaluation",
+      "path": "src/forge/corpus/reaction_program_training.py"
+    },
+    {
+      "module": "forge.corpus.synthesis_program_production_cache",
+      "original_module": "forge.corpus.synthesis_program_production_cache",
+      "source_sha256": "269f0e694898af3343cbf9bef6aa058443e4aff870b0f09d829541d78d4f7d4d",
+      "release_sha256": "269f0e694898af3343cbf9bef6aa058443e4aff870b0f09d829541d78d4f7d4d",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "experiments.phase1.multireaction.production_training",
+      "path": "src/forge/corpus/synthesis_program_production_cache.py"
+    },
+    {
+      "module": "forge.corpus.synthesis_program_representation",
+      "original_module": "forge.corpus.synthesis_program_representation",
+      "source_sha256": "84a32434d8ccaf27c91ccc0bf311342e786f2fb6445cb38d34687f4cda970039",
+      "release_sha256": "eba50e5c5257820d8fc6d757ece8a69ad1cdfa17fc5c57483de840553101aa43",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.corpus.synthesis_program_production_cache",
+      "path": "src/forge/corpus/synthesis_program_representation.py"
+    },
+    {
+      "module": "forge.corpus.synthesis_program_training",
+      "original_module": "forge.corpus.synthesis_program_training",
+      "source_sha256": "4cebaad4b8f0e6fb308bc12fa08cfaf9042fdb4b5bb55a5da89f76ec002c84e7",
+      "release_sha256": "4cebaad4b8f0e6fb308bc12fa08cfaf9042fdb4b5bb55a5da89f76ec002c84e7",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "entry point",
+      "path": "src/forge/corpus/synthesis_program_training.py"
+    },
+    {
+      "module": "forge.corpus.training_cache",
+      "original_module": "forge.corpus.training_cache",
+      "source_sha256": "1b2409db13f341c7ca9070bb2b312e6a85310a4d9f63c0c62dd53af496b0ffed",
+      "release_sha256": "1b2409db13f341c7ca9070bb2b312e6a85310a4d9f63c0c62dd53af496b0ffed",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.corpus.ugi_held_component_gate",
+      "path": "src/forge/corpus/training_cache.py"
+    },
+    {
+      "module": "forge.corpus.ugi_chemistry_corpus",
+      "original_module": "forge.corpus.ugi_chemistry_corpus",
+      "source_sha256": "913db3c43e622c1432ecabc1473e52efea0d109ed11b40853b14cb5f66152125",
+      "release_sha256": "913db3c43e622c1432ecabc1473e52efea0d109ed11b40853b14cb5f66152125",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.model.ugi_joint_sparse_flow",
+      "path": "src/forge/corpus/ugi_chemistry_corpus.py"
+    },
+    {
+      "module": "forge.corpus.ugi_component_expansion",
+      "original_module": "forge.corpus.ugi_component_expansion",
+      "source_sha256": "c6b5b5d1fd9d128fd0fc14370bcdb23c1982a750996e2d4c1b5303eed25e3aa5",
+      "release_sha256": "c6b5b5d1fd9d128fd0fc14370bcdb23c1982a750996e2d4c1b5303eed25e3aa5",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.corpus.ugi_held_component_gate",
+      "path": "src/forge/corpus/ugi_component_expansion.py"
+    },
+    {
+      "module": "forge.corpus.ugi_generated_components",
+      "original_module": "forge.corpus.ugi_generated_components",
+      "source_sha256": "de868fc6a76f90ec414da2a915e2838bcb6f30d0cfd7ef54d7d5c446e93b7826",
+      "release_sha256": "de868fc6a76f90ec414da2a915e2838bcb6f30d0cfd7ef54d7d5c446e93b7826",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.corpus.ugi_held_component_gate",
+      "path": "src/forge/corpus/ugi_generated_components.py"
+    },
+    {
+      "original_module": "forge.corpus.ugi_generated_terminal_support",
+      "module": "forge.corpus.ugi_generated_terminal_support",
+      "path": "src/forge/corpus/ugi_generated_terminal_support.py",
+      "source_sha256": "f3132d16b3728539be1684a863da26cb84c6f70dffbd7d40fb4410219a2f7212",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "f3132d16b3728539be1684a863da26cb84c6f70dffbd7d40fb4410219a2f7212"
+    },
+    {
+      "module": "forge.corpus.ugi_held_component_gate",
+      "original_module": "forge.corpus.ugi_held_component_gate",
+      "source_sha256": "2aa0dbf145515bb31ab03f5fd9e38f56fd96e909716ec3d2348aa5e00ae51b17",
+      "release_sha256": "2aa0dbf145515bb31ab03f5fd9e38f56fd96e909716ec3d2348aa5e00ae51b17",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.assembly.ugi3",
+      "path": "src/forge/corpus/ugi_held_component_gate.py"
+    },
+    {
+      "original_module": "forge.corpus.ugi_morphology_corpus",
+      "module": "forge.corpus.ugi_morphology_corpus",
+      "path": "src/forge/corpus/ugi_morphology_corpus.py",
+      "source_sha256": "4cf300b2616b9e74b4b3b2e9eb0512b7dc23ed538d35f632493d1695dfee1e30",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "4cf300b2616b9e74b4b3b2e9eb0512b7dc23ed538d35f632493d1695dfee1e30"
+    },
+    {
+      "module": "forge.diagnostics",
+      "path": "src/forge/diagnostics/__init__.py",
+      "original_module": null,
+      "source_snapshot": "release_native",
+      "source_sha256": null,
+      "release_sha256": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3"
+    },
+    {
+      "module": "forge.diagnostics.hela",
+      "path": "src/forge/diagnostics/hela/__init__.py",
+      "original_module": null,
+      "source_snapshot": "release_native",
+      "source_sha256": null,
+      "release_sha256": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3"
+    },
+    {
+      "original_module": "experiments.phase1.hela_potency.evaluation",
+      "module": "forge.diagnostics.hela.evaluation",
+      "path": "src/forge/diagnostics/hela/evaluation.py",
+      "source_sha256": "453d05f91d35f16dd882c1dd6b68e5cfa265db8e1205d34ffc9a1f35b325b030",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "9c1a3c380418ae15776bf1fb4155df516b89673609771aa603534e3800696adf"
+    },
+    {
+      "module": "forge.diagnostics.hela.morphology",
+      "path": "src/forge/diagnostics/hela/morphology/__init__.py",
+      "original_module": null,
+      "source_snapshot": "release_native",
+      "source_sha256": null,
+      "release_sha256": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3"
+    },
+    {
+      "original_module": "experiments.phase1.hela_potency.morphology.ugi_high_potency_challenger_adjudication",
+      "module": "forge.diagnostics.hela.morphology.ugi_high_potency_challenger_adjudication",
+      "path": "src/forge/diagnostics/hela/morphology/ugi_high_potency_challenger_adjudication.py",
+      "source_sha256": "cd1dc3aa04fa4feb888bc46ce29e7f954b7ad270cf0a3002ab95673d40eca6f2",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "cd1dc3aa04fa4feb888bc46ce29e7f954b7ad270cf0a3002ab95673d40eca6f2"
+    },
+    {
+      "original_module": "experiments.phase1.hela_potency.morphology.ugi_morphology_high_potency_challenger",
+      "module": "forge.diagnostics.hela.morphology.ugi_morphology_high_potency_challenger",
+      "path": "src/forge/diagnostics/hela/morphology/ugi_morphology_high_potency_challenger.py",
+      "source_sha256": "f4d03effbbafb6e5d8bb3ac3205545ec2abb8049684fe5b6a87b9449069e65f0",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "163a60a9eb1c09837b91d7e7e507bbe1c531b54e22fc4933dccf753a050ef25a"
+    },
+    {
+      "original_module": "experiments.phase1.hela_potency.morphology.ugi_morphology_high_potency_proposal",
+      "module": "forge.diagnostics.hela.morphology.ugi_morphology_high_potency_proposal",
+      "path": "src/forge/diagnostics/hela/morphology/ugi_morphology_high_potency_proposal.py",
+      "source_sha256": "563946dca22624531d4625bca8322bef942f0d348fc94086aa3e406a20c1a40f",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "77dcfe16960bdf7e473534bda9c9a694796103cb1a4e9964bec61c4f51c6ccb7"
+    },
+    {
+      "original_module": "experiments.phase1.hela_potency.morphology.ugi_morphology_potency_matched_adjudication",
+      "module": "forge.diagnostics.hela.morphology.ugi_morphology_potency_matched_adjudication",
+      "path": "src/forge/diagnostics/hela/morphology/ugi_morphology_potency_matched_adjudication.py",
+      "source_sha256": "f8ed1ed2a92930702e9c6eb91e432ac78f2c35de5a54172b5c2ada8740538764",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "e23058dc837d0056ecc6bf021a17a669b56d2f81338ddfdb7672ba62bfe724e7"
+    },
+    {
+      "original_module": "experiments.phase1.hela_potency.morphology.ugi_morphology_potency_proposal_sweep",
+      "module": "forge.diagnostics.hela.morphology.ugi_morphology_potency_proposal_sweep",
+      "path": "src/forge/diagnostics/hela/morphology/ugi_morphology_potency_proposal_sweep.py",
+      "source_sha256": "95e410801c6cc2d0584cd16a7ba32ce100edc53db7e236ecfbf3dba322194135",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "a9e707288f6b89e388e981ca3a4ba27d05db60a60bcd392f4a2e97df6a7910f6"
+    },
+    {
+      "original_module": "experiments.phase1.hela_potency.morphology.ugi_morphology_potency_signal",
+      "module": "forge.diagnostics.hela.morphology.ugi_morphology_potency_signal",
+      "path": "src/forge/diagnostics/hela/morphology/ugi_morphology_potency_signal.py",
+      "source_sha256": "76e1ae9ef1498d344d7089772ada094078d341531345b030bb3b62701038a2ba",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "297eae25c5c430473b55f3cd671ba580c501678337c42e6ff54126f14b037ec9"
+    },
+    {
+      "module": "forge.diagnostics.product_l1",
+      "path": "src/forge/diagnostics/product_l1/__init__.py",
+      "original_module": null,
+      "source_snapshot": "release_native",
+      "source_sha256": null,
+      "release_sha256": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3"
+    },
+    {
+      "module": "forge.diagnostics.product_l1.sampling",
+      "path": "src/forge/diagnostics/product_l1/sampling/__init__.py",
+      "original_module": null,
+      "source_snapshot": "release_native",
+      "source_sha256": null,
+      "release_sha256": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3"
+    },
+    {
+      "original_module": "experiments.phase1.product_l1.sampling.terminal_census",
+      "module": "forge.diagnostics.product_l1.sampling.terminal_census",
+      "path": "src/forge/diagnostics/product_l1/sampling/terminal_census.py",
+      "source_sha256": "68e578eeb5e4df499c52b4570e28cd9f0e0833d1c50af70c3d84fdab03fcfbda",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "220633304b3b782a803e91ad3a3c673884b0c8b2df1828e83c97b53768608a47"
+    },
+    {
+      "original_module": "experiments.phase1.product_l1.sampling.ugi_end_to_end_sampling",
+      "module": "forge.diagnostics.product_l1.sampling.ugi_end_to_end_sampling",
+      "path": "src/forge/diagnostics/product_l1/sampling/ugi_end_to_end_sampling.py",
+      "source_sha256": "f07d7c073a732a965f4e4f20a460284668bf8c7231609f171323ef5fc474366a",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "67f84630db207a84969fdeba708ac17fbb3aadd6ce817a9cad6a8cfa10fc20c5"
+    },
+    {
+      "original_module": "experiments.phase1.product_l1.sampling.ugi_joint_end_to_end_sampling",
+      "module": "forge.diagnostics.product_l1.sampling.ugi_joint_end_to_end_sampling",
+      "path": "src/forge/diagnostics/product_l1/sampling/ugi_joint_end_to_end_sampling.py",
+      "source_sha256": "7fa97d98cad33ed81071319da70b05936a069b4a7e6c16042389e9d44ee99624",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "86f10a67d5777ad06f1c1d0e4fd16157b8c92f6e2ce601e1a49675b437a79c18"
+    },
+    {
+      "original_module": "experiments.phase1.product_l1.sampling.ugi_joint_sparse_sampling",
+      "module": "forge.diagnostics.product_l1.sampling.ugi_joint_sparse_sampling",
+      "path": "src/forge/diagnostics/product_l1/sampling/ugi_joint_sparse_sampling.py",
+      "source_sha256": "a2da4e4ab8eb7aeead277e40738e5b270df67af0a6cd17752f07f3470adca572",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "243566c06139f68bff56830419ac9276af66c43da6976375afdcea036ec39cc2"
+    },
+    {
+      "original_module": "experiments.phase1.product_l1.sampling.ugi_matched_morphology_terminal_generation",
+      "module": "forge.diagnostics.product_l1.sampling.ugi_matched_morphology_terminal_generation",
+      "path": "src/forge/diagnostics/product_l1/sampling/ugi_matched_morphology_terminal_generation.py",
+      "source_sha256": "fd4624fc11bb2b71a8398872caab8bb38d0d1f673f639a3a32d10f2a8f285259",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "d1ccd0705d3b1373c82ea1e0aa1f84fe0fe1f774fffc1103afaae2ca95962a73"
+    },
+    {
+      "original_module": "experiments.phase1.product_l1.sampling.ugi_selected_generator_implementation",
+      "module": "forge.diagnostics.product_l1.sampling.ugi_selected_generator_implementation",
+      "path": "src/forge/diagnostics/product_l1/sampling/ugi_selected_generator_implementation.py",
+      "source_sha256": "73b86edf767504beeb06855cce1c34c004b11fdcc0f013e25c66ca6cdded0170",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "73b86edf767504beeb06855cce1c34c004b11fdcc0f013e25c66ca6cdded0170"
+    },
+    {
+      "original_module": "experiments.phase1.product_l1.sampling.ugi_selected_restartable_generator",
+      "module": "forge.diagnostics.product_l1.sampling.ugi_selected_restartable_generator",
+      "path": "src/forge/diagnostics/product_l1/sampling/ugi_selected_restartable_generator.py",
+      "source_sha256": "1973c272f1edf954cbde11c09938660f3ec8bca0ada337d3377a80dd2d227643",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "1ac4c5365525d9a1001fd905c4c328e0499b930a01576a6f98d7fe12077a666b"
+    },
+    {
+      "original_module": "experiments.phase1.product_l1.sampling.ugi_selected_restartable_generator_v2",
+      "module": "forge.diagnostics.product_l1.sampling.ugi_selected_restartable_generator_v2",
+      "path": "src/forge/diagnostics/product_l1/sampling/ugi_selected_restartable_generator_v2.py",
+      "source_sha256": "18401feba5cce9df1d52705a168738225c8b9ef4a47c76b79239424e2b8779e9",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "5129b4534a7cabd7c629849ebbf5a6eb18fa699676455039a0b17fce04caacc2"
+    },
+    {
+      "module": "forge.diagnostics.product_l1.training",
+      "path": "src/forge/diagnostics/product_l1/training/__init__.py",
+      "original_module": null,
+      "source_snapshot": "release_native",
+      "source_sha256": null,
+      "release_sha256": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3"
+    },
+    {
+      "original_module": "experiments.phase1.product_l1.training.ugi_training_cache",
+      "module": "forge.diagnostics.product_l1.training.ugi_training_cache",
+      "path": "src/forge/diagnostics/product_l1/training/ugi_training_cache.py",
+      "source_sha256": "4e500d4a22783531a366bb112b72747a844573cb3fcf18e11645f8db5d050f4a",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "d2c03aaefc6b9a0e65d2b37290e86b9d9527e16ef155de12649153c88cc3d270"
+    },
+    {
+      "module": "forge.diagnostics.ranking",
+      "path": "src/forge/diagnostics/ranking/__init__.py",
+      "original_module": null,
+      "source_snapshot": "release_native",
+      "source_sha256": null,
+      "release_sha256": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3"
+    },
+    {
+      "original_module": "experiments.archive.phase1.potency_ranking.ugi_continuous_novelty_matched_ranking",
+      "module": "forge.diagnostics.ranking.ugi_continuous_novelty_matched_ranking",
+      "path": "src/forge/diagnostics/ranking/ugi_continuous_novelty_matched_ranking.py",
+      "source_sha256": "b77e06c228ba08dddf6331ee9e23df02a3dc23710fcfff81548d3c1902cba671",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "a51527555033f516dbdf00c56b988a074049d5c12368fa940c037f58aec547bc"
+    },
+    {
+      "module": "forge.diagnostics.support",
+      "path": "src/forge/diagnostics/support/__init__.py",
+      "original_module": null,
+      "source_snapshot": "release_native",
+      "source_sha256": null,
+      "release_sha256": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3"
+    },
+    {
+      "module": "forge.diagnostics.support.adapters",
+      "path": "src/forge/diagnostics/support/adapters/__init__.py",
+      "original_module": null,
+      "source_snapshot": "release_native",
+      "source_sha256": null,
+      "release_sha256": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3"
+    },
+    {
+      "original_module": "experiments.phase1.synthesis_guidance.adapters.selected_v1",
+      "module": "forge.diagnostics.support.adapters.selected_v1",
+      "path": "src/forge/diagnostics/support/adapters/selected_v1.py",
+      "source_sha256": "8070fc614327783cfdb36c8b51ba5e1512fda56b963939deda47cb20b20ea317",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "e7ee7d59b07be8e60c700d032e24d958c6d042c265b714f74e40081ccac92fc3"
+    },
+    {
+      "original_module": "experiments.phase1.synthesis_guidance.adapters.selected_v2",
+      "module": "forge.diagnostics.support.adapters.selected_v2",
+      "path": "src/forge/diagnostics/support/adapters/selected_v2.py",
+      "source_sha256": "c2baf36a4fd14d2ecd9a8579908b011102bebf31408713ac6f8f3e8c6d477953",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "72a251f0765a3de9e816ff14c9ae1235965ddf7cb5bc3024281c18c36832951e"
+    },
+    {
+      "original_module": "experiments.phase1.synthesis_guidance.adapters.selected_v3",
+      "module": "forge.diagnostics.support.adapters.selected_v3",
+      "path": "src/forge/diagnostics/support/adapters/selected_v3.py",
+      "source_sha256": "de3e1651cff392edf88a91867643ed86add4ce62ef40634d67db27b3b066de37",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "b4f92eeafd7abf8aab4ad732e44bfc5c3482bef3fa1011e48bcf618aeb5cd92d"
+    },
+    {
+      "original_module": "experiments.phase1.synthesis_guidance.adapters.terminal_support",
+      "module": "forge.diagnostics.support.adapters.terminal_support",
+      "path": "src/forge/diagnostics/support/adapters/terminal_support.py",
+      "source_sha256": "cb8a3140f99f9292c96ce2a690ce7da028b274aa2cdd0a2905e4a9c919cd6ba9",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "9f0d6d419152fef8837c3676352dcb2fe430d791c88918a29a126f6f50beecac"
+    },
+    {
+      "module": "forge.diagnostics.support.guidance",
+      "path": "src/forge/diagnostics/support/guidance/__init__.py",
+      "original_module": null,
+      "source_snapshot": "release_native",
+      "source_sha256": null,
+      "release_sha256": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3"
+    },
+    {
+      "original_module": "experiments.phase1.synthesis_guidance.guidance.ugi_synthesis_guidance",
+      "module": "forge.diagnostics.support.guidance.ugi_synthesis_guidance",
+      "path": "src/forge/diagnostics/support/guidance/ugi_synthesis_guidance.py",
+      "source_sha256": "2d6de9f79d30c8bdd5597931dd1d41b06ba2518ec84f9693eddf3a9887e3caa7",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "b145c04607ae7e306f2b53a22a440a0f24050ffbd7b00b11cccf467c6cf4b0fb"
+    },
+    {
+      "original_module": "experiments.phase1.synthesis_guidance.guidance.ugi_zero_guidance_rehearsal",
+      "module": "forge.diagnostics.support.guidance.ugi_zero_guidance_rehearsal",
+      "path": "src/forge/diagnostics/support/guidance/ugi_zero_guidance_rehearsal.py",
+      "source_sha256": "cf424c2ed54b801e115928a340d35daad07c2f1372853206a9a4f96a8780e9ab",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "d2ac4dcbf2fabae1eab3fae9e2f1316bae5b1de4bad2d62474e1f4a3de21bd9f"
+    },
+    {
+      "module": "forge.diagnostics.support.schedule",
+      "path": "src/forge/diagnostics/support/schedule/__init__.py",
+      "original_module": null,
+      "source_snapshot": "release_native",
+      "source_sha256": null,
+      "release_sha256": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3"
+    },
+    {
+      "original_module": "experiments.phase1.synthesis_guidance.schedule.ugi_matched_morphology_allocation_schedule",
+      "module": "forge.diagnostics.support.schedule.ugi_matched_morphology_allocation_schedule",
+      "path": "src/forge/diagnostics/support/schedule/ugi_matched_morphology_allocation_schedule.py",
+      "source_sha256": "c1dd25baccec1c4d567f6c396b204533890ebee4945a5e0f97fe312bc4b76877",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "d2f714f54e82fcb72434fe9be6e106c70f7250e56b14396021aba8f5d414d43d"
+    },
+    {
+      "original_module": "experiments.phase1.synthesis_guidance.schedule.ugi_matched_planner_cache_binding",
+      "module": "forge.diagnostics.support.schedule.ugi_matched_planner_cache_binding",
+      "path": "src/forge/diagnostics/support/schedule/ugi_matched_planner_cache_binding.py",
+      "source_sha256": "9040b15de3c349ccc94de7c337401f8ea606b4f46ba3e55ee077f238ad0ba2bc",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "d230547c7689531dbfdd360d3ed677fe9b0006c917cb90cce74f02c5730f4e44"
+    },
+    {
+      "original_module": "experiments.phase1.synthesis_guidance.schedule.ugi_nonzero_guidance_runner",
+      "module": "forge.diagnostics.support.schedule.ugi_nonzero_guidance_runner",
+      "path": "src/forge/diagnostics/support/schedule/ugi_nonzero_guidance_runner.py",
+      "source_sha256": "c2066ff67c9ff2e5bf6b8c6a10437cdb11b293c9dabe94328648eb4a8b20bf4c",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "63bed7e848a3af7b9f8df1a01e560d2c6b01ea6dc27305c7aea6290bc73ca4eb"
+    },
+    {
+      "module": "forge.flow",
+      "original_module": "forge.flow",
+      "source_sha256": "f541e5d26b2c2dae4e6cb8c92e0759e4e132ed9fb9982c68281fadbcb34dd1be",
+      "release_sha256": "f541e5d26b2c2dae4e6cb8c92e0759e4e132ed9fb9982c68281fadbcb34dd1be",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.model.synthesis_program_sampling",
+      "path": "src/forge/flow/__init__.py"
+    },
+    {
+      "module": "forge.flow.rstar",
+      "path": "src/forge/flow/rstar.py",
+      "original_module": "forge.flow.rstar",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "source_sha256": "6f4f5762215b4fe04ac4f8c59e0f2a802b71eccf7e698893cc6df60a7c2ee50c",
+      "release_sha256": "6f4f5762215b4fe04ac4f8c59e0f2a802b71eccf7e698893cc6df60a7c2ee50c"
+    },
+    {
+      "module": "forge.model",
+      "original_module": "forge.model",
+      "source_sha256": "3cef6567902e5989ba9297d9a7eb5b594a15c714ae38215f0f3817903cade539",
+      "release_sha256": "4cf4ef379c05fe67b6e1353fa8fb2acf14b2d88f473dfca152ba104ba86dfc91",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.model.reaction_program_transformer",
+      "path": "src/forge/model/__init__.py"
+    },
+    {
+      "module": "forge.model.adapter_node_conditioning",
+      "original_module": "forge.model.adapter_node_conditioning",
+      "source_sha256": "6f456c473ebd82ab51588e67b8f34059a13371f374ecd3e960c46b6ca6f034d6",
+      "release_sha256": "6f456c473ebd82ab51588e67b8f34059a13371f374ecd3e960c46b6ca6f034d6",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.model.ugi_chemistry_flow",
+      "path": "src/forge/model/adapter_node_conditioning.py"
+    },
+    {
+      "module": "forge.model.common_lipid_realism",
+      "original_module": "forge.model.common_lipid_realism",
+      "source_sha256": "d0feea401dd7c5c5dd01b6552f651a047959dfd54725fd80ad7cb02ee7b43c83",
+      "release_sha256": "d0feea401dd7c5c5dd01b6552f651a047959dfd54725fd80ad7cb02ee7b43c83",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "entry point",
+      "path": "src/forge/model/common_lipid_realism.py"
+    },
+    {
+      "module": "forge.model.common_ugi_benchmark",
+      "original_module": "forge.model.common_ugi_benchmark",
+      "source_sha256": "f08d099a9a11afe9b95c637b06da47d0307a233f586234043c77d9dd5fd7b0eb",
+      "release_sha256": "f08d099a9a11afe9b95c637b06da47d0307a233f586234043c77d9dd5fd7b0eb",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "experiments.phase1.multireaction.production_evaluation",
+      "path": "src/forge/model/common_ugi_benchmark.py"
+    },
+    {
+      "module": "forge.model.conditional_role_dependence",
+      "original_module": "forge.model.conditional_role_dependence",
+      "source_sha256": "62ffb60213b96131c1043ba925872b9ede6c0faf207ca3e84c4038811553b568",
+      "release_sha256": "62ffb60213b96131c1043ba925872b9ede6c0faf207ca3e84c4038811553b568",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "experiments.phase1.multireaction.production_evaluation",
+      "path": "src/forge/model/conditional_role_dependence.py"
+    },
+    {
+      "module": "forge.model.defog_feasibility",
+      "original_module": "forge.model.defog_feasibility",
+      "source_sha256": "a445e7a8627ec262ba0f200cc31ddcc71412f636e9c930a1ce569e04407ba1a0",
+      "release_sha256": "c99ffcef439a74827a670c29a54e41004adf670af65697c0e05d16fb6c5c7de8",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.model.lipid_context",
+      "path": "src/forge/model/defog_feasibility.py"
+    },
+    {
+      "original_module": "forge.model.eligibility",
+      "module": "forge.model.eligibility",
+      "path": "src/forge/model/eligibility.py",
+      "source_sha256": "e5c48d985b12a28f50b77e8214e9f230fa8c64a472ff9f677610ec2f4cad2531",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "e5c48d985b12a28f50b77e8214e9f230fa8c64a472ff9f677610ec2f4cad2531"
+    },
+    {
+      "module": "forge.model.finite_component_catalogue",
+      "original_module": "forge.model.finite_component_catalogue",
+      "source_sha256": "884cf055f790783cb8d55a65348618c2534a479c2fd0c17ab5b9a4407d54d0ad",
+      "release_sha256": "884cf055f790783cb8d55a65348618c2534a479c2fd0c17ab5b9a4407d54d0ad",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "experiments.phase1.multireaction.catalogue_baseline",
+      "path": "src/forge/model/finite_component_catalogue.py"
+    },
+    {
+      "module": "forge.model.learned_inventory_selector",
+      "original_module": "forge.model.learned_inventory_selector",
+      "source_sha256": "b31ab4f0b86f3245b5cc14ccfcc6b57dc79860b8e6b78fd0b606509405eb129f",
+      "release_sha256": "b31ab4f0b86f3245b5cc14ccfcc6b57dc79860b8e6b78fd0b606509405eb129f",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "entry point",
+      "path": "src/forge/model/learned_inventory_selector.py"
+    },
+    {
+      "module": "forge.model.lipid_context",
+      "original_module": "forge.model.lipid_context",
+      "source_sha256": "5a8946e083b250ceb07d4c405e374e9d7f2937d7f9917c346393621fd2a9f7d0",
+      "release_sha256": "5a8946e083b250ceb07d4c405e374e9d7f2937d7f9917c346393621fd2a9f7d0",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.model.sparse_topology_feasibility",
+      "path": "src/forge/model/lipid_context.py"
+    },
+    {
+      "module": "forge.model.lipid_support_skeleton",
+      "original_module": "forge.model.lipid_support_skeleton",
+      "source_sha256": "f3bbac7937a58ad152fd7853cdcdbe1e9084737dc455175da2dc1ac566249632",
+      "release_sha256": "f3bbac7937a58ad152fd7853cdcdbe1e9084737dc455175da2dc1ac566249632",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.model.ugi_adapter_features",
+      "path": "src/forge/model/lipid_support_skeleton.py"
+    },
+    {
+      "module": "forge.model.local_chemistry_support",
+      "original_module": "forge.model.local_chemistry_support",
+      "source_sha256": "710d9e05561c47bb0be79362044f2a1b77d98b2eb78d620c8edbf617ce72329e",
+      "release_sha256": "710d9e05561c47bb0be79362044f2a1b77d98b2eb78d620c8edbf617ce72329e",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.model.ugi_chemistry_flow",
+      "path": "src/forge/model/local_chemistry_support.py"
+    },
+    {
+      "module": "forge.model.phase1_flow",
+      "original_module": "forge.model.phase1_flow",
+      "source_sha256": "aa1ddf6963504c794d5e2adce881d9857d4dbf39d886cbad5d5262c4ba26a3a0",
+      "release_sha256": "8e842c0efb46e24738ceb274c7ea57092c478525bed0d2d5728b5653240cc9b5",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.model.ugi_chemistry_flow",
+      "path": "src/forge/model/phase1_flow.py"
+    },
+    {
+      "module": "forge.model.phase1_tree_topology_flow",
+      "original_module": "forge.model.phase1_tree_topology_flow",
+      "source_sha256": "c2c492c1a9a24669a69c14561eac0a84dbfc8948ba1a4808a5fc3f33373fd983",
+      "release_sha256": "c2c492c1a9a24669a69c14561eac0a84dbfc8948ba1a4808a5fc3f33373fd983",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.model.v5_sparse_representation",
+      "path": "src/forge/model/phase1_tree_topology_flow.py"
+    },
+    {
+      "module": "forge.model.reaction_core_saturation",
+      "original_module": "forge.model.reaction_core_saturation",
+      "source_sha256": "d169a7d2dc80330b902fec606d01e7f088946305f73b4ea4852dd0c025aa13f4",
+      "release_sha256": "d169a7d2dc80330b902fec606d01e7f088946305f73b4ea4852dd0c025aa13f4",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.model.synthesis_program_sampling",
+      "path": "src/forge/model/reaction_core_saturation.py"
+    },
+    {
+      "module": "forge.model.reaction_program_conditioning",
+      "original_module": "forge.model.reaction_program_conditioning",
+      "source_sha256": "309bce163306f8adc4a7035daecdbbf309101981a6bceb242bdca98cbf060d7a",
+      "release_sha256": "309bce163306f8adc4a7035daecdbbf309101981a6bceb242bdca98cbf060d7a",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.model.synthesis_program_graph",
+      "path": "src/forge/model/reaction_program_conditioning.py"
+    },
+    {
+      "module": "forge.model.reaction_program_evaluation",
+      "original_module": "forge.model.reaction_program_evaluation",
+      "source_sha256": "b57b0ac8f46a3b16364868bd44fffe6aef83834b8154dd8c5021d2d1579d0c28",
+      "release_sha256": "b57b0ac8f46a3b16364868bd44fffe6aef83834b8154dd8c5021d2d1579d0c28",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "experiments.phase1.multireaction.production_evaluation",
+      "path": "src/forge/model/reaction_program_evaluation.py"
+    },
+    {
+      "module": "forge.model.reaction_program_flow",
+      "original_module": "forge.model.reaction_program_flow",
+      "source_sha256": "8102b41fbf8286a2f01d66bbd0558b32e700fd55ac9344fa89811af0c2ef1cac",
+      "release_sha256": "8102b41fbf8286a2f01d66bbd0558b32e700fd55ac9344fa89811af0c2ef1cac",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.model.reaction_program_transformer",
+      "path": "src/forge/model/reaction_program_flow.py"
+    },
+    {
+      "module": "forge.model.reaction_program_graph",
+      "original_module": "forge.model.reaction_program_graph",
+      "source_sha256": "93a3395b144a2795922ecbee4d7ed9ed00f7aee0a966f4b28aa5a3ba572fe020",
+      "release_sha256": "93a3395b144a2795922ecbee4d7ed9ed00f7aee0a966f4b28aa5a3ba572fe020",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.model.reaction_program_flow",
+      "path": "src/forge/model/reaction_program_graph.py"
+    },
+    {
+      "module": "forge.model.reaction_program_transformer",
+      "original_module": "forge.model.reaction_program_transformer",
+      "source_sha256": "ff81e0a3a10b6520289dfbb8bbe9b13e68537449ec5ec0599d5105344f8bb898",
+      "release_sha256": "ff81e0a3a10b6520289dfbb8bbe9b13e68537449ec5ec0599d5105344f8bb898",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "experiments.phase1.multireaction.production_training",
+      "path": "src/forge/model/reaction_program_transformer.py"
+    },
+    {
+      "module": "forge.model.sparse_topology_feasibility",
+      "original_module": "forge.model.sparse_topology_feasibility",
+      "source_sha256": "c696a82a7027e77ad6b5503aaad26e66dd46615be04537c4f52fce5c5db7326b",
+      "release_sha256": "811687268a74d83d0e320e29d0d81c33244e98a124adfd412d55de30f6cf70db",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.model.synthesis_program_graph",
+      "path": "src/forge/model/sparse_topology_feasibility.py"
+    },
+    {
+      "module": "forge.model.structural_attention",
+      "original_module": "forge.model.structural_attention",
+      "source_sha256": "b1b145e7dd4a118be77ebff4c073e446d4afd7839c667dfa1ef2faaa694b895a",
+      "release_sha256": "b1b145e7dd4a118be77ebff4c073e446d4afd7839c667dfa1ef2faaa694b895a",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.model.ugi_joint_sparse_flow",
+      "path": "src/forge/model/structural_attention.py"
+    },
+    {
+      "module": "forge.model.synthesis_program_graph",
+      "original_module": "forge.model.synthesis_program_graph",
+      "source_sha256": "32e03b248e7fea6b9cc8ad85503ee0d602309000c40ddba2f63f6d3c661a7ec9",
+      "release_sha256": "32e03b248e7fea6b9cc8ad85503ee0d602309000c40ddba2f63f6d3c661a7ec9",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.model.reaction_program_flow",
+      "path": "src/forge/model/synthesis_program_graph.py"
+    },
+    {
+      "module": "forge.model.synthesis_program_layout",
+      "original_module": "forge.model.synthesis_program_layout",
+      "source_sha256": "8f36627bd3f975520bc993243bff53697ef6fc5bf47d21a713f8918dd512660d",
+      "release_sha256": "fa6456971cbf043c1aac2585fb422022aa9d4edf98182fa8b22c0363a6f77a26",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "experiments.phase1.multireaction.production_evaluation",
+      "path": "src/forge/model/synthesis_program_layout.py"
+    },
+    {
+      "module": "forge.model.synthesis_program_sampling",
+      "original_module": "forge.model.synthesis_program_sampling",
+      "source_sha256": "529e5095e5a8d9c42f61134e6993cda855a60848fee18237f872a420e28a5e9f",
+      "release_sha256": "529e5095e5a8d9c42f61134e6993cda855a60848fee18237f872a420e28a5e9f",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "experiments.phase1.multireaction.production_evaluation",
+      "path": "src/forge/model/synthesis_program_sampling.py"
+    },
+    {
+      "module": "forge.model.synthesis_program_training",
+      "original_module": "forge.model.synthesis_program_training",
+      "source_sha256": "39492a7e253fab72e022104598f473b6461c7d314041131af3aafad0e14f91bf",
+      "release_sha256": "39492a7e253fab72e022104598f473b6461c7d314041131af3aafad0e14f91bf",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "experiments.phase1.multireaction.production_training",
+      "path": "src/forge/model/synthesis_program_training.py"
+    },
+    {
+      "module": "forge.model.tensor_checkpoint",
+      "original_module": "forge.model.tensor_checkpoint",
+      "source_sha256": "9b2ff4082a69b5b5cf1df3fec9f01dba4e3d6ee131bdad8eadb6b4bfb8efd3d6",
+      "release_sha256": "9b2ff4082a69b5b5cf1df3fec9f01dba4e3d6ee131bdad8eadb6b4bfb8efd3d6",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.model.synthesis_program_sampling",
+      "path": "src/forge/model/tensor_checkpoint.py"
+    },
+    {
+      "module": "forge.model.training_restart",
+      "original_module": "forge.model.training_restart",
+      "source_sha256": "20eeede65e8cde3030a33ed22c1387ecedd431d65788f14805d015810c8abe20",
+      "release_sha256": "0f712ecc5672a4d785dc6663db39466cebeb9f70a76a8c328819241881494937",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "experiments.phase1.multireaction.production_training",
+      "path": "src/forge/model/training_restart.py"
+    },
+    {
+      "module": "forge.model.ugi_adapter_features",
+      "original_module": "forge.model.ugi_adapter_features",
+      "source_sha256": "ec20db0d89db173648cec66209db92332d8f8e3711490c16feda97d8b0522d33",
+      "release_sha256": "ec20db0d89db173648cec66209db92332d8f8e3711490c16feda97d8b0522d33",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.model.ugi_morphology_program",
+      "path": "src/forge/model/ugi_adapter_features.py"
+    },
+    {
+      "module": "forge.model.ugi_chemistry_flow",
+      "original_module": "forge.model.ugi_chemistry_flow",
+      "source_sha256": "31b5f08ecfad1009f91e45e974996897df1cbadd1dc2fb0e8cdfe42af9d34f50",
+      "release_sha256": "8527d04a8f7ac2fd9ec4d06f2947b76d7a38c759c7b7d92f959c2631ce5f4645",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.corpus.ugi_held_component_gate",
+      "path": "src/forge/model/ugi_chemistry_flow.py"
+    },
+    {
+      "module": "forge.model.ugi_chemistry_interface",
+      "original_module": "forge.model.ugi_chemistry_interface",
+      "source_sha256": "b3f1ca306a61c61d7acbe88e376b344ed51762e56c5f9a146d314e4d929035b2",
+      "release_sha256": "b3f1ca306a61c61d7acbe88e376b344ed51762e56c5f9a146d314e4d929035b2",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.corpus.ugi_chemistry_corpus",
+      "path": "src/forge/model/ugi_chemistry_interface.py"
+    },
+    {
+      "module": "forge.model.ugi_closure_placement",
+      "original_module": "forge.model.ugi_closure_placement",
+      "source_sha256": "863f3a56a9f124a7085461d17a7e5e9896e0171b519a452a33ec51b9fd903ffa",
+      "release_sha256": "863f3a56a9f124a7085461d17a7e5e9896e0171b519a452a33ec51b9fd903ffa",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.model.ugi_joint_sparse_flow",
+      "path": "src/forge/model/ugi_closure_placement.py"
+    },
+    {
+      "module": "forge.model.ugi_joint_sparse_flow",
+      "original_module": "forge.model.ugi_joint_sparse_flow",
+      "source_sha256": "c101f73158db8b81e8f68d85f914125de020a74d8b9d887c7b56f68b2ad6e008",
+      "release_sha256": "00c7e14346a0ba843ffe2d409827190d192b035b8d254d36abc85f6f1c783c78",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.corpus.ugi_held_component_gate",
+      "path": "src/forge/model/ugi_joint_sparse_flow.py"
+    },
+    {
+      "module": "forge.model.ugi_morphology_flow",
+      "original_module": "forge.model.ugi_morphology_flow",
+      "source_sha256": "9a65900ff4b2c23e284a813073da34cfb203323d5ae5c0a34dbb29af09764536",
+      "release_sha256": "9a65900ff4b2c23e284a813073da34cfb203323d5ae5c0a34dbb29af09764536",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.model.ugi_joint_sparse_flow",
+      "path": "src/forge/model/ugi_morphology_flow.py"
+    },
+    {
+      "module": "forge.model.ugi_morphology_program",
+      "original_module": "forge.model.ugi_morphology_program",
+      "source_sha256": "b1f81344404c2ee4136eab97be52449b5f836087320a30bb29559d59f89999ba",
+      "release_sha256": "b1f81344404c2ee4136eab97be52449b5f836087320a30bb29559d59f89999ba",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.model.ugi_closure_placement",
+      "path": "src/forge/model/ugi_morphology_program.py"
+    },
+    {
+      "module": "forge.model.ugi_transformer_topology",
+      "original_module": "forge.model.ugi_transformer_topology",
+      "source_sha256": "705a8b2fe078dcb152436ef2364cabd45959f716b24b23848c7ab2d7b0fce2df",
+      "release_sha256": "197f39991cab4a120a158a1bb4161fd9e6368113e056afacf9ece74a25eb09a4",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.model.synthesis_program_sampling",
+      "path": "src/forge/model/ugi_transformer_topology.py"
+    },
+    {
+      "module": "forge.model.v5_sparse_representation",
+      "original_module": "forge.model.v5_sparse_representation",
+      "source_sha256": "e01d59ce8115ff24c5b42cb7bfef8419bf67665c956bdb5b2897bfd3bb074b1a",
+      "release_sha256": "e01d59ce8115ff24c5b42cb7bfef8419bf67665c956bdb5b2897bfd3bb074b1a",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.model.ugi_adapter_features",
+      "path": "src/forge/model/v5_sparse_representation.py"
+    },
+    {
+      "module": "forge.model.vocabulary",
+      "original_module": "forge.model.vocabulary",
+      "source_sha256": "df6b5ccbee8b804929d10a8e2403db3ece9ca5bd74d5110104da9ff51ad1b040",
+      "release_sha256": "df6b5ccbee8b804929d10a8e2403db3ece9ca5bd74d5110104da9ff51ad1b040",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.corpus.ugi_chemistry_corpus",
+      "path": "src/forge/model/vocabulary.py"
+    },
+    {
+      "module": "forge.potency",
+      "original_module": "forge.potency",
+      "source_sha256": "d1975272537b845f7e78281f1579535fa2948cdd1a959fd58e01532a1e4632a8",
+      "release_sha256": "9d3ace3617b7479efb2edd6fe0a2f35e169965351ffc511db0642256fb287a35",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.potency.annotations",
+      "path": "src/forge/potency/__init__.py"
+    },
+    {
+      "module": "forge.potency.annotations",
+      "original_module": "forge.potency.annotations",
+      "source_sha256": "9ffeee87446623832a7030df0bce1a10285a7857aa7dc7dddcef306f59bfe18e",
+      "release_sha256": "9ffeee87446623832a7030df0bce1a10285a7857aa7dc7dddcef306f59bfe18e",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.corpus.ugi_held_component_gate",
+      "path": "src/forge/potency/annotations.py"
+    },
+    {
+      "original_module": "forge.potency.applicability",
+      "module": "forge.potency.applicability",
+      "path": "src/forge/potency/applicability/__init__.py",
+      "source_sha256": "df917392c3071520bcba8f1e8a2bbf82a78091f9f7120f03db1d075d592e2d88",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "c3ea4a6a6cd73b76471345d77623fec4cf4f61efd3ab47c1aa52a43735360d35"
+    },
+    {
+      "original_module": "forge.potency.applicability.ugi_distributional_applicability",
+      "module": "forge.potency.applicability.ugi_distributional_applicability",
+      "path": "src/forge/potency/applicability/ugi_distributional_applicability.py",
+      "source_sha256": "64295cf897020e716472cdf371d5ae05053ade8a781ec0a6c4aa6614f8abb561",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "669c37674562dff63c61745caa94c31904705bc6646a69070095ca9e01994adb"
+    },
+    {
+      "original_module": "forge.potency.applicability.ugi_distributional_applicability_v2",
+      "module": "forge.potency.applicability.ugi_distributional_applicability_v2",
+      "path": "src/forge/potency/applicability/ugi_distributional_applicability_v2.py",
+      "source_sha256": "d743b6d775f3278659ccbcedaa8e31a91e2fe16a9490d90ef935139b6b812f32",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "55a63d000cfea738b82399da18db20dbd4d6bd11ba07249fd8413b76d3ddf186"
+    },
+    {
+      "original_module": "forge.potency.applicability.ugi_interpolative_conformal",
+      "module": "forge.potency.applicability.ugi_interpolative_conformal",
+      "path": "src/forge/potency/applicability/ugi_interpolative_conformal.py",
+      "source_sha256": "7ee7c7335238cfc2d90fb8ba8c1e1b510437cc93279a95695a1ea9885a4202ea",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "49a7d4d615d41cb58dd2197f1be74420f3ba41751162dd3fc35f404984edcaae"
+    },
+    {
+      "module": "forge.potency.oracle",
+      "path": "src/forge/potency/oracle/__init__.py",
+      "original_module": "forge.potency.oracle",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "source_sha256": "b3ab54d3b41db933a446f3a8a6234c68b5fb39564f76396212a471a86fca6e06",
+      "release_sha256": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3"
+    },
+    {
+      "original_module": "forge.potency.oracle.agile_reconciliation",
+      "module": "forge.potency.oracle.agile_reconciliation",
+      "path": "src/forge/potency/oracle/agile_reconciliation.py",
+      "source_sha256": "1f34fc5ac0eb5f962b03010bb77b2d8ecf1c0b3545014b5d84362076ca5f69ee",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "b80714f9a3c7bd36b23edde9497bff7ec90a5174b7d0c6668d73153dc17eed77"
+    },
+    {
+      "original_module": "forge.potency.oracle.oracle_classical",
+      "module": "forge.potency.oracle.oracle_classical",
+      "path": "src/forge/potency/oracle/oracle_classical.py",
+      "source_sha256": "27792baabccc8894b362f4f972fc94893464254f7cbba8fbd62320aa6b39c52a",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "14ee21de53387e430b1451b8a94eeeda8da92eae7d1be43959eb721490971a73"
+    },
+    {
+      "module": "forge.release",
+      "path": "src/forge/release/__init__.py",
+      "original_module": null,
+      "source_snapshot": "release_native",
+      "source_sha256": null,
+      "release_sha256": "fe14b776cb0559c463220a4a5f0f5df930d88ca5678e890a2a74d7d0ce264256"
+    },
+    {
+      "module": "forge.release._generation_runtime",
+      "path": "src/forge/release/_generation_runtime.py",
+      "original_module": null,
+      "source_snapshot": "release_native",
+      "source_sha256": null,
+      "release_sha256": "f8702f0ec74b7b9e4506af5d591608c77d614c6e12b8d883697a2071524050c0"
+    },
+    {
+      "module": "forge.release.artifacts",
+      "path": "src/forge/release/artifacts.py",
+      "original_module": null,
+      "source_snapshot": "release_native",
+      "source_sha256": null,
+      "release_sha256": "819146d9f96214c231745698aa82056324a4e8e44ce684df8eaa2e51da39ba8c"
+    },
+    {
+      "module": "forge.release.assessment",
+      "path": "src/forge/release/assessment.py",
+      "original_module": null,
+      "source_snapshot": "release_native",
+      "source_sha256": null,
+      "release_sha256": "d303a8884252866ce5a5b116d2d40c2a4f45c71cfd718759f89414846d01c3a5"
+    },
+    {
+      "module": "forge.release.atlas",
+      "path": "src/forge/release/atlas.py",
+      "original_module": null,
+      "source_snapshot": "release_native",
+      "source_sha256": null,
+      "release_sha256": "75aaeabd71b6e9607a8f17ed00a9dee52bbd4487c58424cbb7530f44a042c982"
+    },
+    {
+      "module": "forge.release.cli",
+      "path": "src/forge/release/cli.py",
+      "original_module": null,
+      "source_snapshot": "release_native",
+      "source_sha256": null,
+      "release_sha256": "63b5a796a798b9a68b14f7f1bc7902f490510e781a8f1e60e2b94992dca2d561"
+    },
+    {
+      "module": "forge.release.generate",
+      "path": "src/forge/release/generate.py",
+      "original_module": null,
+      "source_snapshot": "release_native",
+      "source_sha256": null,
+      "release_sha256": "a956ee28bb6699d283fb62bfa1f130ab3a95d012dd015f0ba85d67860383d043"
+    },
+    {
+      "module": "forge.release.manuscript",
+      "path": "src/forge/release/manuscript.py",
+      "original_module": null,
+      "source_snapshot": "release_native",
+      "source_sha256": null,
+      "release_sha256": "d7c05118458d2c8189935800aa2f86a22d827511ea9dbe4655997bb9bb4388d8"
+    },
+    {
+      "module": "forge.release.reproduce",
+      "path": "src/forge/release/reproduce.py",
+      "original_module": null,
+      "source_snapshot": "release_native",
+      "source_sha256": null,
+      "release_sha256": "3eb390c3bc37aae4c0aa86e318254023b6a04ba9e6f7336b6e17eaea33a6246e"
+    },
+    {
+      "module": "forge.reporting",
+      "original_module": "forge_paper",
+      "source_sha256": "372ea4501c01f4452a5fc765213ba65df7eda3c6f67c242ef4964d7288d4a57a",
+      "release_sha256": "bc2a26016feca631f3f7f0a4642e256658fbec1f53edb66c03abebd923302278",
+      "source_snapshot": "413767a3+working-tree",
+      "required_by": "forge_paper.gem_table9",
+      "path": "src/forge/reporting/__init__.py"
+    },
+    {
+      "module": "forge.reporting.gem_table1",
+      "original_module": "forge_paper.gem_table1",
+      "source_sha256": "0f29d4f69a98219b5d5a22e281f99da84536b53c9eea341cf202ff76d547b42a",
+      "release_sha256": "0f29d4f69a98219b5d5a22e281f99da84536b53c9eea341cf202ff76d547b42a",
+      "source_snapshot": "413767a3+working-tree",
+      "required_by": "forge_paper.gem_table9",
+      "path": "src/forge/reporting/gem_table1.py"
+    },
+    {
+      "module": "forge.reporting.gem_table4",
+      "original_module": "forge_paper.gem_table4",
+      "source_sha256": "6bc6bbb312170ce033f3b228897e3ab4ba2b0c49dc14ea79c5fb93fa7d514f4c",
+      "release_sha256": "8c2bcba6c940630a438a307a556966cd81d7f3f99a333f2b0309724dcfb6f1f6",
+      "source_snapshot": "413767a3+working-tree",
+      "required_by": "entry point",
+      "path": "src/forge/reporting/gem_table4.py"
+    },
+    {
+      "module": "forge.reporting.gem_table5",
+      "original_module": "forge_paper.gem_table5",
+      "source_sha256": "a2f1edede4bd06684d215a18ffd1485c45934bfbca704adde67234686de3d372",
+      "release_sha256": "a2f1edede4bd06684d215a18ffd1485c45934bfbca704adde67234686de3d372",
+      "source_snapshot": "413767a3+working-tree",
+      "required_by": "entry point",
+      "path": "src/forge/reporting/gem_table5.py"
+    },
+    {
+      "module": "forge.reporting.gem_table6",
+      "original_module": "forge_paper.gem_table6",
+      "source_sha256": "8d519ea4784266c52be462dc1442c52db504ca23db69c55621ef5b2fc13f11cf",
+      "release_sha256": "b897d4ae402dbc1a90a3de9e2db2ab5feee1a8dc1d799e0925e8af2f427ddc6e",
+      "source_snapshot": "413767a3+working-tree",
+      "required_by": "entry point",
+      "path": "src/forge/reporting/gem_table6.py"
+    },
+    {
+      "module": "forge.reporting.gem_table8",
+      "original_module": "forge_paper.gem_table8",
+      "source_sha256": "7f490058cfd1b214e051f54337e6387559cf02541d0f02f0e1221fc2ee21f4b4",
+      "release_sha256": "2cbf6fb7cbbab0da8d8cbab5922570acf650567ef19097c072c09d11fc93ea69",
+      "source_snapshot": "413767a3+working-tree",
+      "required_by": "entry point",
+      "path": "src/forge/reporting/gem_table8.py"
+    },
+    {
+      "module": "forge.reporting.gem_table9",
+      "original_module": "forge_paper.gem_table9",
+      "source_sha256": "3a1d9c4c9c7af7edc08777680bace8dfe9c42928dfba0d2244d4370ba4162974",
+      "release_sha256": "9507b96cb3c98552ff758fd234fbff92a2eb11e14419ab8a66afd02879038a97",
+      "source_snapshot": "413767a3+working-tree",
+      "required_by": "entry point",
+      "path": "src/forge/reporting/gem_table9.py"
+    },
+    {
+      "module": "forge.reporting.results_v1",
+      "original_module": "forge_paper.results_v1",
+      "source_sha256": "f97592d8cf6d35685290abf8e5cb98e22a55fae4d32324f356982359668c87cd",
+      "release_sha256": "f682e4a710aa9c708123e693e8f902c940602ab5bb9667d4ee47836b52b6bc28",
+      "source_snapshot": "413767a3+working-tree",
+      "required_by": "forge_paper.gem_table8",
+      "path": "src/forge/reporting/results_v1.py"
+    },
+    {
+      "module": "forge.synthesis",
+      "original_module": "forge.synthesis",
+      "source_sha256": "1a43b3097df4bcdfda5e39fe2d1cd25c7019d6721dff1fd0850d9806109dfe8d",
+      "release_sha256": "e11b4f71283b816e75321e0672b395b4c0a1cd7fa59ff180a77929b3de9057c5",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.synthesis.engine.qualified_forward",
+      "path": "src/forge/synthesis/__init__.py"
+    },
+    {
+      "module": "forge.synthesis.assessment",
+      "path": "src/forge/synthesis/assessment/__init__.py",
+      "original_module": "forge.synthesis.assessment",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "source_sha256": "0e57b49bd1ab8eaea1ba612525280ea6931c16727898045495d35de6144dc587",
+      "release_sha256": "a7c7a7f1286fc118141a46e063bcca5891a0ec414bb7059a3c20df384a815cf7"
+    },
+    {
+      "module": "forge.synthesis.assessment.common_route_evidence",
+      "path": "src/forge/synthesis/assessment/common_route_evidence.py",
+      "original_module": "forge.synthesis.assessment.common_route_evidence",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "source_sha256": "77b472a92cabdf686d68f22ccc640c834c97ba3ca9af576f47d7ba240150bf34",
+      "release_sha256": "77b472a92cabdf686d68f22ccc640c834c97ba3ca9af576f47d7ba240150bf34"
+    },
+    {
+      "original_module": "forge.synthesis.assessment.ugi3_support_boundary",
+      "module": "forge.synthesis.assessment.ugi3_support_boundary",
+      "path": "src/forge/synthesis/assessment/ugi3_support_boundary.py",
+      "source_sha256": "73a04490f12828129994ec3ad2f2d4cd50101575fa5eb767370c2fd75918e77b",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "21e0c260f854d91bcf5b66286560621e0c9dbff859ed5d6d4d25ce6389010bc6"
+    },
+    {
+      "module": "forge.synthesis.engine",
+      "original_module": "forge.synthesis.engine",
+      "source_sha256": "c390fe53e7611b788b51368e8b4d3b67caca7cebeec60f9c73e82e5bf09b1f3e",
+      "release_sha256": "42d09a072dd80b554f7d9c1c91788b6a1b9aa7ecab65d4baaecf722612a962b1",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.synthesis.engine.qualified_forward",
+      "path": "src/forge/synthesis/engine/__init__.py"
+    },
+    {
+      "original_module": "forge.synthesis.engine.planner",
+      "module": "forge.synthesis.engine.planner",
+      "path": "src/forge/synthesis/engine/planner.py",
+      "source_sha256": "267ee16854a14882a161c6d64dd8fecf7598f24eea0d432b366de3793b2b8c76",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "faffcb63b96e336ac19641b7e6def67b7b46fc70a5d15255973151cb08f539ef"
+    },
+    {
+      "original_module": "forge.synthesis.engine.planner_cache",
+      "module": "forge.synthesis.engine.planner_cache",
+      "path": "src/forge/synthesis/engine/planner_cache.py",
+      "source_sha256": "6d985bfe58af96717478fc9dcad6735fbf8301745b563dfc55584aeeda8c69be",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "3f813489de35c6ba912610dfeb464460063034f68f6ff8164531265231473c00"
+    },
+    {
+      "original_module": "forge.synthesis.engine.planner_cache_snapshot",
+      "module": "forge.synthesis.engine.planner_cache_snapshot",
+      "path": "src/forge/synthesis/engine/planner_cache_snapshot.py",
+      "source_sha256": "d84604622a044a4eec658ffcece2eb37b5697e03aee74e6d88b98a97b2971e16",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "ebc70e4b19e36d46d0247cb5068ca4249fefc3af39c38cc25022854326542dd1"
+    },
+    {
+      "module": "forge.synthesis.engine.qualified_forward",
+      "original_module": "forge.synthesis.engine.qualified_forward",
+      "source_sha256": "0a06be48ed62c0865838117d28a5e360985ddc8175cafd66ace011980b2f88c8",
+      "release_sha256": "0a06be48ed62c0865838117d28a5e360985ddc8175cafd66ace011980b2f88c8",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "forge.potency.annotations",
+      "path": "src/forge/synthesis/engine/qualified_forward.py"
+    },
+    {
+      "original_module": "forge.synthesis.matched",
+      "module": "forge.synthesis.matched",
+      "path": "src/forge/synthesis/matched.py",
+      "source_sha256": "3554ca96038e7916c15de17e8544c4f43cd190537f4342e28b24d34c64426fe3",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "dd85457b084d88c603daf385977f6eb5dcbf7befc0aad75c5599c2dee1bf96ba"
+    },
+    {
+      "original_module": "forge.synthesis.terminals",
+      "module": "forge.synthesis.terminals",
+      "path": "src/forge/synthesis/terminals/__init__.py",
+      "source_sha256": "10ac7c3f640ff89a3e20c01986ada4e37aaae664cfb6fd15bc843f5abcbf0521",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "c3ea4a6a6cd73b76471345d77623fec4cf4f61efd3ab47c1aa52a43735360d35"
+    },
+    {
+      "original_module": "forge.synthesis.terminals.terminal_assessment",
+      "module": "forge.synthesis.terminals.terminal_assessment",
+      "path": "src/forge/synthesis/terminals/terminal_assessment.py",
+      "source_sha256": "bb22453445b3c3c9409544a69f1a31e48579c35d969b505f3a4219a6eb1d6ff9",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "a20e47733a9374ad85569922ea7eb8a40f2845bc49cc97b4c9827ad5de620b80"
+    },
+    {
+      "module": "forge.synthesis.value",
+      "path": "src/forge/synthesis/value/__init__.py",
+      "original_module": "forge.synthesis.value",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "source_sha256": "386a264aa6e6b2521aa12162dd998677e210df2d556cefd8e2bba45e351cb805",
+      "release_sha256": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3"
+    },
+    {
+      "original_module": "forge.synthesis.value.contracts",
+      "module": "forge.synthesis.value.contracts",
+      "path": "src/forge/synthesis/value/contracts.py",
+      "source_sha256": "b185b7c559ec8470108506be80554984e4ea66e1da1ee23692e9f5c32c2875c0",
+      "source_snapshot": "413767a3+working-tree",
+      "release_sha256": "7244c51684873877b76c75f8d6eeea9bd599ff668604fffafe74dff90959c77c"
+    },
+    {
+      "module": "forge.workflows",
+      "original_module": "experiments.phase1.multireaction",
+      "source_sha256": "efcfdf21c25123e6eb76ee5c2c42c6424d48628e4f83753ba0cc542c1551c13f",
+      "release_sha256": "8a3837971627355c01b2d888fe0063b2e1416bb2da5196d393d4191f56aa640a",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "experiments.phase1.multireaction.mechanism_study",
+      "path": "src/forge/workflows/__init__.py"
+    },
+    {
+      "module": "forge.workflows.benchmark_studies",
+      "path": "src/forge/workflows/benchmark_studies.py",
+      "original_module": "experiments.phase1.multireaction.benchmark_studies",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "source_sha256": "09be3009da7506b157cc244d1c6a7b6418b4d2c613b89b3ccf3efae94057cee8",
+      "release_sha256": "9d31cb992067c46d6d4bc3d75f6cf5bd29d6077e5d38071d06f599a9966b6bae"
+    },
+    {
+      "module": "forge.workflows.catalogue_baseline",
+      "original_module": "experiments.phase1.multireaction.catalogue_baseline",
+      "source_sha256": "c8027ef00c266c885ac9d4b2ac7eb61579417ac23eefa86a81f0028b8e7e9252",
+      "release_sha256": "c8027ef00c266c885ac9d4b2ac7eb61579417ac23eefa86a81f0028b8e7e9252",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "entry point",
+      "path": "src/forge/workflows/catalogue_baseline.py"
+    },
+    {
+      "module": "forge.workflows.external_ugi_contract",
+      "original_module": "experiments.phase1.multireaction.external_ugi_contract",
+      "source_sha256": "facc45db66acbdabc0e9ec938b43f6fbf48a3e0c6bde91a1d227fe6aeee899e2",
+      "release_sha256": "facc45db66acbdabc0e9ec938b43f6fbf48a3e0c6bde91a1d227fe6aeee899e2",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "experiments.phase1.multireaction.native_baseline_ports",
+      "path": "src/forge/workflows/external_ugi_contract.py"
+    },
+    {
+      "module": "forge.workflows.lipid_realism_aggregation",
+      "path": "src/forge/workflows/lipid_realism_aggregation.py",
+      "original_module": "experiments.phase1.multireaction.lipid_realism_aggregation",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "source_sha256": "b629cbdcd981c122f621c29940c9a00a3d849dd1f92bd3c944724a9647567085",
+      "release_sha256": "b629cbdcd981c122f621c29940c9a00a3d849dd1f92bd3c944724a9647567085"
+    },
+    {
+      "module": "forge.workflows.lipid_realism_assessment",
+      "path": "src/forge/workflows/lipid_realism_assessment.py",
+      "original_module": "experiments.phase1.multireaction.lipid_realism_assessment",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "source_sha256": "d26ddabc469ef1ccad4b7715c352b6ece92251e214e201178befcb0dc121b357",
+      "release_sha256": "d26ddabc469ef1ccad4b7715c352b6ece92251e214e201178befcb0dc121b357"
+    },
+    {
+      "module": "forge.workflows.mechanism_study",
+      "original_module": "experiments.phase1.multireaction.mechanism_study",
+      "source_sha256": "03c0eeb05e90766b496ba95344c8483b4ddcb58135dd812e1cb09973c5de8b72",
+      "release_sha256": "b848f751827479e5199e4e57619c041638961a43a8cb15d6e1a18fc76509942f",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "entry point",
+      "path": "src/forge/workflows/mechanism_study.py"
+    },
+    {
+      "module": "forge.workflows.native_baseline_ports",
+      "original_module": "experiments.phase1.multireaction.native_baseline_ports",
+      "source_sha256": "1f6f4ba5cb43a9d1d6299533002f6f1c20c67a44c5c20689482c47fadd512efb",
+      "release_sha256": "1f6f4ba5cb43a9d1d6299533002f6f1c20c67a44c5c20689482c47fadd512efb",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "experiments.phase1.multireaction.native_baseline_runtime",
+      "path": "src/forge/workflows/native_baseline_ports.py"
+    },
+    {
+      "module": "forge.workflows.native_baseline_runtime",
+      "original_module": "experiments.phase1.multireaction.native_baseline_runtime",
+      "source_sha256": "051ed8892b22604a8320fabbd1dae3a3d206678c66cb0897037a5ecb97aa43a1",
+      "release_sha256": "051ed8892b22604a8320fabbd1dae3a3d206678c66cb0897037a5ecb97aa43a1",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "entry point",
+      "path": "src/forge/workflows/native_baseline_runtime.py"
+    },
+    {
+      "module": "forge.workflows.production_evaluation",
+      "original_module": "experiments.phase1.multireaction.production_evaluation",
+      "source_sha256": "a3c6c6326e4de8d8c272aad80d60d7cd49153094c358ffa8b67c960377f875e6",
+      "release_sha256": "0b423feedbbcde5a555ced0cdc585a25788873fead3b34d5ef585b6f20edb9d5",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "experiments.phase1.multireaction.mechanism_study",
+      "path": "src/forge/workflows/production_evaluation.py"
+    },
+    {
+      "module": "forge.workflows.production_randomness",
+      "original_module": "experiments.phase1.multireaction.production_randomness",
+      "source_sha256": "9560d51a7f3c9af35acba760f991d4c8719d10837ce6f0e2e3d3ca88436fa44d",
+      "release_sha256": "9560d51a7f3c9af35acba760f991d4c8719d10837ce6f0e2e3d3ca88436fa44d",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "experiments.phase1.multireaction.mechanism_study",
+      "path": "src/forge/workflows/production_randomness.py"
+    },
+    {
+      "module": "forge.workflows.production_training",
+      "original_module": "experiments.phase1.multireaction.production_training",
+      "source_sha256": "9b4a1f00bbae5dac75225ff51c9a54a33f6f64a7040a4eb16305f81a4a81e0b5",
+      "release_sha256": "9b4a1f00bbae5dac75225ff51c9a54a33f6f64a7040a4eb16305f81a4a81e0b5",
+      "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
+      "required_by": "experiments.phase1.multireaction.mechanism_study",
+      "path": "src/forge/workflows/production_training.py"
+    }
+  ],
+  "release_transformations": [
+    "Python package/import relocation",
+    "Removal of unreachable historical helper definitions, recorded separately",
+    "Formatting and unused import removal",
+    "Exact requested checkpoint subset selection in production_evaluation.py",
+    "Later frozen control arms in mechanism_study._shared_bias_retraining_arms; primary-arm equality checked",
+    "Portable generation, artifact, manuscript and table-replay commands"
+  ]
+}
