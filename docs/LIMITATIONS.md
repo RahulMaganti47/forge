@@ -51,3 +51,16 @@ they are not rewritten to point at the current release and called historical mat
   review against those records before a camera-ready revision.
 - Linux/CUDA and native external-baseline production runs need their own qualification. Local CPU
   smoke results and newly locked dependencies cannot certify historical GPU bitwise equivalence.
+
+## Linux PCGrad equivalence check
+
+The Linux check for commit `fa2b72da952f42aa3ecc40a12047b8e4b085a543` failed
+`test_batched_vjp_pcgrad_matches_sequential_shared_parameter_gradients`: the optional
+`batched_vjp` backend did not produce bitwise-identical gradients to the sequential backend.
+Conflict counts and the existing gradient-norm comparison passed. The full local suite passed,
+and earlier Linux runs passed, so portable bitwise equivalence remains unqualified.
+
+The submitted configs use the default sequential backend. This failure does not qualify the
+optional backend or justify weakening its test. Numerical kernels and test assertions were preserved
+during the writing cleanup. The failure receipt is in
+`provenance/qualification/linux_pcgrad_equivalence.json`.
