@@ -524,7 +524,7 @@
   "upstream_manifest_sha256": "9a74401485b2d2c97f5eb17c106dc513d01c6b1097c7a98bd4b9864a8e0db327",
   "storage": {
     "github": {
-      "repository": "RahulMaganti47/forge-iclr-review",
+      "repository": "RahulMaganti47/forge",
       "release": "submission19337-artifacts-v1",
       "archives": [
         {

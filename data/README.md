@@ -35,9 +35,9 @@ uv run forge artifacts fetch --group submission19337-evidence-v1
 
 | Download | Contents | Size |
 |---|---|---|
-| [Primary model](https://github.com/RahulMaganti47/forge-iclr-review/releases/download/submission19337-artifacts-v1/paper-model-v1.tar.gz) | Three checkpoints and the primary training cache | 324 MB |
-| [Supporting inputs](https://github.com/RahulMaganti47/forge-iclr-review/releases/download/submission19337-artifacts-v1/submission19337-evidence-v1.tar.gz) | Supporting cache and two chemistry source PDFs | 23 MB |
-| Architecture study: [seed 0](https://github.com/RahulMaganti47/forge-iclr-review/releases/download/submission19337-artifacts-v1/architecture-seed0.tar.gz), [seed 1](https://github.com/RahulMaganti47/forge-iclr-review/releases/download/submission19337-artifacts-v1/architecture-seed1.tar.gz), [seed 2](https://github.com/RahulMaganti47/forge-iclr-review/releases/download/submission19337-artifacts-v1/architecture-seed2.tar.gz) | Optional architecture-study weights | 1.23 GB each |
+| [Primary model](https://github.com/RahulMaganti47/forge/releases/download/submission19337-artifacts-v1/paper-model-v1.tar.gz) | Three checkpoints and the primary training cache | 324 MB |
+| [Supporting inputs](https://github.com/RahulMaganti47/forge/releases/download/submission19337-artifacts-v1/submission19337-evidence-v1.tar.gz) | Supporting cache and two chemistry source PDFs | 23 MB |
+| Architecture study: [seed 0](https://github.com/RahulMaganti47/forge/releases/download/submission19337-artifacts-v1/architecture-seed0.tar.gz), [seed 1](https://github.com/RahulMaganti47/forge/releases/download/submission19337-artifacts-v1/architecture-seed1.tar.gz), [seed 2](https://github.com/RahulMaganti47/forge/releases/download/submission19337-artifacts-v1/architecture-seed2.tar.gz) | Optional architecture-study weights | 1.23 GB each |
 
 For the architecture study:
 
