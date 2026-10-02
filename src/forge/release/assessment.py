@@ -6,7 +6,7 @@ from typing import Any
 from forge.assembly import Ugi3AssemblyAdapter
 from forge.core.hashing import sha256_file
 from forge.core.io import write_json, write_jsonl
-from forge.model.common_ugi_benchmark import assess_common_ugi_attempts, load_attempt_ledger
+from forge.evaluation.ugi_benchmark import assess_common_ugi_attempts, load_attempt_ledger
 from forge.release.generate import check_inputs
 
 

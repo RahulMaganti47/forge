@@ -6,18 +6,18 @@ import numpy as np
 import pytest
 import torch
 
-from forge.model.defog_feasibility import AtomState
-from forge.model.reaction_core_saturation import (
-    ReactionCoreSaturationError,
-    ReactionCoreSaturationPolicy,
-)
-from forge.model.reaction_program_flow import collate_synthesis_program_layouts
-from forge.model.sparse_topology_feasibility import SparseGraphRecord
-from forge.model.synthesis_program_graph import (
+from forge.model.networks.dense_flow import AtomState
+from forge.model.networks.reaction_flow import collate_synthesis_program_layouts
+from forge.model.networks.sparse_flow import SparseGraphRecord
+from forge.model.representation.synthesis_graph import (
     SynthesisProgramComponentBlock,
     SynthesisProgramGraphRecord,
 )
-from forge.model.synthesis_program_sampling import (
+from forge.model.sampling.core_saturation import (
+    ReactionCoreSaturationError,
+    ReactionCoreSaturationPolicy,
+)
+from forge.model.sampling.synthesis import (
     CORE_SATURATION_TERMINAL_DECODE_POLICY,
     SynthesisProgramSamplingError,
     decode_synthesis_program_strict_argmax,

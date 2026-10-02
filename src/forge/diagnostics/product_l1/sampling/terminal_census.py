@@ -38,7 +38,7 @@ from forge.diagnostics.product_l1.sampling.ugi_selected_restartable_generator_v2
 from forge.diagnostics.support.adapters.selected_v1 import (
     SelectedGuidanceState,
 )
-from forge.model.defog_feasibility import sha256_file
+from forge.model.networks.dense_flow import sha256_file
 
 try:
     import torch

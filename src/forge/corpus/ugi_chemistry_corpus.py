@@ -9,9 +9,8 @@ from collections.abc import Mapping
 from dataclasses import dataclass
 from pathlib import Path
 
-from forge.model.defog_feasibility import AtomState
-from forge.model.ugi_adapter_features import tensorize_ugi_l1_support_record
-from forge.model.ugi_chemistry_interface import (
+from forge.model.conditioning.ugi import tensorize_ugi_l1_support_record
+from forge.model.conditioning.ugi_chemistry import (
     ChemistryRealizationTarget,
     ChemistryTopologyCondition,
     UgiFixedCoreSchema,
@@ -19,7 +18,8 @@ from forge.model.ugi_chemistry_interface import (
     materialize_chemistry_target,
     project_chemistry_topology_condition,
 )
-from forge.model.vocabulary import load_atom_vocabulary
+from forge.model.networks.dense_flow import AtomState
+from forge.model.representation.vocabulary import load_atom_vocabulary
 
 
 class UgiChemistryCorpusError(RuntimeError):

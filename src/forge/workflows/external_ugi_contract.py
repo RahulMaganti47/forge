@@ -16,7 +16,7 @@ from typing import Any
 from forge.assembly import Ugi3AssemblyAdapter
 from forge.core.hashing import artifact_record, sha256_file
 from forge.core.io import iter_csv, read_csv, read_json, read_json_object, write_csv, write_json
-from forge.model.common_ugi_benchmark import (
+from forge.evaluation.ugi_benchmark import (
     CommonUgiAttempt,
     validate_attempt_ledger,
     write_attempt_ledger,

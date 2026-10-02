@@ -23,7 +23,7 @@ from forge.corpus.ugi_generated_terminal_support import (
     UgiGeneratedTerminalSupportError,
     qualify_locked_generated_ugi_terminal_support,
 )
-from forge.model.ugi_morphology_program import UgiMorphologyProgram
+from forge.model.representation.ugi_morphology import UgiMorphologyProgram
 from forge.potency.annotations import ROLE_NAMES
 from forge.synthesis.matched import (
     LockedMatchedTerminal,

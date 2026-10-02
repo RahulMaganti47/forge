@@ -7,13 +7,13 @@ from typing import Any
 
 from forge.core.hashing import artifact_record, pin_record, resolve_pin
 from forge.core.io import read_json_object, write_json, write_jsonl
-from forge.model.common_lipid_realism import (
+from forge.evaluation.lipid_realism import (
     ATTEMPT_ASSESSMENT_SCHEMA,
     RealismPolicy,
     assess_lipid_realism,
     build_realism_reference,
 )
-from forge.model.common_ugi_benchmark import load_attempt_ledger
+from forge.evaluation.ugi_benchmark import load_attempt_ledger
 
 CONFIG_SCHEMA = "forge.common_lipid_realism_config.v1"
 RESULT_SCHEMA = "forge.common_lipid_realism_complete_assessment.v1"

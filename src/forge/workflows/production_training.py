@@ -18,8 +18,14 @@ from forge.corpus.synthesis_program_production_cache import (
     SynthesisProgramProductionCache,
     SynthesisProgramProductionCacheError,
 )
-from forge.model.defog_feasibility import _model_state_sha256
-from forge.model.synthesis_program_training import (
+from forge.model.checkpoint import (
+    TrainingRestartError,
+    atomic_torch_save,
+    capture_training_random_state,
+    restore_training_random_state,
+)
+from forge.model.networks.dense_flow import _model_state_sha256
+from forge.model.training import (
     build_synthesis_program_flow,
     collate_synthesis_program_training_batch,
     move_tensors,
@@ -28,12 +34,6 @@ from forge.model.synthesis_program_training import (
     synthesis_program_forward_loss,
     synthesis_program_paired_topology_forward,
     synthesis_program_topology_conditioned_forward,
-)
-from forge.model.training_restart import (
-    TrainingRestartError,
-    atomic_torch_save,
-    capture_training_random_state,
-    restore_training_random_state,
 )
 
 try:
@@ -507,10 +507,8 @@ def _train_arm(
             )
             t = torch.rand(micro_batch, generator=generator, device=device).clamp(0.02, 0.98)
             if arm_model_config.get("architecture") == "reaction_program_graph_transformer":
-                from forge.model.reaction_program_transformer import (
-                    balanced_pcgrad_backward,
-                    per_program_transformer_losses,
-                )
+                from forge.model.objectives.pcgrad import balanced_pcgrad_backward
+                from forge.model.objectives.transformer import per_program_transformer_losses
 
                 objective = arm_model_config["semantic_objective"]
                 topology_conditioned_weight = float(

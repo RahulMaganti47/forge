@@ -65,7 +65,7 @@ from forge.diagnostics.support.guidance.ugi_zero_guidance_rehearsal import (
     RestartableGeneratorClosureAdapter,
     RestartableGeneratorClosureIdentity,
 )
-from forge.model.ugi_joint_sparse_flow import UgiJointSparseFlow
+from forge.model.networks.ugi_joint_flow import UgiJointSparseFlow
 from forge.synthesis.matched import (
     LockedMatchedTerminal,
     MatchedGenerationRequest,

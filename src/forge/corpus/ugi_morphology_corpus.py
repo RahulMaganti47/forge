@@ -18,13 +18,13 @@ from pathlib import Path
 
 import numpy as np
 
-from forge.model.ugi_adapter_features import tensorize_ugi_l1_support_record
-from forge.model.ugi_morphology_program import (
+from forge.model.conditioning.ugi import tensorize_ugi_l1_support_record
+from forge.model.representation.ugi_morphology import (
     UgiComponentMorphology,
     UgiProductMorphology,
     split_ugi_support_morphology,
 )
-from forge.model.vocabulary import load_atom_vocabulary
+from forge.model.representation.vocabulary import load_atom_vocabulary
 from forge.potency.annotations import ROLE_NAMES
 
 

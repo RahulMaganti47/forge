@@ -20,7 +20,7 @@ from typing import Any
 from rdkit import Chem, rdBase
 
 from forge.corpus.ugi_component_expansion import reaction_handle_qualification
-from forge.model.eligibility import declared_support_violations
+from forge.evaluation.eligibility import declared_support_violations
 from forge.potency.annotations import ROLE_NAMES
 from forge.synthesis.assessment.ugi3_support_boundary import (
     AuthenticatedInternalRoleRegistry,

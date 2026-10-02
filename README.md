@@ -190,6 +190,27 @@ establish historical GPU equivalence. Exact L1 consistency is not synthesis succ
 efficacy; component novelty is relative to the declared training catalogue and verifier. Undefined
 metrics, structural zeros, invalid attempts, and negative results remain in the reported denominators.
 
+## Code layout
+
+```text
+src/forge/
+├── model/
+│   ├── representation/  # Graphs, semantic layouts, and vocabulary
+│   ├── conditioning/    # Reaction programs and precursor roles
+│   ├── networks/        # Transformer and flow architectures
+│   ├── objectives/      # Losses and PCGrad
+│   ├── sampling/        # Decoding and constrained generation
+│   ├── checkpoint.py   # Tensor serialization and restart state
+│   └── training.py     # Model construction and training primitives
+├── evaluation/         # Molecular metrics and common benchmarks
+├── baselines/          # Catalogue and learned inventory selector
+└── workflows/          # Experiment orchestration
+```
+
+The primary model is in [networks/transformer.py](src/forge/model/networks/transformer.py).
+Its losses are in [objectives/transformer.py](src/forge/model/objectives/transformer.py), with gradient
+projection in [objectives/pcgrad.py](src/forge/model/objectives/pcgrad.py).
+
 ## License and citation
 
 Implementation code is [MIT licensed](LICENSE). Data, publications, images, and upstream projects

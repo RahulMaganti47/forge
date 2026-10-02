@@ -17,13 +17,13 @@ from forge.core.hashing import artifact_record, pin_record, resolve_pin, sha256_
 from forge.core.io import read_json_object, write_json
 from forge.corpus.reaction_program_training import load_reaction_program_specifications
 from forge.corpus.synthesis_program_production_cache import SynthesisProgramProductionCache
-from forge.model.reaction_program_evaluation import (
+from forge.evaluation.reaction_program import (
     adjudicate_reaction_program_rows,
     evaluate_reaction_program_samples,
     load_reaction_program_training_references,
 )
-from forge.model.synthesis_program_layout import SynthesisProgramLayoutPrior
-from forge.model.synthesis_program_sampling import (
+from forge.model.representation.layouts import SynthesisProgramLayoutPrior
+from forge.model.sampling.synthesis import (
     TERMINAL_DECODE_POLICIES,
     sample_synthesis_program_products,
 )

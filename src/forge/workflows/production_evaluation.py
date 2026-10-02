@@ -21,33 +21,33 @@ from forge.core.hashing import artifact_record, pin_record, resolve_pin, sha256_
 from forge.core.io import read_json_object, stable_json, write_json
 from forge.corpus.reaction_program_training import load_reaction_program_specifications
 from forge.corpus.synthesis_program_production_cache import SynthesisProgramProductionCache
-from forge.model.common_ugi_benchmark import (
-    CommonUgiAttempt,
-    load_ugi_identity_references,
-    write_attempt_ledger,
-)
-from forge.model.conditional_role_dependence import cross_role_fidelity_to_heldout
-from forge.model.defog_feasibility import _model_state_sha256
-from forge.model.local_chemistry_support import LocalChemistrySupport
-from forge.model.reaction_core_saturation import ReactionCoreSaturationPolicy
-from forge.model.reaction_program_evaluation import (
+from forge.evaluation.reaction_program import (
     adjudicate_reaction_program_rows,
     evaluate_reaction_program_samples,
     load_reaction_program_training_references,
 )
-from forge.model.reaction_program_flow import synthesis_program_flow_loss
-from forge.model.synthesis_program_layout import (
+from forge.evaluation.role_dependence import cross_role_fidelity_to_heldout
+from forge.evaluation.ugi_benchmark import (
+    CommonUgiAttempt,
+    load_ugi_identity_references,
+    write_attempt_ledger,
+)
+from forge.model.networks.dense_flow import _model_state_sha256
+from forge.model.networks.reaction_flow import synthesis_program_flow_loss
+from forge.model.representation.layouts import (
     SynthesisProgramLayoutError,
     SynthesisProgramLayoutPrior,
 )
-from forge.model.synthesis_program_sampling import (
+from forge.model.sampling.chemistry_support import LocalChemistrySupport
+from forge.model.sampling.core_saturation import ReactionCoreSaturationPolicy
+from forge.model.sampling.synthesis import (
     CORE_SATURATION_TERMINAL_DECODE_POLICY,
     LOCAL_CHEMISTRY_TERMINAL_DECODE_POLICY,
     PROGRAM_TOPOLOGY_TERMINAL_DECODE_POLICY,
     SUPPORTED_TERMINAL_DECODE_POLICIES,
     sample_synthesis_program_products,
 )
-from forge.model.synthesis_program_training import (
+from forge.model.training import (
     build_synthesis_program_flow,
     collate_synthesis_program_training_batch,
     move_tensors,
@@ -341,9 +341,7 @@ def _component_disjoint_reconstruction(
                 model, clean, node_p0, bond_p0, t, generator
             )
             if package["model_config"].get("architecture") == "reaction_program_graph_transformer":
-                from forge.model.reaction_program_transformer import (
-                    reaction_program_transformer_loss,
-                )
+                from forge.model.objectives.transformer import reaction_program_transformer_loss
 
                 objective = package["model_config"]["semantic_objective"]
                 heldout_loss, _ = reaction_program_transformer_loss(

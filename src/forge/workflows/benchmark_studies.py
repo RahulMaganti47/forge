@@ -6,19 +6,19 @@ from pathlib import Path
 from typing import Any
 
 from forge.assembly import Ugi3AssemblyAdapter
-from forge.core.hashing import artifact_record, pin_record, resolve_pin
-from forge.core.io import read_json_object, write_json, write_jsonl
-from forge.model.common_ugi_benchmark import (
-    assess_common_ugi_attempts,
-    write_attempt_ledger,
-)
-from forge.model.defog_feasibility import _model_state_sha256
-from forge.model.learned_inventory_selector import (
+from forge.baselines.inventory_selector import (
     load_inventory_training_data,
     sample_inventory_selector,
     train_inventory_selector,
 )
-from forge.model.training_restart import atomic_torch_save
+from forge.core.hashing import artifact_record, pin_record, resolve_pin
+from forge.core.io import read_json_object, write_json, write_jsonl
+from forge.evaluation.ugi_benchmark import (
+    assess_common_ugi_attempts,
+    write_attempt_ledger,
+)
+from forge.model.checkpoint import atomic_torch_save
+from forge.model.networks.dense_flow import _model_state_sha256
 from forge.synthesis.assessment.common_route_evidence import (
     assess_common_route_evidence,
     load_frozen_component_evidence,

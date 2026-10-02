@@ -14,14 +14,14 @@ import numpy as np
 
 from forge.core.io import iter_csv, read_json_object, stable_json, write_json
 from forge.corpus.reaction_program_records import admits_reaction_program_structure
-from forge.model.defog_feasibility import sha256_file
-from forge.model.reaction_program_conditioning import ReactionProgramVocabulary
-from forge.model.synthesis_program_graph import (
+from forge.model.conditioning.reaction_program import ReactionProgramVocabulary
+from forge.model.networks.dense_flow import sha256_file
+from forge.model.representation.synthesis_graph import (
     SynthesisProgramGraphError,
     SynthesisProgramGraphRecord,
     tensorize_synthesis_program_product,
 )
-from forge.model.vocabulary import load_atom_vocabulary
+from forge.model.representation.vocabulary import load_atom_vocabulary
 
 
 class SynthesisProgramRepresentationError(ValueError):

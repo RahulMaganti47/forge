@@ -53,7 +53,7 @@ from forge.diagnostics.support.adapters.terminal_support import (
 from forge.diagnostics.support.guidance.ugi_zero_guidance_rehearsal import (
     RestartableGeneratorClosureAdapter,
 )
-from forge.model.defog_feasibility import sha256_file
+from forge.model.networks.dense_flow import sha256_file
 from forge.synthesis.matched import (
     LockedMatchedTerminal,
     MatchedGenerationRequest,

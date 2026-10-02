@@ -14,13 +14,13 @@ from typing import Any
 import numpy as np
 
 from forge.flow.rstar import rstar_step as _rstar_step
-from forge.model.ugi_joint_sparse_flow import (
+from forge.model.networks.ugi_joint_flow import (
     UgiJointSparseFlowError,
     UgiJointSparseTerminal,
     _decoration_anchor_source,
 )
-from forge.model.ugi_morphology_flow import _layout_from_programs
-from forge.model.ugi_morphology_program import (
+from forge.model.networks.ugi_morphology import _layout_from_programs
+from forge.model.representation.ugi_morphology import (
     UgiMorphologyProgram,
     attached_tree_junction_contributions,
     sample_attached_offspring_with_exact_budget,
@@ -381,7 +381,7 @@ def finalize_ugi_joint_sparse_state(
         output_programs = []
         for batch_index, program in enumerate(local):
             if model.conditioning_mode == "size_only":
-                from forge.model.ugi_closure_placement import feasible_next_closures
+                from forge.model.sampling.ugi_closures import feasible_next_closures
 
                 cycle_ranks = []
                 for role_index, offspring in enumerate(component_values[batch_index]):

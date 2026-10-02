@@ -23,11 +23,11 @@ from forge.corpus.ugi_generated_components import (
     precursor_components_from_product_semantics,
 )
 from forge.corpus.ugi_held_component_gate import exact_forward_reconstructs_ugi_product
-from forge.model.ugi_chemistry_flow import (
+from forge.model.conditioning.ugi_chemistry import ChemistryTopologyCondition
+from forge.model.networks.ugi_chemistry import (
     UgiChemistrySample,
     chemistry_sample_to_molecule,
 )
-from forge.model.ugi_chemistry_interface import ChemistryTopologyCondition
 from forge.potency.annotations import ROLE_NAMES
 
 VALIDATED_TERMINAL_SCHEMA_VERSION = "forge.validated_ugi_terminal_payload.v1"

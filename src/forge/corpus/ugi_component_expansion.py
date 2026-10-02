@@ -28,7 +28,7 @@ from forge.corpus.component_splits import (
 )
 from forge.corpus.r0_splits import sha256_bytes, sha256_file
 from forge.corpus.r1_prime_audit import compile_reactions, load_reaction_definitions
-from forge.model.vocabulary import load_atom_vocabulary
+from forge.model.representation.vocabulary import load_atom_vocabulary
 
 CONFIG_SCHEMA_VERSION = "phase1_ugi_component_expansion_config.v1"
 RESULT_SCHEMA_VERSION = "phase1_ugi_component_expansion_result.v1"

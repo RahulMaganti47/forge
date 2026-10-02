@@ -28,16 +28,16 @@ from forge.corpus.synthesis_program_representation import (
     synthesis_program_contracts,
     synthesis_program_vocabulary,
 )
-from forge.model.defog_feasibility import AtomState
-from forge.model.reaction_program_conditioning import ReactionProgramVocabulary
-from forge.model.sparse_topology_feasibility import SparseGraphRecord
-from forge.model.synthesis_program_graph import (
+from forge.model.conditioning.reaction_program import ReactionProgramVocabulary
+from forge.model.networks.dense_flow import AtomState
+from forge.model.networks.sparse_flow import SparseGraphRecord
+from forge.model.representation.synthesis_graph import (
     SynthesisProgramComponentBlock,
     SynthesisProgramGraphError,
     SynthesisProgramGraphRecord,
     tensorize_synthesis_program_product,
 )
-from forge.model.vocabulary import load_atom_vocabulary
+from forge.model.representation.vocabulary import load_atom_vocabulary
 
 CACHE_CONFIG_SCHEMA = "forge.synthesis_program_production_cache_config.v1"
 CACHE_SCHEMA = "forge.synthesis_program_production_cache.v1"

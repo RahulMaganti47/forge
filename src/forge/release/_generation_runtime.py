@@ -14,10 +14,10 @@ from rdkit import rdBase
 from forge.assembly import RegistryRepeatedReactionProgram, Ugi3AssemblyAdapter
 from forge.corpus.reaction_program_training import load_reaction_program_specifications
 from forge.corpus.synthesis_program_production_cache import SynthesisProgramProductionCache
-from forge.model.reaction_core_saturation import ReactionCoreSaturationPolicy
-from forge.model.reaction_program_evaluation import adjudicate_reaction_program_rows
-from forge.model.synthesis_program_layout import SynthesisProgramLayoutPrior
-from forge.model.synthesis_program_sampling import sample_synthesis_program_products
+from forge.evaluation.reaction_program import adjudicate_reaction_program_rows
+from forge.model.representation.layouts import SynthesisProgramLayoutPrior
+from forge.model.sampling.core_saturation import ReactionCoreSaturationPolicy
+from forge.model.sampling.synthesis import sample_synthesis_program_products
 from forge.release.generate import ARM, DECODER, FLOW_STEPS, STEP
 from forge.workflows.production_evaluation import (
     _load_checkpoint,

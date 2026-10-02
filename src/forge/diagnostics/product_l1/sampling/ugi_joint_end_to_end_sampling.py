@@ -16,21 +16,21 @@ from forge.corpus.ugi_generated_components import (
 from forge.corpus.ugi_held_component_gate import (
     exact_forward_reconstructs_ugi_product,
 )
-from forge.model.local_chemistry_support import LocalChemistrySupport
-from forge.model.ugi_adapter_features import ORIGIN_TO_INDEX
-from forge.model.ugi_chemistry_flow import (
+from forge.model.conditioning.ugi import ORIGIN_TO_INDEX
+from forge.model.conditioning.ugi_chemistry import (
+    assemble_ugi_chemistry_topology_condition,
+)
+from forge.model.networks.ugi_chemistry import (
     UgiChemistryFlowError,
     UgiTerminalDecodeError,
     chemistry_sample_to_molecule,
     valence_constrained_terminal_sample,
 )
-from forge.model.ugi_chemistry_interface import (
-    assemble_ugi_chemistry_topology_condition,
-)
-from forge.model.ugi_closure_placement import sample_sparse_closures
-from forge.model.ugi_joint_sparse_flow import (
+from forge.model.networks.ugi_joint_flow import (
     UgiJointSparseTerminal,
 )
+from forge.model.sampling.chemistry_support import LocalChemistrySupport
+from forge.model.sampling.ugi_closures import sample_sparse_closures
 from forge.potency.annotations import ROLE_NAMES
 
 try:

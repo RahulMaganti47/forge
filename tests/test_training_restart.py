@@ -6,7 +6,7 @@ from types import SimpleNamespace
 import numpy as np
 import pytest
 
-from forge.model import training_restart
+from forge.model import checkpoint as training_restart
 
 torch = pytest.importorskip("torch")
 

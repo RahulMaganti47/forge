@@ -5,7 +5,7 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Any
 
-from forge.model.ugi_closure_placement import UgiSparseClosureScorer
+from forge.model.sampling.ugi_closures import UgiSparseClosureScorer
 
 try:
     import torch

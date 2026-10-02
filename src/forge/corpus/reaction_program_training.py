@@ -13,9 +13,9 @@ import numpy as np
 from forge.assembly import ReactionProgramSpec
 from forge.core.io import read_csv_rows, read_json_object
 from forge.corpus.reaction_program_records import admits_reaction_program_structure
-from forge.model.defog_feasibility import AtomState
-from forge.model.reaction_program_conditioning import ReactionProgramVocabulary
-from forge.model.reaction_program_graph import (
+from forge.model.conditioning.reaction_program import ReactionProgramVocabulary
+from forge.model.networks.dense_flow import AtomState
+from forge.model.representation.reaction_graph import (
     ReactionProgramGraphRecord,
     build_reaction_program_atom_vocabulary,
     tensorize_reaction_program_product,

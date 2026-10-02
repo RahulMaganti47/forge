@@ -7,26 +7,26 @@ from pathlib import Path
 from typing import Any
 
 from forge.assembly import RegistryRepeatedReactionProgram, Ugi3AssemblyAdapter
-from forge.core.hashing import artifact_record, pin_record, resolve_pin
-from forge.core.io import atomic_write, gzip_bytes, jsonl_bytes, read_json_object, write_json
-from forge.corpus.reaction_program_training import load_reaction_program_specifications
-from forge.model.common_ugi_benchmark import (
-    ATTEMPT_SCHEMA as COMMON_ATTEMPT_SCHEMA,
-)
-from forge.model.common_ugi_benchmark import (
-    CommonUgiAttempt,
-    write_attempt_ledger,
-)
-from forge.model.finite_component_catalogue import (
+from forge.baselines.catalogue import (
     build_finite_component_catalogues,
     finite_component_catalogue_coverage,
     sample_finite_component_program,
 )
-from forge.model.reaction_program_evaluation import (
+from forge.core.hashing import artifact_record, pin_record, resolve_pin
+from forge.core.io import atomic_write, gzip_bytes, jsonl_bytes, read_json_object, write_json
+from forge.corpus.reaction_program_training import load_reaction_program_specifications
+from forge.evaluation.reaction_program import (
     adjudicate_reaction_program_rows,
     effective_count,
     evaluate_reaction_program_samples,
     load_reaction_program_training_references,
+)
+from forge.evaluation.ugi_benchmark import (
+    ATTEMPT_SCHEMA as COMMON_ATTEMPT_SCHEMA,
+)
+from forge.evaluation.ugi_benchmark import (
+    CommonUgiAttempt,
+    write_attempt_ledger,
 )
 
 from .production_randomness import production_seed
