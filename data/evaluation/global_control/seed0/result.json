@@ -1,0 +1,1006 @@
+{
+  "cache": {
+    "bytes": 13727905,
+    "logical_path": "cache.npz",
+    "sha256": "249b92744c22109cd5994ad831555df85575bfb6bd58010dce71517e5e881114"
+  },
+  "calls": {
+    "oracle": 0,
+    "route": 0
+  },
+  "checkpoint_archive": {
+    "bytes": 112558080,
+    "logical_path": "checkpoints.tar",
+    "sha256": "4545845afcd0f5a95b811e3de2522720bcd292bf911a7bc6a9f1c7ec0771d67b"
+  },
+  "checkpoint_metrics": {
+    "shared_bias_global_source_control": {
+      "100": {
+        "calibration": {
+          "bl_2023_repeated_aza_michael": {
+            "component_metrics_by_role": {
+              "alkyl_acrylate_or_acrylamide_tail": {
+                "effective_count": 86.4796166442567,
+                "novel": 99,
+                "novel_fraction": 0.8918918918918919,
+                "slots": 111
+              },
+              "amine_head": {
+                "effective_count": 85.2514898126912,
+                "novel": 111,
+                "novel_fraction": 1.0,
+                "slots": 111
+              }
+            },
+            "component_novelty_fraction": 1.0,
+            "connected_fraction": 0.50390625,
+            "coverage_and_precision_reported": true,
+            "decomposition_abstention_fraction": 0.050387596899224806,
+            "decomposition_ambiguity_fraction": 0.5193798449612403,
+            "effective_component_count": 171.72671495551882,
+            "exact_forward_replay_precision": 1.0,
+            "exact_l1_decomposition_coverage": 0.9496124031007752,
+            "exact_l1_yield_per_attempt": 0.478515625,
+            "fixed_state_failures": 0,
+            "internal_diversity": 0.6893912376659577,
+            "local_chemistry_policy_applied": false,
+            "raw_valid_fraction": 0.50390625,
+            "reductive_amination_substructure_rate_reported": false,
+            "repairs": {},
+            "samples": 512,
+            "strict_constraint_abstention_reasons": {
+              "parent_capacity_exhausted": 96
+            },
+            "strict_constraint_abstentions": 96,
+            "support_overflow_count": 0,
+            "unique_exact_l1_products_per_1000_attempts": 476.5625,
+            "unique_fraction": 0.9961240310077519,
+            "unique_open_ended_exact_l1_products_per_1000_attempts": 216.796875,
+            "unique_whole_product_novel_exact_l1_products_per_1000_attempts": 466.796875,
+            "whole_lipid_novelty_fraction": 0.9806201550387597
+          },
+          "lx_2024_repeated_reductive_amination": {
+            "component_metrics_by_role": {
+              "aldehyde_tail": {
+                "effective_count": 41.94052149892837,
+                "novel": 50,
+                "novel_fraction": 0.9090909090909091,
+                "slots": 55
+              },
+              "amine_head": {
+                "effective_count": 44.10897003139171,
+                "novel": 55,
+                "novel_fraction": 1.0,
+                "slots": 55
+              }
+            },
+            "component_novelty_fraction": 1.0,
+            "connected_fraction": 0.6796875,
+            "coverage_and_precision_reported": true,
+            "decomposition_abstention_fraction": 0.09195402298850575,
+            "decomposition_ambiguity_fraction": 0.75,
+            "effective_component_count": 86.02216472275433,
+            "exact_forward_replay_precision": 1.0,
+            "exact_l1_decomposition_coverage": 0.9080459770114943,
+            "exact_l1_yield_per_attempt": 0.6171875,
+            "fixed_state_failures": 0,
+            "internal_diversity": 0.8265978111726737,
+            "local_chemistry_policy_applied": false,
+            "raw_valid_fraction": 0.6796875,
+            "reductive_amination_substructure_rate_reported": false,
+            "repairs": {},
+            "samples": 512,
+            "strict_constraint_abstention_reasons": {},
+            "strict_constraint_abstentions": 0,
+            "support_overflow_count": 0,
+            "unique_exact_l1_products_per_1000_attempts": 617.1875,
+            "unique_fraction": 1.0,
+            "unique_open_ended_exact_l1_products_per_1000_attempts": 107.421875,
+            "unique_whole_product_novel_exact_l1_products_per_1000_attempts": 617.1875,
+            "whole_lipid_novelty_fraction": 1.0
+          },
+          "ugi_3cr_agile": {
+            "component_metrics_by_role": {
+              "amine_head": {
+                "effective_count": 112.92414113255447,
+                "novel": 296,
+                "novel_fraction": 0.6742596810933941,
+                "slots": 439
+              },
+              "isocyanide_tail": {
+                "effective_count": 74.26520621792746,
+                "novel": 304,
+                "novel_fraction": 0.6924829157175398,
+                "slots": 439
+              },
+              "oxoester_aldehyde_body_tail": {
+                "effective_count": 48.24198964036947,
+                "novel": 207,
+                "novel_fraction": 0.4715261958997722,
+                "slots": 439
+              }
+            },
+            "component_novelty_fraction": 0.9635535307517085,
+            "connected_fraction": 0.880859375,
+            "coverage_and_precision_reported": true,
+            "decomposition_abstention_fraction": 0.026607538802660754,
+            "decomposition_ambiguity_fraction": 0.0,
+            "effective_component_count": 221.8811394868235,
+            "exact_forward_replay_precision": 1.0,
+            "exact_l1_decomposition_coverage": 0.9733924611973392,
+            "exact_l1_yield_per_attempt": 0.857421875,
+            "fixed_state_failures": 0,
+            "internal_diversity": 0.6041106845894553,
+            "local_chemistry_policy_applied": false,
+            "raw_valid_fraction": 0.880859375,
+            "reductive_amination_substructure_rate_reported": false,
+            "repairs": {},
+            "samples": 512,
+            "strict_constraint_abstention_reasons": {},
+            "strict_constraint_abstentions": 0,
+            "support_overflow_count": 0,
+            "unique_exact_l1_products_per_1000_attempts": 843.75,
+            "unique_fraction": 0.9844789356984479,
+            "unique_open_ended_exact_l1_products_per_1000_attempts": 816.40625,
+            "unique_whole_product_novel_exact_l1_products_per_1000_attempts": 843.75,
+            "whole_lipid_novelty_fraction": 1.0
+          }
+        }
+      },
+      "1700": {
+        "calibration": {
+          "bl_2023_repeated_aza_michael": {
+            "component_metrics_by_role": {
+              "alkyl_acrylate_or_acrylamide_tail": {
+                "effective_count": 23.342295485181687,
+                "novel": 45,
+                "novel_fraction": 0.36,
+                "slots": 125
+              },
+              "amine_head": {
+                "effective_count": 88.43559499356878,
+                "novel": 113,
+                "novel_fraction": 0.904,
+                "slots": 125
+              }
+            },
+            "component_novelty_fraction": 0.928,
+            "connected_fraction": 0.689453125,
+            "coverage_and_precision_reported": true,
+            "decomposition_abstention_fraction": 0.014164305949008499,
+            "decomposition_ambiguity_fraction": 0.6317280453257791,
+            "effective_component_count": 90.8689119500764,
+            "exact_forward_replay_precision": 1.0,
+            "exact_l1_decomposition_coverage": 0.9858356940509915,
+            "exact_l1_yield_per_attempt": 0.6796875,
+            "fixed_state_failures": 0,
+            "internal_diversity": 0.5881407451307195,
+            "local_chemistry_policy_applied": false,
+            "raw_valid_fraction": 0.689453125,
+            "reductive_amination_substructure_rate_reported": false,
+            "repairs": {},
+            "samples": 512,
+            "strict_constraint_abstention_reasons": {
+              "parent_capacity_exhausted": 84
+            },
+            "strict_constraint_abstentions": 84,
+            "support_overflow_count": 0,
+            "unique_exact_l1_products_per_1000_attempts": 664.0625,
+            "unique_fraction": 0.9773371104815864,
+            "unique_open_ended_exact_l1_products_per_1000_attempts": 218.75,
+            "unique_whole_product_novel_exact_l1_products_per_1000_attempts": 642.578125,
+            "whole_lipid_novelty_fraction": 0.9603399433427762
+          },
+          "lx_2024_repeated_reductive_amination": {
+            "component_metrics_by_role": {
+              "aldehyde_tail": {
+                "effective_count": 13.675837328373255,
+                "novel": 13,
+                "novel_fraction": 0.8666666666666667,
+                "slots": 15
+              },
+              "amine_head": {
+                "effective_count": 15.0,
+                "novel": 15,
+                "novel_fraction": 1.0,
+                "slots": 15
+              }
+            },
+            "component_novelty_fraction": 1.0,
+            "connected_fraction": 0.572265625,
+            "coverage_and_precision_reported": true,
+            "decomposition_abstention_fraction": 0.11945392491467577,
+            "decomposition_ambiguity_fraction": 0.8293515358361775,
+            "effective_component_count": 28.645248117312466,
+            "exact_forward_replay_precision": 1.0,
+            "exact_l1_decomposition_coverage": 0.8805460750853242,
+            "exact_l1_yield_per_attempt": 0.50390625,
+            "fixed_state_failures": 0,
+            "internal_diversity": 0.7434456432339545,
+            "local_chemistry_policy_applied": false,
+            "raw_valid_fraction": 0.572265625,
+            "reductive_amination_substructure_rate_reported": false,
+            "repairs": {},
+            "samples": 512,
+            "strict_constraint_abstention_reasons": {},
+            "strict_constraint_abstentions": 0,
+            "support_overflow_count": 0,
+            "unique_exact_l1_products_per_1000_attempts": 414.0625,
+            "unique_fraction": 0.8430034129692833,
+            "unique_open_ended_exact_l1_products_per_1000_attempts": 29.296875,
+            "unique_whole_product_novel_exact_l1_products_per_1000_attempts": 378.90625,
+            "whole_lipid_novelty_fraction": 0.8395904436860068
+          },
+          "ugi_3cr_agile": {
+            "component_metrics_by_role": {
+              "amine_head": {
+                "effective_count": 76.9931781580424,
+                "novel": 279,
+                "novel_fraction": 0.6611374407582938,
+                "slots": 422
+              },
+              "isocyanide_tail": {
+                "effective_count": 168.5016719595847,
+                "novel": 348,
+                "novel_fraction": 0.8246445497630331,
+                "slots": 422
+              },
+              "oxoester_aldehyde_body_tail": {
+                "effective_count": 112.48329773064553,
+                "novel": 299,
+                "novel_fraction": 0.7085308056872038,
+                "slots": 422
+              }
+            },
+            "component_novelty_fraction": 0.985781990521327,
+            "connected_fraction": 0.837890625,
+            "coverage_and_precision_reported": true,
+            "decomposition_abstention_fraction": 0.013986013986013986,
+            "decomposition_ambiguity_fraction": 0.002331002331002331,
+            "effective_component_count": 340.279737147183,
+            "exact_forward_replay_precision": 1.0,
+            "exact_l1_decomposition_coverage": 0.986013986013986,
+            "exact_l1_yield_per_attempt": 0.826171875,
+            "fixed_state_failures": 0,
+            "internal_diversity": 0.6696082126314249,
+            "local_chemistry_policy_applied": false,
+            "raw_valid_fraction": 0.837890625,
+            "reductive_amination_substructure_rate_reported": false,
+            "repairs": {},
+            "samples": 512,
+            "strict_constraint_abstention_reasons": {},
+            "strict_constraint_abstentions": 0,
+            "support_overflow_count": 0,
+            "unique_exact_l1_products_per_1000_attempts": 818.359375,
+            "unique_fraction": 0.9906759906759907,
+            "unique_open_ended_exact_l1_products_per_1000_attempts": 804.6875,
+            "unique_whole_product_novel_exact_l1_products_per_1000_attempts": 816.40625,
+            "whole_lipid_novelty_fraction": 0.9976689976689976
+          }
+        }
+      },
+      "4500": {
+        "calibration": {
+          "bl_2023_repeated_aza_michael": {
+            "component_metrics_by_role": {
+              "alkyl_acrylate_or_acrylamide_tail": {
+                "effective_count": 36.47296100579305,
+                "novel": 42,
+                "novel_fraction": 0.2781456953642384,
+                "slots": 151
+              },
+              "amine_head": {
+                "effective_count": 82.95829067047016,
+                "novel": 127,
+                "novel_fraction": 0.8410596026490066,
+                "slots": 151
+              }
+            },
+            "component_novelty_fraction": 0.8609271523178808,
+            "connected_fraction": 0.751953125,
+            "coverage_and_precision_reported": true,
+            "decomposition_abstention_fraction": 0.0025974025974025974,
+            "decomposition_ambiguity_fraction": 0.6051948051948052,
+            "effective_component_count": 110.01335374819321,
+            "exact_forward_replay_precision": 1.0,
+            "exact_l1_decomposition_coverage": 0.9974025974025974,
+            "exact_l1_yield_per_attempt": 0.75,
+            "fixed_state_failures": 0,
+            "internal_diversity": 0.6030644645941592,
+            "local_chemistry_policy_applied": false,
+            "raw_valid_fraction": 0.751953125,
+            "reductive_amination_substructure_rate_reported": false,
+            "repairs": {},
+            "samples": 512,
+            "strict_constraint_abstention_reasons": {
+              "parent_capacity_exhausted": 88
+            },
+            "strict_constraint_abstentions": 88,
+            "support_overflow_count": 0,
+            "unique_exact_l1_products_per_1000_attempts": 716.796875,
+            "unique_fraction": 0.9558441558441558,
+            "unique_open_ended_exact_l1_products_per_1000_attempts": 244.140625,
+            "unique_whole_product_novel_exact_l1_products_per_1000_attempts": 683.59375,
+            "whole_lipid_novelty_fraction": 0.9324675324675324
+          },
+          "lx_2024_repeated_reductive_amination": {
+            "component_metrics_by_role": {
+              "aldehyde_tail": {
+                "effective_count": 13.999999999999996,
+                "novel": 12,
+                "novel_fraction": 0.8571428571428571,
+                "slots": 14
+              },
+              "amine_head": {
+                "effective_count": 12.680131299694697,
+                "novel": 13,
+                "novel_fraction": 0.9285714285714286,
+                "slots": 14
+              }
+            },
+            "component_novelty_fraction": 1.0,
+            "connected_fraction": 0.56640625,
+            "coverage_and_precision_reported": true,
+            "decomposition_abstention_fraction": 0.11724137931034483,
+            "decomposition_ambiguity_fraction": 0.8344827586206897,
+            "effective_component_count": 26.647464284297342,
+            "exact_forward_replay_precision": 1.0,
+            "exact_l1_decomposition_coverage": 0.8827586206896552,
+            "exact_l1_yield_per_attempt": 0.5,
+            "fixed_state_failures": 0,
+            "internal_diversity": 0.7444014553342605,
+            "local_chemistry_policy_applied": false,
+            "raw_valid_fraction": 0.56640625,
+            "reductive_amination_substructure_rate_reported": false,
+            "repairs": {},
+            "samples": 512,
+            "strict_constraint_abstention_reasons": {},
+            "strict_constraint_abstentions": 0,
+            "support_overflow_count": 0,
+            "unique_exact_l1_products_per_1000_attempts": 314.453125,
+            "unique_fraction": 0.6724137931034483,
+            "unique_open_ended_exact_l1_products_per_1000_attempts": 27.34375,
+            "unique_whole_product_novel_exact_l1_products_per_1000_attempts": 261.71875,
+            "whole_lipid_novelty_fraction": 0.6137931034482759
+          },
+          "ugi_3cr_agile": {
+            "component_metrics_by_role": {
+              "amine_head": {
+                "effective_count": 73.07232661229908,
+                "novel": 292,
+                "novel_fraction": 0.6033057851239669,
+                "slots": 484
+              },
+              "isocyanide_tail": {
+                "effective_count": 209.91138581121433,
+                "novel": 422,
+                "novel_fraction": 0.871900826446281,
+                "slots": 484
+              },
+              "oxoester_aldehyde_body_tail": {
+                "effective_count": 77.8064125149579,
+                "novel": 292,
+                "novel_fraction": 0.6033057851239669,
+                "slots": 484
+              }
+            },
+            "component_novelty_fraction": 0.9855371900826446,
+            "connected_fraction": 0.9453125,
+            "coverage_and_precision_reported": true,
+            "decomposition_abstention_fraction": 0.0,
+            "decomposition_ambiguity_fraction": 0.0,
+            "effective_component_count": 318.2165006519098,
+            "exact_forward_replay_precision": 1.0,
+            "exact_l1_decomposition_coverage": 1.0,
+            "exact_l1_yield_per_attempt": 0.9453125,
+            "fixed_state_failures": 0,
+            "internal_diversity": 0.6440531033287913,
+            "local_chemistry_policy_applied": false,
+            "raw_valid_fraction": 0.9453125,
+            "reductive_amination_substructure_rate_reported": false,
+            "repairs": {},
+            "samples": 512,
+            "strict_constraint_abstention_reasons": {},
+            "strict_constraint_abstentions": 0,
+            "support_overflow_count": 0,
+            "unique_exact_l1_products_per_1000_attempts": 935.546875,
+            "unique_fraction": 0.9896694214876033,
+            "unique_open_ended_exact_l1_products_per_1000_attempts": 921.875,
+            "unique_whole_product_novel_exact_l1_products_per_1000_attempts": 935.546875,
+            "whole_lipid_novelty_fraction": 1.0
+          }
+        }
+      },
+      "500": {
+        "calibration": {
+          "bl_2023_repeated_aza_michael": {
+            "component_metrics_by_role": {
+              "alkyl_acrylate_or_acrylamide_tail": {
+                "effective_count": 47.90282397862438,
+                "novel": 63,
+                "novel_fraction": 0.65625,
+                "slots": 96
+              },
+              "amine_head": {
+                "effective_count": 80.28725530385545,
+                "novel": 95,
+                "novel_fraction": 0.9895833333333334,
+                "slots": 96
+              }
+            },
+            "component_novelty_fraction": 0.9895833333333334,
+            "connected_fraction": 0.68359375,
+            "coverage_and_precision_reported": true,
+            "decomposition_abstention_fraction": 0.022857142857142857,
+            "decomposition_ambiguity_fraction": 0.7028571428571428,
+            "effective_component_count": 124.0320322908156,
+            "exact_forward_replay_precision": 1.0,
+            "exact_l1_decomposition_coverage": 0.9771428571428571,
+            "exact_l1_yield_per_attempt": 0.66796875,
+            "fixed_state_failures": 0,
+            "internal_diversity": 0.6016291405359353,
+            "local_chemistry_policy_applied": false,
+            "raw_valid_fraction": 0.68359375,
+            "reductive_amination_substructure_rate_reported": false,
+            "repairs": {},
+            "samples": 512,
+            "strict_constraint_abstention_reasons": {
+              "parent_capacity_exhausted": 103
+            },
+            "strict_constraint_abstentions": 103,
+            "support_overflow_count": 0,
+            "unique_exact_l1_products_per_1000_attempts": 636.71875,
+            "unique_fraction": 0.9542857142857143,
+            "unique_open_ended_exact_l1_products_per_1000_attempts": 181.640625,
+            "unique_whole_product_novel_exact_l1_products_per_1000_attempts": 621.09375,
+            "whole_lipid_novelty_fraction": 0.9685714285714285
+          },
+          "lx_2024_repeated_reductive_amination": {
+            "component_metrics_by_role": {
+              "aldehyde_tail": {
+                "effective_count": 21.71524541912021,
+                "novel": 24,
+                "novel_fraction": 0.9230769230769231,
+                "slots": 26
+              },
+              "amine_head": {
+                "effective_count": 19.915562645367675,
+                "novel": 26,
+                "novel_fraction": 1.0,
+                "slots": 26
+              }
+            },
+            "component_novelty_fraction": 1.0,
+            "connected_fraction": 0.408203125,
+            "coverage_and_precision_reported": true,
+            "decomposition_abstention_fraction": 0.07655502392344497,
+            "decomposition_ambiguity_fraction": 0.7990430622009569,
+            "effective_component_count": 41.591890099105754,
+            "exact_forward_replay_precision": 1.0,
+            "exact_l1_decomposition_coverage": 0.9234449760765551,
+            "exact_l1_yield_per_attempt": 0.376953125,
+            "fixed_state_failures": 0,
+            "internal_diversity": 0.7912133803328925,
+            "local_chemistry_policy_applied": false,
+            "raw_valid_fraction": 0.408203125,
+            "reductive_amination_substructure_rate_reported": false,
+            "repairs": {},
+            "samples": 512,
+            "strict_constraint_abstention_reasons": {},
+            "strict_constraint_abstentions": 0,
+            "support_overflow_count": 0,
+            "unique_exact_l1_products_per_1000_attempts": 376.953125,
+            "unique_fraction": 1.0,
+            "unique_open_ended_exact_l1_products_per_1000_attempts": 50.78125,
+            "unique_whole_product_novel_exact_l1_products_per_1000_attempts": 376.953125,
+            "whole_lipid_novelty_fraction": 1.0
+          },
+          "ugi_3cr_agile": {
+            "component_metrics_by_role": {
+              "amine_head": {
+                "effective_count": 82.6014712934322,
+                "novel": 293,
+                "novel_fraction": 0.6943127962085308,
+                "slots": 422
+              },
+              "isocyanide_tail": {
+                "effective_count": 83.2093567539182,
+                "novel": 304,
+                "novel_fraction": 0.7203791469194313,
+                "slots": 422
+              },
+              "oxoester_aldehyde_body_tail": {
+                "effective_count": 54.17285829209795,
+                "novel": 223,
+                "novel_fraction": 0.5284360189573459,
+                "slots": 422
+              }
+            },
+            "component_novelty_fraction": 0.9786729857819905,
+            "connected_fraction": 0.84375,
+            "coverage_and_precision_reported": true,
+            "decomposition_abstention_fraction": 0.023148148148148147,
+            "decomposition_ambiguity_fraction": 0.0,
+            "effective_component_count": 215.825035414411,
+            "exact_forward_replay_precision": 1.0,
+            "exact_l1_decomposition_coverage": 0.9768518518518519,
+            "exact_l1_yield_per_attempt": 0.82421875,
+            "fixed_state_failures": 0,
+            "internal_diversity": 0.6065145810302566,
+            "local_chemistry_policy_applied": false,
+            "raw_valid_fraction": 0.84375,
+            "reductive_amination_substructure_rate_reported": false,
+            "repairs": {},
+            "samples": 512,
+            "strict_constraint_abstention_reasons": {},
+            "strict_constraint_abstentions": 0,
+            "support_overflow_count": 0,
+            "unique_exact_l1_products_per_1000_attempts": 796.875,
+            "unique_fraction": 0.9675925925925926,
+            "unique_open_ended_exact_l1_products_per_1000_attempts": 781.25,
+            "unique_whole_product_novel_exact_l1_products_per_1000_attempts": 796.875,
+            "whole_lipid_novelty_fraction": 1.0
+          }
+        }
+      },
+      "9143": {
+        "calibration": {
+          "bl_2023_repeated_aza_michael": {
+            "component_metrics_by_role": {
+              "alkyl_acrylate_or_acrylamide_tail": {
+                "effective_count": 29.41725474659509,
+                "novel": 39,
+                "novel_fraction": 0.26,
+                "slots": 150
+              },
+              "amine_head": {
+                "effective_count": 63.46801049661031,
+                "novel": 133,
+                "novel_fraction": 0.8866666666666667,
+                "slots": 150
+              }
+            },
+            "component_novelty_fraction": 0.8933333333333333,
+            "connected_fraction": 0.7265625,
+            "coverage_and_precision_reported": true,
+            "decomposition_abstention_fraction": 0.0,
+            "decomposition_ambiguity_fraction": 0.5967741935483871,
+            "effective_component_count": 86.41885518886151,
+            "exact_forward_replay_precision": 1.0,
+            "exact_l1_decomposition_coverage": 1.0,
+            "exact_l1_yield_per_attempt": 0.7265625,
+            "fixed_state_failures": 0,
+            "internal_diversity": 0.5888796267035556,
+            "local_chemistry_policy_applied": false,
+            "raw_valid_fraction": 0.7265625,
+            "reductive_amination_substructure_rate_reported": false,
+            "repairs": {},
+            "samples": 512,
+            "strict_constraint_abstention_reasons": {
+              "parent_capacity_exhausted": 97
+            },
+            "strict_constraint_abstentions": 97,
+            "support_overflow_count": 0,
+            "unique_exact_l1_products_per_1000_attempts": 664.0625,
+            "unique_fraction": 0.9139784946236559,
+            "unique_open_ended_exact_l1_products_per_1000_attempts": 236.328125,
+            "unique_whole_product_novel_exact_l1_products_per_1000_attempts": 615.234375,
+            "whole_lipid_novelty_fraction": 0.8870967741935484
+          },
+          "lx_2024_repeated_reductive_amination": {
+            "component_metrics_by_role": {
+              "aldehyde_tail": {
+                "effective_count": 13.67583732837325,
+                "novel": 12,
+                "novel_fraction": 0.8,
+                "slots": 15
+              },
+              "amine_head": {
+                "effective_count": 10.009038104159249,
+                "novel": 11,
+                "novel_fraction": 0.7333333333333333,
+                "slots": 15
+              }
+            },
+            "component_novelty_fraction": 0.8,
+            "connected_fraction": 0.54296875,
+            "coverage_and_precision_reported": true,
+            "decomposition_abstention_fraction": 0.11510791366906475,
+            "decomposition_ambiguity_fraction": 0.8309352517985612,
+            "effective_component_count": 23.399314257129085,
+            "exact_forward_replay_precision": 1.0,
+            "exact_l1_decomposition_coverage": 0.8848920863309353,
+            "exact_l1_yield_per_attempt": 0.48046875,
+            "fixed_state_failures": 0,
+            "internal_diversity": 0.7481469993005598,
+            "local_chemistry_policy_applied": false,
+            "raw_valid_fraction": 0.54296875,
+            "reductive_amination_substructure_rate_reported": false,
+            "repairs": {},
+            "samples": 512,
+            "strict_constraint_abstention_reasons": {},
+            "strict_constraint_abstentions": 0,
+            "support_overflow_count": 0,
+            "unique_exact_l1_products_per_1000_attempts": 337.890625,
+            "unique_fraction": 0.737410071942446,
+            "unique_open_ended_exact_l1_products_per_1000_attempts": 23.4375,
+            "unique_whole_product_novel_exact_l1_products_per_1000_attempts": 279.296875,
+            "whole_lipid_novelty_fraction": 0.6726618705035972
+          },
+          "ugi_3cr_agile": {
+            "component_metrics_by_role": {
+              "amine_head": {
+                "effective_count": 83.78733465751947,
+                "novel": 282,
+                "novel_fraction": 0.6482758620689655,
+                "slots": 435
+              },
+              "isocyanide_tail": {
+                "effective_count": 187.8519421852607,
+                "novel": 377,
+                "novel_fraction": 0.8666666666666667,
+                "slots": 435
+              },
+              "oxoester_aldehyde_body_tail": {
+                "effective_count": 71.49374428216903,
+                "novel": 237,
+                "novel_fraction": 0.5448275862068965,
+                "slots": 435
+              }
+            },
+            "component_novelty_fraction": 0.9770114942528736,
+            "connected_fraction": 0.8515625,
+            "coverage_and_precision_reported": true,
+            "decomposition_abstention_fraction": 0.0022935779816513763,
+            "decomposition_ambiguity_fraction": 0.0,
+            "effective_component_count": 312.0388178360679,
+            "exact_forward_replay_precision": 1.0,
+            "exact_l1_decomposition_coverage": 0.9977064220183486,
+            "exact_l1_yield_per_attempt": 0.849609375,
+            "fixed_state_failures": 0,
+            "internal_diversity": 0.6754435391942413,
+            "local_chemistry_policy_applied": false,
+            "raw_valid_fraction": 0.8515625,
+            "reductive_amination_substructure_rate_reported": false,
+            "repairs": {},
+            "samples": 512,
+            "strict_constraint_abstention_reasons": {},
+            "strict_constraint_abstentions": 0,
+            "support_overflow_count": 0,
+            "unique_exact_l1_products_per_1000_attempts": 841.796875,
+            "unique_fraction": 0.9908256880733946,
+            "unique_open_ended_exact_l1_products_per_1000_attempts": 822.265625,
+            "unique_whole_product_novel_exact_l1_products_per_1000_attempts": 839.84375,
+            "whole_lipid_novelty_fraction": 0.9977064220183486
+          }
+        },
+        "heldout": {
+          "bl_2023_repeated_aza_michael": {
+            "component_metrics_by_role": {
+              "alkyl_acrylate_or_acrylamide_tail": {
+                "effective_count": 39.53086904003351,
+                "novel": 192,
+                "novel_fraction": 0.20711974110032363,
+                "slots": 927
+              },
+              "amine_head": {
+                "effective_count": 145.32147132356184,
+                "novel": 804,
+                "novel_fraction": 0.8673139158576052,
+                "slots": 927
+              }
+            },
+            "component_novelty_fraction": 0.8727076591154261,
+            "connected_fraction": 0.71875,
+            "coverage_and_precision_reported": true,
+            "decomposition_abstention_fraction": 0.0,
+            "decomposition_ambiguity_fraction": 0.5801630434782609,
+            "effective_component_count": 151.58738801888333,
+            "exact_forward_replay_precision": 1.0,
+            "exact_l1_decomposition_coverage": 1.0,
+            "exact_l1_yield_per_attempt": 0.71875,
+            "fixed_state_failures": 0,
+            "internal_diversity": 0.5954202128734815,
+            "local_chemistry_policy_applied": false,
+            "raw_valid_fraction": 0.71875,
+            "reductive_amination_substructure_rate_reported": false,
+            "repairs": {},
+            "samples": 3072,
+            "strict_constraint_abstention_reasons": {
+              "parent_capacity_exhausted": 570
+            },
+            "strict_constraint_abstentions": 570,
+            "support_overflow_count": 0,
+            "unique_exact_l1_products_per_1000_attempts": 577.7994791666666,
+            "unique_fraction": 0.8038949275362319,
+            "unique_open_ended_exact_l1_products_per_1000_attempts": 192.3828125,
+            "unique_whole_product_novel_exact_l1_products_per_1000_attempts": 551.7578125,
+            "whole_lipid_novelty_fraction": 0.8836050724637681
+          },
+          "lx_2024_repeated_reductive_amination": {
+            "component_metrics_by_role": {
+              "aldehyde_tail": {
+                "effective_count": 91.0965488728029,
+                "novel": 97,
+                "novel_fraction": 0.7348484848484849,
+                "slots": 132
+              },
+              "amine_head": {
+                "effective_count": 87.19373367226379,
+                "novel": 120,
+                "novel_fraction": 0.9090909090909091,
+                "slots": 132
+              }
+            },
+            "component_novelty_fraction": 0.9545454545454546,
+            "connected_fraction": 0.5817057291666666,
+            "coverage_and_precision_reported": true,
+            "decomposition_abstention_fraction": 0.10912143256855064,
+            "decomposition_ambiguity_fraction": 0.817011751538892,
+            "effective_component_count": 178.24756066636274,
+            "exact_forward_replay_precision": 1.0,
+            "exact_l1_decomposition_coverage": 0.8908785674314493,
+            "exact_l1_yield_per_attempt": 0.5182291666666666,
+            "fixed_state_failures": 0,
+            "internal_diversity": 0.7774548667043384,
+            "local_chemistry_policy_applied": false,
+            "raw_valid_fraction": 0.5817057291666666,
+            "reductive_amination_substructure_rate_reported": false,
+            "repairs": {},
+            "samples": 3072,
+            "strict_constraint_abstention_reasons": {},
+            "strict_constraint_abstentions": 0,
+            "support_overflow_count": 0,
+            "unique_exact_l1_products_per_1000_attempts": 255.20833333333334,
+            "unique_fraction": 0.5478455512031337,
+            "unique_open_ended_exact_l1_products_per_1000_attempts": 40.690104166666664,
+            "unique_whole_product_novel_exact_l1_products_per_1000_attempts": 238.28125,
+            "whole_lipid_novelty_fraction": 0.6183547845551203
+          },
+          "ugi_3cr_agile": {
+            "component_metrics_by_role": {
+              "amine_head": {
+                "effective_count": 103.48475077621116,
+                "novel": 1797,
+                "novel_fraction": 0.6753100338218715,
+                "slots": 2661
+              },
+              "isocyanide_tail": {
+                "effective_count": 477.76340219570756,
+                "novel": 2364,
+                "novel_fraction": 0.8883878241262683,
+                "slots": 2661
+              },
+              "oxoester_aldehyde_body_tail": {
+                "effective_count": 104.77396754737926,
+                "novel": 1464,
+                "novel_fraction": 0.5501691093573844,
+                "slots": 2661
+              }
+            },
+            "component_novelty_fraction": 0.9793310785419015,
+            "connected_fraction": 0.8694661458333334,
+            "coverage_and_precision_reported": true,
+            "decomposition_abstention_fraction": 0.0037439161362785474,
+            "decomposition_ambiguity_fraction": 0.0,
+            "effective_component_count": 519.0813956319281,
+            "exact_forward_replay_precision": 1.0,
+            "exact_l1_decomposition_coverage": 0.9962560838637214,
+            "exact_l1_yield_per_attempt": 0.8662109375,
+            "fixed_state_failures": 0,
+            "internal_diversity": 0.6724583206221575,
+            "local_chemistry_policy_applied": false,
+            "raw_valid_fraction": 0.8694661458333334,
+            "reductive_amination_substructure_rate_reported": false,
+            "repairs": {},
+            "samples": 3072,
+            "strict_constraint_abstention_reasons": {},
+            "strict_constraint_abstentions": 0,
+            "support_overflow_count": 0,
+            "unique_exact_l1_products_per_1000_attempts": 819.3359375,
+            "unique_fraction": 0.9460876076375889,
+            "unique_open_ended_exact_l1_products_per_1000_attempts": 804.3619791666666,
+            "unique_whole_product_novel_exact_l1_products_per_1000_attempts": 818.0338541666666,
+            "whole_lipid_novelty_fraction": 0.9981280419318608
+          }
+        }
+      }
+    }
+  },
+  "common_ugi_attempt_ledgers": {
+    "shared_bias_global_source_control": {
+      "attempts": 3072,
+      "bytes": 33608,
+      "logical_path": "shared_bias_global_source_control.jsonl.gz",
+      "method_id": "shared_bias_global_source_control",
+      "seed": 20260825,
+      "sha256": "fa6ef30f636821d8dde510a358deb98580bfe9eb2b2a668b3a50cdd046a7dd0a",
+      "wall_seconds_measurement": "not_recorded_do_not_interpret_zero"
+    }
+  },
+  "component_disjoint_metrics": {
+    "shared_bias_global_source_control": {
+      "bl_2023_repeated_aza_michael": {
+        "exact_forward_replay_precision": 1.0,
+        "exact_l1_decomposition_coverage": 1.0,
+        "field_accuracy": {
+          "closure_bonds": 0.9172846548773531,
+          "closure_left": 0.737592698231603,
+          "closure_right": 0.8176459402928313,
+          "nodes": 0.970669107103206,
+          "parent_bonds": 0.968466766973143,
+          "parents": 0.9725964957447123
+        },
+        "fixed_noise_exact_tensor_fraction": 0.118375,
+        "fixed_noise_exact_tensor_records": 947,
+        "fixed_state_noising_failures": 0,
+        "fold": "heldout_exact_component_disjoint",
+        "heldout_denoising_loss_at_t_0_5": 4.615804264068603,
+        "noise_time": 0.5,
+        "record_limit": null,
+        "records": 8000
+      },
+      "lx_2024_repeated_reductive_amination": {
+        "exact_forward_replay_precision": 1.0,
+        "exact_l1_decomposition_coverage": 0.8908785674314493,
+        "field_accuracy": {
+          "closure_bonds": 0.804401200327362,
+          "closure_left": 0.7292898063108121,
+          "closure_right": 0.8017641174865873,
+          "nodes": 0.9133765773220249,
+          "parent_bonds": 0.9350512977682205,
+          "parents": 0.9054608760312308
+        },
+        "fixed_noise_exact_tensor_fraction": 0.01075,
+        "fixed_noise_exact_tensor_records": 86,
+        "fixed_state_noising_failures": 0,
+        "fold": "heldout_exact_component_disjoint",
+        "heldout_denoising_loss_at_t_0_5": 8.692452352523803,
+        "noise_time": 0.5,
+        "record_limit": null,
+        "records": 8000
+      },
+      "ugi_3cr_agile": {
+        "exact_forward_replay_precision": 1.0,
+        "exact_l1_decomposition_coverage": 0.9962560838637214,
+        "field_accuracy": {
+          "closure_bonds": 0.8989255869478711,
+          "closure_left": 0.7907381615598886,
+          "closure_right": 0.8529148428173497,
+          "nodes": 0.935729688180235,
+          "parent_bonds": 0.9478603629154007,
+          "parents": 0.9396121269662863
+        },
+        "fixed_noise_exact_tensor_fraction": 0.00810039174025629,
+        "fixed_noise_exact_tensor_records": 244,
+        "fixed_state_noising_failures": 0,
+        "fold": "heldout_exact_component_disjoint",
+        "heldout_denoising_loss_at_t_0_5": 5.556312925525415,
+        "noise_time": 0.5,
+        "record_limit": null,
+        "records": 30122
+      }
+    }
+  },
+  "config": {
+    "bytes": 2376,
+    "path": "configs/multireaction/shared_bias_parallel_global_seed0_core_saturation_v2.json",
+    "sha256": "54adcd5eae8f1640a0b6a3bec9cf4b5d63accaa3c1ece71e127ab44c293fd8dd"
+  },
+  "cross_role_fidelity": {
+    "shared_bias_global_source_control": {
+      "eligible_generated_products": 2661,
+      "lower_is_better": true,
+      "reference_products": 30122,
+      "residual_correlation_frobenius_distance": 1.5963119081909511,
+      "status": "measured"
+    }
+  },
+  "design": {
+    "bytes": 10061,
+    "path": "results/phase1/shared_bias_parallel_global_seed0_v2/study_design.json",
+    "sha256": "efae0c657e44bd499fe83bbaee995cbe696399a1d5bb28dadc023a530d047908"
+  },
+  "execution_scope": "production",
+  "gates": {
+    "all_arms_evaluated": true,
+    "all_fixed_checkpoints_evaluated": true,
+    "candidate_selection_absent": true,
+    "common_ugi_attempt_ledgers_complete": true,
+    "component_disjoint_fixed_state_failures_zero": true,
+    "component_disjoint_metrics_complete": true,
+    "coverage_and_precision_reported": true,
+    "fixed_state_failures_zero": true,
+    "held_reaction_family_reported": true,
+    "heldout_denoising_losses_finite": true,
+    "heldout_is_nonselecting": true,
+    "layout_prior_is_exactly_support_conditioned": true,
+    "local_chemistry_policy_binding_exact": true,
+    "molecule_report_complete": true,
+    "no_repairs_or_retries": true,
+    "reductive_amination_substructure_rate_absent": true,
+    "route_or_oracle_calls_zero": true,
+    "support_overflow_zero": true,
+    "terminal_decode_policy_recorded": true,
+    "ugi_cross_role_fidelity_reported": true,
+    "ugi_held_component_metrics_reported": true
+  },
+  "held_reaction_family": {
+    "hard_gate": false,
+    "reason": "The frozen four-arm comparison trains every shared arm on all three admitted programs and contains no leave-one-family-out arm; no unseen-family result is fabricated from the cyclic-ID control.",
+    "reported": true,
+    "status": "not_applicable_no_frozen_unseen_family_arm"
+  },
+  "layout_prior": {
+    "clipping": false,
+    "dropped_attempts": 0,
+    "maximum_heavy_atoms": 194,
+    "repair": false,
+    "retry": false,
+    "source": "training_fold_factorized_count_only_program_prior",
+    "support_conditioning": "exact_product_law_conditioned_on_maximum_heavy_atoms"
+  },
+  "local_chemistry_support": null,
+  "molecule_report": {
+    "bytes": 177544,
+    "logical_path": "molecule_report.html",
+    "sha256": "f56bc96cc6994ea8f1dcfb9118313c12861d00db6d5235b9970324a25004db78"
+  },
+  "molecule_report_summary": {
+    "expected_sections": 3,
+    "rendered_molecules": 6,
+    "reported_sections": 3,
+    "sections_without_valid_molecule": 0
+  },
+  "nonclaims": [
+    "Generated-product metrics are computational evidence, not synthesis-success probabilities.",
+    "Exact auxiliary-family replay is transform consistency, not route certification.",
+    "The held-reaction-family stress test remains secondary and is not evaluated as a hard gate here."
+  ],
+  "profile": "full",
+  "reaction_core_saturation_policy": {
+    "component_confined_generated_edges": true,
+    "core_position_valence_units": {
+      "ugi_3cr_agile:map_2": 6,
+      "ugi_3cr_agile:map_4": 4
+    },
+    "derivation": "atom_mapped_product_template_explicit_hydrogen_count",
+    "exterior_only_generated_closures": true,
+    "reaction_id": "ugi_3cr_agile",
+    "registry_path": "/__modal/volumes/vo-Fgdi3wXuF44Z8wKSLGEG2V/jobs/191bf34d1eacccbabe965d49598fcf0442bf1b734112ce72f92f999560b49522/repo/data/vendor/qualified_reactions_v1.json",
+    "registry_sha256": "296bf06238ef22acc1f55117f5ce0adaee21b1bafaf5a83f89182b0f31cc4fcf"
+  },
+  "replicate": 0,
+  "run_kind": "production",
+  "sample_rows": 16896,
+  "samples": {
+    "bytes": 1179284,
+    "logical_path": "samples.jsonl.gz",
+    "sha256": "1ac07f5b89df8c85397d5504045b3e9549e165f05aeb989828698a444f5f4e33"
+  },
+  "schema_version": "forge.synthesis_program_production_evaluation_result.v1",
+  "seed": 20260825,
+  "selection": {
+    "calibration_selects_model": false,
+    "candidate_selection": false,
+    "checkpoint": "fixed_final_step",
+    "heldout_selects_model_or_threshold": false
+  },
+  "status": "pass",
+  "terminal_decode_policy": "strict_reaction_core_saturation_argmax",
+  "training_result": {
+    "bytes": 31374,
+    "logical_path": "training_result.json",
+    "sha256": "1190f45e02c04f749b5e8bb54d2680648fc95ae1c5d92c81089eb220db006364"
+  },
+  "ugi_held_component_metrics": {
+    "shared_bias_global_source_control": {
+      "attempts": 3072,
+      "by_role": {
+        "amine_head": 10
+      },
+      "exact_l1_products_with_held_component": 10,
+      "exact_l1_products_with_held_component_per_1000_attempts": 3.2552083333333335
+    }
+  }
+}

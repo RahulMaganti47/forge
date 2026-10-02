@@ -1,0 +1,660 @@
+{
+  "candidate_selection": false,
+  "contract": {
+    "config_sha256": "a671b7453a46b0103feabb536116235302e0559f72d3b002fb0b67f2d936f855",
+    "reference_sha256": {
+      "r0_constitutional": "fc8bcb6ed618abf4e571a26564f59c716a80b6e6ecf919f451101fb32f552823",
+      "r0_fold_assignments": "c9e616f4a80090c92b16fc9cdceefa4d1163da34659cb43319813fcac5e0ac4d"
+    }
+  },
+  "expected_seeds": [
+    20260825,
+    20260826,
+    20260827
+  ],
+  "gates": {
+    "common_attempt_denominator": true,
+    "common_config_and_reference_pins": true,
+    "complete_seed_set_per_method": true,
+    "missing_metrics_not_imputed": true,
+    "molecule_rows_not_treated_as_replicates": true,
+    "training_seed_is_independent_unit": true
+  },
+  "inputs": [
+    {
+      "bytes": 9480,
+      "path": "results/phase1/common_lipid_realism_v1/defog_unconditional/seed0/result.json",
+      "sha256": "49918dbeba5796f33600df033ca025fdd5a86f4e006ea33d8fe21daf700aefc7"
+    },
+    {
+      "bytes": 9477,
+      "path": "results/phase1/common_lipid_realism_v1/defog_unconditional/seed1/result.json",
+      "sha256": "5a3b95b31244a0557aea6cbdcbd4d170d199f30df323ffe3183de3e7ecf5362e"
+    },
+    {
+      "bytes": 9495,
+      "path": "results/phase1/common_lipid_realism_v1/defog_unconditional/seed2/result.json",
+      "sha256": "4a0c1247884e667fa52f07d534288899cb3af78b6b28221fabfbaf8ef9e2eca7"
+    },
+    {
+      "bytes": 9565,
+      "path": "results/phase1/common_lipid_realism_v1/finite_catalogue_oracle/seed0/result.json",
+      "sha256": "131f2b4de4d201330d8b3823ee8865719f992ee6f6d02828328d2dae9c63835e"
+    },
+    {
+      "bytes": 9517,
+      "path": "results/phase1/common_lipid_realism_v1/finite_catalogue_oracle/seed1/result.json",
+      "sha256": "a356e46d97d7063d1ae5b680849575ddea5cb6831875d8720f896031a1ac8b85"
+    },
+    {
+      "bytes": 9575,
+      "path": "results/phase1/common_lipid_realism_v1/finite_catalogue_oracle/seed2/result.json",
+      "sha256": "4f75c7db737d217bafd96c7e571b0863256ddae9368e0fad6e09029964d2afa1"
+    },
+    {
+      "bytes": 9479,
+      "path": "results/phase1/forge_transformer_core_saturation_lipid_realism_seed0_v1/result.json",
+      "sha256": "6f89814192bbe36a139f7e05d5a0b2b6504e77fbc03799eb3d741476a88f26ad"
+    },
+    {
+      "bytes": 9523,
+      "path": "results/phase1/forge_transformer_core_saturation_lipid_realism_seed1_v1/result.json",
+      "sha256": "7140f8f332c4bb4801de6313de792f18f80dba0fa9fa86691b44bf3bc9c21bb2"
+    },
+    {
+      "bytes": 9523,
+      "path": "results/phase1/forge_transformer_core_saturation_lipid_realism_seed2_v1/result.json",
+      "sha256": "1487a5c8894493d41c9e00adbcc7653283c112a7f8b51a1e7abd0dd00615bf7b"
+    },
+    {
+      "bytes": 8293,
+      "path": "results/phase1/common_lipid_realism_v1/genmol_safe/seed0/result.json",
+      "sha256": "2dee40f8ff5c9c8198f7f7a51e09709fa713eb7e084e61549db0e13b6eda16dc"
+    },
+    {
+      "bytes": 8288,
+      "path": "results/phase1/common_lipid_realism_v1/genmol_safe/seed1/result.json",
+      "sha256": "bc52a81e330a741e35a272af8384e101da023002b776d2ef0e9c1e9357ae3619"
+    },
+    {
+      "bytes": 8297,
+      "path": "results/phase1/common_lipid_realism_v1/genmol_safe/seed2/result.json",
+      "sha256": "b3ba0893454f40c33f8a62a18f50e6a6eb45c5a756b8b0689c0a0a8c52b92d82"
+    },
+    {
+      "bytes": 9548,
+      "path": "results/phase1/common_lipid_realism_v1/learned_inventory_selector/seed0/result.json",
+      "sha256": "f20d2bc2d587fcd777d260e737487e64626def10816a84e2f467c8f271cb87fd"
+    },
+    {
+      "bytes": 9511,
+      "path": "results/phase1/common_lipid_realism_v1/learned_inventory_selector/seed1/result.json",
+      "sha256": "49dbd45eb60d64949f87005a47fd0f6bc55b11c3a0d31901436d92bcf5fea9dc"
+    },
+    {
+      "bytes": 9504,
+      "path": "results/phase1/common_lipid_realism_v1/learned_inventory_selector/seed2/result.json",
+      "sha256": "77d423bdfa1f56337a4d009b46f96e8c478df1a4dc968dd8fc707a8048cbdb28"
+    },
+    {
+      "bytes": 6508,
+      "path": "results/phase1/common_lipid_realism_v1/rgfn/seed0/result.json",
+      "sha256": "91eb4e1c5d5a99a923c232ca0a0d1386740b03bf93d3e430cc07ea8eba2a69ce"
+    },
+    {
+      "bytes": 6508,
+      "path": "results/phase1/common_lipid_realism_v1/rgfn/seed1/result.json",
+      "sha256": "fd205f087a32702521c3a06f1c472995baaff561be0e519e45597cda8ffeb9ab"
+    },
+    {
+      "bytes": 6508,
+      "path": "results/phase1/common_lipid_realism_v1/rgfn/seed2/result.json",
+      "sha256": "9c95163a2adede127d7995da1061ca0b58eb0f61046529a209d02035bdc5bc79"
+    }
+  ],
+  "method_summary": {
+    "bytes": 3031,
+    "logical_path": "method_summary.csv",
+    "sha256": "a0542f43e9ae40d87e2d7e1bd1811407808c88dea9fa94e7e82e624b86bf0d04"
+  },
+  "methods": {
+    "defog_unconditional": {
+      "independent_unit": "training seed",
+      "metrics": {
+        "connected_fraction_per_attempt": {
+          "available_seeds": 3,
+          "mean": 0.3464626736111111,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.042274283274862955,
+          "status": "estimated"
+        },
+        "descriptor_manifold_coverage": {
+          "available_seeds": 3,
+          "mean": 0.014485677083333334,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.0005638186222554939,
+          "status": "estimated"
+        },
+        "descriptor_manifold_precision_per_attempt": {
+          "available_seeds": 3,
+          "mean": 0.017252604166666668,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.0014189124165171465,
+          "status": "estimated"
+        },
+        "effective_molecule_count": {
+          "available_seeds": 3,
+          "mean": 1064.3333333333333,
+          "required_seeds": 3,
+          "sample_standard_deviation": 129.86659822037836,
+          "status": "estimated"
+        },
+        "fingerprint_manifold_coverage": {
+          "available_seeds": 3,
+          "mean": 0.0,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.0,
+          "status": "estimated"
+        },
+        "fingerprint_manifold_precision_per_attempt": {
+          "available_seeds": 3,
+          "mean": 0.0,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.0,
+          "status": "estimated"
+        },
+        "grouped_c2st_auc": {
+          "available_seeds": 3,
+          "mean": 0.9612706878548938,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.006682133838367403,
+          "status": "estimated"
+        },
+        "internal_diversity": {
+          "available_seeds": 3,
+          "mean": 0.7259883499766638,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.013468937424653599,
+          "status": "estimated"
+        },
+        "normalized_descriptor_wasserstein": {
+          "available_seeds": 3,
+          "mean": 2.066859461505904,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.008526441986783519,
+          "status": "estimated"
+        },
+        "unique_fraction_among_connected": {
+          "available_seeds": 3,
+          "mean": 1.0,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.0,
+          "status": "estimated"
+        },
+        "within_declared_support_fraction_per_attempt": {
+          "available_seeds": 3,
+          "mean": 0.3342013888888889,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.039068377017387274,
+          "status": "estimated"
+        }
+      },
+      "seeds": [
+        20260825,
+        20260826,
+        20260827
+      ]
+    },
+    "finite_catalogue_oracle": {
+      "independent_unit": "training seed",
+      "metrics": {
+        "connected_fraction_per_attempt": {
+          "available_seeds": 3,
+          "mean": 1.0,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.0,
+          "status": "estimated"
+        },
+        "descriptor_manifold_coverage": {
+          "available_seeds": 3,
+          "mean": 0.020182291666666668,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.001714787394670042,
+          "status": "estimated"
+        },
+        "descriptor_manifold_precision_per_attempt": {
+          "available_seeds": 3,
+          "mean": 0.05457899305555555,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.0044195772253507615,
+          "status": "estimated"
+        },
+        "effective_molecule_count": {
+          "available_seeds": 3,
+          "mean": 2395.5471692716346,
+          "required_seeds": 3,
+          "sample_standard_deviation": 31.738304259599033,
+          "status": "estimated"
+        },
+        "fingerprint_manifold_coverage": {
+          "available_seeds": 3,
+          "mean": 0.00048828125,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.00048828125,
+          "status": "estimated"
+        },
+        "fingerprint_manifold_precision_per_attempt": {
+          "available_seeds": 3,
+          "mean": 0.00021701388888888888,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.0001879395407518313,
+          "status": "estimated"
+        },
+        "grouped_c2st_auc": {
+          "available_seeds": 3,
+          "mean": 0.9705051877888556,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.006608811093876391,
+          "status": "estimated"
+        },
+        "internal_diversity": {
+          "available_seeds": 3,
+          "mean": 0.7203039471195108,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.0004523162099213675,
+          "status": "estimated"
+        },
+        "normalized_descriptor_wasserstein": {
+          "available_seeds": 3,
+          "mean": 2.1069144686905035,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.001959783992248841,
+          "status": "estimated"
+        },
+        "unique_fraction_among_connected": {
+          "available_seeds": 3,
+          "mean": 0.8375651041666666,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.008215774390705708,
+          "status": "estimated"
+        },
+        "within_declared_support_fraction_per_attempt": {
+          "available_seeds": 3,
+          "mean": 0.9564887152777777,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.0022157745070163115,
+          "status": "estimated"
+        }
+      },
+      "seeds": [
+        20260825,
+        20260826,
+        20260827
+      ]
+    },
+    "forge_transformer": {
+      "independent_unit": "training seed",
+      "metrics": {
+        "connected_fraction_per_attempt": {
+          "available_seeds": 3,
+          "mean": 0.9649522569444445,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.021895561444834413,
+          "status": "estimated"
+        },
+        "descriptor_manifold_coverage": {
+          "available_seeds": 3,
+          "mean": 0.022135416666666668,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.000281909311127747,
+          "status": "estimated"
+        },
+        "descriptor_manifold_precision_per_attempt": {
+          "available_seeds": 3,
+          "mean": 0.02951388888888889,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.002610939543297735,
+          "status": "estimated"
+        },
+        "effective_molecule_count": {
+          "available_seeds": 3,
+          "mean": 2489.2396432648425,
+          "required_seeds": 3,
+          "sample_standard_deviation": 66.80143556573496,
+          "status": "estimated"
+        },
+        "fingerprint_manifold_coverage": {
+          "available_seeds": 3,
+          "mean": 0.0,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.0,
+          "status": "estimated"
+        },
+        "fingerprint_manifold_precision_per_attempt": {
+          "available_seeds": 3,
+          "mean": 0.0,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.0,
+          "status": "estimated"
+        },
+        "grouped_c2st_auc": {
+          "available_seeds": 3,
+          "mean": 0.9717049156050908,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.0035864780209046037,
+          "status": "estimated"
+        },
+        "internal_diversity": {
+          "available_seeds": 3,
+          "mean": 0.6424624299296932,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.022020941155763415,
+          "status": "estimated"
+        },
+        "normalized_descriptor_wasserstein": {
+          "available_seeds": 3,
+          "mean": 2.0805586538780676,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.014362714265575357,
+          "status": "estimated"
+        },
+        "unique_fraction_among_connected": {
+          "available_seeds": 3,
+          "mean": 0.8952182290643829,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.019123433612335962,
+          "status": "estimated"
+        },
+        "within_declared_support_fraction_per_attempt": {
+          "available_seeds": 3,
+          "mean": 0.9615885416666666,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.022318957964091078,
+          "status": "estimated"
+        }
+      },
+      "seeds": [
+        20260825,
+        20260826,
+        20260827
+      ]
+    },
+    "genmol_safe": {
+      "independent_unit": "training seed",
+      "metrics": {
+        "connected_fraction_per_attempt": {
+          "available_seeds": 3,
+          "mean": 0.6274956597222223,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.006187750620392018,
+          "status": "estimated"
+        },
+        "descriptor_manifold_coverage": {
+          "available_seeds": 3,
+          "mean": 0.0,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.0,
+          "status": "estimated"
+        },
+        "descriptor_manifold_precision_per_attempt": {
+          "available_seeds": 3,
+          "mean": 0.0,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.0,
+          "status": "estimated"
+        },
+        "effective_molecule_count": {
+          "available_seeds": 3,
+          "mean": 3.2495649048060016,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.1322709683432057,
+          "status": "estimated"
+        },
+        "fingerprint_manifold_coverage": {
+          "available_seeds": 3,
+          "mean": 0.0,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.0,
+          "status": "estimated"
+        },
+        "fingerprint_manifold_precision_per_attempt": {
+          "available_seeds": 3,
+          "mean": 0.0,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.0,
+          "status": "estimated"
+        },
+        "grouped_c2st_auc": {
+          "available_seeds": 0,
+          "mean": null,
+          "reason": "metric unavailable for one or more seeds",
+          "required_seeds": 3,
+          "sample_standard_deviation": null,
+          "status": "not_estimable"
+        },
+        "internal_diversity": {
+          "available_seeds": 3,
+          "mean": 0.8725834469186876,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.009339125444751913,
+          "status": "estimated"
+        },
+        "normalized_descriptor_wasserstein": {
+          "available_seeds": 3,
+          "mean": 3.198649290659885,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.0026009346498409363,
+          "status": "estimated"
+        },
+        "unique_fraction_among_connected": {
+          "available_seeds": 3,
+          "mean": 0.008987173339225284,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.0012460712157585053,
+          "status": "estimated"
+        },
+        "within_declared_support_fraction_per_attempt": {
+          "available_seeds": 3,
+          "mean": 0.6273871527777778,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.0061963070899605874,
+          "status": "estimated"
+        }
+      },
+      "seeds": [
+        20260825,
+        20260826,
+        20260827
+      ]
+    },
+    "learned_inventory_selector": {
+      "independent_unit": "training seed",
+      "metrics": {
+        "connected_fraction_per_attempt": {
+          "available_seeds": 3,
+          "mean": 1.0,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.0,
+          "status": "estimated"
+        },
+        "descriptor_manifold_coverage": {
+          "available_seeds": 3,
+          "mean": 0.019694010416666668,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.004640812965294027,
+          "status": "estimated"
+        },
+        "descriptor_manifold_precision_per_attempt": {
+          "available_seeds": 3,
+          "mean": 0.056640625,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.007198354292804681,
+          "status": "estimated"
+        },
+        "effective_molecule_count": {
+          "available_seeds": 3,
+          "mean": 2443.0383302524983,
+          "required_seeds": 3,
+          "sample_standard_deviation": 55.818512533544386,
+          "status": "estimated"
+        },
+        "fingerprint_manifold_coverage": {
+          "available_seeds": 3,
+          "mean": 0.00016276041666666666,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.000281909311127747,
+          "status": "estimated"
+        },
+        "fingerprint_manifold_precision_per_attempt": {
+          "available_seeds": 3,
+          "mean": 0.00010850694444444444,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.0001879395407518313,
+          "status": "estimated"
+        },
+        "grouped_c2st_auc": {
+          "available_seeds": 3,
+          "mean": 0.9738835266774788,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.0019442289738526631,
+          "status": "estimated"
+        },
+        "internal_diversity": {
+          "available_seeds": 3,
+          "mean": 0.7181254435038594,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.0009405185919356462,
+          "status": "estimated"
+        },
+        "normalized_descriptor_wasserstein": {
+          "available_seeds": 3,
+          "mean": 2.1011576521237667,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.005014493133329828,
+          "status": "estimated"
+        },
+        "unique_fraction_among_connected": {
+          "available_seeds": 3,
+          "mean": 0.8495008680555555,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.013677041021344385,
+          "status": "estimated"
+        },
+        "within_declared_support_fraction_per_attempt": {
+          "available_seeds": 3,
+          "mean": 0.9449869791666666,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.00648595665532919,
+          "status": "estimated"
+        }
+      },
+      "seeds": [
+        20260825,
+        20260826,
+        20260827
+      ]
+    },
+    "rgfn": {
+      "independent_unit": "training seed",
+      "metrics": {
+        "connected_fraction_per_attempt": {
+          "available_seeds": 3,
+          "mean": 0.0,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.0,
+          "status": "estimated"
+        },
+        "descriptor_manifold_coverage": {
+          "available_seeds": 3,
+          "mean": 0.0,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.0,
+          "status": "estimated"
+        },
+        "descriptor_manifold_precision_per_attempt": {
+          "available_seeds": 3,
+          "mean": 0.0,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.0,
+          "status": "estimated"
+        },
+        "effective_molecule_count": {
+          "available_seeds": 3,
+          "mean": 0.0,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.0,
+          "status": "estimated"
+        },
+        "fingerprint_manifold_coverage": {
+          "available_seeds": 3,
+          "mean": 0.0,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.0,
+          "status": "estimated"
+        },
+        "fingerprint_manifold_precision_per_attempt": {
+          "available_seeds": 3,
+          "mean": 0.0,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.0,
+          "status": "estimated"
+        },
+        "grouped_c2st_auc": {
+          "available_seeds": 0,
+          "mean": null,
+          "reason": "metric unavailable for one or more seeds",
+          "required_seeds": 3,
+          "sample_standard_deviation": null,
+          "status": "not_estimable"
+        },
+        "internal_diversity": {
+          "available_seeds": 0,
+          "mean": null,
+          "reason": "metric unavailable for one or more seeds",
+          "required_seeds": 3,
+          "sample_standard_deviation": null,
+          "status": "not_estimable"
+        },
+        "normalized_descriptor_wasserstein": {
+          "available_seeds": 0,
+          "mean": null,
+          "reason": "metric unavailable for one or more seeds",
+          "required_seeds": 3,
+          "sample_standard_deviation": null,
+          "status": "not_estimable"
+        },
+        "unique_fraction_among_connected": {
+          "available_seeds": 0,
+          "mean": null,
+          "reason": "metric unavailable for one or more seeds",
+          "required_seeds": 3,
+          "sample_standard_deviation": null,
+          "status": "not_estimable"
+        },
+        "within_declared_support_fraction_per_attempt": {
+          "available_seeds": 3,
+          "mean": 0.0,
+          "required_seeds": 3,
+          "sample_standard_deviation": 0.0,
+          "status": "estimated"
+        }
+      },
+      "seeds": [
+        20260825,
+        20260826,
+        20260827
+      ]
+    }
+  },
+  "nonclaims": [
+    "Seed summaries do not turn structural realism into a property or activity claim.",
+    "No molecule-level row is treated as an independent training replicate."
+  ],
+  "schema_version": "forge.common_lipid_realism_aggregate.v1",
+  "seed_rows": {
+    "bytes": 3352,
+    "logical_path": "seed_rows.csv",
+    "sha256": "e1f538349e6148a32e05144c2debbe07af572c157c033d5eb557d3ed16a616e4"
+  },
+  "status": "pass"
+}

@@ -1,0 +1,51 @@
+{
+  "config": {
+    "bytes": 655,
+    "path": "configs/multireaction/shared_integration_qualification_v1.json",
+    "sha256": "886e637cc84b5d17bad9bf197a7b29d338bbf83072250e9df08f229d40343721"
+  },
+  "decision": "A pass closes shared cache/model/fixed-state integration and permits design of a separate production-qualification experiment; it does not authorize a production launch.",
+  "gates": {
+    "all_three_programs_sampled": true,
+    "cache_contract_passed": true,
+    "fixed_states_never_changed": true,
+    "sampling_contract_passed": true,
+    "training_contract_passed": true,
+    "ugi_regression_control_passed": true,
+    "zero_fixed_equivalence_passed": true
+  },
+  "inputs": {
+    "cache_result": {
+      "bytes": 4305,
+      "logical_path": "cache/result.json",
+      "sha256": "587e44881783798b137b39555732f665513d3315b67c2758a0560b21c690caa8"
+    },
+    "sampling_result": {
+      "bytes": 2239,
+      "logical_path": "sampling/result.json",
+      "sha256": "280102a21f604a8000df686d7d525e3b3f38390397637568af8f672c0f24f96f"
+    },
+    "training_result": {
+      "bytes": 4190,
+      "logical_path": "training/result.json",
+      "sha256": "289fa4caa5a6a62325bb74d8159fe20425f98e4c9e47c35b6cf16ef7624fe50a"
+    }
+  },
+  "nonclaims": [
+    "Three-record overfitting is not evidence of generalization.",
+    "Exact source-product recovery is not synthesis-success probability or route certification.",
+    "No biological labels, guidance, candidate selection, or sealed holdouts are used.",
+    "The bounded gate does not authorize production multi-reaction training or sampling."
+  ],
+  "schema_version": "forge.synthesis_program_integration_qualification.v1",
+  "status": "integration_gate_pass",
+  "summary": {
+    "exact_graph_samples": 12,
+    "exact_tensor_samples": 12,
+    "production_training_authorized": false,
+    "programs": 3,
+    "samples": 12,
+    "selected_records": 3,
+    "valid_samples": 12
+  }
+}

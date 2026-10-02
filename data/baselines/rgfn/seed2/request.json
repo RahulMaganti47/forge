@@ -1,0 +1,103 @@
+{
+  "call_budget": {
+    "generator_calls": 3072,
+    "oracle_calls": 0,
+    "reaction_calls": "measured_native_count",
+    "route_calls": 0
+  },
+  "checkout": {
+    "clean": true,
+    "commit": "6ce59169f855ed18f34ba4e8279de93bee306e4f",
+    "method_id": "rgfn",
+    "repository": "https://github.com/koziarskilab/RGFN"
+  },
+  "common_export_result": {
+    "bytes": 3218,
+    "logical_path": "common_export/result.json",
+    "sha256": "f5fce2ba51aa6728efa7c78e4a03f0964336e7773b08b26d58fd9eccf93665e3"
+  },
+  "common_export_sampling_measure": "family_balance_weight_raw_not_raw_reaction_family_counts",
+  "inputs": {
+    "calibration.csv.gz": {
+      "bytes": 317324,
+      "logical_path": "inputs/calibration.csv.gz",
+      "sha256": "0512419ab0926d88113ddb9cd12eb63fe7cb39ed86edaeb419947c5224fc9580"
+    },
+    "calibration.smi": {
+      "bytes": 833671,
+      "logical_path": "inputs/calibration.smi",
+      "sha256": "29d48b7b5482a04ca795b5197434187cbedefa0f8b056398a1f6935c78383f38"
+    },
+    "heldout.csv.gz": {
+      "bytes": 601920,
+      "logical_path": "inputs/heldout.csv.gz",
+      "sha256": "cb4129187583a633ccb4ca8003b3dc0ea3646c46716b7947f0f92e4ff8ae70a9"
+    },
+    "heldout.smi": {
+      "bytes": 1653366,
+      "logical_path": "inputs/heldout.smi",
+      "sha256": "07100fc0f1cd86fa362ebc2cd55b0d964f2cbc3fffae1034b09e1f20e301697d"
+    },
+    "train.csv.gz": {
+      "bytes": 1316494,
+      "logical_path": "inputs/train.csv.gz",
+      "sha256": "c168a351990d28069739f7b651c50197234f183f634dd5ca1982c348a887d2c7"
+    },
+    "train.smi": {
+      "bytes": 3590061,
+      "logical_path": "inputs/train.smi",
+      "sha256": "09e18eb5a0e3fa15ac971248bba99afc3d4e2abebad4376c7c0cfca6b073a2a1"
+    },
+    "train_components.csv.gz": {
+      "bytes": 2857,
+      "logical_path": "inputs/train_components.csv.gz",
+      "sha256": "bd5fc3f71640c05118c2ce05919bed7bfe605b836121fb576017c8bfdfc059c6"
+    },
+    "ugi_reaction.json": {
+      "bytes": 5338,
+      "logical_path": "inputs/ugi_reaction.json",
+      "sha256": "8355fe17366cba2891aa1f3e79338fb63120dfa77fdc26343197b03dbe1ea482"
+    }
+  },
+  "method": {
+    "commit": "6ce59169f855ed18f34ba4e8279de93bee306e4f",
+    "license": "MIT",
+    "method_id": "rgfn",
+    "repository": "https://github.com/koziarskilab/RGFN"
+  },
+  "nonclaims": [
+    "A prepared request is not a completed native run.",
+    "Exact L1 replay is transform consistency, not synthesis-success probability.",
+    "Native invalid and failed attempts remain in the requested-attempt denominator."
+  ],
+  "output_contract": {
+    "format": "csv",
+    "one_row_per_requested_attempt": true,
+    "required_columns": [
+      "attempt_index",
+      "status",
+      "product_smiles"
+    ],
+    "success_only_output_forbidden": true
+  },
+  "parameters": {
+    "batch_size": 100,
+    "biological_or_property_reward": false,
+    "candidate_selection": false,
+    "checkpoint_selection": "fixed_final_step",
+    "component_inventory": "common_train_only",
+    "deterministic_algorithms": true,
+    "device": "cuda",
+    "max_heavy_atoms": 194,
+    "max_reactions": 1,
+    "precision": "float32",
+    "repair_or_retry": false,
+    "reward": "constant_one_no_property_oracle",
+    "training_iterations": 5002,
+    "trajectories_per_iteration": 100
+  },
+  "profile": "full",
+  "requested_attempts": 3072,
+  "schema_version": "forge.external_ugi_native_request.v1",
+  "seed": 20260827
+}

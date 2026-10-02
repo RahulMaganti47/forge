@@ -1,0 +1,69 @@
+{
+  "architecture": "reaction_program_graph_transformer",
+  "calls": {
+    "oracle": 0,
+    "route": 0
+  },
+  "candidate_selection": false,
+  "checkpoint": {
+    "bytes": 2078130,
+    "path": "runs/phase1-reaction-program-transformer-overfit-v3/e299bd07e494e8d2b77651398fbd5b895051dcf21e45f1e9bc790106d2cce3ae/stages/training/artifacts/checkpoint.json",
+    "sha256": "df6cce04d69fc15d0f73123248866b81c333efb36eff739a4341b5ecce297927"
+  },
+  "decision": "The architecture is qualified for a separately frozen accelerator preflight. This overfit result is not evidence that multi-reaction generalization is fixed.",
+  "exact_tensor_reconstruction_by_program": {
+    "bl_2023_repeated_aza_michael": 1.0,
+    "lx_2024_repeated_reductive_amination": 1.0,
+    "ugi_3cr_agile": 1.0
+  },
+  "final_to_initial_loss_ratio": 1.506061862382187e-06,
+  "final_total_loss": 2.836778548953589e-05,
+  "gates": {
+    "all_losses_finite": true,
+    "fixed_states_never_noised": true,
+    "fixed_states_restored_at_decode": true,
+    "loss_reduction": true,
+    "three_program_exact_tensor_reconstruction": true,
+    "zero_fixed_auxiliary_path_matches_generic_flow": true
+  },
+  "gradient_balancing": {
+    "final_raw_gradient_norms": [
+      0.0017923909472301602,
+      0.0003438311687204987,
+      0.0003679486981127411
+    ],
+    "first_raw_gradient_norms": [
+      20.90908432006836,
+      19.562437057495117,
+      23.216228485107422
+    ],
+    "method": "equal_family_mass_deterministic_pcgrad",
+    "projected_conflicts": 4825,
+    "steps": 2400
+  },
+  "initial_total_loss": 18.835737228393555,
+  "run_id": "e299bd07e494e8d2b77651398fbd5b895051dcf21e45f1e9bc790106d2cce3ae",
+  "run_manifest": {
+    "bytes": 1222,
+    "path": "runs/phase1-reaction-program-transformer-overfit-v3/e299bd07e494e8d2b77651398fbd5b895051dcf21e45f1e9bc790106d2cce3ae/run.json",
+    "sha256": "f0170fd903e16b55547338204525cb89165847919743856378fa16453ee38250"
+  },
+  "schema_version": "forge.reaction_program_transformer_qualification.v1",
+  "semantic_objective": {
+    "core_consistency_weight": 0.25,
+    "role_consistency_weight": 0.25,
+    "state_balancing": "equal_present_semantic_state_mass"
+  },
+  "source_sha256": "47ee117b2cb7f435f4eacd7855355ecd03bbaea3870396d1b6cf8bc70e62f6d3",
+  "status": "qualified_for_frozen_followup_preflight",
+  "training_manifest": {
+    "bytes": 2878,
+    "path": "runs/phase1-reaction-program-transformer-overfit-v3/e299bd07e494e8d2b77651398fbd5b895051dcf21e45f1e9bc790106d2cce3ae/stages/training/manifest.json",
+    "sha256": "f15aa4a31c3f55aee1ddfcb0942c2a63a03e17eb168fddce968358178348afc1"
+  },
+  "training_result": {
+    "bytes": 8104,
+    "path": "runs/phase1-reaction-program-transformer-overfit-v3/e299bd07e494e8d2b77651398fbd5b895051dcf21e45f1e9bc790106d2cce3ae/stages/training/artifacts/result.json",
+    "sha256": "0c142ef4ee572716e008f8877d8a9d73307f499602136a613b1ca016bc1b7041"
+  }
+}

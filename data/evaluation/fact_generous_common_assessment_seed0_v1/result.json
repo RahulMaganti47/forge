@@ -1,0 +1,178 @@
+{
+  "assessed_attempts": {
+    "bytes": 49743,
+    "logical_path": "assessed_attempts.jsonl.gz",
+    "sha256": "af3f2769e7c0b68399c436f234d9e75d76f42d7db1a3c7cd09718b073191dd91"
+  },
+  "attempts": {
+    "bytes": 26198,
+    "logical_path": "fact_generous.jsonl.gz",
+    "sha256": "d5e84147095d8ad06110d8eaea3e3103bbb4d8c5bd01b2790f761b4c94f51a0b"
+  },
+  "candidate_selection": false,
+  "common_assessment": {
+    "attempts": 3072,
+    "calls": {
+      "generator_calls": 3072,
+      "oracle_calls": 0,
+      "reaction_calls": 0,
+      "route_calls": 0,
+      "wall_seconds": 0.0
+    },
+    "candidate_selection": false,
+    "coverage_and_precision_reported": true,
+    "method_id": "fact_generous",
+    "metrics": {
+      "ambiguous_exact_decompositions": 0,
+      "component_metrics_by_role": {
+        "amine_head": {
+          "effective_count": 457.41633072357087,
+          "novel": 493,
+          "novel_fraction": 0.9919517102615694,
+          "slots": 497
+        },
+        "isocyanide_tail": {
+          "effective_count": 42.76392176319583,
+          "novel": 325,
+          "novel_fraction": 0.6539235412474849,
+          "slots": 497
+        },
+        "oxoester_aldehyde_body_tail": {
+          "effective_count": 28.86035088346965,
+          "novel": 159,
+          "novel_fraction": 0.3199195171026157,
+          "slots": 497
+        }
+      },
+      "component_novelty_fraction": 1.0,
+      "component_slots_evaluated": 1491,
+      "connected": 1201,
+      "connected_among_valid_fraction": 1.0,
+      "connected_fraction": 0.3909505208333333,
+      "decomposed_products_with_any_novel_component": 497,
+      "decomposed_products_with_any_novel_component_fraction": 1.0,
+      "effective_component_count": 247.94281125425067,
+      "effective_generated_component_count": 247.94281125425067,
+      "exact_forward_verified_traces": 497,
+      "exact_l1_products_per_1000_attempts": 161.78385416666666,
+      "exact_l1_program": 497,
+      "exact_l1_yield_per_attempt": 0.16178385416666666,
+      "held_component_exact_l1_products": 1,
+      "held_component_exact_l1_products_by_role": {
+        "amine_head": 0,
+        "isocyanide_tail": 0,
+        "oxoester_aldehyde_body_tail": 1
+      },
+      "held_component_exact_l1_products_per_1000_attempts": 0.3255208333333333,
+      "invalid_or_unresolved_l1": 2575,
+      "invalid_samples": 1871,
+      "mean_pairwise_ecfp4_distance": 0.7817464494130495,
+      "retro_decomposition_coverage_among_valid": 0.4138218151540383,
+      "retro_transform_precision": 1.0,
+      "samples": 3072,
+      "unique_decomposition_rows": 497,
+      "unique_exact_l1_products": 495,
+      "unique_exact_l1_products_per_1000_attempts": 161.1328125,
+      "unique_exact_l1_products_per_attempt": 0.1611328125,
+      "unique_fraction": 0.9933388842631141,
+      "unique_held_component_exact_l1_products": 1,
+      "unique_method_visible_open_ended_exact_l1_products": 495,
+      "unique_method_visible_open_ended_exact_l1_products_per_1000_attempts": 161.1328125,
+      "unique_open_ended_exact_l1_products": 495,
+      "unique_open_ended_exact_l1_products_per_1000_attempts": 161.1328125,
+      "unique_open_ended_exact_l1_products_per_attempt": 0.1611328125,
+      "unique_open_ended_whole_product_novel_exact_l1_products": 495,
+      "unique_open_ended_whole_product_novel_exact_l1_products_per_1000_attempts": 161.1328125,
+      "unique_valid": 1193,
+      "unique_whole_product_novel_exact_l1_products": 495,
+      "unique_whole_product_novel_exact_l1_products_per_1000_attempts": 161.1328125,
+      "valid": 1201,
+      "valid_fraction": 0.3909505208333333,
+      "valid_products_per_1000_attempts": 390.9505208333333,
+      "valid_without_exact_decomposition": 704,
+      "whole_product_novel_to_train": 1201,
+      "whole_product_novel_to_train_fraction": 1.0
+    },
+    "nonclaims": [
+      "Exact L1 replay is transform consistency, not synthesis-success probability.",
+      "A missing decomposition is an abstention, not proof that a product is unsynthesizable.",
+      "Open-endedness is relative to the components visible to that method during generation."
+    ],
+    "reductive_amination_substructure_rate_reported": false,
+    "schema_version": "forge.common_ugi_assessment.v1",
+    "seed": 20260825
+  },
+  "config": {
+    "bytes": 760,
+    "path": "configs/multireaction/common_ugi_assessment_v1.json",
+    "sha256": "01a8279a90c4fab7721047313236a930515abd2137702b08a66d1b77377efd4e"
+  },
+  "gates": {
+    "attempt_denominator_preserved": true,
+    "candidate_selection_absent": true,
+    "coverage_and_precision_reported": true,
+    "forbidden_reductive_amination_metric_absent": true,
+    "method_and_seed_preserved": true,
+    "route_or_oracle_calls_during_assessment_zero": true
+  },
+  "inputs": {
+    "common_protocol": {
+      "bytes": 4271,
+      "path": "configs/multireaction/common_ugi_baseline_protocol_v1.json",
+      "sha256": "54951f190e3cecc91b3d37a22858a3be84a18d8ef42c295b29bb418b5e9f3e15"
+    },
+    "component_route_ledger": {
+      "bytes": 104971,
+      "path": "results/phase1/ugi_bounded_hybrid_route_cascade_v1/component_route_ledger.jsonl.gz",
+      "sha256": "0076d72f7649c5b2b6d7fad242b0ecc0a667d232c137dbd282a52ff34a3e6a20"
+    },
+    "qualified_ugi_reactions": {
+      "bytes": 5116,
+      "path": "data/vendor/qualified_reactions_v1.json",
+      "sha256": "296bf06238ef22acc1f55117f5ce0adaee21b1bafaf5a83f89182b0f31cc4fcf"
+    },
+    "ugi_assignments": {
+      "bytes": 4044135,
+      "path": "results/phase1/ugi_balanced_chemistry_corpus_v2/assignments.csv.gz",
+      "sha256": "9a50c703ed6aa919b251678c04b7a44e93b3233a12fc13b5d6697683bb5b5184"
+    }
+  },
+  "method_id": "fact_generous",
+  "route_assessed_attempts": {
+    "bytes": 64080,
+    "logical_path": "route_assessed_attempts.jsonl.gz",
+    "sha256": "956aa40e4187684aea9f043a091b04f5c163513b948fd46d86a91489140d4c71"
+  },
+  "route_evidence_assessment": {
+    "abstentions": 497,
+    "assessment_mode": "exact_role_constitution_lookup_in_frozen_bounded_cascade",
+    "attempts": 3072,
+    "complete_dossier": 0,
+    "complete_dossier_fraction_among_eligible": 0.0,
+    "dispositions": {
+      "abstain_component_absent_from_frozen_index": 497,
+      "not_unique_exact_l1": 2575
+    },
+    "eligible_unique_exact_l1": 497,
+    "evidence_index_coverage_among_eligible": 0.0,
+    "evidence_index_covered": 0,
+    "evidence_scope": {
+      "method_blind_cross_method_union": false,
+      "population": "bounded_forge_ugi_candidate_cascade",
+      "synthesis_success_comparison_authorized": false
+    },
+    "nonclaims": [
+      "An index miss is an abstention, not proof of unsynthesizability.",
+      "Exact L1 replay is not a synthesis-success probability.",
+      "This lookup-only comparison does not rerun or retune a planner per method.",
+      "This bounded index cannot support a cross-method synthesis-success ranking."
+    ],
+    "route_or_oracle_calls": 0,
+    "schema_version": "forge.common_ugi_route_evidence_assessment.v1",
+    "terminal_evidence": 0,
+    "verified_upstream": 0
+  },
+  "schema_version": "forge.common_ugi_complete_assessment.v1",
+  "seed": 20260825,
+  "status": "pass"
+}

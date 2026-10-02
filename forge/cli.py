@@ -19,7 +19,7 @@ def main(argv: list[str] | None = None) -> int:
     artifacts = commands.add_parser(
         "artifacts", help="fetch, restore or verify immutable artifacts"
     )
-    artifacts.add_argument("action", choices=("fetch", "restore", "verify"))
+    artifacts.add_argument("action", choices=("fetch", "install", "restore", "verify"))
     artifacts.add_argument(
         "--group",
         choices=("paper-model-v1", "submission19337-evidence-v1", "submission19337-ablations-v1"),
@@ -28,6 +28,7 @@ def main(argv: list[str] | None = None) -> int:
     artifacts.add_argument("--bundle", type=Path)
     artifacts.add_argument("--profile", default="kosha-labs")
     artifacts.add_argument("--environment", default="main")
+    artifacts.add_argument("--backend", choices=("github", "modal"), default="github")
     replay = commands.add_parser("reproduce", help="reaggregate frozen tables; no training")
     replay.add_argument(
         "--target", default="all", choices=["all", *(f"table-{i}" for i in range(1, 12))]
@@ -93,13 +94,20 @@ def main(argv: list[str] | None = None) -> int:
             manifest = root / f"manifests/{args.group}.json"
             if args.action == "verify":
                 result = store.verify(root, manifest)
+            elif args.action == "install":
+                result = store.install(root, manifest)
             elif args.action == "restore":
                 if args.bundle is None:
                     raise ValueError("restore requires --bundle")
                 result = store.restore(root, manifest, args.bundle)
             else:
                 result = store.fetch(
-                    root, manifest, profile=args.profile, environment=args.environment
+                    root,
+                    manifest,
+                    profile=args.profile,
+                    environment=args.environment,
+                    backend=args.backend,
+                    downloads=args.bundle,
                 )
             print(json.dumps(result, indent=2, sort_keys=True))
             return 0 if result["ready"] else 2

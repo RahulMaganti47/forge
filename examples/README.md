@@ -13,16 +13,16 @@ Each command writes to a new directory under `results/`.
 
 ## Data and checkpoints
 
-Fetch both required bundles:
+The processed datasets, splits and saved results are included in [data/](../data/README.md).
+Run `git lfs pull`, then fetch checkpoints and caches with an authenticated GitHub CLI:
 
 ```bash
 uv run forge artifacts fetch --group paper-model-v1
 uv run forge artifacts fetch --group submission19337-evidence-v1
 ```
 
-The bundles are in the `forge-paper-artifacts` Modal volume in `kosha-labs/main`. Use an authenticated
-workspace profile; pass `--profile <name>` if it is not named `kosha-labs`. For offline access, use
-`forge artifacts restore --group <group> --bundle /path/to/downloaded/bundle`.
+Fetch combines the included data with the [direct downloads](../data/README.md#download-checkpoints-and-caches)
+and verifies all hashes. Readers need access to this private repository; no Modal account is needed.
 
 Architecture-study weights are optional:
 
@@ -30,7 +30,8 @@ Architecture-study weights are optional:
 uv run forge artifacts fetch --group submission19337-ablations-v1
 ```
 
-Fetch and restore verify the committed manifest hashes.
+For table replay without checkpoint downloads, use `forge artifacts install --group <group>` for
+both required groups. Modal and offline restoration options are in the data guide.
 
 ## Reproduce tables and generate molecules
 

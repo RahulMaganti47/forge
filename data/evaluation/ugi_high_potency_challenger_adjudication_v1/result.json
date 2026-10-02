@@ -1,0 +1,75 @@
+{
+  "decision": {
+    "additional_same_data_potency_proposals_authorized": false,
+    "paper_blocked_without_potency_tilting": false,
+    "potency_morphology_tilting_branch_closed": true,
+    "potency_morphology_tilting_promoted": false,
+    "production_biological_method": "promoted applicability-enriched morphology proposal followed by frozen continuous support assessment and conservative terminal potency ranking",
+    "prospective_candidate_lock_authorized_by_this_result": false
+  },
+  "diagnosis": {
+    "failure_is_not_validity_collapse": true,
+    "interpretation": "The low-capacity classifier detects average potency differences among measured morphologies, but the selected nested proposal did not translate that weak signal into more eligible or conservative-high-potency generated products.",
+    "target_mismatch_rescued_terminal_efficiency": false,
+    "target_mismatch_was_worth_testing": true
+  },
+  "fresh_matched_terminal_gate": {
+    "authorized_tail_lane": {
+      "difference_ci95": [
+        -0.0022786458333333335,
+        0.0009765625
+      ],
+      "difference_per_generator_call": -0.0013020833333333333,
+      "potency_eligible_before_budget": 82,
+      "potency_unique_conservative_high": 23,
+      "support_eligible_before_budget": 90,
+      "support_unique_conservative_high": 27
+    },
+    "equal_oracle_budget": 38,
+    "generator_calls_per_arm": 3072,
+    "promotion_gate_passed": false,
+    "valid_exact_l1": {
+      "nested_potency": 2962,
+      "support_enriched": 2955
+    }
+  },
+  "inputs": {
+    "fresh_generation": {
+      "path": "/Users/rmaganti/Desktop/thesis_projects_ML/forge/results/phase1/ugi_high_potency_challenger_terminal_generation_v1/result.json",
+      "sha256": "e47ccb2c74f062bf3fa37f38d25df17deefd633ce38bd1b8e05207258a4cb606"
+    },
+    "fresh_ranking": {
+      "path": "/Users/rmaganti/Desktop/thesis_projects_ML/forge/results/phase1/ugi_high_potency_challenger_continuous_ranking_v1/result.json",
+      "sha256": "dc19f876235cd68c9ae36936ea53dddf0f31dc04451218c47e67dcccf01e3471"
+    },
+    "frozen_proposal": {
+      "path": "/Users/rmaganti/Desktop/thesis_projects_ML/forge/results/phase1/ugi_morphology_high_potency_proposal_v1/result.json",
+      "sha256": "d8117d11e06a592bc6e2a54b2b0d549f610228dc4595c97aa918e68d2f0e71bb"
+    },
+    "signal_audit": {
+      "path": "/Users/rmaganti/Desktop/thesis_projects_ML/forge/results/phase1/ugi_morphology_high_potency_challenger_v1_retry1/result.json",
+      "sha256": "91839b27d54bc73c55dd471eb52e125e601d4b1a2219e8fe5548cfb305df5ed8"
+    }
+  },
+  "nonclaims": [
+    "The negative generator comparison does not imply that morphology contains no biological signal.",
+    "Terminal ranking does not establish calibrated absolute potency for exact-new components.",
+    "Applicability enrichment remains independently promoted and is unaffected by this result."
+  ],
+  "preterminal_signal": {
+    "group_disjoint_roc_auc": 0.6225140283238539,
+    "interpretation": "Measured morphology carries population-level HeLa rank signal, but this is not sufficient evidence that reallocating terminal generation improves candidate yield.",
+    "roc_auc_ci95": [
+      0.5649152012816624,
+      0.6785428285956983
+    ],
+    "top_quartile_gain_ci95": [
+      0.6928398177743087,
+      1.6732125330578866
+    ],
+    "top_quartile_observed_gain": 1.1767042078220369
+  },
+  "result_sha256": "76b609be645bc7f18a7a1643e118e621730e6ff63aae0755465b76a05b6c563b",
+  "schema_version": "forge.ugi_high_potency_challenger_adjudication.v1",
+  "status": "high_potency_challenger_adjudicated"
+}

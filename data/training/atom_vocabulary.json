@@ -1,0 +1,34 @@
+{
+  "schema_version": "phase1_product_v3_atom_vocabulary.v1",
+  "status": "pass",
+  "policy": {
+    "stereochemistry": "excluded_from_product_graph_state",
+    "aromaticity": "explicit_atom_and_bond_state",
+    "r1_extension_rule": "union_R0_states_with_full_R1_scan"
+  },
+  "atom_vocabulary": [
+    {"index": 0, "symbol": "C", "formal_charge": 0, "aromatic": false, "explicit_hydrogens": 0},
+    {"index": 1, "symbol": "C", "formal_charge": 0, "aromatic": true, "explicit_hydrogens": 0},
+    {"index": 2, "symbol": "F", "formal_charge": 0, "aromatic": false, "explicit_hydrogens": 0},
+    {"index": 3, "symbol": "N", "formal_charge": 0, "aromatic": false, "explicit_hydrogens": 0},
+    {"index": 4, "symbol": "N", "formal_charge": 0, "aromatic": true, "explicit_hydrogens": 0},
+    {"index": 5, "symbol": "N", "formal_charge": 0, "aromatic": true, "explicit_hydrogens": 1},
+    {"index": 6, "symbol": "N", "formal_charge": 1, "aromatic": false, "explicit_hydrogens": 0},
+    {"index": 7, "symbol": "O", "formal_charge": -1, "aromatic": false, "explicit_hydrogens": 0},
+    {"index": 8, "symbol": "O", "formal_charge": 0, "aromatic": false, "explicit_hydrogens": 0},
+    {"index": 9, "symbol": "O", "formal_charge": 0, "aromatic": true, "explicit_hydrogens": 0},
+    {"index": 10, "symbol": "P", "formal_charge": 0, "aromatic": false, "explicit_hydrogens": 0},
+    {"index": 11, "symbol": "S", "formal_charge": 0, "aromatic": false, "explicit_hydrogens": 0},
+    {"index": 12, "symbol": "S", "formal_charge": 0, "aromatic": true, "explicit_hydrogens": 0},
+    {"index": 13, "symbol": "Si", "formal_charge": 0, "aromatic": false, "explicit_hydrogens": 0}
+  ],
+  "audit": {
+    "r0_rows": 15229,
+    "r0_sparse_and_constitutional_roundtrip_exact": 15229,
+    "r1_rows_scanned": 464265,
+    "r1_invalid_structures": 0,
+    "r1_only_states": [
+      {"symbol": "O", "formal_charge": 0, "aromatic": true, "explicit_hydrogens": 0, "atom_occurrences": 2763}
+    ]
+  }
+}

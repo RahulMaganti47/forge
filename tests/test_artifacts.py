@@ -1,10 +1,16 @@
 import hashlib
+import io
 import json
+import shutil
+import tarfile
 from pathlib import Path
+from types import SimpleNamespace
 
 import pytest
 
-from forge.commands.artifacts import restore, safe_path, verify
+from forge.commands import artifacts
+from forge.commands.artifacts import fetch, install, restore, safe_path, verify
+from forge.core.hashing import sha256_file
 
 
 def bundle(tmp_path: Path) -> tuple[Path, Path, Path]:
@@ -59,3 +65,154 @@ def test_artifact_symlink_is_rejected(tmp_path: Path) -> None:
     (tmp_path / "link").symlink_to(tmp_path / "elsewhere")
     with pytest.raises(ValueError, match="symlink"):
         safe_path(tmp_path, "link")
+
+
+def _archive(path: Path, entries: list[tuple[str, bytes, bool]]) -> None:
+    with tarfile.open(path, "w:gz") as stream:
+        for name, payload, symlink in entries:
+            member = tarfile.TarInfo(name)
+            if symlink:
+                member.type = tarfile.SYMTYPE
+                member.linkname = "../outside"
+                stream.addfile(member)
+            else:
+                member.size = len(payload)
+                stream.addfile(member, io.BytesIO(payload))
+
+
+@pytest.fixture
+def github_bundle(tmp_path: Path, monkeypatch: pytest.MonkeyPatch):
+    root = tmp_path / "repo"
+    (root / "data").mkdir(parents=True)
+    data = root / "data/training.csv"
+    data.write_bytes(b"training data\n")
+    archive = tmp_path / "weights.tar.gz"
+    _archive(archive, [("weights.bin", b"weights", False)])
+    config = {
+        "files": [
+            {
+                "repo_path": "results/training.csv",
+                "bundle_path": "training.csv",
+                "checkout_path": "data/training.csv",
+                "bytes": data.stat().st_size,
+                "sha256": str(sha256_file(data)),
+            },
+            {
+                "repo_path": "results/weights.bin",
+                "bundle_path": "weights.bin",
+                "bytes": 7,
+                "sha256": hashlib.sha256(b"weights").hexdigest(),
+            },
+        ],
+        "storage": {
+            "github": {
+                "repository": "owner/repo",
+                "release": "v1",
+                "archives": [
+                    {
+                        "name": archive.name,
+                        "bytes": archive.stat().st_size,
+                        "sha256": str(sha256_file(archive)),
+                        "members": ["weights.bin"],
+                    }
+                ],
+            }
+        },
+    }
+    manifest = tmp_path / "manifest.json"
+    manifest.write_text(json.dumps(config))
+
+    def download(command, **kwargs):
+        assert command[:4] == ["gh", "release", "download", "v1"]
+        target = Path(command[command.index("--dir") + 1]) / archive.name
+        shutil.copyfile(archive, target)
+        return SimpleNamespace(returncode=0)
+
+    monkeypatch.setattr(artifacts.subprocess, "run", download)
+    return root, manifest, archive, config
+
+
+def test_install_committed_data_keeps_missing_weights_explicit(github_bundle):
+    root, manifest, _, _ = github_bundle
+    result = install(root, manifest)
+    assert result["ready"]
+    assert (root / "results/training.csv").read_bytes() == b"training data\n"
+    assert result["download_paths"] == ["results/weights.bin"]
+    assert not verify(root, manifest)["ready"]
+
+
+def test_github_fetch_combines_committed_data_and_download(github_bundle):
+    root, manifest, _, _ = github_bundle
+    assert fetch(root, manifest, profile="unused", environment="unused")["ready"]
+    assert (root / "results/training.csv").read_bytes() == b"training data\n"
+    assert (root / "results/weights.bin").read_bytes() == b"weights"
+
+
+def test_offline_fetch_uses_downloaded_archives_without_network(github_bundle, monkeypatch):
+    root, manifest, archive, _ = github_bundle
+
+    def forbidden(*args, **kwargs):
+        raise AssertionError("offline restoration must not contact GitHub")
+
+    monkeypatch.setattr(artifacts.subprocess, "run", forbidden)
+    assert fetch(root, manifest, profile="unused", environment="unused", downloads=archive.parent)[
+        "ready"
+    ]
+
+
+def test_changed_committed_data_stops_before_download(github_bundle, monkeypatch):
+    root, manifest, _, _ = github_bundle
+    (root / "data/training.csv").write_bytes(b"version https://git-lfs.github.com/spec/v1\n")
+
+    def forbidden(*args, **kwargs):
+        raise AssertionError("must verify committed data before download")
+
+    monkeypatch.setattr(artifacts.subprocess, "run", forbidden)
+    with pytest.raises(ValueError, match="git lfs pull"):
+        fetch(root, manifest, profile="unused", environment="unused")
+    assert not (root / "results").exists()
+
+
+def test_changed_archive_stops_before_installation(github_bundle):
+    root, manifest, archive, _ = github_bundle
+    archive.write_bytes(b"corrupt download")
+    with pytest.raises(ValueError, match="differs from its manifest"):
+        fetch(root, manifest, profile="unused", environment="unused")
+    assert not (root / "results").exists()
+
+
+@pytest.mark.parametrize(
+    "entries",
+    [
+        [("../outside", b"weights", False)],
+        [("weights.bin", b"", True)],
+        [("weights.bin", b"weights", False), ("weights.bin", b"weights", False)],
+        [("other.bin", b"weights", False)],
+        [],
+        [("weights.bin", b"changed", False)],
+    ],
+)
+def test_authenticated_archive_cannot_bypass_payload_checks(github_bundle, entries):
+    root, manifest, archive, config = github_bundle
+    _archive(archive, entries)
+    record = config["storage"]["github"]["archives"][0]
+    record.update(bytes=archive.stat().st_size, sha256=str(sha256_file(archive)))
+    manifest.write_text(json.dumps(config))
+    with pytest.raises(ValueError):
+        fetch(root, manifest, profile="unused", environment="unused")
+    assert not (root / "results").exists()
+    assert not (root.parent / "outside").exists()
+
+
+def test_modal_remains_an_explicit_backend(tmp_path: Path, monkeypatch):
+    download, destination, manifest = bundle(tmp_path)
+
+    def modal(command, **kwargs):
+        assert command[:3] == ["modal", "volume", "get"]
+        shutil.copytree(download, Path(command[5]) / "paper-model-v1")
+        return SimpleNamespace(returncode=0)
+
+    monkeypatch.setattr(artifacts.subprocess, "run", modal)
+    assert fetch(destination, manifest, profile="team", environment="main", backend="modal")[
+        "ready"
+    ]

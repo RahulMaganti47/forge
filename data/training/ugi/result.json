@@ -1,0 +1,99 @@
+{
+  "artifacts": {
+    "assignments.csv.gz": {
+      "bytes": 4044135,
+      "path": "results/phase1/ugi_balanced_chemistry_corpus_v2/assignments.csv.gz",
+      "sha256": "9a50c703ed6aa919b251678c04b7a44e93b3233a12fc13b5d6697683bb5b5184"
+    },
+    "semantic_atoms.csv.gz": {
+      "bytes": 40656153,
+      "path": "results/phase1/ugi_balanced_chemistry_corpus_v2/semantic_atoms.csv.gz",
+      "sha256": "08f6241aa64eb0e9a94594f0678f7c81da796b13e392cfacfb2336e8b1e671a1"
+    },
+    "semantic_bonds.csv.gz": {
+      "bytes": 21605687,
+      "path": "results/phase1/ugi_balanced_chemistry_corpus_v2/semantic_bonds.csv.gz",
+      "sha256": "d8a6abe9ffea84ff6e5aa5e247dd9135121134c4de11d61e3b08bdec467a5101"
+    },
+    "semantic_component_mappings.csv.gz": {
+      "bytes": 29104829,
+      "path": "results/phase1/ugi_balanced_chemistry_corpus_v2/semantic_component_mappings.csv.gz",
+      "sha256": "ad10572bb0df18e36c48b061e9fffee71bda8f5c0b2c23740da605e15c03ba54"
+    },
+    "semantic_products.csv.gz": {
+      "bytes": 9614211,
+      "path": "results/phase1/ugi_balanced_chemistry_corpus_v2/semantic_products.csv.gz",
+      "sha256": "13fd0204fe4a7d1402c47e4fce0ac5cce0c78410c5c8fbfbde48c552fc00da1d"
+    }
+  },
+  "inputs": {
+    "component_registry": {
+      "bytes": 23048,
+      "path": "results/phase1/ugi_component_expansion/component_registry.csv.gz",
+      "sha256": "55784469fe0de7ff62f7a393b8af05056328e004a2bf75c215f2feb723963dfd"
+    },
+    "products": {
+      "bytes": 40021381,
+      "path": "results/phase1/ugi_expanded_enumeration/products.csv.gz",
+      "sha256": "545b037272092a0875488e0f09ecbb4fe4ceac7feada88b63b1b6a66ef650962"
+    },
+    "qualified_reactions": {
+      "bytes": 5116,
+      "path": "data/vendor/qualified_reactions_v1.json",
+      "sha256": "296bf06238ef22acc1f55117f5ce0adaee21b1bafaf5a83f89182b0f31cc4fcf"
+    },
+    "ugi_variant": {
+      "bytes": 1814,
+      "path": "configs/assembly/ugi_variant.yaml",
+      "sha256": "5b97e062b115fcc137b4a05d8f72b74e9cc67a584c05c054ef5f983969bf1427"
+    }
+  },
+  "policy": {
+    "component_ids_in_model_state": false,
+    "current_phase1_union": "include_all_as_structural_realism_anchor",
+    "expanded_selection": "deterministic_family_weighted_reservoir_plus_fold_clean_component_cover",
+    "source_activity_labels_inherited": false,
+    "training_batches_must_be_source_stratified": true,
+    "uniform_product_row_sampling_allowed": false
+  },
+  "schema_version": "phase1_ugi_balanced_chemistry_corpus_result.v1",
+  "selection": {
+    "full_census_by_fold_and_stratum": {
+      "calibration|current_phase1_union": 800,
+      "calibration|expanded_exact_forward_enumeration": 348213,
+      "heldout|current_phase1_union": 5122,
+      "heldout|expanded_exact_forward_enumeration": 649248,
+      "train|current_phase1_union": 6464,
+      "train|expanded_exact_forward_enumeration": 476568
+    },
+    "full_weighted_triple_fraction_by_fold": {
+      "calibration": 0.13296631519995813,
+      "heldout": 0.044112245631331974,
+      "train": 0.21875934686157758
+    },
+    "mandatory_component_cover_products": 419,
+    "selected_by_fold_and_stratum": {
+      "calibration|current_phase1_union": 800,
+      "calibration|expanded_exact_forward_enumeration": 15000,
+      "heldout|current_phase1_union": 5122,
+      "heldout|expanded_exact_forward_enumeration": 25000,
+      "train|current_phase1_union": 6464,
+      "train|expanded_exact_forward_enumeration": 60000
+    }
+  },
+  "status": "pass",
+  "summary": {
+    "fold_counts": {
+      "calibration": 15800,
+      "heldout": 30122,
+      "train": 66464
+    },
+    "selected_products": 112386,
+    "semantic_atom_rows": 4415446,
+    "semantic_bond_rows": 4375552,
+    "source_counts": {
+      "current_phase1_union": 12386,
+      "expanded_exact_forward_enumeration": 100000
+    }
+  }
+}

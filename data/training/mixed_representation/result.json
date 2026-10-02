@@ -1,0 +1,234 @@
+{
+  "config": {
+    "path": "configs/multireaction/shared_synthesis_program_representation_mixed_v1.json",
+    "sha256": "1c769134d15f2d5babca4340e61c77244a45b0094b290c7d2d6b13cb7909a74b"
+  },
+  "gates": {
+    "all_declared_core_positions_observed": true,
+    "all_declared_records_attempted_and_represented": true,
+    "aromatic_atoms_and_bonds_preserved": true,
+    "fixed_core_policy_exact": true,
+    "fixed_ugi_core_is_explicit": true,
+    "full_closure_support_preserved": true,
+    "full_heavy_atom_support_preserved": true,
+    "no_component_identity_fields": true
+  },
+  "inputs": {
+    "atom_vocabulary": {
+      "bytes": 1963,
+      "path": "results/phase1/product_v3_atom_vocabulary.json",
+      "sha256": "90ab7430354a9ffd91cfd6e19f2a125020a6547c67cd462a11f77074fd2a0cc5"
+    },
+    "multireaction_atlas": {
+      "bytes": 2674081,
+      "path": "results/phase1/bl_lx_mixed_repeat_expansion_v2/reaction_program_atlas.csv.gz",
+      "sha256": "6b5021e986e9e514ccca74dc6b6b0ccfef6dd2e9c40f209aedf6f64bb516e5c2"
+    },
+    "multireaction_corpus_result": {
+      "bytes": 12627,
+      "path": "results/phase1/bl_lx_mixed_repeat_expansion_v2/result.json",
+      "sha256": "5fa8e4f8bbc79ea4d286b1193262a9cf4bdea56a1ddeecfaf17363c387c5e980"
+    },
+    "multireaction_semantic_atoms": {
+      "bytes": 16584822,
+      "path": "results/phase1/bl_lx_mixed_repeat_expansion_v2/semantic_atoms.csv.gz",
+      "sha256": "962db4a740bae18c3cadd330e2c7a3f5c0deb3ac120b45f1d681ab962ea1e8a0"
+    },
+    "ugi_assignments": {
+      "bytes": 4044135,
+      "path": "results/phase1/ugi_balanced_chemistry_corpus_v2/assignments.csv.gz",
+      "sha256": "9a50c703ed6aa919b251678c04b7a44e93b3233a12fc13b5d6697683bb5b5184"
+    },
+    "ugi_corpus_result": {
+      "bytes": 3814,
+      "path": "results/phase1/ugi_balanced_chemistry_corpus_v2/result.json",
+      "sha256": "1b655ce6389f50c7310a21a287997793c592ca93de064d53bafacaee24f663a6"
+    },
+    "ugi_semantic_atoms": {
+      "bytes": 40656153,
+      "path": "results/phase1/ugi_balanced_chemistry_corpus_v2/semantic_atoms.csv.gz",
+      "sha256": "08f6241aa64eb0e9a94594f0678f7c81da796b13e392cfacfb2336e8b1e671a1"
+    },
+    "ugi_semantic_products": {
+      "bytes": 9614211,
+      "path": "results/phase1/ugi_balanced_chemistry_corpus_v2/semantic_products.csv.gz",
+      "sha256": "13fd0204fe4a7d1402c47e4fce0ac5cce0c78410c5c8fbfbde48c552fc00da1d"
+    }
+  },
+  "nonclaims": [
+    "The auxiliary products are reaction-enumerated structural support, not observed syntheses or route-certified products.",
+    "The BL constraint fixes only registry-derived aza-Michael reaction-junction atoms and bonds; component interiors remain generated.",
+    "Exact graph reconstruction is a representation qualification, not evidence of model generalization.",
+    "No component identity, component SMILES, fingerprint or fragment token enters the shared representation.",
+    "No reductive-amination substructure hit rate is computed or reported."
+  ],
+  "programs": {
+    "bl_2023_repeated_aza_michael": {
+      "aromatic_atom_rows": 88853,
+      "aromatic_bond_rows": 89490,
+      "aromatic_products": 11975,
+      "atom_rows": 2913357,
+      "core_atom_rows": 532628,
+      "core_position_distribution": {
+        "bl_2023_repeated_aza_michael:map_1": 54463,
+        "bl_2023_repeated_aza_michael:map_2": 95633,
+        "bl_2023_repeated_aza_michael:map_3": 95633,
+        "bl_2023_repeated_aza_michael:map_4": 95633,
+        "bl_2023_repeated_aza_michael:map_5": 95633,
+        "bl_2023_repeated_aza_michael:map_6": 95633
+      },
+      "depth_distribution": {
+        "1": 1617,
+        "2": 40989,
+        "3": 1538,
+        "4": 1856
+      },
+      "errors": [],
+      "expected_records": 46000,
+      "fixed_atom_rows": 532628,
+      "fixed_policy_failures": 0,
+      "maximum_closures": 3,
+      "maximum_heavy_atoms": 194,
+      "maximum_origin_components": 5,
+      "minimum_heavy_atoms": 18,
+      "records_attempted": 46000,
+      "records_represented": 46000,
+      "representation_sha256": "0dd204bb3c5badbc6db06432f3bda43e9e1d55e65246612b90558db713a75855",
+      "role_component_distribution": {
+        "alkyl_acrylate_or_acrylamide_tail:1": 1617,
+        "alkyl_acrylate_or_acrylamide_tail:2": 40989,
+        "alkyl_acrylate_or_acrylamide_tail:3": 1538,
+        "alkyl_acrylate_or_acrylamide_tail:4": 1856,
+        "amine_head:1": 46000
+      }
+    },
+    "lx_2024_repeated_reductive_amination": {
+      "aromatic_atom_rows": 285234,
+      "aromatic_bond_rows": 285532,
+      "aromatic_products": 31428,
+      "atom_rows": 2512998,
+      "core_atom_rows": 150210,
+      "core_position_distribution": {
+        "lx_2024_repeated_reductive_amination:map_1": 54782,
+        "lx_2024_repeated_reductive_amination:map_2": 95428
+      },
+      "depth_distribution": {
+        "1": 2280,
+        "2": 40466,
+        "3": 1395,
+        "4": 1471,
+        "5": 181,
+        "6": 207
+      },
+      "errors": [],
+      "expected_records": 46000,
+      "fixed_atom_rows": 0,
+      "fixed_policy_failures": 0,
+      "maximum_closures": 3,
+      "maximum_heavy_atoms": 170,
+      "maximum_origin_components": 7,
+      "minimum_heavy_atoms": 7,
+      "records_attempted": 46000,
+      "records_represented": 46000,
+      "representation_sha256": "435e3fe24b5f7796e0f978faf96528b4e7c656bbfe190800291ad86f0a196774",
+      "role_component_distribution": {
+        "aldehyde_tail:1": 2280,
+        "aldehyde_tail:2": 40466,
+        "aldehyde_tail:3": 1395,
+        "aldehyde_tail:4": 1471,
+        "aldehyde_tail:5": 181,
+        "aldehyde_tail:6": 207,
+        "amine_head:1": 46000
+      }
+    },
+    "ugi_3cr_agile": {
+      "aromatic_atom_rows": 188552,
+      "aromatic_bond_rows": 188552,
+      "aromatic_products": 31468,
+      "atom_rows": 4415446,
+      "core_atom_rows": 561930,
+      "core_position_distribution": {
+        "ugi_3cr_agile:map_1": 112386,
+        "ugi_3cr_agile:map_2": 112386,
+        "ugi_3cr_agile:map_3": 112386,
+        "ugi_3cr_agile:map_4": 112386,
+        "ugi_3cr_agile:template_introduced_0": 112386
+      },
+      "depth_distribution": {
+        "1": 112386
+      },
+      "errors": [],
+      "expected_records": 112386,
+      "fixed_atom_rows": 561930,
+      "fixed_policy_failures": 0,
+      "maximum_closures": 3,
+      "maximum_heavy_atoms": 75,
+      "maximum_origin_components": 4,
+      "minimum_heavy_atoms": 16,
+      "records_attempted": 112386,
+      "records_represented": 112386,
+      "representation_sha256": "edc50d86db699eec02aa51741130c7fe976ddd7b7a0eccd2f9c78ae5de91cafa",
+      "role_component_distribution": {
+        "amine_head:1": 112386,
+        "assembly_introduced:1": 112386,
+        "isocyanide_tail:1": 112386,
+        "oxoester_aldehyde_body_tail:1": 112386
+      }
+    }
+  },
+  "schema_version": "forge.shared_synthesis_program_representation_result.v1",
+  "seed": 20260827,
+  "status": "pass",
+  "summary": {
+    "atom_rows": 9841801,
+    "biological_labels_used": false,
+    "component_identifiers_used": false,
+    "fragment_tokens_used": false,
+    "programs": 3,
+    "records_attempted": 204386,
+    "records_represented": 204386,
+    "representation_sha256": "35758c889982ff5c7596dca3297c940b8edf0c1748ea3994e667f82839ebcbf6"
+  },
+  "support": {
+    "declared_maximum_closures": 3,
+    "declared_maximum_heavy_atoms": 194,
+    "observed_maximum_closures": 3,
+    "observed_maximum_heavy_atoms": 194
+  },
+  "vocabulary": {
+    "atom_states": 14,
+    "core_position_states": [
+      "unconditioned",
+      "exterior",
+      "bl_2023_repeated_aza_michael:map_1",
+      "bl_2023_repeated_aza_michael:map_2",
+      "bl_2023_repeated_aza_michael:map_3",
+      "bl_2023_repeated_aza_michael:map_4",
+      "bl_2023_repeated_aza_michael:map_5",
+      "bl_2023_repeated_aza_michael:map_6",
+      "lx_2024_repeated_reductive_amination:map_1",
+      "lx_2024_repeated_reductive_amination:map_2",
+      "ugi_3cr_agile:map_1",
+      "ugi_3cr_agile:map_2",
+      "ugi_3cr_agile:map_3",
+      "ugi_3cr_agile:map_4",
+      "ugi_3cr_agile:template_introduced_0"
+    ],
+    "maximum_steps": 6,
+    "program_states": [
+      "unconditioned",
+      "bl_2023_repeated_aza_michael",
+      "lx_2024_repeated_reductive_amination",
+      "ugi_3cr_agile"
+    ],
+    "role_states": [
+      "unassigned",
+      "aldehyde_tail",
+      "alkyl_acrylate_or_acrylamide_tail",
+      "amine_head",
+      "assembly_introduced",
+      "isocyanide_tail",
+      "oxoester_aldehyde_body_tail"
+    ]
+  }
+}
