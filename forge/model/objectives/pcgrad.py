@@ -26,6 +26,10 @@ def balanced_pcgrad_backward(
     Families are balanced by stratified sampling plus an equal-weight gradient mean.  Deliberately
     do not normalize each gradient to a common norm: that operation amplifies numerical noise from
     an already converged family and can destabilize the remaining objectives.
+
+    Submitted configs use ``backend="sequential"``. The optional ``batched_vjp`` backend has
+    an unresolved Linux bitwise-equivalence failure; see
+    ``provenance/qualification/linux_pcgrad_equivalence.json``.
     """
 
     if len(losses) < 2 or scale <= 0.0:

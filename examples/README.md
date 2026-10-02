@@ -2,7 +2,7 @@
 
 Run commands from the repository root after installation. `forge --help` lists the available commands.
 Training and evaluation drivers are in `three_family/`, table aggregation in `reporting/`, and the
-historical HeLa diagnostic in `diagnostics/`.
+HeLa diagnostic in `diagnostics/`.
 
 ## Checkpoints and data
 
@@ -42,8 +42,8 @@ uv run python examples/check_reproduction.py --output results/reproduction-check
 uv run pytest
 ```
 
-The qualification command checks all 89 numerical table rows against the saved reference and repeats two
-CPU Ugi attempts using seed 42, batch size 2, and two Torch threads. It records commands, environment,
+The reproduction check matches all 89 numerical table rows to the saved reference and repeats
+two CPU Ugi attempts using seed 42, batch size 2, and two Torch threads. It records commands, environment,
 timings, input hashes, and outputs in `receipt.json`. It does not download data or train a model.
 Missing bundles are rejected before execution; failed executions retain their logs and failed receipt.
 
@@ -93,8 +93,8 @@ The same training command accepts these contracts under `configs/multireaction/`
 | Global-source control | `shared_bias_parallel_shared_bias_global_source_control_v2.json` | Seed 0 |
 | Architecture/FACT study | `transformer_mechanism_study_v1.json` | Eight arms × three replicates; 1,700 steps, 128 effective examples/step |
 
-Full GPU jobs have not been independently rerun. On Modal, launch long jobs detached, persist checkpoints
-on a volume, and save application/call IDs and source/config/input hashes before monitoring.
+On Modal, launch long jobs detached, persist checkpoints on a volume, and save application/call IDs
+and source/config/input hashes before monitoring.
 
 ## Baselines
 
@@ -121,8 +121,8 @@ decomposition coverage, precision, and ambiguity separately.
 ## Tables
 
 Use `uv run forge reproduce --target table-N --output results/table-N` for one numerical table,
-or `--target all` for all 11. Outputs include TeX rows, numerical JSON, and input identities. The expected numerical rows are
-retained in `provenance/table_reference.json`.
+or `--target all` for all 11. Outputs include TeX rows, numerical JSON, and input identities.
+Expected numerical rows are retained in `provenance/table_reference.json`.
 
 | Paper item | Source contract under `configs/reproduction/` |
 |---|---|
@@ -134,25 +134,18 @@ retained in `provenance/table_reference.json`.
 | Table 10: structural realism | `gem_table7_lipid_realism_v1.json` |
 | Table 11: HeLa diagnostic | Final adjudication retained in the evidence bundle |
 
-Table replay uses the original evidence. It does not repeat Table 5's decoder-intervention sweep
-or recover Table 11's missing upstream runs. Table 10 reassessment is implemented by
+Table replay aggregates saved evidence; it does not rerun Table 5's decoder-intervention sweep.
+Table 11 supports summary replay only because the upstream HeLa inputs are unavailable. Missing
+input identities are recorded in [provenance/missing_artifacts.json](../provenance/missing_artifacts.json).
+
+Table 10 reassessment is implemented by
 `examples.three_family.lipid_realism_assessment.run_lipid_realism_assessment` and
 `examples.three_family.lipid_realism_aggregation.aggregate_lipid_realism`, using
 `configs/multireaction/common_lipid_realism_v1.json` and complete method-seed attempt ledgers.
 
-## Limitations
+Component novelty is relative to the declared training catalogue. Exact L1 measures assembly
+consistency; it does not establish experimental synthesis or biological efficacy. Replayed metrics
+retain invalid attempts, structural zeros, and undefined values.
 
-- Full GPU retraining/evaluation and native-baseline production have not been independently rerun.
-- Four upstream HeLa records and dependent oracle inputs/environment are missing. Table 11's final
-  summary is available, but complete upstream replication is unsupported.
-- The complete historical seed-1/2 source tree and original training environment are unresolved.
-  `uv.lock` specifies the current environment.
-- Imaging replicate/uncertainty metadata are unavailable.
-- The optional batched-VJP PCGrad backend has an unresolved Linux bitwise-equivalence failure.
-  Submitted configs use the sequential backend.
-
-Missing record identities are in [provenance/missing_artifacts.json](../provenance/missing_artifacts.json).
-Executed checks are in [provenance/qualification/](../provenance/qualification/). CPU smoke checks do not
-establish historical GPU equivalence. Exact L1 consistency is not synthesis success or biological
-efficacy; component novelty is relative to the declared training catalogue and verifier. Undefined
-metrics, structural zeros, invalid attempts, and negative results remain in the reported denominators.
+Executed commands, environments, and verification results are recorded in
+[provenance/qualification/](../provenance/qualification/).

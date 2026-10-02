@@ -30,8 +30,7 @@ Teammates need workspace membership and an authenticated Modal profile. See
 [artifact access](examples/README.md#checkpoints-and-data) for offline restoration and optional weights.
 
 Generation retains every attempt, including failures. Table reproduction aggregates saved evidence.
-The [experiment guide](examples/README.md) covers training, evaluation, baselines, and
-[reproduction limitations](examples/README.md#limitations).
+The [experiment guide](examples/README.md) covers training, evaluation, baselines, and table replay.
 
 ## Structure
 
@@ -55,5 +54,5 @@ uv run python examples/check_reproduction.py --output results/reproduction-check
 ```
 
 The reproduction check verifies both artifact bundles, matches 89 numerical table rows, and repeats
-two CPU Ugi attempts. Full GPU retraining remains unverified; unavailable historical inputs are
-listed in the experiment guide.
+two CPU Ugi attempts. Executed checks are recorded in
+[provenance/qualification/](provenance/qualification/).

@@ -1651,7 +1651,7 @@
       "module": "forge.model.objectives.pcgrad",
       "original_module": "forge.model.reaction_program_transformer",
       "source_sha256": "ff81e0a3a10b6520289dfbb8bbe9b13e68537449ec5ec0599d5105344f8bb898",
-      "release_sha256": "4bad149153ea1eda3898fa23a89763658f638b7e99b10f4a7007818e4cbbf036",
+      "release_sha256": "5d217a5d4fa9cdf2888e61b289ab8a8eeb92be482260d2107fd9306f9a30e9d7",
       "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
       "required_by": "experiments.phase1.multireaction.production_training",
       "path": "forge/model/objectives/pcgrad.py",
