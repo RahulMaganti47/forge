@@ -1,4 +1,4 @@
-# Third-party attribution and artifact terms
+# Data sources and external methods
 
 Upstream projects, datasets, publications, and tokenizer assets retain their own terms.
 
@@ -30,7 +30,7 @@ completed experimental runs. See the manifest for the exact exclusion reasons an
 | AGILE assay table and Ugi source data | Model manifest and preserved training/evidence receipts | Upstream dataset terms are not recorded as an independent license in these bundles. |
 | LNPDB records and derived splits | Model/evidence manifests and input hashes in result receipts | Upstream dataset terms need separate verification before public redistribution. |
 | Qualified chemistry registries and derived caches | Model manifest, registry source citations, preparation receipts | FORGE-derived records retain source provenance; source provenance does not replace source terms. |
-| Primary papers and supplementary documents | Evidence manifest paths, original filenames, and SHA-256 digests | Publisher licenses and any third-party notices govern these documents; no blanket MIT license is asserted. |
+| Primary papers and supplementary documents | Evidence manifest paths, original filenames, and SHA-256 digests | Publisher licenses and source notices govern these documents; no blanket MIT license is asserted. |
 
 The exact payload inventory is in the three committed manifests. Chemistry source citations remain
 in the authenticated registries; do not replace those records with

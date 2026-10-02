@@ -9,7 +9,7 @@ build/
 results/
 runs/
 /data/*
-!/data/THIRD_PARTY.md
+!/data/SOURCES.md
 downloads/
 .DS_Store
 *.aux
