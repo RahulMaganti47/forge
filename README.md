@@ -17,34 +17,28 @@ Use Python 3.11 and [uv](https://docs.astral.sh/uv/):
 git lfs install
 git lfs pull
 uv sync --frozen --extra dev
+source .venv/bin/activate
 ```
 
 ## Usage
 
-The processed datasets, splits and saved results are included under [data/](data/README.md).
-To reproduce the tables:
-
 ```bash
-uv run forge artifacts install --group paper-model-v1
-uv run forge artifacts install --group submission19337-evidence-v1
-uv run forge reproduce --target all --output results/tables
+forge artifacts install --group paper-model-v1
+forge artifacts install --group submission19337-evidence-v1
+forge reproduce --target all --output results/tables
 ```
 
-To generate molecules, install the [GitHub CLI](https://cli.github.com/), run `gh auth login`,
-and fetch the paper checkpoints and caches:
+Checkpoint downloads use the [GitHub CLI](https://cli.github.com/) (`gh auth login`).
 
 ```bash
-uv run forge artifacts fetch --group paper-model-v1
-uv run forge artifacts fetch --group submission19337-evidence-v1
-uv run forge generate --replicate 0 --family ugi --count 2 --seed 42 \
+forge artifacts fetch --group paper-model-v1
+forge artifacts fetch --group submission19337-evidence-v1
+forge generate --replicate 0 --family ugi --count 2 --seed 42 \
   --device cpu --output results/demo
 ```
 
 Checkpoints and caches have [direct downloads](data/README.md#download-checkpoints-and-caches).
 Readers need access to this private repository.
-
-Generation retains every attempt, including failures. Table reproduction aggregates saved evidence.
-The [experiment guide](examples/README.md) covers training, evaluation, baselines, and table replay.
 
 ## Structure
 
@@ -67,8 +61,8 @@ They use CPU fixtures and make no network calls. Frozen-table replay runs when i
 available.
 
 ```bash
-uv run pytest
-uv run python examples/reproduce.py --output results/reproduction-check
+pytest
+python examples/reproduce.py --output results/reproduction-check
 ```
 
 The reproduction check verifies both artifact bundles, matches 89 numerical table rows, and repeats
