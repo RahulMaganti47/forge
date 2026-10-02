@@ -13,7 +13,7 @@ from typing import Any
 
 from forge.commands.artifacts import verify
 from forge.commands.generate import source_identity
-from forge.commands.reproduce import verify_manuscript_rows
+from forge.commands.reproduce import verify_table_rows
 from forge.core.hashing import sha256_file
 from forge.core.io import write_json
 
@@ -39,11 +39,11 @@ def qualify(root: Path, output: Path) -> dict[str, Any]:
         for path in sorted((root / "configs").rglob("*.json"))
     }
     receipt: dict[str, Any] = {
-        "schema_version": "forge.release.reader_qualification.v1",
+        "schema_version": "forge.release.reader_qualification.v2",
         "scope": "frozen-table replay and two CPU Ugi attempts repeated; no retraining",
         "source": source,
         "script_sha256": str(sha256_file(root / "examples/check_reproduction.py")),
-        "reference_pdf_sha256": str(sha256_file(root / "paper/submission.pdf")),
+        "table_reference_sha256": str(sha256_file(root / "provenance/table_reference.json")),
         "config_sha256s": configs,
         "uv_lock_sha256": str(sha256_file(root / "uv.lock")),
         "artifacts": artifacts,
@@ -79,7 +79,7 @@ def qualify(root: Path, output: Path) -> dict[str, Any]:
 
     try:
         run(["reproduce", "--target", "all", "--output", str(output / "tables")], "tables")
-        receipt["table_rows_matching_manuscript"] = verify_manuscript_rows(root, output / "tables")
+        receipt["table_rows_matching_reference"] = verify_table_rows(root, output / "tables")
         for name in ("generation", "generation-repeat"):
             run(
                 [

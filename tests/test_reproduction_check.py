@@ -7,7 +7,7 @@ from types import SimpleNamespace
 import pytest
 
 from forge.commands import qualification
-from forge.commands.reproduce import verify_manuscript_rows
+from forge.commands.reproduce import verify_table_rows
 from forge.core.hashing import sha256_file
 from forge.core.io import write_json
 
@@ -16,12 +16,11 @@ from forge.core.io import write_json
 def reader_root(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Path:
     monkeypatch.setattr(qualification.platform, "platform", lambda: "fixture-platform")
     root = tmp_path / "release"
-    for directory in ("forge", "configs", "manifests", "paper/source", "examples"):
+    for directory in ("forge", "configs", "manifests", "provenance", "examples"):
         (root / directory).mkdir(parents=True)
     for file in (
         "forge/model.py",
         "configs/run.json",
-        "paper/submission.pdf",
         "examples/check_reproduction.py",
         "uv.lock",
     ):
@@ -42,6 +41,17 @@ def reader_root(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Path:
                 ]
             },
         )
+    write_json(
+        root / "provenance/table_reference.json",
+        {
+            "schema_version": "forge.table_reference.v1",
+            "reference_pdf_sha256": "fixture",
+            "rows": {
+                str(number): [f"FORGE {index} & 963.9" for index in range(79 if number == 1 else 1)]
+                for number in range(1, 12)
+            },
+        },
+    )
     return root
 
 
@@ -90,7 +100,7 @@ def test_repeated_attempts_keep_failures_and_detect_changes(
         return SimpleNamespace(returncode=0)
 
     monkeypatch.setattr(qualification.subprocess, "run", run)
-    monkeypatch.setattr(qualification, "verify_manuscript_rows", lambda *args: 89)
+    monkeypatch.setattr(qualification, "verify_table_rows", lambda *args: 89)
     output = tmp_path / "result"
     if different_repeat:
         with pytest.raises(ValueError, match="deterministic"):
@@ -107,20 +117,48 @@ def test_repeated_attempts_keep_failures_and_detect_changes(
             qualification.qualify(reader_root, output)
 
 
-def test_manuscript_check_rejects_changed_numbers(reader_root, tmp_path):
-    (reader_root / "paper/source/main.tex").write_text("FORGE & 963.9 \\\\")
+def _reference_tables(reader_root: Path, output: Path) -> None:
+    output.mkdir()
+    rows = json.loads((reader_root / "provenance/table_reference.json").read_text())["rows"]
+    for number, table in rows.items():
+        (output / f"table-{number}.tex").write_text("\n".join(table) + "\n")
+
+
+def test_table_check_rejects_changed_numbers(reader_root, tmp_path):
     tables = tmp_path / "tables"
-    tables.mkdir()
-    (tables / "table-1.tex").write_text("FORGE & 964.0 \\\\")
+    _reference_tables(reader_root, tables)
+    path = tables / "table-1.tex"
+    path.write_text(path.read_text().replace("963.9", "964.0", 1))
     with pytest.raises(ValueError, match="differs"):
-        verify_manuscript_rows(reader_root, tables)
+        verify_table_rows(reader_root, tables)
 
 
-def test_manuscript_check_rejects_incomplete_row_set(reader_root, tmp_path):
-    (reader_root / "paper/source/main.tex").write_text("FORGE & 963.9 \\\\")
+def test_table_check_rejects_incomplete_row_set(reader_root, tmp_path):
     tables = tmp_path / "tables"
-    tables.mkdir()
+    _reference_tables(reader_root, tables)
     for number in range(1, 12):
-        (tables / f"table-{number}.tex").write_text("FORGE & 963.9 \\\\")
+        (tables / f"table-{number}.tex").write_text("FORGE 0 & 963.9\n")
     with pytest.raises(ValueError, match="expected 89 numerical rows, found 11"):
-        verify_manuscript_rows(reader_root, tables)
+        verify_table_rows(reader_root, tables)
+
+
+def test_table_check_rejects_duplicated_rows(reader_root, tmp_path):
+    tables = tmp_path / "tables"
+    _reference_tables(reader_root, tables)
+    path = tables / "table-1.tex"
+    rows = path.read_text().splitlines()
+    rows[1] = rows[0]
+    path.write_text("\n".join(rows) + "\n")
+    with pytest.raises(ValueError, match="differs"):
+        verify_table_rows(reader_root, tables)
+
+
+def test_table_check_rejects_changed_reference_row_count(reader_root, tmp_path):
+    tables = tmp_path / "tables"
+    _reference_tables(reader_root, tables)
+    path = reader_root / "provenance/table_reference.json"
+    reference = json.loads(path.read_text())
+    reference["rows"]["1"].pop()
+    write_json(path, reference)
+    with pytest.raises(ValueError, match="exactly 89"):
+        verify_table_rows(reader_root, tables)

@@ -8,7 +8,8 @@ dist/
 build/
 results/
 runs/
-data/
+/data/*
+!/data/SOURCES.md
 downloads/
 .DS_Store
 *.aux

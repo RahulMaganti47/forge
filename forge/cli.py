@@ -32,8 +32,6 @@ def main(argv: list[str] | None = None) -> int:
     replay.add_argument(
         "--target", default="all", choices=["all", *(f"table-{i}" for i in range(1, 12))]
     )
-    paper = commands.add_parser("paper", help="build and verify the matching 35-page manuscript")
-    paper.add_argument("--rebuild-figures", action="store_true")
     prepare = commands.add_parser("prepare", help="rebuild the full numeric training cache")
     prepare.add_argument(
         "--config",
@@ -79,9 +77,9 @@ def main(argv: list[str] | None = None) -> int:
     baseline.add_argument("--request", type=Path)
     baseline.add_argument("--checkout", type=Path)
     baseline.add_argument("--tokenizer-snapshot", type=Path)
-    for command in (artifacts, replay, prepare, train, evaluate, assess, baseline, paper):
+    for command in (artifacts, replay, prepare, train, evaluate, assess, baseline):
         command.add_argument("--root", type=Path, default=Path.cwd(), help="release checkout root")
-    for command in (replay, prepare, train, evaluate, assess, baseline, paper):
+    for command in (replay, prepare, train, evaluate, assess, baseline):
         command.add_argument("--output", type=Path, required=True)
     commands.add_parser("generate", help="bounded generation from a real paper checkpoint")
     args = parser.parse_args(argv)
@@ -112,10 +110,6 @@ def main(argv: list[str] | None = None) -> int:
             from .commands.reproduce import reproduce
 
             reproduce(root, output, args.target)
-        elif args.command == "paper":
-            from .commands.manuscript import build
-
-            build(root, output, figures=args.rebuild_figures)
         elif args.command == "prepare":
             from forge.corpus.synthesis_program_production_cache import (
                 build_synthesis_program_production_cache,

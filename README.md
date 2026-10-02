@@ -1,11 +1,9 @@
 # FORGE
 
-[Paper](paper/submission.pdf) · [Experiments](examples/README.md)
+[Experiments](examples/README.md)
 
 Reaction-guided generative design of ionizable lipids, using AGILE-type Ugi 3CR,
 repeated aza-Michael addition, and repeated reductive amination.
-
-![FORGE generation and assembly verification](paper/overview.png)
 
 ## Installation
 
@@ -32,7 +30,7 @@ Teammates need workspace membership and an authenticated Modal profile. See
 [artifact access](examples/README.md#checkpoints-and-data) for offline restoration and optional weights.
 
 Generation retains every attempt, including failures. Table reproduction aggregates saved evidence.
-The [experiment guide](examples/README.md) covers training, evaluation, baselines, figures, and
+The [experiment guide](examples/README.md) covers training, evaluation, baselines, and
 [reproduction limitations](examples/README.md#limitations).
 
 ## Structure
@@ -42,7 +40,6 @@ forge/          # Library: models, flow, chemistry, data, and evaluation
 examples/       # Paper experiments, table aggregation, and reproduction checks
 tests/          # Local correctness checks
 configs/        # Frozen experiment settings
-paper/          # Manuscript, bibliography, and figures
 manifests/      # Checkpoint and data identities
 provenance/     # Source and result records
 ```
@@ -60,5 +57,3 @@ uv run python examples/check_reproduction.py --output results/reproduction-check
 The reproduction check verifies both artifact bundles, matches 89 numerical table rows, and repeats
 two CPU Ugi attempts. Full GPU retraining remains unverified; unavailable historical inputs are
 listed in the experiment guide.
-
-Implementation code is [MIT licensed](LICENSE). Third-party terms are in [THIRD_PARTY.md](THIRD_PARTY.md).

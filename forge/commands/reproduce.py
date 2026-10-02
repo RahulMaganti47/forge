@@ -37,27 +37,46 @@ COMMON_METRICS = (
 )
 
 
-def verify_manuscript_rows(root: Path, output: Path) -> int:
-    """Require all 89 numerical rows to match the reference manuscript."""
-    manuscript = (root / "paper/source/main.tex").read_text()
-    macros = dict(re.findall(r"\\newcommand\{\\(\w+)\}\{([^\n]*)\}", manuscript))
-    for name, value in macros.items():
-        manuscript = manuscript.replace("\\" + name + "{}", value)
+def table_reference(root: Path) -> dict[str, Any]:
+    """Load the numerical rows verified against submission 19337."""
+    reference = json.loads((root / "provenance/table_reference.json").read_text())
+    rows = reference["rows"]
+    if reference["schema_version"] != "forge.table_reference.v1" or set(rows) != {
+        str(number) for number in range(1, 12)
+    }:
+        raise ValueError("invalid numerical table reference")
+    if (
+        any(
+            not isinstance(table, list)
+            or any(not isinstance(row, str) or "&" not in row for row in table)
+            for table in rows.values()
+        )
+        or sum(map(len, rows.values())) != 89
+    ):
+        raise ValueError("table reference must contain exactly 89 numerical rows")
+    return reference
+
+
+def verify_table_rows(root: Path, output: Path) -> int:
+    """Require all 89 numerical rows to match their saved table references."""
+    expected = table_reference(root)["rows"]
+    actual = {
+        str(number): [
+            row for row in (output / f"table-{number}.tex").read_text().splitlines() if "&" in row
+        ]
+        for number in range(1, 12)
+    }
+    checked = sum(map(len, actual.values()))
+    if checked != 89:
+        raise ValueError(f"expected 89 numerical rows, found {checked}")
 
     def normalize(value: str) -> str:
         value = re.sub(r"\\cellcolor\{forgerow\}", "", value)
         return re.sub(r"[\s{},]", "", value)
 
-    manuscript = normalize(manuscript)
-    checked = 0
-    for number in range(1, 12):
-        for row in (output / f"table-{number}.tex").read_text().splitlines():
-            if "&" in row:
-                if normalize(row) not in manuscript:
-                    raise ValueError(f"table {number} row differs from the manuscript: {row}")
-                checked += 1
-    if checked != 89:
-        raise ValueError(f"expected 89 numerical rows, found {checked}")
+    for number, rows in actual.items():
+        if list(map(normalize, rows)) != list(map(normalize, expected[number])):
+            raise ValueError(f"table {number} differs from its numerical reference")
     return checked
 
 
@@ -253,10 +272,11 @@ def reproduce(root: Path, output: Path, target: str = "all") -> dict[str, Any]:
                 evidence[str(number)] = inputs
                 write_json(output / f"table-{number}.json", inputs)
         receipt = {
-            "schema_version": "forge.release.table_replay.v1",
+            "schema_version": "forge.release.table_replay.v2",
             "status": "pass",
             "scope": "reaggregation of frozen evidence, not model retraining",
-            "reference_pdf_sha256": str(sha256_file(root / "paper/submission.pdf")),
+            "reference_pdf_sha256": table_reference(root)["reference_pdf_sha256"],
+            "table_reference_sha256": str(sha256_file(root / "provenance/table_reference.json")),
             "outputs": {p.name: str(sha256_file(p)) for p in sorted(output.iterdir())},
         }
         write_json(output / "receipt.json", receipt)
