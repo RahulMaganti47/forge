@@ -228,12 +228,12 @@ def reproduce(root: Path, output: Path, target: str = "all") -> dict[str, Any]:
     if output.exists():
         raise ValueError(f"output already exists: {output}")
     output.mkdir(parents=True)
-    from examples.reporting.gem_table1 import render_gem_table1_final_evidence
-    from examples.reporting.gem_table4 import render_gem_table4_production_comparison
-    from examples.reporting.gem_table5 import render_gem_table5_decoder_source_ablation
-    from examples.reporting.gem_table6 import render_gem_table6_exact_l1_counts
-    from examples.reporting.gem_table8 import render_gem_table8_architecture_ablations
-    from examples.reporting.gem_table9 import render_gem_table9_catalogue_comparison
+    from forge.reporting.architecture_ablation import render_gem_table8_architecture_ablations
+    from forge.reporting.assembly_counts import render_gem_table6_exact_l1_counts
+    from forge.reporting.catalogue import render_gem_table9_catalogue_comparison
+    from forge.reporting.controls import render_gem_table4_production_comparison
+    from forge.reporting.decoder_ablation import render_gem_table5_decoder_source_ablation
+    from forge.reporting.production import render_gem_table1_final_evidence
 
     renderers = {
         1: (render_gem_table1_final_evidence, "gem_table1_core_saturation_complete_v1"),

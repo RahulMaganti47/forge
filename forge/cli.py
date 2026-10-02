@@ -120,7 +120,7 @@ def main(argv: list[str] | None = None) -> int:
                 root / args.config, root, output / "cache.npz", output / "result.json"
             )
         elif args.command == "train":
-            from examples.three_family.mechanism_study import run_transformer_mechanism_study
+            from forge.experiments.study import run_transformer_mechanism_study
 
             run_transformer_mechanism_study(
                 root / args.config,
@@ -152,7 +152,7 @@ def main(argv: list[str] | None = None) -> int:
             assess(root, args.attempts, output)
         elif args.command == "baseline":
             if args.method == "selector":
-                from examples.three_family.benchmark_studies import (
+                from forge.experiments.benchmarks import (
                     run_learned_inventory_selector_study,
                 )
 
@@ -165,7 +165,7 @@ def main(argv: list[str] | None = None) -> int:
                     allocated_device=args.device,
                 )
             elif args.method == "catalogue":
-                from examples.three_family.catalogue_baseline import (
+                from forge.experiments.catalogue import (
                     run_finite_component_catalogue_baseline,
                 )
 
@@ -179,7 +179,7 @@ def main(argv: list[str] | None = None) -> int:
             else:
                 if args.request is None or args.checkout is None:
                     raise ValueError("native execution requires --request and --checkout")
-                from examples.three_family.native_baseline_runtime import run_native_baseline
+                from forge.baselines.runtime import run_native_baseline
 
                 run_native_baseline(
                     args.request,

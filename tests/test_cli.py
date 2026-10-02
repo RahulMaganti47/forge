@@ -5,11 +5,12 @@ from pathlib import Path
 
 import pytest
 
-from examples.three_family import native_baseline_ports, production_evaluation
+from forge.baselines import requests as native_baseline_ports
 from forge.cli import main
 from forge.commands.evaluation import evaluate
 from forge.core.hashing import artifact_record, sha256_file
 from forge.core.io import write_csv, write_json
+from forge.experiments import evaluation as production_evaluation
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -261,7 +262,7 @@ def test_native_request_command_uses_public_cli_from_other_directory(
     )
     command = json.loads((output / "run_command.json").read_text())["argv"]
     monkeypatch.chdir(tmp_path)
-    from examples.three_family import native_baseline_runtime
+    from forge.baselines import runtime as native_baseline_runtime
 
     captured = {}
 

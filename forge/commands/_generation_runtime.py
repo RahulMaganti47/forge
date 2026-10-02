@@ -11,17 +11,17 @@ from typing import Any
 import torch
 from rdkit import rdBase
 
-from examples.three_family.production_evaluation import (
-    _load_checkpoint,
-    _select_evaluation_snapshots,
-    _validate_archive_members,
-)
-from examples.three_family.production_randomness import production_seed
 from forge.assembly import RegistryRepeatedReactionProgram, Ugi3AssemblyAdapter
 from forge.commands.generate import ARM, DECODER, FLOW_STEPS, STEP
 from forge.corpus.reaction_program_training import load_reaction_program_specifications
 from forge.corpus.synthesis_program_production_cache import SynthesisProgramProductionCache
 from forge.evaluation.reaction_program import adjudicate_reaction_program_rows
+from forge.experiments.evaluation import (
+    _load_checkpoint,
+    _select_evaluation_snapshots,
+    _validate_archive_members,
+)
+from forge.experiments.randomness import production_seed
 from forge.model.representation.layouts import SynthesisProgramLayoutPrior
 from forge.model.sampling.core_saturation import ReactionCoreSaturationPolicy
 from forge.model.sampling.synthesis import sample_synthesis_program_products

@@ -27,7 +27,7 @@ uv run forge reproduce --target all --output results/tables
 
 Artifacts are stored in the `forge-paper-artifacts` Modal volume in `kosha-labs/main`.
 Teammates need workspace membership and an authenticated Modal profile. See
-[artifact access](examples/README.md#checkpoints-and-data) for offline restoration and optional weights.
+[artifact access](examples/README.md#data-and-checkpoints) for offline restoration and optional weights.
 
 Generation retains every attempt, including failures. Table reproduction aggregates saved evidence.
 The [experiment guide](examples/README.md) covers training, evaluation, baselines, and table replay.
@@ -36,7 +36,7 @@ The [experiment guide](examples/README.md) covers training, evaluation, baseline
 
 ```text
 forge/          # Library: models, flow, chemistry, data, and evaluation
-examples/       # Paper experiments, table aggregation, and reproduction checks
+examples/       # Runnable paper experiment recipes
 tests/          # Local correctness checks
 configs/        # Frozen experiment settings
 manifests/      # Checkpoint and data identities
@@ -50,7 +50,7 @@ The primary model is [model/networks/transformer.py](forge/model/networks/transf
 
 ```bash
 uv run pytest
-uv run python examples/check_reproduction.py --output results/reproduction-check
+uv run python examples/reproduce.py --output results/reproduction-check
 ```
 
 The reproduction check verifies both artifact bundles, matches 89 numerical table rows, and repeats

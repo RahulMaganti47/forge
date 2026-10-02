@@ -72,7 +72,7 @@ def evaluate(
         )
         study_design = None
 
-    from examples.three_family.production_evaluation import (
+    from forge.experiments.evaluation import (
         run_synthesis_program_production_evaluation,
     )
 

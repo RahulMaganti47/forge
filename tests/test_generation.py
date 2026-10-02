@@ -185,14 +185,26 @@ def test_real_repository_inputs_have_no_mismatches(replicate: int) -> None:
 def test_source_identity_tracks_library_and_experiment_changes(tmp_path: Path) -> None:
     library = tmp_path / "forge/model.py"
     experiment = tmp_path / "examples/run.py"
+    recipe = tmp_path / "examples/run.sh"
     library.parent.mkdir()
     experiment.parent.mkdir()
     library.write_text("model = 1\n")
     experiment.write_text("seed = 42\n")
+    recipe.write_text("seed=42\n")
     original = command.source_identity(tmp_path)
     assert original["files"]["forge/model.py"] == sha256_file(library)
     assert original["files"]["examples/run.py"] == sha256_file(experiment)
+    assert original["files"]["examples/run.sh"] == sha256_file(recipe)
     experiment.write_text("seed = 43\n")
     changed = command.source_identity(tmp_path)
     assert changed["sha256"] != original["sha256"]
     assert changed["files"]["forge/model.py"] == original["files"]["forge/model.py"]
+
+
+def test_source_identity_detects_recipe_changes(tmp_path: Path) -> None:
+    recipe = tmp_path / "examples/train.sh"
+    recipe.parent.mkdir()
+    recipe.write_text("seed=42\n")
+    original = command.source_identity(tmp_path)
+    recipe.write_text("seed=43\n")
+    assert command.source_identity(tmp_path)["sha256"] != original["sha256"]

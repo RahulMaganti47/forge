@@ -21,7 +21,7 @@ def reader_root(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Path:
     for file in (
         "forge/model.py",
         "configs/run.json",
-        "examples/check_reproduction.py",
+        "examples/reproduce.py",
         "uv.lock",
     ):
         (root / file).write_text("fixture")

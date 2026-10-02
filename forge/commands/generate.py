@@ -115,8 +115,13 @@ def check_inputs(
 def source_identity(root: Path) -> dict[str, Any]:
     files = {
         path.relative_to(root).as_posix(): str(sha256_file(path))
-        for directory in ("forge", "examples")
-        for path in sorted((root / directory).rglob("*.py"))
+        for directory, pattern in (
+            ("forge", "*.py"),
+            ("examples", "*.py"),
+            ("examples", "*.sh"),
+            ("tests/manual", "*.py"),
+        )
+        for path in sorted((root / directory).rglob(pattern))
     }
     return {"files": files, "sha256": str(sha256_json(files))}
 

@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from examples.three_family.mechanism_study import _study_arms
+from forge.experiments.study import _study_arms
 
 ROOT = Path(__file__).resolve().parents[1]
 PROGRAMS = (

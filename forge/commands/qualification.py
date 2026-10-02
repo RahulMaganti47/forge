@@ -42,7 +42,7 @@ def qualify(root: Path, output: Path) -> dict[str, Any]:
         "schema_version": "forge.release.reader_qualification.v2",
         "scope": "frozen-table replay and two CPU Ugi attempts repeated; no retraining",
         "source": source,
-        "script_sha256": str(sha256_file(root / "examples/check_reproduction.py")),
+        "script_sha256": str(sha256_file(root / "examples/reproduce.py")),
         "table_reference_sha256": str(sha256_file(root / "provenance/table_reference.json")),
         "config_sha256s": configs,
         "uv_lock_sha256": str(sha256_file(root / "uv.lock")),
