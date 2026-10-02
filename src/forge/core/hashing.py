@@ -1,17 +1,7 @@
-"""Content hashing, and the pinned-input check built on it.
+"""SHA-256 hashing and validation of pinned inputs.
 
-Provenance is the load-bearing concern in this repository -- a result is only usable if you can
-say which bytes produced it -- and it is also the most duplicated: roughly 238 local hash helpers
-and 50 separate `_pin` implementations. The copies are not equivalent. Some re-hash the file and
-reject symlinks; others only check that the path sits inside the repository. Which guarantee you
-got depended on which module you were in.
-
-`verify_pin` adopts the strictest behavior found among them, deliberately. Loosening a provenance
-check to make a call site pass would be a silent downgrade of the evidence chain.
-
-The signatures match the existing `sha256_file(path, chunk_size=1 << 20)` and `sha256_bytes(payload)`
-in `forge.corpus.r0_splits` and `forge.corpus.r1_prime_audit`, so migrating a module is an import
-change and nothing else.
+Input pins require a matching digest and a regular file within the declared repository.
+Hashing reads files in bounded chunks; source-tree hashes include relative paths.
 """
 
 from __future__ import annotations
@@ -34,10 +24,9 @@ class PinError(ValueError):
 
 
 def is_sha256(value: object) -> bool:
-    """True when `value` is a lowercase 64-character hex digest.
+    """Return whether a value is a lowercase, 64-character hexadecimal digest.
 
-    Uppercase is rejected on purpose: digests are compared by string equality throughout the
-    codebase, so accepting both cases would let two spellings of the same digest miss each other.
+    Lowercase matches the string comparisons used for recorded digests.
     """
     return isinstance(value, str) and bool(_SHA256_RE.match(value))
 
@@ -48,11 +37,7 @@ def sha256_bytes(payload: bytes) -> Sha256:
 
 
 def sha256_file(path: Path, chunk_size: int = DEFAULT_CHUNK_SIZE) -> Sha256:
-    """Return a file's SHA-256 digest, read in bounded chunks.
-
-    Chunked so that hashing the 96 MB R1 corpus or a 768 MB tensor cache does not depend on
-    holding the whole file in memory.
-    """
+    """Return a file's SHA-256 digest, reading in bounded chunks."""
     digest = hashlib.sha256()
     with path.open("rb") as handle:
         while block := handle.read(chunk_size):
@@ -61,12 +46,9 @@ def sha256_file(path: Path, chunk_size: int = DEFAULT_CHUNK_SIZE) -> Sha256:
 
 
 def sha256_json(value: Any) -> Sha256:
-    """Digest a JSON-able value by way of its canonical serialization.
+    """Hash deterministic JSON with sorted keys and compact formatting.
 
-    Used to fingerprint a config or a result body rather than a file, so two structurally equal
-    documents hash the same regardless of key order or incidental whitespace. Defined here rather
-    than left to call sites because the digest is only stable if the serialization is, and pairing
-    it with a different serializer silently produces a different -- but equally plausible -- hash.
+    Structurally equal values produce the same digest regardless of input key order.
     """
     from forge.core.io import stable_json
 
@@ -103,14 +85,10 @@ def sha256_tree(root: Path, *, pattern: str = "*.py") -> Sha256:
 
 
 def resolve_pin(record: Mapping[str, Any], repo: Path, *, label: str) -> Path:
-    """Validate one `{"path", "sha256"}` record and return the file it names.
+    """Validate a ``{"path", "sha256"}`` input pin and return its resolved path.
 
-    Fails closed on every count: the record must have exactly those two keys, the digest must be
-    well formed, the path must resolve inside `repo`, it must be a real file rather than a symlink
-    pointing elsewhere, and its contents must hash to the recorded digest.
-
-    The symlink and containment checks matter together. Without both, a pinned input could be made
-    to satisfy its own hash while actually reading bytes from outside the repository.
+    Require exactly those keys, a valid digest, and matching file contents. Reject
+    symlink inputs and paths resolving outside the repository.
     """
     if not isinstance(record, Mapping) or set(record) != {"path", "sha256"}:
         raise PinError(f"malformed input pin for {label}: expected exactly path and sha256")
@@ -147,11 +125,9 @@ def resolve_pin(record: Mapping[str, Any], repo: Path, *, label: str) -> Path:
 
 
 def pin_record(path: Path, repo: Path) -> dict[str, Any]:
-    """Build the `{"path", "sha256", "bytes"}` record an artifact writes for one of its inputs.
+    """Record an input path, digest, and byte count.
 
-    The path is recorded repository-relative so an artifact stays portable between checkouts --
-    an absolute path baked into a result is what makes it unverifiable on another machine, which
-    is exactly how this project lost track of its inputs once already.
+    Repository-relative paths allow the artifact to be verified in another checkout.
     """
     resolved = path.resolve()
     return {

@@ -1,9 +1,8 @@
 """Method-neutral attempt accounting and exact Ugi-L1 assessment.
 
-The common ledger deliberately records *attempts*, not just successful molecules.  A baseline cannot
-improve its denominator by omitting parser failures, invalid graphs, or native sampler failures.
-Chemistry is assessed only after the ledger is frozen and uses the same registry-backed Ugi adapter
-for every method.
+The ledger retains parser failures, invalid graphs, and native sampler failures
+in the attempt denominator. After the ledger is frozen, every method uses the
+same registry-backed Ugi adapter.
 """
 
 from __future__ import annotations

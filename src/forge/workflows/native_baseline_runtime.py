@@ -1,9 +1,8 @@
-"""Execute one frozen external Ugi request inside the method's native environment.
+"""Execute a frozen external Ugi request in the method's native environment.
 
-This module deliberately imports third-party packages only inside the relevant adapter.  Invoke it
-through ``forge experiment run-external-ugi`` from an environment containing the exact pinned
-upstream project.  The clean checkout is copied before any compatibility edits, so the upstream
-commit remains inspectable and immutable.
+Use ``forge baseline native`` with the pinned upstream checkout. Third-party
+packages load only inside their adapter. Compatibility edits apply to a copy,
+leaving the original checkout available for commit verification.
 """
 
 from __future__ import annotations

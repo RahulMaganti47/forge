@@ -1,12 +1,12 @@
 """Method-blind structural realism metrics for generated ionizable lipids.
 
-The exact-L1 benchmark asks whether a generated molecule follows the requested synthesis program.
-This module asks a separate question: does the complete molecular graph occupy the empirical
-structural manifold of held-out observed lipids?  It consumes the same attempt ledger for every
-method and retains invalid, failed, duplicate and out-of-support attempts in the denominator.
+Metrics compare complete graphs with held-out observed lipid structures. Every
+method uses the same ledger, retaining invalid, failed, duplicate, and out-of-support
+attempts in the denominator.
 
-No metric here measures ionization, formulation, delivery or biological activity.  QED is omitted
-because its medicinal-chemistry prior is not an ionizable-lipid realism measure.
+These metrics do not measure ionization, formulation, delivery, or biological
+activity. QED is omitted because its medicinal-chemistry prior does not measure
+ionizable-lipid realism.
 """
 
 from __future__ import annotations

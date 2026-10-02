@@ -440,12 +440,7 @@ def _atom_capacity_table(atom_vocabulary: Sequence[AtomState]) -> np.ndarray:
 
 
 def _bond_unit_table(bond_classes: int) -> np.ndarray:
-    """Return bond valence units on the host without a per-record device transfer.
-
-    ``BOND_VALENCE_UNITS`` is a small constant torch tensor.  Reading it per decoded record forced
-    a device-to-host copy for every sample in the batch, which on an accelerator is a full
-    synchronization each time.  It is the same four numbers on every call.
-    """
+    """Cache host-side bond valence units to avoid a device transfer per decoded record."""
 
     table = _BOND_UNIT_CACHE.get(bond_classes)
     if table is None:
@@ -593,11 +588,9 @@ def _strict_terminal_record(
         _exact_role_morphology_targets(record) if enforce_program_topology else None
     )
 
-    # The qualified transform pins the hydrogen count, and therefore the exact heavy-atom
-    # valence, of some reaction-core positions.  Reduce their capacity to that requirement so the
-    # admissible sets below simply cannot place another neighbour there, and record the target so
-    # under-saturation is caught too.  Precursor components meet only at the core, so a generated
-    # edge stays inside one component block and a generated closure joins two exterior atoms.
+    # Registry-pinned core hydrogen counts constrain heavy-atom valence. Cap capacity
+    # to prevent extra neighbours and retain targets to detect under-saturation.
+    # Generated edges stay within one component; closures join its exterior atoms.
     required_core_units: np.ndarray | None = None
     core_constrained = core_saturation is not None and core_saturation.applies_to(record)
     component_confined = (

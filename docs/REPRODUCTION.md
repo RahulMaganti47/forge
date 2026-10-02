@@ -26,7 +26,7 @@ environment; bitwise equivalence between devices or RDKit versions is not promis
 | Reaggregate all numerical tables | `forge reproduce --target all --output results/tables` | Frozen evidence replay |
 | Generate with a real checkpoint | `forge generate --replicate 0 --family ugi --count 4 --seed 42 --output results/demo` | New bounded generation |
 | Rebuild the training cache | `forge prepare --output results/cache-rebuild` | Prepare all admitted records |
-| Two-step training and evaluation | `forge train --profile smoke --output results/train-smoke` | Plumbing and numerical smoke test |
+| Two-step training and evaluation | `forge train --profile smoke --output results/train-smoke` | Training and evaluation smoke test |
 | Resume that run | `forge train --profile smoke --resume --output results/train-smoke` | Resume with authenticated restart state |
 | Verify interruption and resume | `python scripts/qualify_training_resume.py --reference results/train-smoke/training/result.json --output results/interrupted-training` | Interrupt after durable step 1; resume to step 2 and compare complete arm records |
 | Repeat the checkpoint qualification | `python scripts/qualify_checkpoints.py --output results/checkpoint-qualification` | All 3 seeds × 3 families, two attempts twice |
@@ -73,17 +73,17 @@ The independently trained shared-null and cyclic controls use the same `train` c
 `configs/multireaction/shared_bias_shared_null_core_saturation_v1.json` and
 `configs/multireaction/shared_bias_cyclic_core_saturation_v1.json`, respectively.
 
-Training defaults to the safe CPU smoke profile. Full runs preserve the complete declared molecular
+Training defaults to a two-step CPU smoke run. Full runs preserve the complete declared molecular
 size support, weighted source measure, frozen splits, optimizer schedule and all failure records.
 Checkpoint/restart states persist under the output directory. To evaluate freshly trained weights,
 call `forge.workflows.production_evaluation.run_synthesis_program_production_evaluation` with the
 run's `training/checkpoints.tar`, `training/result.json`, and `study_design.json` via
-`dynamic_production_design_path`; the public `generate` command deliberately authenticates only
+`dynamic_production_design_path`; the public `generate` command accepts only
 the original paper weights.
 
 For Modal, place the run directory on a persistent volume, launch in detached mode, and retain the
 application/function identifier, request/configuration/source hashes and input pins before monitoring.
-This release does not silently provision GPUs or automatically retry failed paid jobs.
+GPU provisioning and retries require separate execution authorization.
 
 ## Baselines and common verification
 

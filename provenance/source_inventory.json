@@ -86,7 +86,7 @@
       "module": "forge.core.hashing",
       "original_module": "forge.core.hashing",
       "source_sha256": "02677e865bbba6e587603db6d78bbb77cac16fb71846cabff3f5e2182cbbd494",
-      "release_sha256": "02677e865bbba6e587603db6d78bbb77cac16fb71846cabff3f5e2182cbbd494",
+      "release_sha256": "1d31e6cb3c086203d6e8136500857a8366804c9f01f529929442059faa626ed3",
       "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
       "required_by": "forge_paper.gem_table1",
       "path": "src/forge/core/hashing.py"
@@ -95,7 +95,7 @@
       "module": "forge.core.io",
       "original_module": "forge.core.io",
       "source_sha256": "ba75c512988109feba889d75ef153c20b5493f5ce0e6acd6c777c6573af0f914",
-      "release_sha256": "ba75c512988109feba889d75ef153c20b5493f5ce0e6acd6c777c6573af0f914",
+      "release_sha256": "eb69ad2aa6740d5a6cbc61e56245ad03a741f690b19bd898fa6b557cdf1dd1de",
       "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
       "required_by": "forge_paper.gem_table1",
       "path": "src/forge/core/io.py"
@@ -112,7 +112,7 @@
       "module": "forge.core.types",
       "original_module": "forge.core.types",
       "source_sha256": "0aaa29e944aefdb4def69813a2158816f2faca0599a571db65761c41a8c066a7",
-      "release_sha256": "0aaa29e944aefdb4def69813a2158816f2faca0599a571db65761c41a8c066a7",
+      "release_sha256": "5fbcec9874654e36c165b1131bb877166da6cf3aeb3a37a9164e547de1f7133e",
       "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
       "required_by": "forge.core.hashing",
       "path": "src/forge/core/types.py"
@@ -175,7 +175,7 @@
       "module": "forge.corpus.synthesis_program_production_cache",
       "original_module": "forge.corpus.synthesis_program_production_cache",
       "source_sha256": "269f0e694898af3343cbf9bef6aa058443e4aff870b0f09d829541d78d4f7d4d",
-      "release_sha256": "269f0e694898af3343cbf9bef6aa058443e4aff870b0f09d829541d78d4f7d4d",
+      "release_sha256": "a0b34354e74d83c2b7e60f6f9d6fcfc720e8c2fdd01875692893a67ceb92aaad",
       "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
       "required_by": "experiments.phase1.multireaction.production_training",
       "path": "src/forge/corpus/synthesis_program_production_cache.py"
@@ -570,7 +570,7 @@
       "original_module": "forge.flow.rstar",
       "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
       "source_sha256": "6f4f5762215b4fe04ac4f8c59e0f2a802b71eccf7e698893cc6df60a7c2ee50c",
-      "release_sha256": "6f4f5762215b4fe04ac4f8c59e0f2a802b71eccf7e698893cc6df60a7c2ee50c"
+      "release_sha256": "e97ee6faeaba067705c5f8b5327ed4a1da6d4c6431a70d1d5a2c289e630f03bb"
     },
     {
       "module": "forge.model",
@@ -594,7 +594,7 @@
       "module": "forge.model.common_lipid_realism",
       "original_module": "forge.model.common_lipid_realism",
       "source_sha256": "d0feea401dd7c5c5dd01b6552f651a047959dfd54725fd80ad7cb02ee7b43c83",
-      "release_sha256": "d0feea401dd7c5c5dd01b6552f651a047959dfd54725fd80ad7cb02ee7b43c83",
+      "release_sha256": "cbd70261a7ad79ada3b65b5bc35ff0866794295af140603fcdeb6b735a5202be",
       "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
       "required_by": "entry point",
       "path": "src/forge/model/common_lipid_realism.py"
@@ -603,7 +603,7 @@
       "module": "forge.model.common_ugi_benchmark",
       "original_module": "forge.model.common_ugi_benchmark",
       "source_sha256": "f08d099a9a11afe9b95c637b06da47d0307a233f586234043c77d9dd5fd7b0eb",
-      "release_sha256": "f08d099a9a11afe9b95c637b06da47d0307a233f586234043c77d9dd5fd7b0eb",
+      "release_sha256": "92e4ee8892d79555714caa04d9237934ee4d6db3437da4d2593dbbdcd763832f",
       "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
       "required_by": "experiments.phase1.multireaction.production_evaluation",
       "path": "src/forge/model/common_ugi_benchmark.py"
@@ -791,7 +791,7 @@
       "module": "forge.model.synthesis_program_sampling",
       "original_module": "forge.model.synthesis_program_sampling",
       "source_sha256": "529e5095e5a8d9c42f61134e6993cda855a60848fee18237f872a420e28a5e9f",
-      "release_sha256": "529e5095e5a8d9c42f61134e6993cda855a60848fee18237f872a420e28a5e9f",
+      "release_sha256": "3c3deef7a2e984e853adde6cacc0c44e964aad6e7d9d81b1269794bda1a559c1",
       "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
       "required_by": "experiments.phase1.multireaction.production_evaluation",
       "path": "src/forge/model/synthesis_program_sampling.py"
@@ -1057,7 +1057,7 @@
       "original_module": null,
       "source_snapshot": "release_native",
       "source_sha256": null,
-      "release_sha256": "3eb390c3bc37aae4c0aa86e318254023b6a04ba9e6f7336b6e17eaea33a6246e"
+      "release_sha256": "2fb4e62e143c616f7f648deed22c16a0aac9422d61292ec72de2419236f2f235"
     },
     {
       "module": "forge.reporting",
@@ -1319,7 +1319,7 @@
       "module": "forge.workflows.native_baseline_runtime",
       "original_module": "experiments.phase1.multireaction.native_baseline_runtime",
       "source_sha256": "051ed8892b22604a8320fabbd1dae3a3d206678c66cb0897037a5ecb97aa43a1",
-      "release_sha256": "051ed8892b22604a8320fabbd1dae3a3d206678c66cb0897037a5ecb97aa43a1",
+      "release_sha256": "456c1dc91bfcc3be781b137183d32b3344700b51c0d266eb437801ee5f79c26f",
       "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
       "required_by": "entry point",
       "path": "src/forge/workflows/native_baseline_runtime.py"
@@ -1328,7 +1328,7 @@
       "module": "forge.workflows.production_evaluation",
       "original_module": "experiments.phase1.multireaction.production_evaluation",
       "source_sha256": "a3c6c6326e4de8d8c272aad80d60d7cd49153094c358ffa8b67c960377f875e6",
-      "release_sha256": "0b423feedbbcde5a555ced0cdc585a25788873fead3b34d5ef585b6f20edb9d5",
+      "release_sha256": "9b3354844d942594ba0cc573430df0f02acd688bdfd0ce500a4b917751c97a7b",
       "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
       "required_by": "experiments.phase1.multireaction.mechanism_study",
       "path": "src/forge/workflows/production_evaluation.py"
@@ -1358,6 +1358,7 @@
     "Formatting and unused import removal",
     "Exact requested checkpoint subset selection in production_evaluation.py",
     "Later frozen control arms in mechanism_study._shared_bias_retraining_arms; primary-arm equality checked",
-    "Portable generation, artifact, manuscript and table-replay commands"
+    "Portable generation, artifact, manuscript and table-replay commands",
+    "Comment and docstring cleanup; executable AST equality recorded in qualification/writing_cleanup.json"
   ]
 }

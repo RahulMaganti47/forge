@@ -1,9 +1,8 @@
 """Packed, deterministic cache for production synthesis-program training.
 
-The bounded integration cache intentionally contains three JSON records.  Production training needs
-all qualified Ugi, BL and LX products without materializing a dense adjacency matrix per molecule or
-using executable pickle payloads.  This module stores the same sparse graph contract as packed NumPy
-arrays in a deterministic ZIP container and reconstructs records lazily by integer index.
+Store all qualified Ugi, BL, and LX products as sparse NumPy arrays in a
+deterministic ZIP container. Records are reconstructed lazily by index, without
+dense adjacency matrices or executable pickle payloads.
 """
 
 from __future__ import annotations

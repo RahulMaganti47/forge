@@ -29,9 +29,8 @@ forge artifacts verify --group submission19337-evidence-v1
 forge artifacts fetch --group submission19337-ablations-v1 --profile kosha-labs
 ```
 
-Membership is account-specific; possession of the Git URL alone does not grant Modal access.
-No new invitations or changes to workspace permissions are made by the repository commands.
-If your local profile has another name, supply it with `--profile`.
+GitHub and Modal permissions are separate. Ask a workspace administrator for Modal membership.
+Use `--profile` if your local Modal profile has another name.
 
 ## Offline or alternate transfer
 
@@ -41,10 +40,9 @@ forge artifacts restore --group submission19337-evidence-v1 \
   --bundle /downloads/submission19337-evidence-v1
 ```
 
-The same payload may be transferred by another approved channel: its hash, byte count and destination
-are the contract. Restore validates every selected payload before writing, rejects traversal and
-symlinks, refuses to overwrite different local files, and is idempotent for matching files.
-Failed downloads do not produce a successful verification record.
+Bundles can also be transferred outside Modal. Restore verifies all hashes and byte counts before
+writing, rejects traversal and symlinks, and refuses to overwrite different local files. Restoring
+matching files is idempotent.
 
 Treat published bundle prefixes as immutable. Publish corrections under a new version, update the
 manifest and document why the identity changed. Never replace a missing historical file with a

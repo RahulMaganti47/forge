@@ -1,4 +1,4 @@
-# Authoritative manuscript
+# Submission and matching source
 
 `submission.pdf` is the exact 35-page submission supplied for this release:
 `7ea7cf2e51922e5e58cd6659dc183409e465ede2eb1586fc8d0ec39935c4fd53`.
@@ -16,4 +16,4 @@ earlier page counts and verification status are historical. Current release chec
 Run `forge paper --rebuild-figures --output results/manuscript` from the checkout. The command compiles
 a separate copy, checks the page count and extracted text, and leaves this source unchanged. It
 rebuilds the recoverable TikZ/ROI and molecular-depiction sources; the exact Figure 2 composite is
-preserved because its authoring script is missing. No scientific wording or data is revised here.
+preserved because its authoring script is missing. Submitted wording and data are preserved.

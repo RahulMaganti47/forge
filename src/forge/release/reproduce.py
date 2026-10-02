@@ -1,8 +1,7 @@
-"""Recalculate manuscript tables from authenticated, frozen evaluation records.
+"""Reaggregate manuscript tables from authenticated, frozen evaluation records.
 
-This is evidence replay. It does not train models or regenerate evaluation molecules.
-The common Ugi metrics deliberately use training-catalogue component novelty, as corrected
-in the submitted manuscript, rather than method-visible novelty or distinct-L1 yield.
+Common Ugi metrics use training-catalogue component novelty, distinct from
+method-visible novelty and distinct-L1 yield. No training or generation runs here.
 """
 
 from __future__ import annotations

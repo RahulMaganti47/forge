@@ -195,10 +195,9 @@ def _select_evaluation_snapshots(
 ) -> tuple[Mapping[str, Any], ...]:
     """Select the authenticated checkpoints requested by the evaluation contract.
 
-    Training archives retain every prespecified checkpoint for provenance and restartability.  A
-    downstream evaluation may intentionally assess only a subset, most commonly the final frozen
-    checkpoint.  Selection is exact and fail closed: requested steps must be sorted, unique and
-    present once in the authenticated training result.
+    An evaluation may use a subset of the archived checkpoints, including only the
+    final step. Requested steps must be positive, sorted, unique, and present once
+    in the training result.
     """
 
     requested = tuple(int(value) for value in requested_steps)
