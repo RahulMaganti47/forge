@@ -207,7 +207,7 @@ def main(argv: list[str] | None = None) -> int:
             raise ValueError(
                 "model bundle is not ready:\n  "
                 + "\n  ".join(failures)
-                + "\nSee docs/ARTIFACTS.md; no generation was started."
+                + "\nSee README.md for artifact access; no generation was started."
             )
         if args.output.exists() or args.output.is_symlink():
             raise ValueError(f"output already exists: {args.output}")

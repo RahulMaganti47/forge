@@ -7,7 +7,7 @@ This package remains private; no new public redistribution is performed by its c
 ## External methods
 
 The following identities and license labels are recorded in the frozen
-[`external_ugi_v1.json`](../configs/baselines/external_ugi_v1.json) manifest. These are the manifest's
+[`external_ugi_v1.json`](configs/baselines/external_ugi_v1.json) manifest. These are the manifest's
 recorded labels, not a new audit of upstream terms. External projects run in separate environments;
 FORGE's adapters preserve the specified commit and apply compatibility edits to a copy.
 

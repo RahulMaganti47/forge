@@ -1,0 +1,29 @@
+{
+  "as_of": "2026-10-01",
+  "hela_results": [
+    {
+      "path": "results/phase1/ugi_morphology_high_potency_challenger_v1_retry1/result.json",
+      "sha256": "91839b27d54bc73c55dd471eb52e125e601d4b1a2219e8fe5548cfb305df5ed8"
+    },
+    {
+      "path": "results/phase1/ugi_morphology_high_potency_proposal_v1/result.json",
+      "sha256": "d8117d11e06a592bc6e2a54b2b0d549f610228dc4595c97aa918e68d2f0e71bb"
+    },
+    {
+      "path": "results/phase1/ugi_high_potency_challenger_terminal_generation_v1/result.json",
+      "sha256": "e47ccb2c74f062bf3fa37f38d25df17deefd633ce38bd1b8e05207258a4cb606"
+    },
+    {
+      "path": "results/phase1/ugi_high_potency_challenger_continuous_ranking_v1/result.json",
+      "sha256": "dc19f876235cd68c9ae36936ea53dddf0f31dc04451218c47e67dcccf01e3471"
+    }
+  ],
+  "other_missing": [
+    "HeLa oracle inputs and original oracle environment",
+    "Complete original training environment",
+    "Figure 2 final composite authoring script",
+    "Imaging replicate counts and uncertainty metadata"
+  ],
+  "unrecovered_seed12_source_sha256": "8050c5ac500fd64bf6e3252cc537d3fb16f9d6ef8d06044fdb272618d4591e03",
+  "interpretation": "Table 11 summary replay is supported by final adjudication; complete upstream replication remains unsupported."
+}

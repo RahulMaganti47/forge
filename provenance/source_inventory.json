@@ -1041,7 +1041,7 @@
       "original_module": null,
       "source_snapshot": "release_native",
       "source_sha256": null,
-      "release_sha256": "a1f09dd49fdb781547e45c359752fdc2bed483e32e839acff41a2b2931b26b1a"
+      "release_sha256": "ae167b0943d837186e44c98e44027c71b0193f1fc2d62293d71834287701b731"
     },
     {
       "module": "forge.release.manuscript",
