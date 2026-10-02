@@ -1,7 +1,6 @@
 """Draw eight source lipids and verified L1 precursors in one skeletal vector style.
 
-Run from the FORGE repository root:
-PYTHONPATH=. .venv/bin/python paper/iclr_final_3/figures/lipid_l1_building_blocks/render.py
+The manuscript command calls this renderer in a separate output directory.
 """
 
 from __future__ import annotations

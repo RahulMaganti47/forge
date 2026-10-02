@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import json
 import math
+import re
 import statistics
 from pathlib import Path
 from typing import Any
@@ -34,6 +35,30 @@ COMMON_METRICS = (
     "held_component_exact_l1_products_per_1000_attempts",
     "mean_pairwise_ecfp4_distance",
 )
+
+
+def verify_manuscript_rows(root: Path, output: Path) -> int:
+    """Require all 89 numerical rows to match the reference manuscript."""
+    manuscript = (root / "paper/source/main.tex").read_text()
+    macros = dict(re.findall(r"\\newcommand\{\\(\w+)\}\{([^\n]*)\}", manuscript))
+    for name, value in macros.items():
+        manuscript = manuscript.replace("\\" + name + "{}", value)
+
+    def normalize(value: str) -> str:
+        value = re.sub(r"\\cellcolor\{forgerow\}", "", value)
+        return re.sub(r"[\s{},]", "", value)
+
+    manuscript = normalize(manuscript)
+    checked = 0
+    for number in range(1, 12):
+        for row in (output / f"table-{number}.tex").read_text().splitlines():
+            if "&" in row:
+                if normalize(row) not in manuscript:
+                    raise ValueError(f"table {number} row differs from the manuscript: {row}")
+                checked += 1
+    if checked != 89:
+        raise ValueError(f"expected 89 numerical rows, found {checked}")
+    return checked
 
 
 def summary(values: list[float | None], *, digits: int = 1) -> str:

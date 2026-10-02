@@ -52,9 +52,16 @@ def main(argv: list[str] | None = None) -> int:
     train.add_argument("--replicate", type=int, choices=(0, 1, 2), default=0)
     train.add_argument("--device", choices=("cpu", "cuda"), default="cpu")
     train.add_argument("--resume", action="store_true")
-    evaluate = commands.add_parser("evaluate", help="rerun the frozen full checkpoint evaluation")
+    evaluate = commands.add_parser(
+        "evaluate", help="evaluate released or freshly trained checkpoints"
+    )
     evaluate.add_argument("--replicate", type=int, choices=(0, 1, 2), default=0)
     evaluate.add_argument("--device", choices=("cpu", "cuda"), default="cuda")
+    evaluate.add_argument("--profile", choices=("smoke", "paper"), default="paper")
+    evaluate.add_argument("--config", type=Path)
+    evaluate.add_argument("--checkpoint", type=Path)
+    evaluate.add_argument("--training-result", type=Path)
+    evaluate.add_argument("--study-design", type=Path)
     assess = commands.add_parser(
         "assess", help="apply the common Ugi verifier to an attempt ledger"
     )
@@ -132,28 +139,18 @@ def main(argv: list[str] | None = None) -> int:
                 resume=args.resume,
             )
         elif args.command == "evaluate":
-            from forge.workflows.production_evaluation import (
-                run_synthesis_program_production_evaluation,
-            )
+            from .evaluation import evaluate
 
-            from .generate import check_inputs
-
-            report = check_inputs(root, replicate=args.replicate)
-            if not report["ready"]:
-                raise ValueError("checkpoint inputs are incomplete; run generate --check-inputs")
-            paths = {key: Path(pin["path"]) for key, pin in report["inputs"].items()}
-            output.mkdir(parents=True)
-            run_synthesis_program_production_evaluation(
-                root
-                / f"configs/multireaction/shared_bias_parallel_program_role_seed{args.replicate}_core_saturation_v2.json",
+            evaluate(
                 root,
-                paths["production_cache"],
-                paths["checkpoint"],
-                paths["training_result"],
                 output,
-                profile="full",
                 replicate=args.replicate,
-                allocated_device=args.device,
+                device=args.device,
+                profile=args.profile,
+                config=args.config,
+                checkpoint=args.checkpoint,
+                training_result=args.training_result,
+                study_design=args.study_design,
             )
         elif args.command == "assess":
             from .assessment import assess

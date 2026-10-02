@@ -1,36 +1,67 @@
-# FORGE — submission 19337
+# FORGE: Reaction-Guided Generative Design of Ionizable Lipids
 
-Reproduction code for the **35-page, three-family submission** in [`paper/submission.pdf`](paper/submission.pdf).
-The reference PDF SHA-256 is `7ea7cf2e51922e5e58cd6659dc183409e465ede2eb1586fc8d0ec39935c4fd53`.
-The three reaction programs are AGILE-type Ugi 3CR, repeated aza-Michael addition, and repeated
-reductive amination. Exact L1 verification measures transform consistency.
+Implementation for the **35-page anonymous ICLR 2027 submission 19337**.
+[Reference paper](paper/submission.pdf) · [Reproduction guide](docs/REPRODUCTION.md) ·
+[Expected results](docs/RESULTS.md) · [Artifact access](docs/ARTIFACTS.md) ·
+[Known limitations](docs/LIMITATIONS.md)
 
-## Install and reproduce
+![FORGE generation and exact assembly verification](docs/assets/forge-overview.png)
+
+FORGE generates whole-molecule graphs conditioned on three reaction programs: AGILE-type Ugi 3CR,
+repeated aza-Michael addition, and repeated reductive amination. Exact L1 verification measures
+transform consistency. The supplied paper and its matching source are preserved byte-for-byte;
+their identities are recorded in [paper/README.md](paper/README.md).
+
+## Quick start
+
+Use Python 3.11 and [uv](https://docs.astral.sh/uv/). Run from the release checkout:
 
 ```bash
 uv sync --frozen --extra dev --extra modal
 uv run forge artifacts fetch --group paper-model-v1
 uv run forge artifacts fetch --group submission19337-evidence-v1
 uv run forge reproduce --target all --output results/reproduced-tables
-uv run forge generate --replicate 0 --family ugi --count 4 --seed 42 --output results/demo
+uv run forge generate --replicate 0 --family ugi --count 2 --seed 42 \
+  --device cpu --output results/demo
 ```
 
-Artifacts are stored in the `forge-paper-artifacts` Modal volume in workspace `kosha-labs`,
-environment `main`. Your account needs membership in that workspace. All downloads are verified
-against committed SHA-256 manifests. Local bundles can be restored without Modal credentials.
-See [artifact access](docs/ARTIFACTS.md) and the [reproduction guide](docs/REPRODUCTION.md).
+The Modal volume is `forge-paper-artifacts` in `kosha-labs/main`. Teammates need workspace membership
+and their own authenticated Modal profile. [Offline restoration](docs/ARTIFACTS.md#offline-or-alternate-transfer)
+also verifies the same hashes. The two required bundles are approximately 593 MB together; original
+architecture-study checkpoints are a separate, optional 4.01 GB bundle.
 
-`reproduce` reaggregates frozen results. `generate` uses actual paper weights and retains all
-attempts, including failures. Neither command claims a new full training replication.
-Known historical evidence gaps are recorded in [limitations](docs/LIMITATIONS.md).
+`reproduce` reaggregates saved results. `generate` uses the original paper weights and saves every
+attempt, including failures. Read [the paper-to-command map](docs/REPRODUCTION.md#paper-to-command-map)
+for training, controls, baselines, figures, seeds, and expected outputs.
 
-## Layout
+## Check the release
 
-- `src/forge/`: model, flow, registry-backed chemistry, preparation, evaluation, and baseline ports.
-- `configs/`: pinned contracts for the submitted experiments.
-- `manifests/`: immutable artifact identities and storage locations.
-- `paper/`: exact submission and matching LaTeX, bibliography, figures, and source receipts.
-- `provenance/`: source extraction and executed qualification records.
-- `tests/`: numerical, chemistry, artifact, and command checks.
+After restoring both required bundles:
 
-The original development repository and the later 22-family study are outside this release.
+```bash
+uv run python scripts/qualify_release.py --output results/release-check
+```
+
+This checks artifacts, verifies all 89 numerical table rows, and repeats two CPU Ugi attempts.
+It records commands, timings, environment, input hashes, and outputs in `receipt.json`.
+It performs no training. Full GPU reproduction and the missing historical records remain explicitly
+listed in [limitations](docs/LIMITATIONS.md).
+
+## Code and data
+
+- `src/forge/`: scientific implementation and CLI; see [code boundaries](docs/ARCHITECTURE.md).
+- `configs/`: pinned experiment and chemistry contracts.
+- `manifests/`: immutable identities for data, weights, and evidence stored in Modal.
+- `paper/`: reference PDF, matching LaTeX, bibliography, and figure assets.
+- `provenance/`: source extraction and executed qualification receipts.
+- `tests/`: numerical, chemistry, artifact, and workflow checks.
+
+## Citation and licenses
+
+Reference this package as **FORGE: Reaction-Guided Generative Design of Ionizable Lipids,
+submission 19337**, together with the Git commit used. Final author metadata and an archival
+camera-ready citation have not been supplied. This release does not assert acceptance.
+
+The implementation retains its [MIT license](LICENSE). Third-party projects, source documents, and
+data have separate terms recorded in [third-party attribution](docs/THIRD_PARTY.md).
+The later 22-family study belongs to the development repository and is outside this release.

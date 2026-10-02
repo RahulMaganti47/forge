@@ -1025,7 +1025,7 @@
       "original_module": null,
       "source_snapshot": "release_native",
       "source_sha256": null,
-      "release_sha256": "75aaeabd71b6e9607a8f17ed00a9dee52bbd4487c58424cbb7530f44a042c982"
+      "release_sha256": "fc8e7e89cfadd03afe25d41eff60434bd5076986862d587c7c498079352c45ec"
     },
     {
       "module": "forge.release.cli",
@@ -1033,7 +1033,7 @@
       "original_module": null,
       "source_snapshot": "release_native",
       "source_sha256": null,
-      "release_sha256": "63b5a796a798b9a68b14f7f1bc7902f490510e781a8f1e60e2b94992dca2d561"
+      "release_sha256": "29f447abd35f2c8072cebf543c5b64f42abc742dd3cefc6952720af895f3f533"
     },
     {
       "module": "forge.release.generate",
@@ -1041,7 +1041,7 @@
       "original_module": null,
       "source_snapshot": "release_native",
       "source_sha256": null,
-      "release_sha256": "a956ee28bb6699d283fb62bfa1f130ab3a95d012dd015f0ba85d67860383d043"
+      "release_sha256": "a1f09dd49fdb781547e45c359752fdc2bed483e32e839acff41a2b2931b26b1a"
     },
     {
       "module": "forge.release.manuscript",
@@ -1057,7 +1057,7 @@
       "original_module": null,
       "source_snapshot": "release_native",
       "source_sha256": null,
-      "release_sha256": "2fb4e62e143c616f7f648deed22c16a0aac9422d61292ec72de2419236f2f235"
+      "release_sha256": "a02b221bdbac52966fa711f5b0fc956d7712be681e1e7d6323f4fec827f9ab73"
     },
     {
       "module": "forge.reporting",
@@ -1310,7 +1310,7 @@
       "module": "forge.workflows.native_baseline_ports",
       "original_module": "experiments.phase1.multireaction.native_baseline_ports",
       "source_sha256": "1f6f4ba5cb43a9d1d6299533002f6f1c20c67a44c5c20689482c47fadd512efb",
-      "release_sha256": "1f6f4ba5cb43a9d1d6299533002f6f1c20c67a44c5c20689482c47fadd512efb",
+      "release_sha256": "50a0060ca3e3f4527b3c67db7a640a9668c9c1d7d7886e1a8fe4e724f9372730",
       "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
       "required_by": "experiments.phase1.multireaction.native_baseline_runtime",
       "path": "src/forge/workflows/native_baseline_ports.py"
@@ -1350,6 +1350,24 @@
       "source_snapshot": "ac9ef87be4c8e5c14c477bc194a333344e621d3e",
       "required_by": "experiments.phase1.multireaction.mechanism_study",
       "path": "src/forge/workflows/production_training.py"
+    },
+    {
+      "module": "forge.release.evaluation",
+      "original_module": null,
+      "source_sha256": null,
+      "release_sha256": "219f12e094f955b449c04e52250cd5efbdb1fafcf42ed0ba212eff041b1019bd",
+      "source_snapshot": "release-added",
+      "required_by": "forge.release.cli",
+      "path": "src/forge/release/evaluation.py"
+    },
+    {
+      "module": "forge.release.qualification",
+      "original_module": null,
+      "source_sha256": null,
+      "release_sha256": "82ef9b8bc189febffc011827d7f68ef05eb7ff8586eafb0e62f463ba43b92dad",
+      "source_snapshot": "release-added",
+      "required_by": "scripts/qualify_release.py",
+      "path": "src/forge/release/qualification.py"
     }
   ],
   "release_transformations": [
@@ -1359,6 +1377,9 @@
     "Exact requested checkpoint subset selection in production_evaluation.py",
     "Later frozen control arms in mechanism_study._shared_bias_retraining_arms; primary-arm equality checked",
     "Portable generation, artifact, manuscript and table-replay commands",
-    "Comment and docstring cleanup; executable AST equality recorded in qualification/writing_cleanup.json"
+    "Comment and docstring cleanup; executable AST equality recorded in qualification/writing_cleanup.json",
+    "Authenticated custom checkpoint evaluation CLI with preserved scientific gates",
+    "Native baseline command emission uses the release CLI and explicit checkout root",
+    "Shared 89-row manuscript comparison and bounded reader qualification"
   ]
 }

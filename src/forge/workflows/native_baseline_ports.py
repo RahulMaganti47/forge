@@ -127,11 +127,15 @@ def prepare_native_baseline_run(
     seed: int,
     attempts: int,
     profile: str,
+    repo: Path | None = None,
 ) -> dict[str, Any]:
     """Create one immutable native-method request without invoking third-party code."""
 
     if profile not in _PROFILES:
         raise NativeBaselinePortError(f"unsupported native profile: {profile}")
+    repo = (repo or manifest_path.resolve().parents[2]).resolve()
+    if not (repo / "manifests/paper-model-v1.json").is_file():
+        raise NativeBaselinePortError("repo must name this submission's release checkout")
     if isinstance(seed, bool) or not isinstance(seed, int) or seed < 0:
         raise NativeBaselinePortError("native seed must be a non-negative integer")
     if isinstance(attempts, bool) or not isinstance(attempts, int) or attempts <= 0:
@@ -240,8 +244,10 @@ def prepare_native_baseline_run(
         "schema_version": "forge.external_ugi_native_command.v1",
         "argv": [
             "forge",
-            "experiment",
-            "run-external-ugi",
+            "baseline",
+            "native",
+            "--root",
+            str(repo),
             "--request",
             str(request_path.resolve()),
             "--checkout",

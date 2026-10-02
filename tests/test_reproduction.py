@@ -1,12 +1,11 @@
 import json
-import re
 from pathlib import Path
 
 import pytest
 
 from forge.core.hashing import sha256_file
 from forge.release.artifacts import verify
-from forge.release.reproduce import reproduce, summary
+from forge.release.reproduce import reproduce, summary, verify_manuscript_rows
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -40,21 +39,5 @@ def test_every_numerical_table_row_matches_exact_manuscript(tmp_path: Path) -> N
             pytest.skip(f"fetch {name} to run frozen-table replay")
     output = tmp_path / "tables"
     reproduce(ROOT, output)
-    manuscript = (ROOT / "paper/source/main.tex").read_text()
-    macros = dict(re.findall(r"\\newcommand\{\\(\w+)\}\{([^\n]*)\}", manuscript))
-    for name, value in macros.items():
-        manuscript = manuscript.replace("\\" + name + "{}", value)
-
-    def normalize(value: str) -> str:
-        value = re.sub(r"\\cellcolor\{forgerow\}", "", value)
-        return re.sub(r"[\s{},]", "", value)
-
-    manuscript = normalize(manuscript)
-    checked = 0
-    for number in range(1, 12):
-        for row in (output / f"table-{number}.tex").read_text().splitlines():
-            if "&" in row:
-                assert normalize(row) in manuscript, (number, row)
-                checked += 1
-    assert checked == 89
+    assert verify_manuscript_rows(ROOT, output) == 89
     assert json.loads((output / "receipt.json").read_text())["status"] == "pass"
