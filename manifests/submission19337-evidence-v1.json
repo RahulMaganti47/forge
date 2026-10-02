@@ -2,10 +2,6 @@
   "schema_version": "forge.release.bundle.v1",
   "reference_pdf_sha256": "7ea7cf2e51922e5e58cd6659dc183409e465ede2eb1586fc8d0ec39935c4fd53",
   "storage": {
-    "volume": "forge-paper-artifacts",
-    "prefix": "/submission19337-evidence-v1",
-    "workspace": "kosha-labs",
-    "environment": "main",
     "github": {
       "repository": "RahulMaganti47/forge-iclr-review",
       "release": "submission19337-artifacts-v1",

@@ -14,7 +14,6 @@ forge = "forge.cli:main"
 
 [project.optional-dependencies]
 dev = ["pytest>=8,<10", "ruff>=0.12", "black>=25"]
-modal = ["modal>=1,<2"]
 
 [build-system]
 requires = ["hatchling"]

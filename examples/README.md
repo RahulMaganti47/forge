@@ -22,7 +22,7 @@ uv run forge artifacts fetch --group submission19337-evidence-v1
 ```
 
 Fetch combines the included data with the [direct downloads](../data/README.md#download-checkpoints-and-caches)
-and verifies all hashes. Readers need access to this private repository; no Modal account is needed.
+and verifies all hashes. Readers need access to this private repository.
 
 Architecture-study weights are optional:
 
@@ -94,9 +94,6 @@ The same training command accepts these configs under `configs/multireaction/`:
 | Cyclic-ID control | `shared_bias_cyclic_core_saturation_v1.json` | 0, 1, 2 |
 | Global-source control | `shared_bias_parallel_shared_bias_global_source_control_v2.json` | 0 |
 | Architecture/FACT study | `transformer_mechanism_study_v1.json` | 0, 1, 2 |
-
-On Modal, launch long jobs detached and persist checkpoints on a volume. Record call IDs and
-source/config/input hashes before monitoring.
 
 ## Baselines
 

@@ -31,9 +31,6 @@ def main(argv: list[str] | None = None) -> int:
         required=True,
     )
     artifacts.add_argument("--bundle", type=Path)
-    artifacts.add_argument("--profile", default="kosha-labs")
-    artifacts.add_argument("--environment", default="main")
-    artifacts.add_argument("--backend", choices=("github", "modal"), default="github")
     replay = commands.add_parser("reproduce", help="reaggregate frozen tables; no training")
     replay.add_argument(
         "--target", default="all", choices=["all", *(f"table-{i}" for i in range(1, 12))]
@@ -106,14 +103,7 @@ def main(argv: list[str] | None = None) -> int:
                     raise ValueError("restore requires --bundle")
                 result = store.restore(root, manifest, args.bundle)
             else:
-                result = store.fetch(
-                    root,
-                    manifest,
-                    profile=args.profile,
-                    environment=args.environment,
-                    backend=args.backend,
-                    downloads=args.bundle,
-                )
+                result = store.fetch(root, manifest, downloads=args.bundle)
             print(json.dumps(result, indent=2, sort_keys=True))
             return 0 if result["ready"] else 2
         output = args.output.resolve()

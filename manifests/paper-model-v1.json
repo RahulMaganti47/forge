@@ -1,10 +1,6 @@
 {
   "schema_version": "forge.paper_model_bundle.v1",
   "version": "paper-model-v1",
-  "workspace": "kosha-labs",
-  "environment": "main",
-  "volume": "forge-paper-artifacts",
-  "prefix": "/paper-model-v1",
   "reference_manifest_sha256": "d64bb8691776b213e03cd8086248257b2d7f19baa0900c1ca3d8a664bcb28e80",
   "reference_pr_commit": "2568f091ae530fa50dab24bdd5d15b231f6e1da0",
   "repository_head": "413767a3a12df3392ebb9492522bf8f2dab68085",
@@ -527,10 +523,6 @@
   ],
   "upstream_manifest_sha256": "9a74401485b2d2c97f5eb17c106dc513d01c6b1097c7a98bd4b9864a8e0db327",
   "storage": {
-    "volume": "forge-paper-artifacts",
-    "prefix": "/paper-model-v1",
-    "workspace": "kosha-labs",
-    "environment": "main",
     "github": {
       "repository": "RahulMaganti47/forge-iclr-review",
       "release": "submission19337-artifacts-v1",

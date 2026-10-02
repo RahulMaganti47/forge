@@ -815,7 +815,7 @@ def run_native_baseline(
     write_json(output_dir / "result.json", runtime_audit)
     # The immutable request, pinned source adapter, final checkpoint and raw attempt ledger are the
     # reproducibility contract.  Native work directories contain staged checkout copies, processed
-    # dataset caches and intermediate logs that are both redundant and expensive to move off Modal.
+    # dataset caches and intermediate logs that are both redundant and expensive to transfer.
     # Remove only these scratch trees after every retained artifact has been hash-recorded.
     for scratch_name in ("work", "upstream"):
         shutil.rmtree(output_dir / scratch_name, ignore_errors=True)

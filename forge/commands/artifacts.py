@@ -125,46 +125,12 @@ def install(root: Path, manifest: Path) -> dict[str, Any]:
     }
 
 
-def fetch(
-    root: Path,
-    manifest: Path,
-    *,
-    profile: str,
-    environment: str,
-    backend: str = "github",
-    downloads: Path | None = None,
-) -> dict[str, Any]:
-    if backend not in {"github", "modal"}:
-        raise ValueError(f"unknown artifact backend: {backend}")
+def fetch(root: Path, manifest: Path, *, downloads: Path | None = None) -> dict[str, Any]:
     if all("checkout_path" in row for row in manifest_files(manifest)):
         install(root, manifest)
         return verify(root, manifest)
     config = json.loads(manifest.read_text())
-    if backend == "github":
-        return _fetch_github(root, manifest, config["storage"]["github"], downloads)
-    name = manifest.stem
-    location = config.get(
-        "storage", {"volume": "forge-paper-artifacts", "prefix": "/paper-model-v1"}
-    )
-    with tempfile.TemporaryDirectory(prefix=f"forge-{name}-") as directory:
-        # Modal requires an existing destination directory.
-        destination = Path(directory)
-        subprocess.run(
-            [
-                "modal",
-                "volume",
-                "get",
-                location["volume"],
-                location["prefix"],
-                str(destination),
-                "--env",
-                environment,
-            ],
-            env={**os.environ, "MODAL_PROFILE": profile},
-            check=True,
-        )
-        bundle = destination / Path(location["prefix"]).name
-        return restore(root, manifest, bundle)
+    return _fetch_github(root, manifest, config["storage"]["github"], downloads)
 
 
 def _fetch_github(

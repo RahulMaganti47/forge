@@ -2,10 +2,6 @@
   "schema_version": "forge.release.bundle.v1",
   "scope": "optional original eight-arm architecture-study checkpoints for three seeds",
   "storage": {
-    "volume": "forge-paper-artifacts",
-    "prefix": "/submission19337-ablations-v1",
-    "workspace": "kosha-labs",
-    "environment": "main",
     "github": {
       "repository": "RahulMaganti47/forge-iclr-review",
       "release": "submission19337-artifacts-v1",

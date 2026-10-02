@@ -143,7 +143,7 @@ def test_install_committed_data_keeps_missing_weights_explicit(github_bundle):
 
 def test_github_fetch_combines_committed_data_and_download(github_bundle):
     root, manifest, _, _ = github_bundle
-    assert fetch(root, manifest, profile="unused", environment="unused")["ready"]
+    assert fetch(root, manifest)["ready"]
     assert (root / "results/training.csv").read_bytes() == b"training data\n"
     assert (root / "results/weights.bin").read_bytes() == b"weights"
 
@@ -155,9 +155,7 @@ def test_offline_fetch_uses_downloaded_archives_without_network(github_bundle, m
         raise AssertionError("offline restoration must not contact GitHub")
 
     monkeypatch.setattr(artifacts.subprocess, "run", forbidden)
-    assert fetch(root, manifest, profile="unused", environment="unused", downloads=archive.parent)[
-        "ready"
-    ]
+    assert fetch(root, manifest, downloads=archive.parent)["ready"]
 
 
 def test_changed_committed_data_stops_before_download(github_bundle, monkeypatch):
@@ -169,7 +167,7 @@ def test_changed_committed_data_stops_before_download(github_bundle, monkeypatch
 
     monkeypatch.setattr(artifacts.subprocess, "run", forbidden)
     with pytest.raises(ValueError, match="git lfs pull"):
-        fetch(root, manifest, profile="unused", environment="unused")
+        fetch(root, manifest)
     assert not (root / "results").exists()
 
 
@@ -177,7 +175,7 @@ def test_changed_archive_stops_before_installation(github_bundle):
     root, manifest, archive, _ = github_bundle
     archive.write_bytes(b"corrupt download")
     with pytest.raises(ValueError, match="differs from its manifest"):
-        fetch(root, manifest, profile="unused", environment="unused")
+        fetch(root, manifest)
     assert not (root / "results").exists()
 
 
@@ -199,23 +197,9 @@ def test_authenticated_archive_cannot_bypass_payload_checks(github_bundle, entri
     record.update(bytes=archive.stat().st_size, sha256=str(sha256_file(archive)))
     manifest.write_text(json.dumps(config))
     with pytest.raises(ValueError):
-        fetch(root, manifest, profile="unused", environment="unused")
+        fetch(root, manifest)
     assert not (root / "results").exists()
     assert not (root.parent / "outside").exists()
-
-
-def test_modal_remains_an_explicit_backend(tmp_path: Path, monkeypatch):
-    download, destination, manifest = bundle(tmp_path)
-
-    def modal(command, **kwargs):
-        assert command[:3] == ["modal", "volume", "get"]
-        shutil.copytree(download, Path(command[5]) / "paper-model-v1")
-        return SimpleNamespace(returncode=0)
-
-    monkeypatch.setattr(artifacts.subprocess, "run", modal)
-    assert fetch(destination, manifest, profile="team", environment="main", backend="modal")[
-        "ready"
-    ]
 
 
 @pytest.mark.parametrize("action", ["install", "fetch"])
@@ -232,7 +216,7 @@ def test_committed_hela_group_is_available_without_downloads(
     manifest.write_text(json.dumps(config))
 
     def forbidden(*args, **kwargs):
-        raise AssertionError("included HeLa artifacts must not require GitHub or Modal")
+        raise AssertionError("included HeLa artifacts must not require downloads")
 
     monkeypatch.setattr(artifacts.subprocess, "run", forbidden)
     assert main(["artifacts", action, "--group", "hela-oracle-v1", "--root", str(root)]) == 0
