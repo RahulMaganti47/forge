@@ -1,0 +1,67 @@
+% Figure 2 panel b. Values are read directly from reported_roi_values.csv.
+% Build from the project root with:
+% pdflatex -interaction=nonstopmode -halt-on-error -output-directory=figures figures/reported_roi_plot.tex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{pgfplotstable}
+\pagestyle{empty}
+\definecolor{roiink}{HTML}{26313C}
+\definecolor{roiblue}{HTML}{5C88B3}
+\definecolor{roiblueedge}{HTML}{3E6489}
+\definecolor{roigray}{HTML}{A3ACB5}
+\definecolor{roigrayedge}{HTML}{6F7983}
+
+\pgfplotstableread[col sep=comma]{figures/reported_roi_values.csv}\roidata
+\newcommand{\roirow}[4]{%
+  \pgfplotstablegetelem{#1}{reported_roi_signal}\of{\roidata}%
+  \edef\roiraw{\pgfplotsretval}%
+  \begingroup
+    \pgfkeys{/pgf/fpu=true}%
+    \pgfmathparse{\roiraw/1000000}%
+    \pgfmathfloattofixed{\pgfmathresult}%
+    \xdef\roivalue{\pgfmathresult}%
+  \endgroup
+  \begingroup
+    \pgfkeys{/pgf/fpu=true}%
+    \pgfmathparse{ln(\roiraw)/ln(10)}%
+    \pgfmathfloattofixed{\pgfmathresult}%
+    \xdef\roilog{\pgfmathresult}%
+  \endgroup
+  \pgfmathsetmacro{\bartop}{34+34*(\roilog-4)}%
+  \filldraw[fill=#4,draw=#4!75!black,line width=.55pt]
+    (#3-22,34) rectangle (#3+22,\bartop);
+  \node[anchor=south,font=\footnotesize\bfseries,text=roiink] at (#3,\bartop+3)
+    {\pgfmathprintnumber[sci,precision=3]{\roiraw}};
+  \node[anchor=north,font=\footnotesize,text=roiink] at (#3,26) {#2};
+}
+
+\begin{document}
+\newbox\exportbox
+\setbox\exportbox=\hbox{\resizebox{397pt}{!}{%
+\begin{tikzpicture}[x=1pt,y=1pt]
+  \path[use as bounding box] (0,0) rectangle (397,188);
+  \draw[roiink,line width=.8pt] (55,34) -- (55,172);
+  \draw[roiink,line width=.8pt] (55,34) -- (382,34);
+  \foreach \i in {4,5,6,7,8} {
+    \pgfmathsetmacro{\ty}{34+34*(\i-4)}
+    \draw[roiink,line width=.7pt] (51,\ty) -- (55,\ty);
+    \node[anchor=east,font=\footnotesize,text=roiink] at (47,\ty) {$10^{\i}$};
+  }
+  \node[rotate=90,font=\footnotesize,text=roiink] at (10,105)
+    {RLU (relative light units)};
+  \roirow{0}{FORGE-1}{95}{roiblue}
+  \roirow{1}{FORGE-2}{174}{roiblue}
+  \roirow{2}{FORGE-3}{253}{roiblue}
+  \roirow{3}{DLIN-MC3-DMA}{332}{roigray}
+\end{tikzpicture}%
+}}
+\pdfpagewidth=\wd\exportbox
+\pdfpageheight=\dimexpr\ht\exportbox+\dp\exportbox\relax
+\hoffset=-1in
+\voffset=-1in
+\shipout\hbox{\raise\dp\exportbox\box\exportbox}
+\end{document}

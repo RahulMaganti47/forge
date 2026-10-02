@@ -1,0 +1,56 @@
+{
+  "schema_version": "phase1_ugi_matched_morphology_terminal_generation_config.v1",
+  "status": "frozen_after_schedule_and_before_any_matched_terminal_generation",
+  "task": "Generate one native selected-v3 terminal for each of 3,072 matched draw coordinates in each frozen morphology-allocation arm, without terminal scoring, guidance, repair or retry",
+  "scope": {
+    "matched_morphology_allocation_only": true,
+    "native_selected_v3_terminal_completion": true,
+    "common_particle_and_terminal_randomness_across_arms": true,
+    "terminal_scoring": false,
+    "potency_model_calls": 0,
+    "applicability_model_calls": 0,
+    "oracle_calls": 0,
+    "route_calls": 0,
+    "synthesis_calls": 0,
+    "nonzero_trajectory_guidance": false,
+    "candidate_selection": false,
+    "sealed_holdout_access": false,
+    "retries_or_repairs": false
+  },
+  "design": {
+    "draws_per_arm": 3072,
+    "shard_draws": 64,
+    "particle_seed_base": 20261102,
+    "terminal_seed_base": 20261103,
+    "device": "cpu",
+    "sample_steps": 8,
+    "checkpoint": 6,
+    "terminals_per_draw_per_arm": 1
+  },
+  "inputs": {
+    "base_census_config": {
+      "path": "configs/model/phase1_ugi_dynamic_frozen_prior_terminal_census_v1.json",
+      "sha256": "7500db52feb13f644d9a9585df649ec36b051b1792c9543fb0db5840f1542602"
+    },
+    "runner": {
+      "path": "scripts/phase1_generate_ugi_matched_morphology_terminals.py",
+      "sha256": "302ec1afe829e9acb7463fe62d505d1aedf2a96ad81cc978b5e810981e038ced"
+    },
+    "schedule": {
+      "path": "results/phase1/ugi_matched_morphology_allocation_schedule_v1/schedule.json",
+      "sha256": "df342bbbfcda8b84f8e7b9095cee061c3563ede17e1e750d86db7f8d370fce44"
+    },
+    "schedule_result": {
+      "path": "results/phase1/ugi_matched_morphology_allocation_schedule_v1/result.json",
+      "sha256": "9d42483c432710e4112bf66e2b2e2f3651e40113c6e74d57742b5612039b21ad"
+    },
+    "source": {
+      "path": "src/forge/product/ugi_matched_morphology_terminal_generation.py",
+      "sha256": "fc679e8dd90f9ac6e3f9b12991ae0e799c48e4c28c4b0b8d9ab6fae77d14f948"
+    },
+    "tests": {
+      "path": "tests/test_ugi_matched_morphology_terminal_generation.py",
+      "sha256": "040f6eb40db30f4641f1929b5d6d010228147eff86692fa53ea1c8b7734dac4b"
+    }
+  }
+}

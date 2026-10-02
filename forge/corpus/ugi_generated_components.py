@@ -7,11 +7,11 @@ from collections.abc import Sequence
 import numpy as np
 from rdkit import Chem
 
-from forge.model.defog_feasibility import AtomState, FeasibilityError
-from forge.model.ugi_adapter_features import CORE_POSITION_TO_INDEX, ORIGIN_TO_INDEX
-from forge.model.ugi_chemistry_flow import UgiChemistrySample, chemistry_sample_to_molecule
-from forge.model.ugi_chemistry_interface import ChemistryTopologyCondition
-from forge.model.v5_sparse_representation import canonical_constitutional_molecule
+from forge.model.conditioning.ugi import CORE_POSITION_TO_INDEX, ORIGIN_TO_INDEX
+from forge.model.conditioning.ugi_chemistry import ChemistryTopologyCondition
+from forge.model.networks.dense_flow import AtomState, FeasibilityError
+from forge.model.networks.ugi_chemistry import UgiChemistrySample, chemistry_sample_to_molecule
+from forge.model.representation.sparse_graph import canonical_constitutional_molecule
 from forge.potency.annotations import ROLE_NAMES
 
 

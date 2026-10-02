@@ -20,11 +20,15 @@ class UgiTrainingCacheError(RuntimeError):
 
 
 _FROZEN_MODULE_MOVES = {
-    "forge.product.defog_feasibility": "forge.model.defog_feasibility",
+    "forge.product.defog_feasibility": "forge.model.networks.dense_flow",
     "forge.product.ugi_chemistry_corpus": "forge.corpus.ugi_chemistry_corpus",
-    "forge.product.ugi_chemistry_interface": "forge.model.ugi_chemistry_interface",
-    "forge.product.ugi_joint_sparse_flow": "forge.model.ugi_joint_sparse_flow",
-    "forge.product.ugi_morphology_program": "forge.model.ugi_morphology_program",
+    "forge.product.ugi_chemistry_interface": "forge.model.conditioning.ugi_chemistry",
+    "forge.product.ugi_joint_sparse_flow": "forge.model.networks.ugi_joint_flow",
+    "forge.product.ugi_morphology_program": "forge.model.representation.ugi_morphology",
+    "forge.model.defog_feasibility": "forge.model.networks.dense_flow",
+    "forge.model.ugi_chemistry_interface": "forge.model.conditioning.ugi_chemistry",
+    "forge.model.ugi_joint_sparse_flow": "forge.model.networks.ugi_joint_flow",
+    "forge.model.ugi_morphology_program": "forge.model.representation.ugi_morphology",
 }
 
 

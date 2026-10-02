@@ -1,0 +1,42 @@
+[project]
+name = "forge-submission19337"
+version = "1.0.0"
+description = "Reproduction code for FORGE submission 19337 (35-page, three-family study)"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+license = {text = "MIT"}
+dependencies = [
+  "torch==2.13.0", "rdkit==2026.3.5", "numpy==2.4.6", "pandas==3.0.5",
+  "scikit-learn==1.9.0", "scipy==1.17.1", "PyYAML==6.0.3", "threadpoolctl>=3.1",
+]
+
+[project.scripts]
+forge = "forge.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.12", "black>=25"]
+modal = ["modal>=1,<2"]
+figures = ["cairosvg>=2.7", "pypdf>=6"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["forge", "examples"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+markers = ["artifacts: requires the separately fetched paper artifacts"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]

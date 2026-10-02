@@ -1,0 +1,105 @@
+{
+  "schema_version": "forge.release.writing_cleanup.v1",
+  "status": "pass",
+  "base_commit": "2dd83ec0b59d9c468a590bedf16f2c84f1ae96d9",
+  "source_before_sha256": "09285ab579962dc6c80cc5fc9c90421dcdf917851f61f5d83d2d68ad725b658b",
+  "source_after_sha256": "073f108c325881d3c04282a407dba49b0405e745ba1bccbfc9093f88bfa0a8ad",
+  "files": [
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "before_sha256": "c4bd494c3882e399c958c8debbc2cce87f7900202dcc6723cd02d8a31cd0bbbf",
+      "after_sha256": "97cd40d6d3f2b641881b8df08d5f4baada27805f731573d550375068b240eb97"
+    },
+    {
+      "path": "docs/ARTIFACTS.md",
+      "before_sha256": "ad6b4016af94187b17297ce4f56368da5ffebe8baad8e0e0e161d607fbb973c4",
+      "after_sha256": "eb5ec4bd220a2d8035b3d806aefb1fcd768798c411d3b6cc2e198194b17832f7"
+    },
+    {
+      "path": "docs/REPRODUCTION.md",
+      "before_sha256": "eab7a9bbf920510fefea19139b918b53f6532ac6f7ee251746ab2765bdf0fe45",
+      "after_sha256": "5e6a0a58196f35f08e912cf1d6002590de6d7e2f6b5c8bf36e3ff0c01c9d3dc1"
+    },
+    {
+      "path": "paper/README.md",
+      "before_sha256": "18f851272d65c5f73d980d3cd539400d0bea15b56a44a06bb90b1e42e2677282",
+      "after_sha256": "5967ca7823a1a2c899eec9daee92b40e64c145c0151f8ba705d9c397bc9916d6"
+    },
+    {
+      "path": "src/forge/core/hashing.py",
+      "before_sha256": "02677e865bbba6e587603db6d78bbb77cac16fb71846cabff3f5e2182cbbd494",
+      "after_sha256": "1d31e6cb3c086203d6e8136500857a8366804c9f01f529929442059faa626ed3",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/forge/core/io.py",
+      "before_sha256": "ba75c512988109feba889d75ef153c20b5493f5ce0e6acd6c777c6573af0f914",
+      "after_sha256": "eb69ad2aa6740d5a6cbc61e56245ad03a741f690b19bd898fa6b557cdf1dd1de",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/forge/core/types.py",
+      "before_sha256": "0aaa29e944aefdb4def69813a2158816f2faca0599a571db65761c41a8c066a7",
+      "after_sha256": "5fbcec9874654e36c165b1131bb877166da6cf3aeb3a37a9164e547de1f7133e",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/forge/corpus/synthesis_program_production_cache.py",
+      "before_sha256": "269f0e694898af3343cbf9bef6aa058443e4aff870b0f09d829541d78d4f7d4d",
+      "after_sha256": "a0b34354e74d83c2b7e60f6f9d6fcfc720e8c2fdd01875692893a67ceb92aaad",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/forge/flow/rstar.py",
+      "before_sha256": "6f4f5762215b4fe04ac4f8c59e0f2a802b71eccf7e698893cc6df60a7c2ee50c",
+      "after_sha256": "e97ee6faeaba067705c5f8b5327ed4a1da6d4c6431a70d1d5a2c289e630f03bb",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/forge/model/common_lipid_realism.py",
+      "before_sha256": "d0feea401dd7c5c5dd01b6552f651a047959dfd54725fd80ad7cb02ee7b43c83",
+      "after_sha256": "cbd70261a7ad79ada3b65b5bc35ff0866794295af140603fcdeb6b735a5202be",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/forge/model/common_ugi_benchmark.py",
+      "before_sha256": "f08d099a9a11afe9b95c637b06da47d0307a233f586234043c77d9dd5fd7b0eb",
+      "after_sha256": "92e4ee8892d79555714caa04d9237934ee4d6db3437da4d2593dbbdcd763832f",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/forge/model/synthesis_program_sampling.py",
+      "before_sha256": "529e5095e5a8d9c42f61134e6993cda855a60848fee18237f872a420e28a5e9f",
+      "after_sha256": "3c3deef7a2e984e853adde6cacc0c44e964aad6e7d9d81b1269794bda1a559c1",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/forge/release/reproduce.py",
+      "before_sha256": "3eb390c3bc37aae4c0aa86e318254023b6a04ba9e6f7336b6e17eaea33a6246e",
+      "after_sha256": "2fb4e62e143c616f7f648deed22c16a0aac9422d61292ec72de2419236f2f235",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/forge/workflows/native_baseline_runtime.py",
+      "before_sha256": "051ed8892b22604a8320fabbd1dae3a3d206678c66cb0897037a5ecb97aa43a1",
+      "after_sha256": "456c1dc91bfcc3be781b137183d32b3344700b51c0d266eb437801ee5f79c26f",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/forge/workflows/production_evaluation.py",
+      "before_sha256": "0b423feedbbcde5a555ced0cdc585a25788873fead3b34d5ef585b6f20edb9d5",
+      "after_sha256": "9b3354844d942594ba0cc573430df0f02acd688bdfd0ce500a4b917751c97a7b",
+      "executable_ast_unchanged": true
+    }
+  ],
+  "cli_descriptions_unchanged": true,
+  "frozen_manuscript_and_payloads_unchanged": true,
+  "scope": "Documentation, comments and docstrings; executable AST unchanged after excluding standalone string documentation. Historical qualification receipts preserve their original source identity.",
+  "validation": {
+    "tests_passed": 53,
+    "tests_failed": 0,
+    "ruff": "pass",
+    "black": "pass",
+    "diff_check": "pass"
+  }
+}

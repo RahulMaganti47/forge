@@ -1,22 +1,7 @@
-"""Serialization and atomic writes.
+"""Deterministic serialization and atomic writes.
 
-Every function here is byte-compatible with the copies it replaces. That is the whole requirement:
-artifacts already on disk are hash-pinned, and those pins are the paper's evidence chain, so a
-serializer that emits one different byte silently invalidates every result it touches.
-
-Two details carry that compatibility and are easy to lose:
-
-  `lineterminator="\\n"` -- Python's csv module defaults to CRLF. Every existing FORGE ledger was
-  written with LF, so the default would change every line of every CSV.
-
-  `mtime=0` on gzip -- gzip embeds a modification timestamp by default, so the same rows compressed
-  twice produce different bytes. Every existing `.csv.gz` was written with the timestamp zeroed,
-  which is what makes them reproducible at all.
-
-Where the existing copies disagreed, the strictest behavior was adopted deliberately. `stable_json`
-takes `allow_nan=False` from the 29-copy variant rather than the 32-copy one: the loose variant
-emits bare `NaN`, which is not valid JSON and which a strict reader cannot load back. That can now
-raise where it previously wrote a broken artifact, and raising is the correct outcome.
+CSV uses LF line endings and gzip uses a zero timestamp to preserve recorded
+artifact hashes. JSON uses sorted keys and rejects nonfinite values.
 """
 
 from __future__ import annotations
@@ -35,11 +20,7 @@ from typing import Any
 
 
 def stable_json(value: Any) -> str:
-    """Serialize deterministically: sorted keys, no incidental whitespace, no NaN.
-
-    Sorted so a dict's iteration order cannot leak into an artifact's hash, and compact so
-    formatting changes cannot either.
-    """
+    """Serialize JSON with sorted keys, compact formatting, and no nonfinite values."""
     return json.dumps(value, sort_keys=True, separators=(",", ":"), allow_nan=False)
 
 
@@ -48,7 +29,7 @@ def stable_json_bytes(value: Any) -> bytes:
 
 
 def pretty_json_bytes(value: Any) -> bytes:
-    """Indented, sorted, newline-terminated -- the shape used for human-read `result.json` files."""
+    """Encode sorted, indented JSON with a trailing newline for result files."""
     return (json.dumps(value, indent=2, sort_keys=True, allow_nan=False) + "\n").encode()
 
 
@@ -56,11 +37,7 @@ def pretty_json_bytes(value: Any) -> bytes:
 
 
 def csv_bytes(rows: Sequence[Mapping[str, Any]], fieldnames: Sequence[str]) -> bytes:
-    """Encode rows as CSV with LF line endings.
-
-    `lineterminator="\\n"` is not a style choice: the csv module defaults to CRLF, and every
-    ledger in this repository was written with LF.
-    """
+    """Encode CSV rows with LF line endings to preserve ledger hashes."""
     buffer = io.StringIO(newline="")
     writer = csv.DictWriter(buffer, fieldnames=fieldnames, lineterminator="\n")
     writer.writeheader()
@@ -81,10 +58,9 @@ def csv_gz_bytes(rows: Sequence[Mapping[str, Any]], fieldnames: Sequence[str]) -
 
 
 def read_csv(path: Path) -> list[dict[str, str]]:
-    """Read a CSV, transparently handling gzip by extension.
+    """Read CSV rows as string dictionaries, handling gzip by extension.
 
-    Returns row dicts of strings, matching what the ~60 local readers return -- callers parse their
-    own numerics. Deliberately not pandas: the return type is what existing call sites expect.
+    Callers parse numeric fields.
     """
     if path.suffix == ".gz":
         with gzip.open(path, "rt", newline="") as handle:

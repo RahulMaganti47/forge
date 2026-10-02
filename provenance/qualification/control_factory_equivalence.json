@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "primary_arms_unchanged": [
+    "shared_bias_global_source_control",
+    "shared_bias_program_role_source"
+  ],
+  "added_frozen_control_arms": [
+    "shared_three_program_null",
+    "shared_three_program_program_id_cyclic",
+    "ugi_only_conditioned"
+  ],
+  "old_function_sha256": "3743b209e6c227197a584b385adb2f058591b371f80a191327a9b42e2180e7a9",
+  "new_function_sha256": "ea90729ae2b7acf5cdce36ca88564b1d94945e5f6f0e452c0308aa05854969ea",
+  "source": "current development mechanism_study.py; only this function imported"
+}

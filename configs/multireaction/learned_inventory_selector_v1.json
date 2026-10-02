@@ -1,0 +1,25 @@
+{
+  "schema_version": "forge.learned_inventory_selector_config.v1",
+  "inputs": {
+    "common_protocol": {"path": "configs/multireaction/common_ugi_baseline_protocol_v1.json", "sha256": "54951f190e3cecc91b3d37a22858a3be84a18d8ef42c295b29bb418b5e9f3e15"},
+    "ugi_assignments": {"path": "results/phase1/ugi_balanced_chemistry_corpus_v2/assignments.csv.gz", "sha256": "9a50c703ed6aa919b251678c04b7a44e93b3233a12fc13b5d6697683bb5b5184"},
+    "qualified_ugi_reactions": {"path": "data/vendor/qualified_reactions_v1.json", "sha256": "296bf06238ef22acc1f55117f5ce0adaee21b1bafaf5a83f89182b0f31cc4fcf"},
+    "component_route_ledger": {"path": "results/phase1/ugi_bounded_hybrid_route_cascade_v1/component_route_ledger.jsonl.gz", "sha256": "0076d72f7649c5b2b6d7fad242b0ecc0a667d232c137dbd282a52ff34a3e6a20"}
+  },
+  "model": {
+    "architecture": "autoregressive_train_inventory_selector",
+    "hidden_dim": 256,
+    "embedding_dim": 64,
+    "role_order": ["amine_head", "oxoester_aldehyde_body_tail", "isocyanide_tail"],
+    "context": "per_role_heavy_atom_ring_branch_heteroatom_counts",
+    "component_identity_source": "train_fold_only"
+  },
+  "smoke": {"device": "cpu", "optimizer_steps": 3, "batch_size": 16, "learning_rate": 0.001, "attempts": 4},
+  "full": {"device": "cuda", "optimizer_steps": 2000, "batch_size": 256, "learning_rate": 0.001, "attempts": 3072},
+  "maximum_forward_outcomes": 512,
+  "checkpoint_selection": "fixed_final_step",
+  "repairs_or_retries": false,
+  "candidate_selection": false,
+  "route_calls_during_generation": 0,
+  "oracle_calls": 0
+}

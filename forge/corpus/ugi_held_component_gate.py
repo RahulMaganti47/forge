@@ -23,8 +23,8 @@ from forge.corpus.r1_prime_audit import compile_reactions, load_reaction_definit
 from forge.corpus.training_cache import load_ugi_training_cache
 from forge.corpus.ugi_component_expansion import reaction_handle_qualification
 from forge.corpus.ugi_generated_components import generated_ugi_component_smiles
-from forge.model.ugi_chemistry_flow import UgiChemistrySample
-from forge.model.ugi_joint_sparse_flow import (
+from forge.model.networks.ugi_chemistry import UgiChemistrySample
+from forge.model.networks.ugi_joint_flow import (
     UgiJointSparseFlow,
     collate_ugi_joint_sparse_records,
     noise_ugi_joint_sparse_batch,

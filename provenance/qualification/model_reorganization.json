@@ -1,0 +1,285 @@
+{
+  "schema_version": "forge.release.model_reorganization.v1",
+  "date": "2026-10-01",
+  "status": "pass",
+  "base_commit": "62a31b93677d8a5a7f2dfba6881e26c090728d33",
+  "source_sha256": "510cc09e9f4e50917b59a01df5cbae7f505c53854021f3984a1bb20751be9302",
+  "source_modules": 168,
+  "changes": [
+    "Group model representations, conditioning, networks, objectives and sampling.",
+    "Move molecular evaluation and baseline implementations into their own packages.",
+    "Split Transformer architecture, semantic losses and PCGrad; combine checkpoint codecs and RNG/restart utilities.",
+    "Retain frozen class-path mappings for authenticated historical caches."
+  ],
+  "definition_equivalence": {
+    "status": "pass",
+    "base_commit": "62a31b93677d8a5a7f2dfba6881e26c090728d33",
+    "definitions_checked": 1588,
+    "scope": "All function/class ASTs identical after excluding imports; module paths, exports and cache path mappings intentionally changed."
+  },
+  "tests": {
+    "tests": 77,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "junit_sha256": "4f1cf44a7c8d8b36564002202b9588f5f9bab4e79f4463c847846d22dd6167d9",
+    "log_sha256": "cd634f008cfd14edca3cfcac78664b5c85b3dabc5294bf8766af7e4e912b62e2"
+  },
+  "checkpoints": {
+    "cells": [
+      {
+        "replicate": 0,
+        "family": "ugi",
+        "request": {
+          "batch_size": 2,
+          "count": 2,
+          "device": "cpu",
+          "program_id": "ugi_3cr_agile",
+          "seed": 42,
+          "threads": 2
+        },
+        "counts": {
+          "attempts": 2,
+          "exact_l1": 2,
+          "valid": 2
+        },
+        "deterministic_replay": true,
+        "attempts_sha256": "528d672216648b852bed5cb30724572790e160adaa4d588bba559fdb4562d896"
+      },
+      {
+        "replicate": 0,
+        "family": "aza-michael",
+        "request": {
+          "batch_size": 2,
+          "count": 2,
+          "device": "cpu",
+          "program_id": "bl_2023_repeated_aza_michael",
+          "seed": 42,
+          "threads": 2
+        },
+        "counts": {
+          "attempts": 2,
+          "exact_l1": 2,
+          "valid": 2
+        },
+        "deterministic_replay": true,
+        "attempts_sha256": "dec9ecb205700142a7c73c5be0372527158f370ece27efa0541756e5e90d50e5"
+      },
+      {
+        "replicate": 0,
+        "family": "reductive-amination",
+        "request": {
+          "batch_size": 2,
+          "count": 2,
+          "device": "cpu",
+          "program_id": "lx_2024_repeated_reductive_amination",
+          "seed": 42,
+          "threads": 2
+        },
+        "counts": {
+          "attempts": 2,
+          "exact_l1": 2,
+          "valid": 2
+        },
+        "deterministic_replay": true,
+        "attempts_sha256": "a22b2b41752064b9e6a135262b710f0f22f48d87bba75f43f5c1a3b44ddd0119"
+      },
+      {
+        "replicate": 1,
+        "family": "ugi",
+        "request": {
+          "batch_size": 2,
+          "count": 2,
+          "device": "cpu",
+          "program_id": "ugi_3cr_agile",
+          "seed": 42,
+          "threads": 2
+        },
+        "counts": {
+          "attempts": 2,
+          "exact_l1": 2,
+          "valid": 2
+        },
+        "deterministic_replay": true,
+        "attempts_sha256": "9b553e563befd77699c73d6af1ae859c21ac05ee959196a2a51bb7de1b179fdc"
+      },
+      {
+        "replicate": 1,
+        "family": "aza-michael",
+        "request": {
+          "batch_size": 2,
+          "count": 2,
+          "device": "cpu",
+          "program_id": "bl_2023_repeated_aza_michael",
+          "seed": 42,
+          "threads": 2
+        },
+        "counts": {
+          "attempts": 2,
+          "exact_l1": 2,
+          "valid": 2
+        },
+        "deterministic_replay": true,
+        "attempts_sha256": "ced9a03459a57e8180a44936d533b214e935c35c6ceda1a14d6d8f9a9ca9232b"
+      },
+      {
+        "replicate": 1,
+        "family": "reductive-amination",
+        "request": {
+          "batch_size": 2,
+          "count": 2,
+          "device": "cpu",
+          "program_id": "lx_2024_repeated_reductive_amination",
+          "seed": 42,
+          "threads": 2
+        },
+        "counts": {
+          "attempts": 2,
+          "exact_l1": 2,
+          "valid": 2
+        },
+        "deterministic_replay": true,
+        "attempts_sha256": "a22b2b41752064b9e6a135262b710f0f22f48d87bba75f43f5c1a3b44ddd0119"
+      },
+      {
+        "replicate": 2,
+        "family": "ugi",
+        "request": {
+          "batch_size": 2,
+          "count": 2,
+          "device": "cpu",
+          "program_id": "ugi_3cr_agile",
+          "seed": 42,
+          "threads": 2
+        },
+        "counts": {
+          "attempts": 2,
+          "exact_l1": 2,
+          "valid": 2
+        },
+        "deterministic_replay": true,
+        "attempts_sha256": "4d3b8a6d4f37bb367a9c321c01f92c67b66cdf9be94976ec254a165c48dc0bd4"
+      },
+      {
+        "replicate": 2,
+        "family": "aza-michael",
+        "request": {
+          "batch_size": 2,
+          "count": 2,
+          "device": "cpu",
+          "program_id": "bl_2023_repeated_aza_michael",
+          "seed": 42,
+          "threads": 2
+        },
+        "counts": {
+          "attempts": 2,
+          "exact_l1": 2,
+          "valid": 2
+        },
+        "deterministic_replay": true,
+        "attempts_sha256": "62f466409f9f57958ab5d6cb4442bd0e40d232ae01fa22829082e84bde862af1"
+      },
+      {
+        "replicate": 2,
+        "family": "reductive-amination",
+        "request": {
+          "batch_size": 2,
+          "count": 2,
+          "device": "cpu",
+          "program_id": "lx_2024_repeated_reductive_amination",
+          "seed": 42,
+          "threads": 2
+        },
+        "counts": {
+          "attempts": 2,
+          "exact_l1": 2,
+          "valid": 2
+        },
+        "deterministic_replay": true,
+        "attempts_sha256": "a22b2b41752064b9e6a135262b710f0f22f48d87bba75f43f5c1a3b44ddd0119"
+      }
+    ],
+    "input_sha256s": {
+      "results/phase1/shared_bias_parallel_program_role_seed0_v2/checkpoints.tar": "10d77b9d8e947d40fe2aaa91ecd68448ff068e08339cecd4c47d862e96e39142",
+      "results/phase1/bl_lx_mixed_repeat_expansion_v2/reaction_program_atlas.csv.gz": "6b5021e986e9e514ccca74dc6b6b0ccfef6dd2e9c40f209aedf6f64bb516e5c2",
+      "results/phase1/bl_lx_mixed_repeat_expansion_v2/component_family_splits.csv.gz": "6c9f6a3d8d0668763a7f057a53f8782884f001f999303ce01dc68b9f28d42c8c",
+      "results/phase1/shared_synthesis_program_mixed_cache_v1/cache.npz": "249b92744c22109cd5994ad831555df85575bfb6bd58010dce71517e5e881114",
+      "results/phase1/shared_bias_parallel_program_role_seed0_v2/study_design.json": "d0f206f52ae708e5ffa1e3150a5c8f1513db35d4c5d912160e89e907b7aaefbd",
+      "configs/multireaction/lnpdb_reaction_programs_v1.json": "a7aba87a63e3bcf34c61fa7951fbb7a77340641ed852993b4221d3b77072f021",
+      "data/vendor/qualified_reaction_families_v1.json": "961dea191bbf6c8d169aab09f6aee18082e51696e4056fc4dc9f6fc97ff82587",
+      "data/vendor/qualified_reactions_v1.json": "296bf06238ef22acc1f55117f5ce0adaee21b1bafaf5a83f89182b0f31cc4fcf",
+      "results/phase1/shared_bias_parallel_program_role_seed0_v2/training_result.json": "44fab52d5427f654d2a24e395b77c00d2d8c7122f5ed67b51cbcc8675f870485",
+      "results/phase1/ugi_balanced_chemistry_corpus_v2/assignments.csv.gz": "9a50c703ed6aa919b251678c04b7a44e93b3233a12fc13b5d6697683bb5b5184",
+      "results/phase1/shared_bias_parallel_program_role_seed1_v2/checkpoints.tar": "a3e1e15cb6d55e6a0bc8d161a0061762ef6190c22c957fd957493bbe3860d55d",
+      "results/phase1/shared_bias_parallel_program_role_seed1_v2/study_design.json": "d0f206f52ae708e5ffa1e3150a5c8f1513db35d4c5d912160e89e907b7aaefbd",
+      "results/phase1/shared_bias_parallel_program_role_seed1_v2/training_result.json": "baa32c6551c6098917c49c2910ac4067300430483bd05d5c3e36eb64a410701e",
+      "results/phase1/shared_bias_parallel_program_role_seed2_v2/checkpoints.tar": "f500418e7cdfe6aa59b5d1261cb68c7ff715fa1a0e06498334eb727185f74506",
+      "results/phase1/shared_bias_parallel_program_role_seed2_v2/study_design.json": "d0f206f52ae708e5ffa1e3150a5c8f1513db35d4c5d912160e89e907b7aaefbd",
+      "results/phase1/shared_bias_parallel_program_role_seed2_v2/training_result.json": "95cfdd98b1aef89a4ac370947487016b3c3b342cd07e05f62db478a6e27ec7de"
+    },
+    "all_attempt_files_equal_original_qualification": true,
+    "all_checkpoint_members_and_sampling_policies_unchanged": true,
+    "baseline_receipt": "checkpoints.json",
+    "new_receipt_sha256": "991341c031b0407e18cc5915d8ddbd1debfbe0f79b341d00a792f8d66623f3bb"
+  },
+  "cache_rebuild": {
+    "sha256": "249b92744c22109cd5994ad831555df85575bfb6bd58010dce71517e5e881114",
+    "records": 204386,
+    "support": {
+      "maximum_closures": 3,
+      "maximum_heavy_atoms": 194,
+      "observed_maximum_closures": 3,
+      "observed_maximum_heavy_atoms": 194
+    },
+    "complete_result_equals_original": true,
+    "baseline_receipt": "cache_rebuild.json"
+  },
+  "training": {
+    "complete_arm_records_equal_original_smoke": true,
+    "checkpoint_archive": {
+      "bytes": 942080,
+      "logical_path": "checkpoints.tar",
+      "sha256": "27c476fb3014da20bd9742bfb27fd941171d60fd636984b2542f8f6ea2a0275f"
+    },
+    "result_sha256": "082d8132bbc56594a3e5d110b5fc94096ed504577f6ba9b793387dbf99679a1d",
+    "baseline_receipt": "training_smoke.json"
+  },
+  "interrupted_resume": {
+    "interrupted_after_optimizer_step": 1,
+    "completed_steps": 2,
+    "complete_arm_records_equal": true,
+    "receipt_sha256": "973e3e0af5b0f491ba3e471f5dc61efa87869524443ef55f7f7f3a9e811857c7"
+  },
+  "custom_evaluation": {
+    "sample_rows": 18,
+    "complete_result_equals_original": true,
+    "result_sha256": "4f7d2fce93bd8c5ce95ae9676f036ef1363113e95575fa3d6d7b07cbc3eb5b0b",
+    "baseline_receipt": "custom_checkpoint_evaluation.json"
+  },
+  "tables": {
+    "rows_matching_manuscript": 89,
+    "output_sha256s": {
+      "table-1.tex": "7429d99629ca33db1310bb308379655d3f7514ff00406bd3053647f102c7c6e4",
+      "table-2.tex": "a7ab72a8e90c2dde35d0d73a3453e0afae7bc50d197915169badf370a129b3af",
+      "table-3.tex": "b2ce2a15fdc135cc30194f6f3d473e97e9770e2c607371874aa4e31cd54e074e",
+      "table-4.tex": "b21009d1c1c893705d6b615d25b977ad6ac4a88450cb40a7d351642fa95c8812",
+      "table-5.tex": "8e9c4e90ba722e51a216a0cb065143cf0e7ea29230713d6e8a59f5a36b9a1920",
+      "table-6.tex": "9dd7802bc9b9eb03ef88c00bc14a7073086ddb6a4693d01008ded81378278ba1",
+      "table-7.tex": "371dda8f4ef614a05793dec3b86769d83a91fc0b9f19efbe6b214bfd6b0a34b1",
+      "table-8.tex": "5e0aefd7cedd536d33bcfe16fe009db8c2e797383b4d1e7d6c457889c6e60478",
+      "table-9.tex": "f82801f868f60432d776e4d1ea2e34fafb2dcb9d541c63a499908ffcff8f2374",
+      "table-10.tex": "97bdf3e21f8264dcb29342bafb1287edc1a222b14210eaaa58d7a8eae75a978f",
+      "table-11.tex": "c7dc09b231e82a1333d8e868d075323ea29c61316d03c4a8fcd33d8623059a3c"
+    }
+  },
+  "frozen_configs_manifests_manuscript_and_lockfile_unchanged": true,
+  "validation": {
+    "ruff": "pass",
+    "black": "pass",
+    "all_modules_import": "pass",
+    "local_document_links": "pass",
+    "source_inventory": "pass",
+    "diff_check": "pass"
+  },
+  "scope": "CPU checks only; no full GPU retraining, paid jobs, new scientific results or gate changes. Historical limitations and the optional batched-VJP qualification failure remain unchanged."
+}

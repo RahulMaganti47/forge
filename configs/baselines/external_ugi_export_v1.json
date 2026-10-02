@@ -1,0 +1,11 @@
+{
+  "schema_version": "forge.external_ugi_export_config.v1",
+  "inputs": {
+    "manifest": {"path": "configs/baselines/external_ugi_v1.json", "sha256": "84a169251c71ee78b91a3a6d50e05da28ed6148900f6cf4867ab8851a1ff2625"},
+    "ugi_assignments": {"path": "results/phase1/ugi_balanced_chemistry_corpus_v2/assignments.csv.gz", "sha256": "9a50c703ed6aa919b251678c04b7a44e93b3233a12fc13b5d6697683bb5b5184"},
+    "qualified_ugi_reactions": {"path": "data/vendor/qualified_reactions_v1.json", "sha256": "296bf06238ef22acc1f55117f5ce0adaee21b1bafaf5a83f89182b0f31cc4fcf"}
+  },
+  "training_fold_only": true,
+  "raw_reaction_family_count_sampling": false,
+  "candidate_selection": false
+}

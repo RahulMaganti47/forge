@@ -1,0 +1,1 @@
+"""Frozen diagnostic support components."""

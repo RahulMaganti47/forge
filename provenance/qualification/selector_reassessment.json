@@ -1,0 +1,114 @@
+{
+  "assessment": {
+    "attempts": 4,
+    "calls": {
+      "generator_calls": 4,
+      "oracle_calls": 0,
+      "reaction_calls": 4,
+      "route_calls": 0,
+      "wall_seconds": 0.0
+    },
+    "candidate_selection": false,
+    "coverage_and_precision_reported": true,
+    "method_id": "learned_inventory_selector",
+    "metrics": {
+      "ambiguous_exact_decompositions": 0,
+      "component_metrics_by_role": {
+        "amine_head": {
+          "effective_count": 4.0,
+          "novel": 0,
+          "novel_fraction": 0.0,
+          "slots": 4
+        },
+        "isocyanide_tail": {
+          "effective_count": 4.0,
+          "novel": 0,
+          "novel_fraction": 0.0,
+          "slots": 4
+        },
+        "oxoester_aldehyde_body_tail": {
+          "effective_count": 4.0,
+          "novel": 0,
+          "novel_fraction": 0.0,
+          "slots": 4
+        }
+      },
+      "component_novelty_fraction": 0.0,
+      "component_slots_evaluated": 12,
+      "connected": 4,
+      "connected_among_valid_fraction": 1.0,
+      "connected_fraction": 1.0,
+      "decomposed_products_with_any_novel_component": 0,
+      "decomposed_products_with_any_novel_component_fraction": 0.0,
+      "effective_component_count": 12.00000000000001,
+      "effective_generated_component_count": 12.00000000000001,
+      "exact_forward_verified_traces": 4,
+      "exact_l1_products_per_1000_attempts": 1000.0,
+      "exact_l1_program": 4,
+      "exact_l1_yield_per_attempt": 1.0,
+      "held_component_exact_l1_products": 0,
+      "held_component_exact_l1_products_by_role": {
+        "amine_head": 0,
+        "isocyanide_tail": 0,
+        "oxoester_aldehyde_body_tail": 0
+      },
+      "held_component_exact_l1_products_per_1000_attempts": 0.0,
+      "invalid_or_unresolved_l1": 0,
+      "invalid_samples": 0,
+      "mean_pairwise_ecfp4_distance": 0.5573683162613685,
+      "retro_decomposition_coverage_among_valid": 1.0,
+      "retro_transform_precision": 1.0,
+      "samples": 4,
+      "unique_decomposition_rows": 4,
+      "unique_exact_l1_products": 4,
+      "unique_exact_l1_products_per_1000_attempts": 1000.0,
+      "unique_exact_l1_products_per_attempt": 1.0,
+      "unique_fraction": 1.0,
+      "unique_held_component_exact_l1_products": 0,
+      "unique_method_visible_open_ended_exact_l1_products": 0,
+      "unique_method_visible_open_ended_exact_l1_products_per_1000_attempts": 0.0,
+      "unique_open_ended_exact_l1_products": 0,
+      "unique_open_ended_exact_l1_products_per_1000_attempts": 0.0,
+      "unique_open_ended_exact_l1_products_per_attempt": 0.0,
+      "unique_open_ended_whole_product_novel_exact_l1_products": 0,
+      "unique_open_ended_whole_product_novel_exact_l1_products_per_1000_attempts": 0.0,
+      "unique_valid": 4,
+      "unique_whole_product_novel_exact_l1_products": 4,
+      "unique_whole_product_novel_exact_l1_products_per_1000_attempts": 1000.0,
+      "valid": 4,
+      "valid_fraction": 1.0,
+      "valid_products_per_1000_attempts": 1000.0,
+      "valid_without_exact_decomposition": 0,
+      "whole_product_novel_to_train": 4,
+      "whole_product_novel_to_train_fraction": 1.0
+    },
+    "nonclaims": [
+      "Exact L1 replay is transform consistency, not synthesis-success probability.",
+      "A missing decomposition is an abstention, not proof that a product is unsynthesizable.",
+      "Open-endedness is relative to the components visible to that method during generation."
+    ],
+    "reductive_amination_substructure_rate_reported": false,
+    "schema_version": "forge.common_ugi_assessment.v1",
+    "seed": 20260825
+  },
+  "inputs": {
+    "attempts": {
+      "path": "/private/tmp/forge19337-selector-smoke/attempts.jsonl.gz",
+      "sha256": "a733e89906cbc27cc58f89ec025966587a079b8318f0e255f0d3b642aa264fc5"
+    },
+    "qualified_ugi_reactions": {
+      "actual_sha256": "296bf06238ef22acc1f55117f5ce0adaee21b1bafaf5a83f89182b0f31cc4fcf",
+      "expected_sha256": "296bf06238ef22acc1f55117f5ce0adaee21b1bafaf5a83f89182b0f31cc4fcf",
+      "path": "/private/tmp/forge-submission19337-release/data/vendor/qualified_reactions_v1.json",
+      "status": "verified"
+    },
+    "ugi_assignments": {
+      "actual_sha256": "9a50c703ed6aa919b251678c04b7a44e93b3233a12fc13b5d6697683bb5b5184",
+      "expected_sha256": "9a50c703ed6aa919b251678c04b7a44e93b3233a12fc13b5d6697683bb5b5184",
+      "path": "/private/tmp/forge-submission19337-release/results/phase1/ugi_balanced_chemistry_corpus_v2/assignments.csv.gz",
+      "status": "verified"
+    }
+  },
+  "output_sha256": "4fd5235eef0c4351fe1c3c1c2d07548e544c6de38a0b78ee46ed18ee766d1787",
+  "schema_version": "forge.release.common_assessment.v1"
+}

@@ -1,0 +1,105 @@
+{
+  "schema_version": "forge.shared_synthesis_program_representation_config.v1",
+  "seed": 20260822,
+  "inputs": {
+    "atom_vocabulary": {
+      "path": "results/phase1/product_v3_atom_vocabulary.json",
+      "sha256": "90ab7430354a9ffd91cfd6e19f2a125020a6547c67cd462a11f77074fd2a0cc5"
+    },
+    "ugi_assignments": {
+      "path": "results/phase1/ugi_balanced_chemistry_corpus_v2/assignments.csv.gz",
+      "sha256": "9a50c703ed6aa919b251678c04b7a44e93b3233a12fc13b5d6697683bb5b5184"
+    },
+    "ugi_corpus_result": {
+      "path": "results/phase1/ugi_balanced_chemistry_corpus_v2/result.json",
+      "sha256": "1b655ce6389f50c7310a21a287997793c592ca93de064d53bafacaee24f663a6"
+    },
+    "ugi_semantic_products": {
+      "path": "results/phase1/ugi_balanced_chemistry_corpus_v2/semantic_products.csv.gz",
+      "sha256": "13fd0204fe4a7d1402c47e4fce0ac5cce0c78410c5c8fbfbde48c552fc00da1d"
+    },
+    "ugi_semantic_atoms": {
+      "path": "results/phase1/ugi_balanced_chemistry_corpus_v2/semantic_atoms.csv.gz",
+      "sha256": "08f6241aa64eb0e9a94594f0678f7c81da796b13e392cfacfb2336e8b1e671a1"
+    },
+    "multireaction_corpus_result": {
+      "path": "results/phase1/multireaction_program_corpus_v1/result.json",
+      "sha256": "df6f06fc1a4f9239ee24cbd46e0de8805a5e5063e3e9087379182868695e401d"
+    },
+    "multireaction_atlas": {
+      "path": "results/phase1/multireaction_program_corpus_v1/reaction_program_atlas.csv.gz",
+      "sha256": "421facddd3b4893be9f358be59f40da25b54d4de7ed8b43844a5d9efebfb28e1"
+    },
+    "multireaction_semantic_atoms": {
+      "path": "results/phase1/multireaction_program_corpus_v1/semantic_atoms.csv.gz",
+      "sha256": "ca49423ce3c78931770f7f8a8bc49cfab26ade2801b4fe62cd43da539e17ad83"
+    }
+  },
+  "programs": [
+    {
+      "program_id": "ugi_3cr_agile",
+      "source": "ugi",
+      "roles": [
+        "amine_head",
+        "assembly_introduced",
+        "isocyanide_tail",
+        "oxoester_aldehyde_body_tail"
+      ],
+      "core_positions": [
+        "map_1",
+        "map_2",
+        "map_3",
+        "map_4",
+        "template_introduced_0"
+      ],
+      "allowed_depths": [1],
+      "expected_records": 112386,
+      "fix_core_atoms": true
+    },
+    {
+      "program_id": "bl_2023_repeated_aza_michael",
+      "source": "multireaction",
+      "roles": [
+        "alkyl_acrylate_or_acrylamide_tail",
+        "amine_head"
+      ],
+      "core_positions": [
+        "map_1",
+        "map_2",
+        "map_3",
+        "map_4",
+        "map_5",
+        "map_6"
+      ],
+      "allowed_depths": [1, 2, 3, 4],
+      "expected_records": 610,
+      "fix_core_atoms": false
+    },
+    {
+      "program_id": "lx_2024_repeated_reductive_amination",
+      "source": "multireaction",
+      "roles": [
+        "aldehyde_tail",
+        "amine_head"
+      ],
+      "core_positions": [
+        "map_1",
+        "map_2"
+      ],
+      "allowed_depths": [1, 2],
+      "expected_records": 154,
+      "fix_core_atoms": false
+    }
+  ],
+  "support_bounds": {
+    "maximum_heavy_atoms": 194,
+    "maximum_closures": 3,
+    "atom_vocabulary": "phase1_product_v3_explicit_aromaticity"
+  },
+  "nonclaims": [
+    "Exact graph reconstruction is a representation qualification, not evidence of model generalization.",
+    "Exact L1 program replay is transform consistency, not synthesis-success probability or route certification.",
+    "The shared representation does not authorize a production multi-reaction training run.",
+    "No reductive-amination substructure hit rate is computed or reported."
+  ]
+}

@@ -24,21 +24,21 @@ from forge.corpus.synthesis_program_representation import (
     synthesis_program_contracts,
     synthesis_program_vocabulary,
 )
-from forge.model.defog_feasibility import AtomState
-from forge.model.reaction_program_conditioning import ReactionProgramVocabulary
-from forge.model.sparse_topology_feasibility import INDEX_TO_DENSE_BOND, SparseGraphRecord
-from forge.model.synthesis_program_graph import (
+from forge.model.conditioning.reaction_program import ReactionProgramVocabulary
+from forge.model.conditioning.ugi import tensorize_ugi_l1_support_record
+from forge.model.conditioning.ugi_chemistry import (
+    core_schema_from_record,
+    project_chemistry_topology_condition,
+)
+from forge.model.networks.dense_flow import AtomState
+from forge.model.networks.sparse_flow import INDEX_TO_DENSE_BOND, SparseGraphRecord
+from forge.model.representation.synthesis_graph import (
     SynthesisProgramComponentBlock,
     SynthesisProgramGraphError,
     SynthesisProgramGraphRecord,
     tensorize_synthesis_program_product,
 )
-from forge.model.ugi_adapter_features import tensorize_ugi_l1_support_record
-from forge.model.ugi_chemistry_interface import (
-    core_schema_from_record,
-    project_chemistry_topology_condition,
-)
-from forge.model.vocabulary import load_atom_vocabulary
+from forge.model.representation.vocabulary import load_atom_vocabulary
 
 CACHE_SCHEMA = "forge.synthesis_program_training_cache.v1"
 RESULT_SCHEMA = "forge.synthesis_program_cache_qualification.v1"

@@ -1,0 +1,60 @@
+{
+  "schema_version": "phase1_ugi_morphology_high_potency_challenger_config.v1",
+  "task": "One frozen read-only audit of whether targeting the observed HeLa upper quartile repairs the failed continuous morphology-potency proposal",
+  "inputs": {
+    "curated_agile": {
+      "path": "results/m0_07/agile_oracle_curated.csv.gz",
+      "sha256": "9415f1c0f40399f87d3df00c0c83a341a3776ca110e6bc98763fdcbd420a27be"
+    },
+    "heldout_applicability": {
+      "path": "results/phase1/ugi_distributional_applicability_v3/heldout_applicability.csv.gz",
+      "sha256": "8af8624a3c0f1d2a8072248c7e8b89c3a58a7380dd32b65c71c357eb72c00da2"
+    },
+    "training_cache": {
+      "path": "results/phase1/ugi_balanced_training_cache_v2/ugi_training_cache.pt",
+      "sha256": "b862b7a54c0cb325f0a962fea42a78138df1a81c88b9c0e86d56b6448e519c46"
+    },
+    "promoted_proposal_ledger": {
+      "path": "results/phase1/ugi_promoted_morphology_proposal_v1/proposal_ledger.jsonl.gz",
+      "sha256": "b61f94a20df2e14c39d9455952dde2c11943df5dd85178963dcec206f799eef2"
+    },
+    "prior_potency_failure_audit": {
+      "path": "results/phase1/ugi_potency_promotion_failure_audit_v1/result.json",
+      "sha256": "149f24fb0cbcac378f6955dba341cad732736ebdf8168cc390ade41bf409a1d8"
+    }
+  },
+  "analysis": {
+    "minimum_cohort_records": 400,
+    "primary_scheme": "exact_program_hash",
+    "models": [
+      "role_factorized_logistic",
+      "numeric_logistic"
+    ],
+    "regularization": [
+      0.01,
+      0.1,
+      1.0,
+      10.0
+    ],
+    "clustered_bootstrap": {
+      "replicates": 2000,
+      "seed": 31082026
+    },
+    "gates": {
+      "minimum_primary_auc_ci_lower": 0.5,
+      "minimum_average_precision_above_prevalence": 0.02,
+      "minimum_top_quartile_gain_ci_lower": 0.0,
+      "minimum_role_blocked_auc": 0.5,
+      "minimum_positive_auc_head_fraction": 0.6,
+      "minimum_median_head_auc": 0.5,
+      "minimum_positive_gain_head_fraction": 0.6
+    }
+  },
+  "scope": {
+    "read_only": true,
+    "single_challenger": true,
+    "generator_changed": false,
+    "applicability_policy_changed": false,
+    "production_promotion_from_same_rows": false
+  }
+}

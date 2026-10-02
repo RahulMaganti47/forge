@@ -1,83 +1,64 @@
-# FORGE: anonymous review repository
+# FORGE
 
-Research artifacts for the three-family ICLR manuscript: AGILE-type Ugi 3-CR,
-repeated aza-Michael addition and repeated reductive amination.
+[Paper](paper/submission.pdf) · [Experiments](examples/README.md)
 
-This release contains historical model, sampling, training and evaluation code;
-the three final model checkpoints; the packed training cache; experiment
-specifications; frozen result summaries for the main comparison tables; and
-eight lipid examples with exact L1 building-block replay checks.
+Reaction-guided generative design of ionizable lipids, using AGILE-type Ugi 3CR,
+repeated aza-Michael addition, and repeated reductive amination.
 
-## Reproduce the reported aggregates
+![FORGE generation and assembly verification](paper/overview.png)
 
-From this directory, using Python 3.10 or later:
+## Installation
 
-```bash
-python3 scripts/reproduce.py
-```
-
-This needs only the Python standard library. It verifies every manifest hash,
-preserves all generation-attempt denominators, and recomputes three-seed means
-and sample standard deviations from the retained evaluation summaries.
-The report is written to `outputs/reproduction.json`.
-
-The corrected Ugi results are **862.6 ± 19.2 distinct exact-L1 products** and
-**839.2 ± 26.5 training-catalogue component-novel products**, per 1,000 attempts.
-The component-novel calculation uses the shared training catalogue throughout.
-
-## Check the chemistry and model artifacts
+Use Python 3.11 and [uv](https://docs.astral.sh/uv/):
 
 ```bash
-python3 -m venv .venv
-. .venv/bin/activate
-python -m pip install -r requirements.txt
-PYTHONPATH=. python scripts/reproduce.py --chemistry --checkpoints
-PYTHONPATH=. python -m pytest -q tests
+uv sync --frozen --extra dev --extra modal
 ```
 
-Checkpoint and cache files are split into parts smaller than 8 MB for anonymous
-hosting. The script reconstructs them under `restored/`, checks their complete
-SHA-256 hashes, loads each model strictly on CPU, and verifies its state hash.
-Use `python scripts/reproduce.py --restore` to reconstruct files without PyTorch.
-The chemistry check replays all eight displayed lipids using the pinned registry.
+## Usage
 
-## Contents
+Fetch the paper checkpoints and evaluation inputs, then generate molecules or reproduce tables:
 
-| Location | Contents |
-| --- | --- |
-| `forge/model/` | Historical graph transformer, flow, training and sampling implementation |
-| `forge/assembly/` | Registry-backed final-assembly adapters |
-| `experiments/phase1/multireaction/` | Historical training/evaluation functions and retained run specifications |
-| `evidence/table1/` | Conditioned, shared-null and cyclic-control evaluation summaries for three seeds |
-| `evidence/table2/` | Common Ugi assessments for nine methods and three seeds |
-| `evidence/training/` | Training receipts and model designs |
-| `evidence/atlas_l1.json` | Product and building-block identities and recorded replay results |
-| `artifacts/` | Final checkpoints at step 9143 and the packed training cache |
-| `MANIFEST.json` | Release-file hashes and original-source hashes |
+```bash
+uv run forge artifacts fetch --group paper-model-v1
+uv run forge artifacts fetch --group submission19337-evidence-v1
+uv run forge generate --replicate 0 --family ugi --count 2 --seed 42 \
+  --device cpu --output results/demo
+uv run forge reproduce --target all --output results/tables
+```
 
-## Reproduction limits
+Artifacts are stored in the `forge-paper-artifacts` Modal volume in `kosha-labs/main`.
+Teammates need workspace membership and an authenticated Modal profile. See
+[artifact access](examples/README.md#checkpoints-and-data) for offline restoration and optional weights.
 
-The code was extracted from the retained snapshot that matched the complete
-seed-0 evaluation-source fingerprint. Its relevant file hashes are recorded in
-`evidence/source_status.json`. Exact evaluation-source matches for seeds 1 and 2
-and a complete historical training-source/environment manifest were not
-recovered. Loading their checkpoints with the retained code does not establish
-that this exact source produced those runs.
+Generation retains every attempt, including failures. Table reproduction aggregates saved evidence.
+The [experiment guide](examples/README.md) covers training, evaluation, baselines, figures, and
+[reproduction limitations](examples/README.md#limitations).
 
-The packed cache includes training, calibration and held-out records with their
-fold assignments. The complete upstream corpus-construction inputs, intermediate
-checkpoints, all per-attempt evaluation ledgers and external baseline environments
-are not included. Historical experiment specifications reference additional
-hash-pinned inputs; they are documentary specifications, not standalone rerun
-commands. The commands above check retained summaries, chemistry and model
-artifacts. They do not rerun training or the full production comparison.
+## Structure
 
-Some unchanged historical modules and receipts contain route-related interfaces
-or diagnostics. They are retained only where required by source dependencies or
-immutable records. The three-family paper evaluates generation and final-assembly
-consistency; this release makes no precursor-route, supplier-availability, complete
-dossier or experimental synthesis claim.
+```text
+forge/          # Library: models, flow, chemistry, data, and evaluation
+examples/       # Paper experiments, table aggregation, and reproduction checks
+tests/          # Local correctness checks
+configs/        # Frozen experiment settings
+paper/          # Manuscript, bibliography, and figures
+manifests/      # Checkpoint and data identities
+provenance/     # Source and result records
+```
 
-This is a fresh anonymous snapshot with no original Git history. It contains no
-manuscript PDF, experimental images or author metadata. The package requirements
-describe the review checks; they are not a recovered training-environment lockfile.
+The primary model is [model/networks/transformer.py](forge/model/networks/transformer.py), with
+[semantic losses](forge/model/objectives/transformer.py) and [PCGrad](forge/model/objectives/pcgrad.py).
+
+## Local checks
+
+```bash
+uv run pytest
+uv run python examples/check_reproduction.py --output results/reproduction-check
+```
+
+The reproduction check verifies both artifact bundles, matches 89 numerical table rows, and repeats
+two CPU Ugi attempts. Full GPU retraining remains unverified; unavailable historical inputs are
+listed in the experiment guide.
+
+Implementation code is [MIT licensed](LICENSE). Third-party terms are in [THIRD_PARTY.md](THIRD_PARTY.md).

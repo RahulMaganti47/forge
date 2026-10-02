@@ -1,0 +1,858 @@
+{
+  "schema_version": "forge.release.bundle.v1",
+  "reference_pdf_sha256": "7ea7cf2e51922e5e58cd6659dc183409e465ede2eb1586fc8d0ec39935c4fd53",
+  "storage": {
+    "volume": "forge-paper-artifacts",
+    "prefix": "/submission19337-evidence-v1",
+    "workspace": "kosha-labs",
+    "environment": "main"
+  },
+  "files": [
+    {
+      "repo_path": "data/source_cache/m0_09_publishers/PMC10544676/assets/41587_2023_1679_MOESM1_ESM.pdf",
+      "bundle_path": "data/source_cache/m0_09_publishers/PMC10544676/assets/41587_2023_1679_MOESM1_ESM.pdf",
+      "bytes": 9267004,
+      "sha256": "46be449ddcef11da686d499015c868c767f4c02714c54e3d5ef5db35c4a42490"
+    },
+    {
+      "repo_path": "data/source_cache/m0_09_review_assets/PMC10904786/41467_2024_45422_MOESM1_ESM.pdf",
+      "bundle_path": "data/source_cache/m0_09_review_assets/PMC10904786/41467_2024_45422_MOESM1_ESM.pdf",
+      "bytes": 7379733,
+      "sha256": "7f5b1c6413e4db3b09cb86296139ba76848b06de96b7165942643233ad6a3e2c"
+    },
+    {
+      "repo_path": "data/splits/m0_03_constitutional/r0_fold_assignments.csv",
+      "bundle_path": "data/splits/m0_03_constitutional/r0_fold_assignments.csv",
+      "bytes": 4110427,
+      "sha256": "c9e616f4a80090c92b16fc9cdceefa4d1163da34659cb43319813fcac5e0ac4d"
+    },
+    {
+      "repo_path": "data/vendor/lnpdb_fc7c389.csv",
+      "bundle_path": "data/vendor/lnpdb_fc7c389.csv",
+      "bytes": 20118803,
+      "sha256": "3493f27306419facd0958589030ed37f272f05c81ad47dd7bc1b8ce0284a57b3"
+    },
+    {
+      "repo_path": "results/m0_03/r0_constitutional.csv.gz",
+      "bundle_path": "results/m0_03/r0_constitutional.csv.gz",
+      "bytes": 1665612,
+      "sha256": "fc8bcb6ed618abf4e571a26564f59c716a80b6e6ecf919f451101fb32f552823"
+    },
+    {
+      "repo_path": "results/phase1/bl_core_constrained_production_cache_v1/cache.npz",
+      "bundle_path": "results/phase1/bl_core_constrained_production_cache_v1/cache.npz",
+      "bytes": 7331306,
+      "sha256": "3744e066325f3e203139797ab48eb54725f95ce09b39209905fb656df53c5973"
+    },
+    {
+      "repo_path": "results/phase1/bl_lx_mixed_repeat_expansion_v2/result.json",
+      "bundle_path": "results/phase1/bl_lx_mixed_repeat_expansion_v2/result.json",
+      "bytes": 12627,
+      "sha256": "5fa8e4f8bbc79ea4d286b1193262a9cf4bdea56a1ddeecfaf17363c387c5e980"
+    },
+    {
+      "repo_path": "results/phase1/bl_lx_mixed_repeat_expansion_v2/semantic_atoms.csv.gz",
+      "bundle_path": "results/phase1/bl_lx_mixed_repeat_expansion_v2/semantic_atoms.csv.gz",
+      "bytes": 16584822,
+      "sha256": "962db4a740bae18c3cadd330e2c7a3f5c0deb3ac120b45f1d681ab962ea1e8a0"
+    },
+    {
+      "repo_path": "results/phase1/fact_generous_common_assessment_seed0_v1/assessed_attempts.jsonl.gz",
+      "bundle_path": "results/phase1/fact_generous_common_assessment_seed0_v1/assessed_attempts.jsonl.gz",
+      "bytes": 49743,
+      "sha256": "af3f2769e7c0b68399c436f234d9e75d76f42d7db1a3c7cd09718b073191dd91"
+    },
+    {
+      "repo_path": "results/phase1/fact_generous_common_assessment_seed1_v1/assessed_attempts.jsonl.gz",
+      "bundle_path": "results/phase1/fact_generous_common_assessment_seed1_v1/assessed_attempts.jsonl.gz",
+      "bytes": 73967,
+      "sha256": "5a3e42a5f2a14d04533bc71dd94db58eba4521df8b31dcf383a17bfba9e76209"
+    },
+    {
+      "repo_path": "results/phase1/fact_generous_common_assessment_seed2_v1/assessed_attempts.jsonl.gz",
+      "bundle_path": "results/phase1/fact_generous_common_assessment_seed2_v1/assessed_attempts.jsonl.gz",
+      "bytes": 49405,
+      "sha256": "04854850d94497239d9cbd0fb1ea70eb6881c164675904396850a8b1dce0d073"
+    },
+    {
+      "repo_path": "results/phase1/fact_matched_common_assessment_seed0_v1/assessed_attempts.jsonl.gz",
+      "bundle_path": "results/phase1/fact_matched_common_assessment_seed0_v1/assessed_attempts.jsonl.gz",
+      "bytes": 23997,
+      "sha256": "4de28a1e49932f8b5046838677bc96d5c8b239354f0d17ec11c693d720148c44"
+    },
+    {
+      "repo_path": "results/phase1/fact_matched_common_assessment_seed1_v1/assessed_attempts.jsonl.gz",
+      "bundle_path": "results/phase1/fact_matched_common_assessment_seed1_v1/assessed_attempts.jsonl.gz",
+      "bytes": 24414,
+      "sha256": "e618089a1e8711e6c0dc2d74bdcfe83fb6d4ab14af9055239c07d30ba4e491e3"
+    },
+    {
+      "repo_path": "results/phase1/fact_matched_common_assessment_seed2_v1/assessed_attempts.jsonl.gz",
+      "bundle_path": "results/phase1/fact_matched_common_assessment_seed2_v1/assessed_attempts.jsonl.gz",
+      "bytes": 22012,
+      "sha256": "0b1b0bb0fa6ea697e80991a7a676468734f20f123b2458c095326e46cbbb9763"
+    },
+    {
+      "repo_path": "results/phase1/finite_catalogue_common_assessment_seed0_v1/assessed_attempts.jsonl.gz",
+      "bundle_path": "results/phase1/finite_catalogue_common_assessment_seed0_v1/assessed_attempts.jsonl.gz",
+      "bytes": 331165,
+      "sha256": "4c97ecadfa04defc720636af7f122ae4e3495f573be2ca06a9e164df9f59cf76"
+    },
+    {
+      "repo_path": "results/phase1/finite_catalogue_common_assessment_seed1_v1/assessed_attempts.jsonl.gz",
+      "bundle_path": "results/phase1/finite_catalogue_common_assessment_seed1_v1/assessed_attempts.jsonl.gz",
+      "bytes": 331469,
+      "sha256": "7232c6b219ef82fdcc5da9c618bfd603b2b4111e1531f117c4e457223cbe9f94"
+    },
+    {
+      "repo_path": "results/phase1/finite_catalogue_common_assessment_seed2_v1/assessed_attempts.jsonl.gz",
+      "bundle_path": "results/phase1/finite_catalogue_common_assessment_seed2_v1/assessed_attempts.jsonl.gz",
+      "bytes": 331173,
+      "sha256": "c2b1c64ee7974428ed74f8b980a417d20502c5e898f5b9a6b6863e65c3f22492"
+    },
+    {
+      "repo_path": "results/phase1/forge_transformer_core_saturation_common_assessment_seed0_v2/assessed_attempts.jsonl.gz",
+      "bundle_path": "results/phase1/forge_transformer_core_saturation_common_assessment_seed0_v2/assessed_attempts.jsonl.gz",
+      "bytes": 82142,
+      "sha256": "41d3ae8a2fd6cf219d4cb78c9010635349d7ce435183ea770c71b9d842b81967"
+    },
+    {
+      "repo_path": "results/phase1/forge_transformer_core_saturation_common_assessment_seed1_v2/assessed_attempts.jsonl.gz",
+      "bundle_path": "results/phase1/forge_transformer_core_saturation_common_assessment_seed1_v2/assessed_attempts.jsonl.gz",
+      "bytes": 83334,
+      "sha256": "528fc876a67d8906428614ee02d4d02fa7813c8387133de72b51ca93d3395bc6"
+    },
+    {
+      "repo_path": "results/phase1/forge_transformer_core_saturation_common_assessment_seed2_v2/assessed_attempts.jsonl.gz",
+      "bundle_path": "results/phase1/forge_transformer_core_saturation_common_assessment_seed2_v2/assessed_attempts.jsonl.gz",
+      "bytes": 79006,
+      "sha256": "46126bd2c8dc0275e7639d8eb91c52e6c99eb2e0f5507522b03de2ccc838e859"
+    },
+    {
+      "repo_path": "results/phase1/genmol_safe_common_assessment_seed0_v1/assessed_attempts.jsonl.gz",
+      "bundle_path": "results/phase1/genmol_safe_common_assessment_seed0_v1/assessed_attempts.jsonl.gz",
+      "bytes": 19802,
+      "sha256": "db0769f480737fd95e47891b87e723fa0914912f82c88b7398a5d47cdb210964"
+    },
+    {
+      "repo_path": "results/phase1/genmol_safe_common_assessment_seed1_v1/assessed_attempts.jsonl.gz",
+      "bundle_path": "results/phase1/genmol_safe_common_assessment_seed1_v1/assessed_attempts.jsonl.gz",
+      "bytes": 19865,
+      "sha256": "67ee8706d9d0b2250d374cff8e09571e474843fb77024a488d412ad2e04aa0b6"
+    },
+    {
+      "repo_path": "results/phase1/genmol_safe_common_assessment_seed2_v1/assessed_attempts.jsonl.gz",
+      "bundle_path": "results/phase1/genmol_safe_common_assessment_seed2_v1/assessed_attempts.jsonl.gz",
+      "bytes": 19816,
+      "sha256": "1e56817f57ac5b68dffbe7ec3a3f01c7022c18b52300db0f484190ab9504586f"
+    },
+    {
+      "repo_path": "results/phase1/multireaction_program_corpus_v1/component_disjoint_splits.csv.gz",
+      "bundle_path": "results/phase1/multireaction_program_corpus_v1/component_disjoint_splits.csv.gz",
+      "bytes": 12977,
+      "sha256": "31e1157895c67644073e45d064563daa2cdeecdadba8c7fc21a42facd4214923"
+    },
+    {
+      "repo_path": "results/phase1/multireaction_program_corpus_v1/reaction_program_atlas.csv.gz",
+      "bundle_path": "results/phase1/multireaction_program_corpus_v1/reaction_program_atlas.csv.gz",
+      "bytes": 21508,
+      "sha256": "421facddd3b4893be9f358be59f40da25b54d4de7ed8b43844a5d9efebfb28e1"
+    },
+    {
+      "repo_path": "results/phase1/multireaction_program_corpus_v1/result.json",
+      "bundle_path": "results/phase1/multireaction_program_corpus_v1/result.json",
+      "bytes": 2840,
+      "sha256": "df6f06fc1a4f9239ee24cbd46e0de8805a5e5063e3e9087379182868695e401d"
+    },
+    {
+      "repo_path": "results/phase1/multireaction_program_corpus_v1/semantic_atoms.csv.gz",
+      "bundle_path": "results/phase1/multireaction_program_corpus_v1/semantic_atoms.csv.gz",
+      "bytes": 168746,
+      "sha256": "ca49423ce3c78931770f7f8a8bc49cfab26ade2801b4fe62cd43da539e17ad83"
+    },
+    {
+      "repo_path": "results/phase1/product_v3_atom_vocabulary.json",
+      "bundle_path": "results/phase1/product_v3_atom_vocabulary.json",
+      "bytes": 1963,
+      "sha256": "90ab7430354a9ffd91cfd6e19f2a125020a6547c67cd462a11f77074fd2a0cc5"
+    },
+    {
+      "repo_path": "results/phase1/reaction_program_transformer_overfit_v1/result.json",
+      "bundle_path": "results/phase1/reaction_program_transformer_overfit_v1/result.json",
+      "bytes": 2901,
+      "sha256": "2e51fcf71f2daf791b9913d9e2dc0859f0d8fc8d346a855f4a0e4b4ea534081b"
+    },
+    {
+      "repo_path": "results/phase1/shared_null_posthoc_common_assessment_seed0_v1/assessed_attempts.jsonl.gz",
+      "bundle_path": "results/phase1/shared_null_posthoc_common_assessment_seed0_v1/assessed_attempts.jsonl.gz",
+      "bytes": 36292,
+      "sha256": "a36fe87acdf34c233715ee54075011490d4b1a5024ff853963f2b774a433e72c"
+    },
+    {
+      "repo_path": "results/phase1/shared_null_posthoc_common_assessment_seed1_v1/assessed_attempts.jsonl.gz",
+      "bundle_path": "results/phase1/shared_null_posthoc_common_assessment_seed1_v1/assessed_attempts.jsonl.gz",
+      "bytes": 36412,
+      "sha256": "67f97af43a0681f4725f35e71ef9df7ba923d45eb3ddeb882adc6dadb4dbd4b5"
+    },
+    {
+      "repo_path": "results/phase1/shared_null_posthoc_common_assessment_seed2_v1/assessed_attempts.jsonl.gz",
+      "bundle_path": "results/phase1/shared_null_posthoc_common_assessment_seed2_v1/assessed_attempts.jsonl.gz",
+      "bytes": 38752,
+      "sha256": "9cb14578f5c452ed9220be5f42d91b2a6cfabf9b6693ef36e344614668fa5a0c"
+    },
+    {
+      "repo_path": "results/phase1/shared_synthesis_program_mixed_design_v1/design.json",
+      "bundle_path": "results/phase1/shared_synthesis_program_mixed_design_v1/design.json",
+      "bytes": 11305,
+      "sha256": "c285361670917485233871be4c72b6b2bc6c641e9921e140296475376fb0d3d6"
+    },
+    {
+      "repo_path": "results/phase1/shared_synthesis_program_mixed_representation_v1/result.json",
+      "bundle_path": "results/phase1/shared_synthesis_program_mixed_representation_v1/result.json",
+      "bytes": 8467,
+      "sha256": "426666c7f59dc6f5ec6143dc06d23cbfaef6c51af475ef20c53cdc6bbbed8ed7"
+    },
+    {
+      "repo_path": "results/phase1/shared_synthesis_program_representation_v1/result.json",
+      "bundle_path": "results/phase1/shared_synthesis_program_representation_v1/result.json",
+      "bytes": 7868,
+      "sha256": "487c7382af3a18099505aa1e01b981b2b9b9c7b191e0cd7a36b79ad5c318bb88"
+    },
+    {
+      "repo_path": "results/phase1/shared_synthesis_program_training_integration_v1/qualification/result.json",
+      "bundle_path": "results/phase1/shared_synthesis_program_training_integration_v1/qualification/result.json",
+      "bytes": 1934,
+      "sha256": "ecfd968181e3729843d4ccac6f3a7d046dc8475ff23e5ead49fbe2193c74cad1"
+    },
+    {
+      "repo_path": "results/phase1/ugi_balanced_chemistry_corpus_v2/result.json",
+      "bundle_path": "results/phase1/ugi_balanced_chemistry_corpus_v2/result.json",
+      "bytes": 3814,
+      "sha256": "1b655ce6389f50c7310a21a287997793c592ca93de064d53bafacaee24f663a6"
+    },
+    {
+      "repo_path": "results/phase1/ugi_balanced_chemistry_corpus_v2/semantic_atoms.csv.gz",
+      "bundle_path": "results/phase1/ugi_balanced_chemistry_corpus_v2/semantic_atoms.csv.gz",
+      "bytes": 40656153,
+      "sha256": "08f6241aa64eb0e9a94594f0678f7c81da796b13e392cfacfb2336e8b1e671a1"
+    },
+    {
+      "repo_path": "results/phase1/ugi_balanced_chemistry_corpus_v2/semantic_products.csv.gz",
+      "bundle_path": "results/phase1/ugi_balanced_chemistry_corpus_v2/semantic_products.csv.gz",
+      "bytes": 9614211,
+      "sha256": "13fd0204fe4a7d1402c47e4fce0ac5cce0c78410c5c8fbfbde48c552fc00da1d"
+    },
+    {
+      "repo_path": "results/phase1/ugi_bounded_hybrid_route_cascade_v1/component_route_ledger.jsonl.gz",
+      "bundle_path": "results/phase1/ugi_bounded_hybrid_route_cascade_v1/component_route_ledger.jsonl.gz",
+      "bytes": 104971,
+      "sha256": "0076d72f7649c5b2b6d7fad242b0ecc0a667d232c137dbd282a52ff34a3e6a20"
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed0/inputs/calibration.csv.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed0/inputs/calibration.csv.gz",
+      "sha256": "0512419ab0926d88113ddb9cd12eb63fe7cb39ed86edaeb419947c5224fc9580",
+      "bytes": 317324
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed0/inputs/calibration.smi",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed0/inputs/calibration.smi",
+      "sha256": "29d48b7b5482a04ca795b5197434187cbedefa0f8b056398a1f6935c78383f38",
+      "bytes": 833671
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed0/inputs/heldout.csv.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed0/inputs/heldout.csv.gz",
+      "sha256": "cb4129187583a633ccb4ca8003b3dc0ea3646c46716b7947f0f92e4ff8ae70a9",
+      "bytes": 601920
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed0/inputs/heldout.smi",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed0/inputs/heldout.smi",
+      "sha256": "07100fc0f1cd86fa362ebc2cd55b0d964f2cbc3fffae1034b09e1f20e301697d",
+      "bytes": 1653366
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed0/inputs/train.csv.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed0/inputs/train.csv.gz",
+      "sha256": "c168a351990d28069739f7b651c50197234f183f634dd5ca1982c348a887d2c7",
+      "bytes": 1316494
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed0/inputs/train.smi",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed0/inputs/train.smi",
+      "sha256": "09e18eb5a0e3fa15ac971248bba99afc3d4e2abebad4376c7c0cfca6b073a2a1",
+      "bytes": 3590061
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed0/inputs/train_components.csv.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed0/inputs/train_components.csv.gz",
+      "sha256": "bd5fc3f71640c05118c2ce05919bed7bfe605b836121fb576017c8bfdfc059c6",
+      "bytes": 2857
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed0/inputs/ugi_reaction.json",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed0/inputs/ugi_reaction.json",
+      "sha256": "8355fe17366cba2891aa1f3e79338fb63120dfa77fdc26343197b03dbe1ea482",
+      "bytes": 5338
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed1/inputs/calibration.csv.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed1/inputs/calibration.csv.gz",
+      "sha256": "0512419ab0926d88113ddb9cd12eb63fe7cb39ed86edaeb419947c5224fc9580",
+      "bytes": 317324
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed1/inputs/calibration.smi",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed1/inputs/calibration.smi",
+      "sha256": "29d48b7b5482a04ca795b5197434187cbedefa0f8b056398a1f6935c78383f38",
+      "bytes": 833671
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed1/inputs/heldout.csv.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed1/inputs/heldout.csv.gz",
+      "sha256": "cb4129187583a633ccb4ca8003b3dc0ea3646c46716b7947f0f92e4ff8ae70a9",
+      "bytes": 601920
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed1/inputs/heldout.smi",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed1/inputs/heldout.smi",
+      "sha256": "07100fc0f1cd86fa362ebc2cd55b0d964f2cbc3fffae1034b09e1f20e301697d",
+      "bytes": 1653366
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed1/inputs/train.csv.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed1/inputs/train.csv.gz",
+      "sha256": "c168a351990d28069739f7b651c50197234f183f634dd5ca1982c348a887d2c7",
+      "bytes": 1316494
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed1/inputs/train.smi",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed1/inputs/train.smi",
+      "sha256": "09e18eb5a0e3fa15ac971248bba99afc3d4e2abebad4376c7c0cfca6b073a2a1",
+      "bytes": 3590061
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed1/inputs/train_components.csv.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed1/inputs/train_components.csv.gz",
+      "sha256": "bd5fc3f71640c05118c2ce05919bed7bfe605b836121fb576017c8bfdfc059c6",
+      "bytes": 2857
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed1/inputs/ugi_reaction.json",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed1/inputs/ugi_reaction.json",
+      "sha256": "8355fe17366cba2891aa1f3e79338fb63120dfa77fdc26343197b03dbe1ea482",
+      "bytes": 5338
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed2/inputs/calibration.csv.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed2/inputs/calibration.csv.gz",
+      "sha256": "0512419ab0926d88113ddb9cd12eb63fe7cb39ed86edaeb419947c5224fc9580",
+      "bytes": 317324
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed2/inputs/calibration.smi",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed2/inputs/calibration.smi",
+      "sha256": "29d48b7b5482a04ca795b5197434187cbedefa0f8b056398a1f6935c78383f38",
+      "bytes": 833671
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed2/inputs/heldout.csv.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed2/inputs/heldout.csv.gz",
+      "sha256": "cb4129187583a633ccb4ca8003b3dc0ea3646c46716b7947f0f92e4ff8ae70a9",
+      "bytes": 601920
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed2/inputs/heldout.smi",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed2/inputs/heldout.smi",
+      "sha256": "07100fc0f1cd86fa362ebc2cd55b0d964f2cbc3fffae1034b09e1f20e301697d",
+      "bytes": 1653366
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed2/inputs/train.csv.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed2/inputs/train.csv.gz",
+      "sha256": "c168a351990d28069739f7b651c50197234f183f634dd5ca1982c348a887d2c7",
+      "bytes": 1316494
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed2/inputs/train.smi",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed2/inputs/train.smi",
+      "sha256": "09e18eb5a0e3fa15ac971248bba99afc3d4e2abebad4376c7c0cfca6b073a2a1",
+      "bytes": 3590061
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed2/inputs/train_components.csv.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed2/inputs/train_components.csv.gz",
+      "sha256": "bd5fc3f71640c05118c2ce05919bed7bfe605b836121fb576017c8bfdfc059c6",
+      "bytes": 2857
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed2/inputs/ugi_reaction.json",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed2/inputs/ugi_reaction.json",
+      "sha256": "8355fe17366cba2891aa1f3e79338fb63120dfa77fdc26343197b03dbe1ea482",
+      "bytes": 5338
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed0/inputs/calibration.csv.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed0/inputs/calibration.csv.gz",
+      "sha256": "0512419ab0926d88113ddb9cd12eb63fe7cb39ed86edaeb419947c5224fc9580",
+      "bytes": 317324
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed0/inputs/calibration.smi",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed0/inputs/calibration.smi",
+      "sha256": "29d48b7b5482a04ca795b5197434187cbedefa0f8b056398a1f6935c78383f38",
+      "bytes": 833671
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed0/inputs/heldout.csv.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed0/inputs/heldout.csv.gz",
+      "sha256": "cb4129187583a633ccb4ca8003b3dc0ea3646c46716b7947f0f92e4ff8ae70a9",
+      "bytes": 601920
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed0/inputs/heldout.smi",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed0/inputs/heldout.smi",
+      "sha256": "07100fc0f1cd86fa362ebc2cd55b0d964f2cbc3fffae1034b09e1f20e301697d",
+      "bytes": 1653366
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed0/inputs/train.csv.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed0/inputs/train.csv.gz",
+      "sha256": "c168a351990d28069739f7b651c50197234f183f634dd5ca1982c348a887d2c7",
+      "bytes": 1316494
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed0/inputs/train.smi",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed0/inputs/train.smi",
+      "sha256": "09e18eb5a0e3fa15ac971248bba99afc3d4e2abebad4376c7c0cfca6b073a2a1",
+      "bytes": 3590061
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed0/inputs/train_components.csv.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed0/inputs/train_components.csv.gz",
+      "sha256": "bd5fc3f71640c05118c2ce05919bed7bfe605b836121fb576017c8bfdfc059c6",
+      "bytes": 2857
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed0/inputs/ugi_reaction.json",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed0/inputs/ugi_reaction.json",
+      "sha256": "8355fe17366cba2891aa1f3e79338fb63120dfa77fdc26343197b03dbe1ea482",
+      "bytes": 5338
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed1/inputs/calibration.csv.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed1/inputs/calibration.csv.gz",
+      "sha256": "0512419ab0926d88113ddb9cd12eb63fe7cb39ed86edaeb419947c5224fc9580",
+      "bytes": 317324
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed1/inputs/calibration.smi",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed1/inputs/calibration.smi",
+      "sha256": "29d48b7b5482a04ca795b5197434187cbedefa0f8b056398a1f6935c78383f38",
+      "bytes": 833671
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed1/inputs/heldout.csv.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed1/inputs/heldout.csv.gz",
+      "sha256": "cb4129187583a633ccb4ca8003b3dc0ea3646c46716b7947f0f92e4ff8ae70a9",
+      "bytes": 601920
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed1/inputs/heldout.smi",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed1/inputs/heldout.smi",
+      "sha256": "07100fc0f1cd86fa362ebc2cd55b0d964f2cbc3fffae1034b09e1f20e301697d",
+      "bytes": 1653366
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed1/inputs/train.csv.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed1/inputs/train.csv.gz",
+      "sha256": "c168a351990d28069739f7b651c50197234f183f634dd5ca1982c348a887d2c7",
+      "bytes": 1316494
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed1/inputs/train.smi",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed1/inputs/train.smi",
+      "sha256": "09e18eb5a0e3fa15ac971248bba99afc3d4e2abebad4376c7c0cfca6b073a2a1",
+      "bytes": 3590061
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed1/inputs/train_components.csv.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed1/inputs/train_components.csv.gz",
+      "sha256": "bd5fc3f71640c05118c2ce05919bed7bfe605b836121fb576017c8bfdfc059c6",
+      "bytes": 2857
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed1/inputs/ugi_reaction.json",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed1/inputs/ugi_reaction.json",
+      "sha256": "8355fe17366cba2891aa1f3e79338fb63120dfa77fdc26343197b03dbe1ea482",
+      "bytes": 5338
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed2/inputs/calibration.csv.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed2/inputs/calibration.csv.gz",
+      "sha256": "0512419ab0926d88113ddb9cd12eb63fe7cb39ed86edaeb419947c5224fc9580",
+      "bytes": 317324
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed2/inputs/calibration.smi",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed2/inputs/calibration.smi",
+      "sha256": "29d48b7b5482a04ca795b5197434187cbedefa0f8b056398a1f6935c78383f38",
+      "bytes": 833671
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed2/inputs/heldout.csv.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed2/inputs/heldout.csv.gz",
+      "sha256": "cb4129187583a633ccb4ca8003b3dc0ea3646c46716b7947f0f92e4ff8ae70a9",
+      "bytes": 601920
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed2/inputs/heldout.smi",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed2/inputs/heldout.smi",
+      "sha256": "07100fc0f1cd86fa362ebc2cd55b0d964f2cbc3fffae1034b09e1f20e301697d",
+      "bytes": 1653366
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed2/inputs/train.csv.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed2/inputs/train.csv.gz",
+      "sha256": "c168a351990d28069739f7b651c50197234f183f634dd5ca1982c348a887d2c7",
+      "bytes": 1316494
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed2/inputs/train.smi",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed2/inputs/train.smi",
+      "sha256": "09e18eb5a0e3fa15ac971248bba99afc3d4e2abebad4376c7c0cfca6b073a2a1",
+      "bytes": 3590061
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed2/inputs/train_components.csv.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed2/inputs/train_components.csv.gz",
+      "sha256": "bd5fc3f71640c05118c2ce05919bed7bfe605b836121fb576017c8bfdfc059c6",
+      "bytes": 2857
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed2/inputs/ugi_reaction.json",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed2/inputs/ugi_reaction.json",
+      "sha256": "8355fe17366cba2891aa1f3e79338fb63120dfa77fdc26343197b03dbe1ea482",
+      "bytes": 5338
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed0/inputs/calibration.csv.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed0/inputs/calibration.csv.gz",
+      "sha256": "0512419ab0926d88113ddb9cd12eb63fe7cb39ed86edaeb419947c5224fc9580",
+      "bytes": 317324
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed0/inputs/calibration.smi",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed0/inputs/calibration.smi",
+      "sha256": "29d48b7b5482a04ca795b5197434187cbedefa0f8b056398a1f6935c78383f38",
+      "bytes": 833671
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed0/inputs/heldout.csv.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed0/inputs/heldout.csv.gz",
+      "sha256": "cb4129187583a633ccb4ca8003b3dc0ea3646c46716b7947f0f92e4ff8ae70a9",
+      "bytes": 601920
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed0/inputs/heldout.smi",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed0/inputs/heldout.smi",
+      "sha256": "07100fc0f1cd86fa362ebc2cd55b0d964f2cbc3fffae1034b09e1f20e301697d",
+      "bytes": 1653366
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed0/inputs/train.csv.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed0/inputs/train.csv.gz",
+      "sha256": "c168a351990d28069739f7b651c50197234f183f634dd5ca1982c348a887d2c7",
+      "bytes": 1316494
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed0/inputs/train.smi",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed0/inputs/train.smi",
+      "sha256": "09e18eb5a0e3fa15ac971248bba99afc3d4e2abebad4376c7c0cfca6b073a2a1",
+      "bytes": 3590061
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed0/inputs/train_components.csv.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed0/inputs/train_components.csv.gz",
+      "sha256": "bd5fc3f71640c05118c2ce05919bed7bfe605b836121fb576017c8bfdfc059c6",
+      "bytes": 2857
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed0/inputs/ugi_reaction.json",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed0/inputs/ugi_reaction.json",
+      "sha256": "8355fe17366cba2891aa1f3e79338fb63120dfa77fdc26343197b03dbe1ea482",
+      "bytes": 5338
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed1/inputs/calibration.csv.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed1/inputs/calibration.csv.gz",
+      "sha256": "0512419ab0926d88113ddb9cd12eb63fe7cb39ed86edaeb419947c5224fc9580",
+      "bytes": 317324
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed1/inputs/calibration.smi",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed1/inputs/calibration.smi",
+      "sha256": "29d48b7b5482a04ca795b5197434187cbedefa0f8b056398a1f6935c78383f38",
+      "bytes": 833671
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed1/inputs/heldout.csv.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed1/inputs/heldout.csv.gz",
+      "sha256": "cb4129187583a633ccb4ca8003b3dc0ea3646c46716b7947f0f92e4ff8ae70a9",
+      "bytes": 601920
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed1/inputs/heldout.smi",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed1/inputs/heldout.smi",
+      "sha256": "07100fc0f1cd86fa362ebc2cd55b0d964f2cbc3fffae1034b09e1f20e301697d",
+      "bytes": 1653366
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed1/inputs/train.csv.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed1/inputs/train.csv.gz",
+      "sha256": "c168a351990d28069739f7b651c50197234f183f634dd5ca1982c348a887d2c7",
+      "bytes": 1316494
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed1/inputs/train.smi",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed1/inputs/train.smi",
+      "sha256": "09e18eb5a0e3fa15ac971248bba99afc3d4e2abebad4376c7c0cfca6b073a2a1",
+      "bytes": 3590061
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed1/inputs/train_components.csv.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed1/inputs/train_components.csv.gz",
+      "sha256": "bd5fc3f71640c05118c2ce05919bed7bfe605b836121fb576017c8bfdfc059c6",
+      "bytes": 2857
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed1/inputs/ugi_reaction.json",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed1/inputs/ugi_reaction.json",
+      "sha256": "8355fe17366cba2891aa1f3e79338fb63120dfa77fdc26343197b03dbe1ea482",
+      "bytes": 5338
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed2/inputs/calibration.csv.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed2/inputs/calibration.csv.gz",
+      "sha256": "0512419ab0926d88113ddb9cd12eb63fe7cb39ed86edaeb419947c5224fc9580",
+      "bytes": 317324
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed2/inputs/calibration.smi",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed2/inputs/calibration.smi",
+      "sha256": "29d48b7b5482a04ca795b5197434187cbedefa0f8b056398a1f6935c78383f38",
+      "bytes": 833671
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed2/inputs/heldout.csv.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed2/inputs/heldout.csv.gz",
+      "sha256": "cb4129187583a633ccb4ca8003b3dc0ea3646c46716b7947f0f92e4ff8ae70a9",
+      "bytes": 601920
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed2/inputs/heldout.smi",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed2/inputs/heldout.smi",
+      "sha256": "07100fc0f1cd86fa362ebc2cd55b0d964f2cbc3fffae1034b09e1f20e301697d",
+      "bytes": 1653366
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed2/inputs/train.csv.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed2/inputs/train.csv.gz",
+      "sha256": "c168a351990d28069739f7b651c50197234f183f634dd5ca1982c348a887d2c7",
+      "bytes": 1316494
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed2/inputs/train.smi",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed2/inputs/train.smi",
+      "sha256": "09e18eb5a0e3fa15ac971248bba99afc3d4e2abebad4376c7c0cfca6b073a2a1",
+      "bytes": 3590061
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed2/inputs/train_components.csv.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed2/inputs/train_components.csv.gz",
+      "sha256": "bd5fc3f71640c05118c2ce05919bed7bfe605b836121fb576017c8bfdfc059c6",
+      "bytes": 2857
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed2/inputs/ugi_reaction.json",
+      "bundle_path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed2/inputs/ugi_reaction.json",
+      "sha256": "8355fe17366cba2891aa1f3e79338fb63120dfa77fdc26343197b03dbe1ea482",
+      "bytes": 5338
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-results-v3/defog_unconditional/seed0/common_assessment/assessed_attempts.jsonl.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-results-v3/defog_unconditional/seed0/common_assessment/assessed_attempts.jsonl.gz",
+      "bytes": 70029,
+      "sha256": "bd9a58d8ea1ea5d812a2e71214eceaade3521933e16840eb8bf30ca3e5f81d21"
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-results-v3/defog_unconditional/seed1/common_assessment/assessed_attempts.jsonl.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-results-v3/defog_unconditional/seed1/common_assessment/assessed_attempts.jsonl.gz",
+      "bytes": 71581,
+      "sha256": "fabd7a45aa324ada8a23ea9813113a511c886366a97afd8193ffb52897cb7327"
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-results-v3/defog_unconditional/seed2/common_assessment/assessed_attempts.jsonl.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-results-v3/defog_unconditional/seed2/common_assessment/assessed_attempts.jsonl.gz",
+      "bytes": 71390,
+      "sha256": "129e725b17c5bf4ee94d4b10f93b6a1052ccab378396dc996ebc3fba511f24ac"
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-results-v3/rgfn/seed0/common_assessment/assessed_attempts.jsonl.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-results-v3/rgfn/seed0/common_assessment/assessed_attempts.jsonl.gz",
+      "bytes": 237643,
+      "sha256": "d537bfeaa01d3dccfac40a73d9bc16d56c8ef4bd1c42121b57fcbdc038adae61"
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-results-v3/rgfn/seed1/common_assessment/assessed_attempts.jsonl.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-results-v3/rgfn/seed1/common_assessment/assessed_attempts.jsonl.gz",
+      "bytes": 237643,
+      "sha256": "a7f715b34864709390fbf6e26c1e7f71b48143145d3a0a702e590ab3f5a4389d"
+    },
+    {
+      "repo_path": "runs/phase1-external-ugi-native-results-v3/rgfn/seed2/common_assessment/assessed_attempts.jsonl.gz",
+      "bundle_path": "runs/phase1-external-ugi-native-results-v3/rgfn/seed2/common_assessment/assessed_attempts.jsonl.gz",
+      "bytes": 237644,
+      "sha256": "d77b0f03ba1bb4849b10c2e71fa39f8af925ddb7cce38ca3e4150b8b75e40124"
+    },
+    {
+      "repo_path": "runs/phase1-learned-inventory-selector/2024106a25c36eea9c2e9585bd59d345c29edf957b1452abe1631db1befa5eb0/stages/selector/artifacts/assessed_attempts.jsonl.gz",
+      "bundle_path": "runs/phase1-learned-inventory-selector/2024106a25c36eea9c2e9585bd59d345c29edf957b1452abe1631db1befa5eb0/stages/selector/artifacts/assessed_attempts.jsonl.gz",
+      "bytes": 331555,
+      "sha256": "29c93531143d614ee5e37c731b042eff498e016b4bfc36d004bb43bda794ab43"
+    },
+    {
+      "repo_path": "runs/phase1-learned-inventory-selector/2024106a25c36eea9c2e9585bd59d345c29edf957b1452abe1631db1befa5eb0/stages/selector/artifacts/attempts.jsonl.gz",
+      "bundle_path": "runs/phase1-learned-inventory-selector/2024106a25c36eea9c2e9585bd59d345c29edf957b1452abe1631db1befa5eb0/stages/selector/artifacts/attempts.jsonl.gz",
+      "bytes": 268857,
+      "sha256": "52b81b7bfcd642b8a709ac6ee421e34d1902632451b17651eeaf3348ee64c55d"
+    },
+    {
+      "repo_path": "runs/phase1-learned-inventory-selector/7e6e19c564269c904fe531938d6e50a96f9cf1c7a13210dbd571981657f5ca1d/stages/selector/artifacts/assessed_attempts.jsonl.gz",
+      "bundle_path": "runs/phase1-learned-inventory-selector/7e6e19c564269c904fe531938d6e50a96f9cf1c7a13210dbd571981657f5ca1d/stages/selector/artifacts/assessed_attempts.jsonl.gz",
+      "bytes": 330678,
+      "sha256": "59b0523bbbb3bff6ea26b66284c222fa33d657f5bf78cbe73e002daf6e7fe1c8"
+    },
+    {
+      "repo_path": "runs/phase1-learned-inventory-selector/7e6e19c564269c904fe531938d6e50a96f9cf1c7a13210dbd571981657f5ca1d/stages/selector/artifacts/attempts.jsonl.gz",
+      "bundle_path": "runs/phase1-learned-inventory-selector/7e6e19c564269c904fe531938d6e50a96f9cf1c7a13210dbd571981657f5ca1d/stages/selector/artifacts/attempts.jsonl.gz",
+      "bytes": 268212,
+      "sha256": "2392552475c6f33e347ac4c583f95a52cf73c0da2bdd104ced98b3e4734de970"
+    },
+    {
+      "repo_path": "runs/phase1-learned-inventory-selector/feb7af6d929fafb58b74ba9e5ff3ed83d0abf2c1357bb24cebe84572ebe823a7/stages/selector/artifacts/assessed_attempts.jsonl.gz",
+      "bundle_path": "runs/phase1-learned-inventory-selector/feb7af6d929fafb58b74ba9e5ff3ed83d0abf2c1357bb24cebe84572ebe823a7/stages/selector/artifacts/assessed_attempts.jsonl.gz",
+      "bytes": 331051,
+      "sha256": "a82d2c4994f923c97d529a25c99a41dc18ab55e92e6e00b3a234648ff32a40cd"
+    },
+    {
+      "repo_path": "runs/phase1-learned-inventory-selector/feb7af6d929fafb58b74ba9e5ff3ed83d0abf2c1357bb24cebe84572ebe823a7/stages/selector/artifacts/attempts.jsonl.gz",
+      "bundle_path": "runs/phase1-learned-inventory-selector/feb7af6d929fafb58b74ba9e5ff3ed83d0abf2c1357bb24cebe84572ebe823a7/stages/selector/artifacts/attempts.jsonl.gz",
+      "bytes": 268425,
+      "sha256": "247c2846535f75027b2777750506a7ecc3614f14daaba3b75cec36afd99dccda"
+    },
+    {
+      "repo_path": "runs/phase1-shared-bias-cyclic-core-saturation-h100/374a2e47c5d53bef8e855fd7852ce489f09719e86cbf52198e8e05f214fcd6fe/stages/production/artifacts/evaluation/samples.jsonl.gz",
+      "bundle_path": "runs/phase1-shared-bias-cyclic-core-saturation-h100/374a2e47c5d53bef8e855fd7852ce489f09719e86cbf52198e8e05f214fcd6fe/stages/production/artifacts/evaluation/samples.jsonl.gz",
+      "bytes": 1147223,
+      "sha256": "077d91c3bcddd74df29a662bfeceaa2133ece8620a772fa1b86d59e5de054295"
+    },
+    {
+      "repo_path": "runs/phase1-shared-bias-cyclic-core-saturation-h100/60b828956edcddfa8bea0ee8392710d1bfb9868c58bd24cafc084029d855aba4/stages/production/artifacts/evaluation/samples.jsonl.gz",
+      "bundle_path": "runs/phase1-shared-bias-cyclic-core-saturation-h100/60b828956edcddfa8bea0ee8392710d1bfb9868c58bd24cafc084029d855aba4/stages/production/artifacts/evaluation/samples.jsonl.gz",
+      "bytes": 1163251,
+      "sha256": "3415558a18ccc6013cb16b37996867c16818d8784d1e2aff6f95e20838e7aad1"
+    },
+    {
+      "repo_path": "runs/phase1-shared-bias-cyclic-core-saturation-h100/cc58972834ae863b97de8649e2b412d4bd3218ae21f52a85fad84f5ddfc6b29a/stages/production/artifacts/evaluation/samples.jsonl.gz",
+      "bundle_path": "runs/phase1-shared-bias-cyclic-core-saturation-h100/cc58972834ae863b97de8649e2b412d4bd3218ae21f52a85fad84f5ddfc6b29a/stages/production/artifacts/evaluation/samples.jsonl.gz",
+      "bytes": 1104015,
+      "sha256": "c753974024df857f94a8e6a5b2d10960e4c302e4a15c2c71f353613b51bea6dd"
+    },
+    {
+      "repo_path": "runs/phase1-shared-bias-parallel-global-seed0-core-saturation-h100-v2/f309fcf0d36c68922ef266a1b46198d5ee70731e1a35bea74535d3c40bb86434/stages/evaluation/artifacts/samples.jsonl.gz",
+      "bundle_path": "runs/phase1-shared-bias-parallel-global-seed0-core-saturation-h100-v2/f309fcf0d36c68922ef266a1b46198d5ee70731e1a35bea74535d3c40bb86434/stages/evaluation/artifacts/samples.jsonl.gz",
+      "bytes": 1179284,
+      "sha256": "1ac07f5b89df8c85397d5504045b3e9549e165f05aeb989828698a444f5f4e33"
+    },
+    {
+      "repo_path": "runs/phase1-shared-bias-parallel-program-role-seed0-core-saturation-h100-v2/78f43e12b12db09f4bfac272e7d8c93954a11a5d71b9008921ea944fa97c04df/stages/evaluation/artifacts/samples.jsonl.gz",
+      "bundle_path": "runs/phase1-shared-bias-parallel-program-role-seed0-core-saturation-h100-v2/78f43e12b12db09f4bfac272e7d8c93954a11a5d71b9008921ea944fa97c04df/stages/evaluation/artifacts/samples.jsonl.gz",
+      "bytes": 1084053,
+      "sha256": "c5c336794caf0f35ae03260980dd8d9e1e5cdb8534925cd9159b5b6c355f5f6a"
+    },
+    {
+      "repo_path": "runs/phase1-shared-bias-parallel-program-role-seed0-evaluation-h100-v2/bd78a19342c52561cc40ecad85a3ddd8b0e6e2e12a6816a1f406bb413d480c60/stages/evaluation/artifacts/samples.jsonl.gz",
+      "bundle_path": "runs/phase1-shared-bias-parallel-program-role-seed0-evaluation-h100-v2/bd78a19342c52561cc40ecad85a3ddd8b0e6e2e12a6816a1f406bb413d480c60/stages/evaluation/artifacts/samples.jsonl.gz",
+      "bytes": 1069146,
+      "sha256": "f7fe07bd54dc00d8290c837d72d8afa0af8e2e424027658e8bc05969dba22687"
+    },
+    {
+      "repo_path": "runs/phase1-shared-bias-parallel-program-role-seed1-core-saturation-h100-v2/163577eaa14ad4a09cf87c61e4795dca47ac337c33a8ade5cfe166b18ff171c3/stages/evaluation/artifacts/samples.jsonl.gz",
+      "bundle_path": "runs/phase1-shared-bias-parallel-program-role-seed1-core-saturation-h100-v2/163577eaa14ad4a09cf87c61e4795dca47ac337c33a8ade5cfe166b18ff171c3/stages/evaluation/artifacts/samples.jsonl.gz",
+      "bytes": 1123420,
+      "sha256": "a1cfa06f9f56feeafbf1771d53d0b6ea9eee9859b0a6ab04bbf525b9959ec265"
+    },
+    {
+      "repo_path": "runs/phase1-shared-bias-parallel-program-role-seed2-core-saturation-h100-v2/5aeb3827f3c50714f2cc4ea8025d0c97905d15b275acafde09c9ed100b12a3ef/stages/evaluation/artifacts/samples.jsonl.gz",
+      "bundle_path": "runs/phase1-shared-bias-parallel-program-role-seed2-core-saturation-h100-v2/5aeb3827f3c50714f2cc4ea8025d0c97905d15b275acafde09c9ed100b12a3ef/stages/evaluation/artifacts/samples.jsonl.gz",
+      "bytes": 1075575,
+      "sha256": "f6aded1e40deba342fbd21955ae5c922a4ec6837c7e4846ab0b384ab876106a7"
+    },
+    {
+      "repo_path": "runs/phase1-shared-bias-shared-null-core-saturation-h100/6c4d067206a91f4a11ac75509b27346422aeee78421aa968ee91b28a52351169/stages/production/artifacts/evaluation/samples.jsonl.gz",
+      "bundle_path": "runs/phase1-shared-bias-shared-null-core-saturation-h100/6c4d067206a91f4a11ac75509b27346422aeee78421aa968ee91b28a52351169/stages/production/artifacts/evaluation/samples.jsonl.gz",
+      "bytes": 864488,
+      "sha256": "63153c6d5580f16baf73ab04d1bdb9d82161aeb11ad984489e77403c3a168a6a"
+    },
+    {
+      "repo_path": "runs/phase1-shared-bias-shared-null-core-saturation-h100/8e373479710297630cf16b1687a96eed6a2645dae79f88b854ffdce703c29331/stages/production/artifacts/evaluation/samples.jsonl.gz",
+      "bundle_path": "runs/phase1-shared-bias-shared-null-core-saturation-h100/8e373479710297630cf16b1687a96eed6a2645dae79f88b854ffdce703c29331/stages/production/artifacts/evaluation/samples.jsonl.gz",
+      "bytes": 812661,
+      "sha256": "857529b9e1d8f6a9e4e48de1e4f367116c3027cae3372b71ce3cd3ccf7511403"
+    },
+    {
+      "repo_path": "runs/phase1-shared-bias-shared-null-core-saturation-h100/a17790ab1dd92566bf4fb0802301ba372b57cbb773e2ea3132ea7c3f71fdc513/stages/production/artifacts/evaluation/samples.jsonl.gz",
+      "bundle_path": "runs/phase1-shared-bias-shared-null-core-saturation-h100/a17790ab1dd92566bf4fb0802301ba372b57cbb773e2ea3132ea7c3f71fdc513/stages/production/artifacts/evaluation/samples.jsonl.gz",
+      "bytes": 844064,
+      "sha256": "9faffacbd1ee35e2c4d4fe30be019b1f78b07938ae76e4d6e7cd94c9d78fc193"
+    },
+    {
+      "repo_path": "runs/phase1-transformer-mechanism-ablation-core-saturation-seed0-h100/4f06d53d91a42d9f6f1ef5ee1a677969ee8960a5ac7438d9c65f9e4e3b6cafbe/stages/evaluation/artifacts/result.json",
+      "bundle_path": "runs/phase1-transformer-mechanism-ablation-core-saturation-seed0-h100/4f06d53d91a42d9f6f1ef5ee1a677969ee8960a5ac7438d9c65f9e4e3b6cafbe/stages/evaluation/artifacts/result.json",
+      "bytes": 314338,
+      "sha256": "b69f728c9ff5d7eedd025d15c46d48e66d77defe0a91304c04b5d917e7ce32e2"
+    },
+    {
+      "repo_path": "runs/phase1-transformer-mechanism-ablation-core-saturation-seed0-h100/4f06d53d91a42d9f6f1ef5ee1a677969ee8960a5ac7438d9c65f9e4e3b6cafbe/stages/evaluation/artifacts/samples.jsonl.gz",
+      "bundle_path": "runs/phase1-transformer-mechanism-ablation-core-saturation-seed0-h100/4f06d53d91a42d9f6f1ef5ee1a677969ee8960a5ac7438d9c65f9e4e3b6cafbe/stages/evaluation/artifacts/samples.jsonl.gz",
+      "bytes": 7274937,
+      "sha256": "3b53b878936e1fc1b351826f7598f9841cb18fe86353eeaebacf56d89dd4e820"
+    },
+    {
+      "repo_path": "runs/phase1-transformer-mechanism-ablation-core-saturation-seed1-h100/8930dfad022276ce41b5ecda3208d3bdd301aa68ce99a11879ce4ce830f7bbba/stages/evaluation/artifacts/result.json",
+      "bundle_path": "runs/phase1-transformer-mechanism-ablation-core-saturation-seed1-h100/8930dfad022276ce41b5ecda3208d3bdd301aa68ce99a11879ce4ce830f7bbba/stages/evaluation/artifacts/result.json",
+      "bytes": 314694,
+      "sha256": "815d5346232d3a53f5d0a4276be54503e4938c00a0e8ac8fb2dbb0fe6e5e9b91"
+    },
+    {
+      "repo_path": "runs/phase1-transformer-mechanism-ablation-core-saturation-seed1-h100/8930dfad022276ce41b5ecda3208d3bdd301aa68ce99a11879ce4ce830f7bbba/stages/evaluation/artifacts/samples.jsonl.gz",
+      "bundle_path": "runs/phase1-transformer-mechanism-ablation-core-saturation-seed1-h100/8930dfad022276ce41b5ecda3208d3bdd301aa68ce99a11879ce4ce830f7bbba/stages/evaluation/artifacts/samples.jsonl.gz",
+      "bytes": 6904572,
+      "sha256": "936d8c54198fad8e1f32fef3ba44f4a05930e77971ca55011bc4aad1d49b3949"
+    },
+    {
+      "repo_path": "runs/phase1-transformer-mechanism-ablation-core-saturation-seed2-h100/56ef6680e4bf726da2aef095003b00f16e2a9002d1fa87ded89002d6dbbe7e65/stages/evaluation/artifacts/result.json",
+      "bundle_path": "runs/phase1-transformer-mechanism-ablation-core-saturation-seed2-h100/56ef6680e4bf726da2aef095003b00f16e2a9002d1fa87ded89002d6dbbe7e65/stages/evaluation/artifacts/result.json",
+      "bytes": 314585,
+      "sha256": "f4a159fcc9f36ee35e0aec21721e6978a450c4127d814eb1d092703b030414b1"
+    },
+    {
+      "repo_path": "runs/phase1-transformer-mechanism-ablation-core-saturation-seed2-h100/56ef6680e4bf726da2aef095003b00f16e2a9002d1fa87ded89002d6dbbe7e65/stages/evaluation/artifacts/samples.jsonl.gz",
+      "bundle_path": "runs/phase1-transformer-mechanism-ablation-core-saturation-seed2-h100/56ef6680e4bf726da2aef095003b00f16e2a9002d1fa87ded89002d6dbbe7e65/stages/evaluation/artifacts/samples.jsonl.gz",
+      "bytes": 7371522,
+      "sha256": "b497e7b4e7b4a27e3dd46af98749262238d6d6c9046326f5a5a17036adc1eaec"
+    }
+  ]
+}

@@ -9,18 +9,15 @@ import re
 import tempfile
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Protocol
+from typing import Any
 
 from rdkit import Chem, rdBase
 
 from forge.synthesis.engine.planner import (
     PlannerBudgetLedger,
     PlannerBudgetLimits,
-    RecursiveRouteAssessor,
-    RoutePlanner,
     RouteTarget,
     SynthesisAssessment,
-    budget_exhausted_assessment,
 )
 
 PLANNER_CACHE_KEY_SCHEMA_VERSION = "forge.planner_cache_key.v1"
@@ -193,14 +190,6 @@ class PlannerCacheKey:
         )
 
 
-class PlannerCache(Protocol):
-    """Minimal interface for complete-assessment storage."""
-
-    def get(self, key: PlannerCacheKey) -> SynthesisAssessment | None: ...
-
-    def put(self, key: PlannerCacheKey, assessment: SynthesisAssessment) -> None: ...
-
-
 class FilePlannerCache:
     """Atomic deterministic file cache keyed by the complete planner context."""
 
@@ -275,36 +264,3 @@ class FilePlannerCache:
                 os.unlink(temporary)
             except FileNotFoundError:  # pragma: no cover - defensive cleanup
                 pass
-
-
-class CachedRoutePlanner(RoutePlanner):
-    """Cache complete recursive assessments while preserving budget accounting."""
-
-    def __init__(
-        self,
-        planner: RecursiveRouteAssessor,
-        cache: PlannerCache,
-        context: PlannerCacheContext,
-    ):
-        self._planner = planner
-        self._cache = cache
-        self._context = context
-
-    def assess(
-        self,
-        target: RouteTarget,
-        budget: PlannerBudgetLedger,
-    ) -> SynthesisAssessment:
-        if budget.limits != self._context.budget_limits:
-            raise PlannerCacheError("budget limits differ from the frozen cache context")
-        if not budget.consume_logical_planner_call():
-            return budget_exhausted_assessment(target, "maximum_logical_planner_calls")
-        key = PlannerCacheKey.build(target, self._context, budget)
-        assessment = self._cache.get(key)
-        if assessment is not None:
-            budget.record_cache_hit()
-            return assessment
-        budget.record_cache_miss()
-        assessment = self._planner.assess_uncached(target, budget)
-        self._cache.put(key, assessment)
-        return assessment

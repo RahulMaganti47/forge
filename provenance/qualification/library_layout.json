@@ -1,0 +1,288 @@
+{
+  "schema_version": "forge.library_layout_qualification.v1",
+  "date": "2026-10-02",
+  "status": "pass",
+  "base_commit": "e31decd43a0641e30f01e2da6bd53538745679c6",
+  "source_sha256": "637869ca3fcdaeb55ca831e84ec408a34cb39ac2ed508ad4c6d3335bb6de474c",
+  "source_modules": 172,
+  "input_pins": {
+    "uv.lock": "ad650c2f8886d29b5f4b54c86fa3d740d9a088b7569a4da525d6be76829d950b",
+    "pyproject.toml": "70cb166cb8da9cc94ef3ad1c230b71c04bc0149223765628691c2fa8c11f2480",
+    "paper/submission.pdf": "7ea7cf2e51922e5e58cd6659dc183409e465ede2eb1586fc8d0ec39935c4fd53",
+    "paper/source/main.tex": "36aba6ea556cc6b62a436d3b2df48d79e39813773f549592df053a163f78fafa",
+    "manifests/paper-model-v1.json": "a46582aa4ab5300b37827468405e2a332332740f1e5e5133d71bdd89527315b9",
+    "manifests/submission19337-evidence-v1.json": "730b2fe8352fef54ce1fe47a5a5e56f5230080d81fe5330662562a28adeb011f",
+    "provenance/source_inventory.json": "eb8924eb5ad95aa02bf128e7fad6d3ab95a022c5919fa8f4bca6439c37eac25d"
+  },
+  "layout": {
+    "library": "forge/",
+    "experiments": "examples/",
+    "tests": "tests/",
+    "cli": "forge.cli",
+    "public_release_infrastructure_added": false
+  },
+  "definition_equivalence": {
+    "definitions_checked": 1565,
+    "scope": "All migrated modules compared after normalizing imports, namespace strings and package docstrings. Only inspected source fingerprint, launcher and file-coordinate edits remain.",
+    "coordinate_changes": [
+      {
+        "path": "forge/commands/generate.py",
+        "definition": "source_identity"
+      },
+      {
+        "path": "forge/commands/qualification.py",
+        "definition": "qualify"
+      },
+      {
+        "path": "forge/commands/qualification.py",
+        "definition": "qualify.run"
+      },
+      {
+        "path": "forge/commands/atlas.py",
+        "definition": "render"
+      },
+      {
+        "path": "examples/diagnostics/hela/evaluation.py",
+        "definition": "FrozenHeLaOracleWorker"
+      },
+      {
+        "path": "examples/diagnostics/hela/evaluation.py",
+        "definition": "FrozenHeLaOracleWorker.__init__"
+      }
+    ]
+  },
+  "tests": {
+    "tests": 78,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "formatting": {
+    "ruff": "pass",
+    "black": "pass"
+  },
+  "installation": {
+    "locked_offline_install": "pass",
+    "source": "clean copy of candidate tracked files and explicitly migrated sources; no development checkout dependency",
+    "external_working_directory": "pass",
+    "modules_imported": 172,
+    "installed_cli_checkpoint_preflight": "pass",
+    "artifact_restoration": "215 pinned files from independently verified model and evidence bundles",
+    "reproduction_check": "pass; 89 table rows and repeated CPU generation from isolated installation"
+  },
+  "reproduction": {
+    "status": "pass",
+    "table_rows_matching_manuscript": 89,
+    "receipt_sha256": "0b7e58371819fd8078947a51c8e2c46ca36758b42039c39c98bf6de4f535b71c"
+  },
+  "checkpoints": {
+    "all_attempt_files_match_original": true,
+    "cells": [
+      {
+        "replicate": 0,
+        "family": "ugi",
+        "request": {
+          "batch_size": 2,
+          "count": 2,
+          "device": "cpu",
+          "program_id": "ugi_3cr_agile",
+          "seed": 42,
+          "threads": 2
+        },
+        "counts": {
+          "attempts": 2,
+          "exact_l1": 2,
+          "valid": 2
+        },
+        "deterministic_replay": true,
+        "attempts_sha256": "528d672216648b852bed5cb30724572790e160adaa4d588bba559fdb4562d896"
+      },
+      {
+        "replicate": 0,
+        "family": "aza-michael",
+        "request": {
+          "batch_size": 2,
+          "count": 2,
+          "device": "cpu",
+          "program_id": "bl_2023_repeated_aza_michael",
+          "seed": 42,
+          "threads": 2
+        },
+        "counts": {
+          "attempts": 2,
+          "exact_l1": 2,
+          "valid": 2
+        },
+        "deterministic_replay": true,
+        "attempts_sha256": "dec9ecb205700142a7c73c5be0372527158f370ece27efa0541756e5e90d50e5"
+      },
+      {
+        "replicate": 0,
+        "family": "reductive-amination",
+        "request": {
+          "batch_size": 2,
+          "count": 2,
+          "device": "cpu",
+          "program_id": "lx_2024_repeated_reductive_amination",
+          "seed": 42,
+          "threads": 2
+        },
+        "counts": {
+          "attempts": 2,
+          "exact_l1": 2,
+          "valid": 2
+        },
+        "deterministic_replay": true,
+        "attempts_sha256": "a22b2b41752064b9e6a135262b710f0f22f48d87bba75f43f5c1a3b44ddd0119"
+      },
+      {
+        "replicate": 1,
+        "family": "ugi",
+        "request": {
+          "batch_size": 2,
+          "count": 2,
+          "device": "cpu",
+          "program_id": "ugi_3cr_agile",
+          "seed": 42,
+          "threads": 2
+        },
+        "counts": {
+          "attempts": 2,
+          "exact_l1": 2,
+          "valid": 2
+        },
+        "deterministic_replay": true,
+        "attempts_sha256": "9b553e563befd77699c73d6af1ae859c21ac05ee959196a2a51bb7de1b179fdc"
+      },
+      {
+        "replicate": 1,
+        "family": "aza-michael",
+        "request": {
+          "batch_size": 2,
+          "count": 2,
+          "device": "cpu",
+          "program_id": "bl_2023_repeated_aza_michael",
+          "seed": 42,
+          "threads": 2
+        },
+        "counts": {
+          "attempts": 2,
+          "exact_l1": 2,
+          "valid": 2
+        },
+        "deterministic_replay": true,
+        "attempts_sha256": "ced9a03459a57e8180a44936d533b214e935c35c6ceda1a14d6d8f9a9ca9232b"
+      },
+      {
+        "replicate": 1,
+        "family": "reductive-amination",
+        "request": {
+          "batch_size": 2,
+          "count": 2,
+          "device": "cpu",
+          "program_id": "lx_2024_repeated_reductive_amination",
+          "seed": 42,
+          "threads": 2
+        },
+        "counts": {
+          "attempts": 2,
+          "exact_l1": 2,
+          "valid": 2
+        },
+        "deterministic_replay": true,
+        "attempts_sha256": "a22b2b41752064b9e6a135262b710f0f22f48d87bba75f43f5c1a3b44ddd0119"
+      },
+      {
+        "replicate": 2,
+        "family": "ugi",
+        "request": {
+          "batch_size": 2,
+          "count": 2,
+          "device": "cpu",
+          "program_id": "ugi_3cr_agile",
+          "seed": 42,
+          "threads": 2
+        },
+        "counts": {
+          "attempts": 2,
+          "exact_l1": 2,
+          "valid": 2
+        },
+        "deterministic_replay": true,
+        "attempts_sha256": "4d3b8a6d4f37bb367a9c321c01f92c67b66cdf9be94976ec254a165c48dc0bd4"
+      },
+      {
+        "replicate": 2,
+        "family": "aza-michael",
+        "request": {
+          "batch_size": 2,
+          "count": 2,
+          "device": "cpu",
+          "program_id": "bl_2023_repeated_aza_michael",
+          "seed": 42,
+          "threads": 2
+        },
+        "counts": {
+          "attempts": 2,
+          "exact_l1": 2,
+          "valid": 2
+        },
+        "deterministic_replay": true,
+        "attempts_sha256": "62f466409f9f57958ab5d6cb4442bd0e40d232ae01fa22829082e84bde862af1"
+      },
+      {
+        "replicate": 2,
+        "family": "reductive-amination",
+        "request": {
+          "batch_size": 2,
+          "count": 2,
+          "device": "cpu",
+          "program_id": "lx_2024_repeated_reductive_amination",
+          "seed": 42,
+          "threads": 2
+        },
+        "counts": {
+          "attempts": 2,
+          "exact_l1": 2,
+          "valid": 2
+        },
+        "deterministic_replay": true,
+        "attempts_sha256": "a22b2b41752064b9e6a135262b710f0f22f48d87bba75f43f5c1a3b44ddd0119"
+      }
+    ]
+  },
+  "training": {
+    "steps": 2,
+    "device": "cpu",
+    "seed": 20260825,
+    "complete_arm_records_match_original": true,
+    "checkpoint_archive_sha256": "27c476fb3014da20bd9742bfb27fd941171d60fd636984b2542f8f6ea2a0275f",
+    "interruption_after_step": 1,
+    "resumed_complete_arm_records_equal": true,
+    "reference_training_sha256": "082d8132bbc56594a3e5d110b5fc94096ed504577f6ba9b793387dbf99679a1d"
+  },
+  "evaluation": {
+    "device": "cpu",
+    "profile": "smoke",
+    "sample_rows": 18,
+    "complete_result_matches_original": true,
+    "result_sha256": "4f7d2fce93bd8c5ce95ae9676f036ef1363113e95575fa3d6d7b07cbc3eb5b0b"
+  },
+  "manuscript": {
+    "status": "pass",
+    "pages": 35,
+    "reference_pages": 35,
+    "extracted_text_matches_reference": true,
+    "figure_sources_rebuilt": true,
+    "figure_2_composite": "preserved exact submitted PDF; composition source not recovered",
+    "reference_pdf_sha256": "7ea7cf2e51922e5e58cd6659dc183409e465ede2eb1586fc8d0ec39935c4fd53"
+  },
+  "unchanged_inputs": {
+    "frozen_files_compared": 113,
+    "scope": "All configs, manifests, manuscript assets and lockfile versus base commit; paper/README.md excluded as documentation."
+  },
+  "limits": [
+    "No full GPU training or native-baseline production run.",
+    "Historical missing inputs and the recorded optional Linux batched-VJP PCGrad failure remain unresolved."
+  ]
+}

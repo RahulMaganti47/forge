@@ -1,0 +1,86 @@
+\documentclass{article}
+\usepackage{iclr2027_conference,times}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{nicefrac}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,mathrsfs}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\pgfplotsset{compat=1.18}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,calc,positioning,patterns,shapes.arrows,fit,backgrounds}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{colortbl}
+\usepackage{longtable}
+\usepackage[most]{tcolorbox}
+\usepackage{float}
+\usepackage{placeins}
+\usepackage{chemfig}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+
+
+\iclrfinalcopy
+\begin{document}
+\newbox\exportbox
+\setbox\exportbox=\vbox{\parskip=0pt\centering
+\definecolor{chemicalbond}{HTML}{727272}
+\definecolor{chemicalink}{HTML}{303030}
+\colorlet{roleamine}{chemicalbond}
+\colorlet{roleald}{chemicalbond}
+\colorlet{roleiso}{chemicalbond}
+\colorlet{roletemplate}{chemicalbond}
+\setchemfig{atom sep=2.35em, bond style={line width=0.45pt,draw=chemicalbond}, atom style={text=chemicalink}}
+\newcommand{\amine}[1]{{\color{chemicalink}#1}}
+\newcommand{\ald}[1]{{\color{chemicalink}#1}}
+\newcommand{\iso}[1]{{\color{chemicalink}#1}}
+\newcommand{\tmpl}[1]{{\color{chemicalink}#1}}
+\newcommand{\rxnrow}[3]{\makebox[\linewidth][l]{\begin{minipage}{\linewidth}\textbf{\small #1}\\[-0.15em]{\scriptsize\itshape #2}\\[0.7em]#3\end{minipage}}}
+
+\rxnrow{Ugi three-component reaction}
+       {amine head, aldehyde and isocyanide combine in one step; no carboxylic-acid reactant component}{\schemestart
+  \chemfig{R^1-[:30]\amine{N}(-[:90]R^2)-[:-30]\amine{H}}
+  \+
+  \chemfig{R^3-[:30,,,,roleald]\ald{CH}=[:-30,,,,roleald]\ald{O}}
+  \+
+  \chemfig{R^4-[:30,,,,roleiso]\iso{N}~[:-30,,,,roleiso]\iso{C}}
+  \arrow{->}
+  \chemfig{R^1-[:30,,,,roleamine]\amine{N}(-[:90,,,,roleamine]R^2)-[:-30,,,,roleald]\ald{CH}(-[:-90,,,,roleald]R^3)-[:30,,,,roleiso]\iso{C}(=[:90,,,,roletemplate]\tmpl{O})-[:-30,,,,roleiso]\iso{NH}-[:30,,,,roleiso]R^4}
+\schemestop}\par
+
+\par\vspace{1.9em}\par
+\rxnrow{Repeated aza-Michael addition}
+       {the head N--H adds across the acrylate double bond; the ester is untouched}{\schemestart
+  \chemfig{R^1-[:30]\amine{N}(-[:90]R^2)-[:-30]\amine{H}}
+  \+
+  \chemfig{-[:30,,,,roleiso]=[:-30,,,,roleiso]-[:30](=[:90]O)-[:-30]O-[:30]R^3}
+  \arrow{->}
+  \chemfig{R^1-[:30,,,,roleamine]\amine{N}(-[:90,,,,roleamine]R^2)-[:-30,,,,roleiso]-[:30,,,,roleiso]-[:-30](=[:90]O)-[:30]O-[:-30]R^3}
+\schemestop}\par
+
+\par\vspace{1.9em}\par
+\rxnrow{Repeated reductive amination}
+       {one new carbon--nitrogen bond; the carbonyl oxygen leaves as water}{\schemestart
+  \chemfig{R^1-[:30]\amine{N}(-[:90]R^2)-[:-30]\amine{H}}
+  \+
+  \chemfig{R^3-[:30,,,,roleald]\ald{CH}=[:-30,,,,roleald]\ald{O}}
+  \arrow{->[\scriptsize$-\,$H$_2$O]}
+  \chemfig{R^1-[:30,,,,roleamine]\amine{N}(-[:90,,,,roleamine]R^2)-[:-30,,,,roleald]-[:30,,,,roleald]R^3}
+\schemestop}
+\relax{}
+\par}
+\typeout{EXPORTBOX width=\the\wd\exportbox; height=\the\ht\exportbox; depth=\the\dp\exportbox}
+\pdfpagewidth=\wd\exportbox
+\pdfpageheight=\dimexpr\ht\exportbox+\dp\exportbox\relax
+\hoffset=-1in
+\voffset=-1in
+\shipout\hbox{\raise\dp\exportbox\box\exportbox}
+\end{document}

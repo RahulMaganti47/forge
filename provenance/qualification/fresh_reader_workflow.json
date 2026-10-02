@@ -1,0 +1,1967 @@
+{
+  "artifacts": {
+    "paper-model-v1": {
+      "files": [
+        {
+          "actual_sha256": "a7aba87a63e3bcf34c61fa7951fbb7a77340641ed852993b4221d3b77072f021",
+          "expected_sha256": "a7aba87a63e3bcf34c61fa7951fbb7a77340641ed852993b4221d3b77072f021",
+          "path": "configs/multireaction/lnpdb_reaction_programs_v1.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "4ccd6c859dcd126508b38fa1c61eb6e7c20572755009d5f5846e4b0e028bb074",
+          "expected_sha256": "4ccd6c859dcd126508b38fa1c61eb6e7c20572755009d5f5846e4b0e028bb074",
+          "path": "configs/multireaction/shared_bias_parallel_program_role_seed0_core_saturation_v2.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "dd5e2f3cbd685e7d397982ba5708f5d3b525b0651820dad1dbb9462dca551c15",
+          "expected_sha256": "dd5e2f3cbd685e7d397982ba5708f5d3b525b0651820dad1dbb9462dca551c15",
+          "path": "configs/multireaction/shared_bias_parallel_program_role_seed1_core_saturation_v2.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "aaf1af77ee45598bf3922212be76bcd82b0defe1012a5c66b1bd1b1d9055bd29",
+          "expected_sha256": "aaf1af77ee45598bf3922212be76bcd82b0defe1012a5c66b1bd1b1d9055bd29",
+          "path": "configs/multireaction/shared_bias_parallel_program_role_seed2_core_saturation_v2.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "3b648226df1f904ec4d6745d1c3a8a9c9088af5e656c55740e4be713490f4f63",
+          "expected_sha256": "3b648226df1f904ec4d6745d1c3a8a9c9088af5e656c55740e4be713490f4f63",
+          "path": "configs/reproduction/gem_table1_core_saturation_final_v1.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "961dea191bbf6c8d169aab09f6aee18082e51696e4056fc4dc9f6fc97ff82587",
+          "expected_sha256": "961dea191bbf6c8d169aab09f6aee18082e51696e4056fc4dc9f6fc97ff82587",
+          "path": "data/vendor/qualified_reaction_families_v1.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "296bf06238ef22acc1f55117f5ce0adaee21b1bafaf5a83f89182b0f31cc4fcf",
+          "expected_sha256": "296bf06238ef22acc1f55117f5ce0adaee21b1bafaf5a83f89182b0f31cc4fcf",
+          "path": "data/vendor/qualified_reactions_v1.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "6c9f6a3d8d0668763a7f057a53f8782884f001f999303ce01dc68b9f28d42c8c",
+          "expected_sha256": "6c9f6a3d8d0668763a7f057a53f8782884f001f999303ce01dc68b9f28d42c8c",
+          "path": "results/phase1/bl_lx_mixed_repeat_expansion_v2/component_family_splits.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "6b5021e986e9e514ccca74dc6b6b0ccfef6dd2e9c40f209aedf6f64bb516e5c2",
+          "expected_sha256": "6b5021e986e9e514ccca74dc6b6b0ccfef6dd2e9c40f209aedf6f64bb516e5c2",
+          "path": "results/phase1/bl_lx_mixed_repeat_expansion_v2/reaction_program_atlas.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "f5ca71c234480582f6e39e780e47567b0d48585d919f6dcafebed5bdd10f72d4",
+          "expected_sha256": "f5ca71c234480582f6e39e780e47567b0d48585d919f6dcafebed5bdd10f72d4",
+          "path": "results/phase1/common_lipid_realism_core_saturation_v1/final_aggregate/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "1ce9a0eeabb93520e02105208d7625cb2caf351ba5ca2d8bde380f7d5b49d97c",
+          "expected_sha256": "1ce9a0eeabb93520e02105208d7625cb2caf351ba5ca2d8bde380f7d5b49d97c",
+          "path": "results/phase1/fact_generous_common_assessment_seed0_v1/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "6ca648afe09beb50c6fbe3ff82dfb91c231032404d8bf49fbcac75e406b7d1e1",
+          "expected_sha256": "6ca648afe09beb50c6fbe3ff82dfb91c231032404d8bf49fbcac75e406b7d1e1",
+          "path": "results/phase1/fact_generous_common_assessment_seed1_v1/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "f9dc26860136c5dc38ef20894f3e52fd43d3aa844801fbc16e1bc3c370b2d6f9",
+          "expected_sha256": "f9dc26860136c5dc38ef20894f3e52fd43d3aa844801fbc16e1bc3c370b2d6f9",
+          "path": "results/phase1/fact_generous_common_assessment_seed2_v1/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "7e0a3ca039ac85255c55f8eefcde73963a79997d263aa43e894ae5488d84a2a0",
+          "expected_sha256": "7e0a3ca039ac85255c55f8eefcde73963a79997d263aa43e894ae5488d84a2a0",
+          "path": "results/phase1/fact_matched_common_assessment_seed0_v1/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "b0192b7a72514f2542294e294f942e1e3984d75f385a1845fc89e2e466ccc904",
+          "expected_sha256": "b0192b7a72514f2542294e294f942e1e3984d75f385a1845fc89e2e466ccc904",
+          "path": "results/phase1/fact_matched_common_assessment_seed1_v1/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "b092f69e9a758572f6d35499b2e415c6b5fb5e2f3bfac5f8937765801ab13950",
+          "expected_sha256": "b092f69e9a758572f6d35499b2e415c6b5fb5e2f3bfac5f8937765801ab13950",
+          "path": "results/phase1/fact_matched_common_assessment_seed2_v1/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "80bee35bdb6a583b0bf722ceb96e8dc2d761ada85e5775b41a8963551d3f1e7a",
+          "expected_sha256": "80bee35bdb6a583b0bf722ceb96e8dc2d761ada85e5775b41a8963551d3f1e7a",
+          "path": "results/phase1/final_bl_core_production_adjudication_v1/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "2b8676765a33fa363bd3ba7ce8371f9d95d5a6551501234e08334afb121f8504",
+          "expected_sha256": "2b8676765a33fa363bd3ba7ce8371f9d95d5a6551501234e08334afb121f8504",
+          "path": "results/phase1/finite_catalogue_common_assessment_seed0_v1/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "b09ca42366f0662da381cc72650b9185457ee0164a4265094a383b3613b9517a",
+          "expected_sha256": "b09ca42366f0662da381cc72650b9185457ee0164a4265094a383b3613b9517a",
+          "path": "results/phase1/finite_catalogue_common_assessment_seed1_v1/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "fdf5af01fdba76578eaec6251c40660de5c3d406bb408de6f4cf293721737139",
+          "expected_sha256": "fdf5af01fdba76578eaec6251c40660de5c3d406bb408de6f4cf293721737139",
+          "path": "results/phase1/finite_catalogue_common_assessment_seed2_v1/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "9a382239ee17b37697c14d17dc423f84117217319166289fa8e140a113a8ec41",
+          "expected_sha256": "9a382239ee17b37697c14d17dc423f84117217319166289fa8e140a113a8ec41",
+          "path": "results/phase1/forge_transformer_core_saturation_common_assessment_seed0_v2/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "e5e70a7bf80d9685437b0772d0b0ac298f30efab48f7bd37b4721a75a9b60d65",
+          "expected_sha256": "e5e70a7bf80d9685437b0772d0b0ac298f30efab48f7bd37b4721a75a9b60d65",
+          "path": "results/phase1/forge_transformer_core_saturation_common_assessment_seed1_v2/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "89a33fb7ab1abd828d69961a13e786e6fd41d978bf56bc494acd868258ca8c40",
+          "expected_sha256": "89a33fb7ab1abd828d69961a13e786e6fd41d978bf56bc494acd868258ca8c40",
+          "path": "results/phase1/forge_transformer_core_saturation_common_assessment_seed2_v2/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "1702e839253fffe4ae1860f145a7c38124a4b0d06842d520ec7be084e9e3da0e",
+          "expected_sha256": "1702e839253fffe4ae1860f145a7c38124a4b0d06842d520ec7be084e9e3da0e",
+          "path": "results/phase1/genmol_safe_common_assessment_seed0_v1/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "6aabb367c6e2204a5584d882d0ba39d8bcf2a924636a80f2daa4518954a5bb96",
+          "expected_sha256": "6aabb367c6e2204a5584d882d0ba39d8bcf2a924636a80f2daa4518954a5bb96",
+          "path": "results/phase1/genmol_safe_common_assessment_seed1_v1/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "ba402185811d38c5285161621a715b4203f67856c509312abbf7e8632016822c",
+          "expected_sha256": "ba402185811d38c5285161621a715b4203f67856c509312abbf7e8632016822c",
+          "path": "results/phase1/genmol_safe_common_assessment_seed2_v1/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "10d77b9d8e947d40fe2aaa91ecd68448ff068e08339cecd4c47d862e96e39142",
+          "expected_sha256": "10d77b9d8e947d40fe2aaa91ecd68448ff068e08339cecd4c47d862e96e39142",
+          "path": "results/phase1/shared_bias_parallel_program_role_seed0_v2/checkpoints.tar",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "d0f206f52ae708e5ffa1e3150a5c8f1513db35d4c5d912160e89e907b7aaefbd",
+          "expected_sha256": "d0f206f52ae708e5ffa1e3150a5c8f1513db35d4c5d912160e89e907b7aaefbd",
+          "path": "results/phase1/shared_bias_parallel_program_role_seed0_v2/study_design.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "44fab52d5427f654d2a24e395b77c00d2d8c7122f5ed67b51cbcc8675f870485",
+          "expected_sha256": "44fab52d5427f654d2a24e395b77c00d2d8c7122f5ed67b51cbcc8675f870485",
+          "path": "results/phase1/shared_bias_parallel_program_role_seed0_v2/training_result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "a3e1e15cb6d55e6a0bc8d161a0061762ef6190c22c957fd957493bbe3860d55d",
+          "expected_sha256": "a3e1e15cb6d55e6a0bc8d161a0061762ef6190c22c957fd957493bbe3860d55d",
+          "path": "results/phase1/shared_bias_parallel_program_role_seed1_v2/checkpoints.tar",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "d0f206f52ae708e5ffa1e3150a5c8f1513db35d4c5d912160e89e907b7aaefbd",
+          "expected_sha256": "d0f206f52ae708e5ffa1e3150a5c8f1513db35d4c5d912160e89e907b7aaefbd",
+          "path": "results/phase1/shared_bias_parallel_program_role_seed1_v2/study_design.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "baa32c6551c6098917c49c2910ac4067300430483bd05d5c3e36eb64a410701e",
+          "expected_sha256": "baa32c6551c6098917c49c2910ac4067300430483bd05d5c3e36eb64a410701e",
+          "path": "results/phase1/shared_bias_parallel_program_role_seed1_v2/training_result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "f500418e7cdfe6aa59b5d1261cb68c7ff715fa1a0e06498334eb727185f74506",
+          "expected_sha256": "f500418e7cdfe6aa59b5d1261cb68c7ff715fa1a0e06498334eb727185f74506",
+          "path": "results/phase1/shared_bias_parallel_program_role_seed2_v2/checkpoints.tar",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "d0f206f52ae708e5ffa1e3150a5c8f1513db35d4c5d912160e89e907b7aaefbd",
+          "expected_sha256": "d0f206f52ae708e5ffa1e3150a5c8f1513db35d4c5d912160e89e907b7aaefbd",
+          "path": "results/phase1/shared_bias_parallel_program_role_seed2_v2/study_design.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "95cfdd98b1aef89a4ac370947487016b3c3b342cd07e05f62db478a6e27ec7de",
+          "expected_sha256": "95cfdd98b1aef89a4ac370947487016b3c3b342cd07e05f62db478a6e27ec7de",
+          "path": "results/phase1/shared_bias_parallel_program_role_seed2_v2/training_result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "6efd6179b150d8780f07b2a97214b176d95782335f4c12627899069eb8941347",
+          "expected_sha256": "6efd6179b150d8780f07b2a97214b176d95782335f4c12627899069eb8941347",
+          "path": "results/phase1/shared_null_posthoc_common_assessment_seed0_v1/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "d05a81d3d438c48ab92159e60fbeaae2cbf27e4b7cb8c01adb6a5aeb81d19225",
+          "expected_sha256": "d05a81d3d438c48ab92159e60fbeaae2cbf27e4b7cb8c01adb6a5aeb81d19225",
+          "path": "results/phase1/shared_null_posthoc_common_assessment_seed1_v1/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "2fff4d9e07afaf3ba76ba38673abee2b9e217039c24b3ae174d532b8a0743aa6",
+          "expected_sha256": "2fff4d9e07afaf3ba76ba38673abee2b9e217039c24b3ae174d532b8a0743aa6",
+          "path": "results/phase1/shared_null_posthoc_common_assessment_seed2_v1/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "249b92744c22109cd5994ad831555df85575bfb6bd58010dce71517e5e881114",
+          "expected_sha256": "249b92744c22109cd5994ad831555df85575bfb6bd58010dce71517e5e881114",
+          "path": "results/phase1/shared_synthesis_program_mixed_cache_v1/cache.npz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "39f129f295be29b89803fd4cf01f1f96904945ec0b3ce6eb52492bd7eeebf05f",
+          "expected_sha256": "39f129f295be29b89803fd4cf01f1f96904945ec0b3ce6eb52492bd7eeebf05f",
+          "path": "results/phase1/transformer_mechanism_core_saturation_v1/seed_rows.jsonl",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "9a50c703ed6aa919b251678c04b7a44e93b3233a12fc13b5d6697683bb5b5184",
+          "expected_sha256": "9a50c703ed6aa919b251678c04b7a44e93b3233a12fc13b5d6697683bb5b5184",
+          "path": "results/phase1/ugi_balanced_chemistry_corpus_v2/assignments.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "a508b45d455b7b164e54a8345b0dff1f8e4de928eec5e2f631e145dc0d981cc3",
+          "expected_sha256": "a508b45d455b7b164e54a8345b0dff1f8e4de928eec5e2f631e145dc0d981cc3",
+          "path": "results/phase1/ugi_high_potency_challenger_adjudication_v1/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "eb62dfe005e907605cd8f4664008efcc0d8ff119c266f1136de79439ac2ae174",
+          "expected_sha256": "eb62dfe005e907605cd8f4664008efcc0d8ff119c266f1136de79439ac2ae174",
+          "path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed0/request.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "2f68602b078ee73e285b0dc7d8f3d1289f64146b4df2ff91976fae155f3b9b48",
+          "expected_sha256": "2f68602b078ee73e285b0dc7d8f3d1289f64146b4df2ff91976fae155f3b9b48",
+          "path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed1/request.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "8b610760341fc6b1cd6708a0177c8d946695983a819f9e1660b8d07282339186",
+          "expected_sha256": "8b610760341fc6b1cd6708a0177c8d946695983a819f9e1660b8d07282339186",
+          "path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed2/request.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "00523be5a471084d8672e55c9536c6916f01b78046dca50162f205f1c26567a0",
+          "expected_sha256": "00523be5a471084d8672e55c9536c6916f01b78046dca50162f205f1c26567a0",
+          "path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed0/request.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "9bd93f2e921fad53b42996518d750be0540f626d391734c3b5f7c4e234344347",
+          "expected_sha256": "9bd93f2e921fad53b42996518d750be0540f626d391734c3b5f7c4e234344347",
+          "path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed1/request.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "2f2b692e854dba36d8e2bc0c9d351999e79e23dae8184c5a60874e9ac5f88865",
+          "expected_sha256": "2f2b692e854dba36d8e2bc0c9d351999e79e23dae8184c5a60874e9ac5f88865",
+          "path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed2/request.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "456e0b7bc6bbf21d456932c4919edaa9d055f1c0b99058db9be6070490cb56b5",
+          "expected_sha256": "456e0b7bc6bbf21d456932c4919edaa9d055f1c0b99058db9be6070490cb56b5",
+          "path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed0/request.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "a0ca50e22d877c840dc0a21067694f51cb3621debfb8c5f270e8a0057115718f",
+          "expected_sha256": "a0ca50e22d877c840dc0a21067694f51cb3621debfb8c5f270e8a0057115718f",
+          "path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed1/request.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "4ee2275b0706f40734510640639a4041309469ffc33c95f6090fc818b5c72f44",
+          "expected_sha256": "4ee2275b0706f40734510640639a4041309469ffc33c95f6090fc818b5c72f44",
+          "path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed2/request.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "9475283fec53517b08e471aad3436788b9833a77dd992ecfc01802ac3dafcc38",
+          "expected_sha256": "9475283fec53517b08e471aad3436788b9833a77dd992ecfc01802ac3dafcc38",
+          "path": "runs/phase1-external-ugi-native-results-v3/defog_unconditional/seed0/common_assessment/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "43b35d2170511ed8dda9a02c5ebc7cc2951c5f64ba8f9bf4bc5e980c28f93aa2",
+          "expected_sha256": "43b35d2170511ed8dda9a02c5ebc7cc2951c5f64ba8f9bf4bc5e980c28f93aa2",
+          "path": "runs/phase1-external-ugi-native-results-v3/defog_unconditional/seed1/common_assessment/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "afaabc5e52cbccd2309698adec0b19adb1b2da3604a4c38fd81e9d0d76e6a891",
+          "expected_sha256": "afaabc5e52cbccd2309698adec0b19adb1b2da3604a4c38fd81e9d0d76e6a891",
+          "path": "runs/phase1-external-ugi-native-results-v3/defog_unconditional/seed2/common_assessment/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "6db8687c0dc1705609b647875fc4e413d941b513d15ea0d5a62279938f338181",
+          "expected_sha256": "6db8687c0dc1705609b647875fc4e413d941b513d15ea0d5a62279938f338181",
+          "path": "runs/phase1-external-ugi-native-results-v3/rgfn/seed0/common_assessment/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "40cbcb859d3c4e4b499ad059fb8b9d866a13892749e315a0fd9a79314bcfc595",
+          "expected_sha256": "40cbcb859d3c4e4b499ad059fb8b9d866a13892749e315a0fd9a79314bcfc595",
+          "path": "runs/phase1-external-ugi-native-results-v3/rgfn/seed1/common_assessment/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "553c26699f17e2ce1da19769b9aea8f278d7f48bfc8ec3330761d864c30d65ea",
+          "expected_sha256": "553c26699f17e2ce1da19769b9aea8f278d7f48bfc8ec3330761d864c30d65ea",
+          "path": "runs/phase1-external-ugi-native-results-v3/rgfn/seed2/common_assessment/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "c5a22fc5d76fa2dbaf7ed045013b066646fd3a369827ede0a598e33e77403530",
+          "expected_sha256": "c5a22fc5d76fa2dbaf7ed045013b066646fd3a369827ede0a598e33e77403530",
+          "path": "runs/phase1-learned-inventory-selector/2024106a25c36eea9c2e9585bd59d345c29edf957b1452abe1631db1befa5eb0/stages/selector/artifacts/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "567bc08c3aa11a0a36550ac469bc99a2a1746d6ecc280e9670950732987044c6",
+          "expected_sha256": "567bc08c3aa11a0a36550ac469bc99a2a1746d6ecc280e9670950732987044c6",
+          "path": "runs/phase1-learned-inventory-selector/7e6e19c564269c904fe531938d6e50a96f9cf1c7a13210dbd571981657f5ca1d/stages/selector/artifacts/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "40ec6f6a2a63ff41846c6e91739c227d59b8642be43c14d30daea7f95817b0db",
+          "expected_sha256": "40ec6f6a2a63ff41846c6e91739c227d59b8642be43c14d30daea7f95817b0db",
+          "path": "runs/phase1-learned-inventory-selector/feb7af6d929fafb58b74ba9e5ff3ed83d0abf2c1357bb24cebe84572ebe823a7/stages/selector/artifacts/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "18c7beab6d85b8fc6d8fc830061e69e74b20a728aea490ccfb7bde3326f9b7c5",
+          "expected_sha256": "18c7beab6d85b8fc6d8fc830061e69e74b20a728aea490ccfb7bde3326f9b7c5",
+          "path": "runs/phase1-shared-bias-cyclic-core-saturation-h100/374a2e47c5d53bef8e855fd7852ce489f09719e86cbf52198e8e05f214fcd6fe/stages/production/artifacts/evaluation/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "79d083d2577b93b41c714f7b50d22b6e9d254ac3a1b8c1b0efeeb827b84ca283",
+          "expected_sha256": "79d083d2577b93b41c714f7b50d22b6e9d254ac3a1b8c1b0efeeb827b84ca283",
+          "path": "runs/phase1-shared-bias-cyclic-core-saturation-h100/60b828956edcddfa8bea0ee8392710d1bfb9868c58bd24cafc084029d855aba4/stages/production/artifacts/evaluation/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "094a04ad3ae401518c711160faafd2a1c5d6e5b562a2d45153c8a7c7c8d3cae7",
+          "expected_sha256": "094a04ad3ae401518c711160faafd2a1c5d6e5b562a2d45153c8a7c7c8d3cae7",
+          "path": "runs/phase1-shared-bias-cyclic-core-saturation-h100/cc58972834ae863b97de8649e2b412d4bd3218ae21f52a85fad84f5ddfc6b29a/stages/production/artifacts/evaluation/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "e41518ca2e48e9a1299878c56fb0a964910d7e856e17de2bed81fc05b7b6e5e4",
+          "expected_sha256": "e41518ca2e48e9a1299878c56fb0a964910d7e856e17de2bed81fc05b7b6e5e4",
+          "path": "runs/phase1-shared-bias-parallel-global-seed0-core-saturation-h100-v2/f309fcf0d36c68922ef266a1b46198d5ee70731e1a35bea74535d3c40bb86434/stages/evaluation/artifacts/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "8431a7e7757e5de778926af0b37830644656bf6a0624e203bc1bf39cbef8e8e1",
+          "expected_sha256": "8431a7e7757e5de778926af0b37830644656bf6a0624e203bc1bf39cbef8e8e1",
+          "path": "runs/phase1-shared-bias-parallel-program-role-seed0-core-saturation-h100-v2/78f43e12b12db09f4bfac272e7d8c93954a11a5d71b9008921ea944fa97c04df/stages/evaluation/artifacts/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "b4d2ab2b685e756e30a75c500a873e37216d1b985a0069752d98fbb905d0665c",
+          "expected_sha256": "b4d2ab2b685e756e30a75c500a873e37216d1b985a0069752d98fbb905d0665c",
+          "path": "runs/phase1-shared-bias-parallel-program-role-seed0-evaluation-h100-v2/bd78a19342c52561cc40ecad85a3ddd8b0e6e2e12a6816a1f406bb413d480c60/stages/evaluation/artifacts/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "06cd2aeaedde97944d03ad12cd9ac5a7a06bf8f8b6faf34c271929b5e9322c0a",
+          "expected_sha256": "06cd2aeaedde97944d03ad12cd9ac5a7a06bf8f8b6faf34c271929b5e9322c0a",
+          "path": "runs/phase1-shared-bias-parallel-program-role-seed1-core-saturation-h100-v2/163577eaa14ad4a09cf87c61e4795dca47ac337c33a8ade5cfe166b18ff171c3/stages/evaluation/artifacts/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "5793086799eb2d736440461c8654146812fbd0e23bca1c3f3f2d19964a5dfedd",
+          "expected_sha256": "5793086799eb2d736440461c8654146812fbd0e23bca1c3f3f2d19964a5dfedd",
+          "path": "runs/phase1-shared-bias-parallel-program-role-seed2-core-saturation-h100-v2/5aeb3827f3c50714f2cc4ea8025d0c97905d15b275acafde09c9ed100b12a3ef/stages/evaluation/artifacts/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "a5470806c97aef5f37013ece5cef9e8c992f81a9f5dc9dfbc0f588bd8c75321a",
+          "expected_sha256": "a5470806c97aef5f37013ece5cef9e8c992f81a9f5dc9dfbc0f588bd8c75321a",
+          "path": "runs/phase1-shared-bias-shared-null-core-saturation-h100/6c4d067206a91f4a11ac75509b27346422aeee78421aa968ee91b28a52351169/stages/production/artifacts/evaluation/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "7a9bb5cf80be2079a479f53efc5166be6ab7da7b4f6e0c063f89561ef51c58ea",
+          "expected_sha256": "7a9bb5cf80be2079a479f53efc5166be6ab7da7b4f6e0c063f89561ef51c58ea",
+          "path": "runs/phase1-shared-bias-shared-null-core-saturation-h100/8e373479710297630cf16b1687a96eed6a2645dae79f88b854ffdce703c29331/stages/production/artifacts/evaluation/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "4292f50a4dc64a6ab246eeb5c5c8567b7b07f85fcfc41e638771369a6f64c209",
+          "expected_sha256": "4292f50a4dc64a6ab246eeb5c5c8567b7b07f85fcfc41e638771369a6f64c209",
+          "path": "runs/phase1-shared-bias-shared-null-core-saturation-h100/a17790ab1dd92566bf4fb0802301ba372b57cbb773e2ea3132ea7c3f71fdc513/stages/production/artifacts/evaluation/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "d59bf9fed863ed49bf22deaf55e441f09d9b268b8fbe46b2f175399ef2ba199a",
+          "expected_sha256": "d59bf9fed863ed49bf22deaf55e441f09d9b268b8fbe46b2f175399ef2ba199a",
+          "path": "runs/phase1-transformer-mechanism-study/3715b68bb7faaa8815ff575e07ff4c00f7983327322462ed8c2b463629172e46/stages/study/artifacts/training/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "878b655257241abf2d1823e5ea5e21be4d7f5f041aa88ef511ba5fe669961f56",
+          "expected_sha256": "878b655257241abf2d1823e5ea5e21be4d7f5f041aa88ef511ba5fe669961f56",
+          "path": "runs/phase1-transformer-mechanism-study/5f149b098c61a855dc1bf51b5ba1c3c31162d35fb5e84abeb174bde30a5eb54f/stages/study/artifacts/training/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "6c946471c2a8b39f881995679d46a2f9e46570d04bf0e0334893692c01b88a08",
+          "expected_sha256": "6c946471c2a8b39f881995679d46a2f9e46570d04bf0e0334893692c01b88a08",
+          "path": "runs/phase1-transformer-mechanism-study/9f5633821b0234c367d7f1058703ba05034d2971c04ee45a7e9a26af83f311c1/stages/study/artifacts/training/result.json",
+          "status": "verified"
+        }
+      ],
+      "manifest_sha256": "a46582aa4ab5300b37827468405e2a332332740f1e5e5133d71bdd89527315b9",
+      "ready": true,
+      "schema_version": "forge.release.artifact_verification.v1"
+    },
+    "submission19337-evidence-v1": {
+      "files": [
+        {
+          "actual_sha256": "46be449ddcef11da686d499015c868c767f4c02714c54e3d5ef5db35c4a42490",
+          "expected_sha256": "46be449ddcef11da686d499015c868c767f4c02714c54e3d5ef5db35c4a42490",
+          "path": "data/source_cache/m0_09_publishers/PMC10544676/assets/41587_2023_1679_MOESM1_ESM.pdf",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "7f5b1c6413e4db3b09cb86296139ba76848b06de96b7165942643233ad6a3e2c",
+          "expected_sha256": "7f5b1c6413e4db3b09cb86296139ba76848b06de96b7165942643233ad6a3e2c",
+          "path": "data/source_cache/m0_09_review_assets/PMC10904786/41467_2024_45422_MOESM1_ESM.pdf",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "c9e616f4a80090c92b16fc9cdceefa4d1163da34659cb43319813fcac5e0ac4d",
+          "expected_sha256": "c9e616f4a80090c92b16fc9cdceefa4d1163da34659cb43319813fcac5e0ac4d",
+          "path": "data/splits/m0_03_constitutional/r0_fold_assignments.csv",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "3493f27306419facd0958589030ed37f272f05c81ad47dd7bc1b8ce0284a57b3",
+          "expected_sha256": "3493f27306419facd0958589030ed37f272f05c81ad47dd7bc1b8ce0284a57b3",
+          "path": "data/vendor/lnpdb_fc7c389.csv",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "fc8bcb6ed618abf4e571a26564f59c716a80b6e6ecf919f451101fb32f552823",
+          "expected_sha256": "fc8bcb6ed618abf4e571a26564f59c716a80b6e6ecf919f451101fb32f552823",
+          "path": "results/m0_03/r0_constitutional.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "3744e066325f3e203139797ab48eb54725f95ce09b39209905fb656df53c5973",
+          "expected_sha256": "3744e066325f3e203139797ab48eb54725f95ce09b39209905fb656df53c5973",
+          "path": "results/phase1/bl_core_constrained_production_cache_v1/cache.npz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "5fa8e4f8bbc79ea4d286b1193262a9cf4bdea56a1ddeecfaf17363c387c5e980",
+          "expected_sha256": "5fa8e4f8bbc79ea4d286b1193262a9cf4bdea56a1ddeecfaf17363c387c5e980",
+          "path": "results/phase1/bl_lx_mixed_repeat_expansion_v2/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "962db4a740bae18c3cadd330e2c7a3f5c0deb3ac120b45f1d681ab962ea1e8a0",
+          "expected_sha256": "962db4a740bae18c3cadd330e2c7a3f5c0deb3ac120b45f1d681ab962ea1e8a0",
+          "path": "results/phase1/bl_lx_mixed_repeat_expansion_v2/semantic_atoms.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "af3f2769e7c0b68399c436f234d9e75d76f42d7db1a3c7cd09718b073191dd91",
+          "expected_sha256": "af3f2769e7c0b68399c436f234d9e75d76f42d7db1a3c7cd09718b073191dd91",
+          "path": "results/phase1/fact_generous_common_assessment_seed0_v1/assessed_attempts.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "5a3e42a5f2a14d04533bc71dd94db58eba4521df8b31dcf383a17bfba9e76209",
+          "expected_sha256": "5a3e42a5f2a14d04533bc71dd94db58eba4521df8b31dcf383a17bfba9e76209",
+          "path": "results/phase1/fact_generous_common_assessment_seed1_v1/assessed_attempts.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "04854850d94497239d9cbd0fb1ea70eb6881c164675904396850a8b1dce0d073",
+          "expected_sha256": "04854850d94497239d9cbd0fb1ea70eb6881c164675904396850a8b1dce0d073",
+          "path": "results/phase1/fact_generous_common_assessment_seed2_v1/assessed_attempts.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "4de28a1e49932f8b5046838677bc96d5c8b239354f0d17ec11c693d720148c44",
+          "expected_sha256": "4de28a1e49932f8b5046838677bc96d5c8b239354f0d17ec11c693d720148c44",
+          "path": "results/phase1/fact_matched_common_assessment_seed0_v1/assessed_attempts.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "e618089a1e8711e6c0dc2d74bdcfe83fb6d4ab14af9055239c07d30ba4e491e3",
+          "expected_sha256": "e618089a1e8711e6c0dc2d74bdcfe83fb6d4ab14af9055239c07d30ba4e491e3",
+          "path": "results/phase1/fact_matched_common_assessment_seed1_v1/assessed_attempts.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "0b1b0bb0fa6ea697e80991a7a676468734f20f123b2458c095326e46cbbb9763",
+          "expected_sha256": "0b1b0bb0fa6ea697e80991a7a676468734f20f123b2458c095326e46cbbb9763",
+          "path": "results/phase1/fact_matched_common_assessment_seed2_v1/assessed_attempts.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "4c97ecadfa04defc720636af7f122ae4e3495f573be2ca06a9e164df9f59cf76",
+          "expected_sha256": "4c97ecadfa04defc720636af7f122ae4e3495f573be2ca06a9e164df9f59cf76",
+          "path": "results/phase1/finite_catalogue_common_assessment_seed0_v1/assessed_attempts.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "7232c6b219ef82fdcc5da9c618bfd603b2b4111e1531f117c4e457223cbe9f94",
+          "expected_sha256": "7232c6b219ef82fdcc5da9c618bfd603b2b4111e1531f117c4e457223cbe9f94",
+          "path": "results/phase1/finite_catalogue_common_assessment_seed1_v1/assessed_attempts.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "c2b1c64ee7974428ed74f8b980a417d20502c5e898f5b9a6b6863e65c3f22492",
+          "expected_sha256": "c2b1c64ee7974428ed74f8b980a417d20502c5e898f5b9a6b6863e65c3f22492",
+          "path": "results/phase1/finite_catalogue_common_assessment_seed2_v1/assessed_attempts.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "41d3ae8a2fd6cf219d4cb78c9010635349d7ce435183ea770c71b9d842b81967",
+          "expected_sha256": "41d3ae8a2fd6cf219d4cb78c9010635349d7ce435183ea770c71b9d842b81967",
+          "path": "results/phase1/forge_transformer_core_saturation_common_assessment_seed0_v2/assessed_attempts.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "528fc876a67d8906428614ee02d4d02fa7813c8387133de72b51ca93d3395bc6",
+          "expected_sha256": "528fc876a67d8906428614ee02d4d02fa7813c8387133de72b51ca93d3395bc6",
+          "path": "results/phase1/forge_transformer_core_saturation_common_assessment_seed1_v2/assessed_attempts.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "46126bd2c8dc0275e7639d8eb91c52e6c99eb2e0f5507522b03de2ccc838e859",
+          "expected_sha256": "46126bd2c8dc0275e7639d8eb91c52e6c99eb2e0f5507522b03de2ccc838e859",
+          "path": "results/phase1/forge_transformer_core_saturation_common_assessment_seed2_v2/assessed_attempts.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "db0769f480737fd95e47891b87e723fa0914912f82c88b7398a5d47cdb210964",
+          "expected_sha256": "db0769f480737fd95e47891b87e723fa0914912f82c88b7398a5d47cdb210964",
+          "path": "results/phase1/genmol_safe_common_assessment_seed0_v1/assessed_attempts.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "67ee8706d9d0b2250d374cff8e09571e474843fb77024a488d412ad2e04aa0b6",
+          "expected_sha256": "67ee8706d9d0b2250d374cff8e09571e474843fb77024a488d412ad2e04aa0b6",
+          "path": "results/phase1/genmol_safe_common_assessment_seed1_v1/assessed_attempts.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "1e56817f57ac5b68dffbe7ec3a3f01c7022c18b52300db0f484190ab9504586f",
+          "expected_sha256": "1e56817f57ac5b68dffbe7ec3a3f01c7022c18b52300db0f484190ab9504586f",
+          "path": "results/phase1/genmol_safe_common_assessment_seed2_v1/assessed_attempts.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "31e1157895c67644073e45d064563daa2cdeecdadba8c7fc21a42facd4214923",
+          "expected_sha256": "31e1157895c67644073e45d064563daa2cdeecdadba8c7fc21a42facd4214923",
+          "path": "results/phase1/multireaction_program_corpus_v1/component_disjoint_splits.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "421facddd3b4893be9f358be59f40da25b54d4de7ed8b43844a5d9efebfb28e1",
+          "expected_sha256": "421facddd3b4893be9f358be59f40da25b54d4de7ed8b43844a5d9efebfb28e1",
+          "path": "results/phase1/multireaction_program_corpus_v1/reaction_program_atlas.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "df6f06fc1a4f9239ee24cbd46e0de8805a5e5063e3e9087379182868695e401d",
+          "expected_sha256": "df6f06fc1a4f9239ee24cbd46e0de8805a5e5063e3e9087379182868695e401d",
+          "path": "results/phase1/multireaction_program_corpus_v1/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "ca49423ce3c78931770f7f8a8bc49cfab26ade2801b4fe62cd43da539e17ad83",
+          "expected_sha256": "ca49423ce3c78931770f7f8a8bc49cfab26ade2801b4fe62cd43da539e17ad83",
+          "path": "results/phase1/multireaction_program_corpus_v1/semantic_atoms.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "90ab7430354a9ffd91cfd6e19f2a125020a6547c67cd462a11f77074fd2a0cc5",
+          "expected_sha256": "90ab7430354a9ffd91cfd6e19f2a125020a6547c67cd462a11f77074fd2a0cc5",
+          "path": "results/phase1/product_v3_atom_vocabulary.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "2e51fcf71f2daf791b9913d9e2dc0859f0d8fc8d346a855f4a0e4b4ea534081b",
+          "expected_sha256": "2e51fcf71f2daf791b9913d9e2dc0859f0d8fc8d346a855f4a0e4b4ea534081b",
+          "path": "results/phase1/reaction_program_transformer_overfit_v1/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "a36fe87acdf34c233715ee54075011490d4b1a5024ff853963f2b774a433e72c",
+          "expected_sha256": "a36fe87acdf34c233715ee54075011490d4b1a5024ff853963f2b774a433e72c",
+          "path": "results/phase1/shared_null_posthoc_common_assessment_seed0_v1/assessed_attempts.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "67f97af43a0681f4725f35e71ef9df7ba923d45eb3ddeb882adc6dadb4dbd4b5",
+          "expected_sha256": "67f97af43a0681f4725f35e71ef9df7ba923d45eb3ddeb882adc6dadb4dbd4b5",
+          "path": "results/phase1/shared_null_posthoc_common_assessment_seed1_v1/assessed_attempts.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "9cb14578f5c452ed9220be5f42d91b2a6cfabf9b6693ef36e344614668fa5a0c",
+          "expected_sha256": "9cb14578f5c452ed9220be5f42d91b2a6cfabf9b6693ef36e344614668fa5a0c",
+          "path": "results/phase1/shared_null_posthoc_common_assessment_seed2_v1/assessed_attempts.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "c285361670917485233871be4c72b6b2bc6c641e9921e140296475376fb0d3d6",
+          "expected_sha256": "c285361670917485233871be4c72b6b2bc6c641e9921e140296475376fb0d3d6",
+          "path": "results/phase1/shared_synthesis_program_mixed_design_v1/design.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "426666c7f59dc6f5ec6143dc06d23cbfaef6c51af475ef20c53cdc6bbbed8ed7",
+          "expected_sha256": "426666c7f59dc6f5ec6143dc06d23cbfaef6c51af475ef20c53cdc6bbbed8ed7",
+          "path": "results/phase1/shared_synthesis_program_mixed_representation_v1/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "487c7382af3a18099505aa1e01b981b2b9b9c7b191e0cd7a36b79ad5c318bb88",
+          "expected_sha256": "487c7382af3a18099505aa1e01b981b2b9b9c7b191e0cd7a36b79ad5c318bb88",
+          "path": "results/phase1/shared_synthesis_program_representation_v1/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "ecfd968181e3729843d4ccac6f3a7d046dc8475ff23e5ead49fbe2193c74cad1",
+          "expected_sha256": "ecfd968181e3729843d4ccac6f3a7d046dc8475ff23e5ead49fbe2193c74cad1",
+          "path": "results/phase1/shared_synthesis_program_training_integration_v1/qualification/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "1b655ce6389f50c7310a21a287997793c592ca93de064d53bafacaee24f663a6",
+          "expected_sha256": "1b655ce6389f50c7310a21a287997793c592ca93de064d53bafacaee24f663a6",
+          "path": "results/phase1/ugi_balanced_chemistry_corpus_v2/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "08f6241aa64eb0e9a94594f0678f7c81da796b13e392cfacfb2336e8b1e671a1",
+          "expected_sha256": "08f6241aa64eb0e9a94594f0678f7c81da796b13e392cfacfb2336e8b1e671a1",
+          "path": "results/phase1/ugi_balanced_chemistry_corpus_v2/semantic_atoms.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "13fd0204fe4a7d1402c47e4fce0ac5cce0c78410c5c8fbfbde48c552fc00da1d",
+          "expected_sha256": "13fd0204fe4a7d1402c47e4fce0ac5cce0c78410c5c8fbfbde48c552fc00da1d",
+          "path": "results/phase1/ugi_balanced_chemistry_corpus_v2/semantic_products.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "0076d72f7649c5b2b6d7fad242b0ecc0a667d232c137dbd282a52ff34a3e6a20",
+          "expected_sha256": "0076d72f7649c5b2b6d7fad242b0ecc0a667d232c137dbd282a52ff34a3e6a20",
+          "path": "results/phase1/ugi_bounded_hybrid_route_cascade_v1/component_route_ledger.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "0512419ab0926d88113ddb9cd12eb63fe7cb39ed86edaeb419947c5224fc9580",
+          "expected_sha256": "0512419ab0926d88113ddb9cd12eb63fe7cb39ed86edaeb419947c5224fc9580",
+          "path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed0/inputs/calibration.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "29d48b7b5482a04ca795b5197434187cbedefa0f8b056398a1f6935c78383f38",
+          "expected_sha256": "29d48b7b5482a04ca795b5197434187cbedefa0f8b056398a1f6935c78383f38",
+          "path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed0/inputs/calibration.smi",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "cb4129187583a633ccb4ca8003b3dc0ea3646c46716b7947f0f92e4ff8ae70a9",
+          "expected_sha256": "cb4129187583a633ccb4ca8003b3dc0ea3646c46716b7947f0f92e4ff8ae70a9",
+          "path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed0/inputs/heldout.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "07100fc0f1cd86fa362ebc2cd55b0d964f2cbc3fffae1034b09e1f20e301697d",
+          "expected_sha256": "07100fc0f1cd86fa362ebc2cd55b0d964f2cbc3fffae1034b09e1f20e301697d",
+          "path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed0/inputs/heldout.smi",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "c168a351990d28069739f7b651c50197234f183f634dd5ca1982c348a887d2c7",
+          "expected_sha256": "c168a351990d28069739f7b651c50197234f183f634dd5ca1982c348a887d2c7",
+          "path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed0/inputs/train.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "09e18eb5a0e3fa15ac971248bba99afc3d4e2abebad4376c7c0cfca6b073a2a1",
+          "expected_sha256": "09e18eb5a0e3fa15ac971248bba99afc3d4e2abebad4376c7c0cfca6b073a2a1",
+          "path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed0/inputs/train.smi",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "bd5fc3f71640c05118c2ce05919bed7bfe605b836121fb576017c8bfdfc059c6",
+          "expected_sha256": "bd5fc3f71640c05118c2ce05919bed7bfe605b836121fb576017c8bfdfc059c6",
+          "path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed0/inputs/train_components.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "8355fe17366cba2891aa1f3e79338fb63120dfa77fdc26343197b03dbe1ea482",
+          "expected_sha256": "8355fe17366cba2891aa1f3e79338fb63120dfa77fdc26343197b03dbe1ea482",
+          "path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed0/inputs/ugi_reaction.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "0512419ab0926d88113ddb9cd12eb63fe7cb39ed86edaeb419947c5224fc9580",
+          "expected_sha256": "0512419ab0926d88113ddb9cd12eb63fe7cb39ed86edaeb419947c5224fc9580",
+          "path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed1/inputs/calibration.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "29d48b7b5482a04ca795b5197434187cbedefa0f8b056398a1f6935c78383f38",
+          "expected_sha256": "29d48b7b5482a04ca795b5197434187cbedefa0f8b056398a1f6935c78383f38",
+          "path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed1/inputs/calibration.smi",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "cb4129187583a633ccb4ca8003b3dc0ea3646c46716b7947f0f92e4ff8ae70a9",
+          "expected_sha256": "cb4129187583a633ccb4ca8003b3dc0ea3646c46716b7947f0f92e4ff8ae70a9",
+          "path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed1/inputs/heldout.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "07100fc0f1cd86fa362ebc2cd55b0d964f2cbc3fffae1034b09e1f20e301697d",
+          "expected_sha256": "07100fc0f1cd86fa362ebc2cd55b0d964f2cbc3fffae1034b09e1f20e301697d",
+          "path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed1/inputs/heldout.smi",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "c168a351990d28069739f7b651c50197234f183f634dd5ca1982c348a887d2c7",
+          "expected_sha256": "c168a351990d28069739f7b651c50197234f183f634dd5ca1982c348a887d2c7",
+          "path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed1/inputs/train.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "09e18eb5a0e3fa15ac971248bba99afc3d4e2abebad4376c7c0cfca6b073a2a1",
+          "expected_sha256": "09e18eb5a0e3fa15ac971248bba99afc3d4e2abebad4376c7c0cfca6b073a2a1",
+          "path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed1/inputs/train.smi",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "bd5fc3f71640c05118c2ce05919bed7bfe605b836121fb576017c8bfdfc059c6",
+          "expected_sha256": "bd5fc3f71640c05118c2ce05919bed7bfe605b836121fb576017c8bfdfc059c6",
+          "path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed1/inputs/train_components.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "8355fe17366cba2891aa1f3e79338fb63120dfa77fdc26343197b03dbe1ea482",
+          "expected_sha256": "8355fe17366cba2891aa1f3e79338fb63120dfa77fdc26343197b03dbe1ea482",
+          "path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed1/inputs/ugi_reaction.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "0512419ab0926d88113ddb9cd12eb63fe7cb39ed86edaeb419947c5224fc9580",
+          "expected_sha256": "0512419ab0926d88113ddb9cd12eb63fe7cb39ed86edaeb419947c5224fc9580",
+          "path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed2/inputs/calibration.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "29d48b7b5482a04ca795b5197434187cbedefa0f8b056398a1f6935c78383f38",
+          "expected_sha256": "29d48b7b5482a04ca795b5197434187cbedefa0f8b056398a1f6935c78383f38",
+          "path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed2/inputs/calibration.smi",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "cb4129187583a633ccb4ca8003b3dc0ea3646c46716b7947f0f92e4ff8ae70a9",
+          "expected_sha256": "cb4129187583a633ccb4ca8003b3dc0ea3646c46716b7947f0f92e4ff8ae70a9",
+          "path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed2/inputs/heldout.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "07100fc0f1cd86fa362ebc2cd55b0d964f2cbc3fffae1034b09e1f20e301697d",
+          "expected_sha256": "07100fc0f1cd86fa362ebc2cd55b0d964f2cbc3fffae1034b09e1f20e301697d",
+          "path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed2/inputs/heldout.smi",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "c168a351990d28069739f7b651c50197234f183f634dd5ca1982c348a887d2c7",
+          "expected_sha256": "c168a351990d28069739f7b651c50197234f183f634dd5ca1982c348a887d2c7",
+          "path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed2/inputs/train.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "09e18eb5a0e3fa15ac971248bba99afc3d4e2abebad4376c7c0cfca6b073a2a1",
+          "expected_sha256": "09e18eb5a0e3fa15ac971248bba99afc3d4e2abebad4376c7c0cfca6b073a2a1",
+          "path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed2/inputs/train.smi",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "bd5fc3f71640c05118c2ce05919bed7bfe605b836121fb576017c8bfdfc059c6",
+          "expected_sha256": "bd5fc3f71640c05118c2ce05919bed7bfe605b836121fb576017c8bfdfc059c6",
+          "path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed2/inputs/train_components.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "8355fe17366cba2891aa1f3e79338fb63120dfa77fdc26343197b03dbe1ea482",
+          "expected_sha256": "8355fe17366cba2891aa1f3e79338fb63120dfa77fdc26343197b03dbe1ea482",
+          "path": "runs/phase1-external-ugi-native-requests-v3/defog_unconditional/seed2/inputs/ugi_reaction.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "0512419ab0926d88113ddb9cd12eb63fe7cb39ed86edaeb419947c5224fc9580",
+          "expected_sha256": "0512419ab0926d88113ddb9cd12eb63fe7cb39ed86edaeb419947c5224fc9580",
+          "path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed0/inputs/calibration.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "29d48b7b5482a04ca795b5197434187cbedefa0f8b056398a1f6935c78383f38",
+          "expected_sha256": "29d48b7b5482a04ca795b5197434187cbedefa0f8b056398a1f6935c78383f38",
+          "path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed0/inputs/calibration.smi",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "cb4129187583a633ccb4ca8003b3dc0ea3646c46716b7947f0f92e4ff8ae70a9",
+          "expected_sha256": "cb4129187583a633ccb4ca8003b3dc0ea3646c46716b7947f0f92e4ff8ae70a9",
+          "path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed0/inputs/heldout.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "07100fc0f1cd86fa362ebc2cd55b0d964f2cbc3fffae1034b09e1f20e301697d",
+          "expected_sha256": "07100fc0f1cd86fa362ebc2cd55b0d964f2cbc3fffae1034b09e1f20e301697d",
+          "path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed0/inputs/heldout.smi",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "c168a351990d28069739f7b651c50197234f183f634dd5ca1982c348a887d2c7",
+          "expected_sha256": "c168a351990d28069739f7b651c50197234f183f634dd5ca1982c348a887d2c7",
+          "path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed0/inputs/train.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "09e18eb5a0e3fa15ac971248bba99afc3d4e2abebad4376c7c0cfca6b073a2a1",
+          "expected_sha256": "09e18eb5a0e3fa15ac971248bba99afc3d4e2abebad4376c7c0cfca6b073a2a1",
+          "path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed0/inputs/train.smi",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "bd5fc3f71640c05118c2ce05919bed7bfe605b836121fb576017c8bfdfc059c6",
+          "expected_sha256": "bd5fc3f71640c05118c2ce05919bed7bfe605b836121fb576017c8bfdfc059c6",
+          "path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed0/inputs/train_components.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "8355fe17366cba2891aa1f3e79338fb63120dfa77fdc26343197b03dbe1ea482",
+          "expected_sha256": "8355fe17366cba2891aa1f3e79338fb63120dfa77fdc26343197b03dbe1ea482",
+          "path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed0/inputs/ugi_reaction.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "0512419ab0926d88113ddb9cd12eb63fe7cb39ed86edaeb419947c5224fc9580",
+          "expected_sha256": "0512419ab0926d88113ddb9cd12eb63fe7cb39ed86edaeb419947c5224fc9580",
+          "path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed1/inputs/calibration.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "29d48b7b5482a04ca795b5197434187cbedefa0f8b056398a1f6935c78383f38",
+          "expected_sha256": "29d48b7b5482a04ca795b5197434187cbedefa0f8b056398a1f6935c78383f38",
+          "path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed1/inputs/calibration.smi",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "cb4129187583a633ccb4ca8003b3dc0ea3646c46716b7947f0f92e4ff8ae70a9",
+          "expected_sha256": "cb4129187583a633ccb4ca8003b3dc0ea3646c46716b7947f0f92e4ff8ae70a9",
+          "path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed1/inputs/heldout.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "07100fc0f1cd86fa362ebc2cd55b0d964f2cbc3fffae1034b09e1f20e301697d",
+          "expected_sha256": "07100fc0f1cd86fa362ebc2cd55b0d964f2cbc3fffae1034b09e1f20e301697d",
+          "path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed1/inputs/heldout.smi",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "c168a351990d28069739f7b651c50197234f183f634dd5ca1982c348a887d2c7",
+          "expected_sha256": "c168a351990d28069739f7b651c50197234f183f634dd5ca1982c348a887d2c7",
+          "path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed1/inputs/train.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "09e18eb5a0e3fa15ac971248bba99afc3d4e2abebad4376c7c0cfca6b073a2a1",
+          "expected_sha256": "09e18eb5a0e3fa15ac971248bba99afc3d4e2abebad4376c7c0cfca6b073a2a1",
+          "path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed1/inputs/train.smi",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "bd5fc3f71640c05118c2ce05919bed7bfe605b836121fb576017c8bfdfc059c6",
+          "expected_sha256": "bd5fc3f71640c05118c2ce05919bed7bfe605b836121fb576017c8bfdfc059c6",
+          "path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed1/inputs/train_components.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "8355fe17366cba2891aa1f3e79338fb63120dfa77fdc26343197b03dbe1ea482",
+          "expected_sha256": "8355fe17366cba2891aa1f3e79338fb63120dfa77fdc26343197b03dbe1ea482",
+          "path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed1/inputs/ugi_reaction.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "0512419ab0926d88113ddb9cd12eb63fe7cb39ed86edaeb419947c5224fc9580",
+          "expected_sha256": "0512419ab0926d88113ddb9cd12eb63fe7cb39ed86edaeb419947c5224fc9580",
+          "path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed2/inputs/calibration.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "29d48b7b5482a04ca795b5197434187cbedefa0f8b056398a1f6935c78383f38",
+          "expected_sha256": "29d48b7b5482a04ca795b5197434187cbedefa0f8b056398a1f6935c78383f38",
+          "path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed2/inputs/calibration.smi",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "cb4129187583a633ccb4ca8003b3dc0ea3646c46716b7947f0f92e4ff8ae70a9",
+          "expected_sha256": "cb4129187583a633ccb4ca8003b3dc0ea3646c46716b7947f0f92e4ff8ae70a9",
+          "path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed2/inputs/heldout.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "07100fc0f1cd86fa362ebc2cd55b0d964f2cbc3fffae1034b09e1f20e301697d",
+          "expected_sha256": "07100fc0f1cd86fa362ebc2cd55b0d964f2cbc3fffae1034b09e1f20e301697d",
+          "path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed2/inputs/heldout.smi",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "c168a351990d28069739f7b651c50197234f183f634dd5ca1982c348a887d2c7",
+          "expected_sha256": "c168a351990d28069739f7b651c50197234f183f634dd5ca1982c348a887d2c7",
+          "path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed2/inputs/train.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "09e18eb5a0e3fa15ac971248bba99afc3d4e2abebad4376c7c0cfca6b073a2a1",
+          "expected_sha256": "09e18eb5a0e3fa15ac971248bba99afc3d4e2abebad4376c7c0cfca6b073a2a1",
+          "path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed2/inputs/train.smi",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "bd5fc3f71640c05118c2ce05919bed7bfe605b836121fb576017c8bfdfc059c6",
+          "expected_sha256": "bd5fc3f71640c05118c2ce05919bed7bfe605b836121fb576017c8bfdfc059c6",
+          "path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed2/inputs/train_components.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "8355fe17366cba2891aa1f3e79338fb63120dfa77fdc26343197b03dbe1ea482",
+          "expected_sha256": "8355fe17366cba2891aa1f3e79338fb63120dfa77fdc26343197b03dbe1ea482",
+          "path": "runs/phase1-external-ugi-native-requests-v3/genmol_safe/seed2/inputs/ugi_reaction.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "0512419ab0926d88113ddb9cd12eb63fe7cb39ed86edaeb419947c5224fc9580",
+          "expected_sha256": "0512419ab0926d88113ddb9cd12eb63fe7cb39ed86edaeb419947c5224fc9580",
+          "path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed0/inputs/calibration.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "29d48b7b5482a04ca795b5197434187cbedefa0f8b056398a1f6935c78383f38",
+          "expected_sha256": "29d48b7b5482a04ca795b5197434187cbedefa0f8b056398a1f6935c78383f38",
+          "path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed0/inputs/calibration.smi",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "cb4129187583a633ccb4ca8003b3dc0ea3646c46716b7947f0f92e4ff8ae70a9",
+          "expected_sha256": "cb4129187583a633ccb4ca8003b3dc0ea3646c46716b7947f0f92e4ff8ae70a9",
+          "path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed0/inputs/heldout.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "07100fc0f1cd86fa362ebc2cd55b0d964f2cbc3fffae1034b09e1f20e301697d",
+          "expected_sha256": "07100fc0f1cd86fa362ebc2cd55b0d964f2cbc3fffae1034b09e1f20e301697d",
+          "path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed0/inputs/heldout.smi",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "c168a351990d28069739f7b651c50197234f183f634dd5ca1982c348a887d2c7",
+          "expected_sha256": "c168a351990d28069739f7b651c50197234f183f634dd5ca1982c348a887d2c7",
+          "path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed0/inputs/train.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "09e18eb5a0e3fa15ac971248bba99afc3d4e2abebad4376c7c0cfca6b073a2a1",
+          "expected_sha256": "09e18eb5a0e3fa15ac971248bba99afc3d4e2abebad4376c7c0cfca6b073a2a1",
+          "path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed0/inputs/train.smi",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "bd5fc3f71640c05118c2ce05919bed7bfe605b836121fb576017c8bfdfc059c6",
+          "expected_sha256": "bd5fc3f71640c05118c2ce05919bed7bfe605b836121fb576017c8bfdfc059c6",
+          "path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed0/inputs/train_components.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "8355fe17366cba2891aa1f3e79338fb63120dfa77fdc26343197b03dbe1ea482",
+          "expected_sha256": "8355fe17366cba2891aa1f3e79338fb63120dfa77fdc26343197b03dbe1ea482",
+          "path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed0/inputs/ugi_reaction.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "0512419ab0926d88113ddb9cd12eb63fe7cb39ed86edaeb419947c5224fc9580",
+          "expected_sha256": "0512419ab0926d88113ddb9cd12eb63fe7cb39ed86edaeb419947c5224fc9580",
+          "path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed1/inputs/calibration.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "29d48b7b5482a04ca795b5197434187cbedefa0f8b056398a1f6935c78383f38",
+          "expected_sha256": "29d48b7b5482a04ca795b5197434187cbedefa0f8b056398a1f6935c78383f38",
+          "path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed1/inputs/calibration.smi",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "cb4129187583a633ccb4ca8003b3dc0ea3646c46716b7947f0f92e4ff8ae70a9",
+          "expected_sha256": "cb4129187583a633ccb4ca8003b3dc0ea3646c46716b7947f0f92e4ff8ae70a9",
+          "path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed1/inputs/heldout.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "07100fc0f1cd86fa362ebc2cd55b0d964f2cbc3fffae1034b09e1f20e301697d",
+          "expected_sha256": "07100fc0f1cd86fa362ebc2cd55b0d964f2cbc3fffae1034b09e1f20e301697d",
+          "path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed1/inputs/heldout.smi",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "c168a351990d28069739f7b651c50197234f183f634dd5ca1982c348a887d2c7",
+          "expected_sha256": "c168a351990d28069739f7b651c50197234f183f634dd5ca1982c348a887d2c7",
+          "path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed1/inputs/train.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "09e18eb5a0e3fa15ac971248bba99afc3d4e2abebad4376c7c0cfca6b073a2a1",
+          "expected_sha256": "09e18eb5a0e3fa15ac971248bba99afc3d4e2abebad4376c7c0cfca6b073a2a1",
+          "path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed1/inputs/train.smi",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "bd5fc3f71640c05118c2ce05919bed7bfe605b836121fb576017c8bfdfc059c6",
+          "expected_sha256": "bd5fc3f71640c05118c2ce05919bed7bfe605b836121fb576017c8bfdfc059c6",
+          "path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed1/inputs/train_components.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "8355fe17366cba2891aa1f3e79338fb63120dfa77fdc26343197b03dbe1ea482",
+          "expected_sha256": "8355fe17366cba2891aa1f3e79338fb63120dfa77fdc26343197b03dbe1ea482",
+          "path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed1/inputs/ugi_reaction.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "0512419ab0926d88113ddb9cd12eb63fe7cb39ed86edaeb419947c5224fc9580",
+          "expected_sha256": "0512419ab0926d88113ddb9cd12eb63fe7cb39ed86edaeb419947c5224fc9580",
+          "path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed2/inputs/calibration.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "29d48b7b5482a04ca795b5197434187cbedefa0f8b056398a1f6935c78383f38",
+          "expected_sha256": "29d48b7b5482a04ca795b5197434187cbedefa0f8b056398a1f6935c78383f38",
+          "path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed2/inputs/calibration.smi",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "cb4129187583a633ccb4ca8003b3dc0ea3646c46716b7947f0f92e4ff8ae70a9",
+          "expected_sha256": "cb4129187583a633ccb4ca8003b3dc0ea3646c46716b7947f0f92e4ff8ae70a9",
+          "path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed2/inputs/heldout.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "07100fc0f1cd86fa362ebc2cd55b0d964f2cbc3fffae1034b09e1f20e301697d",
+          "expected_sha256": "07100fc0f1cd86fa362ebc2cd55b0d964f2cbc3fffae1034b09e1f20e301697d",
+          "path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed2/inputs/heldout.smi",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "c168a351990d28069739f7b651c50197234f183f634dd5ca1982c348a887d2c7",
+          "expected_sha256": "c168a351990d28069739f7b651c50197234f183f634dd5ca1982c348a887d2c7",
+          "path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed2/inputs/train.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "09e18eb5a0e3fa15ac971248bba99afc3d4e2abebad4376c7c0cfca6b073a2a1",
+          "expected_sha256": "09e18eb5a0e3fa15ac971248bba99afc3d4e2abebad4376c7c0cfca6b073a2a1",
+          "path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed2/inputs/train.smi",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "bd5fc3f71640c05118c2ce05919bed7bfe605b836121fb576017c8bfdfc059c6",
+          "expected_sha256": "bd5fc3f71640c05118c2ce05919bed7bfe605b836121fb576017c8bfdfc059c6",
+          "path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed2/inputs/train_components.csv.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "8355fe17366cba2891aa1f3e79338fb63120dfa77fdc26343197b03dbe1ea482",
+          "expected_sha256": "8355fe17366cba2891aa1f3e79338fb63120dfa77fdc26343197b03dbe1ea482",
+          "path": "runs/phase1-external-ugi-native-requests-v3/rgfn/seed2/inputs/ugi_reaction.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "bd9a58d8ea1ea5d812a2e71214eceaade3521933e16840eb8bf30ca3e5f81d21",
+          "expected_sha256": "bd9a58d8ea1ea5d812a2e71214eceaade3521933e16840eb8bf30ca3e5f81d21",
+          "path": "runs/phase1-external-ugi-native-results-v3/defog_unconditional/seed0/common_assessment/assessed_attempts.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "fabd7a45aa324ada8a23ea9813113a511c886366a97afd8193ffb52897cb7327",
+          "expected_sha256": "fabd7a45aa324ada8a23ea9813113a511c886366a97afd8193ffb52897cb7327",
+          "path": "runs/phase1-external-ugi-native-results-v3/defog_unconditional/seed1/common_assessment/assessed_attempts.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "129e725b17c5bf4ee94d4b10f93b6a1052ccab378396dc996ebc3fba511f24ac",
+          "expected_sha256": "129e725b17c5bf4ee94d4b10f93b6a1052ccab378396dc996ebc3fba511f24ac",
+          "path": "runs/phase1-external-ugi-native-results-v3/defog_unconditional/seed2/common_assessment/assessed_attempts.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "d537bfeaa01d3dccfac40a73d9bc16d56c8ef4bd1c42121b57fcbdc038adae61",
+          "expected_sha256": "d537bfeaa01d3dccfac40a73d9bc16d56c8ef4bd1c42121b57fcbdc038adae61",
+          "path": "runs/phase1-external-ugi-native-results-v3/rgfn/seed0/common_assessment/assessed_attempts.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "a7f715b34864709390fbf6e26c1e7f71b48143145d3a0a702e590ab3f5a4389d",
+          "expected_sha256": "a7f715b34864709390fbf6e26c1e7f71b48143145d3a0a702e590ab3f5a4389d",
+          "path": "runs/phase1-external-ugi-native-results-v3/rgfn/seed1/common_assessment/assessed_attempts.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "d77b0f03ba1bb4849b10c2e71fa39f8af925ddb7cce38ca3e4150b8b75e40124",
+          "expected_sha256": "d77b0f03ba1bb4849b10c2e71fa39f8af925ddb7cce38ca3e4150b8b75e40124",
+          "path": "runs/phase1-external-ugi-native-results-v3/rgfn/seed2/common_assessment/assessed_attempts.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "29c93531143d614ee5e37c731b042eff498e016b4bfc36d004bb43bda794ab43",
+          "expected_sha256": "29c93531143d614ee5e37c731b042eff498e016b4bfc36d004bb43bda794ab43",
+          "path": "runs/phase1-learned-inventory-selector/2024106a25c36eea9c2e9585bd59d345c29edf957b1452abe1631db1befa5eb0/stages/selector/artifacts/assessed_attempts.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "52b81b7bfcd642b8a709ac6ee421e34d1902632451b17651eeaf3348ee64c55d",
+          "expected_sha256": "52b81b7bfcd642b8a709ac6ee421e34d1902632451b17651eeaf3348ee64c55d",
+          "path": "runs/phase1-learned-inventory-selector/2024106a25c36eea9c2e9585bd59d345c29edf957b1452abe1631db1befa5eb0/stages/selector/artifacts/attempts.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "59b0523bbbb3bff6ea26b66284c222fa33d657f5bf78cbe73e002daf6e7fe1c8",
+          "expected_sha256": "59b0523bbbb3bff6ea26b66284c222fa33d657f5bf78cbe73e002daf6e7fe1c8",
+          "path": "runs/phase1-learned-inventory-selector/7e6e19c564269c904fe531938d6e50a96f9cf1c7a13210dbd571981657f5ca1d/stages/selector/artifacts/assessed_attempts.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "2392552475c6f33e347ac4c583f95a52cf73c0da2bdd104ced98b3e4734de970",
+          "expected_sha256": "2392552475c6f33e347ac4c583f95a52cf73c0da2bdd104ced98b3e4734de970",
+          "path": "runs/phase1-learned-inventory-selector/7e6e19c564269c904fe531938d6e50a96f9cf1c7a13210dbd571981657f5ca1d/stages/selector/artifacts/attempts.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "a82d2c4994f923c97d529a25c99a41dc18ab55e92e6e00b3a234648ff32a40cd",
+          "expected_sha256": "a82d2c4994f923c97d529a25c99a41dc18ab55e92e6e00b3a234648ff32a40cd",
+          "path": "runs/phase1-learned-inventory-selector/feb7af6d929fafb58b74ba9e5ff3ed83d0abf2c1357bb24cebe84572ebe823a7/stages/selector/artifacts/assessed_attempts.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "247c2846535f75027b2777750506a7ecc3614f14daaba3b75cec36afd99dccda",
+          "expected_sha256": "247c2846535f75027b2777750506a7ecc3614f14daaba3b75cec36afd99dccda",
+          "path": "runs/phase1-learned-inventory-selector/feb7af6d929fafb58b74ba9e5ff3ed83d0abf2c1357bb24cebe84572ebe823a7/stages/selector/artifacts/attempts.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "077d91c3bcddd74df29a662bfeceaa2133ece8620a772fa1b86d59e5de054295",
+          "expected_sha256": "077d91c3bcddd74df29a662bfeceaa2133ece8620a772fa1b86d59e5de054295",
+          "path": "runs/phase1-shared-bias-cyclic-core-saturation-h100/374a2e47c5d53bef8e855fd7852ce489f09719e86cbf52198e8e05f214fcd6fe/stages/production/artifacts/evaluation/samples.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "3415558a18ccc6013cb16b37996867c16818d8784d1e2aff6f95e20838e7aad1",
+          "expected_sha256": "3415558a18ccc6013cb16b37996867c16818d8784d1e2aff6f95e20838e7aad1",
+          "path": "runs/phase1-shared-bias-cyclic-core-saturation-h100/60b828956edcddfa8bea0ee8392710d1bfb9868c58bd24cafc084029d855aba4/stages/production/artifacts/evaluation/samples.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "c753974024df857f94a8e6a5b2d10960e4c302e4a15c2c71f353613b51bea6dd",
+          "expected_sha256": "c753974024df857f94a8e6a5b2d10960e4c302e4a15c2c71f353613b51bea6dd",
+          "path": "runs/phase1-shared-bias-cyclic-core-saturation-h100/cc58972834ae863b97de8649e2b412d4bd3218ae21f52a85fad84f5ddfc6b29a/stages/production/artifacts/evaluation/samples.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "1ac07f5b89df8c85397d5504045b3e9549e165f05aeb989828698a444f5f4e33",
+          "expected_sha256": "1ac07f5b89df8c85397d5504045b3e9549e165f05aeb989828698a444f5f4e33",
+          "path": "runs/phase1-shared-bias-parallel-global-seed0-core-saturation-h100-v2/f309fcf0d36c68922ef266a1b46198d5ee70731e1a35bea74535d3c40bb86434/stages/evaluation/artifacts/samples.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "c5c336794caf0f35ae03260980dd8d9e1e5cdb8534925cd9159b5b6c355f5f6a",
+          "expected_sha256": "c5c336794caf0f35ae03260980dd8d9e1e5cdb8534925cd9159b5b6c355f5f6a",
+          "path": "runs/phase1-shared-bias-parallel-program-role-seed0-core-saturation-h100-v2/78f43e12b12db09f4bfac272e7d8c93954a11a5d71b9008921ea944fa97c04df/stages/evaluation/artifacts/samples.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "f7fe07bd54dc00d8290c837d72d8afa0af8e2e424027658e8bc05969dba22687",
+          "expected_sha256": "f7fe07bd54dc00d8290c837d72d8afa0af8e2e424027658e8bc05969dba22687",
+          "path": "runs/phase1-shared-bias-parallel-program-role-seed0-evaluation-h100-v2/bd78a19342c52561cc40ecad85a3ddd8b0e6e2e12a6816a1f406bb413d480c60/stages/evaluation/artifacts/samples.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "a1cfa06f9f56feeafbf1771d53d0b6ea9eee9859b0a6ab04bbf525b9959ec265",
+          "expected_sha256": "a1cfa06f9f56feeafbf1771d53d0b6ea9eee9859b0a6ab04bbf525b9959ec265",
+          "path": "runs/phase1-shared-bias-parallel-program-role-seed1-core-saturation-h100-v2/163577eaa14ad4a09cf87c61e4795dca47ac337c33a8ade5cfe166b18ff171c3/stages/evaluation/artifacts/samples.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "f6aded1e40deba342fbd21955ae5c922a4ec6837c7e4846ab0b384ab876106a7",
+          "expected_sha256": "f6aded1e40deba342fbd21955ae5c922a4ec6837c7e4846ab0b384ab876106a7",
+          "path": "runs/phase1-shared-bias-parallel-program-role-seed2-core-saturation-h100-v2/5aeb3827f3c50714f2cc4ea8025d0c97905d15b275acafde09c9ed100b12a3ef/stages/evaluation/artifacts/samples.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "63153c6d5580f16baf73ab04d1bdb9d82161aeb11ad984489e77403c3a168a6a",
+          "expected_sha256": "63153c6d5580f16baf73ab04d1bdb9d82161aeb11ad984489e77403c3a168a6a",
+          "path": "runs/phase1-shared-bias-shared-null-core-saturation-h100/6c4d067206a91f4a11ac75509b27346422aeee78421aa968ee91b28a52351169/stages/production/artifacts/evaluation/samples.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "857529b9e1d8f6a9e4e48de1e4f367116c3027cae3372b71ce3cd3ccf7511403",
+          "expected_sha256": "857529b9e1d8f6a9e4e48de1e4f367116c3027cae3372b71ce3cd3ccf7511403",
+          "path": "runs/phase1-shared-bias-shared-null-core-saturation-h100/8e373479710297630cf16b1687a96eed6a2645dae79f88b854ffdce703c29331/stages/production/artifacts/evaluation/samples.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "9faffacbd1ee35e2c4d4fe30be019b1f78b07938ae76e4d6e7cd94c9d78fc193",
+          "expected_sha256": "9faffacbd1ee35e2c4d4fe30be019b1f78b07938ae76e4d6e7cd94c9d78fc193",
+          "path": "runs/phase1-shared-bias-shared-null-core-saturation-h100/a17790ab1dd92566bf4fb0802301ba372b57cbb773e2ea3132ea7c3f71fdc513/stages/production/artifacts/evaluation/samples.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "b69f728c9ff5d7eedd025d15c46d48e66d77defe0a91304c04b5d917e7ce32e2",
+          "expected_sha256": "b69f728c9ff5d7eedd025d15c46d48e66d77defe0a91304c04b5d917e7ce32e2",
+          "path": "runs/phase1-transformer-mechanism-ablation-core-saturation-seed0-h100/4f06d53d91a42d9f6f1ef5ee1a677969ee8960a5ac7438d9c65f9e4e3b6cafbe/stages/evaluation/artifacts/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "3b53b878936e1fc1b351826f7598f9841cb18fe86353eeaebacf56d89dd4e820",
+          "expected_sha256": "3b53b878936e1fc1b351826f7598f9841cb18fe86353eeaebacf56d89dd4e820",
+          "path": "runs/phase1-transformer-mechanism-ablation-core-saturation-seed0-h100/4f06d53d91a42d9f6f1ef5ee1a677969ee8960a5ac7438d9c65f9e4e3b6cafbe/stages/evaluation/artifacts/samples.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "815d5346232d3a53f5d0a4276be54503e4938c00a0e8ac8fb2dbb0fe6e5e9b91",
+          "expected_sha256": "815d5346232d3a53f5d0a4276be54503e4938c00a0e8ac8fb2dbb0fe6e5e9b91",
+          "path": "runs/phase1-transformer-mechanism-ablation-core-saturation-seed1-h100/8930dfad022276ce41b5ecda3208d3bdd301aa68ce99a11879ce4ce830f7bbba/stages/evaluation/artifacts/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "936d8c54198fad8e1f32fef3ba44f4a05930e77971ca55011bc4aad1d49b3949",
+          "expected_sha256": "936d8c54198fad8e1f32fef3ba44f4a05930e77971ca55011bc4aad1d49b3949",
+          "path": "runs/phase1-transformer-mechanism-ablation-core-saturation-seed1-h100/8930dfad022276ce41b5ecda3208d3bdd301aa68ce99a11879ce4ce830f7bbba/stages/evaluation/artifacts/samples.jsonl.gz",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "f4a159fcc9f36ee35e0aec21721e6978a450c4127d814eb1d092703b030414b1",
+          "expected_sha256": "f4a159fcc9f36ee35e0aec21721e6978a450c4127d814eb1d092703b030414b1",
+          "path": "runs/phase1-transformer-mechanism-ablation-core-saturation-seed2-h100/56ef6680e4bf726da2aef095003b00f16e2a9002d1fa87ded89002d6dbbe7e65/stages/evaluation/artifacts/result.json",
+          "status": "verified"
+        },
+        {
+          "actual_sha256": "b497e7b4e7b4a27e3dd46af98749262238d6d6c9046326f5a5a17036adc1eaec",
+          "expected_sha256": "b497e7b4e7b4a27e3dd46af98749262238d6d6c9046326f5a5a17036adc1eaec",
+          "path": "runs/phase1-transformer-mechanism-ablation-core-saturation-seed2-h100/56ef6680e4bf726da2aef095003b00f16e2a9002d1fa87ded89002d6dbbe7e65/stages/evaluation/artifacts/samples.jsonl.gz",
+          "status": "verified"
+        }
+      ],
+      "manifest_sha256": "730b2fe8352fef54ce1fe47a5a5e56f5230080d81fe5330662562a28adeb011f",
+      "ready": true,
+      "schema_version": "forge.release.artifact_verification.v1"
+    }
+  },
+  "commands": [
+    {
+      "argv": [
+        "/private/tmp/forge19337-camera-ready-fresh/.venv/bin/python3",
+        "-m",
+        "forge.release.cli",
+        "reproduce",
+        "--target",
+        "all",
+        "--output",
+        "/private/tmp/forge19337-camera-ready-fresh-qualified/tables",
+        "--root",
+        "/private/tmp/forge19337-camera-ready-fresh"
+      ],
+      "elapsed_seconds": 0.427711334079504,
+      "exit_code": 0,
+      "log": "tables.log"
+    },
+    {
+      "argv": [
+        "/private/tmp/forge19337-camera-ready-fresh/.venv/bin/python3",
+        "-m",
+        "forge.release.cli",
+        "generate",
+        "--replicate",
+        "0",
+        "--family",
+        "ugi",
+        "--count",
+        "2",
+        "--seed",
+        "42",
+        "--device",
+        "cpu",
+        "--batch-size",
+        "2",
+        "--threads",
+        "2",
+        "--output",
+        "/private/tmp/forge19337-camera-ready-fresh-qualified/generation",
+        "--root",
+        "/private/tmp/forge19337-camera-ready-fresh"
+      ],
+      "elapsed_seconds": 52.939616000046954,
+      "exit_code": 0,
+      "log": "generation.log"
+    },
+    {
+      "argv": [
+        "/private/tmp/forge19337-camera-ready-fresh/.venv/bin/python3",
+        "-m",
+        "forge.release.cli",
+        "generate",
+        "--replicate",
+        "0",
+        "--family",
+        "ugi",
+        "--count",
+        "2",
+        "--seed",
+        "42",
+        "--device",
+        "cpu",
+        "--batch-size",
+        "2",
+        "--threads",
+        "2",
+        "--output",
+        "/private/tmp/forge19337-camera-ready-fresh-qualified/generation-repeat",
+        "--root",
+        "/private/tmp/forge19337-camera-ready-fresh"
+      ],
+      "elapsed_seconds": 16.77055895794183,
+      "exit_code": 0,
+      "log": "generation-repeat.log"
+    }
+  ],
+  "config_sha256s": {
+    "configs/baselines/external_ugi_export_v1.json": "74a9451971b1d744aab512cdacbf4c79b2940a592b4e3405a4d28cff394f3141",
+    "configs/baselines/external_ugi_v1.json": "84a169251c71ee78b91a3a6d50e05da28ed6148900f6cf4867ab8851a1ff2625",
+    "configs/bio/phase1_ugi_hela_potency_diagnostic_authorization_v1.json": "ffcc3f0c22ca46ad603950873f5e5eef262a3141af419b546d36c79c4f6ec26b",
+    "configs/bio/phase1_ugi_high_potency_challenger_continuous_ranking_v1.json": "400eb8d2120b1f869019ebd2ee8232d8ff645c77008460fbd4e2026b1603e6e8",
+    "configs/bio/phase1_ugi_morphology_high_potency_challenger_v1.json": "8b075451d2e0e7e8a60f791a1e1cb54b42d851ded8b142b950b2692ec83f2034",
+    "configs/bio/phase1_ugi_morphology_high_potency_proposal_v1.json": "267571b93ca248c6aa02147eecbe023617a23b389a4f9923d44ff4203993b2c9",
+    "configs/model/phase1_ugi_matched_morphology_terminal_generation_v1.json": "70321a67920ef3a9f84ac086c85d395840a41af6412d9dede6b0c102fec41dfd",
+    "configs/multireaction/common_lipid_realism_v1.json": "a671b7453a46b0103feabb536116235302e0559f72d3b002fb0b67f2d936f855",
+    "configs/multireaction/common_ugi_assessment_v1.json": "01a8279a90c4fab7721047313236a930515abd2137702b08a66d1b77377efd4e",
+    "configs/multireaction/common_ugi_baseline_protocol_v1.json": "54951f190e3cecc91b3d37a22858a3be84a18d8ef42c295b29bb418b5e9f3e15",
+    "configs/multireaction/finite_component_catalogue_baseline_v1.json": "8c9ae8792123203bf95b9c6537cf076384cea713c19b38bc3fbbe6926ce30fc6",
+    "configs/multireaction/learned_inventory_selector_v1.json": "ae32a279fac86bf8b5076b92f5ee0405289c9a3246a565419a232e3f358fa6d2",
+    "configs/multireaction/lnpdb_reaction_programs_v1.json": "a7aba87a63e3bcf34c61fa7951fbb7a77340641ed852993b4221d3b77072f021",
+    "configs/multireaction/shared_bias_cyclic_core_saturation_v1.json": "013ea9feeb3de3ab427540d50a9ba9a9f0e1c74addbc1d039d71c60ad7d6ac26",
+    "configs/multireaction/shared_bias_parallel_program_role_seed0_core_saturation_v2.json": "4ccd6c859dcd126508b38fa1c61eb6e7c20572755009d5f5846e4b0e028bb074",
+    "configs/multireaction/shared_bias_parallel_program_role_seed1_core_saturation_v2.json": "dd5e2f3cbd685e7d397982ba5708f5d3b525b0651820dad1dbb9462dca551c15",
+    "configs/multireaction/shared_bias_parallel_program_role_seed2_core_saturation_v2.json": "aaf1af77ee45598bf3922212be76bcd82b0defe1012a5c66b1bd1b1d9055bd29",
+    "configs/multireaction/shared_bias_parallel_shared_bias_global_source_control_v2.json": "b78ace37ca4c31682381a59171fcb81cabf222d79b447a69b0a3fd9e6acb96a0",
+    "configs/multireaction/shared_bias_parallel_shared_bias_program_role_source_v2.json": "672e0fdb44c332411c6ce138740ea7733d0ed4291b6fe5c4bef7d8ab049b67db",
+    "configs/multireaction/shared_bias_program_role_core_saturation_seeds12_v2.json": "257695c9d0f87258b5cb153dec52aca34c6aa81b0f1694386685b583171b4abe",
+    "configs/multireaction/shared_bias_shared_null_core_saturation_v1.json": "8611ab2e1bcfe6757ec347d014998a5fa3f8968fa1d85f234ae8ded6f1458a87",
+    "configs/multireaction/shared_mixed_production_cache_v1.json": "ba2fe503b5dce1a1d0f3f791af82cfc6058bf728ac9750c3aa42c7071cf7ba29",
+    "configs/multireaction/shared_production_comparison_design_v1.json": "88ec2c41cee96e3d0faef710ba3d08a20c9ff9fd935a7652cfd1832c299a5f87",
+    "configs/multireaction/shared_production_comparison_transformer_v1.json": "c54d03038a2370dc41b0deebe1438eccbc5e90dbce5b1d9ec308e2f2d7c2ff4a",
+    "configs/multireaction/shared_synthesis_program_representation_mixed_v1.json": "1c769134d15f2d5babca4340e61c77244a45b0094b290c7d2d6b13cb7909a74b",
+    "configs/multireaction/shared_synthesis_program_representation_v1.json": "7ec8238aad7d5437baa2f8b8ebdc7b22ce48bbe48aff1982a242bf8423323886",
+    "configs/multireaction/transformer_mechanism_study_v1.json": "a7182c8b4661812cd8f1006857824e3367b4e930098f7bff13dd41fc558aeedb",
+    "configs/reproduction/common_ugi.json": "8d82b74550a40e5f18ceb4c554f2871a98582e6e8775701a544d00eb1bd72554",
+    "configs/reproduction/gem_table1_core_saturation_complete_v1.json": "d883d7edb9d2c0e647591202073119eeb5948cc918b2cad373234978e4eea434",
+    "configs/reproduction/gem_table1_core_saturation_final_v1.json": "3b648226df1f904ec4d6745d1c3a8a9c9088af5e656c55740e4be713490f4f63",
+    "configs/reproduction/gem_table5_decoder_source_ablation_v1.json": "3483b057cf1cd2525870e347b87bcc78c92adda9e8f425f2ddfd487daa9fb9c1",
+    "configs/reproduction/gem_table7_lipid_realism_v1.json": "c9c36024bded025c51c1d2a51720a384777c0057662329f8868c02f9577d5443",
+    "configs/reproduction/gem_table8_architecture_ablations_v1.json": "68d37bd831482abd4de9adb82b98f323fb181120b07b379687363e8e340e3c0a",
+    "configs/reproduction/gem_table9_catalogue_comparison_v1.json": "28508e5e74721292244343da406548950046a92eeee23a663c498bac388b6d9d",
+    "configs/route/m0_09_lnpdb_paper_reviews.json": "57cfc457aeabdcbd6cd5d18460dbe215afe1176460448d07f7d87d3fa027846c"
+  },
+  "elapsed_seconds": 70.15489162504673,
+  "environment": {
+    "device": "cpu",
+    "packages": {
+      "numpy": "2.4.6",
+      "pandas": "3.0.5",
+      "rdkit": "2026.3.5",
+      "scikit-learn": "1.9.0",
+      "scipy": "1.17.1",
+      "torch": "2.13.0"
+    },
+    "platform": "macOS-26.5-arm64-arm-64bit",
+    "precision": "float32",
+    "python": "3.11.15",
+    "torch_threads": 2
+  },
+  "generation": {
+    "attempts": 2,
+    "deterministic_replay": true,
+    "summary": {
+      "counts": {
+        "attempts": 2,
+        "exact_l1": 2,
+        "valid": 2
+      },
+      "full_reproduction_verified": false,
+      "inputs": {
+        "arm_id": "shared_bias_program_role_source",
+        "artifact_manifest_sha256": "a46582aa4ab5300b37827468405e2a332332740f1e5e5133d71bdd89527315b9",
+        "checkpoint_step": 9143,
+        "configuration_sha256": "4ccd6c859dcd126508b38fa1c61eb6e7c20572755009d5f5846e4b0e028bb074",
+        "inputs": {
+          "checkpoint": {
+            "actual_sha256": "10d77b9d8e947d40fe2aaa91ecd68448ff068e08339cecd4c47d862e96e39142",
+            "expected_sha256": "10d77b9d8e947d40fe2aaa91ecd68448ff068e08339cecd4c47d862e96e39142",
+            "path": "/private/tmp/forge19337-camera-ready-fresh/results/phase1/shared_bias_parallel_program_role_seed0_v2/checkpoints.tar",
+            "status": "verified"
+          },
+          "multireaction_atlas": {
+            "actual_sha256": "6b5021e986e9e514ccca74dc6b6b0ccfef6dd2e9c40f209aedf6f64bb516e5c2",
+            "expected_sha256": "6b5021e986e9e514ccca74dc6b6b0ccfef6dd2e9c40f209aedf6f64bb516e5c2",
+            "path": "/private/tmp/forge19337-camera-ready-fresh/results/phase1/bl_lx_mixed_repeat_expansion_v2/reaction_program_atlas.csv.gz",
+            "status": "verified"
+          },
+          "multireaction_splits": {
+            "actual_sha256": "6c9f6a3d8d0668763a7f057a53f8782884f001f999303ce01dc68b9f28d42c8c",
+            "expected_sha256": "6c9f6a3d8d0668763a7f057a53f8782884f001f999303ce01dc68b9f28d42c8c",
+            "path": "/private/tmp/forge19337-camera-ready-fresh/results/phase1/bl_lx_mixed_repeat_expansion_v2/component_family_splits.csv.gz",
+            "status": "verified"
+          },
+          "production_cache": {
+            "actual_sha256": "249b92744c22109cd5994ad831555df85575bfb6bd58010dce71517e5e881114",
+            "expected_sha256": "249b92744c22109cd5994ad831555df85575bfb6bd58010dce71517e5e881114",
+            "path": "/private/tmp/forge19337-camera-ready-fresh/results/phase1/shared_synthesis_program_mixed_cache_v1/cache.npz",
+            "status": "verified"
+          },
+          "production_design": {
+            "actual_sha256": "d0f206f52ae708e5ffa1e3150a5c8f1513db35d4c5d912160e89e907b7aaefbd",
+            "expected_sha256": "d0f206f52ae708e5ffa1e3150a5c8f1513db35d4c5d912160e89e907b7aaefbd",
+            "path": "/private/tmp/forge19337-camera-ready-fresh/results/phase1/shared_bias_parallel_program_role_seed0_v2/study_design.json",
+            "status": "verified"
+          },
+          "program_config": {
+            "actual_sha256": "a7aba87a63e3bcf34c61fa7951fbb7a77340641ed852993b4221d3b77072f021",
+            "expected_sha256": "a7aba87a63e3bcf34c61fa7951fbb7a77340641ed852993b4221d3b77072f021",
+            "path": "/private/tmp/forge19337-camera-ready-fresh/configs/multireaction/lnpdb_reaction_programs_v1.json",
+            "status": "verified"
+          },
+          "qualified_reaction_families": {
+            "actual_sha256": "961dea191bbf6c8d169aab09f6aee18082e51696e4056fc4dc9f6fc97ff82587",
+            "expected_sha256": "961dea191bbf6c8d169aab09f6aee18082e51696e4056fc4dc9f6fc97ff82587",
+            "path": "/private/tmp/forge19337-camera-ready-fresh/data/vendor/qualified_reaction_families_v1.json",
+            "status": "verified"
+          },
+          "qualified_ugi_reactions": {
+            "actual_sha256": "296bf06238ef22acc1f55117f5ce0adaee21b1bafaf5a83f89182b0f31cc4fcf",
+            "expected_sha256": "296bf06238ef22acc1f55117f5ce0adaee21b1bafaf5a83f89182b0f31cc4fcf",
+            "path": "/private/tmp/forge19337-camera-ready-fresh/data/vendor/qualified_reactions_v1.json",
+            "status": "verified"
+          },
+          "training_result": {
+            "actual_sha256": "44fab52d5427f654d2a24e395b77c00d2d8c7122f5ed67b51cbcc8675f870485",
+            "expected_sha256": "44fab52d5427f654d2a24e395b77c00d2d8c7122f5ed67b51cbcc8675f870485",
+            "path": "/private/tmp/forge19337-camera-ready-fresh/results/phase1/shared_bias_parallel_program_role_seed0_v2/training_result.json",
+            "status": "verified"
+          },
+          "ugi_assignments": {
+            "actual_sha256": "9a50c703ed6aa919b251678c04b7a44e93b3233a12fc13b5d6697683bb5b5184",
+            "expected_sha256": "9a50c703ed6aa919b251678c04b7a44e93b3233a12fc13b5d6697683bb5b5184",
+            "path": "/private/tmp/forge19337-camera-ready-fresh/results/phase1/ugi_balanced_chemistry_corpus_v2/assignments.csv.gz",
+            "status": "verified"
+          }
+        },
+        "ready": true,
+        "replicate": 0,
+        "sample_steps": 32,
+        "schema_version": "forge.generation_inputs.v1",
+        "scope": "input identity only; no generation or paper reproduction performed",
+        "terminal_decode_policy": "strict_reaction_core_saturation_argmax",
+        "training_seed": 20260825
+      },
+      "limitations": "No top-up, ranking, property targeting, L2/L3 assessment or experimental validation.",
+      "output_sha256": {
+        "attempts.jsonl": "528d672216648b852bed5cb30724572790e160adaa4d588bba559fdb4562d896",
+        "molecules.csv": "858d60544995dea77c77b10cb8a8a5a0e4f3c574f1267590d3bc8b0e74192c67"
+      },
+      "paper_checkpoint_end_to_end_qualified": false,
+      "python": "3.11.15",
+      "qualification_note": "See the versioned qualification receipt for the tested source, device and seeds.",
+      "request": {
+        "batch_size": 2,
+        "count": 2,
+        "device": "cpu",
+        "family": "ugi",
+        "program_id": "ugi_3cr_agile",
+        "seed": 42,
+        "threads": 2
+      },
+      "runtime": {
+        "checkpoint_member": "shared_bias_program_role_source/checkpoint_step_9143.pt",
+        "checkpoint_member_sha256": "5da2ac426a11b5f56f7720d140feddf8a7bcee206a5f57f66873300cebcbbf66",
+        "deterministic_algorithms": true,
+        "elapsed_seconds": 14.732085208874196,
+        "flow_seed": 1662916808618416629,
+        "layout_seed": 3645266265968035910,
+        "rdkit": "2026.03.5",
+        "sampling": {
+          "by_program": {
+            "ugi_3cr_agile": {
+              "exact_target_graph": 0,
+              "exact_tensor": 0,
+              "samples": 2,
+              "strict_constraint_abstentions": 0,
+              "valid": 2
+            }
+          },
+          "exact_target_graph": 0,
+          "exact_tensor": 0,
+          "fixed_state_failures": 0,
+          "local_chemistry_policy_applied": false,
+          "program_topology_policy_applied": false,
+          "reaction_core_saturation_policy": {
+            "component_confined_generated_edges": true,
+            "core_position_valence_units": {
+              "ugi_3cr_agile:map_2": 6,
+              "ugi_3cr_agile:map_4": 4
+            },
+            "derivation": "atom_mapped_product_template_explicit_hydrogen_count",
+            "exterior_only_generated_closures": true,
+            "reaction_id": "ugi_3cr_agile",
+            "registry_path": "/private/tmp/forge19337-camera-ready-fresh/data/vendor/qualified_reactions_v1.json",
+            "registry_sha256": "296bf06238ef22acc1f55117f5ce0adaee21b1bafaf5a83f89182b0f31cc4fcf"
+          },
+          "reaction_core_saturation_policy_applied": true,
+          "repairs": {},
+          "samples": 2,
+          "strict_constraint_abstention_reasons": {},
+          "strict_constraint_abstentions": 0,
+          "terminal_decode_policy": "strict_reaction_core_saturation_argmax",
+          "topology_coupling_second_pass_applied": false,
+          "topology_seed": null,
+          "topology_selection": null,
+          "ugi_topology_policy": null,
+          "valid": 2
+        },
+        "tf32": false,
+        "torch": "2.13.0"
+      },
+      "schema_version": "forge.reviewer_generation.v1",
+      "scope": "bounded generation example",
+      "source": {
+        "files": {
+          "src/forge/__init__.py": "1459d63e7a21f703993ba3091f35ac9d90769466dfac1bf9f74c05d5c37c625e",
+          "src/forge/assembly/__init__.py": "89582f59633c237da38d81b45cdcd9b7c5aba1f6c97779d20f4045eaf73f7db5",
+          "src/forge/assembly/api.py": "bb77b94c91ee0bbba62ff9a83a1d3d31a4d280bf13b8a508537817b19d7efa60",
+          "src/forge/assembly/program.py": "c6195066488fcc89f2ff352afa9319342e24ad6df397b37a83d302c1dca75d4e",
+          "src/forge/assembly/registry.py": "72373e01d930651221d7a1365d96e94c817232a3706333f99a7a01a5e20f7037",
+          "src/forge/assembly/ugi3.py": "6970e0a345477aca64a1861dad9d46ab5cb519892032f0cdeda42cd6a4d6d1a4",
+          "src/forge/chemistry/__init__.py": "3530f1cfaa13a1ab07cb51ad1bbbf5c149c2a457fe58613d90837b5eccc91269",
+          "src/forge/chemistry/reactive_sites.py": "e85e455ea0a2ab730456dbfe13692423ad5542adea8ec895fe11a9a9261c5964",
+          "src/forge/core/__init__.py": "b99ed7e34521cf4f9ccc0d379380270edb0ead00797c623976f0ad0facd6ac9d",
+          "src/forge/core/hashing.py": "1d31e6cb3c086203d6e8136500857a8366804c9f01f529929442059faa626ed3",
+          "src/forge/core/io.py": "eb69ad2aa6740d5a6cbc61e56245ad03a741f690b19bd898fa6b557cdf1dd1de",
+          "src/forge/core/seeds.py": "a12f3a68190db0a82f0dcd60cf410ab14e13a842702494ed1d2ed1a5360b75a6",
+          "src/forge/core/types.py": "5fbcec9874654e36c165b1131bb877166da6cf3aeb3a37a9164e547de1f7133e",
+          "src/forge/corpus/__init__.py": "e28d976413fa244d3f91b809ae9d8996cb06a3e4f2fb8dc9ceaffb13f90d9d7d",
+          "src/forge/corpus/component_splits.py": "abb60b998b1eac2d20c32a18f0e3601ebe960fe7c4d4c1947adc6524007b6a63",
+          "src/forge/corpus/r0_splits.py": "0f39d09585460e743c497f820cfbe59e06a31ff2e6083c31eccfbbaaa92c94c5",
+          "src/forge/corpus/r1_prime_audit.py": "8e57e64d3adb703ba73365c2b6e839678b24e610f678c894a9d7dd4766e906c3",
+          "src/forge/corpus/reaction_program_records.py": "8bdc85b6300ee1b3c5ad76414e8c0cb87cb6a5e5bfb1c253f207830be8a4608f",
+          "src/forge/corpus/reaction_program_training.py": "e76b20a91218602e5aba9353a18fae4032049f3fb9a3b71492f20af31e453c68",
+          "src/forge/corpus/synthesis_program_production_cache.py": "a0b34354e74d83c2b7e60f6f9d6fcfc720e8c2fdd01875692893a67ceb92aaad",
+          "src/forge/corpus/synthesis_program_representation.py": "eba50e5c5257820d8fc6d757ece8a69ad1cdfa17fc5c57483de840553101aa43",
+          "src/forge/corpus/synthesis_program_training.py": "4cebaad4b8f0e6fb308bc12fa08cfaf9042fdb4b5bb55a5da89f76ec002c84e7",
+          "src/forge/corpus/training_cache.py": "1b2409db13f341c7ca9070bb2b312e6a85310a4d9f63c0c62dd53af496b0ffed",
+          "src/forge/corpus/ugi_chemistry_corpus.py": "913db3c43e622c1432ecabc1473e52efea0d109ed11b40853b14cb5f66152125",
+          "src/forge/corpus/ugi_component_expansion.py": "c6b5b5d1fd9d128fd0fc14370bcdb23c1982a750996e2d4c1b5303eed25e3aa5",
+          "src/forge/corpus/ugi_generated_components.py": "de868fc6a76f90ec414da2a915e2838bcb6f30d0cfd7ef54d7d5c446e93b7826",
+          "src/forge/corpus/ugi_generated_terminal_support.py": "f3132d16b3728539be1684a863da26cb84c6f70dffbd7d40fb4410219a2f7212",
+          "src/forge/corpus/ugi_held_component_gate.py": "2aa0dbf145515bb31ab03f5fd9e38f56fd96e909716ec3d2348aa5e00ae51b17",
+          "src/forge/corpus/ugi_morphology_corpus.py": "4cf300b2616b9e74b4b3b2e9eb0512b7dc23ed538d35f632493d1695dfee1e30",
+          "src/forge/diagnostics/__init__.py": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3",
+          "src/forge/diagnostics/hela/__init__.py": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3",
+          "src/forge/diagnostics/hela/evaluation.py": "9c1a3c380418ae15776bf1fb4155df516b89673609771aa603534e3800696adf",
+          "src/forge/diagnostics/hela/morphology/__init__.py": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3",
+          "src/forge/diagnostics/hela/morphology/ugi_high_potency_challenger_adjudication.py": "cd1dc3aa04fa4feb888bc46ce29e7f954b7ad270cf0a3002ab95673d40eca6f2",
+          "src/forge/diagnostics/hela/morphology/ugi_morphology_high_potency_challenger.py": "163a60a9eb1c09837b91d7e7e507bbe1c531b54e22fc4933dccf753a050ef25a",
+          "src/forge/diagnostics/hela/morphology/ugi_morphology_high_potency_proposal.py": "77dcfe16960bdf7e473534bda9c9a694796103cb1a4e9964bec61c4f51c6ccb7",
+          "src/forge/diagnostics/hela/morphology/ugi_morphology_potency_matched_adjudication.py": "e23058dc837d0056ecc6bf021a17a669b56d2f81338ddfdb7672ba62bfe724e7",
+          "src/forge/diagnostics/hela/morphology/ugi_morphology_potency_proposal_sweep.py": "a9e707288f6b89e388e981ca3a4ba27d05db60a60bcd392f4a2e97df6a7910f6",
+          "src/forge/diagnostics/hela/morphology/ugi_morphology_potency_signal.py": "297eae25c5c430473b55f3cd671ba580c501678337c42e6ff54126f14b037ec9",
+          "src/forge/diagnostics/product_l1/__init__.py": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3",
+          "src/forge/diagnostics/product_l1/sampling/__init__.py": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3",
+          "src/forge/diagnostics/product_l1/sampling/terminal_census.py": "220633304b3b782a803e91ad3a3c673884b0c8b2df1828e83c97b53768608a47",
+          "src/forge/diagnostics/product_l1/sampling/ugi_end_to_end_sampling.py": "67f84630db207a84969fdeba708ac17fbb3aadd6ce817a9cad6a8cfa10fc20c5",
+          "src/forge/diagnostics/product_l1/sampling/ugi_joint_end_to_end_sampling.py": "86f10a67d5777ad06f1c1d0e4fd16157b8c92f6e2ce601e1a49675b437a79c18",
+          "src/forge/diagnostics/product_l1/sampling/ugi_joint_sparse_sampling.py": "243566c06139f68bff56830419ac9276af66c43da6976375afdcea036ec39cc2",
+          "src/forge/diagnostics/product_l1/sampling/ugi_matched_morphology_terminal_generation.py": "d1ccd0705d3b1373c82ea1e0aa1f84fe0fe1f774fffc1103afaae2ca95962a73",
+          "src/forge/diagnostics/product_l1/sampling/ugi_selected_generator_implementation.py": "73b86edf767504beeb06855cce1c34c004b11fdcc0f013e25c66ca6cdded0170",
+          "src/forge/diagnostics/product_l1/sampling/ugi_selected_restartable_generator.py": "1ac4c5365525d9a1001fd905c4c328e0499b930a01576a6f98d7fe12077a666b",
+          "src/forge/diagnostics/product_l1/sampling/ugi_selected_restartable_generator_v2.py": "5129b4534a7cabd7c629849ebbf5a6eb18fa699676455039a0b17fce04caacc2",
+          "src/forge/diagnostics/product_l1/training/__init__.py": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3",
+          "src/forge/diagnostics/product_l1/training/ugi_training_cache.py": "d2c03aaefc6b9a0e65d2b37290e86b9d9527e16ef155de12649153c88cc3d270",
+          "src/forge/diagnostics/ranking/__init__.py": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3",
+          "src/forge/diagnostics/ranking/ugi_continuous_novelty_matched_ranking.py": "a51527555033f516dbdf00c56b988a074049d5c12368fa940c037f58aec547bc",
+          "src/forge/diagnostics/support/__init__.py": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3",
+          "src/forge/diagnostics/support/adapters/__init__.py": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3",
+          "src/forge/diagnostics/support/adapters/selected_v1.py": "e7ee7d59b07be8e60c700d032e24d958c6d042c265b714f74e40081ccac92fc3",
+          "src/forge/diagnostics/support/adapters/selected_v2.py": "72a251f0765a3de9e816ff14c9ae1235965ddf7cb5bc3024281c18c36832951e",
+          "src/forge/diagnostics/support/adapters/selected_v3.py": "b4f92eeafd7abf8aab4ad732e44bfc5c3482bef3fa1011e48bcf618aeb5cd92d",
+          "src/forge/diagnostics/support/adapters/terminal_support.py": "9f0d6d419152fef8837c3676352dcb2fe430d791c88918a29a126f6f50beecac",
+          "src/forge/diagnostics/support/guidance/__init__.py": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3",
+          "src/forge/diagnostics/support/guidance/ugi_synthesis_guidance.py": "b145c04607ae7e306f2b53a22a440a0f24050ffbd7b00b11cccf467c6cf4b0fb",
+          "src/forge/diagnostics/support/guidance/ugi_zero_guidance_rehearsal.py": "d2ac4dcbf2fabae1eab3fae9e2f1316bae5b1de4bad2d62474e1f4a3de21bd9f",
+          "src/forge/diagnostics/support/schedule/__init__.py": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3",
+          "src/forge/diagnostics/support/schedule/ugi_matched_morphology_allocation_schedule.py": "d2f714f54e82fcb72434fe9be6e106c70f7250e56b14396021aba8f5d414d43d",
+          "src/forge/diagnostics/support/schedule/ugi_matched_planner_cache_binding.py": "d230547c7689531dbfdd360d3ed677fe9b0006c917cb90cce74f02c5730f4e44",
+          "src/forge/diagnostics/support/schedule/ugi_nonzero_guidance_runner.py": "63bed7e848a3af7b9f8df1a01e560d2c6b01ea6dc27305c7aea6290bc73ca4eb",
+          "src/forge/flow/__init__.py": "f541e5d26b2c2dae4e6cb8c92e0759e4e132ed9fb9982c68281fadbcb34dd1be",
+          "src/forge/flow/rstar.py": "e97ee6faeaba067705c5f8b5327ed4a1da6d4c6431a70d1d5a2c289e630f03bb",
+          "src/forge/model/__init__.py": "4cf4ef379c05fe67b6e1353fa8fb2acf14b2d88f473dfca152ba104ba86dfc91",
+          "src/forge/model/adapter_node_conditioning.py": "6f456c473ebd82ab51588e67b8f34059a13371f374ecd3e960c46b6ca6f034d6",
+          "src/forge/model/common_lipid_realism.py": "cbd70261a7ad79ada3b65b5bc35ff0866794295af140603fcdeb6b735a5202be",
+          "src/forge/model/common_ugi_benchmark.py": "92e4ee8892d79555714caa04d9237934ee4d6db3437da4d2593dbbdcd763832f",
+          "src/forge/model/conditional_role_dependence.py": "62ffb60213b96131c1043ba925872b9ede6c0faf207ca3e84c4038811553b568",
+          "src/forge/model/defog_feasibility.py": "c99ffcef439a74827a670c29a54e41004adf670af65697c0e05d16fb6c5c7de8",
+          "src/forge/model/eligibility.py": "e5c48d985b12a28f50b77e8214e9f230fa8c64a472ff9f677610ec2f4cad2531",
+          "src/forge/model/finite_component_catalogue.py": "884cf055f790783cb8d55a65348618c2534a479c2fd0c17ab5b9a4407d54d0ad",
+          "src/forge/model/learned_inventory_selector.py": "b31ab4f0b86f3245b5cc14ccfcc6b57dc79860b8e6b78fd0b606509405eb129f",
+          "src/forge/model/lipid_context.py": "5a8946e083b250ceb07d4c405e374e9d7f2937d7f9917c346393621fd2a9f7d0",
+          "src/forge/model/lipid_support_skeleton.py": "f3bbac7937a58ad152fd7853cdcdbe1e9084737dc455175da2dc1ac566249632",
+          "src/forge/model/local_chemistry_support.py": "710d9e05561c47bb0be79362044f2a1b77d98b2eb78d620c8edbf617ce72329e",
+          "src/forge/model/phase1_flow.py": "8e842c0efb46e24738ceb274c7ea57092c478525bed0d2d5728b5653240cc9b5",
+          "src/forge/model/phase1_tree_topology_flow.py": "c2c492c1a9a24669a69c14561eac0a84dbfc8948ba1a4808a5fc3f33373fd983",
+          "src/forge/model/reaction_core_saturation.py": "d169a7d2dc80330b902fec606d01e7f088946305f73b4ea4852dd0c025aa13f4",
+          "src/forge/model/reaction_program_conditioning.py": "309bce163306f8adc4a7035daecdbbf309101981a6bceb242bdca98cbf060d7a",
+          "src/forge/model/reaction_program_evaluation.py": "b57b0ac8f46a3b16364868bd44fffe6aef83834b8154dd8c5021d2d1579d0c28",
+          "src/forge/model/reaction_program_flow.py": "8102b41fbf8286a2f01d66bbd0558b32e700fd55ac9344fa89811af0c2ef1cac",
+          "src/forge/model/reaction_program_graph.py": "93a3395b144a2795922ecbee4d7ed9ed00f7aee0a966f4b28aa5a3ba572fe020",
+          "src/forge/model/reaction_program_transformer.py": "ff81e0a3a10b6520289dfbb8bbe9b13e68537449ec5ec0599d5105344f8bb898",
+          "src/forge/model/sparse_topology_feasibility.py": "811687268a74d83d0e320e29d0d81c33244e98a124adfd412d55de30f6cf70db",
+          "src/forge/model/structural_attention.py": "b1b145e7dd4a118be77ebff4c073e446d4afd7839c667dfa1ef2faaa694b895a",
+          "src/forge/model/synthesis_program_graph.py": "32e03b248e7fea6b9cc8ad85503ee0d602309000c40ddba2f63f6d3c661a7ec9",
+          "src/forge/model/synthesis_program_layout.py": "fa6456971cbf043c1aac2585fb422022aa9d4edf98182fa8b22c0363a6f77a26",
+          "src/forge/model/synthesis_program_sampling.py": "3c3deef7a2e984e853adde6cacc0c44e964aad6e7d9d81b1269794bda1a559c1",
+          "src/forge/model/synthesis_program_training.py": "39492a7e253fab72e022104598f473b6461c7d314041131af3aafad0e14f91bf",
+          "src/forge/model/tensor_checkpoint.py": "9b2ff4082a69b5b5cf1df3fec9f01dba4e3d6ee131bdad8eadb6b4bfb8efd3d6",
+          "src/forge/model/training_restart.py": "0f712ecc5672a4d785dc6663db39466cebeb9f70a76a8c328819241881494937",
+          "src/forge/model/ugi_adapter_features.py": "ec20db0d89db173648cec66209db92332d8f8e3711490c16feda97d8b0522d33",
+          "src/forge/model/ugi_chemistry_flow.py": "8527d04a8f7ac2fd9ec4d06f2947b76d7a38c759c7b7d92f959c2631ce5f4645",
+          "src/forge/model/ugi_chemistry_interface.py": "b3f1ca306a61c61d7acbe88e376b344ed51762e56c5f9a146d314e4d929035b2",
+          "src/forge/model/ugi_closure_placement.py": "863f3a56a9f124a7085461d17a7e5e9896e0171b519a452a33ec51b9fd903ffa",
+          "src/forge/model/ugi_joint_sparse_flow.py": "00c7e14346a0ba843ffe2d409827190d192b035b8d254d36abc85f6f1c783c78",
+          "src/forge/model/ugi_morphology_flow.py": "9a65900ff4b2c23e284a813073da34cfb203323d5ae5c0a34dbb29af09764536",
+          "src/forge/model/ugi_morphology_program.py": "b1f81344404c2ee4136eab97be52449b5f836087320a30bb29559d59f89999ba",
+          "src/forge/model/ugi_transformer_topology.py": "197f39991cab4a120a158a1bb4161fd9e6368113e056afacf9ece74a25eb09a4",
+          "src/forge/model/v5_sparse_representation.py": "e01d59ce8115ff24c5b42cb7bfef8419bf67665c956bdb5b2897bfd3bb074b1a",
+          "src/forge/model/vocabulary.py": "df6b5ccbee8b804929d10a8e2403db3ece9ca5bd74d5110104da9ff51ad1b040",
+          "src/forge/potency/__init__.py": "9d3ace3617b7479efb2edd6fe0a2f35e169965351ffc511db0642256fb287a35",
+          "src/forge/potency/annotations.py": "9ffeee87446623832a7030df0bce1a10285a7857aa7dc7dddcef306f59bfe18e",
+          "src/forge/potency/applicability/__init__.py": "c3ea4a6a6cd73b76471345d77623fec4cf4f61efd3ab47c1aa52a43735360d35",
+          "src/forge/potency/applicability/ugi_distributional_applicability.py": "669c37674562dff63c61745caa94c31904705bc6646a69070095ca9e01994adb",
+          "src/forge/potency/applicability/ugi_distributional_applicability_v2.py": "55a63d000cfea738b82399da18db20dbd4d6bd11ba07249fd8413b76d3ddf186",
+          "src/forge/potency/applicability/ugi_interpolative_conformal.py": "49a7d4d615d41cb58dd2197f1be74420f3ba41751162dd3fc35f404984edcaae",
+          "src/forge/potency/oracle/__init__.py": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3",
+          "src/forge/potency/oracle/agile_reconciliation.py": "b80714f9a3c7bd36b23edde9497bff7ec90a5174b7d0c6668d73153dc17eed77",
+          "src/forge/potency/oracle/oracle_classical.py": "14ee21de53387e430b1451b8a94eeeda8da92eae7d1be43959eb721490971a73",
+          "src/forge/release/__init__.py": "fe14b776cb0559c463220a4a5f0f5df930d88ca5678e890a2a74d7d0ce264256",
+          "src/forge/release/_generation_runtime.py": "f8702f0ec74b7b9e4506af5d591608c77d614c6e12b8d883697a2071524050c0",
+          "src/forge/release/artifacts.py": "819146d9f96214c231745698aa82056324a4e8e44ce684df8eaa2e51da39ba8c",
+          "src/forge/release/assessment.py": "d303a8884252866ce5a5b116d2d40c2a4f45c71cfd718759f89414846d01c3a5",
+          "src/forge/release/atlas.py": "fc8e7e89cfadd03afe25d41eff60434bd5076986862d587c7c498079352c45ec",
+          "src/forge/release/cli.py": "29f447abd35f2c8072cebf543c5b64f42abc742dd3cefc6952720af895f3f533",
+          "src/forge/release/evaluation.py": "219f12e094f955b449c04e52250cd5efbdb1fafcf42ed0ba212eff041b1019bd",
+          "src/forge/release/generate.py": "a1f09dd49fdb781547e45c359752fdc2bed483e32e839acff41a2b2931b26b1a",
+          "src/forge/release/manuscript.py": "d7c05118458d2c8189935800aa2f86a22d827511ea9dbe4655997bb9bb4388d8",
+          "src/forge/release/qualification.py": "82ef9b8bc189febffc011827d7f68ef05eb7ff8586eafb0e62f463ba43b92dad",
+          "src/forge/release/reproduce.py": "a02b221bdbac52966fa711f5b0fc956d7712be681e1e7d6323f4fec827f9ab73",
+          "src/forge/reporting/__init__.py": "bc2a26016feca631f3f7f0a4642e256658fbec1f53edb66c03abebd923302278",
+          "src/forge/reporting/gem_table1.py": "0f29d4f69a98219b5d5a22e281f99da84536b53c9eea341cf202ff76d547b42a",
+          "src/forge/reporting/gem_table4.py": "8c2bcba6c940630a438a307a556966cd81d7f3f99a333f2b0309724dcfb6f1f6",
+          "src/forge/reporting/gem_table5.py": "a2f1edede4bd06684d215a18ffd1485c45934bfbca704adde67234686de3d372",
+          "src/forge/reporting/gem_table6.py": "b897d4ae402dbc1a90a3de9e2db2ab5feee1a8dc1d799e0925e8af2f427ddc6e",
+          "src/forge/reporting/gem_table8.py": "2cbf6fb7cbbab0da8d8cbab5922570acf650567ef19097c072c09d11fc93ea69",
+          "src/forge/reporting/gem_table9.py": "9507b96cb3c98552ff758fd234fbff92a2eb11e14419ab8a66afd02879038a97",
+          "src/forge/reporting/results_v1.py": "f682e4a710aa9c708123e693e8f902c940602ab5bb9667d4ee47836b52b6bc28",
+          "src/forge/synthesis/__init__.py": "e11b4f71283b816e75321e0672b395b4c0a1cd7fa59ff180a77929b3de9057c5",
+          "src/forge/synthesis/assessment/__init__.py": "a7c7a7f1286fc118141a46e063bcca5891a0ec414bb7059a3c20df384a815cf7",
+          "src/forge/synthesis/assessment/common_route_evidence.py": "77b472a92cabdf686d68f22ccc640c834c97ba3ca9af576f47d7ba240150bf34",
+          "src/forge/synthesis/assessment/ugi3_support_boundary.py": "21e0c260f854d91bcf5b66286560621e0c9dbff859ed5d6d4d25ce6389010bc6",
+          "src/forge/synthesis/engine/__init__.py": "42d09a072dd80b554f7d9c1c91788b6a1b9aa7ecab65d4baaecf722612a962b1",
+          "src/forge/synthesis/engine/planner.py": "faffcb63b96e336ac19641b7e6def67b7b46fc70a5d15255973151cb08f539ef",
+          "src/forge/synthesis/engine/planner_cache.py": "3f813489de35c6ba912610dfeb464460063034f68f6ff8164531265231473c00",
+          "src/forge/synthesis/engine/planner_cache_snapshot.py": "ebc70e4b19e36d46d0247cb5068ca4249fefc3af39c38cc25022854326542dd1",
+          "src/forge/synthesis/engine/qualified_forward.py": "0a06be48ed62c0865838117d28a5e360985ddc8175cafd66ace011980b2f88c8",
+          "src/forge/synthesis/matched.py": "dd85457b084d88c603daf385977f6eb5dcbf7befc0aad75c5599c2dee1bf96ba",
+          "src/forge/synthesis/terminals/__init__.py": "c3ea4a6a6cd73b76471345d77623fec4cf4f61efd3ab47c1aa52a43735360d35",
+          "src/forge/synthesis/terminals/terminal_assessment.py": "a20e47733a9374ad85569922ea7eb8a40f2845bc49cc97b4c9827ad5de620b80",
+          "src/forge/synthesis/value/__init__.py": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3",
+          "src/forge/synthesis/value/contracts.py": "7244c51684873877b76c75f8d6eeea9bd599ff668604fffafe74dff90959c77c",
+          "src/forge/workflows/__init__.py": "8a3837971627355c01b2d888fe0063b2e1416bb2da5196d393d4191f56aa640a",
+          "src/forge/workflows/benchmark_studies.py": "9d31cb992067c46d6d4bc3d75f6cf5bd29d6077e5d38071d06f599a9966b6bae",
+          "src/forge/workflows/catalogue_baseline.py": "c8027ef00c266c885ac9d4b2ac7eb61579417ac23eefa86a81f0028b8e7e9252",
+          "src/forge/workflows/external_ugi_contract.py": "facc45db66acbdabc0e9ec938b43f6fbf48a3e0c6bde91a1d227fe6aeee899e2",
+          "src/forge/workflows/lipid_realism_aggregation.py": "b629cbdcd981c122f621c29940c9a00a3d849dd1f92bd3c944724a9647567085",
+          "src/forge/workflows/lipid_realism_assessment.py": "d26ddabc469ef1ccad4b7715c352b6ece92251e214e201178befcb0dc121b357",
+          "src/forge/workflows/mechanism_study.py": "b848f751827479e5199e4e57619c041638961a43a8cb15d6e1a18fc76509942f",
+          "src/forge/workflows/native_baseline_ports.py": "50a0060ca3e3f4527b3c67db7a640a9668c9c1d7d7886e1a8fe4e724f9372730",
+          "src/forge/workflows/native_baseline_runtime.py": "456c1dc91bfcc3be781b137183d32b3344700b51c0d266eb437801ee5f79c26f",
+          "src/forge/workflows/production_evaluation.py": "9b3354844d942594ba0cc573430df0f02acd688bdfd0ce500a4b917751c97a7b",
+          "src/forge/workflows/production_randomness.py": "9560d51a7f3c9af35acba760f991d4c8719d10837ce6f0e2e3d3ca88436fa44d",
+          "src/forge/workflows/production_training.py": "9b4a1f00bbae5dac75225ff51c9a54a33f6f64a7040a4eb16305f81a4a81e0b5"
+        },
+        "sha256": "17cddd5256d6e0029edb92f25f3f088778f36666527911e02690461ef53731bd"
+      }
+    }
+  },
+  "outputs": {
+    "generation-repeat.log": "a51ade26409034526b6bb16be4dcbac1b14cc355b936df66c8cd7dc87b08e8f7",
+    "generation-repeat/attempts.jsonl": "528d672216648b852bed5cb30724572790e160adaa4d588bba559fdb4562d896",
+    "generation-repeat/molecules.csv": "858d60544995dea77c77b10cb8a8a5a0e4f3c574f1267590d3bc8b0e74192c67",
+    "generation-repeat/summary.json": "2eb8845e9766e0326e00968e1a2d7c11e82d54d05ade587e3c553138f0f8bb23",
+    "generation.log": "f0d84f735f7ffbaaf1b54b324e69235e01c1a86e961641974611a39f72956ca7",
+    "generation/attempts.jsonl": "528d672216648b852bed5cb30724572790e160adaa4d588bba559fdb4562d896",
+    "generation/molecules.csv": "858d60544995dea77c77b10cb8a8a5a0e4f3c574f1267590d3bc8b0e74192c67",
+    "generation/summary.json": "dc9fbd3bb153022e6960e270cfe68175feda7b6ca0e8e9e4dfea25e8023034c2",
+    "tables.log": "a9a8e54738286bbb7ac4599bc3c7127dfc425d29c95b365f28f3dc1edbe9686a",
+    "tables/gem_table1_macros.tex": "ec1a254b800858122af31910e87897f1036dd5d0193124c9dbae8cc6551dce7a",
+    "tables/receipt.json": "56584cca288cc1824902877000ff9dca23e0831d081765576cfc085afd57dd3d",
+    "tables/shared_program_figure_rows.tex": "7429d99629ca33db1310bb308379655d3f7514ff00406bd3053647f102c7c6e4",
+    "tables/table-1.json": "6dc1f1f4f84512a7eb37da0e6f2156d5c401b2bf274b42a653345752ea8aa69d",
+    "tables/table-1.tex": "7429d99629ca33db1310bb308379655d3f7514ff00406bd3053647f102c7c6e4",
+    "tables/table-10.json": "d50fd0f33a7b00133b42c2be40dfafc835d52ff85ef95274f0e5d250fd1ad434",
+    "tables/table-10.tex": "97bdf3e21f8264dcb29342bafb1287edc1a222b14210eaaa58d7a8eae75a978f",
+    "tables/table-11.json": "b05d5aec02415a2f057a4fb8b6dbd1e1c45dc0258ba6ccb60e97373b220cb27f",
+    "tables/table-11.tex": "c7dc09b231e82a1333d8e868d075323ea29c61316d03c4a8fcd33d8623059a3c",
+    "tables/table-2.json": "b96296fba06ebea0213d78d6e24686a1e7ca7f5450c2b4d10e3803dc8a2346ec",
+    "tables/table-2.tex": "a7ab72a8e90c2dde35d0d73a3453e0afae7bc50d197915169badf370a129b3af",
+    "tables/table-3.json": "263f22bb256a68b55cbeda47af3c62863177eb184c320010935a2b612c2a27d5",
+    "tables/table-3.tex": "b2ce2a15fdc135cc30194f6f3d473e97e9770e2c607371874aa4e31cd54e074e",
+    "tables/table-4.json": "d6c5c088564d8410835b8f7193376eec459329328e04cfbbc50101443d821746",
+    "tables/table-4.tex": "b21009d1c1c893705d6b615d25b977ad6ac4a88450cb40a7d351642fa95c8812",
+    "tables/table-5.json": "b11962e60d16b03734f270deff5c59a75e7e1e9bd37bb8179bcdbb05f56f9f38",
+    "tables/table-5.tex": "8e9c4e90ba722e51a216a0cb065143cf0e7ea29230713d6e8a59f5a36b9a1920",
+    "tables/table-6.json": "d594b9823e1f876fd529ab49d1b4db7cbfb4fd59a90b067c8c3a234c7aa6cfc3",
+    "tables/table-6.tex": "9dd7802bc9b9eb03ef88c00bc14a7073086ddb6a4693d01008ded81378278ba1",
+    "tables/table-7.json": "b96296fba06ebea0213d78d6e24686a1e7ca7f5450c2b4d10e3803dc8a2346ec",
+    "tables/table-7.tex": "371dda8f4ef614a05793dec3b86769d83a91fc0b9f19efbe6b214bfd6b0a34b1",
+    "tables/table-8.json": "b96296fba06ebea0213d78d6e24686a1e7ca7f5450c2b4d10e3803dc8a2346ec",
+    "tables/table-8.tex": "5e0aefd7cedd536d33bcfe16fe009db8c2e797383b4d1e7d6c457889c6e60478",
+    "tables/table-9.json": "2d506a5d11a5dc7124daa2916e83910ec61ca2c1d5e8597fc1b24333b6eee144",
+    "tables/table-9.tex": "f82801f868f60432d776e4d1ea2e34fafb2dcb9d541c63a499908ffcff8f2374"
+  },
+  "reference_pdf_sha256": "7ea7cf2e51922e5e58cd6659dc183409e465ede2eb1586fc8d0ec39935c4fd53",
+  "schema_version": "forge.release.reader_qualification.v1",
+  "scope": "frozen-table replay and two CPU Ugi attempts repeated; no retraining",
+  "script_sha256": "76f89ff7c3674fc66333c3d3667932595a87dd5899d3606a20b8aeeb7449686c",
+  "source": {
+    "files": {
+      "src/forge/__init__.py": "1459d63e7a21f703993ba3091f35ac9d90769466dfac1bf9f74c05d5c37c625e",
+      "src/forge/assembly/__init__.py": "89582f59633c237da38d81b45cdcd9b7c5aba1f6c97779d20f4045eaf73f7db5",
+      "src/forge/assembly/api.py": "bb77b94c91ee0bbba62ff9a83a1d3d31a4d280bf13b8a508537817b19d7efa60",
+      "src/forge/assembly/program.py": "c6195066488fcc89f2ff352afa9319342e24ad6df397b37a83d302c1dca75d4e",
+      "src/forge/assembly/registry.py": "72373e01d930651221d7a1365d96e94c817232a3706333f99a7a01a5e20f7037",
+      "src/forge/assembly/ugi3.py": "6970e0a345477aca64a1861dad9d46ab5cb519892032f0cdeda42cd6a4d6d1a4",
+      "src/forge/chemistry/__init__.py": "3530f1cfaa13a1ab07cb51ad1bbbf5c149c2a457fe58613d90837b5eccc91269",
+      "src/forge/chemistry/reactive_sites.py": "e85e455ea0a2ab730456dbfe13692423ad5542adea8ec895fe11a9a9261c5964",
+      "src/forge/core/__init__.py": "b99ed7e34521cf4f9ccc0d379380270edb0ead00797c623976f0ad0facd6ac9d",
+      "src/forge/core/hashing.py": "1d31e6cb3c086203d6e8136500857a8366804c9f01f529929442059faa626ed3",
+      "src/forge/core/io.py": "eb69ad2aa6740d5a6cbc61e56245ad03a741f690b19bd898fa6b557cdf1dd1de",
+      "src/forge/core/seeds.py": "a12f3a68190db0a82f0dcd60cf410ab14e13a842702494ed1d2ed1a5360b75a6",
+      "src/forge/core/types.py": "5fbcec9874654e36c165b1131bb877166da6cf3aeb3a37a9164e547de1f7133e",
+      "src/forge/corpus/__init__.py": "e28d976413fa244d3f91b809ae9d8996cb06a3e4f2fb8dc9ceaffb13f90d9d7d",
+      "src/forge/corpus/component_splits.py": "abb60b998b1eac2d20c32a18f0e3601ebe960fe7c4d4c1947adc6524007b6a63",
+      "src/forge/corpus/r0_splits.py": "0f39d09585460e743c497f820cfbe59e06a31ff2e6083c31eccfbbaaa92c94c5",
+      "src/forge/corpus/r1_prime_audit.py": "8e57e64d3adb703ba73365c2b6e839678b24e610f678c894a9d7dd4766e906c3",
+      "src/forge/corpus/reaction_program_records.py": "8bdc85b6300ee1b3c5ad76414e8c0cb87cb6a5e5bfb1c253f207830be8a4608f",
+      "src/forge/corpus/reaction_program_training.py": "e76b20a91218602e5aba9353a18fae4032049f3fb9a3b71492f20af31e453c68",
+      "src/forge/corpus/synthesis_program_production_cache.py": "a0b34354e74d83c2b7e60f6f9d6fcfc720e8c2fdd01875692893a67ceb92aaad",
+      "src/forge/corpus/synthesis_program_representation.py": "eba50e5c5257820d8fc6d757ece8a69ad1cdfa17fc5c57483de840553101aa43",
+      "src/forge/corpus/synthesis_program_training.py": "4cebaad4b8f0e6fb308bc12fa08cfaf9042fdb4b5bb55a5da89f76ec002c84e7",
+      "src/forge/corpus/training_cache.py": "1b2409db13f341c7ca9070bb2b312e6a85310a4d9f63c0c62dd53af496b0ffed",
+      "src/forge/corpus/ugi_chemistry_corpus.py": "913db3c43e622c1432ecabc1473e52efea0d109ed11b40853b14cb5f66152125",
+      "src/forge/corpus/ugi_component_expansion.py": "c6b5b5d1fd9d128fd0fc14370bcdb23c1982a750996e2d4c1b5303eed25e3aa5",
+      "src/forge/corpus/ugi_generated_components.py": "de868fc6a76f90ec414da2a915e2838bcb6f30d0cfd7ef54d7d5c446e93b7826",
+      "src/forge/corpus/ugi_generated_terminal_support.py": "f3132d16b3728539be1684a863da26cb84c6f70dffbd7d40fb4410219a2f7212",
+      "src/forge/corpus/ugi_held_component_gate.py": "2aa0dbf145515bb31ab03f5fd9e38f56fd96e909716ec3d2348aa5e00ae51b17",
+      "src/forge/corpus/ugi_morphology_corpus.py": "4cf300b2616b9e74b4b3b2e9eb0512b7dc23ed538d35f632493d1695dfee1e30",
+      "src/forge/diagnostics/__init__.py": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3",
+      "src/forge/diagnostics/hela/__init__.py": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3",
+      "src/forge/diagnostics/hela/evaluation.py": "9c1a3c380418ae15776bf1fb4155df516b89673609771aa603534e3800696adf",
+      "src/forge/diagnostics/hela/morphology/__init__.py": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3",
+      "src/forge/diagnostics/hela/morphology/ugi_high_potency_challenger_adjudication.py": "cd1dc3aa04fa4feb888bc46ce29e7f954b7ad270cf0a3002ab95673d40eca6f2",
+      "src/forge/diagnostics/hela/morphology/ugi_morphology_high_potency_challenger.py": "163a60a9eb1c09837b91d7e7e507bbe1c531b54e22fc4933dccf753a050ef25a",
+      "src/forge/diagnostics/hela/morphology/ugi_morphology_high_potency_proposal.py": "77dcfe16960bdf7e473534bda9c9a694796103cb1a4e9964bec61c4f51c6ccb7",
+      "src/forge/diagnostics/hela/morphology/ugi_morphology_potency_matched_adjudication.py": "e23058dc837d0056ecc6bf021a17a669b56d2f81338ddfdb7672ba62bfe724e7",
+      "src/forge/diagnostics/hela/morphology/ugi_morphology_potency_proposal_sweep.py": "a9e707288f6b89e388e981ca3a4ba27d05db60a60bcd392f4a2e97df6a7910f6",
+      "src/forge/diagnostics/hela/morphology/ugi_morphology_potency_signal.py": "297eae25c5c430473b55f3cd671ba580c501678337c42e6ff54126f14b037ec9",
+      "src/forge/diagnostics/product_l1/__init__.py": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3",
+      "src/forge/diagnostics/product_l1/sampling/__init__.py": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3",
+      "src/forge/diagnostics/product_l1/sampling/terminal_census.py": "220633304b3b782a803e91ad3a3c673884b0c8b2df1828e83c97b53768608a47",
+      "src/forge/diagnostics/product_l1/sampling/ugi_end_to_end_sampling.py": "67f84630db207a84969fdeba708ac17fbb3aadd6ce817a9cad6a8cfa10fc20c5",
+      "src/forge/diagnostics/product_l1/sampling/ugi_joint_end_to_end_sampling.py": "86f10a67d5777ad06f1c1d0e4fd16157b8c92f6e2ce601e1a49675b437a79c18",
+      "src/forge/diagnostics/product_l1/sampling/ugi_joint_sparse_sampling.py": "243566c06139f68bff56830419ac9276af66c43da6976375afdcea036ec39cc2",
+      "src/forge/diagnostics/product_l1/sampling/ugi_matched_morphology_terminal_generation.py": "d1ccd0705d3b1373c82ea1e0aa1f84fe0fe1f774fffc1103afaae2ca95962a73",
+      "src/forge/diagnostics/product_l1/sampling/ugi_selected_generator_implementation.py": "73b86edf767504beeb06855cce1c34c004b11fdcc0f013e25c66ca6cdded0170",
+      "src/forge/diagnostics/product_l1/sampling/ugi_selected_restartable_generator.py": "1ac4c5365525d9a1001fd905c4c328e0499b930a01576a6f98d7fe12077a666b",
+      "src/forge/diagnostics/product_l1/sampling/ugi_selected_restartable_generator_v2.py": "5129b4534a7cabd7c629849ebbf5a6eb18fa699676455039a0b17fce04caacc2",
+      "src/forge/diagnostics/product_l1/training/__init__.py": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3",
+      "src/forge/diagnostics/product_l1/training/ugi_training_cache.py": "d2c03aaefc6b9a0e65d2b37290e86b9d9527e16ef155de12649153c88cc3d270",
+      "src/forge/diagnostics/ranking/__init__.py": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3",
+      "src/forge/diagnostics/ranking/ugi_continuous_novelty_matched_ranking.py": "a51527555033f516dbdf00c56b988a074049d5c12368fa940c037f58aec547bc",
+      "src/forge/diagnostics/support/__init__.py": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3",
+      "src/forge/diagnostics/support/adapters/__init__.py": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3",
+      "src/forge/diagnostics/support/adapters/selected_v1.py": "e7ee7d59b07be8e60c700d032e24d958c6d042c265b714f74e40081ccac92fc3",
+      "src/forge/diagnostics/support/adapters/selected_v2.py": "72a251f0765a3de9e816ff14c9ae1235965ddf7cb5bc3024281c18c36832951e",
+      "src/forge/diagnostics/support/adapters/selected_v3.py": "b4f92eeafd7abf8aab4ad732e44bfc5c3482bef3fa1011e48bcf618aeb5cd92d",
+      "src/forge/diagnostics/support/adapters/terminal_support.py": "9f0d6d419152fef8837c3676352dcb2fe430d791c88918a29a126f6f50beecac",
+      "src/forge/diagnostics/support/guidance/__init__.py": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3",
+      "src/forge/diagnostics/support/guidance/ugi_synthesis_guidance.py": "b145c04607ae7e306f2b53a22a440a0f24050ffbd7b00b11cccf467c6cf4b0fb",
+      "src/forge/diagnostics/support/guidance/ugi_zero_guidance_rehearsal.py": "d2ac4dcbf2fabae1eab3fae9e2f1316bae5b1de4bad2d62474e1f4a3de21bd9f",
+      "src/forge/diagnostics/support/schedule/__init__.py": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3",
+      "src/forge/diagnostics/support/schedule/ugi_matched_morphology_allocation_schedule.py": "d2f714f54e82fcb72434fe9be6e106c70f7250e56b14396021aba8f5d414d43d",
+      "src/forge/diagnostics/support/schedule/ugi_matched_planner_cache_binding.py": "d230547c7689531dbfdd360d3ed677fe9b0006c917cb90cce74f02c5730f4e44",
+      "src/forge/diagnostics/support/schedule/ugi_nonzero_guidance_runner.py": "63bed7e848a3af7b9f8df1a01e560d2c6b01ea6dc27305c7aea6290bc73ca4eb",
+      "src/forge/flow/__init__.py": "f541e5d26b2c2dae4e6cb8c92e0759e4e132ed9fb9982c68281fadbcb34dd1be",
+      "src/forge/flow/rstar.py": "e97ee6faeaba067705c5f8b5327ed4a1da6d4c6431a70d1d5a2c289e630f03bb",
+      "src/forge/model/__init__.py": "4cf4ef379c05fe67b6e1353fa8fb2acf14b2d88f473dfca152ba104ba86dfc91",
+      "src/forge/model/adapter_node_conditioning.py": "6f456c473ebd82ab51588e67b8f34059a13371f374ecd3e960c46b6ca6f034d6",
+      "src/forge/model/common_lipid_realism.py": "cbd70261a7ad79ada3b65b5bc35ff0866794295af140603fcdeb6b735a5202be",
+      "src/forge/model/common_ugi_benchmark.py": "92e4ee8892d79555714caa04d9237934ee4d6db3437da4d2593dbbdcd763832f",
+      "src/forge/model/conditional_role_dependence.py": "62ffb60213b96131c1043ba925872b9ede6c0faf207ca3e84c4038811553b568",
+      "src/forge/model/defog_feasibility.py": "c99ffcef439a74827a670c29a54e41004adf670af65697c0e05d16fb6c5c7de8",
+      "src/forge/model/eligibility.py": "e5c48d985b12a28f50b77e8214e9f230fa8c64a472ff9f677610ec2f4cad2531",
+      "src/forge/model/finite_component_catalogue.py": "884cf055f790783cb8d55a65348618c2534a479c2fd0c17ab5b9a4407d54d0ad",
+      "src/forge/model/learned_inventory_selector.py": "b31ab4f0b86f3245b5cc14ccfcc6b57dc79860b8e6b78fd0b606509405eb129f",
+      "src/forge/model/lipid_context.py": "5a8946e083b250ceb07d4c405e374e9d7f2937d7f9917c346393621fd2a9f7d0",
+      "src/forge/model/lipid_support_skeleton.py": "f3bbac7937a58ad152fd7853cdcdbe1e9084737dc455175da2dc1ac566249632",
+      "src/forge/model/local_chemistry_support.py": "710d9e05561c47bb0be79362044f2a1b77d98b2eb78d620c8edbf617ce72329e",
+      "src/forge/model/phase1_flow.py": "8e842c0efb46e24738ceb274c7ea57092c478525bed0d2d5728b5653240cc9b5",
+      "src/forge/model/phase1_tree_topology_flow.py": "c2c492c1a9a24669a69c14561eac0a84dbfc8948ba1a4808a5fc3f33373fd983",
+      "src/forge/model/reaction_core_saturation.py": "d169a7d2dc80330b902fec606d01e7f088946305f73b4ea4852dd0c025aa13f4",
+      "src/forge/model/reaction_program_conditioning.py": "309bce163306f8adc4a7035daecdbbf309101981a6bceb242bdca98cbf060d7a",
+      "src/forge/model/reaction_program_evaluation.py": "b57b0ac8f46a3b16364868bd44fffe6aef83834b8154dd8c5021d2d1579d0c28",
+      "src/forge/model/reaction_program_flow.py": "8102b41fbf8286a2f01d66bbd0558b32e700fd55ac9344fa89811af0c2ef1cac",
+      "src/forge/model/reaction_program_graph.py": "93a3395b144a2795922ecbee4d7ed9ed00f7aee0a966f4b28aa5a3ba572fe020",
+      "src/forge/model/reaction_program_transformer.py": "ff81e0a3a10b6520289dfbb8bbe9b13e68537449ec5ec0599d5105344f8bb898",
+      "src/forge/model/sparse_topology_feasibility.py": "811687268a74d83d0e320e29d0d81c33244e98a124adfd412d55de30f6cf70db",
+      "src/forge/model/structural_attention.py": "b1b145e7dd4a118be77ebff4c073e446d4afd7839c667dfa1ef2faaa694b895a",
+      "src/forge/model/synthesis_program_graph.py": "32e03b248e7fea6b9cc8ad85503ee0d602309000c40ddba2f63f6d3c661a7ec9",
+      "src/forge/model/synthesis_program_layout.py": "fa6456971cbf043c1aac2585fb422022aa9d4edf98182fa8b22c0363a6f77a26",
+      "src/forge/model/synthesis_program_sampling.py": "3c3deef7a2e984e853adde6cacc0c44e964aad6e7d9d81b1269794bda1a559c1",
+      "src/forge/model/synthesis_program_training.py": "39492a7e253fab72e022104598f473b6461c7d314041131af3aafad0e14f91bf",
+      "src/forge/model/tensor_checkpoint.py": "9b2ff4082a69b5b5cf1df3fec9f01dba4e3d6ee131bdad8eadb6b4bfb8efd3d6",
+      "src/forge/model/training_restart.py": "0f712ecc5672a4d785dc6663db39466cebeb9f70a76a8c328819241881494937",
+      "src/forge/model/ugi_adapter_features.py": "ec20db0d89db173648cec66209db92332d8f8e3711490c16feda97d8b0522d33",
+      "src/forge/model/ugi_chemistry_flow.py": "8527d04a8f7ac2fd9ec4d06f2947b76d7a38c759c7b7d92f959c2631ce5f4645",
+      "src/forge/model/ugi_chemistry_interface.py": "b3f1ca306a61c61d7acbe88e376b344ed51762e56c5f9a146d314e4d929035b2",
+      "src/forge/model/ugi_closure_placement.py": "863f3a56a9f124a7085461d17a7e5e9896e0171b519a452a33ec51b9fd903ffa",
+      "src/forge/model/ugi_joint_sparse_flow.py": "00c7e14346a0ba843ffe2d409827190d192b035b8d254d36abc85f6f1c783c78",
+      "src/forge/model/ugi_morphology_flow.py": "9a65900ff4b2c23e284a813073da34cfb203323d5ae5c0a34dbb29af09764536",
+      "src/forge/model/ugi_morphology_program.py": "b1f81344404c2ee4136eab97be52449b5f836087320a30bb29559d59f89999ba",
+      "src/forge/model/ugi_transformer_topology.py": "197f39991cab4a120a158a1bb4161fd9e6368113e056afacf9ece74a25eb09a4",
+      "src/forge/model/v5_sparse_representation.py": "e01d59ce8115ff24c5b42cb7bfef8419bf67665c956bdb5b2897bfd3bb074b1a",
+      "src/forge/model/vocabulary.py": "df6b5ccbee8b804929d10a8e2403db3ece9ca5bd74d5110104da9ff51ad1b040",
+      "src/forge/potency/__init__.py": "9d3ace3617b7479efb2edd6fe0a2f35e169965351ffc511db0642256fb287a35",
+      "src/forge/potency/annotations.py": "9ffeee87446623832a7030df0bce1a10285a7857aa7dc7dddcef306f59bfe18e",
+      "src/forge/potency/applicability/__init__.py": "c3ea4a6a6cd73b76471345d77623fec4cf4f61efd3ab47c1aa52a43735360d35",
+      "src/forge/potency/applicability/ugi_distributional_applicability.py": "669c37674562dff63c61745caa94c31904705bc6646a69070095ca9e01994adb",
+      "src/forge/potency/applicability/ugi_distributional_applicability_v2.py": "55a63d000cfea738b82399da18db20dbd4d6bd11ba07249fd8413b76d3ddf186",
+      "src/forge/potency/applicability/ugi_interpolative_conformal.py": "49a7d4d615d41cb58dd2197f1be74420f3ba41751162dd3fc35f404984edcaae",
+      "src/forge/potency/oracle/__init__.py": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3",
+      "src/forge/potency/oracle/agile_reconciliation.py": "b80714f9a3c7bd36b23edde9497bff7ec90a5174b7d0c6668d73153dc17eed77",
+      "src/forge/potency/oracle/oracle_classical.py": "14ee21de53387e430b1451b8a94eeeda8da92eae7d1be43959eb721490971a73",
+      "src/forge/release/__init__.py": "fe14b776cb0559c463220a4a5f0f5df930d88ca5678e890a2a74d7d0ce264256",
+      "src/forge/release/_generation_runtime.py": "f8702f0ec74b7b9e4506af5d591608c77d614c6e12b8d883697a2071524050c0",
+      "src/forge/release/artifacts.py": "819146d9f96214c231745698aa82056324a4e8e44ce684df8eaa2e51da39ba8c",
+      "src/forge/release/assessment.py": "d303a8884252866ce5a5b116d2d40c2a4f45c71cfd718759f89414846d01c3a5",
+      "src/forge/release/atlas.py": "fc8e7e89cfadd03afe25d41eff60434bd5076986862d587c7c498079352c45ec",
+      "src/forge/release/cli.py": "29f447abd35f2c8072cebf543c5b64f42abc742dd3cefc6952720af895f3f533",
+      "src/forge/release/evaluation.py": "219f12e094f955b449c04e52250cd5efbdb1fafcf42ed0ba212eff041b1019bd",
+      "src/forge/release/generate.py": "a1f09dd49fdb781547e45c359752fdc2bed483e32e839acff41a2b2931b26b1a",
+      "src/forge/release/manuscript.py": "d7c05118458d2c8189935800aa2f86a22d827511ea9dbe4655997bb9bb4388d8",
+      "src/forge/release/qualification.py": "82ef9b8bc189febffc011827d7f68ef05eb7ff8586eafb0e62f463ba43b92dad",
+      "src/forge/release/reproduce.py": "a02b221bdbac52966fa711f5b0fc956d7712be681e1e7d6323f4fec827f9ab73",
+      "src/forge/reporting/__init__.py": "bc2a26016feca631f3f7f0a4642e256658fbec1f53edb66c03abebd923302278",
+      "src/forge/reporting/gem_table1.py": "0f29d4f69a98219b5d5a22e281f99da84536b53c9eea341cf202ff76d547b42a",
+      "src/forge/reporting/gem_table4.py": "8c2bcba6c940630a438a307a556966cd81d7f3f99a333f2b0309724dcfb6f1f6",
+      "src/forge/reporting/gem_table5.py": "a2f1edede4bd06684d215a18ffd1485c45934bfbca704adde67234686de3d372",
+      "src/forge/reporting/gem_table6.py": "b897d4ae402dbc1a90a3de9e2db2ab5feee1a8dc1d799e0925e8af2f427ddc6e",
+      "src/forge/reporting/gem_table8.py": "2cbf6fb7cbbab0da8d8cbab5922570acf650567ef19097c072c09d11fc93ea69",
+      "src/forge/reporting/gem_table9.py": "9507b96cb3c98552ff758fd234fbff92a2eb11e14419ab8a66afd02879038a97",
+      "src/forge/reporting/results_v1.py": "f682e4a710aa9c708123e693e8f902c940602ab5bb9667d4ee47836b52b6bc28",
+      "src/forge/synthesis/__init__.py": "e11b4f71283b816e75321e0672b395b4c0a1cd7fa59ff180a77929b3de9057c5",
+      "src/forge/synthesis/assessment/__init__.py": "a7c7a7f1286fc118141a46e063bcca5891a0ec414bb7059a3c20df384a815cf7",
+      "src/forge/synthesis/assessment/common_route_evidence.py": "77b472a92cabdf686d68f22ccc640c834c97ba3ca9af576f47d7ba240150bf34",
+      "src/forge/synthesis/assessment/ugi3_support_boundary.py": "21e0c260f854d91bcf5b66286560621e0c9dbff859ed5d6d4d25ce6389010bc6",
+      "src/forge/synthesis/engine/__init__.py": "42d09a072dd80b554f7d9c1c91788b6a1b9aa7ecab65d4baaecf722612a962b1",
+      "src/forge/synthesis/engine/planner.py": "faffcb63b96e336ac19641b7e6def67b7b46fc70a5d15255973151cb08f539ef",
+      "src/forge/synthesis/engine/planner_cache.py": "3f813489de35c6ba912610dfeb464460063034f68f6ff8164531265231473c00",
+      "src/forge/synthesis/engine/planner_cache_snapshot.py": "ebc70e4b19e36d46d0247cb5068ca4249fefc3af39c38cc25022854326542dd1",
+      "src/forge/synthesis/engine/qualified_forward.py": "0a06be48ed62c0865838117d28a5e360985ddc8175cafd66ace011980b2f88c8",
+      "src/forge/synthesis/matched.py": "dd85457b084d88c603daf385977f6eb5dcbf7befc0aad75c5599c2dee1bf96ba",
+      "src/forge/synthesis/terminals/__init__.py": "c3ea4a6a6cd73b76471345d77623fec4cf4f61efd3ab47c1aa52a43735360d35",
+      "src/forge/synthesis/terminals/terminal_assessment.py": "a20e47733a9374ad85569922ea7eb8a40f2845bc49cc97b4c9827ad5de620b80",
+      "src/forge/synthesis/value/__init__.py": "6ebe09d4b26839829bced89b7ccb893ef2a2963ce36772dc177bded6c0ac19c3",
+      "src/forge/synthesis/value/contracts.py": "7244c51684873877b76c75f8d6eeea9bd599ff668604fffafe74dff90959c77c",
+      "src/forge/workflows/__init__.py": "8a3837971627355c01b2d888fe0063b2e1416bb2da5196d393d4191f56aa640a",
+      "src/forge/workflows/benchmark_studies.py": "9d31cb992067c46d6d4bc3d75f6cf5bd29d6077e5d38071d06f599a9966b6bae",
+      "src/forge/workflows/catalogue_baseline.py": "c8027ef00c266c885ac9d4b2ac7eb61579417ac23eefa86a81f0028b8e7e9252",
+      "src/forge/workflows/external_ugi_contract.py": "facc45db66acbdabc0e9ec938b43f6fbf48a3e0c6bde91a1d227fe6aeee899e2",
+      "src/forge/workflows/lipid_realism_aggregation.py": "b629cbdcd981c122f621c29940c9a00a3d849dd1f92bd3c944724a9647567085",
+      "src/forge/workflows/lipid_realism_assessment.py": "d26ddabc469ef1ccad4b7715c352b6ece92251e214e201178befcb0dc121b357",
+      "src/forge/workflows/mechanism_study.py": "b848f751827479e5199e4e57619c041638961a43a8cb15d6e1a18fc76509942f",
+      "src/forge/workflows/native_baseline_ports.py": "50a0060ca3e3f4527b3c67db7a640a9668c9c1d7d7886e1a8fe4e724f9372730",
+      "src/forge/workflows/native_baseline_runtime.py": "456c1dc91bfcc3be781b137183d32b3344700b51c0d266eb437801ee5f79c26f",
+      "src/forge/workflows/production_evaluation.py": "9b3354844d942594ba0cc573430df0f02acd688bdfd0ce500a4b917751c97a7b",
+      "src/forge/workflows/production_randomness.py": "9560d51a7f3c9af35acba760f991d4c8719d10837ce6f0e2e3d3ca88436fa44d",
+      "src/forge/workflows/production_training.py": "9b4a1f00bbae5dac75225ff51c9a54a33f6f64a7040a4eb16305f81a4a81e0b5"
+    },
+    "sha256": "17cddd5256d6e0029edb92f25f3f088778f36666527911e02690461ef53731bd"
+  },
+  "status": "pass",
+  "table_rows_matching_manuscript": 89,
+  "uv_lock_sha256": "ad650c2f8886d29b5f4b54c86fa3d740d9a088b7569a4da525d6be76829d950b"
+}

@@ -1,0 +1,520 @@
+{
+  "date": "2026-09-26",
+  "operation": "Use training-catalogue component novelty consistently in Table 2, seed-level Table 7 and related prose",
+  "evidence_class": "Computed from hash-verified frozen seed-level assessments",
+  "source_manifest": {
+    "path": "results/phase1/gem_prose_results_core_saturation_v1/result.json",
+    "sha256": "3017469291413a0548f3f7c658ae486f9fdf55e16538ff4509b9c8c795fd4810"
+  },
+  "source_assessments": [
+    {
+      "bytes": 7037,
+      "path": "results/phase1/finite_catalogue_common_assessment_seed0_v1/result.json",
+      "sha256": "2b8676765a33fa363bd3ba7ce8371f9d95d5a6551501234e08334afb121f8504"
+    },
+    {
+      "bytes": 7033,
+      "path": "results/phase1/finite_catalogue_common_assessment_seed1_v1/result.json",
+      "sha256": "b09ca42366f0662da381cc72650b9185457ee0164a4265094a383b3613b9517a"
+    },
+    {
+      "bytes": 7049,
+      "path": "results/phase1/finite_catalogue_common_assessment_seed2_v1/result.json",
+      "sha256": "fdf5af01fdba76578eaec6251c40660de5c3d406bb408de6f4cf293721737139"
+    },
+    {
+      "bytes": 7216,
+      "path": "results/phase1/shared_null_posthoc_common_assessment_seed0_v1/result.json",
+      "sha256": "6efd6179b150d8780f07b2a97214b176d95782335f4c12627899069eb8941347"
+    },
+    {
+      "bytes": 7168,
+      "path": "results/phase1/shared_null_posthoc_common_assessment_seed1_v1/result.json",
+      "sha256": "d05a81d3d438c48ab92159e60fbeaae2cbf27e4b7cb8c01adb6a5aeb81d19225"
+    },
+    {
+      "bytes": 7229,
+      "path": "results/phase1/shared_null_posthoc_common_assessment_seed2_v1/result.json",
+      "sha256": "2fff4d9e07afaf3ba76ba38673abee2b9e217039c24b3ae174d532b8a0743aa6"
+    },
+    {
+      "bytes": 7115,
+      "path": "results/phase1/fact_matched_common_assessment_seed0_v1/result.json",
+      "sha256": "7e0a3ca039ac85255c55f8eefcde73963a79997d263aa43e894ae5488d84a2a0"
+    },
+    {
+      "bytes": 7202,
+      "path": "results/phase1/fact_matched_common_assessment_seed1_v1/result.json",
+      "sha256": "b0192b7a72514f2542294e294f942e1e3984d75f385a1845fc89e2e466ccc904"
+    },
+    {
+      "bytes": 7176,
+      "path": "results/phase1/fact_matched_common_assessment_seed2_v1/result.json",
+      "sha256": "b092f69e9a758572f6d35499b2e415c6b5fb5e2f3bfac5f8937765801ab13950"
+    },
+    {
+      "bytes": 7146,
+      "path": "results/phase1/fact_generous_common_assessment_seed0_v1/result.json",
+      "sha256": "1ce9a0eeabb93520e02105208d7625cb2caf351ba5ca2d8bde380f7d5b49d97c"
+    },
+    {
+      "bytes": 7175,
+      "path": "results/phase1/fact_generous_common_assessment_seed1_v1/result.json",
+      "sha256": "6ca648afe09beb50c6fbe3ff82dfb91c231032404d8bf49fbcac75e406b7d1e1"
+    },
+    {
+      "bytes": 7176,
+      "path": "results/phase1/fact_generous_common_assessment_seed2_v1/result.json",
+      "sha256": "f9dc26860136c5dc38ef20894f3e52fd43d3aa844801fbc16e1bc3c370b2d6f9"
+    },
+    {
+      "bytes": 7216,
+      "path": "results/phase1/forge_transformer_core_saturation_common_assessment_seed0_v2/result.json",
+      "sha256": "9a382239ee17b37697c14d17dc423f84117217319166289fa8e140a113a8ec41"
+    },
+    {
+      "bytes": 7197,
+      "path": "results/phase1/forge_transformer_core_saturation_common_assessment_seed1_v2/result.json",
+      "sha256": "e5e70a7bf80d9685437b0772d0b0ac298f30efab48f7bd37b4721a75a9b60d65"
+    },
+    {
+      "bytes": 7230,
+      "path": "results/phase1/forge_transformer_core_saturation_common_assessment_seed2_v2/result.json",
+      "sha256": "89a33fb7ab1abd828d69961a13e786e6fd41d978bf56bc494acd868258ca8c40"
+    },
+    {
+      "bytes": 6740,
+      "path": "runs/phase1-external-ugi-native-results-v3/rgfn/seed0/common_assessment/result.json",
+      "sha256": "6db8687c0dc1705609b647875fc4e413d941b513d15ea0d5a62279938f338181"
+    },
+    {
+      "bytes": 6740,
+      "path": "runs/phase1-external-ugi-native-results-v3/rgfn/seed1/common_assessment/result.json",
+      "sha256": "40cbcb859d3c4e4b499ad059fb8b9d866a13892749e315a0fd9a79314bcfc595"
+    },
+    {
+      "bytes": 6740,
+      "path": "runs/phase1-external-ugi-native-results-v3/rgfn/seed2/common_assessment/result.json",
+      "sha256": "553c26699f17e2ce1da19769b9aea8f278d7f48bfc8ec3330761d864c30d65ea"
+    },
+    {
+      "bytes": 7197,
+      "path": "runs/phase1-external-ugi-native-results-v3/defog_unconditional/seed0/common_assessment/result.json",
+      "sha256": "9475283fec53517b08e471aad3436788b9833a77dd992ecfc01802ac3dafcc38"
+    },
+    {
+      "bytes": 7239,
+      "path": "runs/phase1-external-ugi-native-results-v3/defog_unconditional/seed1/common_assessment/result.json",
+      "sha256": "43b35d2170511ed8dda9a02c5ebc7cc2951c5f64ba8f9bf4bc5e980c28f93aa2"
+    },
+    {
+      "bytes": 7211,
+      "path": "runs/phase1-external-ugi-native-results-v3/defog_unconditional/seed2/common_assessment/result.json",
+      "sha256": "afaabc5e52cbccd2309698adec0b19adb1b2da3604a4c38fd81e9d0d76e6a891"
+    },
+    {
+      "bytes": 6835,
+      "path": "results/phase1/genmol_safe_common_assessment_seed0_v1/result.json",
+      "sha256": "1702e839253fffe4ae1860f145a7c38124a4b0d06842d520ec7be084e9e3da0e"
+    },
+    {
+      "bytes": 6815,
+      "path": "results/phase1/genmol_safe_common_assessment_seed1_v1/result.json",
+      "sha256": "6aabb367c6e2204a5584d882d0ba39d8bcf2a924636a80f2daa4518954a5bb96"
+    },
+    {
+      "bytes": 6834,
+      "path": "results/phase1/genmol_safe_common_assessment_seed2_v1/result.json",
+      "sha256": "ba402185811d38c5285161621a715b4203f67856c509312abbf7e8632016822c"
+    },
+    {
+      "bytes": 7873,
+      "path": "runs/phase1-learned-inventory-selector/feb7af6d929fafb58b74ba9e5ff3ed83d0abf2c1357bb24cebe84572ebe823a7/stages/selector/artifacts/result.json",
+      "sha256": "40ec6f6a2a63ff41846c6e91739c227d59b8642be43c14d30daea7f95817b0db"
+    },
+    {
+      "bytes": 7884,
+      "path": "runs/phase1-learned-inventory-selector/2024106a25c36eea9c2e9585bd59d345c29edf957b1452abe1631db1befa5eb0/stages/selector/artifacts/result.json",
+      "sha256": "c5a22fc5d76fa2dbaf7ed045013b066646fd3a369827ede0a598e33e77403530"
+    },
+    {
+      "bytes": 7868,
+      "path": "runs/phase1-learned-inventory-selector/7e6e19c564269c904fe531938d6e50a96f9cf1c7a13210dbd571981657f5ca1d/stages/selector/artifacts/result.json",
+      "sha256": "567bc08c3aa11a0a36550ac469bc99a2a1746d6ecc280e9670950732987044c6"
+    }
+  ],
+  "metric": "unique_open_ended_exact_l1_products_per_1000_attempts",
+  "superseded_metric": "unique_method_visible_open_ended_exact_l1_products_per_1000_attempts",
+  "definition": "Distinct valid exact-L1 products with exactly one recovered decomposition containing at least one precursor absent from the shared training-component catalogue, per 1000 generation attempts",
+  "seeds": {
+    "finite_catalogue_oracle": [
+      {
+        "seed": 20260825,
+        "attempts": 3072,
+        "component_novel": 0.0,
+        "method_visible_legacy": 0.0,
+        "distinct_exact_l1": 841.4713541666666
+      },
+      {
+        "seed": 20260826,
+        "attempts": 3072,
+        "component_novel": 0.0,
+        "method_visible_legacy": 0.0,
+        "distinct_exact_l1": 843.0989583333334
+      },
+      {
+        "seed": 20260827,
+        "attempts": 3072,
+        "component_novel": 0.0,
+        "method_visible_legacy": 0.0,
+        "distinct_exact_l1": 828.125
+      }
+    ],
+    "shared_three_program_null": [
+      {
+        "seed": 20260825,
+        "attempts": 3072,
+        "component_novel": 109.70052083333333,
+        "method_visible_legacy": 109.70052083333333,
+        "distinct_exact_l1": 109.70052083333333
+      },
+      {
+        "seed": 20260826,
+        "attempts": 3072,
+        "component_novel": 98.30729166666667,
+        "method_visible_legacy": 98.30729166666667,
+        "distinct_exact_l1": 98.30729166666667
+      },
+      {
+        "seed": 20260827,
+        "attempts": 3072,
+        "component_novel": 117.1875,
+        "method_visible_legacy": 117.51302083333333,
+        "distinct_exact_l1": 117.51302083333333
+      }
+    ],
+    "fact_matched": [
+      {
+        "seed": 20260825,
+        "attempts": 3072,
+        "component_novel": 48.828125,
+        "method_visible_legacy": 48.828125,
+        "distinct_exact_l1": 48.828125
+      },
+      {
+        "seed": 20260826,
+        "attempts": 3072,
+        "component_novel": 63.151041666666664,
+        "method_visible_legacy": 66.08072916666667,
+        "distinct_exact_l1": 66.08072916666667
+      },
+      {
+        "seed": 20260827,
+        "attempts": 3072,
+        "component_novel": 37.109375,
+        "method_visible_legacy": 37.434895833333336,
+        "distinct_exact_l1": 37.434895833333336
+      }
+    ],
+    "fact_generous": [
+      {
+        "seed": 20260825,
+        "attempts": 3072,
+        "component_novel": 161.1328125,
+        "method_visible_legacy": 161.1328125,
+        "distinct_exact_l1": 161.1328125
+      },
+      {
+        "seed": 20260826,
+        "attempts": 3072,
+        "component_novel": 486.6536458333333,
+        "method_visible_legacy": 488.28125,
+        "distinct_exact_l1": 488.28125
+      },
+      {
+        "seed": 20260827,
+        "attempts": 3072,
+        "component_novel": 215.49479166666666,
+        "method_visible_legacy": 215.49479166666666,
+        "distinct_exact_l1": 215.49479166666666
+      }
+    ],
+    "forge_transformer": [
+      {
+        "seed": 20260825,
+        "attempts": 3072,
+        "component_novel": 852.8645833333334,
+        "method_visible_legacy": 872.3958333333334,
+        "distinct_exact_l1": 872.3958333333334
+      },
+      {
+        "seed": 20260826,
+        "attempts": 3072,
+        "component_novel": 856.1197916666666,
+        "method_visible_legacy": 875.0,
+        "distinct_exact_l1": 875.0
+      },
+      {
+        "seed": 20260827,
+        "attempts": 3072,
+        "component_novel": 808.59375,
+        "method_visible_legacy": 840.4947916666666,
+        "distinct_exact_l1": 840.4947916666666
+      }
+    ],
+    "rgfn": [
+      {
+        "seed": 20260825,
+        "attempts": 3072,
+        "component_novel": 0.0,
+        "method_visible_legacy": 0.0,
+        "distinct_exact_l1": 0.0
+      },
+      {
+        "seed": 20260826,
+        "attempts": 3072,
+        "component_novel": 0.0,
+        "method_visible_legacy": 0.0,
+        "distinct_exact_l1": 0.0
+      },
+      {
+        "seed": 20260827,
+        "attempts": 3072,
+        "component_novel": 0.0,
+        "method_visible_legacy": 0.0,
+        "distinct_exact_l1": 0.0
+      }
+    ],
+    "defog_unconditional": [
+      {
+        "seed": 20260825,
+        "attempts": 3072,
+        "component_novel": 244.46614583333334,
+        "method_visible_legacy": 250.9765625,
+        "distinct_exact_l1": 250.9765625
+      },
+      {
+        "seed": 20260826,
+        "attempts": 3072,
+        "component_novel": 280.5989583333333,
+        "method_visible_legacy": 288.4114583333333,
+        "distinct_exact_l1": 288.4114583333333
+      },
+      {
+        "seed": 20260827,
+        "attempts": 3072,
+        "component_novel": 291.015625,
+        "method_visible_legacy": 302.4088541666667,
+        "distinct_exact_l1": 302.4088541666667
+      }
+    ],
+    "genmol_safe": [
+      {
+        "seed": 20260825,
+        "attempts": 3072,
+        "component_novel": 0.0,
+        "method_visible_legacy": 0.0,
+        "distinct_exact_l1": 0.0
+      },
+      {
+        "seed": 20260826,
+        "attempts": 3072,
+        "component_novel": 0.0,
+        "method_visible_legacy": 0.0,
+        "distinct_exact_l1": 0.0
+      },
+      {
+        "seed": 20260827,
+        "attempts": 3072,
+        "component_novel": 0.0,
+        "method_visible_legacy": 0.0,
+        "distinct_exact_l1": 0.0
+      }
+    ],
+    "learned_inventory_selector": [
+      {
+        "seed": 20260825,
+        "attempts": 3072,
+        "component_novel": 0.0,
+        "method_visible_legacy": 0.0,
+        "distinct_exact_l1": 862.9557291666666
+      },
+      {
+        "seed": 20260826,
+        "attempts": 3072,
+        "component_novel": 0.0,
+        "method_visible_legacy": 0.0,
+        "distinct_exact_l1": 835.6119791666666
+      },
+      {
+        "seed": 20260827,
+        "attempts": 3072,
+        "component_novel": 0.0,
+        "method_visible_legacy": 0.0,
+        "distinct_exact_l1": 849.9348958333334
+      }
+    ]
+  },
+  "summaries": {
+    "finite_catalogue_oracle": {
+      "mean": 0.0,
+      "sample_sd": 0.0
+    },
+    "shared_three_program_null": {
+      "mean": 108.3984375,
+      "sample_sd": 9.507214756842597
+    },
+    "fact_matched": {
+      "mean": 49.69618055555556,
+      "sample_sd": 13.04251666780965
+    },
+    "fact_generous": {
+      "mean": 287.76041666666663,
+      "sample_sd": 174.37801940321324
+    },
+    "forge_transformer": {
+      "mean": 839.1927083333334,
+      "sample_sd": 26.549412114718333
+    },
+    "rgfn": {
+      "mean": 0.0,
+      "sample_sd": 0.0
+    },
+    "defog_unconditional": {
+      "mean": 272.02690972222223,
+      "sample_sd": 24.429971668330317
+    },
+    "genmol_safe": {
+      "mean": 0.0,
+      "sample_sd": 0.0
+    },
+    "learned_inventory_selector": {
+      "mean": 0.0,
+      "sample_sd": 0.0
+    }
+  },
+  "cell_changes": [
+    {
+      "table_label": "tab:ugi-common-benchmark",
+      "row": "DeFoG unconditional",
+      "before": "$280.6\\pm26.6$",
+      "after": "$272.0\\pm24.4$"
+    },
+    {
+      "table_label": "tab:ugi-common-benchmark",
+      "row": "Shared-null + post-hoc",
+      "before": "$108.5\\pm9.7$",
+      "after": "$108.4\\pm9.5$"
+    },
+    {
+      "table_label": "tab:ugi-common-benchmark",
+      "row": "FACT-matched",
+      "before": "$50.8\\pm14.4$",
+      "after": "$49.7\\pm13.0$"
+    },
+    {
+      "table_label": "tab:ugi-common-benchmark",
+      "row": "FACT-generous",
+      "before": "$288.3\\pm175.3$",
+      "after": "$287.8\\pm174.4$"
+    },
+    {
+      "table_label": "tab:ugi-common-benchmark",
+      "row": "\\cellcolor{forgerow}FORGE",
+      "before": "\\cellcolor{forgerow} $862.6\\pm19.2$",
+      "after": "\\cellcolor{forgerow} $839.2\\pm26.5$"
+    },
+    {
+      "table_label": "tab:baseline-seed-results",
+      "row": "DeFoG unconditional",
+      "before": "251.0",
+      "after": "244.5"
+    },
+    {
+      "table_label": "tab:baseline-seed-results",
+      "row": "DeFoG unconditional",
+      "before": "288.4",
+      "after": "280.6"
+    },
+    {
+      "table_label": "tab:baseline-seed-results",
+      "row": "DeFoG unconditional",
+      "before": "302.4",
+      "after": "291.0"
+    },
+    {
+      "table_label": "tab:baseline-seed-results",
+      "row": "Shared-null + post-hoc",
+      "before": "117.5",
+      "after": "117.2"
+    },
+    {
+      "table_label": "tab:baseline-seed-results",
+      "row": "FACT-matched",
+      "before": "66.1",
+      "after": "63.2"
+    },
+    {
+      "table_label": "tab:baseline-seed-results",
+      "row": "FACT-matched",
+      "before": "37.4",
+      "after": "37.1"
+    },
+    {
+      "table_label": "tab:baseline-seed-results",
+      "row": "FACT-generous",
+      "before": "488.3",
+      "after": "486.7"
+    },
+    {
+      "table_label": "tab:baseline-seed-results",
+      "row": "\\cellcolor{forgerow}FORGE",
+      "before": "\\cellcolor{forgerow} 872.4",
+      "after": "\\cellcolor{forgerow} 852.9"
+    },
+    {
+      "table_label": "tab:baseline-seed-results",
+      "row": "\\cellcolor{forgerow}FORGE",
+      "before": "\\cellcolor{forgerow} 875.0",
+      "after": "\\cellcolor{forgerow} 856.1"
+    },
+    {
+      "table_label": "tab:baseline-seed-results",
+      "row": "\\cellcolor{forgerow}FORGE",
+      "before": "\\cellcolor{forgerow} 840.5",
+      "after": "\\cellcolor{forgerow} 808.6"
+    }
+  ],
+  "main_tex_before_sha256": "49a5b5f5f69467af9da08c1ff625c1387ebe6c47d193adb60c4f7fab8d067036",
+  "main_tex_after_sha256": "1dd5f568825c1c4d5fbdf0fd8a1adf1c9bff133188dd3330e724ca9114f223a1",
+  "raw_experiment_outputs_modified": false,
+  "validation": {
+    "source_hashes_passed": true,
+    "all_methods_three_seeds": true,
+    "attempts_per_method_seed": 3072,
+    "only_component_novel_table_cells_changed": true,
+    "all_other_tables_unchanged": true,
+    "build_passed": true,
+    "build_command": "latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex",
+    "all_36_component_novel_cells_verified": true,
+    "changed_pdf_pages": [
+      7,
+      22,
+      23
+    ],
+    "all_other_pdf_pages_text_unchanged": true,
+    "visually_reviewed_pages": [
+      7,
+      22,
+      23
+    ],
+    "visual_review": "Changed pages rendered and inspected; tables remain readable, with no clipping or overlaps. Pagination remains unchanged.",
+    "overfull_boxes": 0,
+    "unresolved_references_or_citations": 0
+  },
+  "output_pdf": {
+    "path": "main.pdf",
+    "sha256": "740b79b0cb33443e9b9aacf1a8d55d15057e5d2709fbceee366dddbf2a58d967",
+    "pages": 34
+  }
+}

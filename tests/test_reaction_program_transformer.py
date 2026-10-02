@@ -4,16 +4,16 @@ import math
 
 import pytest
 
-from forge.model.reaction_program_conditioning import ReactionProgramVocabulary
-from forge.model.reaction_program_transformer import (
-    ReactionProgramGraphTransformer,
+from forge.model.conditioning.reaction_program import ReactionProgramVocabulary
+from forge.model.networks.transformer import ReactionProgramGraphTransformer
+from forge.model.objectives.pcgrad import balanced_pcgrad_backward
+from forge.model.objectives.transformer import (
     _repeat_component_consistency,
-    balanced_pcgrad_backward,
     per_program_transformer_losses,
     reaction_program_transformer_loss,
     synthesis_program_offspring_targets,
 )
-from forge.model.synthesis_program_training import (
+from forge.model.training import (
     synthesis_program_forward,
     synthesis_program_paired_topology_forward,
     synthesis_program_topology_conditioned_forward,

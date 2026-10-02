@@ -1,0 +1,55 @@
+{
+  "schema_version": "phase1_ugi_morphology_high_potency_proposal_config.v1",
+  "task": "Freeze one support-preserving high-potency-classification morphology proposal for an untouched matched terminal comparison",
+  "inputs": {
+    "challenger_result": {
+      "path": "results/phase1/ugi_morphology_high_potency_challenger_v1_retry1/result.json",
+      "sha256": "91839b27d54bc73c55dd471eb52e125e601d4b1a2219e8fe5548cfb305df5ed8"
+    },
+    "curated_agile": {
+      "path": "results/m0_07/agile_oracle_curated.csv.gz",
+      "sha256": "9415f1c0f40399f87d3df00c0c83a341a3776ca110e6bc98763fdcbd420a27be"
+    },
+    "heldout_applicability": {
+      "path": "results/phase1/ugi_distributional_applicability_v3/heldout_applicability.csv.gz",
+      "sha256": "8af8624a3c0f1d2a8072248c7e8b89c3a58a7380dd32b65c71c357eb72c00da2"
+    },
+    "training_cache": {
+      "path": "results/phase1/ugi_balanced_training_cache_v2/ugi_training_cache.pt",
+      "sha256": "b862b7a54c0cb325f0a962fea42a78138df1a81c88b9c0e86d56b6448e519c46"
+    },
+    "promoted_proposal_ledger": {
+      "path": "results/phase1/ugi_promoted_morphology_proposal_v1/proposal_ledger.jsonl.gz",
+      "sha256": "b61f94a20df2e14c39d9455952dde2c11943df5dd85178963dcec206f799eef2"
+    },
+    "promoted_proposal_result": {
+      "path": "results/phase1/ugi_promoted_morphology_proposal_v1/result.json",
+      "sha256": "978453f439755f2daa1ec4b56dfb2caad1769dfc731fe6d39e2b818b9f288a16"
+    }
+  },
+  "model": {
+    "regularization": 0.1,
+    "regularization_basis": "modal nested-CV selection in all five exact-program folds",
+    "unknown_role_state_policy": "zero utility without removing support"
+  },
+  "sweep": {
+    "gamma": [0.25, 0.5, 0.75],
+    "beta": [1.0, 2.0, 4.0, 8.0]
+  },
+  "safeguards": {
+    "minimum_effective_program_fraction": 0.75,
+    "minimum_shannon_effective_fraction": 0.8,
+    "minimum_importance_ess_fraction": 0.55,
+    "maximum_program_probability_multiplier": 1.5,
+    "minimum_role_effective_state_fraction": 0.8,
+    "minimum_expected_value_relative_improvement": 0.05
+  },
+  "scope": {
+    "read_only_distribution_calculation": true,
+    "generator_calls": 0,
+    "oracle_calls": 0,
+    "applicability_boundary_changed": false,
+    "potency_tilting_promoted": false,
+    "candidate_selection": false
+  }
+}

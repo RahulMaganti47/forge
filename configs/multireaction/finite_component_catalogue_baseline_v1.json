@@ -1,0 +1,52 @@
+{
+  "schema_version": "forge.finite_component_catalogue_baseline_config.v1",
+  "inputs": {
+    "production_design": {
+      "path": "configs/multireaction/shared_production_comparison_design_v1.json",
+      "sha256": "88ec2c41cee96e3d0faef710ba3d08a20c9ff9fd935a7652cfd1832c299a5f87"
+    },
+    "program_config": {
+      "path": "configs/multireaction/lnpdb_reaction_programs_v1.json",
+      "sha256": "a7aba87a63e3bcf34c61fa7951fbb7a77340641ed852993b4221d3b77072f021"
+    },
+    "qualified_reaction_families": {
+      "path": "data/vendor/qualified_reaction_families_v1.json",
+      "sha256": "961dea191bbf6c8d169aab09f6aee18082e51696e4056fc4dc9f6fc97ff82587"
+    },
+    "qualified_ugi_reactions": {
+      "path": "data/vendor/qualified_reactions_v1.json",
+      "sha256": "296bf06238ef22acc1f55117f5ce0adaee21b1bafaf5a83f89182b0f31cc4fcf"
+    },
+    "ugi_assignments": {
+      "path": "results/phase1/ugi_balanced_chemistry_corpus_v2/assignments.csv.gz",
+      "sha256": "9a50c703ed6aa919b251678c04b7a44e93b3233a12fc13b5d6697683bb5b5184"
+    },
+    "multireaction_atlas": {
+      "path": "results/phase1/multireaction_program_corpus_v1/reaction_program_atlas.csv.gz",
+      "sha256": "421facddd3b4893be9f358be59f40da25b54d4de7ed8b43844a5d9efebfb28e1"
+    },
+    "multireaction_splits": {
+      "path": "results/phase1/multireaction_program_corpus_v1/component_disjoint_splits.csv.gz",
+      "sha256": "31e1157895c67644073e45d064563daa2cdeecdadba8c7fc21a42facd4214923"
+    }
+  },
+  "policy": {
+    "component_source": "train_fold_only",
+    "component_sampling": "source_weighted_independent_role_marginals",
+    "program_sampling": "equal_attempts_per_program",
+    "outcome_resolution": "uniform_over_sorted_exact_forward_products",
+    "products_per_attempt": 1,
+    "repairs_or_retries": false,
+    "route_calls": 0,
+    "oracle_calls": 0,
+    "candidate_selection": false
+  },
+  "smoke": {
+    "attempts_per_program": 8,
+    "maximum_forward_outcomes": 512
+  },
+  "full": {
+    "attempts_per_program": 3072,
+    "maximum_forward_outcomes": 512
+  }
+}

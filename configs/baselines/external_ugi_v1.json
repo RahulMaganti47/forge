@@ -1,0 +1,97 @@
+{
+  "schema_version": "forge.external_ugi_baseline_manifest.v1",
+  "as_of": "2026-08-23",
+  "methods": [
+    {
+      "method_id": "ou_dag_chem",
+      "display_name": "Ou et al. Synthesis-DAG + Chemformer",
+      "comparison_class": "ionizable_lipid_specific",
+      "repository": "https://github.com/john-bradshaw/synthesis-dags",
+      "commit": "9fb6c710598c4e250c6c49d15910644a3cf80129",
+      "license": "GPL-3.0",
+      "license_status": "base_repository_only",
+      "integration_status": "excluded_no_author_implementation",
+      "native_environment": "not_executed",
+      "required_port": "Excluded from the common empirical table because the released Synthesis-DAG repository does not contain the paper-specific ionizable-lipid data, Chemformer integration or fine-tuning implementation. Retain as cited methodological context only.",
+      "finite_component_vocabulary": true,
+      "output_contract": {"format": "csv", "required_columns": ["attempt_index", "status", "product_smiles"], "one_row_per_requested_attempt": true, "success_only_output_forbidden": true}
+    },
+    {
+      "method_id": "synflownet",
+      "display_name": "SynFlowNet",
+      "comparison_class": "reaction_space",
+      "repository": "https://github.com/mirunacrt/synflownet",
+      "commit": "574f1e148f42e0c79877318fa9d84d2552cf5025",
+      "license": "MIT",
+      "license_status": "clear",
+      "integration_status": "excluded_incompatible_reaction_arity",
+      "native_environment": "not_executed",
+      "required_port": "Excluded from the common empirical Ugi table because the released action space implements only one- and two-reactant reactions, whereas the qualified AGILE Ugi transform has three reactants. A sequential pseudo-reaction would change the chemistry and is forbidden.",
+      "finite_component_vocabulary": true,
+      "output_contract": {"format": "csv", "required_columns": ["attempt_index", "status", "product_smiles"], "one_row_per_requested_attempt": true, "success_only_output_forbidden": true}
+    },
+    {
+      "method_id": "rgfn",
+      "display_name": "RGFN",
+      "comparison_class": "reaction_space",
+      "repository": "https://github.com/koziarskilab/RGFN",
+      "commit": "6ce59169f855ed18f34ba4e8279de93bee306e4f",
+      "license": "MIT",
+      "license_status": "clear",
+      "integration_status": "native_port_ready",
+      "native_environment": "separate_conda_environment_dgl",
+      "required_port": "Implemented by the FORGE native adapter: replace the bundled vocabulary with the exported train-only Ugi components and exact registry-derived three-reactant transform, use a constant non-property reward, and emit every requested attempt.",
+      "finite_component_vocabulary": true,
+      "output_contract": {"format": "csv", "required_columns": ["attempt_index", "status", "product_smiles"], "one_row_per_requested_attempt": true, "success_only_output_forbidden": true}
+    },
+    {
+      "method_id": "syncogen",
+      "display_name": "SynCoGen",
+      "comparison_class": "reaction_space",
+      "repository": "https://github.com/andreirekesh/SynCoGen",
+      "commit": "6b38eec26ccc687b32808c37aefdf75a4a30f1da",
+      "license": "unlicensed_repository",
+      "license_status": "requires_author_permission_or_license_clarification",
+      "integration_status": "excluded_unlicensed",
+      "native_environment": "not_executed",
+      "required_port": "Excluded from execution and the common empirical table because the released repository has no usable code license. Retain as cited methodological context only unless the authors provide a license.",
+      "finite_component_vocabulary": true,
+      "output_contract": {"format": "csv", "required_columns": ["attempt_index", "status", "product_smiles"], "one_row_per_requested_attempt": true, "success_only_output_forbidden": true}
+    },
+    {
+      "method_id": "defog_unconditional",
+      "display_name": "DeFoG unconditional",
+      "comparison_class": "whole_molecule",
+      "repository": "https://github.com/manuelmlmadeira/DeFoG",
+      "commit": "365bda9affadd5c2307014a0532ddaa244399441",
+      "license": "MIT",
+      "license_status": "clear",
+      "integration_status": "native_port_ready",
+      "native_environment": "upstream_conda_environment",
+      "required_port": "Implemented by the FORGE native adapter: recompute dataset statistics on the common split with 194-heavy-atom support retained, train unconditional at the fixed final epoch, decode raw graphs directly without charge repair, and emit every requested native attempt.",
+      "finite_component_vocabulary": false,
+      "output_contract": {"format": "csv", "required_columns": ["attempt_index", "status", "product_smiles"], "one_row_per_requested_attempt": true, "success_only_output_forbidden": true}
+    },
+    {
+      "method_id": "genmol_safe",
+      "display_name": "GenMol/SAFE",
+      "comparison_class": "whole_molecule",
+      "repository": "https://github.com/NVIDIA-BioNeMo/genmol",
+      "commit": "add09fc83b7255bd09c797e527c0f4b51f5fb7c1",
+      "license": "Apache-2.0-code",
+      "license_status": "clear_code_weights_separate",
+      "integration_status": "native_port_ready",
+      "native_environment": "upstream_conda_environment",
+      "required_port": "Implemented by the FORGE native adapter: train from scratch on common Ugi train products with the exact pinned SAFE tokenizer, use no external pretrained weights, decode SAFE with repair and ignore-errors disabled, and emit every requested native attempt.",
+      "finite_component_vocabulary": false,
+      "output_contract": {"format": "csv", "required_columns": ["attempt_index", "status", "product_smiles"], "one_row_per_requested_attempt": true, "success_only_output_forbidden": true}
+    }
+  ],
+  "nonclaims": [
+    "A repository pin is not a completed common-dataset run.",
+    "Published numbers from original datasets cannot enter the FORGE common benchmark.",
+    "Ou et al. remains cited context but is not an empirical row because no paper-specific author implementation was released.",
+    "SynFlowNet remains cited context but is not an empirical Ugi row because its released action space cannot represent a three-reactant reaction.",
+    "SynCoGen remains cited context but is not executed because the released repository lacks a usable code license."
+  ]
+}

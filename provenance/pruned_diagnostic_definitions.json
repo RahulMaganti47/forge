@@ -1,0 +1,471 @@
+[
+  {
+    "module": "forge.diagnostics.support.schedule.ugi_matched_morphology_allocation_schedule",
+    "removed_definitions": [
+      "UgiMatchedMorphologyAllocationScheduleError",
+      "_load_json",
+      "_logical_sha256",
+      "_pin",
+      "_program",
+      "_read_csv_gzip",
+      "_read_jsonl_gzip",
+      "_require_design",
+      "build_matched_morphology_allocation_schedule",
+      "inverse_cdf_indices"
+    ]
+  },
+  {
+    "module": "forge.diagnostics.support.adapters.terminal_support",
+    "removed_definitions": [
+      "native_candidate_eligibility_record_bytes"
+    ]
+  },
+  {
+    "module": "forge.synthesis.value.contracts",
+    "removed_definitions": [
+      "Dominance",
+      "_burden_axes",
+      "_dominance_axes",
+      "compare_component_synthesis_values",
+      "compare_product_synthesis_values"
+    ]
+  },
+  {
+    "module": "forge.synthesis.engine.planner_cache_snapshot",
+    "removed_definitions": [
+      "_roots_overlap",
+      "open_matched_file_planner_cache_overlays"
+    ]
+  },
+  {
+    "module": "forge.synthesis.engine.planner_cache",
+    "removed_definitions": [
+      "CachedRoutePlanner",
+      "PlannerCache"
+    ]
+  },
+  {
+    "module": "forge.synthesis.assessment.ugi3_support_boundary",
+    "removed_definitions": [
+      "RoutePriorityLane",
+      "route_priority_lane"
+    ]
+  },
+  {
+    "module": "forge.diagnostics.support.guidance.ugi_zero_guidance_rehearsal",
+    "removed_definitions": [
+      "ChemistryProjectionPairReceipt",
+      "QualifiedRoutePlannerFactoryAdapter",
+      "ZeroGuidanceRehearsalContract",
+      "ZeroGuidanceRehearsalPreflight",
+      "ZeroGuidanceRehearsalResult",
+      "ZeroGuidanceScheduleManifest",
+      "_arm_record_to_dict",
+      "_budget_limits_to_dict",
+      "_chemistry_projection",
+      "_diagnostic_from_receipt",
+      "_matched_run_to_dict",
+      "_module_sha256",
+      "_projection_receipts",
+      "_route_usage_to_dict",
+      "_schedule_manifest",
+      "_sum_route_usage",
+      "_validate_exact_rehearsal_budget",
+      "_validate_run_receipts",
+      "current_terminal_route_assessment_source_sha256",
+      "run_zero_guidance_route_rehearsal"
+    ]
+  },
+  {
+    "module": "forge.diagnostics.support.adapters.selected_v2",
+    "removed_definitions": [
+      "build_selected_model_restartable_guidance_lane_v2"
+    ]
+  },
+  {
+    "module": "forge.diagnostics.support.schedule.ugi_nonzero_guidance_runner",
+    "removed_definitions": [
+      "ArmRunResult",
+      "CheckpointGroupRecord",
+      "DevelopmentGuidanceRun",
+      "FrozenSeedProgramAssignment",
+      "GroupedSMCScheduleQualification",
+      "GuidanceCacheFinalization",
+      "GuidanceCacheIsolationContract",
+      "GuidanceComputeBudget",
+      "GuidanceSchedule",
+      "NonzeroGuidanceExecutionReview",
+      "ParticleGroupDesign",
+      "ProductiveAdmissionRecord",
+      "ProductiveAssessmentRecord",
+      "RestartableGuidanceLane",
+      "SelectedCandidate",
+      "_GroupRolloutBatch",
+      "_ProductivePoolCompletion",
+      "_assess_terminal_pool",
+      "_build_productive_admission",
+      "_complete_productive_pool",
+      "_group_checkpoint",
+      "_lock_manifest",
+      "_pinned_path",
+      "_read_json",
+      "_run_group_rollouts",
+      "_select_final_candidates",
+      "_tie_priority",
+      "_validate_terminal",
+      "build_nonzero_guidance_runner_plan",
+      "development_guidance_run_to_dict",
+      "finalize_lazy_matched_cache_binding",
+      "load_execution_review",
+      "load_grouped_smc_schedule_qualification",
+      "run_development_matched_guidance"
+    ]
+  },
+  {
+    "module": "forge.diagnostics.support.guidance.ugi_synthesis_guidance",
+    "removed_definitions": [
+      "FixedBudgetRolloutBatch",
+      "LockedRolloutTerminal",
+      "RolloutBudgetLimits",
+      "RolloutRecord",
+      "TerminalValueEvaluation",
+      "run_fixed_budget_terminal_rollouts"
+    ]
+  },
+  {
+    "module": "forge.diagnostics.support.adapters.selected_v1",
+    "removed_definitions": [
+      "build_selected_model_restartable_guidance_lane"
+    ]
+  },
+  {
+    "module": "forge.diagnostics.product_l1.training.ugi_training_cache",
+    "removed_definitions": [
+      "_atomic_json",
+      "_atomic_torch_save",
+      "_resolve",
+      "prepare_ugi_training_cache"
+    ]
+  },
+  {
+    "module": "forge.diagnostics.product_l1.sampling.ugi_joint_sparse_sampling",
+    "removed_definitions": [
+      "_batch_index_tensor",
+      "extract_ugi_joint_sparse_particles",
+      "resample_ugi_joint_sparse_ancestry"
+    ]
+  },
+  {
+    "module": "forge.diagnostics.product_l1.sampling.ugi_joint_end_to_end_sampling",
+    "removed_definitions": [
+      "_complete_reference_comparison",
+      "_flow_endpoint_atom_state_summary",
+      "_load_matched_programs",
+      "_load_prepared_corpus",
+      "_original_reference_assignments",
+      "_resolve_prepared_cache",
+      "_resolve_prepared_cache_path",
+      "_slice_matched_programs",
+      "_terminal_atom_state_summary",
+      "_validate_reference_comparison_mode",
+      "flow_endpoint_chemistry_sample",
+      "joint_sampling_result_matches_request",
+      "sample_ugi_joint_end_to_end"
+    ]
+  },
+  {
+    "module": "forge.diagnostics.product_l1.sampling.ugi_end_to_end_sampling",
+    "removed_definitions": [
+      "_chemistry_model",
+      "_load_expanded_morphology",
+      "_load_original_chemistry",
+      "_load_original_morphology",
+      "_load_program_probe",
+      "_morphology_model",
+      "sample_ugi_end_to_end"
+    ]
+  },
+  {
+    "module": "forge.diagnostics.product_l1.sampling.terminal_census",
+    "removed_definitions": [
+      "SelectedProgram",
+      "SelectedProgramManifest",
+      "_atomic_torch_save",
+      "_decode_program_b64",
+      "_expanded_particle_design",
+      "_keyed_seed",
+      "_program_shard",
+      "_receipt_artifact",
+      "_selection_priority",
+      "_shard_expected_counts",
+      "_tensor_cpu_clone",
+      "_utc_now",
+      "_validate_completed_shard",
+      "aggregate_completed_census",
+      "census_plan",
+      "execute_census_shard",
+      "load_partial_state",
+      "load_selected_program_manifest",
+      "pack_partial_state",
+      "particle_seed",
+      "restore_partial_state",
+      "rollout_seed",
+      "run_census_shard",
+      "save_partial_state",
+      "select_frozen_prior_programs"
+    ]
+  },
+  {
+    "module": "forge.diagnostics.hela.morphology.ugi_morphology_potency_matched_adjudication",
+    "removed_definitions": [
+      "_arm_metrics",
+      "_classify_rows",
+      "_effective_count",
+      "_gzip_csv",
+      "_internal_diversity",
+      "_load",
+      "_maximum_fraction",
+      "_paired_unique_bootstrap",
+      "_pin",
+      "_promotion_checks",
+      "_read_jsonl_gzip",
+      "_score_selected",
+      "_select_equal_oracle_budget",
+      "build_matched_potency_adjudication"
+    ]
+  },
+  {
+    "module": "forge.potency.applicability.ugi_distributional_applicability",
+    "removed_definitions": [
+      "_calibration_thresholds",
+      "_generated_ledger",
+      "_heldout_ledger",
+      "_references",
+      "build_distributional_applicability_audit"
+    ]
+  },
+  {
+    "module": "forge.potency.oracle.oracle_classical",
+    "removed_definitions": [
+      "FeatureBundle",
+      "Partition",
+      "_array_sha256",
+      "_artifact_record",
+      "_canonical_model_smiles",
+      "_canonicalize_result_numbers",
+      "_csv_value",
+      "_finite_mean",
+      "_load_json",
+      "_parse_molecule",
+      "_portable",
+      "_read_csv",
+      "_render_csv_gzip",
+      "_verify_hash",
+      "aggregate_selection_metrics",
+      "build_applicability_rows",
+      "build_estimator",
+      "build_feature_bundle",
+      "derive_fit_seed",
+      "evaluate_partition",
+      "load_classical_config",
+      "load_partitions",
+      "regression_metrics",
+      "run_classical_oracle_matrix"
+    ]
+  },
+  {
+    "module": "forge.potency.oracle.agile_reconciliation",
+    "removed_definitions": [
+      "AgileReconciliationError",
+      "_artifact_record",
+      "_canonical",
+      "_column_number",
+      "_float_text",
+      "_load_config",
+      "_load_csv",
+      "_load_json",
+      "_load_xlsx_cells",
+      "_normalized_label",
+      "_parse_component_label",
+      "_portable",
+      "_publish_atomically",
+      "_render_csv_gzip",
+      "_source_matrix",
+      "_verify_input",
+      "_xlsx_shared_strings",
+      "_xlsx_sheet_target",
+      "reconcile_agile_records",
+      "run_agile_reconciliation"
+    ]
+  },
+  {
+    "module": "forge.potency.applicability.ugi_interpolative_conformal",
+    "removed_definitions": [
+      "_calibration_bin",
+      "_mean",
+      "_scheme_metrics",
+      "_verified_inputs",
+      "build_interpolative_conformal_audit"
+    ]
+  },
+  {
+    "module": "forge.potency.applicability.ugi_distributional_applicability_v2",
+    "removed_definitions": [
+      "_calibration_thresholds",
+      "_generated_ledger",
+      "_heldout_ledger",
+      "build_distributional_applicability_audit_v2"
+    ]
+  },
+  {
+    "module": "forge.diagnostics.hela.morphology.ugi_morphology_potency_signal",
+    "removed_definitions": [
+      "_cluster_bootstrap",
+      "_cross_validated_predictions",
+      "_csv_gzip_bytes",
+      "_head_stability",
+      "_inner_alpha",
+      "_ridge_numeric",
+      "_sha256_bytes",
+      "_shallow_nonlinear",
+      "build_morphology_potency_signal"
+    ]
+  },
+  {
+    "module": "forge.diagnostics.hela.morphology.ugi_morphology_potency_proposal_sweep",
+    "removed_definitions": [
+      "_calibrated_utility",
+      "_csv_gzip_bytes",
+      "_finite_conformal_radius",
+      "_read_csv_gzip",
+      "_read_json",
+      "build_morphology_potency_proposal_sweep"
+    ]
+  },
+  {
+    "module": "forge.synthesis.terminals.terminal_assessment",
+    "removed_definitions": [
+      "PlannerBudgetReceipt",
+      "RoleRouteAssessmentReceipt",
+      "UgiTerminalRouteAssessmentReceipt",
+      "_component_budget_policy_sha256",
+      "_planner_context_from_dict",
+      "_require_current_planner_context",
+      "_route_usage_from_dict",
+      "_route_usage_to_dict",
+      "_sum_route_usage",
+      "_validate_locked_terminal",
+      "assess_locked_ugi_terminal_routes",
+      "required_three_role_route_reservation"
+    ]
+  },
+  {
+    "module": "forge.synthesis.engine.planner",
+    "removed_definitions": [
+      "RecursiveRouteAssessor",
+      "RouteKnowledgeError",
+      "budget_exhausted_assessment"
+    ]
+  },
+  {
+    "module": "forge.synthesis.matched",
+    "removed_definitions": [
+      "DiagnosticRouteAssessment",
+      "MatchedArmLedger",
+      "MatchedArmRecord",
+      "MatchedBudgetLimits",
+      "MatchedBudgetRun",
+      "MatchedDisposition",
+      "_assess",
+      "_cache_clone_id",
+      "_censored_record",
+      "_lock_manifest_sha256",
+      "_productive_seed",
+      "_route_record",
+      "_route_seed",
+      "_schedule_sha256",
+      "_validate_terminal",
+      "run_diagnostic_matched_budget_arms"
+    ]
+  },
+  {
+    "module": "forge.diagnostics.support.schedule.ugi_matched_planner_cache_binding",
+    "removed_definitions": [
+      "LazyMatchedPlannerCacheBinding",
+      "MatchedPlannerCacheBindingPreflight",
+      "_parse_utc",
+      "_require_nonempty",
+      "_require_sha256",
+      "_roots_overlap",
+      "preflight_lazy_matched_planner_cache_binding"
+    ]
+  },
+  {
+    "module": "forge.diagnostics.support.guidance.ugi_synthesis_guidance",
+    "removed_definitions": [
+      "RolloutDisposition",
+      "SMCAncestry",
+      "UgiSynthesisGuidanceError",
+      "annealed_ancestry_probabilities",
+      "keyed_random_seed",
+      "select_smc_ancestry"
+    ]
+  },
+  {
+    "module": "forge.diagnostics.product_l1.sampling.ugi_selected_restartable_generator",
+    "removed_definitions": [
+      "SelectedStep1000Artifacts",
+      "_require_manifest_contract",
+      "_require_restartable_receipt",
+      "build_selected_step1000_restartable_generator_lane"
+    ]
+  },
+  {
+    "module": "forge.diagnostics.product_l1.sampling.ugi_end_to_end_sampling",
+    "removed_definitions": [
+      "_descriptor_summary",
+      "_load_expanded_chemistry",
+      "_reference_comparison"
+    ]
+  },
+  {
+    "module": "forge.potency.applicability.ugi_distributional_applicability",
+    "removed_definitions": [
+      "_generated_summary",
+      "_heldout_summary",
+      "_metric_rows",
+      "_performance",
+      "_quantile",
+      "_rank",
+      "_selected_predictions",
+      "_verified_inputs"
+    ]
+  },
+  {
+    "module": "forge.diagnostics.hela.morphology.ugi_morphology_potency_signal",
+    "removed_definitions": [
+      "_ridge_roles"
+    ]
+  },
+  {
+    "module": "forge.synthesis.value.contracts",
+    "removed_definitions": [
+      "BurdenEstimate",
+      "BurdenKnowledge",
+      "ComponentSynthesisValue",
+      "ProductSynthesisValue",
+      "SynthesisValueError",
+      "_evidence_support",
+      "_forward_state",
+      "_walk",
+      "component_synthesis_value_from_assessment"
+    ]
+  },
+  {
+    "module": "forge.synthesis.engine.planner_cache_snapshot",
+    "removed_definitions": [
+      "MatchedFilePlannerCacheOverlays",
+      "MatchedPlannerCacheOverlayAudit"
+    ]
+  }
+]

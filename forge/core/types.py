@@ -1,17 +1,7 @@
-"""Domain types.
+"""Molecular identities, artifact identifiers, and evidence vocabularies.
 
-Annotation coverage in this codebase is already near-total, so the problem these types solve is
-not missing annotations -- it is that the annotations say almost nothing. `dict[str, Any]` appears
-around two thousand times, and every domain value is a bare `str`: a SMILES string, a SHA-256
-digest, a component id and a role name are all indistinguishable to a reader and to a type checker.
-Passing a product id where a component id belongs is a bug the tooling cannot currently see.
-
-`NewType` fixes that at zero runtime cost. At runtime `Smiles("CCO")` *is* the string `"CCO"`, so
-these are free to adopt incrementally: annotate a signature and nothing changes for its callers
-until they are annotated too.
-
-The enums replace stringly-typed vocabularies that AGENTS.md treats as settled. Spelling one of
-these wrong currently fails silently at whatever downstream comparison happens to run.
+NewType distinguishes string values for static checking without changing their
+runtime representation. Enums define accepted spellings for serialized records.
 """
 
 from __future__ import annotations
@@ -25,13 +15,7 @@ Smiles = NewType("Smiles", str)
 """A SMILES string as it arrived, of unknown canonical form."""
 
 CanonicalSmiles = NewType("CanonicalSmiles", str)
-"""A SMILES string canonicalized by `forge.chemistry`.
-
-Distinct from `Smiles` on purpose. Roughly eighty separate canonicalizers exist across this
-codebase with differing flags, so "canonical" has not been a single well-defined state: two
-modules could disagree about whether two structures are the same molecule. Anything typed
-`CanonicalSmiles` has been through the one canonicalizer and is safe to compare by equality.
-"""
+"""A SMILES string canonicalized under the caller's declared chemistry policy."""
 
 InChIKey = NewType("InChIKey", str)
 
@@ -49,21 +33,13 @@ SchemaVersion = NewType("SchemaVersion", str)
 
 
 class RoleName(str, Enum):
-    """The three Ugi-3CR precursor roles.
+    """The three AGILE-type Ugi 3CR precursor roles.
 
-    AGENTS.md fixes the variant as an AGILE-type amine-aldehyde-isocyanide three-component
-    reaction with no carboxylic-acid reactant, so the vocabulary is closed. Note the ester comes
-    from the aldehyde component, which is why ester construction is an L2 problem rather than part
-    of final assembly -- hence the aldehyde role's long name.
+    The ester comes from the aldehyde component; ester construction belongs to L2,
+    not final assembly. There is no carboxylic-acid reactant.
 
-    **Two spellings exist and both are load-bearing.** The role vocabulary is declared 17 times
-    across the package under four constant names (`ROLE_NAMES`, `ROLES`, `ROLE_ORDER`, `VIEWS`) in
-    two incompatible forms. The long form dominates the serialized data by roughly 500:1, so it is
-    the enum's value and what round-trips to an artifact. The short form appears in a comparable
-    number of *modules* but barely reaches disk. No module mixes them, so the split is clean along
-    module lines — which is exactly why a third spelling would go unnoticed without this type.
-
-    Parse either with `RoleName.parse`; serialize only the long form.
+    Parse either the short or long spelling with ``RoleName.parse``. Serialize the
+    long form used by recorded artifacts.
     """
 
     AMINE = "amine_head"
@@ -92,10 +68,7 @@ class RoleName(str, Enum):
 
 
 class SupportTier(str, Enum):
-    """Open-endedness tiers. E2 is the paper's primary claim; E3 is exploratory.
-
-    Replaces the older I/F/B/N vocabulary, which AGENTS.md lists under settled decisions.
-    """
+    """Open-endedness tiers: E2 is the primary claim; E3 is exploratory."""
 
     E0 = "E0"
     """Exact product in the frozen enumeration."""
@@ -111,10 +84,10 @@ class SupportTier(str, Enum):
 
 
 class SynthesisLayer(str, Enum):
-    """The three layers "synthesizable" decomposes into.
+    """Final assembly, subcomponent synthesis, and procurement.
 
-    Preserving a Ugi core is insufficient: if final coupling works but an ester-bearing tail
-    precursor cannot be made, the lipid is not executable. L2 is where candidate variance lives.
+    Final-assembly consistency alone does not establish precursor makeability or
+    procurement closure.
     """
 
     L1_ASSEMBLY = "L1"
@@ -123,10 +96,9 @@ class SynthesisLayer(str, Enum):
 
 
 class EvidenceStatus(str, Enum):
-    """How far a result may be leaned on, from the evidence matrix vocabulary.
+    """Evidence status and permitted use of a result.
 
-    `VERIFIED_NONSELECTING` and `DIAGNOSTIC_ONLY` exist to stop a descriptive audit being read as
-    a selection criterion -- a distinction the manuscript contract cares about a great deal.
+    A nonselecting or diagnostic audit cannot serve as a candidate-selection criterion.
     """
 
     VERIFIED_FROZEN = "verified_frozen"

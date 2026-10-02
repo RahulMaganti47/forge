@@ -1,0 +1,19 @@
+{
+  "schema_version": "forge.common_ugi_assessment_config.v1",
+  "inputs": {
+    "common_protocol": {
+      "path": "configs/multireaction/common_ugi_baseline_protocol_v1.json",
+      "sha256": "54951f190e3cecc91b3d37a22858a3be84a18d8ef42c295b29bb418b5e9f3e15"
+    },
+    "component_route_ledger": {
+      "path": "results/phase1/ugi_bounded_hybrid_route_cascade_v1/component_route_ledger.jsonl.gz",
+      "sha256": "0076d72f7649c5b2b6d7fad242b0ecc0a667d232c137dbd282a52ff34a3e6a20"
+    }
+  },
+  "assessment": {
+    "molecular_and_l1": "one registry-backed constitutional Ugi verifier for every method",
+    "route": "lookup-only exact role/constitution evidence from the frozen bounded cascade",
+    "planner_calls": 0,
+    "candidate_selection": false
+  }
+}

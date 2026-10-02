@@ -1,0 +1,131 @@
+{
+  "schema_version": "forge.release.common_ugi.v1",
+  "common_assessments": {
+    "finite_catalogue_oracle": [
+      {
+        "path": "results/phase1/finite_catalogue_common_assessment_seed0_v1/result.json",
+        "sha256": "2b8676765a33fa363bd3ba7ce8371f9d95d5a6551501234e08334afb121f8504"
+      },
+      {
+        "path": "results/phase1/finite_catalogue_common_assessment_seed1_v1/result.json",
+        "sha256": "b09ca42366f0662da381cc72650b9185457ee0164a4265094a383b3613b9517a"
+      },
+      {
+        "path": "results/phase1/finite_catalogue_common_assessment_seed2_v1/result.json",
+        "sha256": "fdf5af01fdba76578eaec6251c40660de5c3d406bb408de6f4cf293721737139"
+      }
+    ],
+    "shared_null_posthoc": [
+      {
+        "path": "results/phase1/shared_null_posthoc_common_assessment_seed0_v1/result.json",
+        "sha256": "6efd6179b150d8780f07b2a97214b176d95782335f4c12627899069eb8941347"
+      },
+      {
+        "path": "results/phase1/shared_null_posthoc_common_assessment_seed1_v1/result.json",
+        "sha256": "d05a81d3d438c48ab92159e60fbeaae2cbf27e4b7cb8c01adb6a5aeb81d19225"
+      },
+      {
+        "path": "results/phase1/shared_null_posthoc_common_assessment_seed2_v1/result.json",
+        "sha256": "2fff4d9e07afaf3ba76ba38673abee2b9e217039c24b3ae174d532b8a0743aa6"
+      }
+    ],
+    "fact_matched": [
+      {
+        "path": "results/phase1/fact_matched_common_assessment_seed0_v1/result.json",
+        "sha256": "7e0a3ca039ac85255c55f8eefcde73963a79997d263aa43e894ae5488d84a2a0"
+      },
+      {
+        "path": "results/phase1/fact_matched_common_assessment_seed1_v1/result.json",
+        "sha256": "b0192b7a72514f2542294e294f942e1e3984d75f385a1845fc89e2e466ccc904"
+      },
+      {
+        "path": "results/phase1/fact_matched_common_assessment_seed2_v1/result.json",
+        "sha256": "b092f69e9a758572f6d35499b2e415c6b5fb5e2f3bfac5f8937765801ab13950"
+      }
+    ],
+    "fact_generous": [
+      {
+        "path": "results/phase1/fact_generous_common_assessment_seed0_v1/result.json",
+        "sha256": "1ce9a0eeabb93520e02105208d7625cb2caf351ba5ca2d8bde380f7d5b49d97c"
+      },
+      {
+        "path": "results/phase1/fact_generous_common_assessment_seed1_v1/result.json",
+        "sha256": "6ca648afe09beb50c6fbe3ff82dfb91c231032404d8bf49fbcac75e406b7d1e1"
+      },
+      {
+        "path": "results/phase1/fact_generous_common_assessment_seed2_v1/result.json",
+        "sha256": "f9dc26860136c5dc38ef20894f3e52fd43d3aa844801fbc16e1bc3c370b2d6f9"
+      }
+    ],
+    "forge_transformer": [
+      {
+        "path": "results/phase1/forge_transformer_core_saturation_common_assessment_seed0_v2/result.json",
+        "sha256": "9a382239ee17b37697c14d17dc423f84117217319166289fa8e140a113a8ec41"
+      },
+      {
+        "path": "results/phase1/forge_transformer_core_saturation_common_assessment_seed1_v2/result.json",
+        "sha256": "e5e70a7bf80d9685437b0772d0b0ac298f30efab48f7bd37b4721a75a9b60d65"
+      },
+      {
+        "path": "results/phase1/forge_transformer_core_saturation_common_assessment_seed2_v2/result.json",
+        "sha256": "89a33fb7ab1abd828d69961a13e786e6fd41d978bf56bc494acd868258ca8c40"
+      }
+    ],
+    "rgfn": [
+      {
+        "path": "runs/phase1-external-ugi-native-results-v3/rgfn/seed0/common_assessment/result.json",
+        "sha256": "6db8687c0dc1705609b647875fc4e413d941b513d15ea0d5a62279938f338181"
+      },
+      {
+        "path": "runs/phase1-external-ugi-native-results-v3/rgfn/seed1/common_assessment/result.json",
+        "sha256": "40cbcb859d3c4e4b499ad059fb8b9d866a13892749e315a0fd9a79314bcfc595"
+      },
+      {
+        "path": "runs/phase1-external-ugi-native-results-v3/rgfn/seed2/common_assessment/result.json",
+        "sha256": "553c26699f17e2ce1da19769b9aea8f278d7f48bfc8ec3330761d864c30d65ea"
+      }
+    ],
+    "defog_unconditional": [
+      {
+        "path": "runs/phase1-external-ugi-native-results-v3/defog_unconditional/seed0/common_assessment/result.json",
+        "sha256": "9475283fec53517b08e471aad3436788b9833a77dd992ecfc01802ac3dafcc38"
+      },
+      {
+        "path": "runs/phase1-external-ugi-native-results-v3/defog_unconditional/seed1/common_assessment/result.json",
+        "sha256": "43b35d2170511ed8dda9a02c5ebc7cc2951c5f64ba8f9bf4bc5e980c28f93aa2"
+      },
+      {
+        "path": "runs/phase1-external-ugi-native-results-v3/defog_unconditional/seed2/common_assessment/result.json",
+        "sha256": "afaabc5e52cbccd2309698adec0b19adb1b2da3604a4c38fd81e9d0d76e6a891"
+      }
+    ],
+    "genmol_safe": [
+      {
+        "path": "results/phase1/genmol_safe_common_assessment_seed0_v1/result.json",
+        "sha256": "1702e839253fffe4ae1860f145a7c38124a4b0d06842d520ec7be084e9e3da0e"
+      },
+      {
+        "path": "results/phase1/genmol_safe_common_assessment_seed1_v1/result.json",
+        "sha256": "6aabb367c6e2204a5584d882d0ba39d8bcf2a924636a80f2daa4518954a5bb96"
+      },
+      {
+        "path": "results/phase1/genmol_safe_common_assessment_seed2_v1/result.json",
+        "sha256": "ba402185811d38c5285161621a715b4203f67856c509312abbf7e8632016822c"
+      }
+    ],
+    "learned_inventory_selector": [
+      {
+        "path": "runs/phase1-learned-inventory-selector/feb7af6d929fafb58b74ba9e5ff3ed83d0abf2c1357bb24cebe84572ebe823a7/stages/selector/artifacts/result.json",
+        "sha256": "40ec6f6a2a63ff41846c6e91739c227d59b8642be43c14d30daea7f95817b0db"
+      },
+      {
+        "path": "runs/phase1-learned-inventory-selector/2024106a25c36eea9c2e9585bd59d345c29edf957b1452abe1631db1befa5eb0/stages/selector/artifacts/result.json",
+        "sha256": "c5a22fc5d76fa2dbaf7ed045013b066646fd3a369827ede0a598e33e77403530"
+      },
+      {
+        "path": "runs/phase1-learned-inventory-selector/7e6e19c564269c904fe531938d6e50a96f9cf1c7a13210dbd571981657f5ca1d/stages/selector/artifacts/result.json",
+        "sha256": "567bc08c3aa11a0a36550ac469bc99a2a1746d6ecc280e9670950732987044c6"
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": "forge.release.bundle.v1",
+  "scope": "optional original eight-arm architecture-study checkpoints for three seeds",
+  "storage": {
+    "volume": "forge-paper-artifacts",
+    "prefix": "/submission19337-ablations-v1",
+    "workspace": "kosha-labs",
+    "environment": "main"
+  },
+  "files": [
+    {
+      "repo_path": "runs/phase1-transformer-mechanism-study/3715b68bb7faaa8815ff575e07ff4c00f7983327322462ed8c2b463629172e46/stages/study/artifacts/training/checkpoints.tar",
+      "bundle_path": "runs/phase1-transformer-mechanism-study/3715b68bb7faaa8815ff575e07ff4c00f7983327322462ed8c2b463629172e46/stages/study/artifacts/training/checkpoints.tar",
+      "sha256": "65dfbe7b325cd2b89dcc388756e168fe508b41417fc0e582af7a8e121d2ad111",
+      "bytes": 1335521280
+    },
+    {
+      "repo_path": "runs/phase1-transformer-mechanism-study/9f5633821b0234c367d7f1058703ba05034d2971c04ee45a7e9a26af83f311c1/stages/study/artifacts/training/checkpoints.tar",
+      "bundle_path": "runs/phase1-transformer-mechanism-study/9f5633821b0234c367d7f1058703ba05034d2971c04ee45a7e9a26af83f311c1/stages/study/artifacts/training/checkpoints.tar",
+      "sha256": "9a5b83c43c99cf8aaf77e2b5ed780b05db297c930a225c89bbfa908f8524786e",
+      "bytes": 1335521280
+    },
+    {
+      "repo_path": "runs/phase1-transformer-mechanism-study/5f149b098c61a855dc1bf51b5ba1c3c31162d35fb5e84abeb174bde30a5eb54f/stages/study/artifacts/training/checkpoints.tar",
+      "bundle_path": "runs/phase1-transformer-mechanism-study/5f149b098c61a855dc1bf51b5ba1c3c31162d35fb5e84abeb174bde30a5eb54f/stages/study/artifacts/training/checkpoints.tar",
+      "sha256": "c4916bc2d4fe675ba3039cea05904fc25f2e8e48bf75b6ccce15de3de51dd97e",
+      "bytes": 1335521280
+    }
+  ]
+}
