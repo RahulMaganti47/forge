@@ -1,0 +1,780 @@
+{
+  "adjudication": {
+    "biological_guidance_authorized": false,
+    "candidate_selection_changed": false,
+    "next_gate": "review role-specific scheme support and, if justified, freeze a bounded interpolative-domain pilot before any potency-guided sampling",
+    "oracle_refit_or_reselected": false,
+    "reason": "conditional calibration was specified after inspection of the v3 outer-test diagnostic and therefore requires a separate versioned authorization review"
+  },
+  "calibration_radii": [
+    {
+      "calibration_bin_counts": {
+        "boundary": 66,
+        "extrapolative": 12,
+        "interpolative": 22
+      },
+      "eligible": true,
+      "fold": 0,
+      "interpolative_calibration_rows": 22,
+      "q90": 2.6691150665283203,
+      "scheme": "held_aldehyde_5fold",
+      "seeds": [
+        1729,
+        11729,
+        21729
+      ]
+    },
+    {
+      "calibration_bin_counts": {
+        "boundary": 70,
+        "extrapolative": 22,
+        "interpolative": 20
+      },
+      "eligible": true,
+      "fold": 1,
+      "interpolative_calibration_rows": 20,
+      "q90": 5.309392213821411,
+      "scheme": "held_aldehyde_5fold",
+      "seeds": [
+        1729,
+        11729,
+        21729
+      ]
+    },
+    {
+      "calibration_bin_counts": {
+        "boundary": 24,
+        "extrapolative": 46,
+        "interpolative": 42
+      },
+      "eligible": true,
+      "fold": 2,
+      "interpolative_calibration_rows": 42,
+      "q90": 2.936174790064494,
+      "scheme": "held_aldehyde_5fold",
+      "seeds": [
+        1729,
+        11729,
+        21729
+      ]
+    },
+    {
+      "calibration_bin_counts": {
+        "boundary": 50,
+        "extrapolative": 20,
+        "interpolative": 42
+      },
+      "eligible": true,
+      "fold": 3,
+      "interpolative_calibration_rows": 42,
+      "q90": 3.565102418263753,
+      "scheme": "held_aldehyde_5fold",
+      "seeds": [
+        1729,
+        11729,
+        21729
+      ]
+    },
+    {
+      "calibration_bin_counts": {
+        "boundary": 42,
+        "extrapolative": 38,
+        "interpolative": 32
+      },
+      "eligible": true,
+      "fold": 4,
+      "interpolative_calibration_rows": 32,
+      "q90": 4.61016575495402,
+      "scheme": "held_aldehyde_5fold",
+      "seeds": [
+        1729,
+        11729,
+        21729
+      ]
+    },
+    {
+      "calibration_bin_counts": {
+        "boundary": 68,
+        "extrapolative": 20,
+        "interpolative": 22
+      },
+      "eligible": true,
+      "fold": 0,
+      "interpolative_calibration_rows": 22,
+      "q90": 4.622545798619588,
+      "scheme": "held_aldehyde_isocyanide_pair_5fold",
+      "seeds": [
+        1729,
+        11729,
+        21729
+      ]
+    },
+    {
+      "calibration_bin_counts": {
+        "boundary": 66,
+        "extrapolative": 20,
+        "interpolative": 24
+      },
+      "eligible": true,
+      "fold": 1,
+      "interpolative_calibration_rows": 24,
+      "q90": 5.5284742911656695,
+      "scheme": "held_aldehyde_isocyanide_pair_5fold",
+      "seeds": [
+        1729,
+        11729,
+        21729
+      ]
+    },
+    {
+      "calibration_bin_counts": {
+        "boundary": 83,
+        "extrapolative": 16,
+        "interpolative": 11
+      },
+      "eligible": false,
+      "fold": 2,
+      "interpolative_calibration_rows": 11,
+      "q90": null,
+      "scheme": "held_aldehyde_isocyanide_pair_5fold",
+      "seeds": [
+        1729,
+        11729,
+        21729
+      ]
+    },
+    {
+      "calibration_bin_counts": {
+        "boundary": 73,
+        "extrapolative": 18,
+        "interpolative": 19
+      },
+      "eligible": false,
+      "fold": 3,
+      "interpolative_calibration_rows": 19,
+      "q90": null,
+      "scheme": "held_aldehyde_isocyanide_pair_5fold",
+      "seeds": [
+        1729,
+        11729,
+        21729
+      ]
+    },
+    {
+      "calibration_bin_counts": {
+        "boundary": 71,
+        "extrapolative": 19,
+        "interpolative": 20
+      },
+      "eligible": true,
+      "fold": 4,
+      "interpolative_calibration_rows": 20,
+      "q90": 6.214548627535502,
+      "scheme": "held_aldehyde_isocyanide_pair_5fold",
+      "seeds": [
+        1729,
+        11729,
+        21729
+      ]
+    },
+    {
+      "calibration_bin_counts": {
+        "boundary": 47,
+        "extrapolative": 34,
+        "interpolative": 29
+      },
+      "eligible": true,
+      "fold": 0,
+      "interpolative_calibration_rows": 29,
+      "q90": 3.6614937782287598,
+      "scheme": "held_head_5fold",
+      "seeds": [
+        1729,
+        11729,
+        21729
+      ]
+    },
+    {
+      "calibration_bin_counts": {
+        "boundary": 33,
+        "extrapolative": 55,
+        "interpolative": 22
+      },
+      "eligible": true,
+      "fold": 1,
+      "interpolative_calibration_rows": 22,
+      "q90": 3.948101758956909,
+      "scheme": "held_head_5fold",
+      "seeds": [
+        1729,
+        11729,
+        21729
+      ]
+    },
+    {
+      "calibration_bin_counts": {
+        "boundary": 47,
+        "extrapolative": 41,
+        "interpolative": 22
+      },
+      "eligible": true,
+      "fold": 2,
+      "interpolative_calibration_rows": 22,
+      "q90": 4.295944690704346,
+      "scheme": "held_head_5fold",
+      "seeds": [
+        1729,
+        11729,
+        21729
+      ]
+    },
+    {
+      "calibration_bin_counts": {
+        "boundary": 66,
+        "extrapolative": 22,
+        "interpolative": 22
+      },
+      "eligible": true,
+      "fold": 3,
+      "interpolative_calibration_rows": 22,
+      "q90": 3.1655813852945967,
+      "scheme": "held_head_5fold",
+      "seeds": [
+        1729,
+        11729,
+        21729
+      ]
+    },
+    {
+      "calibration_bin_counts": {
+        "boundary": 16,
+        "extrapolative": 67,
+        "interpolative": 27
+      },
+      "eligible": true,
+      "fold": 4,
+      "interpolative_calibration_rows": 27,
+      "q90": 3.6072316964467364,
+      "scheme": "held_head_5fold",
+      "seeds": [
+        1729,
+        11729,
+        21729
+      ]
+    },
+    {
+      "calibration_bin_counts": {
+        "boundary": 33,
+        "extrapolative": 63,
+        "interpolative": 14
+      },
+      "eligible": false,
+      "fold": 0,
+      "interpolative_calibration_rows": 14,
+      "q90": null,
+      "scheme": "held_head_aldehyde_pair_5fold",
+      "seeds": [
+        1729,
+        11729,
+        21729
+      ]
+    },
+    {
+      "calibration_bin_counts": {
+        "boundary": 30,
+        "extrapolative": 62,
+        "interpolative": 18
+      },
+      "eligible": false,
+      "fold": 1,
+      "interpolative_calibration_rows": 18,
+      "q90": null,
+      "scheme": "held_head_aldehyde_pair_5fold",
+      "seeds": [
+        1729,
+        11729,
+        21729
+      ]
+    },
+    {
+      "calibration_bin_counts": {
+        "boundary": 31,
+        "extrapolative": 67,
+        "interpolative": 12
+      },
+      "eligible": false,
+      "fold": 2,
+      "interpolative_calibration_rows": 12,
+      "q90": null,
+      "scheme": "held_head_aldehyde_pair_5fold",
+      "seeds": [
+        1729,
+        11729,
+        21729
+      ]
+    },
+    {
+      "calibration_bin_counts": {
+        "boundary": 36,
+        "extrapolative": 64,
+        "interpolative": 10
+      },
+      "eligible": false,
+      "fold": 3,
+      "interpolative_calibration_rows": 10,
+      "q90": null,
+      "scheme": "held_head_aldehyde_pair_5fold",
+      "seeds": [
+        1729,
+        11729,
+        21729
+      ]
+    },
+    {
+      "calibration_bin_counts": {
+        "boundary": 35,
+        "extrapolative": 65,
+        "interpolative": 10
+      },
+      "eligible": false,
+      "fold": 4,
+      "interpolative_calibration_rows": 10,
+      "q90": null,
+      "scheme": "held_head_aldehyde_pair_5fold",
+      "seeds": [
+        1729,
+        11729,
+        21729
+      ]
+    },
+    {
+      "calibration_bin_counts": {
+        "boundary": 46,
+        "extrapolative": 54,
+        "interpolative": 10
+      },
+      "eligible": false,
+      "fold": 0,
+      "interpolative_calibration_rows": 10,
+      "q90": null,
+      "scheme": "held_head_isocyanide_pair_5fold",
+      "seeds": [
+        1729,
+        11729,
+        21729
+      ]
+    },
+    {
+      "calibration_bin_counts": {
+        "boundary": 48,
+        "extrapolative": 54,
+        "interpolative": 8
+      },
+      "eligible": false,
+      "fold": 1,
+      "interpolative_calibration_rows": 8,
+      "q90": null,
+      "scheme": "held_head_isocyanide_pair_5fold",
+      "seeds": [
+        1729,
+        11729,
+        21729
+      ]
+    },
+    {
+      "calibration_bin_counts": {
+        "boundary": 40,
+        "extrapolative": 63,
+        "interpolative": 7
+      },
+      "eligible": false,
+      "fold": 2,
+      "interpolative_calibration_rows": 7,
+      "q90": null,
+      "scheme": "held_head_isocyanide_pair_5fold",
+      "seeds": [
+        1729,
+        11729,
+        21729
+      ]
+    },
+    {
+      "calibration_bin_counts": {
+        "boundary": 54,
+        "extrapolative": 46,
+        "interpolative": 10
+      },
+      "eligible": false,
+      "fold": 3,
+      "interpolative_calibration_rows": 10,
+      "q90": null,
+      "scheme": "held_head_isocyanide_pair_5fold",
+      "seeds": [
+        1729,
+        11729,
+        21729
+      ]
+    },
+    {
+      "calibration_bin_counts": {
+        "boundary": 48,
+        "extrapolative": 53,
+        "interpolative": 9
+      },
+      "eligible": false,
+      "fold": 4,
+      "interpolative_calibration_rows": 9,
+      "q90": null,
+      "scheme": "held_head_isocyanide_pair_5fold",
+      "seeds": [
+        1729,
+        11729,
+        21729
+      ]
+    },
+    {
+      "calibration_bin_counts": {
+        "boundary": 75,
+        "interpolative": 35
+      },
+      "eligible": true,
+      "fold": 0,
+      "interpolative_calibration_rows": 35,
+      "q90": 3.732707818349203,
+      "scheme": "held_isocyanide_5fold",
+      "seeds": [
+        1729,
+        11729,
+        21729
+      ]
+    },
+    {
+      "calibration_bin_counts": {
+        "boundary": 18,
+        "extrapolative": 54,
+        "interpolative": 38
+      },
+      "eligible": true,
+      "fold": 1,
+      "interpolative_calibration_rows": 38,
+      "q90": 3.9147203763326006,
+      "scheme": "held_isocyanide_5fold",
+      "seeds": [
+        1729,
+        11729,
+        21729
+      ]
+    },
+    {
+      "calibration_bin_counts": {
+        "boundary": 83,
+        "interpolative": 27
+      },
+      "eligible": true,
+      "fold": 2,
+      "interpolative_calibration_rows": 27,
+      "q90": 2.9627268314361572,
+      "scheme": "held_isocyanide_5fold",
+      "seeds": [
+        1729,
+        11729,
+        21729
+      ]
+    },
+    {
+      "calibration_bin_counts": {
+        "boundary": 109,
+        "extrapolative": 1
+      },
+      "eligible": false,
+      "fold": 3,
+      "interpolative_calibration_rows": 0,
+      "q90": null,
+      "scheme": "held_isocyanide_5fold",
+      "seeds": [
+        1729,
+        11729,
+        21729
+      ]
+    },
+    {
+      "calibration_bin_counts": {
+        "boundary": 77,
+        "extrapolative": 33
+      },
+      "eligible": false,
+      "fold": 4,
+      "interpolative_calibration_rows": 0,
+      "q90": null,
+      "scheme": "held_isocyanide_5fold",
+      "seeds": [
+        1729,
+        11729,
+        21729
+      ]
+    }
+  ],
+  "config": {
+    "path": "configs/bio/phase1_ugi_interpolative_conformal_v1.json",
+    "sha256": "efe4340b1e32f9eec6eb6239cc36abc81db3b3c58c7bea75e6bae8ebfe6eb927"
+  },
+  "evaluation": {
+    "evaluated_interpolative_rows": 1218,
+    "scheme_results": {
+      "held_aldehyde_5fold": {
+        "eligible_folds": 4,
+        "folds": [
+          {
+            "absolute_coverage90_gap": 0.06666666666666665,
+            "coverage90": 0.8333333333333334,
+            "fold": 0,
+            "r2": 0.46644950205164437,
+            "records": 78,
+            "rmse": 2.1867325815990797,
+            "spearman_rho": 0.6574817587475814
+          },
+          {
+            "absolute_coverage90_gap": 0.08895027624309393,
+            "coverage90": 0.988950276243094,
+            "fold": 1,
+            "r2": 0.6281832170863627,
+            "records": 181,
+            "rmse": 1.7156508100744572,
+            "spearman_rho": 0.7088114463805071
+          },
+          {
+            "absolute_coverage90_gap": 0.11621621621621625,
+            "coverage90": 0.7837837837837838,
+            "fold": 2,
+            "r2": 0.4253145571265907,
+            "records": 74,
+            "rmse": 2.280719588624729,
+            "spearman_rho": 0.6068715290633098
+          },
+          {
+            "absolute_coverage90_gap": 0.3642857142857143,
+            "coverage90": 0.5357142857142857,
+            "fold": 3,
+            "r2": -0.520734369472353,
+            "records": 84,
+            "rmse": 4.041195046172765,
+            "spearman_rho": 0.2979447200566974
+          }
+        ],
+        "gate_passed": false,
+        "mean_absolute_90pct_coverage_gap": 0.1590297183529228,
+        "mean_test_r2": 0.2498032266980612,
+        "mean_test_spearman_rho": 0.5677773635620239,
+        "pooled": {
+          "absolute_coverage90_gap": 0.06786570743405274,
+          "coverage90": 0.8321342925659473,
+          "r2": 0.3133342540869344,
+          "records": 417,
+          "rmse": 2.5268326321830292,
+          "spearman_rho": 0.49860838234087007
+        },
+        "positive_r2_fold_fraction": 0.75
+      },
+      "held_aldehyde_isocyanide_pair_5fold": {
+        "eligible_folds": 3,
+        "folds": [
+          {
+            "absolute_coverage90_gap": 0.07590361445783134,
+            "coverage90": 0.9759036144578314,
+            "fold": 0,
+            "r2": 0.5444540926632844,
+            "records": 83,
+            "rmse": 1.903186822910766,
+            "spearman_rho": 0.6820662440703581
+          },
+          {
+            "absolute_coverage90_gap": 0.09122807017543855,
+            "coverage90": 0.9912280701754386,
+            "fold": 1,
+            "r2": 0.6537385830549215,
+            "records": 114,
+            "rmse": 1.7731397484720732,
+            "spearman_rho": 0.8021182236082705
+          },
+          {
+            "absolute_coverage90_gap": 0.08214285714285707,
+            "coverage90": 0.9821428571428571,
+            "fold": 4,
+            "r2": 0.3994646876993899,
+            "records": 112,
+            "rmse": 2.2791966153854153,
+            "spearman_rho": 0.6411829022448492
+          }
+        ],
+        "gate_passed": true,
+        "mean_absolute_90pct_coverage_gap": 0.08309151392537566,
+        "mean_test_r2": 0.532552454472532,
+        "mean_test_spearman_rho": 0.7084557899744927,
+        "pooled": {
+          "absolute_coverage90_gap": 0.08381877022653716,
+          "coverage90": 0.9838187702265372,
+          "r2": 0.5404729351960279,
+          "records": 309,
+          "rmse": 2.003932489291351,
+          "spearman_rho": 0.717563175940877
+        },
+        "positive_r2_fold_fraction": 1.0
+      },
+      "held_head_5fold": {
+        "eligible_folds": 4,
+        "folds": [
+          {
+            "absolute_coverage90_gap": 0.09999999999999998,
+            "coverage90": 1.0,
+            "fold": 0,
+            "r2": 0.7979534108557516,
+            "records": 52,
+            "rmse": 1.266952557621197,
+            "spearman_rho": 0.9064287543754803
+          },
+          {
+            "absolute_coverage90_gap": 0.05555555555555558,
+            "coverage90": 0.9555555555555556,
+            "fold": 1,
+            "r2": 0.3817768656718761,
+            "records": 45,
+            "rmse": 2.037611847458805,
+            "spearman_rho": 0.6549407114624506
+          },
+          {
+            "absolute_coverage90_gap": 0.07283950617283952,
+            "coverage90": 0.8271604938271605,
+            "fold": 2,
+            "r2": -0.4209946436147871,
+            "records": 81,
+            "rmse": 3.3018177567852063,
+            "spearman_rho": 0.18236224028906953
+          },
+          {
+            "absolute_coverage90_gap": 0.006249999999999978,
+            "coverage90": 0.90625,
+            "fold": 3,
+            "r2": 0.6181817488777976,
+            "records": 32,
+            "rmse": 1.686941465440561,
+            "spearman_rho": 0.7976539589442814
+          }
+        ],
+        "gate_passed": true,
+        "mean_absolute_90pct_coverage_gap": 0.058661265432098764,
+        "mean_test_r2": 0.34422934544765954,
+        "mean_test_spearman_rho": 0.6353464162678204,
+        "pooled": {
+          "absolute_coverage90_gap": 0.00952380952380949,
+          "coverage90": 0.9095238095238095,
+          "r2": 0.2521869690591154,
+          "records": 210,
+          "rmse": 2.4343076626400464,
+          "spearman_rho": 0.5405169537372082
+        },
+        "positive_r2_fold_fraction": 0.75
+      },
+      "held_head_aldehyde_pair_5fold": {
+        "eligible_folds": 0,
+        "folds": [],
+        "gate_passed": false
+      },
+      "held_head_isocyanide_pair_5fold": {
+        "eligible_folds": 0,
+        "folds": [],
+        "gate_passed": false
+      },
+      "held_isocyanide_5fold": {
+        "eligible_folds": 2,
+        "folds": [
+          {
+            "absolute_coverage90_gap": 0.009090909090909038,
+            "coverage90": 0.9090909090909091,
+            "fold": 1,
+            "r2": 0.5001009614130925,
+            "records": 132,
+            "rmse": 2.260200610771248,
+            "spearman_rho": 0.6755907812557068
+          },
+          {
+            "absolute_coverage90_gap": 0.1333333333333333,
+            "coverage90": 0.7666666666666667,
+            "fold": 2,
+            "r2": 0.33595894000905446,
+            "records": 150,
+            "rmse": 2.64581980512231,
+            "spearman_rho": 0.5661353837948354
+          }
+        ],
+        "gate_passed": false,
+        "mean_absolute_90pct_coverage_gap": 0.07121212121212117,
+        "mean_test_r2": 0.41802995071107346,
+        "mean_test_spearman_rho": 0.6208630825252711,
+        "pooled": {
+          "absolute_coverage90_gap": 0.06666666666666665,
+          "coverage90": 0.8333333333333334,
+          "r2": 0.4130407179130957,
+          "records": 282,
+          "rmse": 2.4728147913969063,
+          "spearman_rho": 0.6069564780000755
+        },
+        "positive_r2_fold_fraction": 1.0
+      }
+    }
+  },
+  "guidance_gate": {
+    "maximum_scheme_mean_absolute_90pct_coverage_gap": 0.1,
+    "minimum_positive_r2_fold_fraction": 0.6,
+    "minimum_scheme_mean_test_r2": 0.1,
+    "minimum_scheme_mean_test_spearman_rho": 0.2
+  },
+  "inputs": {
+    "applicability_v3_heldout": {
+      "path": "results/phase1/ugi_distributional_applicability_v3/heldout_applicability.csv.gz",
+      "sha256": "8af8624a3c0f1d2a8072248c7e8b89c3a58a7380dd32b65c71c357eb72c00da2"
+    },
+    "applicability_v3_result": {
+      "path": "results/phase1/ugi_distributional_applicability_v3/result.json",
+      "sha256": "a3e5c4bd446cde222b8007f3fc101f6c319d447410e2348f6b8915afa86161f8"
+    },
+    "curated_agile": {
+      "path": "results/m0_07/agile_oracle_curated.csv.gz",
+      "sha256": "9415f1c0f40399f87d3df00c0c83a341a3776ca110e6bc98763fdcbd420a27be"
+    },
+    "oracle_graph_matrix_result": {
+      "path": "results/m0_07/oracle_graph_matrix_result.json",
+      "sha256": "1573e081a419b2b26a2deb3aab6d09aba20883235819a4d0b2dc7cf56e8738d4"
+    },
+    "oracle_split_assignments": {
+      "path": "results/m0_07/oracle_split_assignments.csv.gz",
+      "sha256": "7d988dfb59620cd121c88840858f6f9c42a7cb8d3c511bb83b8e3065d8fb86a2"
+    },
+    "runner": {
+      "path": "scripts/phase1_audit_ugi_interpolative_conformal.py",
+      "sha256": "e1a6169772313f1675a90f91fe83ee2b31f110677a0226b63996cf5e25441d36"
+    },
+    "source": {
+      "path": "src/forge/bio/ugi_interpolative_conformal.py",
+      "sha256": "9d2a4083f094d40422e0c86243b4249035fb0f5f31869dce6cfc81c855a275c0"
+    },
+    "tests": {
+      "path": "tests/test_ugi_interpolative_conformal.py",
+      "sha256": "3d6b9192e83221f87ba9c02d9da13c1eb3bb85dbd67c0d011c060d92131fe75a"
+    }
+  },
+  "policy": {
+    "biological_guidance_authorized": false,
+    "candidate_selection_changed": false,
+    "coverage": 0.9,
+    "distribution_bin": "interpolative",
+    "endpoint": "expt_Hela",
+    "minimum_calibration_rows_per_fold": 20,
+    "minimum_eligible_folds": 3,
+    "minimum_test_rows_per_fold": 20,
+    "oracle_refit_or_reselected": false,
+    "representation": "ugi_component_role_aware_dmpnn"
+  },
+  "result_sha256": "4b3abb203dbaea24a3ee45ffbb76f1396f965afcfd797dc4bed9a7105f134c0a",
+  "schema_version": "phase1_ugi_interpolative_conformal.v1",
+  "status": "complete_interpolative_conditional_calibration_diagnostic"
+}

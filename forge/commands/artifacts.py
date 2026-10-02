@@ -134,11 +134,14 @@ def fetch(
     backend: str = "github",
     downloads: Path | None = None,
 ) -> dict[str, Any]:
+    if backend not in {"github", "modal"}:
+        raise ValueError(f"unknown artifact backend: {backend}")
+    if all("checkout_path" in row for row in manifest_files(manifest)):
+        install(root, manifest)
+        return verify(root, manifest)
     config = json.loads(manifest.read_text())
     if backend == "github":
         return _fetch_github(root, manifest, config["storage"]["github"], downloads)
-    if backend != "modal":
-        raise ValueError(f"unknown artifact backend: {backend}")
     name = manifest.stem
     location = config.get(
         "storage", {"volume": "forge-paper-artifacts", "prefix": "/paper-model-v1"}

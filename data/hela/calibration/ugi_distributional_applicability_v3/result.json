@@ -1,0 +1,387 @@
+{
+  "adjudication": {
+    "biological_guidance_authorized": false,
+    "candidate_selection_changed": false,
+    "next_gate": "independent fold-resolved review of interpolative-bin performance and a versioned guidance authorization decision",
+    "raw_oracle_mean_used_for_ranking": false,
+    "thresholds_used_targets_predictions_or_errors": false
+  },
+  "artifacts": {
+    "generated_applicability.csv.gz": {
+      "records": 3975,
+      "schema_version": "phase1_ugi_generated_distributional_applicability.v3",
+      "sha256": "ed12ac72362557072d14253d54675ad88c25d07cdc581491b99fa15b7452992f"
+    },
+    "heldout_applicability.csv.gz": {
+      "records": 6710,
+      "schema_version": "phase1_ugi_heldout_distributional_applicability.v3",
+      "sha256": "8af8624a3c0f1d2a8072248c7e8b89c3a58a7380dd32b65c71c357eb72c00da2"
+    }
+  },
+  "config": {
+    "path": "configs/bio/phase1_ugi_distributional_applicability_v3.json",
+    "sha256": "189737881ab5b231d646a50f497bf798ad9bc6b2f661309db5b103b8ad69d73b"
+  },
+  "correction_history": {
+    "reason": "whole-product distance must be calibrated under the same exact-new component shift as the component distance",
+    "v1_and_v2_artifacts_rewritten": false,
+    "v2_component_identity_exclusion_retained": true,
+    "v3_product_reference_excludes_same_calibration_component": true
+  },
+  "definitions": {
+    "descriptor_names": [
+      "heavy_atoms",
+      "carbon_atoms",
+      "hetero_atoms",
+      "molecular_weight",
+      "logp",
+      "tpsa",
+      "rotatable_bonds",
+      "ring_count",
+      "formal_charge_abs",
+      "double_bonds",
+      "triple_bonds",
+      "branch_excess",
+      "ester_count",
+      "amide_count",
+      "ether_count"
+    ],
+    "distributional_applicability": "multi-view chemical proximity calibrated under an identity-excluded component shift",
+    "exact_identity_provenance": "whether exact precursor graphs or the exact measured combination were observed",
+    "exact_new_does_not_imply_extrapolative": true,
+    "fingerprint": "Morgan radius 2 count fingerprint, 2048 dimensions",
+    "interpolative_does_not_itself_authorize_guidance": true
+  },
+  "generated_pool": {
+    "all_guidance_actions_abstain": true,
+    "distribution_bins": {
+      "boundary": 215,
+      "extrapolative": 3595,
+      "interpolative": 165
+    },
+    "exact_identity_provenance": {
+      "exact_measured_combination": 12,
+      "exact_new_component_identity": 3963
+    },
+    "identity_by_distribution_bin": {
+      "exact_measured_combination": {
+        "boundary": 0,
+        "extrapolative": 0,
+        "interpolative": 12
+      },
+      "exact_new_component_identity": {
+        "boundary": 215,
+        "extrapolative": 3595,
+        "interpolative": 153
+      }
+    },
+    "records": 3975
+  },
+  "heldout_oracle_evidence": {
+    "by_scheme_and_distribution_bin": {
+      "held_aldehyde_5fold": {
+        "boundary": {
+          "absolute_coverage90_gap": 0.20746268656716416,
+          "coverage90": 0.6925373134328359,
+          "r2": -0.003140715075755862,
+          "records": 335,
+          "rmse": 3.30593986969811,
+          "spearman_rho": 0.5087783920432057
+        },
+        "extrapolative": {
+          "absolute_coverage90_gap": 0.5091954022988505,
+          "coverage90": 0.39080459770114945,
+          "r2": -0.9239865317459748,
+          "records": 348,
+          "rmse": 4.584782233475703,
+          "spearman_rho": -0.14552646020091084
+        },
+        "interpolative": {
+          "absolute_coverage90_gap": 0.10383693045563547,
+          "coverage90": 0.7961630695443646,
+          "r2": 0.3133342540869344,
+          "records": 417,
+          "rmse": 2.5268326321830292,
+          "spearman_rho": 0.49860838234087007
+        }
+      },
+      "held_aldehyde_isocyanide_pair_5fold": {
+        "boundary": {
+          "absolute_coverage90_gap": 0.013851992409867231,
+          "coverage90": 0.8861480075901328,
+          "r2": 0.6547862183852874,
+          "records": 527,
+          "rmse": 1.9629573446325117,
+          "spearman_rho": 0.8136307969219446
+        },
+        "extrapolative": {
+          "absolute_coverage90_gap": 0.2333333333333334,
+          "coverage90": 0.6666666666666666,
+          "r2": -2.8027626359663578,
+          "records": 3,
+          "rmse": 2.1934870672666533,
+          "spearman_rho": 0.5
+        },
+        "interpolative": {
+          "absolute_coverage90_gap": 0.05438596491228076,
+          "coverage90": 0.8456140350877193,
+          "r2": 0.5225834036178094,
+          "records": 570,
+          "rmse": 2.1973842343410097,
+          "spearman_rho": 0.703841566310243
+        }
+      },
+      "held_head_5fold": {
+        "boundary": {
+          "absolute_coverage90_gap": 0.16053639846743295,
+          "coverage90": 0.7394636015325671,
+          "r2": 0.06407512469834009,
+          "records": 522,
+          "rmse": 3.104974576974238,
+          "spearman_rho": 0.476970091269218
+        },
+        "extrapolative": {
+          "absolute_coverage90_gap": 0.43532608695652175,
+          "coverage90": 0.46467391304347827,
+          "r2": -0.94224402701767,
+          "records": 368,
+          "rmse": 4.518838593114019,
+          "spearman_rho": -0.054365885443003234
+        },
+        "interpolative": {
+          "absolute_coverage90_gap": 0.06190476190476191,
+          "coverage90": 0.8380952380952381,
+          "r2": 0.2521869690591154,
+          "records": 210,
+          "rmse": 2.4343076626400464,
+          "spearman_rho": 0.5405169537372082
+        }
+      },
+      "held_head_aldehyde_pair_5fold": {
+        "boundary": {
+          "absolute_coverage90_gap": 0.030681818181818254,
+          "coverage90": 0.8693181818181818,
+          "r2": 0.5101151455680074,
+          "records": 528,
+          "rmse": 2.261333728294574,
+          "spearman_rho": 0.7298906548097743
+        },
+        "extrapolative": {
+          "absolute_coverage90_gap": 0.04516129032258065,
+          "coverage90": 0.8548387096774194,
+          "r2": 0.3813751932166266,
+          "records": 62,
+          "rmse": 1.9086064897026034,
+          "spearman_rho": 0.5803177960766538
+        },
+        "interpolative": {
+          "absolute_coverage90_gap": 0.0745098039215687,
+          "coverage90": 0.8254901960784313,
+          "r2": 0.44060785923216317,
+          "records": 510,
+          "rmse": 2.4634903463199707,
+          "spearman_rho": 0.6817469728155547
+        }
+      },
+      "held_head_isocyanide_pair_5fold": {
+        "boundary": {
+          "absolute_coverage90_gap": 0.009270216962524613,
+          "coverage90": 0.9092702169625246,
+          "r2": 0.6645102560656422,
+          "records": 507,
+          "rmse": 1.8837084631014203,
+          "spearman_rho": 0.7994675826776163
+        },
+        "extrapolative": {
+          "absolute_coverage90_gap": 0.09999999999999998,
+          "coverage90": 1.0,
+          "r2": 0.978114566888695,
+          "records": 2,
+          "rmse": 0.5348977972676694,
+          "spearman_rho": 0.9999999999999999
+        },
+        "interpolative": {
+          "absolute_coverage90_gap": 0.021827411167512745,
+          "coverage90": 0.8781725888324873,
+          "r2": 0.5549818507760194,
+          "records": 591,
+          "rmse": 2.153132089918016,
+          "spearman_rho": 0.7093840032926327
+        }
+      },
+      "held_isocyanide_5fold": {
+        "boundary": {
+          "absolute_coverage90_gap": 0.10331325301204819,
+          "coverage90": 0.7966867469879518,
+          "r2": 0.5102746067648296,
+          "records": 664,
+          "rmse": 2.349933340631638,
+          "spearman_rho": 0.7313260670142149
+        },
+        "extrapolative": {
+          "absolute_coverage90_gap": 0.4,
+          "coverage90": 0.5,
+          "r2": -26.650673688023552,
+          "records": 2,
+          "rmse": 2.6957830594772143,
+          "spearman_rho": -0.9999999999999999
+        },
+        "interpolative": {
+          "absolute_coverage90_gap": 0.10967741935483877,
+          "coverage90": 0.7903225806451613,
+          "r2": 0.43835265097181964,
+          "records": 434,
+          "rmse": 2.3754026324474924,
+          "spearman_rho": 0.6152506414069813
+        }
+      },
+      "lantern_scaffold_balanced": {
+        "boundary": {
+          "absolute_coverage90_gap": null,
+          "coverage90": null,
+          "r2": null,
+          "records": 0,
+          "rmse": null,
+          "spearman_rho": null
+        },
+        "extrapolative": {
+          "absolute_coverage90_gap": 0.027272727272727226,
+          "coverage90": 0.9272727272727272,
+          "r2": 0.16183907330682212,
+          "records": 110,
+          "rmse": 2.5331622033365604,
+          "spearman_rho": 0.543078691702545
+        },
+        "interpolative": {
+          "absolute_coverage90_gap": null,
+          "coverage90": null,
+          "r2": null,
+          "records": 0,
+          "rmse": null,
+          "spearman_rho": null
+        }
+      }
+    },
+    "overall_by_distribution_bin": {
+      "boundary": {
+        "absolute_coverage90_gap": 0.07807330522218625,
+        "coverage90": 0.8219266947778138,
+        "r2": 0.43596105788777917,
+        "records": 3083,
+        "rmse": 2.4753216432977028,
+        "spearman_rho": 0.6940117127999325
+      },
+      "extrapolative": {
+        "absolute_coverage90_gap": 0.37821229050279337,
+        "coverage90": 0.5217877094972067,
+        "r2": -0.7256673476796605,
+        "records": 895,
+        "rmse": 4.200401251616203,
+        "spearman_rho": 0.015697750602557837
+      },
+      "interpolative": {
+        "absolute_coverage90_gap": 0.06800878477306005,
+        "coverage90": 0.83199121522694,
+        "r2": 0.4631382363184342,
+        "records": 2732,
+        "rmse": 2.338719659024466,
+        "spearman_rho": 0.6532443418429018
+      }
+    }
+  },
+  "inputs": {
+    "curated_agile": {
+      "path": "results/m0_07/agile_oracle_curated.csv.gz",
+      "sha256": "9415f1c0f40399f87d3df00c0c83a341a3776ca110e6bc98763fdcbd420a27be"
+    },
+    "fresh_pool_oracle_predictions": {
+      "path": "results/phase1/ugi_fresh_pool_oracle_audit_v1/oracle_predictions.csv.gz",
+      "sha256": "7c8425cad54553383a8c7ddbf476f10501e4e6093064ef4ab927723f0805a18e"
+    },
+    "oracle_graph_metrics": {
+      "path": "results/m0_07/oracle_graph_matrix_metrics.csv.gz",
+      "sha256": "019d43f16779c5abc8baec5b1d96c8f43053fb3a7422525bfc7557b9403def34"
+    },
+    "oracle_graph_predictions": {
+      "path": "results/m0_07/oracle_graph_matrix_predictions.csv.gz",
+      "sha256": "2a1e83794ad8acef7cf0de8533d5e0036d120daf434d05cc56be48db5b39affd"
+    },
+    "oracle_split_assignments": {
+      "path": "results/m0_07/oracle_split_assignments.csv.gz",
+      "sha256": "7d988dfb59620cd121c88840858f6f9c42a7cb8d3c511bb83b8e3065d8fb86a2"
+    },
+    "runner": {
+      "path": "scripts/phase1_audit_ugi_distributional_applicability_v3.py",
+      "sha256": "57f808e56d554d3b3c3324b6a9cc9d604a002a1ce7bbf01fbd837eabbc8792df"
+    },
+    "source": {
+      "path": "src/forge/bio/ugi_distributional_applicability_v3.py",
+      "sha256": "fc696c0c5780a24317ab32e0744b23c741a3cb0520a97d5fbe2048fe25492050"
+    },
+    "tests": {
+      "path": "tests/test_ugi_distributional_applicability_v3.py",
+      "sha256": "db33be04fc49c8342a4c2849d28e64092faa2956c5cdbd76f8c1746347fd023b"
+    }
+  },
+  "result_sha256": "e0173b349d350a86f466b1bc12a997ac76257b46246b8b171a8fa4127b23e1da",
+  "schema_version": "phase1_ugi_distributional_applicability.v3",
+  "status": "complete_component_shift_calibrated_audit_guidance_still_abstained",
+  "thresholds": {
+    "aldehyde": {
+      "descriptor": {
+        "boundary_max": 0.5409506381222321,
+        "calibration_records": 44,
+        "calibration_unit": "unique_exact_identity_excluded_component_per_fold",
+        "interpolative_max": 0.2624553440832844
+      },
+      "fingerprint": {
+        "boundary_max": 0.3301075268817205,
+        "calibration_records": 44,
+        "calibration_unit": "unique_exact_identity_excluded_component_per_fold",
+        "interpolative_max": 0.18604651162790697
+      }
+    },
+    "amine": {
+      "descriptor": {
+        "boundary_max": 1.0897583113937728,
+        "calibration_records": 80,
+        "calibration_unit": "unique_exact_identity_excluded_component_per_fold",
+        "interpolative_max": 0.3635037283205912
+      },
+      "fingerprint": {
+        "boundary_max": 0.8463869463869464,
+        "calibration_records": 80,
+        "calibration_unit": "unique_exact_identity_excluded_component_per_fold",
+        "interpolative_max": 0.5365853658536586
+      }
+    },
+    "isocyanide": {
+      "descriptor": {
+        "boundary_max": 0.6948832262651745,
+        "calibration_records": 20,
+        "calibration_unit": "unique_exact_identity_excluded_component_per_fold",
+        "interpolative_max": 0.4705085792900163
+      },
+      "fingerprint": {
+        "boundary_max": 0.2666666666666667,
+        "calibration_records": 20,
+        "calibration_unit": "unique_exact_identity_excluded_component_per_fold",
+        "interpolative_max": 0.12290969899665555
+      }
+    },
+    "product": {
+      "descriptor": {
+        "boundary_max": 0.32371542420115895,
+        "calibration_records": 1648,
+        "calibration_unit": "product_after_held_role_component_identity_exclusion",
+        "interpolative_max": 0.0728642581594326
+      },
+      "fingerprint": {
+        "boundary_max": 0.15646258503401356,
+        "calibration_records": 1648,
+        "calibration_unit": "product_after_held_role_component_identity_exclusion",
+        "interpolative_max": 0.053640634174985324
+      }
+    }
+  }
+}

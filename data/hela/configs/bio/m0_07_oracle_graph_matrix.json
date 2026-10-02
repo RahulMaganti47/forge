@@ -1,0 +1,98 @@
+{
+  "schema_version": "m0_07_oracle_graph_matrix_config.v1",
+  "task": "M0-07 leakage-safe supervised graph oracle matrix",
+  "seed": 1729,
+  "inputs": {
+    "curated_oracle_data": {
+      "path": "results/m0_07/agile_oracle_curated.csv.gz",
+      "sha256": "9415f1c0f40399f87d3df00c0c83a341a3776ca110e6bc98763fdcbd420a27be"
+    },
+    "oracle_split_assignments": {
+      "path": "results/m0_07/oracle_split_assignments.csv.gz",
+      "sha256": "7d988dfb59620cd121c88840858f6f9c42a7cb8d3c511bb83b8e3065d8fb86a2"
+    },
+    "oracle_split_manifest": {
+      "path": "results/m0_07/oracle_split_manifest.json",
+      "sha256": "b6cef4f2525c793077fe00f406a873a5b00317c5538ae1adbb92e7e359961863"
+    },
+    "graph_corpus_result": {
+      "path": "results/m0_07/oracle_graph_corpus_result.json",
+      "sha256": "8aa3dc31a4becc917c1e255217c828862995ea988cb1baf75ff7465bd8a11b2a"
+    },
+    "graph_profile_result": {
+      "path": "results/m0_07/oracle_graph_profile_result.json",
+      "sha256": "2dad16e9be14d3d0ebbbc10ec73bb594d03c626481ec5be2aaee3b5115425697"
+    }
+  },
+  "expected": {
+    "curated_records": 1100,
+    "partitions": 32,
+    "architectures": 3,
+    "endpoints": 2,
+    "repeats": 3,
+    "jobs": 576,
+    "ensembles": 192
+  },
+  "matrix": {
+    "architectures": [
+      "whole_graph_dmpnn",
+      "whole_graph_edge_gin",
+      "ugi_component_role_aware_dmpnn"
+    ],
+    "endpoints": [
+      "expt_Hela",
+      "expt_Raw"
+    ],
+    "repeat_seeds": [
+      1729,
+      11729,
+      21729
+    ],
+    "select_one_architecture_across_endpoints": true,
+    "endpoint_weights": {
+      "expt_Hela": 0.5,
+      "expt_Raw": 0.5
+    }
+  },
+  "model": {
+    "hidden_dim": 128,
+    "depth": 3,
+    "dropout": 0.1,
+    "learning_rate": 0.001,
+    "weight_decay": 0.00001,
+    "maximum_graphs_per_batch": 64,
+    "maximum_atoms_per_batch": 4096,
+    "maximum_directed_edges_per_batch": 8192
+  },
+  "epoch_selection": {
+    "inner_validation_fraction": 0.125,
+    "maximum_epochs": 100,
+    "patience": 15,
+    "minimum_delta": 0.0001,
+    "target_scaling": "inner_fit_only_then_all_train_on_refit",
+    "calibration_used": false,
+    "test_used": false
+  },
+  "evaluation": {
+    "conformal_coverages": [
+      0.8,
+      0.9,
+      0.95
+    ],
+    "calibrate_after_three_seed_ensemble": true,
+    "random_split_role": "diagnostic_only",
+    "scheme_aggregation": "fold_then_equal_scheme",
+    "selection_primary_metric": "equal_endpoint_mean_equal_scheme_r2"
+  },
+  "execution": {
+    "workers": 4,
+    "torch_threads_per_worker": 2,
+    "torch_interop_threads_per_worker": 1,
+    "fit_output_root": "results/m0_07/graph_fits",
+    "resume_policy": "validate_completed_output_then_skip",
+    "num_workers": 0,
+    "device": "cpu",
+    "mixed_precision": false,
+    "compilation": false
+  }
+}

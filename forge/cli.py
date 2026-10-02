@@ -22,7 +22,12 @@ def main(argv: list[str] | None = None) -> int:
     artifacts.add_argument("action", choices=("fetch", "install", "restore", "verify"))
     artifacts.add_argument(
         "--group",
-        choices=("paper-model-v1", "submission19337-evidence-v1", "submission19337-ablations-v1"),
+        choices=(
+            "paper-model-v1",
+            "submission19337-evidence-v1",
+            "submission19337-ablations-v1",
+            "hela-oracle-v1",
+        ),
         required=True,
     )
     artifacts.add_argument("--bundle", type=Path)

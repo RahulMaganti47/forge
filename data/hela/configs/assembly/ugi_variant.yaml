@@ -1,0 +1,43 @@
+# Assembly (L1) chemistry variant.
+# RESOLVED 2026-07-29 from primary data. See docs/DECISION_LOG.md.
+
+variant: ugi_3cr_agile
+
+# Registry entry that defines this transform. The SMARTS itself is READ FROM THE VENDORED REGISTRY
+# at runtime and must never be retyped here or into code.
+registry_file: qualified_reactions_v1.json
+reaction_id: ugi_3cr_agile
+
+expected_reactant_count: 3
+
+roles:
+  - name: amine_head
+    required_handle_smarts: "[NX3;H2,H1]"
+  - name: oxoester_aldehyde_body_tail
+    required_handle_smarts: "[CX3H1]=[OX1]"
+  - name: isocyanide_tail
+    required_handle_smarts: "[C;-1,+0;X1]#[N;+1,+0;X2]"
+
+# The ester is carried by the ALDEHYDE component, not by a fourth carboxylic-acid component.
+# Ester construction is therefore an L2 (subcomponent synthesis) problem. See PLAN section 2.
+ester_origin: aldehyde_component
+
+# This reaction is carboxylic-acid-component-free, not catalyst-free. The AGILE experimental
+# procedure uses an acidic phosphorus catalyst, so manuscript prose must not call it simply
+# "acid-free."
+carboxylic_acid_reactant_component: false
+
+qualification:
+  agile_products_reconstructed: 1200
+  agile_products_total: 1200
+
+# The vendored registry's allowed_site_multiplicity values remain authoritative.
+# For the Ugi amine role, multiplicity means symmetry-distinct reactive sites,
+# not the raw number of SMARTS matches. This resolves the measured A5 head:
+# three symmetry-equivalent primary amines generate three identical raw outcomes
+# and one unique product. The rule is qualified against all 1,200 AGILE records.
+compatibility:
+  amine_head_site_multiplicity_semantics: symmetry_distinct_required_handle_matches
+  raw_required_handle_match_count: diagnostic_only
+  deduplicate_forward_products: true
+  multiple_unique_products_require_explicit_site_selection: true

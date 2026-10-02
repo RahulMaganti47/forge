@@ -1,0 +1,3116 @@
+{
+  "artifacts": {
+    "oracle_graph_matrix_metrics.csv.gz": {
+      "bytes": 25801,
+      "sha256": "019d43f16779c5abc8baec5b1d96c8f43053fb3a7422525bfc7557b9403def34"
+    },
+    "oracle_graph_matrix_predictions.csv.gz": {
+      "bytes": 1315497,
+      "sha256": "2a1e83794ad8acef7cf0de8533d5e0036d120daf434d05cc56be48db5b39affd"
+    }
+  },
+  "combined_architecture_leader": {
+    "architecture": "ugi_component_role_aware_dmpnn",
+    "endpoint_rows": [
+      {
+        "eligible_schemes": 7,
+        "endpoint": "expt_Hela",
+        "mean_absolute_90pct_coverage_gap": 0.10946320346320346,
+        "mean_interval_width90": 6.755220690653437,
+        "mean_test_mae": 1.9132201761753307,
+        "mean_test_pearson_r": 0.6202988033838499,
+        "mean_test_r2": 0.2533631840011585,
+        "mean_test_rmse": 2.595209927800483,
+        "mean_test_spearman_rho": 0.6119434116882319,
+        "model": "neural_3seed_ensemble",
+        "representation": "ugi_component_role_aware_dmpnn"
+      },
+      {
+        "eligible_schemes": 7,
+        "endpoint": "expt_Raw",
+        "mean_absolute_90pct_coverage_gap": 0.060575757575757595,
+        "mean_interval_width90": 5.277621650474058,
+        "mean_test_mae": 1.2964763832995476,
+        "mean_test_pearson_r": 0.38376483292774416,
+        "mean_test_r2": 0.1126346184961052,
+        "mean_test_rmse": 1.6974087362757133,
+        "mean_test_spearman_rho": 0.36034401555007384,
+        "model": "neural_3seed_ensemble",
+        "representation": "ugi_component_role_aware_dmpnn"
+      }
+    ],
+    "weighted_mean_test_r2": 0.18299890124863183,
+    "weighted_mean_test_rmse": 2.1463093320380984
+  },
+  "combined_architecture_rows": [
+    {
+      "architecture": "ugi_component_role_aware_dmpnn",
+      "endpoint_rows": [
+        {
+          "eligible_schemes": 7,
+          "endpoint": "expt_Hela",
+          "mean_absolute_90pct_coverage_gap": 0.10946320346320346,
+          "mean_interval_width90": 6.755220690653437,
+          "mean_test_mae": 1.9132201761753307,
+          "mean_test_pearson_r": 0.6202988033838499,
+          "mean_test_r2": 0.2533631840011585,
+          "mean_test_rmse": 2.595209927800483,
+          "mean_test_spearman_rho": 0.6119434116882319,
+          "model": "neural_3seed_ensemble",
+          "representation": "ugi_component_role_aware_dmpnn"
+        },
+        {
+          "eligible_schemes": 7,
+          "endpoint": "expt_Raw",
+          "mean_absolute_90pct_coverage_gap": 0.060575757575757595,
+          "mean_interval_width90": 5.277621650474058,
+          "mean_test_mae": 1.2964763832995476,
+          "mean_test_pearson_r": 0.38376483292774416,
+          "mean_test_r2": 0.1126346184961052,
+          "mean_test_rmse": 1.6974087362757133,
+          "mean_test_spearman_rho": 0.36034401555007384,
+          "model": "neural_3seed_ensemble",
+          "representation": "ugi_component_role_aware_dmpnn"
+        }
+      ],
+      "weighted_mean_test_r2": 0.18299890124863183,
+      "weighted_mean_test_rmse": 2.1463093320380984
+    },
+    {
+      "architecture": "whole_graph_dmpnn",
+      "endpoint_rows": [
+        {
+          "eligible_schemes": 7,
+          "endpoint": "expt_Hela",
+          "mean_absolute_90pct_coverage_gap": 0.08055411255411257,
+          "mean_interval_width90": 9.395993071936427,
+          "mean_test_mae": 2.242168690983316,
+          "mean_test_pearson_r": 0.5161596124515384,
+          "mean_test_r2": 0.11404487081603236,
+          "mean_test_rmse": 2.884085246749149,
+          "mean_test_spearman_rho": 0.47134560323349955,
+          "model": "neural_3seed_ensemble",
+          "representation": "whole_graph_dmpnn"
+        },
+        {
+          "eligible_schemes": 7,
+          "endpoint": "expt_Raw",
+          "mean_absolute_90pct_coverage_gap": 0.043740259740259746,
+          "mean_interval_width90": 5.715204510483004,
+          "mean_test_mae": 1.3850143817312583,
+          "mean_test_pearson_r": 0.22224589681384538,
+          "mean_test_r2": -0.0015904430126860852,
+          "mean_test_rmse": 1.8055473959377937,
+          "mean_test_spearman_rho": 0.23345251502395867,
+          "model": "neural_3seed_ensemble",
+          "representation": "whole_graph_dmpnn"
+        }
+      ],
+      "weighted_mean_test_r2": 0.05622721390167314,
+      "weighted_mean_test_rmse": 2.344816321343471
+    },
+    {
+      "architecture": "whole_graph_edge_gin",
+      "endpoint_rows": [
+        {
+          "eligible_schemes": 7,
+          "endpoint": "expt_Hela",
+          "mean_absolute_90pct_coverage_gap": 0.0415064935064935,
+          "mean_interval_width90": 10.02720104959749,
+          "mean_test_mae": 2.724069047540649,
+          "mean_test_pearson_r": 0.1761334191520238,
+          "mean_test_r2": -0.060422421665450456,
+          "mean_test_rmse": 3.2177322696610418,
+          "mean_test_spearman_rho": 0.14282046906079354,
+          "model": "neural_3seed_ensemble",
+          "representation": "whole_graph_edge_gin"
+        },
+        {
+          "eligible_schemes": 7,
+          "endpoint": "expt_Raw",
+          "mean_absolute_90pct_coverage_gap": 0.0341082251082251,
+          "mean_interval_width90": 5.817343334924606,
+          "mean_test_mae": 1.3926845962772774,
+          "mean_test_pearson_r": 0.11792317489749352,
+          "mean_test_r2": -0.02594712356195546,
+          "mean_test_rmse": 1.829311992627279,
+          "mean_test_spearman_rho": 0.12300461487288268,
+          "model": "neural_3seed_ensemble",
+          "representation": "whole_graph_edge_gin"
+        }
+      ],
+      "weighted_mean_test_r2": -0.04318477261370296,
+      "weighted_mean_test_rmse": 2.5235221311441602
+    }
+  ],
+  "decision": {
+    "calibration_applied_after_seed_ensemble": true,
+    "oracle_model_frozen": false,
+    "random_split_used_for_selection": false,
+    "requires_scientific_review_and_pretraining_comparison": true
+  },
+  "endpoint_leaders": {
+    "expt_Hela": {
+      "eligible_schemes": 7,
+      "endpoint": "expt_Hela",
+      "mean_absolute_90pct_coverage_gap": 0.10946320346320346,
+      "mean_interval_width90": 6.755220690653437,
+      "mean_test_mae": 1.9132201761753307,
+      "mean_test_pearson_r": 0.6202988033838499,
+      "mean_test_r2": 0.2533631840011585,
+      "mean_test_rmse": 2.595209927800483,
+      "mean_test_spearman_rho": 0.6119434116882319,
+      "model": "neural_3seed_ensemble",
+      "representation": "ugi_component_role_aware_dmpnn"
+    },
+    "expt_Raw": {
+      "eligible_schemes": 7,
+      "endpoint": "expt_Raw",
+      "mean_absolute_90pct_coverage_gap": 0.060575757575757595,
+      "mean_interval_width90": 5.277621650474058,
+      "mean_test_mae": 1.2964763832995476,
+      "mean_test_pearson_r": 0.38376483292774416,
+      "mean_test_r2": 0.1126346184961052,
+      "mean_test_rmse": 1.6974087362757133,
+      "mean_test_spearman_rho": 0.36034401555007384,
+      "model": "neural_3seed_ensemble",
+      "representation": "ugi_component_role_aware_dmpnn"
+    }
+  },
+  "evaluation": {
+    "calibrate_after_three_seed_ensemble": true,
+    "conformal_coverages": [
+      0.8,
+      0.9,
+      0.95
+    ],
+    "random_split_role": "diagnostic_only",
+    "scheme_aggregation": "fold_then_equal_scheme",
+    "selection_primary_metric": "equal_endpoint_mean_equal_scheme_r2"
+  },
+  "fit_sources": {
+    "count": 576,
+    "entries": [
+      {
+        "job_id": "0016d576eec01dca192f1b17a3cd911be6ffc93df18ca7676c5b6a871ad8497f",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-2/seed-21729.json",
+        "sha256": "e4a1cd797e5c993f1b10343e53ee748ec5fa90b91290ad801180c15bef55c174"
+      },
+      {
+        "job_id": "00652fa3459fe62fdff0b131f385c2da99915fe5345772c10bc1d43762d1eea5",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_isocyanide_pair_5fold/fold-4/seed-21729.json",
+        "sha256": "d8d2089fb01b80b9fbae3fa4a3e0905bf5f789e378fbd3dad0752ab8b12361a3"
+      },
+      {
+        "job_id": "007c567033e40a2336d0bbf455636e3bc9528cd161f2f2f816296516d4b2b40e",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/lantern_scaffold_balanced/fold-0/seed-1729.json",
+        "sha256": "e8f8cc1847a7e528e681c50790737ffafacadcb019757d2c5494d83df218badd"
+      },
+      {
+        "job_id": "00d79b4004b69f08424da45d6bbb4946305792c08de80c9da7c8581237c44ba8",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/lantern_random/fold-0/seed-1729.json",
+        "sha256": "25612365ce099d52e8a1f62bf1c3e1fadd03c5d734105ed33fbebe60a8ddca25"
+      },
+      {
+        "job_id": "015ea138a90e8dac4b8a84213ec781c520faee35e16228bf60909f8070b0813e",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_isocyanide_pair_5fold/fold-1/seed-21729.json",
+        "sha256": "cd33f2a76ed4cca88b69a0d21b8c4839b17325287f3a0e78b7440a1ff3fbe8a2"
+      },
+      {
+        "job_id": "029a96e8b65fd86991329c2f268dfc9f6f59589288cdef9c952368eceba5bfda",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_aldehyde_pair_5fold/fold-0/seed-11729.json",
+        "sha256": "22595b010f7f24bb925d8a0dbbd47a730f87f53f0cf12609fda65377f87b40fd"
+      },
+      {
+        "job_id": "02b8c08a96485e47bde6ccbd8df2bcd2776a04cba6bde76e7a9e43928a37adf5",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_aldehyde_pair_5fold/fold-3/seed-1729.json",
+        "sha256": "7781d4f5630f13b19ee227d55e44b4ce1c52dba1a7fb6638a870ac1d845ce69f"
+      },
+      {
+        "job_id": "03037613ed06ac9de7e0c20c220d630c98da8c85e8c9f9070148188cd193421b",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_5fold/fold-0/seed-11729.json",
+        "sha256": "368b8b7a5a0e512fe3ceb4296e6cc8811536a967bc537b54f494ac11308b644b"
+      },
+      {
+        "job_id": "034fc1c382f289589fd8f0cfe542ce5437ffcf5209a369fc031c81dce952c2e6",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_isocyanide_pair_5fold/fold-3/seed-11729.json",
+        "sha256": "2b0d8e391a9e5b4c8aa6c7a4d6607ddafed027b665945577412867bd21ca389d"
+      },
+      {
+        "job_id": "035b565f32e925394198a97f77e051bcc6169c9b32207507592152ba4111626f",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_5fold/fold-4/seed-11729.json",
+        "sha256": "39cf669ea4c65cfe7db44b3ada3fa7a62a60ee247caab61d518d2915abbd6a77"
+      },
+      {
+        "job_id": "03bd4a94a11541df6453ebe57b5ec1e67c102702f92044c84d69ccc37082c6a0",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_aldehyde_pair_5fold/fold-2/seed-1729.json",
+        "sha256": "a65c18402592a2aec93a1f1f6c30fd568d0d0ee87df7a02a36b07f270f9fca39"
+      },
+      {
+        "job_id": "0400902ab6f0b3a0683ada03415eb5c9f84ce526d69bd5ca6fccc513de134616",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_aldehyde_5fold/fold-4/seed-1729.json",
+        "sha256": "9400a0d6293b64a994f6e5afa63690d35e4801fa00dc0b52606229963eceb9a9"
+      },
+      {
+        "job_id": "046f17648a38ecbad3f9501043e2ecaeae0f19b23f6a8b7df9e5f9da1be0aa3e",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_isocyanide_pair_5fold/fold-0/seed-21729.json",
+        "sha256": "56678fb4b29c7191a3a91a5a54c0df2980977a57559e1329ffa6c759334ccd1f"
+      },
+      {
+        "job_id": "04d186eb2781deea33eac5514ad1d171173e815ca62d57832a596182ddf30f5a",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_isocyanide_5fold/fold-2/seed-21729.json",
+        "sha256": "a175582a8bf0c21cde5a83077d5c2f7697f85ce49f554aeb7762758b830c2f0e"
+      },
+      {
+        "job_id": "0534326792b0f8b06af7fb42bb24b71e8ef11dc745867f5a17df8324969babda",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_aldehyde_pair_5fold/fold-0/seed-1729.json",
+        "sha256": "2bf995a9833a93fb6b2369a9ec4f260bef1be50564830713efe278098d582be5"
+      },
+      {
+        "job_id": "05c878e4275a2383deaca0c0601f2d443d76987626067d8f8ae274fb968bbbd4",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-3/seed-11729.json",
+        "sha256": "604d4b16ef04a1d6ae6b4b6379ca91b22e3e5bea2ab3139b5daeb0f7d2fceb65"
+      },
+      {
+        "job_id": "06457ad86d421a6507585149d16d212325e3626b7208a76c914370948139c3d1",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_aldehyde_pair_5fold/fold-4/seed-11729.json",
+        "sha256": "ba1a414d5befd64e14c8d4707532a0a3b92d04ccdff7d06c077ad34d8207687a"
+      },
+      {
+        "job_id": "068b4d2fe4e13bf15370bbc3c84c79a559535c6a23d33d958bb20e786c5af9d5",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_aldehyde_pair_5fold/fold-4/seed-21729.json",
+        "sha256": "2ec0a6f69dfb1da07c43977abeacdb1c0c7d60db8ea64645a29d4b9a7cbe54d7"
+      },
+      {
+        "job_id": "07dc2be4b14d8364c90460e9583ffec4e266450f76e8e9cb8ff3ee3a2e231fd2",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_aldehyde_5fold/fold-2/seed-11729.json",
+        "sha256": "5707bf47ce98c6dd8109a1843296086a23eccbfba4a8a6d5420e50935e689417"
+      },
+      {
+        "job_id": "07dc3dd9ddd8a61e3dcba9b7e0c019ba55051837badcdd65a5744fb1b9fe56b3",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_isocyanide_pair_5fold/fold-1/seed-11729.json",
+        "sha256": "09946e24e4131015e764b4218fb44b8cbcafe1e2710df3a9fbc9763f1e1bea18"
+      },
+      {
+        "job_id": "0810d00619e0e61b8916bdfcc26aa26578a713396bcd22fb0875321f733b2b5a",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_5fold/fold-3/seed-21729.json",
+        "sha256": "8e2eb3c68392a5cb3c94dff87990814c399fbe83ef6b204bbd293c31894bd302"
+      },
+      {
+        "job_id": "0828a2c93fab4c49a117ef3aac2aecda8ca524f2c9aa89682e0aeb73b00b3fda",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/lantern_random/fold-0/seed-21729.json",
+        "sha256": "e6098f917286b29491b62279c80e876e22b30423c0662426a9fbb33170cfcf9a"
+      },
+      {
+        "job_id": "086e0ff2f995d989d60903ca25b61758988b76ac5a9389cf1bdaca624a0ca072",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-3/seed-21729.json",
+        "sha256": "30afc825a531348829745fc5a587747c05c0a896e0bdd8c2ae895433c8ca6666"
+      },
+      {
+        "job_id": "0889922f402bd2ebbd107d4c1332444d8d7666aade07f6f7e817a6cff22db3d6",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_aldehyde_pair_5fold/fold-0/seed-21729.json",
+        "sha256": "53997b6e3352aa6929a80bf4f771c274134ea9713218e2819a7bbd1818881da9"
+      },
+      {
+        "job_id": "089e86a3796ba1761eccf0881b6b9a09033bf93992948cf0b81212bcdae95b08",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-3/seed-11729.json",
+        "sha256": "b53a966aa2d59988b88ca93382ce3fc6434b3a6e70a9eefc28d5a9e1c818a4c0"
+      },
+      {
+        "job_id": "09ff9a81af6e0805125410a73d618acbdeb7e489859992666ff6b449f75e716e",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-4/seed-21729.json",
+        "sha256": "bb874bd883e2c9259ee7839e3d9a800e7aeefafdb162e6ff044349ec632f39c2"
+      },
+      {
+        "job_id": "0acfa82da3db1f1cabaf3f632aec02dc0736882cc1b78e67017e14b5228cc373",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_aldehyde_pair_5fold/fold-3/seed-21729.json",
+        "sha256": "5e6114bf7f7082465418389eaaa15c7cfb35343f1652461e364e0ff5603ee8c2"
+      },
+      {
+        "job_id": "0b02e73ccb8fd20c82650d26bfb2f1ae2ead029d248ff5993470fb77d145ce9a",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_isocyanide_pair_5fold/fold-1/seed-11729.json",
+        "sha256": "4fbf8a04b7eb5faebfdaed560dfd55a4b6fe1f0947c16d2effbda286567f0d27"
+      },
+      {
+        "job_id": "0bc38d16e9b1283c9820bb4e7f410ccf1d358fa4a560eb0c61e6736c1bce1286",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_aldehyde_5fold/fold-3/seed-21729.json",
+        "sha256": "4886e9f53e4b275896ce1cd4f0fcf419b0fc3a84d2f17a3f3e638b3a50f27f8b"
+      },
+      {
+        "job_id": "0c14f70e0a61a3452e0fcf863b782c3caf7891ba0fc40e8c0c535a27b5dba072",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_aldehyde_5fold/fold-4/seed-11729.json",
+        "sha256": "767d8d1302fdd97ff2b06a2619b0191ae218fffa90d8a680b96d63f1151e7cfc"
+      },
+      {
+        "job_id": "0c4678d5cd3997884188cae8b87abe7300e4042a316b9a76717ab57b6bc620b8",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_isocyanide_5fold/fold-3/seed-1729.json",
+        "sha256": "702747202fe9dc4c30de4f362be206087fb5bad99634f80b785adb2bbf0489a4"
+      },
+      {
+        "job_id": "0d0e8d886467a86d138a583a8f81411a105b51a9ef8520fc748f250cf727cf45",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_5fold/fold-1/seed-11729.json",
+        "sha256": "5ce975c464a8baee80265f50ce3212077caf89f2252ad656648c221ed0d08e68"
+      },
+      {
+        "job_id": "0d1b6bc8ec662a5e8a14c5c88371b83154d1540d931d1dbe4e972e48cadd0e39",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_5fold/fold-1/seed-21729.json",
+        "sha256": "8613836877f1ab304aa86804007841367a178cf2c38a74ee72534b0dc10f987b"
+      },
+      {
+        "job_id": "0d2d92fcc22d19f87fa82a30b264b73ad26661a083f5db0c56ea233df5610f7d",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_5fold/fold-4/seed-21729.json",
+        "sha256": "74be4afd9c4ace2a2edb2c6a5adb481373aee5e70f4948e8fb493d6365ad0ba8"
+      },
+      {
+        "job_id": "0df824cdb52feaa29dee672e04313d963fb4b1f9957b2e1ee509f38f07e60292",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_aldehyde_pair_5fold/fold-4/seed-1729.json",
+        "sha256": "f94f87f2f6d036024f7d3216bf6633bd4a5654bfd279edb0cdd65013c305c855"
+      },
+      {
+        "job_id": "0e8da82eaad3589408458030e023aa16c37bc4512de88dbf7b9ecf0520abfdb1",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_aldehyde_5fold/fold-0/seed-11729.json",
+        "sha256": "4fd5d8ed07ca761cbcd769f23f69256c663afb77454a29c7c8a072d1d7132705"
+      },
+      {
+        "job_id": "0eb767c1ab56e7979567e2a79a4d5bd3f6842c80ac35eb5935e89e20c549a600",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_aldehyde_5fold/fold-4/seed-21729.json",
+        "sha256": "bccf3cdbd94f2821319e23a5bab334935f3f153b4724d5ca779440447c4815ce"
+      },
+      {
+        "job_id": "0f241dd5c838b3b66bf34c86757ec7e7e26a44e5faa4dd2a6d3b973cb44ba595",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_isocyanide_5fold/fold-3/seed-11729.json",
+        "sha256": "782861f0ea40d45fd9a31485f36b8deee69d5adfb0bd435959c7cafef442a535"
+      },
+      {
+        "job_id": "0fe7f3cfd39b5741a24305247515e9cfa5bb5d11c4c0c309c54b023f7b2ca6ed",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-4/seed-1729.json",
+        "sha256": "6015cd0d237111bad1f11ab20687c42fd9a1a290582abc36fd26a64094da2235"
+      },
+      {
+        "job_id": "0ffa0574b5dcedab453af53cf227285cd11256898ac7d455024a063f68fb7ad3",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_aldehyde_5fold/fold-0/seed-1729.json",
+        "sha256": "abab0b7ea69456077b6bd5c872b4732d6a233473415d54b257640c010733a6c2"
+      },
+      {
+        "job_id": "1033542f0306f9f8a6ad5a5664f25eda4501f52d04daad9daf8dab9e0cd24e85",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_isocyanide_5fold/fold-3/seed-21729.json",
+        "sha256": "d6791cf7c24730fb6b9551b7b1943bed334cd16b16e72fcf7ce3c8c1b1ca8dd7"
+      },
+      {
+        "job_id": "103faf31a2d15cb16c86abc008000dff1c9c72eb4a38ba9c094eb1addda35a68",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_isocyanide_pair_5fold/fold-0/seed-1729.json",
+        "sha256": "1795bff058b173308547e532e2b3ba6598a85b985986d666d0880882cdb241ca"
+      },
+      {
+        "job_id": "10bfe3ba74f212e97cc8121912b45618017a0df399abacdb690a7bccdb8a2580",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_aldehyde_5fold/fold-4/seed-11729.json",
+        "sha256": "f63127f0e565f17a5bcd78a07a615f94f686ed4e9763adb12e43b94c83a60f41"
+      },
+      {
+        "job_id": "10d2cf90c5df260cd621c7f05a444c792d5eb33598c1ead05eed8b1a0e7fdded",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_aldehyde_pair_5fold/fold-3/seed-21729.json",
+        "sha256": "eb7f9ad2371d82339164037d2a9a98df19f46291d7eec2a7153534197ba9341a"
+      },
+      {
+        "job_id": "10eb6f3b459fa0b4df41f2a2a6992540a9b44e5bc1bd32aaa3475eaca596e405",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_isocyanide_pair_5fold/fold-3/seed-21729.json",
+        "sha256": "fb3ced1654cc5fcecdc1fcb5a0003f0f0cab38936528dafcde1f624b25da969a"
+      },
+      {
+        "job_id": "11a8ba32e39c057eecbbc5015d0785afa334eaf580c3b54facecb82c3bb678ae",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/lantern_scaffold_balanced/fold-0/seed-1729.json",
+        "sha256": "8897c7872ca6bd0bfc94d7c60b7817004ed4a17bd244f408d41c14bb19f4dbcc"
+      },
+      {
+        "job_id": "11cbd297f2d64d0fc0294c30a84eab62904e4082a680e1df3aba56c2690f6b83",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_isocyanide_5fold/fold-4/seed-1729.json",
+        "sha256": "4360a29531d351ba810c1fa25d79fce11fa782dabb8b38ef78ac5295c295ad1c"
+      },
+      {
+        "job_id": "11d9736e425e369246498a6160a74cef40bab1040c61ca60d3eeff74e1aa2feb",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-4/seed-11729.json",
+        "sha256": "3982853562a47d48c628795f12eca5b20dae655dcea1908492c81b5d07d10556"
+      },
+      {
+        "job_id": "12543249eef3a8e4d0bffd8add8eba8396ca91f1d6185944ff5f735c376d5a75",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_isocyanide_5fold/fold-3/seed-11729.json",
+        "sha256": "23c011c11e786b58d9345322cc81cc6291fbc1bc974a631db40c55ed1f0f50ab"
+      },
+      {
+        "job_id": "127704a9b0be4b6169f03481d78231895600298c977b72c9eaa65dd61e8f1e98",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_isocyanide_5fold/fold-2/seed-21729.json",
+        "sha256": "1cf0b3b22a4d5f9ebe56f5284133ff350381f2d2f5d0bc3a31e81e09ea51cb54"
+      },
+      {
+        "job_id": "127c1e9a686f6fa4305fbe5614accc6414ac31fd3fe97ccb6b848fc5ceeb7045",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_isocyanide_pair_5fold/fold-4/seed-21729.json",
+        "sha256": "cc6964d9a494092a025677f783f17072a2ef45a38b609aa99a10413c95730259"
+      },
+      {
+        "job_id": "12b301b2703c923a1e84bd04287eb8a10a2e48df881805130acb34b4b662a37f",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_aldehyde_5fold/fold-0/seed-11729.json",
+        "sha256": "8603a8f63200f2eeaf6ba3f4166694a84506ed40c51f536d54951dc4950537d0"
+      },
+      {
+        "job_id": "12d58e68e7a185adbfc0ea37d96eb114e4511d66fe1436699dee4d5562e13fc9",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_aldehyde_5fold/fold-1/seed-11729.json",
+        "sha256": "658a132482b28706f22b820c0c0ecbbca27ab833386a8212d10e3d47b42b7933"
+      },
+      {
+        "job_id": "134d632e6745acfff502bfddb91353f40b36989f3c84df91468ed9aea4dd2efd",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_aldehyde_pair_5fold/fold-0/seed-21729.json",
+        "sha256": "e7c3a324624e1420e49c7513c4178a78d96120aa7b43c837ae4f7982a3a696d5"
+      },
+      {
+        "job_id": "13a038ab067efcd717d3283eafc8620ec7e88b2fc3f1a117e82f7064ed5baacf",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_aldehyde_pair_5fold/fold-1/seed-11729.json",
+        "sha256": "d233977912e0bdc8e94783c5a35d081ce197e4ed3980a003a623dd63c934b777"
+      },
+      {
+        "job_id": "13cab04f7d6d4cd14b3c23769c798bac25f991c1a8242fc29459f6d09ab7200f",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_aldehyde_5fold/fold-2/seed-1729.json",
+        "sha256": "0e3b2c0307d9113ccc7b5857a75cea56f39c0dcb3a0bdb8096b62280aab4b5ef"
+      },
+      {
+        "job_id": "13f4c6e64e545033708bf3748344511999ad1d6c7fa929746b8ed62e4ac0f4c1",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_isocyanide_pair_5fold/fold-1/seed-21729.json",
+        "sha256": "f8d6127107ca9baefd5a7c0a2b8b175163d9f8ded048bd7fb88a35ab2c232a58"
+      },
+      {
+        "job_id": "14211eed8de48bd6b77cf71a82bd2236226860bdb96f08af1c14068268723ca7",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_aldehyde_5fold/fold-1/seed-11729.json",
+        "sha256": "c51b7b93c6ed4c3b8369fc3bc1789d2b80f4f51070faa73d2f7cf760adc6a503"
+      },
+      {
+        "job_id": "14299e9c5c7097f6453b6659fa45b785080428dc15ec6e1377b2bab3fc31e495",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_aldehyde_5fold/fold-2/seed-11729.json",
+        "sha256": "7f8adebdb4be3e1a89a4bc00fd86365504c21de3ae215d8f1be9b3e84e43cfd6"
+      },
+      {
+        "job_id": "143ca729830ec6eb99653bb76917e6ca782c99a0b815b5f31f5451dc0fb7f153",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-2/seed-1729.json",
+        "sha256": "c6c00b5df1ff4ad5c454d708b592bbbc7dcaba547d55e846e3db64cecd3d06c5"
+      },
+      {
+        "job_id": "153e402fdd1f4d81959805f11d4cc26ce252c0cc158ceb6a56aec0f001650612",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_aldehyde_pair_5fold/fold-2/seed-21729.json",
+        "sha256": "e27e31577624bcbafa64622524e3a2bd2ed07a0e2c7ad47d3657ee94a1737081"
+      },
+      {
+        "job_id": "1613378edb86a00f0bc24e3e1d405c298b92cd2169ce3729407d833bded5ef44",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_aldehyde_5fold/fold-2/seed-1729.json",
+        "sha256": "13a741f3abd9250ceeeb4f29abfe6024d8382630b1b12d8256a2792c82c777d6"
+      },
+      {
+        "job_id": "166b82eccc5cf91487d91e9e0482d42633066a42047c2d0474f1d686c87f322a",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-1/seed-11729.json",
+        "sha256": "cca2baf65f39cf8e1e0e378385e0d20a888bb313c34936460a3f46c16c7d137e"
+      },
+      {
+        "job_id": "1737eae23997c294d6223d19fd9c0e6b64e9ffbd93273ba01ccc44668aed2192",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_aldehyde_pair_5fold/fold-4/seed-1729.json",
+        "sha256": "dafa9cdc6670b439df20c14f8609cfd114fd3a8fc2a57291fad2fb5883ec83c8"
+      },
+      {
+        "job_id": "17b4947d1400455d6e6b6d4170294c4ce4587435a2d1eb49a07f7bec609e5659",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_aldehyde_5fold/fold-1/seed-11729.json",
+        "sha256": "0bf40b04f2ff3fe53753b5a0f8ec07c7658863c8989797368d11e33b6c6d097b"
+      },
+      {
+        "job_id": "17cb48307d707ec28c285e5cccfbe8111ebf8481f0a4b6194bb14c0060aa1639",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/lantern_scaffold_balanced/fold-0/seed-11729.json",
+        "sha256": "a31489fbc0829e0287729da632fcbd3c70e9343603f0faafe7d1865c42e0c893"
+      },
+      {
+        "job_id": "17cc15300aaf216bdb57a9906e9ec44e1426cc1e9585b061ca789a0770509c28",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-4/seed-1729.json",
+        "sha256": "19f5dfcc855fd3774a87ae70caefa51568cbe02ade0e9a4720de5c08362ce4b5"
+      },
+      {
+        "job_id": "17eddf5389ad390258d0dd6256a2a52d68fb1637370b92ec9b99d3ec7bd76b5d",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_isocyanide_5fold/fold-0/seed-11729.json",
+        "sha256": "2396c8c2938eb863b48e4013c80f09dac4bc87e175707d102d1ec05f1b6d3652"
+      },
+      {
+        "job_id": "17f6235517c2a2e916e20a744b14ad1f6da0fbc883f3b3dc316d31e2893de342",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-1/seed-11729.json",
+        "sha256": "e46a9430e634a756bd2083e10c0ff99ae72edc568502521d030550f260729b0d"
+      },
+      {
+        "job_id": "194773b6a3b902dd603be0772d1c24e93f6ae129921103b436eea3dc2dbfb53a",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_aldehyde_pair_5fold/fold-0/seed-11729.json",
+        "sha256": "4020741b6997ce7c09a9bef594e5d2a63dcb85a92a7a37e4e2a442adaa946684"
+      },
+      {
+        "job_id": "1974b1a51d11314872e41c610e8c2bf76c5a4e93795ae31c838054fc730e34cf",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_isocyanide_5fold/fold-2/seed-11729.json",
+        "sha256": "15b1ddf1efdf41586bb8735b39988532e915cce8292872849b7fffbfed92d9ca"
+      },
+      {
+        "job_id": "19ec881b22f218627ca0a8f34a643e7e4c03548727bda324de530d2146ac93b7",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-0/seed-1729.json",
+        "sha256": "7980b45a54245990038a368cd6ff579c36bd6865f1b2f734a15bd7438c87f765"
+      },
+      {
+        "job_id": "1ae72d8ffc33bf5b4698c145c28add4b1ba81a242ad4570f1c2f93bcace13481",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_isocyanide_pair_5fold/fold-4/seed-1729.json",
+        "sha256": "2f42726a9118df030a70880c610ee31506f2647eea4f4f8b9f156c1d2af446ee"
+      },
+      {
+        "job_id": "1b4c87c0716f3a6aafb4706aededb7f5b464848152eb16491057e3083efec165",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_5fold/fold-1/seed-1729.json",
+        "sha256": "f7842ee2dc4b09a23c98849620e6e5577b57a6fa5a343f932ce3d362e152f5dd"
+      },
+      {
+        "job_id": "1b76274edabd77f017e95f15db77861e40fa6ba63a7b82ca87c1f05f00e9c07d",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_aldehyde_pair_5fold/fold-0/seed-1729.json",
+        "sha256": "b34c026baa263d474b1a53b28920dc3e255997c975b70d6a5c447cb31531fa43"
+      },
+      {
+        "job_id": "1bf2e535b9cabcec40033ea2cdab3cca342912b863fd0834196cc9775af3a265",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_5fold/fold-2/seed-21729.json",
+        "sha256": "6c6caf11cc1518a66eb34117823e29ee525b6c0a75098c5c4cbf0dfcced322ed"
+      },
+      {
+        "job_id": "1d1194afda7ee53e49aa348004eb92598a09a8fdb3b14ec9cbfda590294cda6d",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-0/seed-11729.json",
+        "sha256": "948f23289eaa0ce229cfa00cf4125d7ea5191a9cf056c035794b23e7e823d20d"
+      },
+      {
+        "job_id": "1d230d1f42a82491e3432504e8d872690134dfbff2eda8260d3a918190edf4e6",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_aldehyde_5fold/fold-2/seed-21729.json",
+        "sha256": "a10428bc79ef2782032affa6af5c813caffeb6b6a41f7e704f7892d0102ef0d2"
+      },
+      {
+        "job_id": "1d41cb88056f21dbe131702897e5bfc974a65aa51e78ee03a476e5319ba9c4a0",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_aldehyde_pair_5fold/fold-3/seed-11729.json",
+        "sha256": "516211ed05b4769d331bac9b1a7de29f5b0d1ccdef6d8a831fad6f69963d3f71"
+      },
+      {
+        "job_id": "1d44735d6c9914f8da8f9f3678161052c464e2e81a58793d26229219eccf7745",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/lantern_scaffold_balanced/fold-0/seed-11729.json",
+        "sha256": "4f3c7d9e770d97641b17ffbf72197e0c8c74575ca1d894d4d718d2afb29acaeb"
+      },
+      {
+        "job_id": "1d51164ba8669954a3d1e19308afce953fbb1fa72f7855e418a34c036d4a2ed2",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_isocyanide_pair_5fold/fold-1/seed-11729.json",
+        "sha256": "a87999142c09fa3324315b5fc815c9927ae50ad9bc00a4d92f37bfac40bb45a4"
+      },
+      {
+        "job_id": "1d634f5c7d46ede50875f9f2dc2d47670fee700b79d5ed9f0611c55c0b665863",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-1/seed-21729.json",
+        "sha256": "cec8dc2e36c5a3fa1fa576ab3f7c707c3e06a7574a70b3664ef22da10243a50a"
+      },
+      {
+        "job_id": "1dd6477499607c03a5ae32a903c9c009d7f8c95f2cd806fd2ec170bb2bad372c",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_isocyanide_pair_5fold/fold-4/seed-11729.json",
+        "sha256": "1eaab9c8304b06efa626465b3d982faebefd1f0ad8680cc4e0756b8fc0e94694"
+      },
+      {
+        "job_id": "1de196631767239626489cc94a5c52adfec179d79a00df9aff1416c1fa36aefb",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-3/seed-1729.json",
+        "sha256": "1b179806e9b01e4c0fd96b93eb41c87b14d43edda712fffdb756aea83524b9bd"
+      },
+      {
+        "job_id": "1ea052f39a531c9db7249e19defe031a4481c52e964f4aeef8ab5ddb93091f30",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_isocyanide_pair_5fold/fold-4/seed-21729.json",
+        "sha256": "82cfd71f18649dd9ca21dac9ac9666ccd4bef3c977b6f062b964f21804528bc4"
+      },
+      {
+        "job_id": "1ed012dc903d2a2cf159ef4d3f479fe6cf078d5ee1160abc379e7566772170c0",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-1/seed-1729.json",
+        "sha256": "dd09d4996d12811e72a50f89d5a92667f8dbd2cc1a859b689eefef9194e76ef0"
+      },
+      {
+        "job_id": "1f44fcd5b106d6380870834b02b7c0b00e9024a263ef1974b9c0d4d7b956bb3c",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/lantern_scaffold_balanced/fold-0/seed-1729.json",
+        "sha256": "8dfd68a45dddbf15bc61679499d3e7d4c68828020b5cf544f5f2e93539bbaca0"
+      },
+      {
+        "job_id": "1f63d0a8900d9583706e0ee050ef17cef87238b1a858e06652539a1c1d68146e",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_isocyanide_5fold/fold-0/seed-1729.json",
+        "sha256": "5fafc6f9c7d1ab4fa8b7b13f493f4f6d4d062507d6378abf4deec8dc09642e4f"
+      },
+      {
+        "job_id": "209e77a78b16b3b24f2140895b713dff5d1b648fb1300813285851ade36b0bbd",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_aldehyde_pair_5fold/fold-2/seed-21729.json",
+        "sha256": "305f70251a120204b9beafd3637b4756debb72f0d941ea6435f16ea0c9661133"
+      },
+      {
+        "job_id": "20f5ba4231feb2811bafd01220abbcd72c3b3e63a44ac6d079468149003ffdb9",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_aldehyde_5fold/fold-0/seed-1729.json",
+        "sha256": "16fabff0949a29becdcf4b838212e9d7d316ad6a7ffd2211bb0620d8aa2fa2b4"
+      },
+      {
+        "job_id": "21062b9358f6fc034e29454c2f78ba5ecedfd44b0a5afb51edafcf882b89f2ab",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_isocyanide_5fold/fold-1/seed-21729.json",
+        "sha256": "5eede59ac8dcb1715bcbbe974042257e922dcb3d9797d074d8c72c87d190bde7"
+      },
+      {
+        "job_id": "210aab52807c580e264b0e4beb930415dcfb302d5ab424b285b6c2e272fa518b",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_aldehyde_5fold/fold-3/seed-21729.json",
+        "sha256": "48c4d2cc726d25d80201e4abd0b865a36825e085fb98ab8599d8e4b416406a56"
+      },
+      {
+        "job_id": "211cf051aa9b9225f6b43ce15d4ca80d1eb889613cc4227108b516fed1b419d9",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_aldehyde_pair_5fold/fold-3/seed-11729.json",
+        "sha256": "f62a55de8ce4b43f35c5bb1a567653939b12c2527dbd7048c429971e65a7f27a"
+      },
+      {
+        "job_id": "21977d38be506e217b16481db3faf6db5521553afb3b567a80ff79d06cf6301c",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_aldehyde_5fold/fold-0/seed-1729.json",
+        "sha256": "0d03f615a20b60bff1033b60b49564c909f6293cebe1919e1db2c92e7f06bc6d"
+      },
+      {
+        "job_id": "2202c63f758580a2e2bddd5914b8a0faf5ef8018b790abe4dde08b253ddd2f5e",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_isocyanide_pair_5fold/fold-4/seed-1729.json",
+        "sha256": "2eabeb50c2503788be4690a21f8e520b14f9632eb2c8ac6ed65639f3fa8f8570"
+      },
+      {
+        "job_id": "22c582f5adb7f858ee15fa7690b9a6a4a669643c03fe0459e5db03e66bc5f7de",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-2/seed-21729.json",
+        "sha256": "000f3a3d0a41c91037661b0ce7b2f7166a1e79daa08e548d0cfe3340fc8d488f"
+      },
+      {
+        "job_id": "2389998d79e551c2006ae48be61b79105cc2f0f5d66a3cd562eba550b453d8cf",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_isocyanide_5fold/fold-0/seed-21729.json",
+        "sha256": "80e781adf7fbc65b730d017deccefe77b132c35254ed1187c1d8f1517412a8c5"
+      },
+      {
+        "job_id": "24749c94b2d198b38efbf786e20cb033eea0760491cd9b49f3543e2f0f6e3478",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_aldehyde_5fold/fold-2/seed-1729.json",
+        "sha256": "4bd390dcdaa552b97efc8e847acb237a2bb3eef8e5386b70504a2092ff78b397"
+      },
+      {
+        "job_id": "2557b98a5ef025e83ca8cae0cdc35449540f4574b473da996b2827e4f9e2e7b8",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-4/seed-11729.json",
+        "sha256": "3321697d9cda4a3dd3b352ee0e4c0b6a86419ef7b73e707cf8a7b5426cf3429b"
+      },
+      {
+        "job_id": "258624e04e17de59f9f1fd01e31e1af289faedbbd95aa32201fedb3466d472fa",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_aldehyde_5fold/fold-3/seed-21729.json",
+        "sha256": "66d5dac5f38075a6952e0c0b98cb72de5b1fc393488e7c3b19b3a48d68ccd379"
+      },
+      {
+        "job_id": "25ca459d7b783bdabbf7f4a28cf18b217c47e2c841cc234b32daa9d5e152145d",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-2/seed-1729.json",
+        "sha256": "a737ec2ab8f0a588db87ee7c4130b651fb9be0edbd958188611892cd914a4d53"
+      },
+      {
+        "job_id": "26159d45e68e2b1a789b9a1f33bde55529823b72774bdfd91d97c1ad66d16834",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_isocyanide_pair_5fold/fold-0/seed-21729.json",
+        "sha256": "d2d7fcb664e8b0e2a702c373669d3b92efc319628acaebb632ca69f795e7c457"
+      },
+      {
+        "job_id": "26385562070dc6ab413108313ad16a05fe5266d6181d6657fb51184b00e083de",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/lantern_scaffold_balanced/fold-0/seed-11729.json",
+        "sha256": "c389100d0063b4267442d9035db0b23c1cb74529350b7f62e889afb1a05b562c"
+      },
+      {
+        "job_id": "2713a5a9e590dbf84df207437c3726d06bedd5d5f7e1e2a51a1f5e2d12f975b9",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_isocyanide_5fold/fold-2/seed-1729.json",
+        "sha256": "3f37e36c37c4dbe0ca40789cc998d96a5f84918a74525447942eabc386313a38"
+      },
+      {
+        "job_id": "2792a4b77980df80e536abaafb84459383b69cac5c9dcfbad4d8a9e2de7b3051",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_aldehyde_pair_5fold/fold-4/seed-1729.json",
+        "sha256": "53db901429f0efd0dad3a0f488acb5b64e31e5fd95b17430ac3e095d1b822d03"
+      },
+      {
+        "job_id": "28de862dad8317adf4f8d325d01eb9dc5dc26543320dcc447b93e89bfdf8302a",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_isocyanide_5fold/fold-2/seed-1729.json",
+        "sha256": "ee0c647923d3c61813b852c946c594bfc80d33788da0470c830072ec6d214f84"
+      },
+      {
+        "job_id": "28e4f91e9fdb6d5ca06825fe0ca0ced3400af1a9e2f41f4719e83968496ba901",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-3/seed-11729.json",
+        "sha256": "31f197a0b13d7a2b209210f914d43aeaa672e039ad731b106959aca7d14cce34"
+      },
+      {
+        "job_id": "292e4b0b7b951907a577448bff596dcf930995bc03c7b45d0eb14b56640bc152",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_isocyanide_pair_5fold/fold-0/seed-1729.json",
+        "sha256": "139ee76c789e48bb98336c0bca3834b91d3f5070be36fc9e13c58ea69cc9b38c"
+      },
+      {
+        "job_id": "29766dcddc93f7fb5092192d4263fc1748a55f413bf17359714e71cb9e4d5b1f",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_isocyanide_pair_5fold/fold-3/seed-11729.json",
+        "sha256": "f6e7986bb245f9b4c2527d2be2e721923701ed75701a327bdbe46fd6671555ae"
+      },
+      {
+        "job_id": "297f2461a927dbbcb5658a7d43f247387465e18ad799d74a2561d1f6769c7b20",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_isocyanide_pair_5fold/fold-1/seed-21729.json",
+        "sha256": "7301408530aa576c58ac3520258ecbb9fdeba01b30be4ad3d7fc4b72cbb6064b"
+      },
+      {
+        "job_id": "2b8d9fe76fa03b9ff9b20752a65a6adaf57b491c643f7bdf7eff46bc04b445bf",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_5fold/fold-4/seed-1729.json",
+        "sha256": "ee7081858e0a4c3385beb79dee8c43660643739298d213c910348994a93d0192"
+      },
+      {
+        "job_id": "2c14d904e3b9163552fde1c3f49fd7c017beb5b1ccd4987ca7f94faa855958fe",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_aldehyde_pair_5fold/fold-4/seed-21729.json",
+        "sha256": "4df7c26ff240f7d88e8eb9158360d0adfe9af1d51760023f051241190e9d7a6e"
+      },
+      {
+        "job_id": "2c302e93a3855122e80d42e7cbec0031943fffe74ac91ba2aa5b24b3b1d370d9",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_aldehyde_5fold/fold-4/seed-11729.json",
+        "sha256": "067f653821dfce2a14e05d3428d1981cc60ee033b56ee644c15b85b1ae24fb16"
+      },
+      {
+        "job_id": "2d45526490a3599d13c7ce285482e40d79f329373d342425adb23f5af3e721a8",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_aldehyde_pair_5fold/fold-2/seed-1729.json",
+        "sha256": "417e52575bd4b96a60d8a26279fa21d63946a86389e1f58556981cb94526ad6d"
+      },
+      {
+        "job_id": "2dfa25fe71b90fdb5b89f6835eccc6c32b7717bca0a62eb7538041250d5a7c7f",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_5fold/fold-3/seed-11729.json",
+        "sha256": "968c81b1a49c7d1167ca3d8834980c9d49237ff69d2d0d686c12039d19e36212"
+      },
+      {
+        "job_id": "2e6215b9e56aa9591b83f358af6b390af9e8b9c0301d53142a0071fa9e05ada7",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_isocyanide_pair_5fold/fold-3/seed-1729.json",
+        "sha256": "320ab53e163782c993afab61c965e0d3e1491997266db3f243b8ff5e31523849"
+      },
+      {
+        "job_id": "2f1f99179a52f5f9f8dbfaafbb219efa576e44ba12ca69beeab7e76e5556c46f",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_isocyanide_5fold/fold-2/seed-1729.json",
+        "sha256": "a00e24e07fb5a4fe95b458d0eb8287cb0d889e7721cebeb2ce653c88caeb4a6f"
+      },
+      {
+        "job_id": "3258d701ecec5c0b594374901bead41695707a5a13f3083278217060ba1a6cf5",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_isocyanide_pair_5fold/fold-1/seed-1729.json",
+        "sha256": "508010be0c53d46ac9de9accc0e245c116a1f04a3621a02b6c10e2e235ef5818"
+      },
+      {
+        "job_id": "329470e27ff48436f6a77b52e50c28ac26aa321514a0416946b81cbdc27acc89",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_isocyanide_5fold/fold-2/seed-11729.json",
+        "sha256": "5a1509955a77859da0c71339982ef6daed8ec696a0ac0a8c37aa3e372599f7a2"
+      },
+      {
+        "job_id": "330f9887f07bf2c3726839a220faac91098e922f87c82fb9060cc14950c5daa4",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_isocyanide_pair_5fold/fold-1/seed-21729.json",
+        "sha256": "3677c4e32313b03d1fc7d1910a77a6b45113af00e96811258797de92cb1db729"
+      },
+      {
+        "job_id": "33173544de1d80908e34aa6fd2432adec9ffd489f309bad947411737bebc70d1",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_isocyanide_5fold/fold-4/seed-21729.json",
+        "sha256": "62f8c7968c970d0efa7e28bfc068d2ca7d70a9f983aaada52c3066455a897ab5"
+      },
+      {
+        "job_id": "331fa71ef8481e8fb28eeaaa24132a1ab7c793ab60a1f1a8aa9a023c855af62c",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_isocyanide_5fold/fold-4/seed-1729.json",
+        "sha256": "0733f349afaf837ca0c4811728c26a42cd117a178bf5cd8b769417c36020f485"
+      },
+      {
+        "job_id": "33d44b50bb8b2ddfef0ac341b3e22297cc9f4bb51a56d0f1cdcb0cbdcfd0e5c9",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_isocyanide_5fold/fold-3/seed-21729.json",
+        "sha256": "4f83e42fbe5dc01758affce9430add853987b589ab28401b6808272389ecd3e2"
+      },
+      {
+        "job_id": "34303ead68919ffc491a303e15c3ba3b3b504e007c9c565c38189a8091b3bc8d",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_aldehyde_5fold/fold-1/seed-11729.json",
+        "sha256": "42b5baa5321cc0e7529a18a56805da8b9a6f5a99c6cd7a815a08f0a7b6036e12"
+      },
+      {
+        "job_id": "3443ca7d33d00c3173a5ce1f512d18d06c71681527080da15bf6926abb2d2d27",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-1/seed-11729.json",
+        "sha256": "5534443b07c8d487f5683770af8fc54a90d423cb7fb214c4f67fd42fe9117810"
+      },
+      {
+        "job_id": "348315e2ca8b66c1a308b9453af966190f807deba1065d27e6c76fa8544c5de7",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/lantern_random/fold-0/seed-11729.json",
+        "sha256": "3588251dc3128d133a6b8f88221090b2f28026e591f1cc98d2ef7a75dc5baddf"
+      },
+      {
+        "job_id": "35ccaad80c9df0533b69aba0600a1590760d29bd904e6eaee81e5bc935d3e5b4",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_aldehyde_pair_5fold/fold-1/seed-1729.json",
+        "sha256": "89a7e42ad40b299abd45215352705666b8a90243853675a78c01f1c7dc585e43"
+      },
+      {
+        "job_id": "35edd5d64f5bfb9f4da0e253f3c784ed8cfef6c82ee9421da7937f201c1a7a90",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_isocyanide_5fold/fold-2/seed-11729.json",
+        "sha256": "8d0d7139e5e93603d889720c2b72f534fe83457c5ed15d117c67ed4389ea4996"
+      },
+      {
+        "job_id": "365bc7247fea97063001ff35498e2307942ce32fbf91caea5d909eab4f6e45c2",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_aldehyde_pair_5fold/fold-2/seed-1729.json",
+        "sha256": "7619eab9824c5eeb050ad68e5b1c12e12b0235d766fecb686e5c4c7fa66796c5"
+      },
+      {
+        "job_id": "36658d428d35f3ed9891826705bd0908b4573e477de5e9888c188b3459203f82",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_aldehyde_pair_5fold/fold-1/seed-11729.json",
+        "sha256": "65974a38174bcadd0730289de403a3f5553b71be779e258e060fc00aaff779cb"
+      },
+      {
+        "job_id": "379dc6a387769db5e68455f058ccd3002a83d2cdf48dda4774f54f66d5a24b7e",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_isocyanide_5fold/fold-1/seed-1729.json",
+        "sha256": "2d481fca58e4697ba0d6651fa9ddc6c615b1277d6d18ea14c814d17de89cb5d1"
+      },
+      {
+        "job_id": "37a94e6ef9c955fca4a78616bb6d74495d827f53589c1c67ad6d8824574cce49",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_aldehyde_pair_5fold/fold-1/seed-21729.json",
+        "sha256": "2d11d7e5185e79947259649119c7994883b02919dd9cea897a81a65137df6c81"
+      },
+      {
+        "job_id": "37bf3b42668cf5ba679f301ba6da5f4e87491b9934f47cb465f4a2cc2508827a",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_5fold/fold-2/seed-21729.json",
+        "sha256": "a74da8a8637009b20e855fb8b1b2827df2753e01387335f8020a3f9fe1f086f8"
+      },
+      {
+        "job_id": "37c7b25d1f5d1e3c919c5c39fb37c6f0910bfef31d7ba45af822cd27682e77f3",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_5fold/fold-4/seed-11729.json",
+        "sha256": "1a1077119f16da534613f9cafac1457d80dae437a2478ccf4f760affe9c41d12"
+      },
+      {
+        "job_id": "37d62eb7cf6832bab72964b9e4f26e37d42e28640691c3ddffb9a295058c6f63",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_isocyanide_5fold/fold-3/seed-11729.json",
+        "sha256": "7f07b126f9a0a30c7c62fae3d244d793706fe5f97ec903960fedfd4945235aef"
+      },
+      {
+        "job_id": "37ec9c120e22612a5b14078d635972068e05cc95a7a1983cf8c22db430cdfb72",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_aldehyde_pair_5fold/fold-4/seed-11729.json",
+        "sha256": "70e0f44ec6d175d27ebceed55ff73f344782f2aaef0286688c1710787b114b41"
+      },
+      {
+        "job_id": "380b2fb4f01bf36181befbe9484e7e86e946a4d485bb7f25b223457f1be97da7",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_5fold/fold-2/seed-11729.json",
+        "sha256": "b085689080bcda8b4f64e7d96cbc4be26cb53c19a7060405017497bfbba5e517"
+      },
+      {
+        "job_id": "38711635c9f2ba620216355ae41df79baddf28eafe38796cf981673b166e8fc5",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-2/seed-11729.json",
+        "sha256": "7ef0fc6cf8fa4c0ef42fc084cf6269fe179cbf392a391d668937968680ba6c66"
+      },
+      {
+        "job_id": "38ecf15626865c99518ac79e6aab4ab765af61c708fc24c1328afda3e606c7c2",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_aldehyde_pair_5fold/fold-3/seed-1729.json",
+        "sha256": "0d5ba60ba6bb1b66f31fe5b299fe7f78a9e2d60b7ba8f7dadb32bb36cd30eb7a"
+      },
+      {
+        "job_id": "392be81e9f590b3fbb00911a8b5f07f3358b191acf9776131703e1a0ee420d8a",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_aldehyde_pair_5fold/fold-3/seed-1729.json",
+        "sha256": "3ef1e60b8df08fa5baffc1a89f5406d24ef17c8465d60de72f191afe41832893"
+      },
+      {
+        "job_id": "395a00c21718a3f397c0ccba718b58689415f1c84354066343d870a30fc39ffd",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_aldehyde_5fold/fold-3/seed-21729.json",
+        "sha256": "b5d804ba3813c45de04f3fd0fcf61c658dd7ef2745edea4a4eacf578b19a4163"
+      },
+      {
+        "job_id": "396de9b8333e0276e443d369fec661d2916d02bd6c24142f5201f393230ba4ae",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-4/seed-1729.json",
+        "sha256": "17c748806e7d43b4903a551109fd9a4c6798c583ac832409ac2776aa81b87877"
+      },
+      {
+        "job_id": "3971fe9382cfd796591c3287d773c98ef28c376be09e20c09219af3616e9f7e2",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_isocyanide_pair_5fold/fold-4/seed-1729.json",
+        "sha256": "d036f772d6d7460d308907a6d8b24c12a131b466ac1b213457aed9d085e16a7b"
+      },
+      {
+        "job_id": "398d94b22b6e1cb17c8a20f9ecc4054187bbf7b3acc8811021bda928b6e3356a",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-4/seed-21729.json",
+        "sha256": "b7830d53f61d1d8f527c2d87e39a954911be39967d6aa06072008dce2e960b19"
+      },
+      {
+        "job_id": "39c436a0ab4f37516f491bf956b3644a5de46d9f046f850107c8b1fe03d186bd",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_5fold/fold-1/seed-11729.json",
+        "sha256": "b6619727c1847c8d4cb762b41ab8e8d69cf88bcef3d91e4e6898f67f859c87f2"
+      },
+      {
+        "job_id": "3a1e3f58e03d02586c01e41f32852cf7bced3571074df42c4055eb57665cc2f4",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_aldehyde_pair_5fold/fold-4/seed-11729.json",
+        "sha256": "40a9e340063bb2fd1e06400c938e376e7ffe8b5963db531e4ebf41599009d09e"
+      },
+      {
+        "job_id": "3b2e471b02077c9447f362ed9cf46a4c521b704854fecb9285578d2e5cbadbe3",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_5fold/fold-4/seed-21729.json",
+        "sha256": "de9f1f75657746bad046891f096c864e04828986be3a758eee56f1fe5e222f93"
+      },
+      {
+        "job_id": "3bbc8ad9301e8123aaad12b5dcc18a646e65566211f1a9cbf86c333762340876",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_isocyanide_5fold/fold-2/seed-21729.json",
+        "sha256": "342dbae030503133e706e0021e43f749f68ab15e2e6779fd945f0f2245183dec"
+      },
+      {
+        "job_id": "3c13e48d5bb5fbfb7930dc6b42eb2b4c1890f4fd4439ee3d01126de04e08508b",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_aldehyde_pair_5fold/fold-2/seed-11729.json",
+        "sha256": "7ecbd4469c20ec7deb1dd8e3e657b6560971ca8c363b398a5df7d9734d7b3ea8"
+      },
+      {
+        "job_id": "3c3d5d111b03f2e7221506f5422dc051c8aa3acf5245b7bcf4982a6a39b08d2a",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_5fold/fold-4/seed-11729.json",
+        "sha256": "67006dd359eefeb62ae30a2b7934e38c03762e820c5d68f220918f4cdfd0c78f"
+      },
+      {
+        "job_id": "3c8bb2e6f9e9346e1a49fcb07ae6c954f6772bfe984721fdd4a21832d5557505",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_aldehyde_pair_5fold/fold-3/seed-21729.json",
+        "sha256": "7e21bd6906d0a5b218f41ff5d81df3b509c80924fc546daeaba6ba0a36da22ea"
+      },
+      {
+        "job_id": "3ccaeee218115bd0ea71c623e027f01aba6f400199fee6b3126f32f650725356",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_aldehyde_5fold/fold-3/seed-11729.json",
+        "sha256": "5d1cccf2f95e3c096563b55081a5c55961b962438fe572ac3a7c9a7357e68db1"
+      },
+      {
+        "job_id": "3d261bd64a24a7c846e310707709a88867cfdcb199928768a0c1a8031feec496",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_aldehyde_5fold/fold-1/seed-21729.json",
+        "sha256": "66edb82fbafb6272ebe7c752aee0661d18233690df6c2c1503f0a5836e595eb5"
+      },
+      {
+        "job_id": "3da5462ad976b4d1ccde4b697fd404563ded73f54205680b3acabdd1c2e4cdf6",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_isocyanide_5fold/fold-3/seed-21729.json",
+        "sha256": "c2428b2c0334dc9efac0a5711b47135caa586da94e3b07344ce7cc61279f145c"
+      },
+      {
+        "job_id": "3dcf1f4731d2e880f09de948e94f63f24f71fa66be3a8d2b6bdb99f5e1684b5c",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_isocyanide_5fold/fold-2/seed-11729.json",
+        "sha256": "8d108ab45ecfe789878294fd5232df375a2506d9f5e20090ccdfcc6cf1eaeefe"
+      },
+      {
+        "job_id": "3e18d4f58d61c9c6df2d6a953ccc22a2da5e3c7e8c889e7757134217e09ea203",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_aldehyde_pair_5fold/fold-4/seed-21729.json",
+        "sha256": "f895d00ec976d5e79de0e34907a4bc49a0702a54cc214d0afde1cb0817ecd844"
+      },
+      {
+        "job_id": "3e6203ce0221bc9573e661170fb45a8aeb7ec0bc6d45e59630824950b0f068b9",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_5fold/fold-4/seed-11729.json",
+        "sha256": "2005f0db37f7e13c32b84279fec06500fc5b94bc6fbb615e648a5dd47e68b6fc"
+      },
+      {
+        "job_id": "3fb5f97830d74289c7f436fd11f8d065ee993097d3f07291066cb428c029f32c",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_aldehyde_5fold/fold-3/seed-11729.json",
+        "sha256": "edd8150ba6e54bad7f6116deb53485c92e2ef17db2acc32511ffbd91989f3d32"
+      },
+      {
+        "job_id": "402c60f4730bc407593fa2f965717e7c852beb8f8545cc53f94b1c5007baf4ab",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-1/seed-1729.json",
+        "sha256": "9791896b777d6a92b2a694c6e3f10e5cea1b91fdac0f05e5fddcdcf8313bcd71"
+      },
+      {
+        "job_id": "40523987c03718e74ac5bc391720ed7e770411f75ecfd1d5c9026fa8dfe118c8",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_isocyanide_5fold/fold-0/seed-21729.json",
+        "sha256": "6a8d5337cff06a59a45edbedfb6371856e4a0903b4a7ccdea469e4f0d37ab9de"
+      },
+      {
+        "job_id": "40e879d2c2c2d0911d4ae0320cbb207f1974f0e7dcf511ecc2c94d5933e39df5",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_isocyanide_5fold/fold-2/seed-11729.json",
+        "sha256": "f30675a9c203bdcd6817cf3c9ba07532927959c086663fb25179bac85b1c63e1"
+      },
+      {
+        "job_id": "41007ab503f5b8815162c317dac60d0b8bf972e0347e40ad5a796ac4449a96df",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_isocyanide_5fold/fold-1/seed-21729.json",
+        "sha256": "1d26d9136f6a4cc720342489b1f7dcca5d52c85da96cae2b2bc44030ffe1bfad"
+      },
+      {
+        "job_id": "411316d9c41732c633186b5184e4352ab25f911c846bf929c7417d8e9fe1fccc",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-0/seed-1729.json",
+        "sha256": "b8baf900a24071c534fc3acd2e4cac872b27c59adf872b553748613cb4caa1b3"
+      },
+      {
+        "job_id": "42a3026fe200dab704ca8e443988941134ee050509782f6b612b6d4d0c195c37",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_aldehyde_5fold/fold-1/seed-21729.json",
+        "sha256": "f03c160b176439b65016fd38aa16705fc90068a34441798626e1251797c24901"
+      },
+      {
+        "job_id": "42a8d7f87a0ddc7dae7d3de3f2372033050e79b5efe832624680c141875da141",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/lantern_random/fold-0/seed-11729.json",
+        "sha256": "adf7c206644735c97b956b5f92670eed35d47a3863f51a7c298e04d833fd3f40"
+      },
+      {
+        "job_id": "42cbe17ac9bd8ed5ee3a9be282b2268d7502aec746035149d6580ef3840fd279",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_aldehyde_pair_5fold/fold-0/seed-1729.json",
+        "sha256": "a7d6ed8c31b603c60a679ec5dc503cb19cecec5de9907d15dc08c1548b6aaa02"
+      },
+      {
+        "job_id": "442d9cc77b63944e5129d64503d148078063c7df7a2b417b7c5b9ee2b83cd754",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_aldehyde_5fold/fold-1/seed-11729.json",
+        "sha256": "1d5c9654a95696eaca345c3a1664ee99ef11930f39312de266481bafbb990178"
+      },
+      {
+        "job_id": "44360512e85c0f8f1d2eac463858c79eef716678c10c52b02cfbab0251a60ffc",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_5fold/fold-4/seed-21729.json",
+        "sha256": "92ecff265e0c3f98e57c63ffb15ac95474b34f0f2ffa5062bb672479fa6c900e"
+      },
+      {
+        "job_id": "4437df3029bd33c9a908a3260a20747544ddd9c01179082df02f5d7066794572",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_isocyanide_5fold/fold-4/seed-11729.json",
+        "sha256": "345cd1f5ee753908b8ea495da43d101b25482dacb469629967d27973606d49ab"
+      },
+      {
+        "job_id": "44a8d94b554208ec891fcc5ea98dc3d1572a84e6f15a06709e7510ea579f6269",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_isocyanide_5fold/fold-4/seed-1729.json",
+        "sha256": "9126c9edc62a95b9e3e9eb9789ae4041f93cb4eff565ae68a19f2c9ebcb57e12"
+      },
+      {
+        "job_id": "4553b02b5ff2531db4d7f081506861682fc348876010b5e594fa398965988b69",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-1/seed-1729.json",
+        "sha256": "3a5b0a361e6dc2420a08fbd068eeaf7af3876c20a91032e9d3a5323859e81a62"
+      },
+      {
+        "job_id": "457356fe51986c75dee4917f90158188fab47ff6149c1f259a246f5bf3086934",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_aldehyde_5fold/fold-0/seed-21729.json",
+        "sha256": "e84786f7c315b94341ce5c0210fbadf38d4d9689c1575f4d1b7120c815b769a6"
+      },
+      {
+        "job_id": "4595360ec3a2a62ca72b61bd45afae94fb4a053a978089aa79a311ca365692ed",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_aldehyde_5fold/fold-4/seed-1729.json",
+        "sha256": "deaa836d60ed39c21389ef6f0f4e0896c6d2edc0c7c5a9dc5c5a13662e284772"
+      },
+      {
+        "job_id": "460ee55bcec4d633fd9cfb298da71aa58e713ed8511b247f250705589d7b7d2e",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_aldehyde_pair_5fold/fold-1/seed-21729.json",
+        "sha256": "3983caccc08767d32a950ba96de881a3bb6d05acf5f03b30bc6694d1c2fafa8e"
+      },
+      {
+        "job_id": "46376946a3d0887983d369623b1cace3f0995249efcc92d139ef9bbb0c6f2ac5",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_5fold/fold-2/seed-11729.json",
+        "sha256": "b4da8c12f5edad90fe1132dda4e6061b03c9f5278d2e165c44dbe46bc83b6d91"
+      },
+      {
+        "job_id": "46c866b6e953035fdd24c29104b23ab3fa3f0e3f81a10c7683b3dc205d99876b",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_isocyanide_5fold/fold-3/seed-11729.json",
+        "sha256": "04e838d804b4c712308c8f14bf314417212b18bbf5f90adbf4a9b60c30d06f26"
+      },
+      {
+        "job_id": "470fddb6a613e4e484f3dc2f319d037394efe27a59c87e4d243cdaf2042d451f",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_aldehyde_pair_5fold/fold-2/seed-11729.json",
+        "sha256": "41e0737f1fe6a27debafb257e0b83693fdcf4ab600c0de09900e5ae1464e2644"
+      },
+      {
+        "job_id": "478b0b2a5771ea7764c7eb07a5648cc3aac6dfb011e30c9ccdce790aafc184da",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_isocyanide_5fold/fold-2/seed-21729.json",
+        "sha256": "eef26ed47196fa56e869a20604a9be2ec825accf4335e78cac2d56a96645451d"
+      },
+      {
+        "job_id": "47cd622a2f0066f20848ddf1ba7cbeab5a8d59a492d94d0fe053f50d20e59e6f",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_5fold/fold-0/seed-1729.json",
+        "sha256": "720fa3d1467191b69d22032b40c2f79265877e92066ab36c0e0e47f2ea8d5eb0"
+      },
+      {
+        "job_id": "47f0779304946381a66d43e37b7e989a5f8915d88df503e9e78dd16049f6e270",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_isocyanide_5fold/fold-0/seed-1729.json",
+        "sha256": "f9b01bbb6672c9a3570f8df53b93019a1fef4c521c344c32463a2077a5c64f93"
+      },
+      {
+        "job_id": "47f83dca90947f622c864a9371339fea8ccdf4da1a6bfeed19c36459c79ad4f4",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_aldehyde_5fold/fold-2/seed-21729.json",
+        "sha256": "7d12d8e31b507e7857f85412995c6449835c0e8f91e99fae5c20c0fa0806e08b"
+      },
+      {
+        "job_id": "4829831034f6fde4a9b77238a22868ea02621489ed5aed46134486e16d74f645",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_5fold/fold-3/seed-11729.json",
+        "sha256": "6947dd3c092109351592360db37d9f8bd71736645490a0d4a4624855ced3c5cb"
+      },
+      {
+        "job_id": "48b48dd247e51217a94303bbfa8b01f012ba84a1f99f44c1913c66cecb0d5072",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-0/seed-1729.json",
+        "sha256": "e97fca0d6e7541a6cf7af0bb135c17e73f9f6d15f985f184110a1fbc4edb1dd9"
+      },
+      {
+        "job_id": "48d29a2926aabbfee05ada746140f4ba223de009510aad065aa960d54b03c50a",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_isocyanide_5fold/fold-0/seed-21729.json",
+        "sha256": "039213c89988b230247cb036f2a86530be191491f1bfaded4a67fe068e08f63b"
+      },
+      {
+        "job_id": "48d682287d604ea8215877acb20a68a583129bb19bddb9a727f2a0e06ed6d4eb",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_aldehyde_pair_5fold/fold-4/seed-11729.json",
+        "sha256": "afe5db036a635725eff9e91b3c1e81d1a835cd294a3c7c2d5092fc836e93eff4"
+      },
+      {
+        "job_id": "49f0c7fbef8276027f4a88920a4f4681515de4ddc3cbcf981132625f03c9cee0",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_aldehyde_pair_5fold/fold-3/seed-1729.json",
+        "sha256": "d7e705f4f29311564bbfad91bcd8d9eba012c9c0311a39eb7cbc7ffad6c00fba"
+      },
+      {
+        "job_id": "4a9c1131c194c77c8334c42b1f0e2c16a2fdd6b5147a6644f2fd21e608c1d133",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_5fold/fold-1/seed-1729.json",
+        "sha256": "9559e656ee2b22eeaa0805858005cc4f84be127eff7e3b9a2d317e2cd807ada1"
+      },
+      {
+        "job_id": "4b4df336851caf18c25e81cfe6d8c08465c81808529430dd0e6696e115b6aeb7",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_aldehyde_pair_5fold/fold-1/seed-1729.json",
+        "sha256": "eda5d2db9b17ede9c8ff77c3a495f8fdd01a5a7819db9b17f3e16a656030b301"
+      },
+      {
+        "job_id": "4b5ed9551afb621f3e47c7a6a3f615709746e2e1710409965b47b089a5fd0779",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-2/seed-11729.json",
+        "sha256": "7ac1a98985055cfdb1542e9b0c36d04791bbf35516a2282c96788337ef7ec9ab"
+      },
+      {
+        "job_id": "4b6b1f3636bc587d3ae872c5efc3e55136ea73d8ddcd0ba0062d27957faa5bc2",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_aldehyde_pair_5fold/fold-4/seed-1729.json",
+        "sha256": "cfa1e7b5f62dceab2614cef1a77f0b78082a61ddab25edc49ab16440f8a005e9"
+      },
+      {
+        "job_id": "4c9005539da03d9476706327327ffca3b7ae42220f295b5f7653746b1dca74fc",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_isocyanide_5fold/fold-3/seed-11729.json",
+        "sha256": "44a45f11edb1b1a413920396a029a464a857da3a69dc67e4bb2c7dc0580d8f5b"
+      },
+      {
+        "job_id": "4cb96e465a3f5c6d4ece8287a1d9914f8925e8e3f923cb2e45534ef1b8a1b40f",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_isocyanide_5fold/fold-0/seed-1729.json",
+        "sha256": "90dc07c8fa4e56f6df43b2e850a408cfb288574af8ed5a01f381c17368c118c4"
+      },
+      {
+        "job_id": "4cceaf6b0d280b944981506784855226e29f77cc9b3dc1dcb99a272a4240e4c5",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_aldehyde_pair_5fold/fold-2/seed-11729.json",
+        "sha256": "2475eea219f3d89d77cd75825c65d48e560c57ae169d4380d423ba443b4886c9"
+      },
+      {
+        "job_id": "4d2889a353df34724ec96dc7ca051b14c279fc5b9f654253ed6a67a719219a7a",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_isocyanide_pair_5fold/fold-3/seed-1729.json",
+        "sha256": "20c7ea281443dfb74786e716801d2252b8cf18bde53127c415efa418d52007d0"
+      },
+      {
+        "job_id": "4d9ef3518b98a920a59e3eae92d9c22d00b41be2bf76cc4050252c5bc3c712cc",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_isocyanide_pair_5fold/fold-0/seed-1729.json",
+        "sha256": "bbc33142e201ea4b2c2993200010cae9c18c816e57d5ad7f39c025adf39bc4fe"
+      },
+      {
+        "job_id": "4e0f80eff9ad52ebe0007a6ea87efdcedba0d7439fc1e980b45a377f026a8045",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-2/seed-11729.json",
+        "sha256": "83af13227ddd7c3cafb25926045715cf7b67d6cb1a0b6eb76fe132b152bd7881"
+      },
+      {
+        "job_id": "4e9773cd6d05cb43d76f0f8e3f2bc2e67386963bf1e9aad8157cb482c2e51375",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_aldehyde_5fold/fold-2/seed-11729.json",
+        "sha256": "a3b10e4d2d1c331b7f2cf4c241974f8d070ebd5fe0f5df32bf5dd7c7b14fa4fb"
+      },
+      {
+        "job_id": "4eebbaf3d438392255b9601dc53f899a3640e48ec8bbefa79160d6b71ccd5112",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/lantern_scaffold_balanced/fold-0/seed-11729.json",
+        "sha256": "9d7dc10d90334cb4c2b28df0091a6d80133f63ec14d7963247948653f2ef4b7d"
+      },
+      {
+        "job_id": "4ffb92d9d896fcea2b6c5b4a82cba9bbed818455f8a4a363f3770d5130f9e8b8",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/lantern_random/fold-0/seed-21729.json",
+        "sha256": "9806867a4e0827a7797528d87764acc03edadbafd9a607ee929c2b5aeacaddba"
+      },
+      {
+        "job_id": "5111e8d8da1b4d493ae5a926e8b536aca2495edd6e758dddedb20f689943dce3",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_isocyanide_5fold/fold-2/seed-21729.json",
+        "sha256": "a8d7e03bca2c7397302d9e35ac77805f47f0f709d712312da153c290f3d8e088"
+      },
+      {
+        "job_id": "51b990dd2a1b9650e20b1c8cc9af42b0640e0cd812b72ef0d897802c5ea8b7cf",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_5fold/fold-4/seed-11729.json",
+        "sha256": "7eb4ce170ef831a45bcbb9cdef29486cbcf8ed0ba68cdab6b95fec7ee87d2882"
+      },
+      {
+        "job_id": "520f93f03ebe63530ad5d13feb9639da934f814001b711429bddc38c22dcfbbe",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_aldehyde_pair_5fold/fold-2/seed-1729.json",
+        "sha256": "e82378baf907ebea796da36e8b6e72316439f0faa85113561915a8558d63cc27"
+      },
+      {
+        "job_id": "52546be9f584cba7b1b2a8fedb7fa74f55f809cd86b301813334cadd4c2b116b",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_aldehyde_5fold/fold-3/seed-1729.json",
+        "sha256": "479c6fbe96e4129d6ad11826e0876b0e6355c791bdff38dd17e45ada5fc96d01"
+      },
+      {
+        "job_id": "53df2fd506b6181d5f55f88e98b6dd0900a0d4a36372811fb4aa847f40bb9a33",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_aldehyde_pair_5fold/fold-4/seed-11729.json",
+        "sha256": "d5a4b53279d5568762c514b5076c537e52dd56b92576a03fe2ddf804c275008e"
+      },
+      {
+        "job_id": "548868efcc2a787c05d204bc3374a2270b93325e76f6aa70947dd7f9ea9fda6e",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_5fold/fold-3/seed-1729.json",
+        "sha256": "d45d74f20644841e2c21b479342c0645648f6979713ca68b60da4cac46dbb5e9"
+      },
+      {
+        "job_id": "54890ec32cd2b5faaf3be2068df6890c9db8a6e0edaa24a441b881873b40914f",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_aldehyde_5fold/fold-4/seed-21729.json",
+        "sha256": "857d7f77dd736968256cf9f275c5c49ed8701dd407aec4ec907e0ab9f30e6a3a"
+      },
+      {
+        "job_id": "54c47677232c8ff42774ebb915f99f4dc5caa74c0f319990ee64a6bdc9e1a095",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_aldehyde_5fold/fold-4/seed-11729.json",
+        "sha256": "ab02c9943e551a1c63e18e022e1b9ccacd1c8bf5c7bfc0c5a11eda3035675396"
+      },
+      {
+        "job_id": "54f58f0307c559700530fc471552fd530968398d736f5d49049d448d00fd07f3",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_aldehyde_5fold/fold-1/seed-1729.json",
+        "sha256": "4c4aa3ec802848dd71ce522b20d6c61af0b03c7a09b3436f50c46e3c4a674251"
+      },
+      {
+        "job_id": "5543611270a255132401dc2000316011d89c4367925ccdb252af4d9e4b0f67ee",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_aldehyde_pair_5fold/fold-4/seed-1729.json",
+        "sha256": "bdcfeeed8a8f2bb5236a7ddac6303fe04327a6b9c776d1a05d8b5cc50d72194f"
+      },
+      {
+        "job_id": "5555ab6ce29f0eba9296b6a7bdfbef2bfbdbfedcb9b8495254877d0796750956",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_isocyanide_pair_5fold/fold-4/seed-11729.json",
+        "sha256": "ba145160ce0214fb28e140cf3ae5c3f4a560c4f884354e0f0590dc7c857c8027"
+      },
+      {
+        "job_id": "5587e7be675b01a5ba27567b9f439fd077f7d8f5901c2e9765fb7ecf00c83d6b",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_5fold/fold-1/seed-1729.json",
+        "sha256": "d3bf5ef7a4142b46006ba03c64ad452de6a66b0af8ee61239016d0199f6df6dd"
+      },
+      {
+        "job_id": "55acfc3634e3bc24a4a0e405b44be4f6fe7e697c16a2d6b045ae258e72e6dfb0",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_aldehyde_5fold/fold-4/seed-21729.json",
+        "sha256": "4d3cc8659db9dae66f45190a1450803b847325ca072763cbb568cad0df67619c"
+      },
+      {
+        "job_id": "55d27be533a0f277394782037d9ffbcff6963a2cbf9b8ef77cfecbff5e9d6f46",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_isocyanide_5fold/fold-1/seed-11729.json",
+        "sha256": "d098103dea90802c638a4cca6cf1b9cdbdc0c503731d20ec98b2754f4914c0bc"
+      },
+      {
+        "job_id": "55db034aee8b9e90110b0b976ea2f2a2ce4a4ec099b854957dc34cdad872c467",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-3/seed-1729.json",
+        "sha256": "5c2067833d39c73bb81465e88e8614e9dec54a9098fc09570f66877c60dd7417"
+      },
+      {
+        "job_id": "55edb35cbf86f080b1905ce7e3780495f18e4c21a3b9844b9bcc73fa321f69b2",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-2/seed-11729.json",
+        "sha256": "080372d7e9c4f503a95d487accfd78d45e775bb6fd597e9c2736e38db81c9689"
+      },
+      {
+        "job_id": "59a43254c2fcce551e4ed4c4aa449d424e77e23ed33ee8c3ce927b6aa8be2daa",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_isocyanide_5fold/fold-3/seed-1729.json",
+        "sha256": "564ffd1e01429a5125765e90c00fc50cc67e1ba2e67dbd3fcdee8a7aae164d9b"
+      },
+      {
+        "job_id": "5a1092b7ee4c10390e4baf63087dc59bdefcaa20e1385ff03680ca380d663f6e",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_aldehyde_5fold/fold-1/seed-1729.json",
+        "sha256": "ee928478c2528698be0eed618f33edc672c82828b21e97f33a9101798054a16e"
+      },
+      {
+        "job_id": "5b0c55894d9c72faa732077ade7ffc3f87352019e4506f8d04c6fb4273229644",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_aldehyde_pair_5fold/fold-1/seed-1729.json",
+        "sha256": "688b2bbb5e251db505c09bb080b0fe62867fc17d0440758df3b2c374612e293e"
+      },
+      {
+        "job_id": "5b389f048b26fa1c809157b9b8d5b2005e6126d864fba0cb1a8890f1b7454e18",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_isocyanide_5fold/fold-3/seed-1729.json",
+        "sha256": "983bcf5e68be819088d83f706c695001673e94ff91705103d27f898c1f255467"
+      },
+      {
+        "job_id": "5ba1b6413e0fcab081c806ff93b55bb58a2a799e72f1a8aa910586450722608d",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-1/seed-21729.json",
+        "sha256": "b586e0e2cd6fc039580a2b7e68611948b5481fb68faaccdede607ed8ee889a48"
+      },
+      {
+        "job_id": "5bafa4cd1a4f896cd1c9dc6a873b36a2366bd5d3e02a2a9042b9c2f67c2f3030",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_5fold/fold-3/seed-21729.json",
+        "sha256": "b3d4c9698a451365d9c5a94299a21db6cd8b41ac98b01fd9c547782f96ee14a4"
+      },
+      {
+        "job_id": "5bf56625de38f57ba32ed5bed9b78e9309212c6095a7825a535bbb308f46e4ac",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-2/seed-1729.json",
+        "sha256": "3a8f35bdbe25875868142fea396b5ca09c93d6ff33eaecf1baa5eb477960d502"
+      },
+      {
+        "job_id": "5c468fc375be6ed6e1f796bad0ae676a11efc9a13e7f897a67f28bc20134f52e",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_aldehyde_pair_5fold/fold-1/seed-21729.json",
+        "sha256": "f89671e9999d49ca7375d5fb902767941a0cc1ca438083ff68f7dff1cb9a0d63"
+      },
+      {
+        "job_id": "5c56e212fa618871198e2d2142431091ce00202a325dc11653c6903ab616133d",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/lantern_random/fold-0/seed-1729.json",
+        "sha256": "573807c5f83d7ef9c21288d4e45295fed712755871daa955959f13983b183d73"
+      },
+      {
+        "job_id": "5ca2c6603764940f8dc8b4d57ee45b1c9db83e325476f0ffd7fd7d847348e4ee",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-1/seed-1729.json",
+        "sha256": "4f7772493e22286b7817aac8937289705ddf6b44118f33b9afe46d206a4bb9eb"
+      },
+      {
+        "job_id": "5cb8f65643d19695c6a3bf794dbb0259ffd9fa39f6ce3118a39bff8772a09e70",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/lantern_scaffold_balanced/fold-0/seed-21729.json",
+        "sha256": "e0abde8da1a2c709baa0b735791f1b3018a17c38e2336e56c065bdd2f63580e9"
+      },
+      {
+        "job_id": "5da6d91799ca6db66e1fd1f315d1ee8fefed4a9767394e2d7cc1dedf976d5d07",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_5fold/fold-0/seed-11729.json",
+        "sha256": "b4615597c7177b525bd20266f88bd8c7e2a01f87a5ad523f527db7984fc6b2df"
+      },
+      {
+        "job_id": "5eddb11bb6df3096fcbafc7f3bab3af0198b3217ac679c613fa8bed4f748cfd0",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_aldehyde_5fold/fold-0/seed-1729.json",
+        "sha256": "933da409e6438e78ba48c45a248ff639ef06f29dad77b26589df7c8a3cd73a72"
+      },
+      {
+        "job_id": "5edde33fe11ad722140664c1ae8e84e0f4e4b6c1c806ed75fb6d576e9f441bbb",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_5fold/fold-0/seed-21729.json",
+        "sha256": "0819de46fea7dd46cb01002fdad695216eb025c982c743838f8aa219dcab3ca6"
+      },
+      {
+        "job_id": "5fbf37c80c4de9320b7f43d3a8bdc03c69f93f5a67c33522ad93203b52d89863",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_isocyanide_5fold/fold-4/seed-11729.json",
+        "sha256": "1cef8f8947ba4ae782947397f07c0e05bf268347d26693860b114fb9dff1819d"
+      },
+      {
+        "job_id": "5fec1fe548ea03b2cbf65b0e33a47a04c551b932af397680d320439bf8a0d2d7",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_isocyanide_5fold/fold-3/seed-21729.json",
+        "sha256": "0322076d8303442466a6c74b364a9e6fab90979c45c17240a224f71ab57654cc"
+      },
+      {
+        "job_id": "6108033e950cd8e1fe4f4a840cd42bd6b26a454757563c7c9914414d057778f5",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-3/seed-21729.json",
+        "sha256": "b4425c33215b88cd57acfc2d8d38f20ae0c1ab0ad13914a043bf2c207df64b03"
+      },
+      {
+        "job_id": "611393039305a14b0f5f97724db821737c3fd6d2ce252183428e1cb86aefd622",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_5fold/fold-2/seed-1729.json",
+        "sha256": "42b9af65be839ab2eb7b3b5bff7683243608fdbcdfbeb5c2ede89dc7020c4aa9"
+      },
+      {
+        "job_id": "6286ac5cb0aea2b67d3614a64d3c2105f5c38654f266dafa7250d46e6e4e05f1",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_5fold/fold-0/seed-21729.json",
+        "sha256": "755bdb458c484c3ddb0f8edf3b7b8a099f69d99746301a8ae6d34d9f2160c534"
+      },
+      {
+        "job_id": "62ffc8b83cc52a0ae67425c0ae4682af54e822e751bddf9e574bf59d52489b51",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-3/seed-1729.json",
+        "sha256": "442b17f1a7f46d8bad6f419eadcde4f3077887b1a7ce05d7a313a91e4eb16ac8"
+      },
+      {
+        "job_id": "6356ed50ab4217a2a61f931b4082bea347e4325c8f4f3d5c80f10ec4266091af",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_5fold/fold-3/seed-1729.json",
+        "sha256": "16d1de5e5a3f54250670e1dab62e3c9a83a66e5a764ef8d98eb8258d0422a854"
+      },
+      {
+        "job_id": "639ed05026c4f32e47c513f79511574ecc061655c1d9034fe8e376943396ec43",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_isocyanide_pair_5fold/fold-2/seed-11729.json",
+        "sha256": "5153bb7290ffe285adbdd3da5b657125f4399a52a44f29a9caa49933a42147db"
+      },
+      {
+        "job_id": "6422da2577a241161002db62de64e4661c336f94acff9b40f7d9c6e68dffd98a",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_aldehyde_5fold/fold-2/seed-11729.json",
+        "sha256": "0044584649ac1819030d9df7855b30c40c6e03af59f10462cc02ebfc1b88ac30"
+      },
+      {
+        "job_id": "64b6a7930a311472a9fb06dec84c9e70407f4a0845dd8cdd0e24f5107e730dd9",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_aldehyde_pair_5fold/fold-1/seed-11729.json",
+        "sha256": "d9aea4e77a929c22a5f2eabc52487ed8b34f5c451b6193f242d8035cf16ae6a7"
+      },
+      {
+        "job_id": "65de4022ff88aa5805b1af2029f94c036e50f873171244144fddad59406df284",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_aldehyde_pair_5fold/fold-2/seed-11729.json",
+        "sha256": "1eb1b9cb3109ae7cb2719cfb290cc5c0478c799bc139d522b742b7a98f322153"
+      },
+      {
+        "job_id": "660718a319d2ce6ac8a0660206c1ab9e27217149a7faee8429e86a7589403579",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/lantern_random/fold-0/seed-21729.json",
+        "sha256": "d4da0be911c0c674ba11e0d5eabe40613c43fd60f8489b77001d28cba7430f50"
+      },
+      {
+        "job_id": "66f7137eeef5f00d11997ecef6c23f2332046a8001610d8c74ab19226ccbb202",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_isocyanide_pair_5fold/fold-2/seed-11729.json",
+        "sha256": "38e8eced17226973a355cd442a5f35441849162b42b834f1fe5df60a04410302"
+      },
+      {
+        "job_id": "677f3d7029f6b3f7813816c4e5c1c0d7c2f0c5983626dab4eebe4cb5d2d4db2d",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_isocyanide_pair_5fold/fold-2/seed-1729.json",
+        "sha256": "873d68c36e86d9b2ddb2991d9440299cac4478765cc24fb835acb3422b857543"
+      },
+      {
+        "job_id": "678734f290bc9165582218a08c8bc19fe52391a94901f7e15731b3013ef67b3b",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_aldehyde_pair_5fold/fold-3/seed-11729.json",
+        "sha256": "065b523ffcbdc1a66eeec0fbebb125e7b6cb983e8d19b6077d85c8f5a09c32db"
+      },
+      {
+        "job_id": "680be556b881ff68f5fbac7cf93e07c683d6b3dace522311043d45b4a9210948",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_isocyanide_5fold/fold-2/seed-21729.json",
+        "sha256": "a4014075f9b163531d3ca1be7f14e9136b6bc4671df4de173621364ebf706082"
+      },
+      {
+        "job_id": "688d302f82371e45d29cc3f49c328028cc467222fdbe6dd6fa6c12ecba16c84a",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_aldehyde_5fold/fold-0/seed-11729.json",
+        "sha256": "309362a7d32e34d05f0535ff81082d0522fec569d234c23a550a8e16081a88c2"
+      },
+      {
+        "job_id": "68993482697a3e48cef8f71b133d081524d2e73b2657284af6af2821f411c20b",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_aldehyde_5fold/fold-2/seed-1729.json",
+        "sha256": "70730ab046157636a3e455533907e64e39fd35920aa7fe1e8534146f0c29925a"
+      },
+      {
+        "job_id": "68f075ec322019c4dc24aaeca096276154da9f31b10beb370fe403ef09e34c4e",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-3/seed-21729.json",
+        "sha256": "8996d98e913575c2076c54f40f298320e807bf59b1b4d4634d0d838a18eddd5a"
+      },
+      {
+        "job_id": "68f6bdd54c9c1bc742f13fd1155cd7c6cea7931eac1997ddeb431dfcf7b8e9b4",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_5fold/fold-2/seed-1729.json",
+        "sha256": "2703c89e9bb913cf3a99d60005d9c748bfefa7c18024c9666023881828d659eb"
+      },
+      {
+        "job_id": "69117d0b05c6947be35be427778fffbc589bf05051dd7ddd5dba9a31c6d276cd",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-2/seed-1729.json",
+        "sha256": "ca73af7fbe799311660198b20cefb752972c32fe599feacfb124ad644061eb5e"
+      },
+      {
+        "job_id": "692b48593954cd5933095601bba573b07ee0b5a4351e8cca9a9e0ecfaa82d756",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_isocyanide_pair_5fold/fold-3/seed-1729.json",
+        "sha256": "fa64be08b39deb0fcde2688298a3acf2fea363c9082f495ff15916837b766e8d"
+      },
+      {
+        "job_id": "6972843ac46cc0a0603a815ee71da9f87de111d8dda294c28515525cbefc0774",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_5fold/fold-4/seed-21729.json",
+        "sha256": "f7ac92a826dc7278ee58411b23a1db3bd77ba05e1046e8346b944bcd2c4e4b90"
+      },
+      {
+        "job_id": "6a239379ccddd0268b7edc7a3e20ba0adfc4f130767e5312eca33037b8ca833a",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/lantern_scaffold_balanced/fold-0/seed-21729.json",
+        "sha256": "3e7438567f7a2c56a51d38e3d1e280457fd6e76243ad0a063c76a9166e4999e2"
+      },
+      {
+        "job_id": "6a508322dc31297dfb00b55ef4310c5ede9aec93d535e890d455d92a36a34bb3",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_isocyanide_5fold/fold-3/seed-11729.json",
+        "sha256": "ea246b6960bf0289559011f9c47e765a023421599ae79202a975a9b3383954c2"
+      },
+      {
+        "job_id": "6b7c86e34370f6921b926914063cfb01266b7169e9eb9a22a5183e7c63c76d90",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_isocyanide_5fold/fold-1/seed-11729.json",
+        "sha256": "31d2be8f62a26c2721ee09fa91c1383fd3cc10cbdd64d6b991ac8fe964c00fb8"
+      },
+      {
+        "job_id": "6be893cc1bc4b5ca283af9f89a33fd18d74fd20cb045de4cf795303b34dffa66",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_5fold/fold-0/seed-11729.json",
+        "sha256": "8085ac5102dfec33058b5dfe626a77054efb108e4239535ba3adea57a4f2d79a"
+      },
+      {
+        "job_id": "6bf5c631194e8dd682074415f5eecd59ee5ca5496927b644a29d68d85133e269",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_isocyanide_pair_5fold/fold-2/seed-1729.json",
+        "sha256": "8e8553190f698357f5eb5f74acb388f9357602e950a5e7e1dd17aaf1b19f69a1"
+      },
+      {
+        "job_id": "6cef03c70e449e44743fe81253a0f10d97851d1616585e498f9ab8aa2b40f091",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_aldehyde_5fold/fold-4/seed-21729.json",
+        "sha256": "a24e6f2dd1937336b59b8f5770dc83d6b75b9c529a0c76d9e3c0186f4b962b0c"
+      },
+      {
+        "job_id": "6d331b4aa748bf2dbca18884352dfaada94e4caae2f4b801bd72509fbfd5d281",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_isocyanide_5fold/fold-4/seed-11729.json",
+        "sha256": "7d6125dac02a78ca9e85e3968c411b4ba8adf07ad2319079f56eca05d5a71c9a"
+      },
+      {
+        "job_id": "6d6ec073e94fa42bd0b52cde899e644e80669d97d6fc96ed0d1b4c3c7b38b6f1",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_aldehyde_pair_5fold/fold-3/seed-11729.json",
+        "sha256": "97bc6db8458b5bc27fe9f591932e6cf9f4950f2e3d492c918730ae4076bba1a5"
+      },
+      {
+        "job_id": "6d7b673a71dcc22991371c1306c07046d2fa31d14de8d055f8c3c616afecd402",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_isocyanide_pair_5fold/fold-1/seed-1729.json",
+        "sha256": "0655d053419fbe675aecc3d06a124e7b1edaedabb530ae60e39cc094c21f76a5"
+      },
+      {
+        "job_id": "6d80252fe54149adb058e3f010a94eb8120fabf9963aa92ae0a8cec06db300b2",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_isocyanide_pair_5fold/fold-0/seed-21729.json",
+        "sha256": "c1d9a1bd3a2e4761deed93bdfadcde1cbcf1f6115123f2c9ed942b670ef5d091"
+      },
+      {
+        "job_id": "6dc230045198532622b225ede6be2682c0e24c34ee0d268037799a494073872b",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_isocyanide_5fold/fold-1/seed-1729.json",
+        "sha256": "8ada943dcfb2f41a9b1dbf15ba5e94c01c82d5627626d9f4d7df725e9e0f4b04"
+      },
+      {
+        "job_id": "6e5b9e96862d877ed95baf1216ca8179e7a540e66d43f3c5a1697ad30d9df19a",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_isocyanide_pair_5fold/fold-2/seed-1729.json",
+        "sha256": "3f7d86e6ff1477b55078e17ba8c0ec8f3641b3bac50c130a7c8e1bfbd8e6c325"
+      },
+      {
+        "job_id": "6ea7938f8a224ef275591609189d68b4f98d804aea55571810852d540fd87a7c",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-2/seed-11729.json",
+        "sha256": "0c9320e7f8b19c6e545e6896212be8bde77c53b58045ad0134643ccf7b7dcaec"
+      },
+      {
+        "job_id": "6f2d916048e8caf062bdb5a717b469589f318c7adbe3527f1a10441c315b68f1",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_aldehyde_pair_5fold/fold-2/seed-21729.json",
+        "sha256": "3ec2cbc4bb7a93954cb9705a35f3ba9a5c174f708d4049cfa6543a5f75e154ff"
+      },
+      {
+        "job_id": "6f3aaa5db12ddd5233d993344794b22743e0c1d5d429346fd38fc22395f5a160",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/lantern_random/fold-0/seed-11729.json",
+        "sha256": "682ddaf8542248ece0ed52d27f7ef65cd762a3e1c5461e40fe6a62088b092758"
+      },
+      {
+        "job_id": "6f88cdea5d860bc926c48b5c31d53dc526ca9ab4180c44fa20f53ed41bfe468a",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_aldehyde_pair_5fold/fold-2/seed-11729.json",
+        "sha256": "152644d91d8679813ce3a44733ad4d7d3137f20728544367724c8be1c8af4825"
+      },
+      {
+        "job_id": "7000fc4c32536261b5a7f9254598a371233019b835cfcf2f2a0cc28042f378f1",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_5fold/fold-0/seed-11729.json",
+        "sha256": "b03eaa61f09c638af1233cbfc832e2cf1f7b69453ad561cebc562c870cd974ef"
+      },
+      {
+        "job_id": "7025a1cfaad1e50ef06ebe946543dff69dccbce4f5233518d6f6ad2486cb1822",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-1/seed-11729.json",
+        "sha256": "5dfd76e6ef3032fac2b954ed7ce85d6c5cab5dd58689fe1c5b4aa575a18c57e4"
+      },
+      {
+        "job_id": "7028c7b864a334c25ee2de90db38e4d78aad85b4932a09175c691809f4e85cbc",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_isocyanide_5fold/fold-3/seed-1729.json",
+        "sha256": "ddb683c3ba1ad0082d9f5ad5c5d0f0b6de164126a85f234a529358ea07f46b78"
+      },
+      {
+        "job_id": "7033584807f7ba34cae880d242da6acdf5f537fadeef7aa24edd332c332ca983",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_aldehyde_5fold/fold-4/seed-1729.json",
+        "sha256": "a306df2cd60cbfcc3bd324d210b759b4b79a5840881b3961b4052b5dde9dcf64"
+      },
+      {
+        "job_id": "710be6318154e8012bd5fa6105eaf38be548c8baa55bbb65138a7fa260e5b12e",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_aldehyde_5fold/fold-3/seed-1729.json",
+        "sha256": "c56637ab6e5539000eb10a6c321d744a99d0f5fd36dc27dbf1504420fb2ffbe9"
+      },
+      {
+        "job_id": "7125f76efe18541ff4804d86bf207adbde46de868c9061810d089d7edc4d10e0",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_aldehyde_5fold/fold-4/seed-11729.json",
+        "sha256": "72be6f150741eb6ccf0f8ced3edc301ae8b5d65f9cd3b211fa765b89a6e0dad8"
+      },
+      {
+        "job_id": "713702d66a443d940dd4865c8ae2b2fcb1b72bef6a12c80156971aa3caf5c258",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_aldehyde_pair_5fold/fold-3/seed-1729.json",
+        "sha256": "9964aaa66f5cdbaee50b088ff0b62ea4a130a9e80fc644812d1d3d40a20662c4"
+      },
+      {
+        "job_id": "72ac30a27538034cb694760176b961ad5b427ef9b6f44997116712b5391155d1",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_aldehyde_pair_5fold/fold-1/seed-1729.json",
+        "sha256": "8839ae46dbc568c583ec2f4123f62497f81ef649f75c8cb348568c95bd1f505e"
+      },
+      {
+        "job_id": "731b7373f9cf13e941908181e19b0fc7cc4c87dc026eb41b8c20d35e2f6f82e2",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_isocyanide_pair_5fold/fold-1/seed-11729.json",
+        "sha256": "57b1b7dfc211d779a8f27327bf20ce3c149b89d56d6539c17734dec76caa0658"
+      },
+      {
+        "job_id": "740aa28de0eaa823f9957fe29c9feb21dfe05b9781dda00e34e96acc2393316a",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-2/seed-11729.json",
+        "sha256": "a762513ffef0ef8d6298e512ccbb2ff0965fdf58aae42912a3da6c8d522cc2d0"
+      },
+      {
+        "job_id": "7466461d5897a536c0d6fcab462bc19e796329f60e8c0676175b0ab30711aa12",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_5fold/fold-0/seed-21729.json",
+        "sha256": "8699ff0237c5aeb7c951126c683a29a284393dac07114461f624fc58cb29be56"
+      },
+      {
+        "job_id": "75d4a6f23e895a57d2de555fd2c60ff3ffec1371555f374a3f9992fcb2d8da98",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_isocyanide_pair_5fold/fold-3/seed-1729.json",
+        "sha256": "5de0b0c789d1ced6847d236506c597c3c5eaf3d570535981a85b8a9a27f56cbc"
+      },
+      {
+        "job_id": "76fda845280aa1e2ddcc757290639a1974efc3bf2431c68e75a946be0a843563",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_aldehyde_pair_5fold/fold-2/seed-11729.json",
+        "sha256": "1ff80a15b92d3a0323f8894e9767a6715f24859bc23a16cfd657fbbc466109a8"
+      },
+      {
+        "job_id": "779e09d227a9943599016337a1dca30282bac507079095a85d2a22d6949f0dca",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-0/seed-1729.json",
+        "sha256": "02d654ea748ca0069aa43a2e0962dd9e79951467ecc16e4ccfef22dd68f8058c"
+      },
+      {
+        "job_id": "77c7fe140edec19d3f8db799c8776801660661c44e17dfdf098e2bc427039a7a",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_aldehyde_pair_5fold/fold-0/seed-21729.json",
+        "sha256": "afe9f78f9b17b2e3b5dfad9940517459c333de10be84f03a1df7afa073d83bc3"
+      },
+      {
+        "job_id": "77cdc3587ecb96132502d5356cb26297cfb0e6d8a55f46577a118feba5cd4a0b",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_5fold/fold-4/seed-1729.json",
+        "sha256": "775ea164490e92bc8b82ebc1da59bf97028dca3309dbe6f974ee4b45455cc463"
+      },
+      {
+        "job_id": "786d7d1ed88ef41164fe57330c7d5d8ad644bb5bd869208bef866f798cb59ce6",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_isocyanide_pair_5fold/fold-1/seed-21729.json",
+        "sha256": "21aeb62d060a4fb7c72a3f0d9fb26b2ab25124a6eb1e96385c4bf394cf50453b"
+      },
+      {
+        "job_id": "789e72c0872bb1312ab6edc0d8fef11c832b3f1570ee156618e3d696b9afcb6d",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_isocyanide_5fold/fold-0/seed-11729.json",
+        "sha256": "e9a77f71ae172413adaef3eb8619850a372dae448a58f78beea17dd38c6e7369"
+      },
+      {
+        "job_id": "78cc24772e884a15abf5cb4e3dbda266fe2242062ffed6e033ca7c828c22912f",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_aldehyde_pair_5fold/fold-1/seed-11729.json",
+        "sha256": "8a541a13745e39a0ceb4f1707f4cb70957ce8c727aa7bc963a130bc527ea4a2d"
+      },
+      {
+        "job_id": "78d34203b35a8faede460efff97c4c379d298b711df59841af16d3378fc9c5c7",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_isocyanide_pair_5fold/fold-3/seed-1729.json",
+        "sha256": "8d562874a07e6eb8ebe6d1b18cfd94eef58a15865f053f76f05f0bfc902548ec"
+      },
+      {
+        "job_id": "79341efdc13de229affbe5d79184458fcd915e80b1adb46666fa0731f7962aaa",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_isocyanide_pair_5fold/fold-3/seed-21729.json",
+        "sha256": "1e978fc7833b449b20223281913569bc9a28bfc95f62ff1e3b8c6cded12c9918"
+      },
+      {
+        "job_id": "7949f37b9b01f203cb0cf29a10f3e35c2d4a7ca72371868df99530f53a620600",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-0/seed-11729.json",
+        "sha256": "329c4e9915916d4420ec095b29baf9220cfdc248195ad894708e48a3adde4802"
+      },
+      {
+        "job_id": "796f36e2cefd8ca40be5c9431d2e7034822447eded561c2d63e331d2c1898fb3",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_isocyanide_pair_5fold/fold-3/seed-1729.json",
+        "sha256": "6a2eda5b2bf9d882d25295a80021c1c399f204c8072c267012d88f5b7ae90ad8"
+      },
+      {
+        "job_id": "79efee32fc7b29bc05bd0e1803d992b85c91d151c523e4b991ac680ca96ea9f9",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_aldehyde_5fold/fold-3/seed-11729.json",
+        "sha256": "1be187c23d3b1c53bfc986ba25c6338cab69d70e4043909bd6c08baae7834f4e"
+      },
+      {
+        "job_id": "7a68d30a2df059643105b535cf9c53e4673f3cb52fdcdaf7e2ea337006305064",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_isocyanide_pair_5fold/fold-2/seed-21729.json",
+        "sha256": "04a158ec270ea98e03434afe2faf4fa1930f1c69b90261121946e060d660755e"
+      },
+      {
+        "job_id": "7a6ed086bca48944d0971b01f5adca1cdb302adedcdf8e2ba9866ef251a00f58",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_aldehyde_5fold/fold-1/seed-21729.json",
+        "sha256": "8f210dcd08ffbb1c48abf487c1b8557271a72a10c4dabeddd522603d09329565"
+      },
+      {
+        "job_id": "7bd50317848aa40e937a1d02c963bc7f287d7a56809523a35174c6e25abe4c29",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_aldehyde_5fold/fold-4/seed-1729.json",
+        "sha256": "461855eb55540f0f7ff685533c76676e8563d0fe38286bbc70b33a107b7a4bb5"
+      },
+      {
+        "job_id": "7d00d706c3ac3647b9adac4e1fca96da68d40ffa10164aaf4e41363c066b7074",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_5fold/fold-0/seed-21729.json",
+        "sha256": "18609ee445d01fbe77315c2d39bc201085b90f659d43c511a431a4cb15b99dd3"
+      },
+      {
+        "job_id": "7ddea3fa65b289e8bc13857da1c336e03ef00632b6bebe5cd2ab43aaa939373d",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_aldehyde_pair_5fold/fold-4/seed-11729.json",
+        "sha256": "8e631d8e5c5614a62180eb41df2abd2a1d36bb2c8f7e804434ac58e035813300"
+      },
+      {
+        "job_id": "7e92b4d0fbb139c45c04f3731aa33c7d5783b5ea7017a212221ac4f8c71448d8",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_isocyanide_pair_5fold/fold-0/seed-11729.json",
+        "sha256": "fefcc79343e2102fff754248538a5121d144c91f91f607ed729f52c97234e4dc"
+      },
+      {
+        "job_id": "7ebb90e2bbcbde4f8a177135c169fbb1efa97e9f02547651ca3475c339684dfe",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-3/seed-11729.json",
+        "sha256": "e492db85075165c8d9bf9570bf4ecb37d9f0ba982dce8fcbb3fe905890d96aac"
+      },
+      {
+        "job_id": "7ecdfbf829a497e5e3497b50209b59e881360792ecfe8d45b92f9e1054832b31",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-3/seed-1729.json",
+        "sha256": "0f74a5f97c62029959227229641f5d5164d947827a5d1a6486d4bb1661ca14af"
+      },
+      {
+        "job_id": "7f08921b18173916314b21d5500f297aa1300fb799bcf911a0931f9cea0fad59",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_isocyanide_5fold/fold-0/seed-1729.json",
+        "sha256": "58955a3fca1d0aff0c718139f6ef7a834c663cb099e4eb3185e2804a51273bc5"
+      },
+      {
+        "job_id": "7f10d80da12a70a88527db5d9b9a1750cf6091eb56c79e0cd73b1e557312c3ba",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-4/seed-11729.json",
+        "sha256": "8d62c7762d0a2b024e566d0f4aebd439816a24fbb3dbe0e4dbbb19dbfd547db3"
+      },
+      {
+        "job_id": "7fc55f3c2383336d977f740d60f771ef651ba27168e48a7d4658ad87b1a30e34",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_aldehyde_5fold/fold-3/seed-21729.json",
+        "sha256": "083087cf88371ef825d954668ec66a6c16e94a47fabb12878b2e822e3876cd92"
+      },
+      {
+        "job_id": "80eaaa708bb9738adbc6fa35b6bcb38f56d3175b6d27d1fb2cf135400ad74b7b",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-0/seed-21729.json",
+        "sha256": "98c96db40f496cc1d8e9be89898beb47458eea128ec4b812687b93f8a972231f"
+      },
+      {
+        "job_id": "8133f9857bca1c88bf88ecf34bf63af6b77f4e9cd09968434e47e82e3eea3d1f",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-4/seed-11729.json",
+        "sha256": "eb9a91da27213ed236bf9ba44560bcf02bd10c1e9848db309867efcf4ffb2083"
+      },
+      {
+        "job_id": "82151c630cd6bfb24408f78712787b0f47d37abb6797f9f8de89a9b8166b517b",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_5fold/fold-3/seed-21729.json",
+        "sha256": "ec64a7e4323d27dc081d979f849c25c2ef77bb397f1e98e21877dcd3ca339dd8"
+      },
+      {
+        "job_id": "82f56a86d40e0f04b07e6d1cc92c163c78e3b44c2be9578fa181cf2cb831c6d8",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_aldehyde_pair_5fold/fold-2/seed-21729.json",
+        "sha256": "5d14e86be96f44b5d73b9fdfc708e29c958f9bef35074543852a64b352ac4db5"
+      },
+      {
+        "job_id": "832faefb999f4d67a30f01f8923a58b25b09ee27a4aa8c738cebb9dd635d94ee",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_5fold/fold-2/seed-11729.json",
+        "sha256": "e37ba958ea65183972410c3a1f7f912fa5fd1c10e6220b2cfd79fef6c6c83ed2"
+      },
+      {
+        "job_id": "835af087ffd7a784531dc65bdb459b0ff3af388395b419bd9c4f87bd61df2494",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/lantern_random/fold-0/seed-1729.json",
+        "sha256": "9f833f0f72f86d9852811341f84076cb141d812e40162a31d32a2eb916afa6fe"
+      },
+      {
+        "job_id": "839398f53e400bce9c45f3275307b7b6d9d3b88e83e7ea7af6f55638a28473b2",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_isocyanide_5fold/fold-4/seed-21729.json",
+        "sha256": "fb898e752f78ef145fd778088afe91aaad263e7791d062ed56e92ae24c373644"
+      },
+      {
+        "job_id": "83e9eae42bfab19a9b842abfa9378976d816ec3a26ad7819fb21d03e5d7e8a9a",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-3/seed-21729.json",
+        "sha256": "40f99082f2b1ba39f744e844516ef743e6253845fb5d5b2d1b3e4a051618327f"
+      },
+      {
+        "job_id": "852d2c6524ed861861070767aa0d7782838f4e5abfb831da2dc6c7e58390fa31",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-4/seed-21729.json",
+        "sha256": "86755fb43408c92420523304f77915c54488b5c9c1525df341e3520ac18dc20a"
+      },
+      {
+        "job_id": "859362c67c29b8126131771b15a7b2adbabb8929b68e3ff6ffc3d43352b5e27c",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_5fold/fold-2/seed-1729.json",
+        "sha256": "3ba8f6b5fb44965ce9fae4ee4b7b8b18b3eac60958cd4bae499b5accda6ec219"
+      },
+      {
+        "job_id": "85b2b2e3b4007b18eb20d6b0b997b0fb6f27fa93ac4ed13af473563533b3a1e7",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_5fold/fold-2/seed-21729.json",
+        "sha256": "eb490da3afa4996bb6c78ab9ee78bd626d2d65a4a447db8f88fe67bd3fb950d6"
+      },
+      {
+        "job_id": "860bedf1513371393d23033f12673bca44b1a8ecc1b30d12291b490d4bedbc71",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-0/seed-11729.json",
+        "sha256": "cbb16789fe1d91de7a511b7e739371893ec7c4ced5970924032a4058878b460e"
+      },
+      {
+        "job_id": "8613d126d1d06df0ce9e5ffa9ba4e437eccfd650dcd75537c87bbe1fcad1ce83",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_aldehyde_pair_5fold/fold-3/seed-21729.json",
+        "sha256": "152869b981b9aa81e68f2f3be61fcd14377e43ddd7c69333a25c1e185070388a"
+      },
+      {
+        "job_id": "8689e5500efce21d30c75d825d18515625b2f2bda049b94ebe1817e6f93eabfd",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-3/seed-21729.json",
+        "sha256": "5471965c23074f2bb21f642c16fc14c083ca16afd6a5f50684001b65104bd0ac"
+      },
+      {
+        "job_id": "8705592098242fa497b7a64caaf130814939a60c1dc6619672a1de2742c5e191",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/lantern_scaffold_balanced/fold-0/seed-21729.json",
+        "sha256": "607b8f5a26ab4208d6786feb32a15bb93958394517529a8f97d42c0dedcc3fb0"
+      },
+      {
+        "job_id": "882c1d92f8aa1bf41602c02aa7f93c05fc645fd3542b00d73be34dd8bf64e0b6",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_isocyanide_pair_5fold/fold-3/seed-11729.json",
+        "sha256": "85e8d8066d2d38109b75a2032d455df837eb5ca945c0d9a37dfdc41a1b3110dc"
+      },
+      {
+        "job_id": "8866731700b946bc422fccd80f566927b9720f0f10d59128b5f0d62a76cb1cc6",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_isocyanide_5fold/fold-3/seed-21729.json",
+        "sha256": "faa5eaacb03baa12611bbab2c068d713974d96d5efa3be019ac2e60e8ecd23ee"
+      },
+      {
+        "job_id": "895b72abfd6beebb7b6dd0076b2aa10d30e8f42ca8dcede306ec211dec0ec698",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_aldehyde_pair_5fold/fold-0/seed-11729.json",
+        "sha256": "982b857c9779287b5f01b5a5d8e47a3af392519eb34ee24fb0c396f85e7e0dae"
+      },
+      {
+        "job_id": "8972b7af38bbe775944c0c4283c0f2b25b30725a9be6f7f9fd780cbe256499f1",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_5fold/fold-1/seed-1729.json",
+        "sha256": "e54b4954b8ece2f3233b9f4665e1ca806154332fffb19cdeba15114c3d176d0c"
+      },
+      {
+        "job_id": "898b6b771d5c338f02a249bc2c76fe7ffba8d047764fe3c215b633dd6dd7eddb",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/lantern_scaffold_balanced/fold-0/seed-1729.json",
+        "sha256": "98e508e81b14a1d54930794f6efadac4d3759a3abe815ab096793e1b6e491ee8"
+      },
+      {
+        "job_id": "898d8c607ba6ac0369d35adc540991b2e0af9e24815d6d0e6bd939527c850bbb",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_5fold/fold-1/seed-11729.json",
+        "sha256": "fd603346b6d50c45e1c9753b584754161c9430773709bbc2842f800af23a9851"
+      },
+      {
+        "job_id": "89de4b2d2c3ab034e853c11ab43be4b533ccffc5b1b41c90ee120d6a6239cdc2",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_5fold/fold-3/seed-21729.json",
+        "sha256": "d307336a586bd5ed7cf49e3a67682d069ffcc16dafa4ec15f19d9b1d4e126e0c"
+      },
+      {
+        "job_id": "8a371c776557bfeb973456f4bf10ef6dff560377089e8bb952b7e38a99d91a4c",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_aldehyde_5fold/fold-1/seed-1729.json",
+        "sha256": "6fedb8c985a1cdd8415a4d7561c062b90dcc06ef88d6b4ecffcf94efc1133ca5"
+      },
+      {
+        "job_id": "8a37ecffd3ad54caf5e99320bfff24f1afef2a069fbcdd649f63e9cc9531012c",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/lantern_random/fold-0/seed-11729.json",
+        "sha256": "de5caf6e671f7303d62899a27e6cb8a74cb19eb810bacf78408cf330dcbcc73d"
+      },
+      {
+        "job_id": "8a427df896fb05b4ad033f5c6e1271aeb9a025b3640f69dc2dd1b7fbfd3ed76d",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_isocyanide_5fold/fold-1/seed-11729.json",
+        "sha256": "a27921cf7fd41b85beae408af1f41e0497344f58f0746cf8d3fe96d0fd0926a8"
+      },
+      {
+        "job_id": "8a6a42f5bac1ea34429ebfe0b67061fecd13e73dea097a0caa43616b2ee03759",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_5fold/fold-1/seed-21729.json",
+        "sha256": "76279eb68b2d80a87b398e4c33709fb3d352047d7d27bd483015ace6af1e3923"
+      },
+      {
+        "job_id": "8a99c820d72887a628fe5a85b5cde85d3023a7ab82fda892364d94f191f9c214",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-2/seed-1729.json",
+        "sha256": "04e2d1402a2f713ae71c8a3745c695d3c9e50a53f5fe82dfb04d7311f3cf297a"
+      },
+      {
+        "job_id": "8bd7642b3915e9ab7101f9a7bf30a8cbbf0c657d327ac7407e1604980e779a31",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_5fold/fold-2/seed-21729.json",
+        "sha256": "ccbd1e0abceca4bd8bd0bc9e9be3305e107f5eb5ffe1c2770c193ff67c375337"
+      },
+      {
+        "job_id": "8c60257cda6c830841bb8e468836a4e9f32aff5c346ee89cfa85bec03bbc0f30",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_isocyanide_5fold/fold-4/seed-21729.json",
+        "sha256": "c47b9785a6cbe243396361d126fef78baaaecbcdba60b36d7ec8d2999302d72b"
+      },
+      {
+        "job_id": "8c8bbb8c3a0bde242cb4a952f1f611a2404b834cd4422f151b8517fefe16f5af",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_isocyanide_pair_5fold/fold-3/seed-11729.json",
+        "sha256": "ec3ea8eaa661a34db1ba82bee22e69901cee4b8f25802ec05776cb1b1433458f"
+      },
+      {
+        "job_id": "8ce53a079f0a8f8557db16a6dae76023b0053780578704e9ccf4b9bb905f3884",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_5fold/fold-2/seed-21729.json",
+        "sha256": "10e971c28c5b5ea4d93f9367bb7aa433ff3a581a2e104e82c48a4aa45cd394a4"
+      },
+      {
+        "job_id": "8d1e415c4805df2bca791b8ee1f8f0f3becb69984aa9a4aed62f9df6ae961a4e",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_aldehyde_pair_5fold/fold-2/seed-1729.json",
+        "sha256": "58e6d8bd89f0fd422e20cb985facfce94ebf81638e84f334c966ae24598ec037"
+      },
+      {
+        "job_id": "8d963b53eb1346a9d12d5e82b86d568d3e7a06a0c7e4872240bb905818c58a94",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-3/seed-11729.json",
+        "sha256": "eaa6e58e649e9891196bcadcacad0b90ebd95a08f4589c7a670c6051100b3634"
+      },
+      {
+        "job_id": "8dee60376482de5981f42949796c2fd6971b0ac1715e8b8e2fac76b61dd6561c",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_isocyanide_5fold/fold-2/seed-11729.json",
+        "sha256": "1358a54ef4d42eaf6c686a43e9416a9dcaa13e8dc159c39f43733f8fa750b8c6"
+      },
+      {
+        "job_id": "8eafb8bf92bbd5776da143fd5a26ef85e87c6bf570371b5215e9db8b8876841a",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_5fold/fold-4/seed-11729.json",
+        "sha256": "df1ff130e446c018a04cdfbc6639d1c8ca0d7e78ca4a82d17157a9da977fc91b"
+      },
+      {
+        "job_id": "8efb7c4a4255cafbaab56f43d037b7ff4387892e11b5e7a777230009e6729099",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_isocyanide_pair_5fold/fold-0/seed-11729.json",
+        "sha256": "7903f17da5a7c3be376a3bb4c304157c035c60edc2902963a26ba02c76f274be"
+      },
+      {
+        "job_id": "8f4ec51123d423966f315dc8765c489e405c6f1c2b7f9210e5b91bf6b410f15c",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_aldehyde_pair_5fold/fold-3/seed-1729.json",
+        "sha256": "8f757f77ee362fc220bbf37827f070c2c05496607633107a6119e1b6d98c0219"
+      },
+      {
+        "job_id": "8f57ac1e7a22e8a7cb0ae7c956dc958b47a7999035cae4139fff594578b702da",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_5fold/fold-4/seed-21729.json",
+        "sha256": "16d0f0b04274ca30dd6d407b2f49755989a2d6dce56351cff71234df984e5886"
+      },
+      {
+        "job_id": "8f905f2546da667279e7835160861fe650c825fe4d89ba1fc55736644475b19b",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-2/seed-21729.json",
+        "sha256": "1f427e531c899d12280fdec0863885902649853a9065f44df251a5bbb5bfcff8"
+      },
+      {
+        "job_id": "904374c946cf8ae7f60e85af126d828d5f73de94f81b77c5a0f9f50d4f823426",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_aldehyde_5fold/fold-4/seed-21729.json",
+        "sha256": "01fdad0ba1f25116b4d87530ed6b0d110d808713ff1b707b6a38c5a9ab7c709d"
+      },
+      {
+        "job_id": "90b7f53a64c04cfff46ea80240c71c711ae472eb8451cf16a9c934fd0bc92028",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-4/seed-1729.json",
+        "sha256": "51213e3cf73d126a5d2ed7416f3763d36c82dede375ff84e9319874f81f87aa2"
+      },
+      {
+        "job_id": "90db33a85e819d8be7f46a94a76cbb50f40a9e75c5eb72add7165870a4cc8737",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_aldehyde_5fold/fold-2/seed-21729.json",
+        "sha256": "8f10fb5b5ea98024bde91731d91d72814da9868704146dc83337f57510cfe40d"
+      },
+      {
+        "job_id": "913663f92565d495e15cc17001afa5efc98900c0aa836f0a9352b5f8b6ebe1cd",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_isocyanide_pair_5fold/fold-4/seed-1729.json",
+        "sha256": "4aa15920dafa259a7c8938845a3e5a5303de89af1377a6263839e7fd5a5ef4e1"
+      },
+      {
+        "job_id": "917603567a2791f0a9fd20941ce57ef241c5ba61edfff567f29b0fd5c49bf0b4",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_isocyanide_pair_5fold/fold-1/seed-1729.json",
+        "sha256": "026137a8d8e9ffc7b7e7aacc183b7d953372e5c16c02447baf9791ceb3a8b20d"
+      },
+      {
+        "job_id": "91cca9d537002ffc93a05551a557625b4eaabef854a568a6ef101cf6d8a43a7d",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_5fold/fold-1/seed-11729.json",
+        "sha256": "19a05f3893dd1c2bea70a714997c4d77b80ee8084e47d254141e768ef6c3b3e8"
+      },
+      {
+        "job_id": "9241578a33b89189886a12e7011e308169093b31a9ef9f7b91f8588e7fb37653",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-4/seed-1729.json",
+        "sha256": "40988f1404699f6660c1290b7a6a1933ac9df58eafafe1f2b60211cb31428b78"
+      },
+      {
+        "job_id": "926aac0b25fc0b96f383c90ba299611b2fba8cbbf6ea9b2c1cf4a41e844b787b",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-4/seed-11729.json",
+        "sha256": "6acb45c08a2ff7987aac1cdc19d53f128edee71f843efaaf1dd7862c08f6d2e6"
+      },
+      {
+        "job_id": "92ac45a463f10224c01c2407277e1662b4f0d32960c5da1d5da368e7ebc54685",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_aldehyde_5fold/fold-0/seed-1729.json",
+        "sha256": "f5d0d21ee019160cb553d57545ae5c4078624945f1d0db1001dcb248a106a32f"
+      },
+      {
+        "job_id": "92b05ec37bafc3a3e44e24cc40a8b797abc4d66b9619ca57b830270dd9fa6640",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_aldehyde_5fold/fold-0/seed-21729.json",
+        "sha256": "24e8b3cef42b66b37bf060d8f462091ad902e95869b9bbfc67f0896864659d82"
+      },
+      {
+        "job_id": "92dd315f2e7fa27a2554b00c894db206f620fe2847d83d2eff8879dee0718c43",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_isocyanide_5fold/fold-3/seed-1729.json",
+        "sha256": "077d4da8a8a300543828656b1d88950d45caa73bc0bfdfaf3382ddf86871c564"
+      },
+      {
+        "job_id": "92ec71c08ce879744ac5c0665edbfa4c8efb9bd5aff2aa52cfdddb71abc4b282",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_5fold/fold-0/seed-1729.json",
+        "sha256": "e49a0dc2d6a33cbc777572747cf26e745d3db7f2f5e2de13d28987072116d478"
+      },
+      {
+        "job_id": "9396ac01c8a810b29ae7302c49cf91e27a99fba6de3abe335895c8a5e7407057",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_isocyanide_5fold/fold-4/seed-11729.json",
+        "sha256": "c0497201d2a723022de897f7654e1feeb3fbb5779298b4f5dfc81f4412405c6c"
+      },
+      {
+        "job_id": "93dfce4cbf81f7c552a0077fd1d33fd5f340410dc071ec333dcef4c782ddbd99",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_isocyanide_pair_5fold/fold-0/seed-11729.json",
+        "sha256": "ed1990923e08f1224c7940c0539d060b991fba7220b14699e00172db6c177594"
+      },
+      {
+        "job_id": "93e24c412a4bfc6aec5afa914f8bdf0b0cb297b7195007c46a1860d109bfd418",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-0/seed-11729.json",
+        "sha256": "019d24e00befb2758fb10a13e819a3d1d43dc3566f3598a02c1e18c4b07ad495"
+      },
+      {
+        "job_id": "94c6bb41155d1bea8cbebe1ac2c24617de05c4c1b3f947ba73e5e693414ee618",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_isocyanide_pair_5fold/fold-4/seed-21729.json",
+        "sha256": "6f179c4a6540d3a43a613cae59dd19138254e7190ae39152637eea7846bb7821"
+      },
+      {
+        "job_id": "95f7db5ec6e39c6f215d028632b52767d30fedc258c5536339f493770b4686b6",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_isocyanide_5fold/fold-1/seed-21729.json",
+        "sha256": "0a72102b26d57cf7d49862e1b8e2e2ad679157843d0bc6030d1250b1f4cc5a94"
+      },
+      {
+        "job_id": "9688efa5ad0b15c7fea6b2cd813488f934b46a6d032915bf14238d4274038085",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-1/seed-11729.json",
+        "sha256": "ad054f922ec2e994108d1a18d14c0ec20326725bd88a0b51afc4eb741deed904"
+      },
+      {
+        "job_id": "97f6c31a4c52f54b5966959b8d7c5ebaa78b5f13308b134700be2d3615f7f7b4",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_isocyanide_5fold/fold-1/seed-1729.json",
+        "sha256": "62bbbae63fba5ad83a91355e0cdcbeee4cc364df0796a4147f034d2388937845"
+      },
+      {
+        "job_id": "97fb667ddc7ae5ee3f292648db4725dd7f9563f13173061f22deac84fe21438a",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-1/seed-21729.json",
+        "sha256": "731f6b9c56f8c3f88164974aa15e7869f83063a36b5936d4a4576ac39271661e"
+      },
+      {
+        "job_id": "9854e2b037b86bc516e27c333c7e1493e73e94cfab8b33b8b6eb1de7e302af82",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-1/seed-21729.json",
+        "sha256": "78d0c809de7ea2803eb54678bd37e5a9a9c75d6c66e19b420941ad004fd118f9"
+      },
+      {
+        "job_id": "99dab57d68cc453ac7342a161c29b2203ccd1290add8d2f39657224052186e24",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_isocyanide_pair_5fold/fold-2/seed-21729.json",
+        "sha256": "4fa271acaea2d64d2a2deb612bfb40b27c0c89946f53ffe45cedda2f23b2a57c"
+      },
+      {
+        "job_id": "9a4efe4f826a4b4fd80e7608ab2aff5b8078a17e11aebc994bb4342666a14bc3",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_isocyanide_5fold/fold-4/seed-1729.json",
+        "sha256": "4d1edc03677e725030acf2ca85543d4dd44473dd88baa39b3c28ae9e1a3fa040"
+      },
+      {
+        "job_id": "9ab70fda6734dfa660ddb1202b801e69da55fe67b8780724bca87b4cbb92e17a",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_5fold/fold-2/seed-1729.json",
+        "sha256": "58c6ae1f0e48eb80798e97d8cddab3a7ae2660ecac4a33e95edfaa127b95cbd7"
+      },
+      {
+        "job_id": "9b7728a6b162b870c9046b9876619bafab0ceda826c42af4989a52e5acf4589d",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_5fold/fold-3/seed-11729.json",
+        "sha256": "a003d3b9fe66961b759ce927c8b3f6392871ec4a133f0d3db166ca494ece4bc2"
+      },
+      {
+        "job_id": "9b83568573f6849c60304e5bda1625898fee86492b4cb5035a8966a35b494eea",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_5fold/fold-0/seed-11729.json",
+        "sha256": "97917c1af5562fe253d71236a5ae277b8689997fbe6c741423c898151c018cac"
+      },
+      {
+        "job_id": "9cc70277282b6fe5642858deec5c0c4595a9ea43c52aeff68eee62cb189a9f38",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_5fold/fold-4/seed-1729.json",
+        "sha256": "9fd65ca21872900d2a6dae8f37349541a88b19b8d5faadd43c373e8a9ad4934d"
+      },
+      {
+        "job_id": "9cd3c46903524f1444e338d8438aff6b107a168400b29c0478271ef1e0d6e0e2",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_isocyanide_pair_5fold/fold-2/seed-11729.json",
+        "sha256": "10952a202d1427be8b8566fc4e97b9e80d3d5f9d037506948e8e5c32ab6cdca8"
+      },
+      {
+        "job_id": "9d4b7c66589dedebff4c0f0e779802f08e4762d19e056eb41fac68b3b0802e17",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_aldehyde_5fold/fold-3/seed-1729.json",
+        "sha256": "02fc23665e6abf9f2688e883161c0d51f9c68e605f98b96cd3f150e90780a0b6"
+      },
+      {
+        "job_id": "9f2e8fc6d779239ea52d4a9a7572e2ca7a542d004caaa1373a5d9aceef716024",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_5fold/fold-4/seed-21729.json",
+        "sha256": "c3d48efc33a587dfd9b9f9810d9253da30032da36e638fedec2a11e9f5b1bd28"
+      },
+      {
+        "job_id": "a0706ebf9a203a85b217f11d17231cf4da0ec42bfb01ebb49265b663b70eb995",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_isocyanide_pair_5fold/fold-2/seed-11729.json",
+        "sha256": "99c5ec34435ddc8fc8196e3c25fcfe415c1cb8fe197085a3f758e431291002f1"
+      },
+      {
+        "job_id": "a17f92c5de9317755b04f6c9b7f0ee141f9eee334707ef3d15eccfc59d7ee9fd",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-1/seed-11729.json",
+        "sha256": "0e1c99c362313acdf7a397e5e67edf768feb3647be7854c7598898ef79d8fcc8"
+      },
+      {
+        "job_id": "a1e5220a75eb0f98b862b45eb7442945cd27dbaa4f8b7a58e92aceba14adb372",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_isocyanide_5fold/fold-1/seed-1729.json",
+        "sha256": "eb32db8480ef27246eda66063cc26cbde0350519553883d3959a3b3d59d01c90"
+      },
+      {
+        "job_id": "a20dc5a70d6558813030e741100c79ce316744e43c2815dc2e0d5722ea2f1b53",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-4/seed-21729.json",
+        "sha256": "7ec3c800db128285a7e5088b8248414e51cd125ea7fbdea18b86fb995be393b4"
+      },
+      {
+        "job_id": "a29c22ec8296d183e774debac35797e81b35eb2c42ea886fc7d24b1a759ef0e6",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_aldehyde_5fold/fold-3/seed-11729.json",
+        "sha256": "5f0d606e48ab5275468a0badc4d5d04f1921a6c0125d1ea86c5a37e3c733d3a7"
+      },
+      {
+        "job_id": "a2cdfff642d6ffe281adcd610d20872298292f353e2804f2086401453c1d0928",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_isocyanide_5fold/fold-3/seed-1729.json",
+        "sha256": "cb263090d4e8c6d3b539d10e6c2d2c170965ca70a00529eb85e74eba554d7b9e"
+      },
+      {
+        "job_id": "a32248da508934b5535749d19c1a96a5f826a5d02c67126e2ae6b359db1e3358",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_isocyanide_5fold/fold-0/seed-1729.json",
+        "sha256": "e11daa3386e11ee8ed1c3a797a204c9eaf4cbf05d5bfd2ef5fd1e85d5f5e135d"
+      },
+      {
+        "job_id": "a3a98666af3a6f81d2c0fcb828016b63adff1475918591f80f64d697aedc4b33",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-1/seed-1729.json",
+        "sha256": "9d8039558b465bb517a2e98c5fe522690d631acf0dfcf61876f67a5bab46ba85"
+      },
+      {
+        "job_id": "a3eabe572f3d4dc01f0a5483dd54e6c929fc5a30238f059bb0affffc2112cb5a",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_5fold/fold-1/seed-11729.json",
+        "sha256": "7b246ba42acea555d272247ab7002cfee8326f504c5764701338662f0c5493ac"
+      },
+      {
+        "job_id": "a43330518703fcdef3c92688ff2d7adb672f9dc0c750daf6bb50006a5182dafc",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_5fold/fold-4/seed-1729.json",
+        "sha256": "73233199038f456e0a698d4e13ac0215989522fffed6d235828a132fc13c47c4"
+      },
+      {
+        "job_id": "a44dcbf2d955943e01ecd3788cf3985bfd6d409008ded2a8cb4865b00cc5d5e9",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_aldehyde_5fold/fold-2/seed-11729.json",
+        "sha256": "719dab4c6ea02f44925c90bc935f97a32197df0688a14e82aaa057c1e29a237a"
+      },
+      {
+        "job_id": "a4f544ae4b39b92d57aec9e4af658cb32f27abcee5190870ce6e69f3cddee2fc",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_5fold/fold-2/seed-11729.json",
+        "sha256": "63f30f4281105ccc6246778abee59cf31465fdd4c9a352bde637807bc6eb9ec2"
+      },
+      {
+        "job_id": "a55f27f3d60365b1c6eb8956eba899c74e4bd0c7c2d90899680c5a0270f679ca",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-1/seed-21729.json",
+        "sha256": "ba60d9970110142218ab897559c2bcd07fa2a75a05f27dbbfd64581973e639ac"
+      },
+      {
+        "job_id": "a60df6fc6d1fbe811ba3202fc08eb792482357e5e89c2ac8407b21bd5291d3e1",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_aldehyde_pair_5fold/fold-0/seed-11729.json",
+        "sha256": "2c58e4bff4b2e71a75587c0b6649bfad786f08801a113c7d5d35bdd8c4235674"
+      },
+      {
+        "job_id": "a7e4dcd9bdc5d9fe4698fcc4ba11293605f324875c7caf366ebee2bc3d716241",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-3/seed-1729.json",
+        "sha256": "112e9ecb00fc526952cf0937a1685e61f0dac9e68d5dfd5c680d801e6799b1b7"
+      },
+      {
+        "job_id": "a90aff6bcf590d4e5ba937a9838f87bfa7fdea9bc72d5afec00d961959903209",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-0/seed-1729.json",
+        "sha256": "06161eae766cc08ad52110dff452a7a7088039f893deea07c37af3ca4491f16c"
+      },
+      {
+        "job_id": "a90c36bf4a61e6e444de5fd5def858b0393c04b6089bdf21e9ec74cbbdd9046b",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_aldehyde_pair_5fold/fold-4/seed-1729.json",
+        "sha256": "e82716a4a3eae0b0aed96a2747432cdf030f5ed704aa4e9855dafe10aeb21b1a"
+      },
+      {
+        "job_id": "a948bdb6a05d878d703c4efd8ddffa91f1050e416076a21fdc39c6f3ff871008",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_isocyanide_5fold/fold-4/seed-1729.json",
+        "sha256": "3628137275054df5b5309a40773b4ceb93d2666e2208bd01eb3a92f2cb8598b3"
+      },
+      {
+        "job_id": "a992dd1ffc9f217662499f95d5be97d6aa335491e85a4bc706fcfbf8fa955eb3",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_aldehyde_5fold/fold-0/seed-1729.json",
+        "sha256": "387ead55680f745f0a4d15cb466a64f4174eff59a13dc6f4e71b9fca6667d0bb"
+      },
+      {
+        "job_id": "a9efc8f09b4d1caa6e8e4dd3acdef958c76647201a88f5463548db0b2622845f",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_5fold/fold-4/seed-1729.json",
+        "sha256": "3a442d321a525f8a3f8a768c7001f70a1ef659f324171aee6f3ca3f02d309a4b"
+      },
+      {
+        "job_id": "aa44de5374413ef44b4701936db17dcb84a825c2c6226396727112c2b3e42391",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_aldehyde_5fold/fold-3/seed-1729.json",
+        "sha256": "17805b0659ef04db25729b24ab86c97e7d15fabb465a86b5fc562f12260dd360"
+      },
+      {
+        "job_id": "aa5dbc2de316f612690174bee24a1abf39f601ae145e1cd67fef24ef4c2a224b",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_isocyanide_pair_5fold/fold-3/seed-11729.json",
+        "sha256": "9acf53a1d5381c022902043b5da7aa2bcc4f91aba453cda8bf71f91681cedb2c"
+      },
+      {
+        "job_id": "aaa5920088e9e77bef8563aa3acdd7b351187bdb9766e43576c32ddf7026f6a6",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_aldehyde_5fold/fold-1/seed-21729.json",
+        "sha256": "cba858c7c30d86c49a8870644ee82b30e03f401ed4f9a2cb9ad17fe71c36d466"
+      },
+      {
+        "job_id": "aad3e0fc8a315c0e079f4a512fcae21695534c90945107aa6cea2586730d3285",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-3/seed-11729.json",
+        "sha256": "8d6aa2842a90dbe24d1a1c69f710558f83ea2e07fe91405588842b5613cbe99a"
+      },
+      {
+        "job_id": "ab1fc36d1fc5d97afa09dd434a9c4d28d3166b7a6a7dd7c8aa63534f2e163e4c",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_isocyanide_pair_5fold/fold-2/seed-1729.json",
+        "sha256": "3d6617b2c96da4d5c27d10672694f0c461ae6b0bce0e576a4074bb8cfb0c4ffe"
+      },
+      {
+        "job_id": "ab30452c6af7c3ee8ca6474e55cb2361714c591e447ffa7ec67f30b036c2118a",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_5fold/fold-1/seed-21729.json",
+        "sha256": "309f0a4d234c0bbf46144faf56e456eb4f24291ce2c6b76106cf6722699297be"
+      },
+      {
+        "job_id": "ab8b2c693addfc7e8542a1aaeb8243cc56ec42b99a99bfabd8caa73c4a0359e2",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_isocyanide_5fold/fold-2/seed-1729.json",
+        "sha256": "cd02eeceaeebfb532ade1962bae03eb42a5664ced31f3513151c6577f25820cb"
+      },
+      {
+        "job_id": "abdeb56dad49d1bf170871b446f159d0a9f88cef4a48fddb47506d0e71d9e5de",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-0/seed-21729.json",
+        "sha256": "c806c92ba99c61ac217e914aa87ec710e12c9fe89db8d4a625aebc325541192f"
+      },
+      {
+        "job_id": "ac0389fb07a53fe6a804d853186328b5e74cd57882c6e38efd52e1724d9acef2",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_5fold/fold-0/seed-21729.json",
+        "sha256": "16bb268c80a8319178c46e51753571f26a955e1c2c45d3975c3469b0bc3190ee"
+      },
+      {
+        "job_id": "af3e4b387172461f020d29cb94c153e8aac3108928398df0c2e6330aedb5f9fd",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/lantern_random/fold-0/seed-11729.json",
+        "sha256": "98a2e87d610aad55a2132da5d0cda96429cc615fb34fe8a88b4f57e487f13adb"
+      },
+      {
+        "job_id": "b0190b1ad6665f39df559101248c70fe3a0a71afd1833bfe49a372929ac97a11",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_aldehyde_pair_5fold/fold-2/seed-21729.json",
+        "sha256": "882c4bb883d1856c9bd322a4958eba2321ead64e29229eaf9676cee99e976046"
+      },
+      {
+        "job_id": "b1939b1d2c6b535293beed3654baaa68d0e1d30df63a3a17e2f5b180fc0cc030",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_aldehyde_5fold/fold-3/seed-1729.json",
+        "sha256": "ef9bf4a8f131dec54a584ed1b1908977ffb2899ef53df6336af77bbfdfcdbdb0"
+      },
+      {
+        "job_id": "b2d43033827d2b9515ba14a5c820b342f9df7a4329453c839c55e8d906ee7fe9",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_5fold/fold-3/seed-11729.json",
+        "sha256": "22eaec22664f5b56246da1f20ecabc5d94ce574664ed83630d1d98acaa1a70c5"
+      },
+      {
+        "job_id": "b369c4a829970ccd3a92a406a4f71e49d23c09dd74f768bef78a1a01d486c2ab",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_aldehyde_pair_5fold/fold-1/seed-21729.json",
+        "sha256": "f44055d71aa7e4883bb8cc85ce66825a22b5bc495ea275b8cb92d3db5cb36f4c"
+      },
+      {
+        "job_id": "b3b04ff0b30adda5bb8516534574623bcc9bd171d72012f128a6ea5bbd9223ca",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/lantern_scaffold_balanced/fold-0/seed-1729.json",
+        "sha256": "146a3da7d2cd33895fae99df77f94bcd72e57d7e696de840f7f160b417fcf486"
+      },
+      {
+        "job_id": "b4046e2edca7365bbdba7299268311e7d3207a869c9f28e0f11a7388467a82a7",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_5fold/fold-1/seed-11729.json",
+        "sha256": "2bf37c922a8dc7abe0aa3e998f12a8ae254f07c93a2694d5bca4bb7bace79005"
+      },
+      {
+        "job_id": "b4296b5c0974d27b6bb8ce33f8baf185af2c01d4d94f70f32989bd97bcffe165",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_aldehyde_5fold/fold-1/seed-1729.json",
+        "sha256": "e22fc971016c98120ef41977bfc94cdb651e2224b830498a854e89349d6eaf24"
+      },
+      {
+        "job_id": "b525fed0819c55c5ff66cba1a30c2595d653bad4301763f2fa4499b772d3ebe7",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_5fold/fold-3/seed-21729.json",
+        "sha256": "4689fa6cf751b2be1665ab3ecc39ceee0d887edd94900d5142323348989de49c"
+      },
+      {
+        "job_id": "b5d3dbcc587ea12b458db16d86e4ce2119953526da39b9c5d6733f075adf5364",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_aldehyde_5fold/fold-3/seed-11729.json",
+        "sha256": "a89775248e276f6ea85f5e27c784543809afc65ccd015a8b802bee2362704bf0"
+      },
+      {
+        "job_id": "b658eeb2827c9f9f3590ffbc772cac29610f96fa2230e58c74a75cb018fca36f",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_isocyanide_5fold/fold-1/seed-21729.json",
+        "sha256": "d49d08ef7a2f50af1c074996f8f83c606c253d5d791f392fab76cddbae975e16"
+      },
+      {
+        "job_id": "b6b7e60e71b57ab68c3aaa9386b6e16fd9adbd1433156b416eb0774512126bea",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_isocyanide_5fold/fold-1/seed-1729.json",
+        "sha256": "e73c90f64f9284b3890d24c641da7f4670714e36554f437593eed6886ab55cea"
+      },
+      {
+        "job_id": "b76df69a48976edf6f6255447fc48b84ac1e660ef1bbb9981559cd396340ca4d",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-1/seed-21729.json",
+        "sha256": "4e9f4961a49a645a0e8a3a75206586b950be45bfb98bbe6107bdfa795b8662f4"
+      },
+      {
+        "job_id": "b7b00a6f920404f4f3786963610f5aac931b5cd4d98828fe316d20c5a3518210",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_isocyanide_5fold/fold-0/seed-21729.json",
+        "sha256": "08b7dfc7d21d731b9e3e71514fe139d44bb663c180ece78abdab0fe4fc7d35ca"
+      },
+      {
+        "job_id": "b7fe0457a6e116ee0bc3271ad5097dcfcfbdb43c4f465c9fd2ce8e45dca70233",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_isocyanide_5fold/fold-4/seed-1729.json",
+        "sha256": "b1bdc93cdd458b389b28d91b0e0f4392ec5b90e2f19067800933c288c21a00b8"
+      },
+      {
+        "job_id": "b815be35661f2e4463713381c0be1532acb058ed48c6f1c240e60dd2d704a27a",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_isocyanide_5fold/fold-4/seed-21729.json",
+        "sha256": "f4882e7b9a067e99d27fc33e3eba426c0fa01c1bf15a1adc944838b8c2c6961e"
+      },
+      {
+        "job_id": "b841571028ec9f93d7ef6ee9b740d88768980984105fd010d69b3d5e6e5ae72d",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_isocyanide_pair_5fold/fold-0/seed-11729.json",
+        "sha256": "1320a3301d7e573dec34f33bf0eeecd767e3f2497056ac183b7313e88c429cd9"
+      },
+      {
+        "job_id": "b844fc02af2d1296b63da6cad1215268a612c6c2cd7155f262d11427b6492c3d",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_aldehyde_pair_5fold/fold-0/seed-1729.json",
+        "sha256": "d13f082e011b93b70280ddded9ea2a4143b8c4f341b366e60b8eab910cb3b481"
+      },
+      {
+        "job_id": "b88c064c2458be84d05f0853bca0ed6858a434f5148589328ca01b1f0eb1452c",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_5fold/fold-0/seed-1729.json",
+        "sha256": "c8e4da586169fd3766bd9c60296da4645eb1e4d70a2fc2bb013b3d258f5856ed"
+      },
+      {
+        "job_id": "b89070ce6cf2c639f7e626b1f862aec7c4aeb38b113ec26be42678faa9f66eb1",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_5fold/fold-1/seed-21729.json",
+        "sha256": "25603163151af296869a04fc4d3f31c48f37a43e49aec351dfe72a130da1562e"
+      },
+      {
+        "job_id": "b95e24e50f78471841085ee6aa87454ea7ac30c444fd6f327615f6f865e6e237",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/lantern_random/fold-0/seed-1729.json",
+        "sha256": "da42615187f36c62ae33c430faaafaf5d729cfc3dd8cbc028aa99094f5e3f404"
+      },
+      {
+        "job_id": "b9db0cf8aecb66396b68aa426f108ea0cf9b75363589fbc5f9b33b34b71816ac",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/lantern_scaffold_balanced/fold-0/seed-21729.json",
+        "sha256": "05b0d5de364138ebf34dfb40353456dbc285fb6b63052bf8016323627e151043"
+      },
+      {
+        "job_id": "b9fd0a3850c8e54a4773cdaaad90c72e7c89d6706edaea723f6f4ab03b505893",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_isocyanide_5fold/fold-1/seed-11729.json",
+        "sha256": "0b64d6bd0c7d2b59cc6e1c616a88fa6e6895a7aedcf82196a2bbbb9129066ff6"
+      },
+      {
+        "job_id": "ba4c20a2a36b21b6dbd9afe9b831b799b5b7ebb68863d8724d1e043240dcab96",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-4/seed-11729.json",
+        "sha256": "06d9210c3ae87b0a65b505148c981763dc7a39068b91104e5f7fe3df069855ae"
+      },
+      {
+        "job_id": "bb6a8e5695814ffab30742a63e75b3516878ba73e875cbf3972a96e7d20b4174",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_aldehyde_5fold/fold-0/seed-21729.json",
+        "sha256": "a3825d95e145806b2268d815402b3c7cd291fef9ffd7fee5b38a0ea890b406ee"
+      },
+      {
+        "job_id": "bba515d7613d528071438a7f45e1c3eab94771fd99a65b962b18ba9ae7c86251",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_5fold/fold-2/seed-11729.json",
+        "sha256": "faec54a9213d3503918ee5b97f48194241f866af3122f59176d21123326fe02f"
+      },
+      {
+        "job_id": "bd01c7ba6d4fc744a9b37d15a1aa5200db4f8ffbb5216cdb4380181009df9eeb",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_5fold/fold-0/seed-11729.json",
+        "sha256": "0143241971af15859e77644eeff563931bfe2e0468d193491da8a7cf9b7d7a1e"
+      },
+      {
+        "job_id": "bd3e30dc5cd4f02c1b391373b2eaeea41535ec30259d47d1da1efc7ac0cc2b68",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_aldehyde_5fold/fold-2/seed-1729.json",
+        "sha256": "4be2720d0cdb951dbe90eebf21bd254a0864e1155f8de7008be9783588bd6cc0"
+      },
+      {
+        "job_id": "bde049eba71821559d3383443383a506c5433a28ac10bc614637ee9253b9243b",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_isocyanide_pair_5fold/fold-1/seed-1729.json",
+        "sha256": "4d0a3d7d2026a1cebd8c757b6dcd552ec06d6f6a6b045c6da713963a917a5d6e"
+      },
+      {
+        "job_id": "bde72133d769dc30bcee311933cccd886d4cadddf28db0813b3feefbf5170f63",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_aldehyde_5fold/fold-2/seed-21729.json",
+        "sha256": "9055494ce888f8fe9bc231d1476697916dd38adff4d2687202517fc8711c6c28"
+      },
+      {
+        "job_id": "be461ae16913f871da93a2a41e0a784fe45c1b50b07082b12b312a25b7b85d21",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_aldehyde_5fold/fold-1/seed-21729.json",
+        "sha256": "af56f90165c120e0a46799a90b7a69a929c78f87f01fd0404c8bf1aa105b946e"
+      },
+      {
+        "job_id": "becfe08b663042493857fcd53df9e55955f564a04566dc2db85b9dc0504b4ec0",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_aldehyde_pair_5fold/fold-1/seed-21729.json",
+        "sha256": "e2bd821ba6e445afae3726d64ce0ccfaa339099308466810085ec4d17728982b"
+      },
+      {
+        "job_id": "bee16743fa681d8c9c390e132e101e7c2ebcb43d05f42d635d76c373c2e78e9d",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-2/seed-21729.json",
+        "sha256": "eb1711fbec3137a88a5896879286797d3bfd67c507fa14be8210d6e64b1716ec"
+      },
+      {
+        "job_id": "bf040c1a4c793c0d80a59c7c9d4d5917e45aabd452e4ccea784d1054f2583b7a",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_isocyanide_5fold/fold-0/seed-11729.json",
+        "sha256": "33286027852fab010956e6231da204a249ac6d41963db3ed2e9959bd0df392fb"
+      },
+      {
+        "job_id": "bf8e7abd46b88cdde4b612c14676dcba614042f24333e6818f5d3c1378d0a373",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_isocyanide_pair_5fold/fold-1/seed-21729.json",
+        "sha256": "c0f1ec04b6fbac186db9affcaf957763e3e9c3f9c08da6ff54f401c460fab01a"
+      },
+      {
+        "job_id": "c013388153315ba94b980edc0a441e1d793f47db4d79b2c4a50bca8ab9751e8e",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_5fold/fold-0/seed-21729.json",
+        "sha256": "4de718fd241fe6cfa694c027082f078e726d3e9bab00c598a4374fd38aba1785"
+      },
+      {
+        "job_id": "c09c53496083b5367e842a7cd9969d091c8b204c9e417881fabefd74638f4294",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_isocyanide_5fold/fold-0/seed-11729.json",
+        "sha256": "36acfe3ebec223385b10a92a096ecce9805e89605ac771c57223b6a2dcd6d231"
+      },
+      {
+        "job_id": "c0a5ba289c7488d5c8eaba9791e588186eea1898d9e02c046603da9ae0e1295f",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_isocyanide_pair_5fold/fold-3/seed-21729.json",
+        "sha256": "31bc60c4017a068cd97682d1ec2e82d929c37ad3c2a8341f43ff024330f4b078"
+      },
+      {
+        "job_id": "c0adec223a9bd4a09765a8a7f1336d7ff70bc9d84ecd26a762dcaa40558c9a33",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/lantern_scaffold_balanced/fold-0/seed-1729.json",
+        "sha256": "b598b022b6267ffeda8906428c508890ddcf8cd81f2f496f564c5ce4518e69c6"
+      },
+      {
+        "job_id": "c0c9af64ca2e8fc7088ca00258f0d5fa74ac4aca0c597013d84430093c703206",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_isocyanide_pair_5fold/fold-2/seed-11729.json",
+        "sha256": "23eb61adf853e2bdfeaaaa93108121d0dc4cdd8138c69bb35e9f8f35482feba1"
+      },
+      {
+        "job_id": "c223466c76ffee11c2c47b6574989c86f8d5901a012473df7e6929e395d861f0",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_isocyanide_5fold/fold-1/seed-11729.json",
+        "sha256": "f9dec40bae91609a821e9226654e423ab97acbe3220432eb7352bc3b95e83705"
+      },
+      {
+        "job_id": "c29e35f1bf24ba44718a1e2c1851fd3ac75b99c777d37a5b7cfabcd7270dab90",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_aldehyde_5fold/fold-3/seed-1729.json",
+        "sha256": "7203c3fc99ccfdb0674aef8d067863368c3716e9253155acd1752f1a697b50fb"
+      },
+      {
+        "job_id": "c2d170d9161cd20d78deb1e5156802a627a6b839546d0818702b24e9e9962e46",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-0/seed-11729.json",
+        "sha256": "7ae4691e9db087f2713f91396cc0ad8477bdce498423457b13376b8913ab441d"
+      },
+      {
+        "job_id": "c3465c6e2b8151cb67204b16d79f0402cbfa34a15cb35daa8e22356cf49ea9ab",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_5fold/fold-1/seed-1729.json",
+        "sha256": "0fbe41bea95bedfedfc97df522f4f44e116473915928874848f6356569de7265"
+      },
+      {
+        "job_id": "c4ffdb3723739ad7d037a3c5e1a9bf01e8ca6e22c5f0e5c155ccc20ce1441cff",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_isocyanide_pair_5fold/fold-4/seed-11729.json",
+        "sha256": "61b421f40cb7853997ce52cb1dd29c56455dd8c15aeeae5f2aa52850bbe4f14a"
+      },
+      {
+        "job_id": "c50ae16c4cf30df6a3ca011ffc960f27cd2c7822487a867aaee8feb5f65315e7",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-3/seed-21729.json",
+        "sha256": "f3d4e301d6a22ada6d12f66ac77c0a14a6ab4eb320a82712ab38fdefc0a252fa"
+      },
+      {
+        "job_id": "c60dd9c399daaf507d260f90d675a05309d2c660a077d1fbcfe675f3be494d57",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_5fold/fold-2/seed-21729.json",
+        "sha256": "a4f023e1daedbcd590a4af00afa5dd244d89a1321797733285e54de081babd7f"
+      },
+      {
+        "job_id": "c6854eb0c6813537b9ef9a76ba04efdc3cc179b02de617e602eb11843945b717",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_isocyanide_pair_5fold/fold-3/seed-21729.json",
+        "sha256": "57803703926aecef39f3064ced7190d0c7eb625832ed243c3375c89b94613c44"
+      },
+      {
+        "job_id": "c73681dd7e44f2f02d9ce459edf5d2569aff01de3963ce21b6151af5e3d95f4a",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_aldehyde_pair_5fold/fold-1/seed-11729.json",
+        "sha256": "f50a9ee08533543be5bc0c729ae99ccfaa9811902b6776d1065353369216b1ec"
+      },
+      {
+        "job_id": "c7eb70509e5978a6a06ca8c7d762051c0038f1320009d3185235400514e65bd0",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_isocyanide_5fold/fold-4/seed-21729.json",
+        "sha256": "33969ec0437c48e86989d65d5125e266cbd57de41b7093ad3a2db4e11dfa3772"
+      },
+      {
+        "job_id": "c99df10530e567720ab9c44dfa3ec8cb4bd72583e8746609650d35fbf06983dd",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_aldehyde_pair_5fold/fold-0/seed-11729.json",
+        "sha256": "1838fda06fd20f34e6facf778717cf084304ebc1fa6d4dc4580208479f53b199"
+      },
+      {
+        "job_id": "c9ee86a812e908c7a4772d4879f70d26257800a92bf5b517781b1634d327dbd4",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_5fold/fold-3/seed-1729.json",
+        "sha256": "fafd0e3333e53a59684a5ab27470987093997037b82e7e15bde55a91f8a2248f"
+      },
+      {
+        "job_id": "ca17f4dd68a85c14aa64f50ede8e138f5e0e083d1c35d6f4c319e24345b0bf89",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_aldehyde_5fold/fold-3/seed-21729.json",
+        "sha256": "af3e5d61073c5728d49bf652a125e81a751851d6a346c3b3a1917b669e2139f1"
+      },
+      {
+        "job_id": "ca4c3202077ac3c8ca1c6d70c0595ad3e3a3d5f8cce52ea0158d93e130544f86",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_5fold/fold-0/seed-1729.json",
+        "sha256": "f767b365d14d41a26fb0418a7c157ba82edd7e8d4077f4da5312ca4545d6bf66"
+      },
+      {
+        "job_id": "ca75de3eed4d1a9f7e841e1ef3b08f73f5aeabf6df3c10905d1742590232adb7",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_aldehyde_5fold/fold-4/seed-1729.json",
+        "sha256": "62cab6ed942b71421f9f45350c9c3339f009fa1fe0d950a30b94e393f3da6087"
+      },
+      {
+        "job_id": "cae6096b31947faf6b3911d9b3a339ccffdb84f1f76b92ef1dab653f496dd188",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_aldehyde_5fold/fold-4/seed-11729.json",
+        "sha256": "64abeaf35fbe605d38492df6bd8ee5a66552af9253e176496d69ba04a224d189"
+      },
+      {
+        "job_id": "cb333297adbca95ad4063fb7d199a9ef662c33f9b3c8845a228bf2b8702f1074",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_aldehyde_5fold/fold-1/seed-21729.json",
+        "sha256": "1bace457e7ceb4d99966c5e0c7b939ca272077613486ca8f3bf8a7bd9b12a417"
+      },
+      {
+        "job_id": "cbad4b664aff9a297fb7c5182a3502b01a73f81b43d73147d1f140e0d4d48f12",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_isocyanide_5fold/fold-2/seed-1729.json",
+        "sha256": "db5d57ec52e8e97126c6227d80bf925257f75484d49f3624af3f095b517a8241"
+      },
+      {
+        "job_id": "cbb21cd2b5120f1eb07199f2a20b9e1a01116e9ff417f95b1cee67fb9cc613eb",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_5fold/fold-2/seed-1729.json",
+        "sha256": "4b1d728faa3b184ddd8f3a7089736fdffe8a02e90c377056f92cc21e8fadc170"
+      },
+      {
+        "job_id": "cbbfbbc439e807a40c47022f7e46f6bcf7c7dde4647e4bdd44ec1693f97f9325",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_5fold/fold-1/seed-21729.json",
+        "sha256": "058b4d59d012f62c02a1e1cec5ef908a5355e767c45919be6f76b8c0ea64265a"
+      },
+      {
+        "job_id": "cc63f2b0d29b6635ce078e3512f5b948490e234dbeb26749e3060abfc37a175e",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_aldehyde_5fold/fold-3/seed-11729.json",
+        "sha256": "ad5c8ccaf4daa056714aec8e7e254854f20161b24215143459eda05458a437f6"
+      },
+      {
+        "job_id": "cc7a42ed07f29676458b4952a258ff122efb560b8b80f8312bad818a28ab07ec",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_isocyanide_pair_5fold/fold-1/seed-1729.json",
+        "sha256": "70d9cf791f6b82dcac8b1fa0ce19ed476c05e70bef8a732f82fc4ec176a34230"
+      },
+      {
+        "job_id": "cca1697c3eab133fe07736d1f4455340eb2f8db11822f6361f6d30bd2582173c",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_aldehyde_5fold/fold-2/seed-21729.json",
+        "sha256": "01cc465ebef0d9debc3b4841994e1da83066fca1fc893fb4a470105853f6838a"
+      },
+      {
+        "job_id": "cce9e679d4d5663504bd966fb051ec9d75160dacf3b6b4a4fcdd1f060ff4cdc8",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_5fold/fold-2/seed-11729.json",
+        "sha256": "4a82d6c07650941a7cdb5fdf710737c4a34ce52899e98b33c2f0ddee208c7ae3"
+      },
+      {
+        "job_id": "ce0a8bd1920cec8a0de658d91e906b4ed54badf0378c0e105f5fc8bfc7aa536a",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_aldehyde_5fold/fold-2/seed-11729.json",
+        "sha256": "6bc7d17668150ce60868b3e4cddb89bfb89dc859b118c7bdf44a8dc0a4ee3cae"
+      },
+      {
+        "job_id": "ce9f6ed982ee4cc898b8a7f6018d0739b4a170f526d8a25b00f8160781e5219c",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_isocyanide_pair_5fold/fold-2/seed-11729.json",
+        "sha256": "2d6d76c3b4380c9531b0bdff9e603ea603f2f798f61cf3945c205562864bafd1"
+      },
+      {
+        "job_id": "ceec9f7351d7f4097565892dd38a4cdd5816eb05b07e2222a606bb3b20aa0493",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-4/seed-21729.json",
+        "sha256": "84e007c1508c3527c19d630dc61cb03ef935a396931d4d2a59c6011452b4d5d5"
+      },
+      {
+        "job_id": "cf0ae894ceea00168a19f7bc6e89f9ec6dec5727b26a6b38a9d280e0e84d2e4d",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_isocyanide_pair_5fold/fold-4/seed-21729.json",
+        "sha256": "0dc400fbf60427527d3831a1881845975944c0bd8787654250b000aa130b1b96"
+      },
+      {
+        "job_id": "cf3369d9842236fd6a8aa3fd2109269fc86d7be8d1f626261996e08ede3a6547",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_isocyanide_pair_5fold/fold-4/seed-11729.json",
+        "sha256": "31da3648eba3a4aa0700b861e79422204a9bd3a7b348dadc504d07a408b9a9c6"
+      },
+      {
+        "job_id": "cf3c510220df56dacef468d6c6fb8f6921b9f7842705befc5bff6e9b2e91e9a3",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_isocyanide_pair_5fold/fold-2/seed-21729.json",
+        "sha256": "fd9d35ddb0f70d0f1130b95fc6b8199786be1cf616a1f8cde462fb2e5a8be1d7"
+      },
+      {
+        "job_id": "d0280e345a282dce3f181fe2f1f1a6fa1a611737cf6959258a2a356f640a520c",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_isocyanide_pair_5fold/fold-4/seed-1729.json",
+        "sha256": "8a517001b2322c602082239360adb63d6e68125850cd282c73c4496680f84f20"
+      },
+      {
+        "job_id": "d183cb4cd9211d7824e1f1c2455266adfaa2219003425317ead478956352512e",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_aldehyde_pair_5fold/fold-3/seed-21729.json",
+        "sha256": "b55142f9c4c905cf931a17bc4fddf2d807978ece462791f91b2d088824db010f"
+      },
+      {
+        "job_id": "d2b0a721d02ba881dc036441b2275e06668620f27a4032f30478843e22e53de4",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_5fold/fold-1/seed-21729.json",
+        "sha256": "518dbb9f848b72a57b6bf713fe0c814ebfcac643f2430df7d9bc94aaf4a1d5aa"
+      },
+      {
+        "job_id": "d365e6c0acc0e3f362a5ab1819258930f563624fd07dd7a1684ab2fa51c6986d",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_isocyanide_5fold/fold-0/seed-21729.json",
+        "sha256": "9eb37210e3b427bfa5d1e6e0501d0d344e110f91ab77e251513979795917bdd2"
+      },
+      {
+        "job_id": "d3f3efc3d8d2b96e957264aa02fce7bc003c114741fc9707f89feef8216f8877",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-2/seed-1729.json",
+        "sha256": "7d048319c205685748f56c54fd3745a085bccac7a0f27577840ddf392b86f85a"
+      },
+      {
+        "job_id": "d401d7a37c229e33b171e3652a89d9931da30d28ffd9c7aa50285fc021453015",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_aldehyde_5fold/fold-1/seed-1729.json",
+        "sha256": "f03e6bb5fe027db3af7bf1a97aaef4b0d9bbe78a8428219831ff4bbc1048a2f3"
+      },
+      {
+        "job_id": "d57a9cb02cc52695dd865da2d55ce2928bcb306fd5ee6b77b1ec9761413b0af0",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-0/seed-1729.json",
+        "sha256": "55128464ccf5bc886db438989c36a5002df2d69c68dd92cb1764f333d92d637f"
+      },
+      {
+        "job_id": "d57e81fafa5de1fe8eccce780e26933e7028aa428953d18a138a75e823807313",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_aldehyde_5fold/fold-0/seed-21729.json",
+        "sha256": "aeba209ced9c45315323878b178005d0c7101407643a86331bb82b0b5cfb8b93"
+      },
+      {
+        "job_id": "d588155f212501bb642110c1c4562e925e4eb5f9f7920e8d4b21e85336866457",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_5fold/fold-3/seed-21729.json",
+        "sha256": "16d5991aa367b275d7b23d23ea2484cca979cf05092c7135aee1563e533710f3"
+      },
+      {
+        "job_id": "d58d9990981e59afc36aa1f439bfbd694f84fc4d10bd7a10f95659a170efc783",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-2/seed-21729.json",
+        "sha256": "e8052dbf955ce7ff5f5fb34bdd45bb1a8bd91667d1e8ad2ff43e006eaf0fc914"
+      },
+      {
+        "job_id": "d5b78b102a5cd2c48f18bda318b7bfb82df2a502b3780813800619fb4a6b7a0f",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/lantern_scaffold_balanced/fold-0/seed-21729.json",
+        "sha256": "f593e747c467d2c08cd7b9f6635b07b26c9952290acdcf3905b1d003ff8c28d9"
+      },
+      {
+        "job_id": "d5bab137fda38284af2bdff4e55f756990b5e2b93cbd9b4872dba467dba7c1d0",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_isocyanide_pair_5fold/fold-3/seed-11729.json",
+        "sha256": "a20bebc163d55f7f845a534d78b6ad622343909060f4fa44ee7128b3db4d2298"
+      },
+      {
+        "job_id": "d5d37d06379f8595f9f561971ef39765b66b125fde7df1f16e97aa66f5b3e1f3",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_isocyanide_pair_5fold/fold-4/seed-11729.json",
+        "sha256": "8ce2d9bce28bfe8b7ba7eedda464d7b963ebf5262fbde005838832207f459782"
+      },
+      {
+        "job_id": "d6217d96bb6c4456590d82a4be6825a5e5996fb3a849a7c578f693c04060ff93",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-0/seed-21729.json",
+        "sha256": "9237d671504ec22b20719b10d1cf90c2abbc6245875ebe02421949bc5ade75c5"
+      },
+      {
+        "job_id": "d686ddcce1116496b60603a7f856da333e67fefd51b1343656f6979e8800fa63",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/lantern_scaffold_balanced/fold-0/seed-21729.json",
+        "sha256": "39ee2d805a81320f5044f3beb050dac761c7ba2e0b3497e3058436a82eb790f5"
+      },
+      {
+        "job_id": "d79c42be0992e15a8bbca21c941820b95cfdd9757fc831e002e64fdcec2174b3",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_aldehyde_pair_5fold/fold-3/seed-11729.json",
+        "sha256": "438e79c2f76ba113df51d306ec6eceb997330137a1be0ed46912db403d38f6e5"
+      },
+      {
+        "job_id": "d81ffb3a559b370638b1fed1d75a6c09b19b8155cd28725c33fa737dd1d53763",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-0/seed-21729.json",
+        "sha256": "26dea53173277ed8f3de5fb8a9f7f0e8462aa44cccdbd215c88c0c644541e856"
+      },
+      {
+        "job_id": "d856160cd1da32825d139aac2d688d22f906d2a43cfe364a6a1dea3ad2acaf3b",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_aldehyde_5fold/fold-0/seed-11729.json",
+        "sha256": "fef8a2753b26e6892f7a15331daa747b03c6e2debec39b793d146a40da0b1aa2"
+      },
+      {
+        "job_id": "d87024e78d162f728b7909eb4ef4cd06a6c1df63e291d9e3d1e4adb8eae83481",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_isocyanide_pair_5fold/fold-2/seed-21729.json",
+        "sha256": "5745358d70ce0daa8aa1db340f502077837b6a0404fecbe797c308cde5ff65e4"
+      },
+      {
+        "job_id": "d9673e0c529dde94bcd6ef13ccc7f1370d78ccbdb8ebac2b12e7301f9b6ea660",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_aldehyde_5fold/fold-4/seed-21729.json",
+        "sha256": "16f59798a78d39f854a6c48e941a24d1ec501385174aaf8ba63f2e90703df2a0"
+      },
+      {
+        "job_id": "d9e3afc0e7fea8339a1a9e65231a7e26cd94ce3fbc706239ce6ff3ceae9463d0",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_aldehyde_pair_5fold/fold-1/seed-1729.json",
+        "sha256": "d473dc22bd20f41057b2e4660ee742c949173342dfc8f99f6487132d32bcc672"
+      },
+      {
+        "job_id": "dab85372f5c17a5e963bc169e268155220fc17b6c65baeb086dff5453335f92d",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_aldehyde_pair_5fold/fold-0/seed-1729.json",
+        "sha256": "d5d574bd35bdc2442106830792ee5f260be0b20c3c7c8497ba740a9abac9b5fa"
+      },
+      {
+        "job_id": "db2930480ae825db24171e9588607896f137d281198ea100b4e4a39f28b5b15c",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_aldehyde_pair_5fold/fold-2/seed-21729.json",
+        "sha256": "e4383a9592f50e23be2dc40b18ab73f9ce68523d738277eb2225613c304c2c1b"
+      },
+      {
+        "job_id": "db471b3cd9ccf7e3d1611a32e00c1dbcb4f77bd87adbb6f87260520c6fd09042",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_5fold/fold-3/seed-1729.json",
+        "sha256": "8457a7f1184654a22a63ffa7fa5307a5c6a648d04ceaa9a565ecd0f31fe671b0"
+      },
+      {
+        "job_id": "dbaf352b961f1aaf601eebce2a21ec9f2f4bd7f48967da9d7b315b3447e72fad",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_aldehyde_5fold/fold-0/seed-11729.json",
+        "sha256": "fa4b8652479b9e781d0bc1989798a322294f298e95820ccd9561b959e13b8c92"
+      },
+      {
+        "job_id": "dcdb5371a61d944d66e91b0d3017e56941714f004718936dcf7d6eca48a3ab72",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_5fold/fold-3/seed-11729.json",
+        "sha256": "77c371343fd8dc100c85c8b72db4c53a9f5fb762999df8686b10c69183a82c43"
+      },
+      {
+        "job_id": "dd075f177f32b77495bdf63c1cf6e4f6f4da357245182185855894ed3ec16a1a",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/lantern_random/fold-0/seed-11729.json",
+        "sha256": "76fd15388d93bc6b9054d36c67c9ee577780a300fa75efdbba3b39a0ae5aa63a"
+      },
+      {
+        "job_id": "dd0a3c1347cd5c4de6752ecfaa427b188e0009d6752170849050b11c3143c896",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_isocyanide_pair_5fold/fold-1/seed-1729.json",
+        "sha256": "18b83570faf91a694b2e3c31560a6d85d2c5da3d2236a6194e8ae382a110708a"
+      },
+      {
+        "job_id": "deabcab6a2823821256ed3810923fdf9584d5da12e339b70b9b46612887a2c8f",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-2/seed-21729.json",
+        "sha256": "9d9d460b033eaafee2f604d2e359b9176ed8a4ba3e3b55a0acdb11d79ecef8d3"
+      },
+      {
+        "job_id": "df8d039ea2ae63f6ce4fb3c2b2db76dd1b223cee4329d383e78e58d0ab41aab2",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-0/seed-11729.json",
+        "sha256": "8f5ff8d74ec8b6f2be7c19233b0d304bbfbd692a61bb2dd0e854776fb5b582bb"
+      },
+      {
+        "job_id": "df9255ec558d562ad55ed271dd31210e244d465ef45bdafa9f09612bc1502b44",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_aldehyde_pair_5fold/fold-2/seed-1729.json",
+        "sha256": "d8092dd565498401f9b09bb8c4b5bde3e829ecd1d1bad907d2dfbbbfb5ac24e8"
+      },
+      {
+        "job_id": "e0742791416166ca3cf201fae02ef376886b7c32f7153b57815ad7687ab21055",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_isocyanide_5fold/fold-0/seed-1729.json",
+        "sha256": "91eefc6fcd34fa69bbea84e352e0fcdcd0bf80708cff262171f57ece4f491340"
+      },
+      {
+        "job_id": "e0a5d6eeb45324dbabd50403da8590c363d188a261834a5880be65888ecf5185",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_aldehyde_pair_5fold/fold-1/seed-11729.json",
+        "sha256": "3ee03170c1c9f8debb7ef93884de094411e47779dbe830e9487835f92a0c9541"
+      },
+      {
+        "job_id": "e12f83d82874d190a6876d120917c81009e6c6364f6bf39575b038becaf4cd7c",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_isocyanide_pair_5fold/fold-0/seed-1729.json",
+        "sha256": "3343cc540c72d90220e6cf07de1ea1c272d2fe63312120e2ee993b969f4a67ab"
+      },
+      {
+        "job_id": "e13a153e5bd5bb3cbbecadd7e9cd3517fa32c2e4a73073caff44e7ce5d4ae10a",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_isocyanide_5fold/fold-0/seed-21729.json",
+        "sha256": "a7eeec048c3c3482f64ee5bb2a0d0e62f362ec545700c1bb5ed564fff4d939c4"
+      },
+      {
+        "job_id": "e19ef079b5c1af42f65077316b4dffe56a149fcec6f1d66508fa88e3581a9f0e",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_isocyanide_pair_5fold/fold-2/seed-21729.json",
+        "sha256": "c4fac9e5cec5e930fd40cc8839ed172ae3984b742a1ce23d7afd433274478941"
+      },
+      {
+        "job_id": "e1e86712e3e67326abaa9b530e28816b31857ebcdffc2002a49b235c8d9a862e",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_isocyanide_5fold/fold-1/seed-11729.json",
+        "sha256": "a2189921deb3f8092fda5132a3ba8be521871f061099517874d4a1023c2df438"
+      },
+      {
+        "job_id": "e25f5f44072765619af649f2728c143446be9811eb2b23f0f2e362bf8ea1568c",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_isocyanide_5fold/fold-4/seed-11729.json",
+        "sha256": "abe476b67e007029e594ca4959b71b653bf15e86e724b43fd7e2b2ab3167a664"
+      },
+      {
+        "job_id": "e2721cfb4880d8998ee294f4a0f7e012d206aafd2fc9c18d4b055a3a2894bcbf",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_isocyanide_pair_5fold/fold-4/seed-21729.json",
+        "sha256": "481320dbec1c8cfdb945508e5d14df2d0ed8d2b7239e148bcc5d0236e0a81bdb"
+      },
+      {
+        "job_id": "e2ffebbec5f7a4d589869d84b4bfd6e806c5849c5b509ae2f4a639bd1cfea039",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_aldehyde_5fold/fold-1/seed-11729.json",
+        "sha256": "3c0889d221e292b1e5f5e337d293886de58408dd8d46ffb57efeb777fd07eea9"
+      },
+      {
+        "job_id": "e360898771f693f977037949b05aaf1181a5776d0e48f23ea730c6c9bb9652e9",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_aldehyde_pair_5fold/fold-0/seed-21729.json",
+        "sha256": "63d3ba2b9ab6326b3baf469ba2f39aa5a6cc18e12f68d60570f28b168a880c3c"
+      },
+      {
+        "job_id": "e3d4f6b9c263f157995cf7863f7772bee42f4bb2fcd131c0addd64df2aee1e4c",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_aldehyde_pair_5fold/fold-4/seed-21729.json",
+        "sha256": "627e504b2f38a3dd736a744c7e1dd9000af2e65e1e3ac89cb69698de25e8e5bb"
+      },
+      {
+        "job_id": "e4047aaff892e2326bca91fcd55ab80b2dea77ced42e9c6bd8c0d8525d438d9e",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_5fold/fold-2/seed-1729.json",
+        "sha256": "79d62269cf903d9a42ac2d3af91ea5d79a1959ef66c221349c478a58980a1fb6"
+      },
+      {
+        "job_id": "e44b87412b9c73860624df8090d6b5840152b77bb332bce1ae23199072273f03",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_isocyanide_pair_5fold/fold-0/seed-11729.json",
+        "sha256": "462d119f8181826349605356a55d04434ffeefe32829d54d7e5f577b4aa5d566"
+      },
+      {
+        "job_id": "e469bb75b90c8f2c04973567b0fc2f56ceee43a1adafaea0fde69ecc867ec8b9",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_isocyanide_5fold/fold-0/seed-11729.json",
+        "sha256": "6701870673ff58c478561a6fb5828dcc666cd13a1c0f0807338f3c79154357a6"
+      },
+      {
+        "job_id": "e54ad2340863c825b62241f685736ac4f669e97ceb2d45345b3b779e66f8ca54",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-4/seed-1729.json",
+        "sha256": "4bc221fcf7db231cc1564dcaa596762caa406532a1fe9237faccc1af2c57e25d"
+      },
+      {
+        "job_id": "e5b441a7e67dcbf2ba74358a713948bb77dabd7528e9714fe9ad9bf6c8bf66ab",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_aldehyde_5fold/fold-1/seed-1729.json",
+        "sha256": "4f4750b39c9abea30de3657c97efc128b5118140fa226a7e0ba355a5bb28e982"
+      },
+      {
+        "job_id": "e67821a331718d4e84ac3c3babeee1b3c5752751e0f0394a7a4783a0b08f38ae",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_5fold/fold-3/seed-1729.json",
+        "sha256": "1e62008cb4168e383cf9b2b056a5e456deb67c0847c6eebecf3f606ce8550efe"
+      },
+      {
+        "job_id": "e78fe8a5f775f86a1db3342207a48523b196dac4fe75d74540c526ad4f0c751f",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_aldehyde_pair_5fold/fold-1/seed-21729.json",
+        "sha256": "652a32d945302045cf20a0b91b99b8e091540ce2516221b440f80319854609cc"
+      },
+      {
+        "job_id": "e837fdbb4442ebc8b85260c16d1fe3c0adee3aca8954e7fbc8a2d2b718247a17",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/lantern_random/fold-0/seed-1729.json",
+        "sha256": "9912c322be532cd3f5b7828a48012001423182bcb359912a01c4f64302747dea"
+      },
+      {
+        "job_id": "e903819e89ecea9e05eaaea7cd461c5d8affe07c90418bb19467de88b6d49717",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_aldehyde_pair_5fold/fold-4/seed-21729.json",
+        "sha256": "be9de44b0976c4dc264181dc0d23a8169eabd083224978dbfd57d50bb8272afa"
+      },
+      {
+        "job_id": "e9a8c74229229d3ce78d561d65f62819e796e3abaf644b1396689510f6a77832",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_isocyanide_5fold/fold-3/seed-21729.json",
+        "sha256": "4ebb4c843bfd0bcba719003721919f35a6f2422cabf00d03e89eb192b762dfc6"
+      },
+      {
+        "job_id": "e9c90ca18abd4a21f7a857de376ccb09942323be6d984753264778443f549cfe",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_isocyanide_5fold/fold-1/seed-21729.json",
+        "sha256": "f89abddb06a6d05305408b67254dc9c3662a87c2547ca75c9ea88320767bc7e7"
+      },
+      {
+        "job_id": "ea3433925225de2e57e752137d436d8ca53ec59a437bc130ad06eb24abac587a",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_isocyanide_pair_5fold/fold-0/seed-21729.json",
+        "sha256": "3bcb78d9146596fbda7a8b56e5f76ba32e730b0ff1a97bc446b8cf4ef4ec534c"
+      },
+      {
+        "job_id": "ea4de37786f681ab0e53019e76a375d3e55cec98e75944dd129036ea880e3443",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_5fold/fold-4/seed-1729.json",
+        "sha256": "5969dbbc25fd43debb365d101fbac168b789faf337f62db2ba1b60969255eae9"
+      },
+      {
+        "job_id": "ea9326f02e16f3b557b4bd8a28e1ff62bdcd771ee6feda2a454c6cb5617f384b",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_isocyanide_pair_5fold/fold-0/seed-1729.json",
+        "sha256": "8324bf5dfd1fc71abbcccc0be5111f2d1d58331d00e1728c9f0585a810c5f79f"
+      },
+      {
+        "job_id": "eabe782a0b9b94313d39e6de5927ca20562f93c274726ac79b3c5f9ce020465b",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_5fold/fold-0/seed-1729.json",
+        "sha256": "fb895a62d55730d0eca9f9cfaac47bb4f4c09722276f949cc541c2b4dfac4a58"
+      },
+      {
+        "job_id": "eb14a22f2676c85373e4393005349d069c71370328beb5721cc1257a5de0a8d3",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_isocyanide_pair_5fold/fold-0/seed-21729.json",
+        "sha256": "0942a034848465332d954d1450abdbd09f8439d8ba29f68bbadd34bf17edde20"
+      },
+      {
+        "job_id": "eb80f2e7b8c2ce0081e0cd5e97906df4bb6b5b9316eabb8ea55449094800f795",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/lantern_scaffold_balanced/fold-0/seed-11729.json",
+        "sha256": "5ca15deeb3646b09281a53c652a290da077d3dfcbf21879779a9ff7dc180c54a"
+      },
+      {
+        "job_id": "eccfbef1d664f0b0b8238d55dd89f09b1635f4b63a1b6f11a28a578e70b89593",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-0/seed-21729.json",
+        "sha256": "bed024fc67fdb1feec330546c2272bfc3b6f2afedb29bcb863f75e5c16e507e8"
+      },
+      {
+        "job_id": "ecf128b5cf9115206dfc3d5e74f0b00e3ce2be22f289d99995c8d39063788110",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_aldehyde_pair_5fold/fold-3/seed-21729.json",
+        "sha256": "1fceafb760ddc559c75420c0ae82cec871ac204ee0b897805fac4114e5f01bec"
+      },
+      {
+        "job_id": "ecf82e85774471ced23fe6158b43d02d9fa7b02c43186562273b1e1d5a4a13e7",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/lantern_random/fold-0/seed-21729.json",
+        "sha256": "9ee515463cd8c969b3a9dd8b2804213b068f6be46026107b6b0cf86ff4731700"
+      },
+      {
+        "job_id": "ed015c8f83d093f05e147930c4436c4664e08fb8dfd86e4ba3933561c47aa963",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/lantern_random/fold-0/seed-21729.json",
+        "sha256": "de68b4ab9adc884544be4df41197c3d507838a79de9beda2d237b270d764b646"
+      },
+      {
+        "job_id": "edeac3d2fa72441c466cbcedc5f239fa3ca4042fb34cbf85be75d1087bdd793d",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_aldehyde_5fold/fold-2/seed-1729.json",
+        "sha256": "ecbecc55264cec44bb0094328c06a9e4a4aacf4500c1237a7d916002527334db"
+      },
+      {
+        "job_id": "ee022657c794383ce02c9f05656e9e4ee39c2683d7bfefa811cc020413587b7d",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_isocyanide_5fold/fold-4/seed-11729.json",
+        "sha256": "8bcbb64d1555ba68e5995689ef0fdca8c80379027cfc5ecca5c5ca93b8d4ea60"
+      },
+      {
+        "job_id": "ef148c78364bc098257a622985856666d1ede0e3244a9d05a1586de972c04411",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_aldehyde_pair_5fold/fold-0/seed-21729.json",
+        "sha256": "f43d4e86b2cbefcae611652c3283da72a01b2717653c743a1521076e8a140e9a"
+      },
+      {
+        "job_id": "ef259fbc3e14115e35e7a78c762bf8c535929a47d9dc7aec8534319f493042b6",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/lantern_scaffold_balanced/fold-0/seed-11729.json",
+        "sha256": "8ef2656dd8076bcbf1487387c026477e8e4ed6ce666ce53acca2515fed4296ab"
+      },
+      {
+        "job_id": "ef90200e8991448be87eb186c4c8076034fa57f5d8f2a78f5c3e56631ea79159",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_isocyanide_pair_5fold/fold-1/seed-11729.json",
+        "sha256": "1e46d54b9e4f10cc33274efb3603414ec92ab71f30cd4e412d5a2d2b3d2c4f18"
+      },
+      {
+        "job_id": "efa78ce59637cd1e93eddaa7b700106659e4bcf6a005569aa8012f1074861ca4",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_isocyanide_pair_5fold/fold-0/seed-21729.json",
+        "sha256": "562d7c49f95e398d3bf63fed1ffe4d55174805c2cd8200c3798c02172d490f3e"
+      },
+      {
+        "job_id": "efe4a93e2e8f51a7fc0e847b015437b9c51b3eccd90a687beeeb4f81bc42f8dc",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_5fold/fold-1/seed-1729.json",
+        "sha256": "9f084ef0948aaa8e8daca7f2b1d53af6a05763216f53e4101a3df1d126c3d474"
+      },
+      {
+        "job_id": "eff3186ce37ae2706afbd70302f39ddacb265f98d94b7c3477e7a91678553374",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_isocyanide_pair_5fold/fold-0/seed-11729.json",
+        "sha256": "eade32169ea6e8b9af7eb6d53126761e95650cfbcfc7e2ab04a40ab794b0b870"
+      },
+      {
+        "job_id": "f03f675748ea190630a7ec9236e06b9c3e6afed07a35949a66c61fb891932dca",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_aldehyde_pair_5fold/fold-0/seed-21729.json",
+        "sha256": "bcad6b5675d6e207290c0db0f686c9292ffd74a348f85d612dedb3d1a8e39df7"
+      },
+      {
+        "job_id": "f08bf7fa2d0778c82b5e9dcabb725e29e59e6976cf265f33b2aef03a90d1fd85",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_5fold/fold-0/seed-1729.json",
+        "sha256": "871971e066672b3b222afd3e12f09c70c0f6f4eacf13a231b84406c990b37551"
+      },
+      {
+        "job_id": "f08cdd763e9054646f67da96ead016d724071d107a0f15f31006a4815c26973f",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_aldehyde_pair_5fold/fold-0/seed-11729.json",
+        "sha256": "a8d2f96fd847b194b0a50d8b4d45cd030a49d4ae2691660e08b6929455b63259"
+      },
+      {
+        "job_id": "f13c96f439530193a87f0fe48c4d4985f1c11e048df250dd1b0ebabbe2a91c82",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/lantern_random/fold-0/seed-21729.json",
+        "sha256": "1a8d16560076f2194e7a17a42a3e2e11dd99bb323f176239cbec9cd32f4844c4"
+      },
+      {
+        "job_id": "f1b83e6d89ad41a1cbbb0bf3657a5402dcaaa24651410ff3e41ce83c68d2dec7",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_isocyanide_5fold/fold-2/seed-1729.json",
+        "sha256": "bae54c49b501445bf5e776637547149540f7e93d0cf29f65e75e50b6e6608780"
+      },
+      {
+        "job_id": "f1d466bc8e4dae7ac42971e529de00ef079bf2b1ab454dbd18773d845dd8d3d4",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/lantern_random/fold-0/seed-1729.json",
+        "sha256": "56f137be6445dc112b696f4f9e8e5b324354337d796c45a330e940767c8dad68"
+      },
+      {
+        "job_id": "f20cb12579b99b508b0820c4821548fbe458f721e027eaea75150fb142a96807",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_isocyanide_pair_5fold/fold-3/seed-21729.json",
+        "sha256": "ed8cca76e27ad2c11b018f68e31a6b6efdf69151affc2b68f2415b5650ecf307"
+      },
+      {
+        "job_id": "f20f5ad3c79e0cd38485352853263568f8881f7b2ea1b2611b2321a3db0c587c",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_isocyanide_5fold/fold-1/seed-1729.json",
+        "sha256": "bc21fa7d7d748de097bea2163babdabc27f9d0bfbe894955115bb011567b37c9"
+      },
+      {
+        "job_id": "f264a26e8fb53d58bb920e6142b7348bcd4aa8ccfe48e6fbf53681dc3fc53b68",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_isocyanide_pair_5fold/fold-1/seed-11729.json",
+        "sha256": "2eb8d7af8730b75cd97c1e5d14bf1ca248b799682b35269e4364ce0766193883"
+      },
+      {
+        "job_id": "f281705eec676682dd74cc24c9e7b767fc5281baba1e463c684a24d81b500031",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_aldehyde_5fold/fold-2/seed-21729.json",
+        "sha256": "ceb7d7b875c65d9687d59ef7286373e5ed8f3c4c36f12985f26a5c4bbc1267b0"
+      },
+      {
+        "job_id": "f333624f9020a4822b2b7101ec8c68096207186ac858521a557fe8c5c850ccbd",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-3/seed-1729.json",
+        "sha256": "ba823fb184a7f1e999ae650044ff003073870dc6d869f1f397e16c61c08dc221"
+      },
+      {
+        "job_id": "f4294944ec1295e4491ac72fd4193f11a6f816c4bab3f06f5234f40fe0a05d6d",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_aldehyde_5fold/fold-0/seed-21729.json",
+        "sha256": "aa01873a47eae037233bc5f5abef20e9516136fe7e15f50e89218b2191f11603"
+      },
+      {
+        "job_id": "f545bc5708f54a3d9e3f114bf4868cd6b6cbb0658a2235874f29db78b21650b4",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-0/seed-21729.json",
+        "sha256": "151c1fe345c798b953da1cc52ee500b7926a17b4cdd615f08a3b8c8fcc11ea36"
+      },
+      {
+        "job_id": "f6056e3b73f432929ab40a6b3e387ba70f0201f23b307c2a1a880c4d8a7dfb14",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_aldehyde_5fold/fold-0/seed-11729.json",
+        "sha256": "985930d80089a441f1188ef9f08d07a93ca2659baf764ca6f44170810654f1bf"
+      },
+      {
+        "job_id": "f66c816927e2139f2ecdf13618ee643a3813deca9b1223ca2d563bf9e9e6bf72",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_isocyanide_pair_5fold/fold-2/seed-1729.json",
+        "sha256": "fd4f8745faa4ba29d7e86b90ab333b7e3717f211d99e40d40b154dcccdb7ee43"
+      },
+      {
+        "job_id": "f70b319d48bb6cdbdaea83e054600af74d08fde2f30b41ce7b609be19751edc4",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_aldehyde_isocyanide_pair_5fold/fold-4/seed-21729.json",
+        "sha256": "7022f848f0d4956b7b492e370e50c9c50cec71dc17b18a74823f8ef7c806855d"
+      },
+      {
+        "job_id": "f75b878a9809e0a459e403c57af32dc486c121d66d0a5d2226de150b620460e8",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_5fold/fold-3/seed-1729.json",
+        "sha256": "c3a683acc734e9ad54afff6eaffef68c17fa2072232d45ce20ae14553f1f759c"
+      },
+      {
+        "job_id": "f76ce820e8eb218449ce51826d2a2cfdc3ef26bac1a92174bec6aafa8b9693bf",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_aldehyde_pair_5fold/fold-3/seed-11729.json",
+        "sha256": "9a1949bf94dc50504afe220f3fc9fca34a3c4937aa52e6ada832ba6d6a58a391"
+      },
+      {
+        "job_id": "f79c84c7ffad19a819ecdb334cd4a443b0f1dd2174fe7f6ff49a9b7179d448c5",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_isocyanide_pair_5fold/fold-4/seed-11729.json",
+        "sha256": "4c82d3e8b24f9dc6033f0309ad84be6da7266368e5c035ed8fcdf08726f5fb53"
+      },
+      {
+        "job_id": "f7c35b0dbe77b696ee2c963b25f1d5346e06860fdb3529ec8a7e4c4e72773147",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_head_isocyanide_pair_5fold/fold-4/seed-1729.json",
+        "sha256": "d8cf1a6a0e0c6a7bee53d47a421e295364c3dc2b56b5e63cdb30083fe852c556"
+      },
+      {
+        "job_id": "f802fee8063cf9be3ad1c441f934a87fc7db000f9694694e9c412055996376c9",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_aldehyde_isocyanide_pair_5fold/fold-1/seed-1729.json",
+        "sha256": "224917f7d01ada9e30b20d7801188362b9ee9b95812862bbdb3e8ebcf0c095de"
+      },
+      {
+        "job_id": "f85894594770b5353df5130b38eafde887cdca456db18d5b08f75ffd22bc5486",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_aldehyde_5fold/fold-0/seed-21729.json",
+        "sha256": "32073d851ebe38c09377b4c334f1ce595dfe2529ef10c9208e9e88998c052793"
+      },
+      {
+        "job_id": "f8aa7157e794dbb71682726034e7de586c0b7455cdfad49a99d478228062836c",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_isocyanide_pair_5fold/fold-0/seed-1729.json",
+        "sha256": "572e9ae15c691ee9b9981d320bb8260bce567c1a0e8c860647f8ef062aae5be9"
+      },
+      {
+        "job_id": "f96279abc675cc13cf25102b962550dc318e4047ac531ae97d11d7b2b158d965",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_5fold/fold-3/seed-11729.json",
+        "sha256": "42966c659f99d965a8b19a445187502ea7c5e76378bf3763f307fa13ee27cb9f"
+      },
+      {
+        "job_id": "fac86d2c202e48fbdd7009928bd2117f439b40bb1ef5976b8242104bdcf79d56",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Raw/held_head_isocyanide_pair_5fold/fold-3/seed-21729.json",
+        "sha256": "4eb7c0c2c1b8d7e83f9221a78752caaa39219859dba5cf46d61ccd77e0592bec"
+      },
+      {
+        "job_id": "fb44f23f57cc1ef3ed8440950a9a5583c9619c3e20fd2948801bac3749b99273",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Raw/held_isocyanide_5fold/fold-0/seed-11729.json",
+        "sha256": "b790506ddc002d2f52cf81db966e6f9b7481c02b1977559e6857e6d21235e12d"
+      },
+      {
+        "job_id": "fb7c3c52f782c7389df7a974bc717dcfc52ca4c68b5c1a2efd4b9d16d7312d88",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_head_aldehyde_pair_5fold/fold-0/seed-1729.json",
+        "sha256": "1cb48f4373acced9a128e548630f7769cafd8852c6f06c08587d252716938e19"
+      },
+      {
+        "job_id": "fc456920d0fe47890b0ec4d3ed63c1c093505c6f88dae5360ca600bcec8442ca",
+        "path": "results/m0_07/graph_fits/whole_graph_edge_gin/expt_Hela/held_head_isocyanide_pair_5fold/fold-2/seed-21729.json",
+        "sha256": "bb732ee077728c231c1b24de2ac3cfbedd49e9b8019fd80f83afb56357bcd6e9"
+      },
+      {
+        "job_id": "fcd876f4fee4008cda8dda3a20ebd2337d212f2c5c6d9ac3e4db61a667dacc2c",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_aldehyde_pair_5fold/fold-1/seed-1729.json",
+        "sha256": "4abfe5f3fdd8fed21fa6dbc24ab612f69c9b20154be49465f0600967e8ceae1e"
+      },
+      {
+        "job_id": "fe8dc1df176d8b608dc50b3bdbd82f698dd9d9ff8b9a4c4e007030ee6bc835da",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_isocyanide_5fold/fold-4/seed-21729.json",
+        "sha256": "1006ad615f9efced965dd050488e3fda2c7af5114e3d3e073ef202a6633b0d1d"
+      },
+      {
+        "job_id": "fea1649530f0f7d4e59c1ccc515da09c3be654735f21b5720496e7a2ce5ae6c5",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_head_isocyanide_pair_5fold/fold-2/seed-1729.json",
+        "sha256": "4a18100c2febd7dc8c4e89e66363bcf2eb6997bdb5142dc2b9eaa82b8f10e824"
+      },
+      {
+        "job_id": "fefa10f0aa636ad39d9c5d5f7c0af6fb4a36a69767535b93ac2972b7a482da7c",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Hela/held_head_aldehyde_pair_5fold/fold-4/seed-21729.json",
+        "sha256": "c1483984505231dacc76e7aa5f895bb9bfc1e521f33cf6d555f01bcdcac31fe8"
+      },
+      {
+        "job_id": "ff5ceeb8afac0a995cbdc1c09f610f02403f00cc2e5d3d97fc0fb8d08fcf419f",
+        "path": "results/m0_07/graph_fits/ugi_component_role_aware_dmpnn/expt_Hela/held_aldehyde_5fold/fold-4/seed-1729.json",
+        "sha256": "d385460905e085824c99ffed800f2a701aeae70817dcd60a8bd8e83f06cfa100"
+      },
+      {
+        "job_id": "ff82485b9855db774d316477c327ed06fdb3aebe1044931ac4d849cf6b98973c",
+        "path": "results/m0_07/graph_fits/whole_graph_dmpnn/expt_Raw/held_isocyanide_5fold/fold-1/seed-21729.json",
+        "sha256": "cf161551a28b9c29ddf5aa3660ae909b8f1b97c614acb541d471329086a3242f"
+      }
+    ]
+  },
+  "inputs": {
+    "config": {
+      "bytes": 2794,
+      "path": "configs/bio/m0_07_oracle_graph_matrix.json",
+      "sha256": "ddd96f2dd5e3c0f9c42625cd449deb1d079965bf16d7ffd76d766bae3531575c"
+    },
+    "curated_oracle_data": {
+      "bytes": 30259,
+      "path": "results/m0_07/agile_oracle_curated.csv.gz",
+      "sha256": "9415f1c0f40399f87d3df00c0c83a341a3776ca110e6bc98763fdcbd420a27be"
+    },
+    "graph_corpus_result": {
+      "bytes": 14257,
+      "path": "results/m0_07/oracle_graph_corpus_result.json",
+      "sha256": "8aa3dc31a4becc917c1e255217c828862995ea988cb1baf75ff7465bd8a11b2a"
+    },
+    "graph_profile_result": {
+      "bytes": 27804,
+      "path": "results/m0_07/oracle_graph_profile_result.json",
+      "sha256": "2dad16e9be14d3d0ebbbc10ec73bb594d03c626481ec5be2aaee3b5115425697"
+    },
+    "oracle_split_assignments": {
+      "bytes": 101730,
+      "path": "results/m0_07/oracle_split_assignments.csv.gz",
+      "sha256": "7d988dfb59620cd121c88840858f6f9c42a7cb8d3c511bb83b8e3065d8fb86a2"
+    },
+    "oracle_split_manifest": {
+      "bytes": 12276,
+      "path": "results/m0_07/oracle_split_manifest.json",
+      "sha256": "b6cef4f2525c793077fe00f406a873a5b00317c5538ae1adbb92e7e359961863"
+    }
+  },
+  "schema_version": "m0_07_oracle_graph_matrix.v1",
+  "status": "completed_graph_oracle_matrix_pending_scientific_freeze",
+  "summary": {
+    "ensembles": 192,
+    "fits": 576,
+    "metric_rows": 192,
+    "prediction_rows": 40920
+  }
+}

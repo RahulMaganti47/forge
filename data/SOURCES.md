@@ -40,6 +40,8 @@ for the actual files it distributes.
 
 ## Evaluation records
 
-Table 11 supports summary replay only; its upstream HeLa inputs are unavailable.
+Table 11 supports summary replay only. The frozen HeLa checkpoint, assay data and splits are
+included; four upstream study results and fold-level fit records remain unavailable. The original
+oracle inference environment has not been qualified in this checkout.
 `imaging/reported_roi_values.csv` contains the four reported 4-hour values from Figure 2;
 replicate counts and uncertainty metadata are unavailable.

@@ -1,0 +1,147 @@
+{
+  "schema_version": "forge.release.bundle.v1",
+  "reference_pdf_sha256": "7ea7cf2e51922e5e58cd6659dc183409e465ede2eb1586fc8d0ec39935c4fd53",
+  "scope": "Recovered frozen HeLa oracle checkpoint, assay data, splits, configs and calibration summaries; not a complete Table 11 rerun bundle",
+  "files": [
+    {
+      "repo_path": "configs/assembly/ugi_variant.yaml",
+      "bundle_path": "configs/assembly/ugi_variant.yaml",
+      "checkout_path": "data/hela/configs/assembly/ugi_variant.yaml",
+      "sha256": "5b97e062b115fcc137b4a05d8f72b74e9cc67a584c05c054ef5f983969bf1427",
+      "bytes": 1814
+    },
+    {
+      "repo_path": "configs/bio/m0_07_oracle_graph_matrix.json",
+      "bundle_path": "configs/bio/m0_07_oracle_graph_matrix.json",
+      "checkout_path": "data/hela/configs/bio/m0_07_oracle_graph_matrix.json",
+      "sha256": "ddd96f2dd5e3c0f9c42625cd449deb1d079965bf16d7ffd76d766bae3531575c",
+      "bytes": 2794
+    },
+    {
+      "repo_path": "configs/bio/m0_07_oracle_production.json",
+      "bundle_path": "configs/bio/m0_07_oracle_production.json",
+      "checkout_path": "data/hela/configs/bio/m0_07_oracle_production.json",
+      "sha256": "0127b683cec18cfa4fa22ecd8c0b1ead2ead887c07e2723ac2174d00d5e9e35a",
+      "bytes": 2355
+    },
+    {
+      "repo_path": "configs/bio/phase1_ugi_hela_potency_diagnostic_authorization_v1.json",
+      "bundle_path": "configs/bio/phase1_ugi_hela_potency_diagnostic_authorization_v1.json",
+      "checkout_path": "data/hela/configs/bio/phase1_ugi_hela_potency_diagnostic_authorization_v1.json",
+      "sha256": "ffcc3f0c22ca46ad603950873f5e5eef262a3141af419b546d36c79c4f6ec26b",
+      "bytes": 7688
+    },
+    {
+      "repo_path": "data/vendor/qualified_reactions_v1.json",
+      "bundle_path": "data/vendor/qualified_reactions_v1.json",
+      "checkout_path": "data/vendor/qualified_reactions_v1.json",
+      "sha256": "296bf06238ef22acc1f55117f5ce0adaee21b1bafaf5a83f89182b0f31cc4fcf",
+      "bytes": 5116
+    },
+    {
+      "repo_path": "results/m0_07/agile_oracle_curated.csv.gz",
+      "bundle_path": "results/m0_07/agile_oracle_curated.csv.gz",
+      "checkout_path": "data/hela/oracle/agile_oracle_curated.csv.gz",
+      "sha256": "9415f1c0f40399f87d3df00c0c83a341a3776ca110e6bc98763fdcbd420a27be",
+      "bytes": 30259
+    },
+    {
+      "repo_path": "results/m0_07/oracle_freeze_result.json",
+      "bundle_path": "results/m0_07/oracle_freeze_result.json",
+      "checkout_path": "data/hela/oracle/oracle_freeze_result.json",
+      "sha256": "8476be6e013e12715bdb55a7ef6d73162b01010f7b560297c6e8406028cda338",
+      "bytes": 74675
+    },
+    {
+      "repo_path": "results/m0_07/oracle_graph_corpus_result.json",
+      "bundle_path": "results/m0_07/oracle_graph_corpus_result.json",
+      "checkout_path": "data/hela/oracle/oracle_graph_corpus_result.json",
+      "sha256": "8aa3dc31a4becc917c1e255217c828862995ea988cb1baf75ff7465bd8a11b2a",
+      "bytes": 14257
+    },
+    {
+      "repo_path": "results/m0_07/oracle_graph_matrix_metrics.csv.gz",
+      "bundle_path": "results/m0_07/oracle_graph_matrix_metrics.csv.gz",
+      "checkout_path": "data/hela/oracle/oracle_graph_matrix_metrics.csv.gz",
+      "sha256": "019d43f16779c5abc8baec5b1d96c8f43053fb3a7422525bfc7557b9403def34",
+      "bytes": 25801
+    },
+    {
+      "repo_path": "results/m0_07/oracle_graph_matrix_predictions.csv.gz",
+      "bundle_path": "results/m0_07/oracle_graph_matrix_predictions.csv.gz",
+      "checkout_path": "data/hela/oracle/oracle_graph_matrix_predictions.csv.gz",
+      "sha256": "2a1e83794ad8acef7cf0de8533d5e0036d120daf434d05cc56be48db5b39affd",
+      "bytes": 1315497
+    },
+    {
+      "repo_path": "results/m0_07/oracle_graph_matrix_result.json",
+      "bundle_path": "results/m0_07/oracle_graph_matrix_result.json",
+      "checkout_path": "data/hela/oracle/oracle_graph_matrix_result.json",
+      "sha256": "1573e081a419b2b26a2deb3aab6d09aba20883235819a4d0b2dc7cf56e8738d4",
+      "bytes": 189142
+    },
+    {
+      "repo_path": "results/m0_07/oracle_graph_profile_result.json",
+      "bundle_path": "results/m0_07/oracle_graph_profile_result.json",
+      "checkout_path": "data/hela/oracle/oracle_graph_profile_result.json",
+      "sha256": "2dad16e9be14d3d0ebbbc10ec73bb594d03c626481ec5be2aaee3b5115425697",
+      "bytes": 27804
+    },
+    {
+      "repo_path": "results/m0_07/oracle_production_checkpoint.pt",
+      "bundle_path": "results/m0_07/oracle_production_checkpoint.pt",
+      "checkout_path": "data/hela/oracle/oracle_production_checkpoint.pt",
+      "sha256": "46f13b8a3cfef1f891e308dfda75e90685d82d1289f0061acdae4be18870e61c",
+      "bytes": 5041009
+    },
+    {
+      "repo_path": "results/m0_07/oracle_production_result.json",
+      "bundle_path": "results/m0_07/oracle_production_result.json",
+      "checkout_path": "data/hela/oracle/oracle_production_result.json",
+      "sha256": "268f8f5929af582f35ada2e7f141ed1756232cafd9997149f8fb614d6626961d",
+      "bytes": 30292
+    },
+    {
+      "repo_path": "results/m0_07/oracle_split_assignments.csv.gz",
+      "bundle_path": "results/m0_07/oracle_split_assignments.csv.gz",
+      "checkout_path": "data/hela/oracle/oracle_split_assignments.csv.gz",
+      "sha256": "7d988dfb59620cd121c88840858f6f9c42a7cb8d3c511bb83b8e3065d8fb86a2",
+      "bytes": 101730
+    },
+    {
+      "repo_path": "results/m0_07/oracle_split_manifest.json",
+      "bundle_path": "results/m0_07/oracle_split_manifest.json",
+      "checkout_path": "data/hela/oracle/oracle_split_manifest.json",
+      "sha256": "b6cef4f2525c793077fe00f406a873a5b00317c5538ae1adbb92e7e359961863",
+      "bytes": 12276
+    },
+    {
+      "repo_path": "results/phase1/oracle_campaign_selection.json",
+      "bundle_path": "results/phase1/oracle_campaign_selection.json",
+      "checkout_path": "data/hela/calibration/oracle_campaign_selection.json",
+      "sha256": "21d5348a9ffe929658af60ca1dcdcd58ab8dc654e3c893c80741cff829ddd7cc",
+      "bytes": 14334
+    },
+    {
+      "repo_path": "results/phase1/ugi_distributional_applicability_v3/heldout_applicability.csv.gz",
+      "bundle_path": "results/phase1/ugi_distributional_applicability_v3/heldout_applicability.csv.gz",
+      "checkout_path": "data/hela/calibration/ugi_distributional_applicability_v3/heldout_applicability.csv.gz",
+      "sha256": "8af8624a3c0f1d2a8072248c7e8b89c3a58a7380dd32b65c71c357eb72c00da2",
+      "bytes": 238008
+    },
+    {
+      "repo_path": "results/phase1/ugi_distributional_applicability_v3/result.json",
+      "bundle_path": "results/phase1/ugi_distributional_applicability_v3/result.json",
+      "checkout_path": "data/hela/calibration/ugi_distributional_applicability_v3/result.json",
+      "sha256": "a3e5c4bd446cde222b8007f3fc101f6c319d447410e2348f6b8915afa86161f8",
+      "bytes": 13545
+    },
+    {
+      "repo_path": "results/phase1/ugi_interpolative_conformal_v1/result.json",
+      "bundle_path": "results/phase1/ugi_interpolative_conformal_v1/result.json",
+      "checkout_path": "data/hela/calibration/ugi_interpolative_conformal_v1/result.json",
+      "sha256": "a7ad0ddb71019f1ca89fb073d75311fb65b9d3e6041fa349934f5e1c0237e2ef",
+      "bytes": 20508
+    }
+  ]
+}

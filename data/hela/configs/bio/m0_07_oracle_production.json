@@ -1,0 +1,61 @@
+{
+  "schema_version": "m0_07_oracle_production_config.v1",
+  "task": "M0-07 deterministic production refit of the frozen AGILE oracle",
+  "seed": 1729,
+  "inputs": {
+    "freeze_result": "results/m0_07/oracle_freeze_result.json",
+    "classical_config": "configs/bio/m0_07_oracle_classical.json",
+    "supervised_graph_config": "configs/bio/m0_07_oracle_graph_matrix.json",
+    "label_free_r0_transfer_config": "configs/bio/m0_07_oracle_graph_transfer.json"
+  },
+  "chemistry": {
+    "reaction_id": "ugi_3cr_agile",
+    "qualified_reaction_registry": {
+      "path": "data/vendor/qualified_reactions_v1.json",
+      "sha256": "296bf06238ef22acc1f55117f5ce0adaee21b1bafaf5a83f89182b0f31cc4fcf"
+    },
+    "reaction_variant": {
+      "path": "configs/assembly/ugi_variant.yaml",
+      "sha256": "5b97e062b115fcc137b4a05d8f72b74e9cc67a584c05c054ef5f983969bf1427"
+    },
+    "maximum_forward_products": 128,
+    "identity": "canonical_constitutional_smiles"
+  },
+  "training": {
+    "endpoints": [
+      "expt_Hela",
+      "expt_Raw"
+    ],
+    "ensemble_seeds": [
+      1729,
+      11729,
+      21729
+    ],
+    "records": "all_1100_reconciled_single_structure_records",
+    "target_scaling": "full_production_training_records_only",
+    "graph_epoch_rule": "median_train_only_selected_epoch_by_endpoint_and_repeat_seed_across_selection_eligible_fits",
+    "classical_hyperparameters": "reuse_frozen_classical_matrix_config",
+    "guided_generation_labels_used": false,
+    "virtual_candidate_labels_used": false
+  },
+  "uncertainty": {
+    "source": "selection_lane_foldwise_split_conformal_calibration",
+    "domain_radius_rule": "maximum_fold_radius_within_required_scheme_then_maximum_across_required_schemes",
+    "coverages": [
+      0.8,
+      0.9,
+      0.95
+    ],
+    "guidance_score": "ensemble_mean_minus_max_held_domain_empirical_residual_radius",
+    "raw_mean_maximization_allowed": false,
+    "interpretation": "conservative_empirical_held_domain_radius_not_a_finite_sample_coverage_guarantee_and_not_in_vivo_confidence"
+  },
+  "checkpoint": {
+    "format": "torch_save_trusted_local_bundle",
+    "path": "results/m0_07/oracle_production_checkpoint.pt",
+    "result_path": "results/m0_07/oracle_production_result.json",
+    "require_hash_before_inference": true,
+    "stereochemistry_used": false,
+    "graph_truncation_allowed": false
+  }
+}

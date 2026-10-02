@@ -24,6 +24,8 @@ runs/
 !/data/vendor/**
 !/data/imaging/
 !/data/imaging/**
+!/data/hela/
+!/data/hela/**
 downloads/
 .DS_Store
 *.aux

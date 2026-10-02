@@ -216,3 +216,26 @@ def test_modal_remains_an_explicit_backend(tmp_path: Path, monkeypatch):
     assert fetch(destination, manifest, profile="team", environment="main", backend="modal")[
         "ready"
     ]
+
+
+@pytest.mark.parametrize("action", ["install", "fetch"])
+def test_committed_hela_group_is_available_without_downloads(
+    github_bundle, monkeypatch, capsys, action
+):
+    from forge.cli import main
+
+    root, _, _, config = github_bundle
+    config = {"files": config["files"][:1]}
+    (root / "manifests").mkdir()
+    (root / "manifests/paper-model-v1.json").write_text(json.dumps({"files": []}))
+    manifest = root / "manifests/hela-oracle-v1.json"
+    manifest.write_text(json.dumps(config))
+
+    def forbidden(*args, **kwargs):
+        raise AssertionError("included HeLa artifacts must not require GitHub or Modal")
+
+    monkeypatch.setattr(artifacts.subprocess, "run", forbidden)
+    assert main(["artifacts", action, "--group", "hela-oracle-v1", "--root", str(root)]) == 0
+    report = json.loads(capsys.readouterr().out)
+    assert report["ready"]
+    assert (root / "results/training.csv").read_bytes() == b"training data\n"

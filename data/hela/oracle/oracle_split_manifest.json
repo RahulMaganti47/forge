@@ -1,0 +1,506 @@
+{
+  "artifacts": {
+    "oracle_split_assignments.csv.gz": {
+      "bytes": 101730,
+      "sha256": "7d988dfb59620cd121c88840858f6f9c42a7cb8d3c511bb83b8e3065d8fb86a2"
+    }
+  },
+  "assignment_summary": {
+    "held_aldehyde_5fold:fold-0": {
+      "stage_rows": {
+        "calibration": 100,
+        "test": 300,
+        "train": 700
+      },
+      "test_group_leakage": 0,
+      "test_groups": 3
+    },
+    "held_aldehyde_5fold:fold-1": {
+      "stage_rows": {
+        "calibration": 112,
+        "test": 200,
+        "train": 788
+      },
+      "test_group_leakage": 0,
+      "test_groups": 2
+    },
+    "held_aldehyde_5fold:fold-2": {
+      "stage_rows": {
+        "calibration": 112,
+        "test": 200,
+        "train": 788
+      },
+      "test_group_leakage": 0,
+      "test_groups": 2
+    },
+    "held_aldehyde_5fold:fold-3": {
+      "stage_rows": {
+        "calibration": 112,
+        "test": 200,
+        "train": 788
+      },
+      "test_group_leakage": 0,
+      "test_groups": 2
+    },
+    "held_aldehyde_5fold:fold-4": {
+      "stage_rows": {
+        "calibration": 112,
+        "test": 200,
+        "train": 788
+      },
+      "test_group_leakage": 0,
+      "test_groups": 2
+    },
+    "held_aldehyde_isocyanide_pair_5fold:fold-0": {
+      "stage_rows": {
+        "calibration": 110,
+        "test": 220,
+        "train": 770
+      },
+      "test_group_leakage": 0,
+      "test_groups": 11
+    },
+    "held_aldehyde_isocyanide_pair_5fold:fold-1": {
+      "stage_rows": {
+        "calibration": 110,
+        "test": 220,
+        "train": 770
+      },
+      "test_group_leakage": 0,
+      "test_groups": 11
+    },
+    "held_aldehyde_isocyanide_pair_5fold:fold-2": {
+      "stage_rows": {
+        "calibration": 110,
+        "test": 220,
+        "train": 770
+      },
+      "test_group_leakage": 0,
+      "test_groups": 11
+    },
+    "held_aldehyde_isocyanide_pair_5fold:fold-3": {
+      "stage_rows": {
+        "calibration": 110,
+        "test": 220,
+        "train": 770
+      },
+      "test_group_leakage": 0,
+      "test_groups": 11
+    },
+    "held_aldehyde_isocyanide_pair_5fold:fold-4": {
+      "stage_rows": {
+        "calibration": 110,
+        "test": 220,
+        "train": 770
+      },
+      "test_group_leakage": 0,
+      "test_groups": 11
+    },
+    "held_head_5fold:fold-0": {
+      "stage_rows": {
+        "calibration": 110,
+        "test": 220,
+        "train": 770
+      },
+      "test_group_leakage": 0,
+      "test_groups": 4
+    },
+    "held_head_5fold:fold-1": {
+      "stage_rows": {
+        "calibration": 110,
+        "test": 220,
+        "train": 770
+      },
+      "test_group_leakage": 0,
+      "test_groups": 4
+    },
+    "held_head_5fold:fold-2": {
+      "stage_rows": {
+        "calibration": 110,
+        "test": 220,
+        "train": 770
+      },
+      "test_group_leakage": 0,
+      "test_groups": 4
+    },
+    "held_head_5fold:fold-3": {
+      "stage_rows": {
+        "calibration": 110,
+        "test": 220,
+        "train": 770
+      },
+      "test_group_leakage": 0,
+      "test_groups": 4
+    },
+    "held_head_5fold:fold-4": {
+      "stage_rows": {
+        "calibration": 110,
+        "test": 220,
+        "train": 770
+      },
+      "test_group_leakage": 0,
+      "test_groups": 4
+    },
+    "held_head_aldehyde_pair_5fold:fold-0": {
+      "stage_rows": {
+        "calibration": 110,
+        "test": 220,
+        "train": 770
+      },
+      "test_group_leakage": 0,
+      "test_groups": 44
+    },
+    "held_head_aldehyde_pair_5fold:fold-1": {
+      "stage_rows": {
+        "calibration": 110,
+        "test": 220,
+        "train": 770
+      },
+      "test_group_leakage": 0,
+      "test_groups": 44
+    },
+    "held_head_aldehyde_pair_5fold:fold-2": {
+      "stage_rows": {
+        "calibration": 110,
+        "test": 220,
+        "train": 770
+      },
+      "test_group_leakage": 0,
+      "test_groups": 44
+    },
+    "held_head_aldehyde_pair_5fold:fold-3": {
+      "stage_rows": {
+        "calibration": 110,
+        "test": 220,
+        "train": 770
+      },
+      "test_group_leakage": 0,
+      "test_groups": 44
+    },
+    "held_head_aldehyde_pair_5fold:fold-4": {
+      "stage_rows": {
+        "calibration": 110,
+        "test": 220,
+        "train": 770
+      },
+      "test_group_leakage": 0,
+      "test_groups": 44
+    },
+    "held_head_isocyanide_pair_5fold:fold-0": {
+      "stage_rows": {
+        "calibration": 110,
+        "test": 220,
+        "train": 770
+      },
+      "test_group_leakage": 0,
+      "test_groups": 20
+    },
+    "held_head_isocyanide_pair_5fold:fold-1": {
+      "stage_rows": {
+        "calibration": 110,
+        "test": 220,
+        "train": 770
+      },
+      "test_group_leakage": 0,
+      "test_groups": 20
+    },
+    "held_head_isocyanide_pair_5fold:fold-2": {
+      "stage_rows": {
+        "calibration": 110,
+        "test": 220,
+        "train": 770
+      },
+      "test_group_leakage": 0,
+      "test_groups": 20
+    },
+    "held_head_isocyanide_pair_5fold:fold-3": {
+      "stage_rows": {
+        "calibration": 110,
+        "test": 220,
+        "train": 770
+      },
+      "test_group_leakage": 0,
+      "test_groups": 20
+    },
+    "held_head_isocyanide_pair_5fold:fold-4": {
+      "stage_rows": {
+        "calibration": 110,
+        "test": 220,
+        "train": 770
+      },
+      "test_group_leakage": 0,
+      "test_groups": 20
+    },
+    "held_isocyanide_5fold:fold-0": {
+      "stage_rows": {
+        "calibration": 110,
+        "test": 220,
+        "train": 770
+      },
+      "test_group_leakage": 0,
+      "test_groups": 1
+    },
+    "held_isocyanide_5fold:fold-1": {
+      "stage_rows": {
+        "calibration": 110,
+        "test": 220,
+        "train": 770
+      },
+      "test_group_leakage": 0,
+      "test_groups": 1
+    },
+    "held_isocyanide_5fold:fold-2": {
+      "stage_rows": {
+        "calibration": 110,
+        "test": 220,
+        "train": 770
+      },
+      "test_group_leakage": 0,
+      "test_groups": 1
+    },
+    "held_isocyanide_5fold:fold-3": {
+      "stage_rows": {
+        "calibration": 110,
+        "test": 220,
+        "train": 770
+      },
+      "test_group_leakage": 0,
+      "test_groups": 1
+    },
+    "held_isocyanide_5fold:fold-4": {
+      "stage_rows": {
+        "calibration": 110,
+        "test": 220,
+        "train": 770
+      },
+      "test_group_leakage": 0,
+      "test_groups": 1
+    },
+    "lantern_random:fold-0": {
+      "stage_rows": {
+        "calibration": 110,
+        "test": 110,
+        "train": 880
+      },
+      "test_group_leakage": 0,
+      "test_groups": 110
+    },
+    "lantern_scaffold_balanced:fold-0": {
+      "stage_rows": {
+        "calibration": 110,
+        "test": 110,
+        "train": 880
+      },
+      "test_group_leakage": 0,
+      "test_groups": 1
+    }
+  },
+  "configuration": {
+    "bytes": 2340,
+    "path": "configs/bio/m0_07_oracle_splits.json",
+    "sha256": "2bce41fa49802f579be123599e1ecb092c566b3340457b13a8eccdadee125c8c"
+  },
+  "decision": {
+    "lantern_murcko_source_is_selection_eligible": false,
+    "lantern_random_is_selection_eligible": false,
+    "lantern_scaffold_balanced_is_selection_eligible": true,
+    "oracle_model_frozen": false,
+    "reason": "models have not yet been fitted or calibrated"
+  },
+  "evaluation_contract": {
+    "calibration": {
+      "method": "split_conformal_absolute_residual",
+      "nominal_coverages": [
+        0.8,
+        0.9,
+        0.95
+      ],
+      "report": [
+        "empirical_coverage",
+        "coverage_gap",
+        "mean_interval_width"
+      ]
+    },
+    "candidate_library_evaluation": "applicability and distance only because the 12,276 structures have no wet-lab endpoint labels",
+    "component_pair_shift_is_required": true,
+    "endpoints": [
+      "expt_Hela",
+      "expt_Raw"
+    ],
+    "invalid_source_scheme": "lantern_murcko_source",
+    "metrics": [
+      "R2",
+      "RMSE",
+      "MAE",
+      "Pearson_r",
+      "Spearman_rho"
+    ],
+    "model_selection_uses_random_split": false,
+    "random_diagnostic_scheme": "lantern_random",
+    "selection_eligible_schemes": [
+      "lantern_scaffold_balanced",
+      "held_head_5fold",
+      "held_aldehyde_5fold",
+      "held_isocyanide_5fold",
+      "held_head_aldehyde_pair_5fold",
+      "held_head_isocyanide_pair_5fold",
+      "held_aldehyde_isocyanide_pair_5fold"
+    ],
+    "unavailable_properties": [
+      "apparent_pKa",
+      "particle_size",
+      "polydispersity",
+      "encapsulation_efficiency",
+      "formulation_robustness"
+    ],
+    "valid_structural_scheme": "lantern_scaffold_balanced"
+  },
+  "generated_utc": "2026-07-30T04:00:00+00:00",
+  "inputs": {
+    "agile_reconciliation_result": {
+      "bytes": 3788,
+      "path": "results/m0_07/agile_label_reconciliation.json",
+      "sha256": "44e9f451af94efe13d57961c32d71d6cfa37cb227f8e674f226a3b559ec913a7"
+    },
+    "agile_virtual_candidate_library": {
+      "bytes": 85911,
+      "path": "data/derived/agile_virtual12k_smiles.csv.gz",
+      "sha256": "6afe54a033a8efd86c29e15a39334effc6edc3fb855fba6b61285003b847e390"
+    },
+    "curated_oracle_data": {
+      "bytes": 30259,
+      "path": "results/m0_07/agile_oracle_curated.csv.gz",
+      "sha256": "9415f1c0f40399f87d3df00c0c83a341a3776ca110e6bc98763fdcbd420a27be"
+    },
+    "lantern_curated_hela": {
+      "bytes": 80719,
+      "path": "data/vendor/lantern_agile_curated.csv",
+      "sha256": "d0ecfd94ec40a7f013af546113520175e70f78045af1798673c2680fe6f23c54"
+    },
+    "lantern_murcko_split": {
+      "bytes": 3341,
+      "path": "data/vendor/lantern_agile_murcko_split.npy",
+      "sha256": "cd52f769972cde1e513a889ebfce0764017c56cd17032e3f9750b76f6e59632e"
+    },
+    "lantern_random_split": {
+      "bytes": 3341,
+      "path": "data/vendor/lantern_agile_random_split.npy",
+      "sha256": "72d7cb6d5769c8b45f6634c530547c51147532539cfa2e728a7d630f24d699e8"
+    },
+    "lantern_scaffold_balanced_split": {
+      "bytes": 3341,
+      "path": "data/vendor/lantern_agile_scaffold_balanced_split.npy",
+      "sha256": "1f3720b6fc8ce2dfc3cf71f3e62cd394c74058d25641bf009eb7ddb146493c01"
+    }
+  },
+  "randomness": {
+    "deterministic_hash_assignment": "sha256",
+    "seed": 1729,
+    "used": true
+  },
+  "schema_version": "m0_07_oracle_splits.v1",
+  "software": {
+    "numpy": "2.4.2",
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "python": "3.14.2",
+    "rdkit": "2025.09.6"
+  },
+  "source_label_alignment": {
+    "absolute_tolerance": 1e-07,
+    "max_hela_absolute_difference": 5.000000058430487e-08,
+    "rows_mapped_one_to_one": 1100
+  },
+  "source_split_audits": {
+    "lantern_murcko_source": {
+      "acyclic_rows_by_stage": [
+        350,
+        45,
+        45
+      ],
+      "leaking_scaffold_groups": 6,
+      "leaking_scaffolds": [
+        "",
+        "C1CCNC1",
+        "C1CCNCC1",
+        "C1CNCCN1",
+        "C1COCCN1",
+        "c1cn[nH]c1"
+      ],
+      "scaffold_disjoint": false,
+      "stage_rows": [
+        880,
+        110,
+        110
+      ],
+      "stage_unique_scaffolds": [
+        6,
+        6,
+        6
+      ],
+      "total_unique_scaffolds": 6
+    },
+    "lantern_random": {
+      "acyclic_rows_by_stage": [
+        357,
+        36,
+        47
+      ],
+      "leaking_scaffold_groups": 6,
+      "leaking_scaffolds": [
+        "",
+        "C1CCNC1",
+        "C1CCNCC1",
+        "C1CNCCN1",
+        "C1COCCN1",
+        "c1cn[nH]c1"
+      ],
+      "scaffold_disjoint": false,
+      "stage_rows": [
+        880,
+        110,
+        110
+      ],
+      "stage_unique_scaffolds": [
+        6,
+        6,
+        6
+      ],
+      "total_unique_scaffolds": 6
+    },
+    "lantern_scaffold_balanced": {
+      "acyclic_rows_by_stage": [
+        440,
+        0,
+        0
+      ],
+      "leaking_scaffold_groups": 0,
+      "leaking_scaffolds": [],
+      "scaffold_disjoint": true,
+      "stage_rows": [
+        880,
+        110,
+        110
+      ],
+      "stage_unique_scaffolds": [
+        4,
+        1,
+        1
+      ],
+      "total_unique_scaffolds": 6
+    }
+  },
+  "status": "oracle_evaluation_contract_frozen",
+  "summary": {
+    "assignment_rows": 35200,
+    "component_cardinality": {
+      "A": 20,
+      "B": 11,
+      "C": 5
+    },
+    "curated_records": 1100,
+    "evaluation_schemes": 8,
+    "selection_eligible_schemes": 7,
+    "virtual_candidate_records": 12276
+  },
+  "task": "M0-07"
+}

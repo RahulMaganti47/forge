@@ -59,7 +59,8 @@ The expected numerical rows are in `data/table_reference.json`.
 | 11: HeLa diagnostic | Final adjudication in the evidence bundle |
 
 Table reproduction aggregates saved evidence. It does not rerun Table 5's decoder-intervention
-sweep. Table 11 supports summary replay only; the upstream HeLa inputs are unavailable.
+sweep. Table 11 supports summary replay only; four upstream study records are unavailable.
+The recovered HeLa predictor and inputs are in [data/hela](../data/hela).
 
 ## Train and evaluate
 

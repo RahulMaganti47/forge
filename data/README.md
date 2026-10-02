@@ -10,6 +10,7 @@ Install [Git LFS](https://git-lfs.com/) and run `git lfs pull` to retrieve the l
 | `vendor/` | LNPDB records and qualified chemistry registries |
 | `baselines/` | Native-baseline requests, train/calibration/held-out inputs and component catalogues |
 | `evaluation/` | Per-seed summaries, complete attempt ledgers, controls, ablations and final adjudications |
+| `hela/` | Frozen HeLa predictor, curated assay data, splits and calibration records |
 | `imaging/` | The four reported 4-hour ROI values used in Figure 2 |
 
 `table_reference.json` contains the expected 89 numerical table rows. Data source information is in
@@ -42,4 +43,12 @@ For the architecture study:
 
 ```bash
 uv run forge artifacts fetch --group submission19337-ablations-v1
+```
+
+## HeLa predictor
+
+The original checkpoint and matching inputs are included in `hela/`. Restore them with:
+
+```bash
+uv run forge artifacts install --group hela-oracle-v1
 ```

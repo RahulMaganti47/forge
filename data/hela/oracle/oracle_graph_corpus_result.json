@@ -1,0 +1,511 @@
+{
+  "artifacts": {
+    "oracle_graph_isomer_collapse.csv.gz": {
+      "bytes": 4219,
+      "sha256": "aad6e10f692f6d4c83b693ff8ee6a24c90ca5efbc7555d552d234b99ee6e387d"
+    },
+    "oracle_graph_r0_exclusions.csv.gz": {
+      "bytes": 12440,
+      "sha256": "8fde90335023126c360f5412597db2822942ebf78c3250d6cdfbd1c6c65df113"
+    },
+    "oracle_graph_r0_pretraining.csv.gz": {
+      "bytes": 687431,
+      "sha256": "d3a434282212abae9a9e688e0dde59b0f53537eeb1ec0dcff18ef63f23e0bc5f"
+    }
+  },
+  "decision": {
+    "graph_tensorization_authorized": true,
+    "manifest_kernel_profile_authorized_for_encoder_support": false,
+    "oracle_model_frozen": false,
+    "r0_pretraining_authorized_only_from_retained_ledger": true,
+    "virtual_candidates_authorized_for_pretraining": false
+  },
+  "graph_profiles": {
+    "curated_oracle": {
+      "atom_count_distribution": {
+        "maximum": 60,
+        "mean": 48.00909090909091,
+        "median": 48.0,
+        "minimum": 38,
+        "q1": 45.0,
+        "q3": 51.0
+      },
+      "atoms": 52810,
+      "binary_feature_counts": {
+        "aromatic_atoms": 550,
+        "conjugated_bonds": 5260,
+        "ring_atoms": 3685,
+        "ring_bonds": 3685
+      },
+      "directed_edges": 104740,
+      "disconnected_records": 0,
+      "feature_vocabulary": {
+        "bond_types": {
+          "AROMATIC": 550,
+          "DOUBLE": 2920,
+          "SINGLE": 48800,
+          "TRIPLE": 100
+        },
+        "elements": {
+          "C": 45770,
+          "N": 3630,
+          "O": 3410
+        },
+        "formal_charges": {
+          "0": 52810
+        },
+        "hybridizations": {
+          "SP": 200,
+          "SP2": 8700,
+          "SP3": 43910
+        },
+        "molecular_net_charges": {
+          "0": 1100
+        },
+        "total_degrees": {
+          "1": 2200,
+          "2": 1520,
+          "3": 7490,
+          "4": 41600
+        },
+        "total_hydrogens": {
+          "0": 6975,
+          "1": 5445,
+          "2": 37245,
+          "3": 3145
+        }
+      },
+      "records": 1100,
+      "records_above_96_atoms": 0,
+      "records_at_most_64_atoms": 1100,
+      "records_at_most_96_atoms": 1100,
+      "undirected_bond_count_distribution": {
+        "maximum": 59,
+        "mean": 47.60909090909091,
+        "median": 47.0,
+        "minimum": 37,
+        "q1": 44.0,
+        "q3": 51.0
+      },
+      "undirected_bonds": 52370
+    },
+    "r0_input": {
+      "atom_count_distribution": {
+        "maximum": 282,
+        "mean": 60.250696559320936,
+        "median": 53,
+        "minimum": 14,
+        "q1": 43.0,
+        "q3": 69.0
+      },
+      "atoms": 929849,
+      "binary_feature_counts": {
+        "aromatic_atoms": 15215,
+        "conjugated_bonds": 108581,
+        "ring_atoms": 66858,
+        "ring_bonds": 68062
+      },
+      "directed_edges": 1852240,
+      "disconnected_records": 0,
+      "feature_vocabulary": {
+        "bond_types": {
+          "AROMATIC": 15259,
+          "DOUBLE": 59664,
+          "SINGLE": 848881,
+          "TRIPLE": 2316
+        },
+        "elements": {
+          "C": 781369,
+          "F": 172,
+          "N": 43908,
+          "O": 95086,
+          "P": 1228,
+          "S": 6721,
+          "Si": 1365
+        },
+        "formal_charges": {
+          "-1": 1294,
+          "0": 928401,
+          "1": 154
+        },
+        "hybridizations": {
+          "SP": 4632,
+          "SP2": 179404,
+          "SP3": 745813
+        },
+        "molecular_net_charges": {
+          "-1": 169,
+          "-2": 130,
+          "-3": 130,
+          "-4": 65,
+          "-5": 13,
+          "0": 14924,
+          "2": 2
+        },
+        "total_degrees": {
+          "1": 47510,
+          "2": 60188,
+          "3": 127316,
+          "4": 694835
+        },
+        "total_hydrogens": {
+          "0": 188836,
+          "1": 80913,
+          "2": 584279,
+          "3": 75821
+        }
+      },
+      "records": 15433,
+      "records_above_96_atoms": 1354,
+      "records_at_most_64_atoms": 10877,
+      "records_at_most_96_atoms": 14079,
+      "undirected_bond_count_distribution": {
+        "maximum": 281,
+        "mean": 60.00907147022614,
+        "median": 53,
+        "minimum": 13,
+        "q1": 43.0,
+        "q3": 69.0
+      },
+      "undirected_bonds": 926120
+    },
+    "r0_pretraining": {
+      "atom_count_distribution": {
+        "maximum": 282,
+        "mean": 61.33420624248001,
+        "median": 55,
+        "minimum": 14,
+        "q1": 43.0,
+        "q3": 72.0
+      },
+      "atoms": 866591,
+      "binary_feature_counts": {
+        "aromatic_atoms": 14605,
+        "conjugated_bonds": 102139,
+        "ring_atoms": 62502,
+        "ring_bonds": 63706
+      },
+      "directed_edges": 1726776,
+      "disconnected_records": 0,
+      "feature_vocabulary": {
+        "bond_types": {
+          "AROMATIC": 14649,
+          "DOUBLE": 55988,
+          "SINGLE": 790553,
+          "TRIPLE": 2198
+        },
+        "elements": {
+          "C": 726684,
+          "F": 172,
+          "N": 39713,
+          "O": 90777,
+          "P": 1228,
+          "S": 6652,
+          "Si": 1365
+        },
+        "formal_charges": {
+          "-1": 1294,
+          "0": 865143,
+          "1": 154
+        },
+        "hybridizations": {
+          "SP": 4396,
+          "SP2": 168685,
+          "SP3": 693510
+        },
+        "molecular_net_charges": {
+          "-1": 169,
+          "-2": 130,
+          "-3": 130,
+          "-4": 65,
+          "-5": 13,
+          "0": 13620,
+          "2": 2
+        },
+        "total_degrees": {
+          "1": 44875,
+          "2": 58085,
+          "3": 118164,
+          "4": 645467
+        },
+        "total_hydrogens": {
+          "0": 180246,
+          "1": 74058,
+          "2": 540290,
+          "3": 71997
+        }
+      },
+      "records": 14129,
+      "records_above_96_atoms": 1350,
+      "records_at_most_64_atoms": 9602,
+      "records_at_most_96_atoms": 12779,
+      "undirected_bond_count_distribution": {
+        "maximum": 281,
+        "mean": 61.10750937787529,
+        "median": 55,
+        "minimum": 13,
+        "q1": 43.0,
+        "q3": 71.0
+      },
+      "undirected_bonds": 863388
+    },
+    "virtual_applicability": {
+      "atom_count_distribution": {
+        "maximum": 62,
+        "mean": 45.767188009123494,
+        "median": 45.0,
+        "minimum": 30,
+        "q1": 42.0,
+        "q3": 49.0
+      },
+      "atoms": 561838,
+      "binary_feature_counts": {
+        "aromatic_atoms": 2790,
+        "conjugated_bonds": 51660,
+        "ring_atoms": 42408,
+        "ring_bonds": 42966
+      },
+      "directed_edges": 1114748,
+      "disconnected_records": 0,
+      "feature_vocabulary": {
+        "bond_types": {
+          "AROMATIC": 2790,
+          "DOUBLE": 28886,
+          "SINGLE": 524906,
+          "TRIPLE": 792
+        },
+        "elements": {
+          "C": 486094,
+          "N": 40176,
+          "O": 35568
+        },
+        "formal_charges": {
+          "0": 561838
+        },
+        "hybridizations": {
+          "SP": 1584,
+          "SP2": 84484,
+          "SP3": 475770
+        },
+        "molecular_net_charges": {
+          "0": 12276
+        },
+        "total_degrees": {
+          "1": 23364,
+          "2": 14346,
+          "3": 75700,
+          "4": 448428
+        },
+        "total_hydrogens": {
+          "0": 74232,
+          "1": 54244,
+          "2": 396210,
+          "3": 37152
+        }
+      },
+      "records": 12276,
+      "records_above_96_atoms": 0,
+      "records_at_most_64_atoms": 12276,
+      "records_at_most_96_atoms": 12276,
+      "undirected_bond_count_distribution": {
+        "maximum": 61,
+        "mean": 45.40355164548713,
+        "median": 45.0,
+        "minimum": 29,
+        "q1": 42.0,
+        "q3": 49.0
+      },
+      "undirected_bonds": 557374
+    }
+  },
+  "identity_policy": {
+    "canonical_isomeric_smiles": false,
+    "preserve_formal_charge": true,
+    "preserve_protonation": true,
+    "preserve_tautomers": true,
+    "require_connected": true,
+    "sanitize": true,
+    "strip_fragments": false
+  },
+  "inputs": {
+    "agile_label_reconciliation": {
+      "bytes": 3788,
+      "path": "results/m0_07/agile_label_reconciliation.json",
+      "sha256": "44e9f451af94efe13d57961c32d71d6cfa37cb227f8e674f226a3b559ec913a7"
+    },
+    "config": {
+      "bytes": 2931,
+      "path": "configs/bio/m0_07_oracle_graph_corpus.json",
+      "sha256": "97afd6e18cd04e762ca872e0558441741a46e7116fb2b18735a8e56f8f2093d7"
+    },
+    "curated_oracle_data": {
+      "bytes": 30259,
+      "path": "results/m0_07/agile_oracle_curated.csv.gz",
+      "sha256": "9415f1c0f40399f87d3df00c0c83a341a3776ca110e6bc98763fdcbd420a27be"
+    },
+    "r0_observed_structures": {
+      "bytes": 19633160,
+      "path": "data/vendor/r0_observed_real_structures.csv",
+      "sha256": "3e2a35416c98f44e2261c06717c1fdee1b5ea393fb8013a38235631aa5ee6c0d"
+    },
+    "training_corpus_manifest": {
+      "bytes": 4229,
+      "path": "data/vendor/training_corpus_manifest_v1.json",
+      "sha256": "03eafbbeac5d63b95df4cc488f884fef1c8e9eae0a7d13a1ba9a3df1005c4a39"
+    },
+    "virtual_candidate_library": {
+      "bytes": 85911,
+      "path": "data/derived/agile_virtual12k_smiles.csv.gz",
+      "sha256": "6afe54a033a8efd86c29e15a39334effc6edc3fb855fba6b61285003b847e390"
+    }
+  },
+  "pretraining_output_fields": [
+    "graph_id",
+    "constitutional_smiles",
+    "atom_count",
+    "undirected_bond_count",
+    "directed_edge_count"
+  ],
+  "pretraining_policy": {
+    "biological_labels_used": false,
+    "deduplicate_retained_r0_by_constitution": true,
+    "exclude_every_exact_oracle_constitution_globally": true,
+    "virtual_candidate_role": "applicability_only",
+    "virtual_candidates_used": false
+  },
+  "r0_stereo_profile": {
+    "assigned_atom_or_bond_legacy_records": 4799,
+    "assigned_atom_or_bond_modern_fraction": 0.31983412168729347,
+    "assigned_atom_or_bond_modern_records": 4936,
+    "assigned_tetrahedral_legacy_records": 139,
+    "assigned_tetrahedral_modern_records": 476,
+    "explicit_bond_stereo_records": 4684,
+    "potential_atom_or_bond_stereo_fraction": 0.7769714248687877,
+    "potential_atom_or_bond_stereo_records": 11991,
+    "potential_double_bond_fraction": 0.3143264433357092,
+    "potential_double_bond_records": 4851,
+    "potential_tetrahedral_fraction": 0.7437309661115791,
+    "potential_tetrahedral_records": 11478,
+    "records": 15433
+  },
+  "representation": {
+    "atom_features": [
+      "atomic_number",
+      "formal_charge",
+      "total_degree",
+      "total_hydrogens",
+      "hybridization",
+      "aromatic",
+      "in_ring"
+    ],
+    "bond_features": [
+      "bond_type",
+      "conjugated",
+      "in_ring"
+    ],
+    "edge_direction": "both_directions",
+    "stereochemistry": "excluded",
+    "truncation_allowed": false
+  },
+  "retained_inchi_connectivity_collapses": {
+    "CSATVJSROKNRKV": [
+      "90fe92665ece678fdae0f4af0ed5dc0d3f5313c47d2d5d0ade951b2778c52878",
+      "e54272dab21fd92b4d8b95918fb81504bf8571dde52d4b42f0ef3950d95fc604"
+    ]
+  },
+  "schema_version": "m0_07_oracle_graph_corpus.v2",
+  "seed": 1729,
+  "software": {
+    "rdkit": "2025.09.6"
+  },
+  "status": "completed_graph_corpus_leakage_gate",
+  "summary": {
+    "curated_oracle_records": 1100,
+    "curated_oracle_unique_constitutions": 1100,
+    "post_exclusion_oracle_constitution_overlap": 0,
+    "post_exclusion_oracle_inchi_connectivity_overlap": 0,
+    "provenance_only_filter_remaining_oracle_constitutions": 20,
+    "provenance_only_filter_remaining_oracle_rows": 20,
+    "r0_additional_rows_collapsed_by_constitutional_deduplication": 84,
+    "r0_constitutional_duplicate_groups": 184,
+    "r0_duplicate_group_size_distribution": {
+      "2": 164,
+      "3": 20
+    },
+    "r0_input_rows": 15433,
+    "r0_nonoracle_rows_before_constitutional_deduplication": 14213,
+    "r0_oracle_overlap_group_size_distribution": {
+      "1": 1000,
+      "2": 80,
+      "3": 20
+    },
+    "r0_pretraining_eligible_rows": 15433,
+    "r0_retained_unique_constitutions": 14129,
+    "r0_rows_collapsed_before_oracle_exclusion": 204,
+    "r0_rows_matching_any_oracle_constitution": 1220,
+    "r0_unique_constitutions": 15229,
+    "r0_unique_oracle_constitutions_matched": 1100,
+    "retained_inchi_connectivity_collapse_groups": 1,
+    "virtual_candidate_records": 12276
+  },
+  "training_manifest_audit": {
+    "actual_pinned_r0": {
+      "elements_present": [
+        "C",
+        "F",
+        "N",
+        "O",
+        "P",
+        "S",
+        "Si"
+      ],
+      "fraction_net_charged": 0.03298127389360461,
+      "heavy_atoms": {
+        "fraction_at_most_64": 0.7047884403550833,
+        "fraction_at_most_96": 0.9122659236700577,
+        "maximum": 282,
+        "median": 53,
+        "minimum": 14,
+        "records_at_most_64": 10877,
+        "records_at_most_96": 14079
+      },
+      "net_charged_records": 509,
+      "stereo": {
+        "assigned_atom_or_bond_legacy_records": 4799,
+        "assigned_atom_or_bond_modern_fraction": 0.31983412168729347,
+        "assigned_atom_or_bond_modern_records": 4936,
+        "assigned_tetrahedral_legacy_records": 139,
+        "assigned_tetrahedral_modern_records": 476,
+        "explicit_bond_stereo_records": 4684,
+        "potential_atom_or_bond_stereo_fraction": 0.7769714248687877,
+        "potential_atom_or_bond_stereo_records": 11991,
+        "potential_double_bond_fraction": 0.3143264433357092,
+        "potential_double_bond_records": 4851,
+        "potential_tetrahedral_fraction": 0.7437309661115791,
+        "potential_tetrahedral_records": 11478,
+        "records": 15433
+      }
+    },
+    "encoder_support_policy": "Derive feature vocabulary and graph-size support from the pinned data; do not inherit the stale manifest profile.",
+    "manifest": {
+      "elements_present": [
+        "C",
+        "N",
+        "O",
+        "P",
+        "S"
+      ],
+      "fraction_charged": 0.0,
+      "fraction_with_stereocenter": 0.8812,
+      "heavy_atoms": {
+        "frac_le_64": 0.865,
+        "frac_le_96": 0.968,
+        "max": 138,
+        "median": 48,
+        "min": 15
+      }
+    },
+    "profile_matches_pinned_r0": false,
+    "stereo_definition_note": "The manifest's fraction_with_stereocenter is ambiguous and matches neither audited potential nor explicitly specified stereo definitions."
+  }
+}
