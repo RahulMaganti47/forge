@@ -2,7 +2,7 @@
 
 [Experiments](examples/README.md)
 
-Reaction-guided generative design of ionizable lipids, using AGILE-type Ugi 3CR,
+Reaction-guided generative design of ionizable lipids, using Ugi 3CR,
 repeated aza-Michael addition, and repeated reductive amination.
 
 ![FORGE generation and exact assembly verification](assets/forge_overview.png)
@@ -53,17 +53,3 @@ data/           # Processed datasets, splits and saved experiment results
 
 The primary model is [model/networks/transformer.py](forge/model/networks/transformer.py), with
 [semantic losses](forge/model/objectives/transformer.py) and [PCGrad](forge/model/objectives/pcgrad.py).
-
-## Local checks
-
-Tests cover model numerics, chemistry constraints, checkpoints, CLI behavior and reproduction.
-They use CPU fixtures and make no network calls. Frozen-table replay runs when its artifacts are
-available.
-
-```bash
-pytest
-python examples/reproduce.py --output results/reproduction-check
-```
-
-The reproduction check verifies both artifact bundles, matches 89 numerical table rows, and repeats
-two CPU Ugi attempts.
