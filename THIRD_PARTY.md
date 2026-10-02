@@ -1,8 +1,6 @@
 # Third-party attribution and artifact terms
 
-The repository's MIT license covers FORGE implementation code. It does not grant a new license to
-upstream projects, publications, datasets, tokenizer assets, or externally supplied images.
-This package remains private; no new public redistribution is performed by its commands.
+Upstream projects, datasets, publications, and tokenizer assets retain their own terms.
 
 ## External methods
 
@@ -31,13 +29,11 @@ completed experimental runs. See the manifest for the exact exclusion reasons an
 |---|---|---|
 | AGILE assay table and Ugi source data | Model manifest and preserved training/evidence receipts | Upstream dataset terms are not recorded as an independent license in these bundles. |
 | LNPDB records and derived splits | Model/evidence manifests and input hashes in result receipts | Upstream dataset terms need separate verification before public redistribution. |
-| Qualified chemistry registries and derived caches | Model manifest, registry source citations, preparation receipts | FORGE-derived records retain source provenance; the implementation license does not replace source terms. |
+| Qualified chemistry registries and derived caches | Model manifest, registry source citations, preparation receipts | FORGE-derived records retain source provenance; source provenance does not replace source terms. |
 | Primary papers and supplementary documents | Evidence manifest paths, original filenames, and SHA-256 digests | Publisher licenses and any third-party notices govern these documents; no blanket MIT license is asserted. |
-| Imaging asset, ROI measurements, and submitted figure composite | Preserved manuscript assets and figure-source receipts | Ownership/redistribution permission is not independently documented in this release. |
-| Python libraries and TeX style files | Locked dependencies and retained source notices | Each dependency/style file retains its own license. |
 
 The exact payload inventory is in the three committed manifests. Chemistry source citations remain
-in the authenticated registries and manuscript bibliography; do not replace those records with
+in the authenticated registries; do not replace those records with
 retyped reaction definitions. This document records unresolved metadata rather than assuming that
 an accessible or published file is unrestricted. A future public release must establish the terms
 for the actual files it distributes.

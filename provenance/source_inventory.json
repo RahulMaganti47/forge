@@ -888,7 +888,7 @@
       "original_module": null,
       "source_snapshot": "release_native",
       "source_sha256": null,
-      "release_sha256": "f529a1430875fb58653819e5197ebc9eca3520ee5914790423cd4952ef24ff3d",
+      "release_sha256": "6f1293452f7dcb558d245535bf6fe3a8cee9cfa7ee0e7d4856bd928693e8e64b",
       "prior_release_paths": [
         "src/forge/release/cli.py"
       ],
@@ -943,18 +943,6 @@
       "prior_release_path": "src/forge/release/assessment.py"
     },
     {
-      "module": "forge.commands.atlas",
-      "path": "forge/commands/atlas.py",
-      "original_module": null,
-      "source_snapshot": "release_native",
-      "source_sha256": null,
-      "release_sha256": "472ba1c6b7368d0f4eb1de4a58ada653cc6288abd49576afe3995f0fa0da0ff2",
-      "prior_release_paths": [
-        "src/forge/release/atlas.py"
-      ],
-      "prior_release_path": "src/forge/release/atlas.py"
-    },
-    {
       "module": "forge.commands.evaluation",
       "original_module": null,
       "source_sha256": null,
@@ -980,22 +968,10 @@
       "prior_release_path": "src/forge/release/generate.py"
     },
     {
-      "module": "forge.commands.manuscript",
-      "path": "forge/commands/manuscript.py",
-      "original_module": null,
-      "source_snapshot": "release_native",
-      "source_sha256": null,
-      "release_sha256": "d7c05118458d2c8189935800aa2f86a22d827511ea9dbe4655997bb9bb4388d8",
-      "prior_release_paths": [
-        "src/forge/release/manuscript.py"
-      ],
-      "prior_release_path": "src/forge/release/manuscript.py"
-    },
-    {
       "module": "forge.commands.qualification",
       "original_module": null,
       "source_sha256": null,
-      "release_sha256": "3367bcf0a34ed71eb8b7e50cb3a2926f32a2a267105ab9e35bbe894fdec62faf",
+      "release_sha256": "cd48a7744c371fd772b95cf5d3b9a8cbc5370c1bdb0bffeb155a3a759d0289c6",
       "source_snapshot": "release-added",
       "required_by": "scripts/qualify_release.py",
       "path": "forge/commands/qualification.py",
@@ -1010,7 +986,7 @@
       "original_module": null,
       "source_snapshot": "release_native",
       "source_sha256": null,
-      "release_sha256": "76c6788af2a45e8208e1406903a7be66380043c24078f5ce3574bdb0a65fc686",
+      "release_sha256": "f45c4b6faa5949bb0d2cbea1c1f7260aa9962a948ba302975a17d1ced17c57f0",
       "prior_release_paths": [
         "src/forge/release/reproduce.py"
       ],
@@ -2213,6 +2189,7 @@
     "Native baseline command emission uses the release CLI and explicit checkout root",
     "Shared 89-row manuscript comparison and bounded reader qualification",
     "Group model modules by representation, conditioning, networks, objectives and sampling; move benchmark/baseline implementations to their packages, split Transformer losses and PCGrad, merge checkpoint codecs/restart utilities, and retain frozen cache class-path mappings.",
-    "Move the library to forge/, paper drivers and reproduction checks to examples/, and CLI helpers to forge/commands; update imports, packaging and source paths without changing scientific computation."
+    "Move the library to forge/, paper drivers and reproduction checks to examples/, and CLI helpers to forge/commands; update imports, packaging and source paths without changing scientific computation.",
+    "Remove the manuscript bundle and build/depiction commands; retain the previously manuscript-verified numerical rows as provenance/table_reference.json for code-only reproduction checks."
   ]
 }

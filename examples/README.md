@@ -42,7 +42,7 @@ uv run python examples/check_reproduction.py --output results/reproduction-check
 uv run pytest
 ```
 
-The qualification command checks all 89 numerical table rows against the manuscript and repeats two
+The qualification command checks all 89 numerical table rows against the saved reference and repeats two
 CPU Ugi attempts using seed 42, batch size 2, and two Torch threads. It records commands, environment,
 timings, input hashes, and outputs in `receipt.json`. It does not download data or train a model.
 Missing bundles are rejected before execution; failed executions retain their logs and failed receipt.
@@ -118,10 +118,11 @@ GenMol also accepts `--tokenizer-snapshot`.
 failures. Common assessment reports component novelty, distinct exact L1, held-component recovery,
 decomposition coverage, precision, and ambiguity separately.
 
-## Tables and figures
+## Tables
 
 Use `uv run forge reproduce --target table-N --output results/table-N` for one numerical table,
-or `--target all` for all 11. Outputs include TeX rows, numerical JSON, and input identities.
+or `--target all` for all 11. Outputs include TeX rows, numerical JSON, and input identities. The expected numerical rows are
+retained in `provenance/table_reference.json`.
 
 | Paper item | Source contract under `configs/reproduction/` |
 |---|---|
@@ -132,24 +133,12 @@ or `--target all` for all 11. Outputs include TeX rows, numerical JSON, and inpu
 | Table 9: catalogue comparison | `gem_table9_catalogue_comparison_v1.json` |
 | Table 10: structural realism | `gem_table7_lipid_realism_v1.json` |
 | Table 11: HeLa diagnostic | Final adjudication retained in the evidence bundle |
-| Tables 12–13 and Figures 1–3 | Manuscript build and retained figure sources |
 
 Table replay uses the original evidence. It does not repeat Table 5's decoder-intervention sweep
 or recover Table 11's missing upstream runs. Table 10 reassessment is implemented by
 `examples.three_family.lipid_realism_assessment.run_lipid_realism_assessment` and
 `examples.three_family.lipid_realism_aggregation.aggregate_lipid_realism`, using
 `configs/multireaction/common_lipid_realism_v1.json` and complete method-seed attempt ledgers.
-
-Build the manuscript with a TeX distribution providing `latexmk`, `pdflatex`, BibTeX, TikZ/PGFPlots,
-chemfig, and tcolorbox. Figure rebuilding also requires `rsvg-convert` (librsvg) and native Cairo:
-
-```bash
-uv sync --frozen --extra dev --extra figures
-uv run forge paper --rebuild-figures --output results/manuscript
-```
-
-The output is `results/manuscript/main.pdf`. Figure 1 and the reaction schemes have editable TeX
-sources. The structure atlas is regenerated and verified. Figure 2 uses the supplied composite PDF.
 
 ## Limitations
 
@@ -158,7 +147,7 @@ sources. The structure atlas is regenerated and verified. Figure 2 uses the supp
   summary is available, but complete upstream replication is unsupported.
 - The complete historical seed-1/2 source tree and original training environment are unresolved.
   `uv.lock` specifies the current environment.
-- Figure 2's final composition script and imaging replicate/uncertainty metadata are unavailable.
+- Imaging replicate/uncertainty metadata are unavailable.
 - The optional batched-VJP PCGrad backend has an unresolved Linux bitwise-equivalence failure.
   Submitted configs use the sequential backend.
 
