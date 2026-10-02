@@ -3,9 +3,9 @@ from pathlib import Path
 
 import pytest
 
+from forge.commands.artifacts import verify
+from forge.commands.reproduce import reproduce, summary, verify_manuscript_rows
 from forge.core.hashing import sha256_file
-from forge.release.artifacts import verify
-from forge.release.reproduce import reproduce, summary, verify_manuscript_rows
 
 ROOT = Path(__file__).resolve().parents[1]
 

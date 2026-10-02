@@ -11,4 +11,4 @@ uv run forge paper --rebuild-figures --output results/manuscript
 
 Output: `results/manuscript/main.pdf`.
 
-Figure 2 uses the supplied PDF. See [limitations](../README.md#limitations) for unavailable figure sources.
+Figure 2 uses the supplied PDF. See [limitations](../examples/README.md#limitations) for unavailable figure sources.

@@ -12,8 +12,8 @@ from unittest.mock import Mock
 
 import pytest
 
+from forge.commands import generate as command
 from forge.core.hashing import sha256_file
-from forge.release import generate as command
 
 
 def _write(path: Path, value: object) -> None:
@@ -61,7 +61,7 @@ def bundle(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Path:
 def test_preflight_never_imports_runtime(
     bundle: Path, monkeypatch: pytest.MonkeyPatch, capsys: pytest.CaptureFixture[str]
 ) -> None:
-    monkeypatch.setitem(sys.modules, "forge.release._generation_runtime", None)
+    monkeypatch.setitem(sys.modules, "forge.commands._generation_runtime", None)
     assert command.main(["--check-inputs"]) == 0
     assert json.loads(capsys.readouterr().out)["ready"] is True
 
@@ -75,7 +75,7 @@ def test_incomplete_or_changed_bundle_stops_before_runtime(
         path.unlink()
     else:
         path.write_bytes(b"wrong checkpoint")
-    monkeypatch.setitem(sys.modules, "forge.release._generation_runtime", None)
+    monkeypatch.setitem(sys.modules, "forge.commands._generation_runtime", None)
     output = bundle / "output"
     assert command.main(["--output", str(output)]) == 2
     assert mode in capsys.readouterr().err
@@ -129,7 +129,7 @@ def test_all_attempts_and_provenance_are_published(
     ]
     generate = Mock(return_value=(rows, {"fixture": True}))
     monkeypatch.setitem(
-        sys.modules, "forge.release._generation_runtime", SimpleNamespace(generate=generate)
+        sys.modules, "forge.commands._generation_runtime", SimpleNamespace(generate=generate)
     )
     output = bundle / "output"
     assert command.main(["--count", "2", "--seed", "7", "--output", str(output)]) == 0
@@ -154,7 +154,7 @@ def test_runtime_failure_and_wrong_count_leave_no_output(
 ) -> None:
     generate = Mock(side_effect=RuntimeError("fixture failure"))
     monkeypatch.setitem(
-        sys.modules, "forge.release._generation_runtime", SimpleNamespace(generate=generate)
+        sys.modules, "forge.commands._generation_runtime", SimpleNamespace(generate=generate)
     )
     output = bundle / "output"
     assert command.main(["--output", str(output)]) == 2
@@ -180,3 +180,19 @@ def test_real_repository_inputs_have_no_mismatches(replicate: int) -> None:
     assert all(row["status"] != "mismatch" for row in report["inputs"].values())
     assert report["checkpoint_step"] == 9143
     assert report["sample_steps"] == 32
+
+
+def test_source_identity_tracks_library_and_experiment_changes(tmp_path: Path) -> None:
+    library = tmp_path / "forge/model.py"
+    experiment = tmp_path / "examples/run.py"
+    library.parent.mkdir()
+    experiment.parent.mkdir()
+    library.write_text("model = 1\n")
+    experiment.write_text("seed = 42\n")
+    original = command.source_identity(tmp_path)
+    assert original["files"]["forge/model.py"] == sha256_file(library)
+    assert original["files"]["examples/run.py"] == sha256_file(experiment)
+    experiment.write_text("seed = 43\n")
+    changed = command.source_identity(tmp_path)
+    assert changed["sha256"] != original["sha256"]
+    assert changed["files"]["forge/model.py"] == original["files"]["forge/model.py"]

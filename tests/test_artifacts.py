@@ -4,7 +4,7 @@ from pathlib import Path
 
 import pytest
 
-from forge.release.artifacts import restore, safe_path, verify
+from forge.commands.artifacts import restore, safe_path, verify
 
 
 def bundle(tmp_path: Path) -> tuple[Path, Path, Path]:
