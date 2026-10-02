@@ -62,6 +62,10 @@ The primary model is [model/networks/transformer.py](forge/model/networks/transf
 
 ## Local checks
 
+Tests cover model numerics, chemistry constraints, checkpoints, CLI behavior and reproduction.
+They use CPU fixtures and make no network calls. Frozen-table replay runs when its artifacts are
+available.
+
 ```bash
 uv run pytest
 uv run python examples/reproduce.py --output results/reproduction-check

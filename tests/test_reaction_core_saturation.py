@@ -24,7 +24,7 @@ from forge.model.sampling.synthesis import (
     sample_synthesis_program_products,
 )
 
-REGISTRY = Path(__file__).parent / "fixtures/qualified_reactions_v1.json"
+REGISTRY = Path(__file__).resolve().parents[1] / "data/vendor/qualified_reactions_v1.json"
 REGISTRY_SHA256 = "296bf06238ef22acc1f55117f5ce0adaee21b1bafaf5a83f89182b0f31cc4fcf"
 PROGRAM = "ugi_3cr_agile"
 CORE_POSITION_STATES = (

@@ -119,7 +119,6 @@ def source_identity(root: Path) -> dict[str, Any]:
             ("forge", "*.py"),
             ("examples", "*.py"),
             ("examples", "*.sh"),
-            ("tests/manual", "*.py"),
         )
         for path in sorted((root / directory).rglob(pattern))
     }
