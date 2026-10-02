@@ -44,7 +44,7 @@ examples/       # Runnable paper experiment recipes
 tests/          # Local correctness checks
 configs/        # Frozen experiment settings
 manifests/      # Checkpoint and data identities
-provenance/     # Numerical references and input availability
+data/           # Numerical references and source information
 ```
 
 The primary model is [model/networks/transformer.py](forge/model/networks/transformer.py), with

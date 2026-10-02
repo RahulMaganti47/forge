@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def test_numerical_reference_identity() -> None:
-    assert sha256_file(ROOT / "provenance/table_reference.json") == (
+    assert sha256_file(ROOT / "data/table_reference.json") == (
         "cc3dc02cf62a1fa54a21345917f13bf2e24b6369d422e105cd486e3e8588e015"
     )
 

@@ -39,7 +39,7 @@ COMMON_METRICS = (
 
 def table_reference(root: Path) -> dict[str, Any]:
     """Load the numerical rows verified against submission 19337."""
-    reference = json.loads((root / "provenance/table_reference.json").read_text())
+    reference = json.loads((root / "data/table_reference.json").read_text())
     rows = reference["rows"]
     if reference["schema_version"] != "forge.table_reference.v1" or set(rows) != {
         str(number) for number in range(1, 12)
@@ -276,7 +276,7 @@ def reproduce(root: Path, output: Path, target: str = "all") -> dict[str, Any]:
             "status": "pass",
             "scope": "reaggregation of frozen evidence, not model retraining",
             "reference_pdf_sha256": table_reference(root)["reference_pdf_sha256"],
-            "table_reference_sha256": str(sha256_file(root / "provenance/table_reference.json")),
+            "table_reference_sha256": str(sha256_file(root / "data/table_reference.json")),
             "outputs": {p.name: str(sha256_file(p)) for p in sorted(output.iterdir())},
         }
         write_json(output / "receipt.json", receipt)

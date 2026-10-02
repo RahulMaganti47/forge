@@ -16,7 +16,7 @@ from forge.core.io import write_json
 def reader_root(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Path:
     monkeypatch.setattr(qualification.platform, "platform", lambda: "fixture-platform")
     root = tmp_path / "release"
-    for directory in ("forge", "configs", "manifests", "provenance", "examples"):
+    for directory in ("forge", "configs", "manifests", "data", "examples"):
         (root / directory).mkdir(parents=True)
     for file in (
         "forge/model.py",
@@ -42,7 +42,7 @@ def reader_root(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Path:
             },
         )
     write_json(
-        root / "provenance/table_reference.json",
+        root / "data/table_reference.json",
         {
             "schema_version": "forge.table_reference.v1",
             "reference_pdf_sha256": "fixture",
@@ -119,7 +119,7 @@ def test_repeated_attempts_keep_failures_and_detect_changes(
 
 def _reference_tables(reader_root: Path, output: Path) -> None:
     output.mkdir()
-    rows = json.loads((reader_root / "provenance/table_reference.json").read_text())["rows"]
+    rows = json.loads((reader_root / "data/table_reference.json").read_text())["rows"]
     for number, table in rows.items():
         (output / f"table-{number}.tex").write_text("\n".join(table) + "\n")
 
@@ -156,7 +156,7 @@ def test_table_check_rejects_duplicated_rows(reader_root, tmp_path):
 def test_table_check_rejects_changed_reference_row_count(reader_root, tmp_path):
     tables = tmp_path / "tables"
     _reference_tables(reader_root, tables)
-    path = reader_root / "provenance/table_reference.json"
+    path = reader_root / "data/table_reference.json"
     reference = json.loads(path.read_text())
     reference["rows"]["1"].pop()
     write_json(path, reference)

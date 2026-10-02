@@ -45,7 +45,7 @@ Generation retains every attempt, including invalid molecules. Use `forge genera
 another family, replicate or sampling budget.
 
 To reproduce an individual table, use `forge reproduce --target table-N --output results/table-N`.
-The expected numerical rows are in `provenance/table_reference.json`.
+The expected numerical rows are in `data/table_reference.json`.
 
 | Tables | Config under `configs/reproduction/` |
 |---|---|
@@ -58,8 +58,7 @@ The expected numerical rows are in `provenance/table_reference.json`.
 | 11: HeLa diagnostic | Final adjudication in the evidence bundle |
 
 Table reproduction aggregates saved evidence. It does not rerun Table 5's decoder-intervention
-sweep. Table 11 supports summary replay only; the upstream HeLa inputs are unavailable. Their
-identities are in [missing_artifacts.json](../provenance/missing_artifacts.json).
+sweep. Table 11 supports summary replay only; the upstream HeLa inputs are unavailable.
 
 ## Train and evaluate
 

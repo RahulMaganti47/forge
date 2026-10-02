@@ -10,6 +10,7 @@ results/
 runs/
 /data/*
 !/data/SOURCES.md
+!/data/table_reference.json
 downloads/
 .DS_Store
 *.aux
