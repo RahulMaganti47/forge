@@ -7,6 +7,8 @@ repeated aza-Michael addition, and repeated reductive amination.
 
 ![FORGE generation and exact assembly verification](assets/forge_overview.png)
 
+![Mouse bioluminescence imaging and reported 4-hour ROI signals](assets/forge_in_vivo.png)
+
 ## Installation
 
 Use Python 3.11 and [uv](https://docs.astral.sh/uv/):
