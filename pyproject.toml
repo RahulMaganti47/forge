@@ -1,7 +1,7 @@
 [project]
-name = "forge-submission19337"
+name = "forge"
 version = "1.0.0"
-description = "Reproduction code for FORGE submission 19337 (35-page, three-family study)"
+description = "Reaction-guided generative design of ionizable lipids"
 readme = "README.md"
 requires-python = ">=3.11,<3.12"
 dependencies = [

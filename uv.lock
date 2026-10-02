@@ -135,7 +135,7 @@ wheels = [
 ]
 
 [[package]]
-name = "forge-submission19337"
+name = "forge"
 version = "1.0.0"
 source = { editable = "." }
 dependencies = [
