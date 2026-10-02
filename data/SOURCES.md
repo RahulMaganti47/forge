@@ -37,3 +37,9 @@ in the authenticated registries; do not replace those records with
 retyped reaction definitions. This document records unresolved metadata rather than assuming that
 an accessible or published file is unrestricted. A future public release must establish the terms
 for the actual files it distributes.
+
+## Evaluation records
+
+Table 11 supports summary replay only; its upstream HeLa inputs are unavailable.
+`imaging/reported_roi_values.csv` contains the four reported 4-hour values from Figure 2;
+replicate counts and uncertainty metadata are unavailable.

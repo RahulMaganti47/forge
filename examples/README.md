@@ -31,7 +31,7 @@ uv run forge artifacts fetch --group submission19337-ablations-v1
 ```
 
 For table replay without checkpoint downloads, use `forge artifacts install --group <group>` for
-both required groups. Modal and offline restoration options are in the data guide.
+both required groups.
 
 ## Reproduce tables and generate molecules
 

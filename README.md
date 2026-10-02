@@ -41,7 +41,7 @@ uv run forge generate --replicate 0 --family ugi --count 2 --seed 42 \
 ```
 
 Checkpoints and caches have [direct downloads](data/README.md#download-checkpoints-and-caches).
-Readers need access to this private repository. Modal remains an optional backup.
+Readers need access to this private repository.
 
 Generation retains every attempt, including failures. Table reproduction aggregates saved evidence.
 The [experiment guide](examples/README.md) covers training, evaluation, baselines, and table replay.
