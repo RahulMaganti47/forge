@@ -1,14 +1,11 @@
 import hashlib
 import io
 import json
-import shutil
 import tarfile
 from pathlib import Path
-from types import SimpleNamespace
 
 import pytest
 
-from forge.commands import artifacts
 from forge.commands.artifacts import fetch, install, restore, safe_path, verify
 from forge.core.hashing import sha256_file
 
@@ -81,7 +78,7 @@ def _archive(path: Path, entries: list[tuple[str, bytes, bool]]) -> None:
 
 
 @pytest.fixture
-def github_bundle(tmp_path: Path, monkeypatch: pytest.MonkeyPatch):
+def archive_bundle(tmp_path: Path):
     root = tmp_path / "repo"
     (root / "data").mkdir(parents=True)
     data = root / "data/training.csv"
@@ -105,35 +102,24 @@ def github_bundle(tmp_path: Path, monkeypatch: pytest.MonkeyPatch):
             },
         ],
         "storage": {
-            "github": {
-                "repository": "owner/repo",
-                "release": "v1",
-                "archives": [
-                    {
-                        "name": archive.name,
-                        "bytes": archive.stat().st_size,
-                        "sha256": str(sha256_file(archive)),
-                        "members": ["weights.bin"],
-                    }
-                ],
-            }
+            "archives": [
+                {
+                    "name": archive.name,
+                    "bytes": archive.stat().st_size,
+                    "sha256": str(sha256_file(archive)),
+                    "members": ["weights.bin"],
+                }
+            ]
         },
     }
     manifest = tmp_path / "manifest.json"
     manifest.write_text(json.dumps(config))
 
-    def download(command, **kwargs):
-        assert command[:4] == ["gh", "release", "download", "v1"]
-        target = Path(command[command.index("--dir") + 1]) / archive.name
-        shutil.copyfile(archive, target)
-        return SimpleNamespace(returncode=0)
-
-    monkeypatch.setattr(artifacts.subprocess, "run", download)
     return root, manifest, archive, config
 
 
-def test_install_committed_data_keeps_missing_weights_explicit(github_bundle):
-    root, manifest, _, _ = github_bundle
+def test_install_committed_data_keeps_missing_weights_explicit(archive_bundle):
+    root, manifest, _, _ = archive_bundle
     result = install(root, manifest)
     assert result["ready"]
     assert (root / "results/training.csv").read_bytes() == b"training data\n"
@@ -141,41 +127,34 @@ def test_install_committed_data_keeps_missing_weights_explicit(github_bundle):
     assert not verify(root, manifest)["ready"]
 
 
-def test_github_fetch_combines_committed_data_and_download(github_bundle):
-    root, manifest, _, _ = github_bundle
-    assert fetch(root, manifest)["ready"]
+def test_fetch_combines_committed_data_and_local_archive(archive_bundle):
+    root, manifest, archive, _ = archive_bundle
+    assert fetch(root, manifest, downloads=archive.parent)["ready"]
     assert (root / "results/training.csv").read_bytes() == b"training data\n"
     assert (root / "results/weights.bin").read_bytes() == b"weights"
 
 
-def test_offline_fetch_uses_downloaded_archives_without_network(github_bundle, monkeypatch):
-    root, manifest, archive, _ = github_bundle
-
-    def forbidden(*args, **kwargs):
-        raise AssertionError("offline restoration must not contact GitHub")
-
-    monkeypatch.setattr(artifacts.subprocess, "run", forbidden)
-    assert fetch(root, manifest, downloads=archive.parent)["ready"]
-
-
-def test_changed_committed_data_stops_before_download(github_bundle, monkeypatch):
-    root, manifest, _, _ = github_bundle
-    (root / "data/training.csv").write_bytes(b"version https://git-lfs.github.com/spec/v1\n")
-
-    def forbidden(*args, **kwargs):
-        raise AssertionError("must verify committed data before download")
-
-    monkeypatch.setattr(artifacts.subprocess, "run", forbidden)
-    with pytest.raises(ValueError, match="git lfs pull"):
+def test_fetch_requires_local_archive_directory(archive_bundle):
+    root, manifest, _, _ = archive_bundle
+    with pytest.raises(ValueError, match="--bundle is required"):
         fetch(root, manifest)
     assert not (root / "results").exists()
 
 
-def test_changed_archive_stops_before_installation(github_bundle):
-    root, manifest, archive, _ = github_bundle
+def test_changed_committed_data_stops_before_restoration(archive_bundle):
+    root, manifest, archive, _ = archive_bundle
+    (root / "data/training.csv").write_bytes(b"version https://git-lfs.github.com/spec/v1\n")
+
+    with pytest.raises(ValueError, match="git lfs pull"):
+        fetch(root, manifest, downloads=archive.parent)
+    assert not (root / "results").exists()
+
+
+def test_changed_archive_stops_before_installation(archive_bundle):
+    root, manifest, archive, _ = archive_bundle
     archive.write_bytes(b"corrupt download")
     with pytest.raises(ValueError, match="differs from its manifest"):
-        fetch(root, manifest)
+        fetch(root, manifest, downloads=archive.parent)
     assert not (root / "results").exists()
 
 
@@ -190,35 +169,29 @@ def test_changed_archive_stops_before_installation(github_bundle):
         [("weights.bin", b"changed", False)],
     ],
 )
-def test_authenticated_archive_cannot_bypass_payload_checks(github_bundle, entries):
-    root, manifest, archive, config = github_bundle
+def test_authenticated_archive_cannot_bypass_payload_checks(archive_bundle, entries):
+    root, manifest, archive, config = archive_bundle
     _archive(archive, entries)
-    record = config["storage"]["github"]["archives"][0]
+    record = config["storage"]["archives"][0]
     record.update(bytes=archive.stat().st_size, sha256=str(sha256_file(archive)))
     manifest.write_text(json.dumps(config))
     with pytest.raises(ValueError):
-        fetch(root, manifest)
+        fetch(root, manifest, downloads=archive.parent)
     assert not (root / "results").exists()
     assert not (root.parent / "outside").exists()
 
 
 @pytest.mark.parametrize("action", ["install", "fetch"])
-def test_committed_hela_group_is_available_without_downloads(
-    github_bundle, monkeypatch, capsys, action
-):
+def test_committed_hela_group_is_available_without_downloads(archive_bundle, capsys, action):
     from forge.cli import main
 
-    root, _, _, config = github_bundle
+    root, _, _, config = archive_bundle
     config = {"files": config["files"][:1]}
     (root / "manifests").mkdir()
     (root / "manifests/paper-model-v1.json").write_text(json.dumps({"files": []}))
     manifest = root / "manifests/hela-oracle-v1.json"
     manifest.write_text(json.dumps(config))
 
-    def forbidden(*args, **kwargs):
-        raise AssertionError("included HeLa artifacts must not require downloads")
-
-    monkeypatch.setattr(artifacts.subprocess, "run", forbidden)
     assert main(["artifacts", action, "--group", "hela-oracle-v1", "--root", str(root)]) == 0
     report = json.loads(capsys.readouterr().out)
     assert report["ready"]

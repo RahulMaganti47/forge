@@ -2,36 +2,32 @@
   "schema_version": "forge.release.bundle.v1",
   "scope": "optional original eight-arm architecture-study checkpoints for three seeds",
   "storage": {
-    "github": {
-      "repository": "RahulMaganti47/forge",
-      "release": "submission19337-artifacts-v1",
-      "archives": [
-        {
-          "name": "architecture-seed2.tar.gz",
-          "bytes": 1230344391,
-          "sha256": "f583491ff17c449e5037a2a90fdd84b5fdcbced7c1dc74138b18ce28a6194ac2",
-          "members": [
-            "runs/phase1-transformer-mechanism-study/3715b68bb7faaa8815ff575e07ff4c00f7983327322462ed8c2b463629172e46/stages/study/artifacts/training/checkpoints.tar"
-          ]
-        },
-        {
-          "name": "architecture-seed1.tar.gz",
-          "bytes": 1230329287,
-          "sha256": "978eb7ea9b68f64d4ce699827f8bb9ab1e3b2f4f123dfaa8a4738451ba077bb1",
-          "members": [
-            "runs/phase1-transformer-mechanism-study/9f5633821b0234c367d7f1058703ba05034d2971c04ee45a7e9a26af83f311c1/stages/study/artifacts/training/checkpoints.tar"
-          ]
-        },
-        {
-          "name": "architecture-seed0.tar.gz",
-          "bytes": 1230339449,
-          "sha256": "614847b390e8ccec3515645de890d6b4b56ba9e520e64d9e885b394bd21a24f9",
-          "members": [
-            "runs/phase1-transformer-mechanism-study/5f149b098c61a855dc1bf51b5ba1c3c31162d35fb5e84abeb174bde30a5eb54f/stages/study/artifacts/training/checkpoints.tar"
-          ]
-        }
-      ]
-    }
+    "archives": [
+      {
+        "name": "architecture-seed2.tar.gz",
+        "bytes": 1230344391,
+        "sha256": "f583491ff17c449e5037a2a90fdd84b5fdcbced7c1dc74138b18ce28a6194ac2",
+        "members": [
+          "runs/phase1-transformer-mechanism-study/3715b68bb7faaa8815ff575e07ff4c00f7983327322462ed8c2b463629172e46/stages/study/artifacts/training/checkpoints.tar"
+        ]
+      },
+      {
+        "name": "architecture-seed1.tar.gz",
+        "bytes": 1230329287,
+        "sha256": "978eb7ea9b68f64d4ce699827f8bb9ab1e3b2f4f123dfaa8a4738451ba077bb1",
+        "members": [
+          "runs/phase1-transformer-mechanism-study/9f5633821b0234c367d7f1058703ba05034d2971c04ee45a7e9a26af83f311c1/stages/study/artifacts/training/checkpoints.tar"
+        ]
+      },
+      {
+        "name": "architecture-seed0.tar.gz",
+        "bytes": 1230339449,
+        "sha256": "614847b390e8ccec3515645de890d6b4b56ba9e520e64d9e885b394bd21a24f9",
+        "members": [
+          "runs/phase1-transformer-mechanism-study/5f149b098c61a855dc1bf51b5ba1c3c31162d35fb5e84abeb174bde30a5eb54f/stages/study/artifacts/training/checkpoints.tar"
+        ]
+      }
+    ]
   },
   "files": [
     {

@@ -19,30 +19,30 @@ Install [Git LFS](https://git-lfs.com/) and run `git lfs pull` to retrieve the l
 ## Install the included data
 
 ```bash
-uv run forge artifacts install --group paper-model-v1
-uv run forge artifacts install --group submission19337-evidence-v1
-uv run forge reproduce --target all --output results/tables
+forge artifacts install --group paper-model-v1
+forge artifacts install --group submission19337-evidence-v1
+forge reproduce --target all --output results/tables
 ```
 
-## Download checkpoints and caches
+## Checkpoints and caches
 
-With an authenticated [GitHub CLI](https://cli.github.com/), run:
+Checkpoint and cache bundles are supplied separately. Restore them from local directories:
 
 ```bash
-uv run forge artifacts fetch --group paper-model-v1
-uv run forge artifacts fetch --group submission19337-evidence-v1
+forge artifacts restore --group paper-model-v1 --bundle /path/to/paper-model-v1
+forge artifacts restore --group submission19337-evidence-v1 --bundle /path/to/submission19337-evidence-v1
 ```
 
-| Download | Contents | Size |
-|---|---|---|
-| [Primary model](https://github.com/RahulMaganti47/forge/releases/download/submission19337-artifacts-v1/paper-model-v1.tar.gz) | Three checkpoints and the primary training cache | 324 MB |
-| [Supporting inputs](https://github.com/RahulMaganti47/forge/releases/download/submission19337-artifacts-v1/submission19337-evidence-v1.tar.gz) | Supporting cache and two chemistry source PDFs | 23 MB |
-| Architecture study: [seed 0](https://github.com/RahulMaganti47/forge/releases/download/submission19337-artifacts-v1/architecture-seed0.tar.gz), [seed 1](https://github.com/RahulMaganti47/forge/releases/download/submission19337-artifacts-v1/architecture-seed1.tar.gz), [seed 2](https://github.com/RahulMaganti47/forge/releases/download/submission19337-artifacts-v1/architecture-seed2.tar.gz) | Optional architecture-study weights | 1.23 GB each |
+| Bundle | Contents |
+|---|---|
+| `paper-model-v1` | Three checkpoints and the primary training cache |
+| `submission19337-evidence-v1` | Supporting cache and chemistry source PDFs |
+| `submission19337-ablations-v1` | Optional architecture-study weights for all three seeds |
 
 For the architecture study:
 
 ```bash
-uv run forge artifacts fetch --group submission19337-ablations-v1
+forge artifacts restore --group submission19337-ablations-v1 --bundle /path/to/submission19337-ablations-v1
 ```
 
 ## HeLa predictor
@@ -50,5 +50,5 @@ uv run forge artifacts fetch --group submission19337-ablations-v1
 The original checkpoint and matching inputs are included in `hela/`. Restore them with:
 
 ```bash
-uv run forge artifacts install --group hela-oracle-v1
+forge artifacts install --group hela-oracle-v1
 ```

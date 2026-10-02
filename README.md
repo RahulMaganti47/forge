@@ -28,17 +28,14 @@ forge artifacts install --group submission19337-evidence-v1
 forge reproduce --target all --output results/tables
 ```
 
-Checkpoint downloads use the [GitHub CLI](https://cli.github.com/) (`gh auth login`).
+Restore the checkpoint and cache bundles supplied separately:
 
 ```bash
-forge artifacts fetch --group paper-model-v1
-forge artifacts fetch --group submission19337-evidence-v1
+forge artifacts restore --group paper-model-v1 --bundle /path/to/paper-model-v1
+forge artifacts restore --group submission19337-evidence-v1 --bundle /path/to/submission19337-evidence-v1
 forge generate --replicate 0 --family ugi --count 2 --seed 42 \
   --device cpu --output results/demo
 ```
-
-Checkpoints and caches have [direct downloads](data/README.md#download-checkpoints-and-caches).
-Readers need access to this private repository.
 
 ## Structure
 

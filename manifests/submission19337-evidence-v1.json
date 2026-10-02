@@ -2,22 +2,18 @@
   "schema_version": "forge.release.bundle.v1",
   "reference_pdf_sha256": "7ea7cf2e51922e5e58cd6659dc183409e465ede2eb1586fc8d0ec39935c4fd53",
   "storage": {
-    "github": {
-      "repository": "RahulMaganti47/forge",
-      "release": "submission19337-artifacts-v1",
-      "archives": [
-        {
-          "name": "submission19337-evidence-v1.tar.gz",
-          "bytes": 22985602,
-          "sha256": "20884630d89434fa6eb5af8b3fe850b8a7e20bc6922ec5179f287fe0298bbbc4",
-          "members": [
-            "data/source_cache/m0_09_publishers/PMC10544676/assets/41587_2023_1679_MOESM1_ESM.pdf",
-            "data/source_cache/m0_09_review_assets/PMC10904786/41467_2024_45422_MOESM1_ESM.pdf",
-            "results/phase1/bl_core_constrained_production_cache_v1/cache.npz"
-          ]
-        }
-      ]
-    }
+    "archives": [
+      {
+        "name": "submission19337-evidence-v1.tar.gz",
+        "bytes": 22985602,
+        "sha256": "20884630d89434fa6eb5af8b3fe850b8a7e20bc6922ec5179f287fe0298bbbc4",
+        "members": [
+          "data/source_cache/m0_09_publishers/PMC10544676/assets/41587_2023_1679_MOESM1_ESM.pdf",
+          "data/source_cache/m0_09_review_assets/PMC10904786/41467_2024_45422_MOESM1_ESM.pdf",
+          "results/phase1/bl_core_constrained_production_cache_v1/cache.npz"
+        ]
+      }
+    ]
   },
   "files": [
     {

@@ -14,20 +14,19 @@ Each command writes to a new directory under `results/`.
 ## Data and checkpoints
 
 The processed datasets, splits and saved results are included in [data/](../data/README.md).
-Run `git lfs pull`, then fetch checkpoints and caches with an authenticated GitHub CLI:
+Run `git lfs pull`, then restore checkpoint and cache bundles supplied separately:
 
 ```bash
-uv run forge artifacts fetch --group paper-model-v1
-uv run forge artifacts fetch --group submission19337-evidence-v1
+forge artifacts restore --group paper-model-v1 --bundle /path/to/paper-model-v1
+forge artifacts restore --group submission19337-evidence-v1 --bundle /path/to/submission19337-evidence-v1
 ```
 
-Fetch combines the included data with the [direct downloads](../data/README.md#download-checkpoints-and-caches)
-and verifies all hashes. Readers need access to this private repository.
+Restoration verifies every file against its pinned hash.
 
 Architecture-study weights are optional:
 
 ```bash
-uv run forge artifacts fetch --group submission19337-ablations-v1
+forge artifacts restore --group submission19337-ablations-v1 --bundle /path/to/submission19337-ablations-v1
 ```
 
 For table replay without checkpoint downloads, use `forge artifacts install --group <group>` for

@@ -523,23 +523,19 @@
   ],
   "upstream_manifest_sha256": "9a74401485b2d2c97f5eb17c106dc513d01c6b1097c7a98bd4b9864a8e0db327",
   "storage": {
-    "github": {
-      "repository": "RahulMaganti47/forge",
-      "release": "submission19337-artifacts-v1",
-      "archives": [
-        {
-          "name": "paper-model-v1.tar.gz",
-          "bytes": 324469460,
-          "sha256": "d388f563d3b8a7fd2046da9826185b00b25281355008c6bf55f8ebd734fd08ec",
-          "members": [
-            "seed0/checkpoints.tar",
-            "seed1/checkpoints.tar",
-            "seed2/checkpoints.tar",
-            "shared-inputs/results/phase1/shared_synthesis_program_mixed_cache_v1/cache.npz"
-          ]
-        }
-      ]
-    }
+    "archives": [
+      {
+        "name": "paper-model-v1.tar.gz",
+        "bytes": 324469460,
+        "sha256": "d388f563d3b8a7fd2046da9826185b00b25281355008c6bf55f8ebd734fd08ec",
+        "members": [
+          "seed0/checkpoints.tar",
+          "seed1/checkpoints.tar",
+          "seed2/checkpoints.tar",
+          "shared-inputs/results/phase1/shared_synthesis_program_mixed_cache_v1/cache.npz"
+        ]
+      }
+    ]
   },
   "release_scope": "subset view of existing immutable bundle; no payload bytes changed"
 }

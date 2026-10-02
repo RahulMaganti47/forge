@@ -5,7 +5,6 @@ from __future__ import annotations
 import json
 import os
 import shutil
-import subprocess
 import tarfile
 import tempfile
 from pathlib import Path
@@ -130,11 +129,11 @@ def fetch(root: Path, manifest: Path, *, downloads: Path | None = None) -> dict[
         install(root, manifest)
         return verify(root, manifest)
     config = json.loads(manifest.read_text())
-    return _fetch_github(root, manifest, config["storage"]["github"], downloads)
+    return _fetch_archives(root, manifest, config["storage"]["archives"], downloads)
 
 
-def _fetch_github(
-    root: Path, manifest: Path, location: dict[str, Any], downloads: Path | None
+def _fetch_archives(
+    root: Path, manifest: Path, archives: list[dict[str, Any]], downloads: Path | None
 ) -> dict[str, Any]:
     rows = manifest_files(manifest)
     committed = [row for row in rows if "checkout_path" in row]
@@ -146,9 +145,13 @@ def _fetch_github(
     if failures:
         raise ValueError(f"committed data is missing or changed; run git lfs pull: {failures}")
     external = {row["bundle_path"]: row for row in rows if "checkout_path" not in row}
-    members = [member for archive in location["archives"] for member in archive["members"]]
+    if downloads is None:
+        raise ValueError(
+            "--bundle is required; provide the directory containing the artifact archives"
+        )
+    members = [member for archive in archives for member in archive["members"]]
     if len(members) != len(set(members)) or set(members) != set(external):
-        raise ValueError("release archives do not cover the declared download files exactly")
+        raise ValueError("archives do not cover the declared download files exactly")
     with tempfile.TemporaryDirectory(prefix=f"forge-{manifest.stem}-") as directory:
         destination = Path(directory)
         bundle = destination / "bundle"
@@ -157,31 +160,14 @@ def _fetch_github(
             target = safe_path(bundle, row["bundle_path"])
             target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(safe_path(root, row["checkout_path"]), target)
-        for archive in location["archives"]:
+        for archive in archives:
             name = archive["name"]
             if Path(name).name != name or not name.endswith(".tar.gz"):
-                raise ValueError(f"invalid release archive name: {name}")
+                raise ValueError(f"invalid archive name: {name}")
             path = destination / name
-            if downloads is not None:
-                shutil.copyfile(safe_path(downloads, name), path)
-            else:
-                subprocess.run(
-                    [
-                        "gh",
-                        "release",
-                        "download",
-                        location["release"],
-                        "--repo",
-                        location["repository"],
-                        "--pattern",
-                        name,
-                        "--dir",
-                        str(destination),
-                    ],
-                    check=True,
-                )
+            shutil.copyfile(safe_path(downloads, name), path)
             if path.stat().st_size != archive["bytes"] or sha256_file(path) != archive["sha256"]:
-                raise ValueError(f"release archive differs from its manifest: {name}")
+                raise ValueError(f"archive differs from its manifest: {name}")
             _unpack_archive(path, bundle, {key: external[key] for key in archive["members"]})
         return restore(root, manifest, bundle)
 
@@ -192,12 +178,12 @@ def _unpack_archive(path: Path, bundle: Path, expected: dict[str, dict[str, Any]
         for member in archive:
             target = safe_path(bundle, member.name)
             if member.name not in expected or member.name in seen or not member.isfile():
-                raise ValueError(f"unexpected release archive member: {member.name}")
+                raise ValueError(f"unexpected archive member: {member.name}")
             if member.size != expected[member.name]["bytes"]:
-                raise ValueError(f"release member has a different size: {member.name}")
+                raise ValueError(f"archive member has a different size: {member.name}")
             seen.add(member.name)
             target.parent.mkdir(parents=True, exist_ok=True)
             with archive.extractfile(member) as source, target.open("xb") as output:
                 shutil.copyfileobj(source, output)
     if seen != set(expected):
-        raise ValueError(f"release archive is incomplete: {sorted(set(expected) - seen)}")
+        raise ValueError(f"archive is incomplete: {sorted(set(expected) - seen)}")
