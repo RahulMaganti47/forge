@@ -7,7 +7,7 @@
       "full"
     ],
     "scope": "Non-selecting cyclic program-identity control retrained on the program-role shared-bias architecture under the reaction-core saturation decoder.",
-    "source": "explicit user instruction to replace every GEM table value with the new core-saturation-decoded model"
+    "source": "Core-saturation decoding is shared by the primary model and matched controls."
   },
   "candidate_selection": false,
   "checkpoint_selection": "fixed_final_step_without_calibration_selection",

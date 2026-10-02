@@ -1,5 +1,5 @@
 {
-  "schema_version": "forge.gem_table5_decoder_source_ablation_config.v1",
+  "schema_version": "forge.decoder_ablation_config.v1",
   "status": "frozen_after_seed0_evaluations",
   "checkpoint_step": 9143,
   "program_id": "ugi_3cr_agile",

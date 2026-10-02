@@ -1,8 +1,8 @@
 {
-  "schema_version": "forge.gem_table1_complete_config.v1",
+  "schema_version": "forge.production_comparison_config.v1",
   "final_evidence_config": {
-    "path": "configs/reproduction/gem_table1_core_saturation_final_v1.json",
-    "sha256": "3b648226df1f904ec4d6745d1c3a8a9c9088af5e656c55740e4be713490f4f63"
+    "path": "configs/reproduction/final_model_evaluations_v1.json",
+    "sha256": "164484fcc5544d62a055e0bb72cd5e8d10630904bd2882b7b156584e6e366b46"
   },
   "control_evaluations": {
     "shared_null": [

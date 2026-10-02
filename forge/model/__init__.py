@@ -1,1 +1,1 @@
-"""Submission 19337 forge.model components."""
+"""Neural models for lipid generation."""

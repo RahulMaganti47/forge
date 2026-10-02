@@ -1,1 +1,1 @@
-"""Training and evaluation workflows for submission 19337."""
+"""Training and evaluation workflows for FORGE."""

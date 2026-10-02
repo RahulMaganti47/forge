@@ -17,7 +17,7 @@ from forge.commands.reproduce import verify_table_rows
 from forge.core.hashing import sha256_file
 from forge.core.io import write_json
 
-GROUPS = ("paper-model-v1", "submission19337-evidence-v1")
+GROUPS = ("paper-model-v1", "evidence-v1")
 
 
 def qualify(root: Path, output: Path) -> dict[str, Any]:

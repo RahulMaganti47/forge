@@ -1,1 +1,1 @@
-"""Submission 19337 forge.potency components."""
+"""Potency models and applicability checks."""

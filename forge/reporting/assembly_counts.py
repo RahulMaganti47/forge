@@ -1,4 +1,4 @@
-"""Render GEM Table 6 from the final three-seed conditioned-model evaluations."""
+"""Render exact assembly counts from the final three-seed conditioned-model evaluations."""
 
 from __future__ import annotations
 
@@ -14,14 +14,14 @@ from forge.reporting.production import (
     FINAL_STEP,
     PROGRAM_NAMES,
     PROGRAMS,
-    load_gem_final_evaluations,
+    load_final_evaluations,
 )
 
-RESULT_SCHEMA = "forge.gem_table6_exact_l1_counts_render.v1"
+RESULT_SCHEMA = "forge.assembly_counts_render.v1"
 ATTEMPTS_PER_PROGRAM = 3072
 
 
-class GemTable6Error(ValueError):
+class AssemblyCountsError(ValueError):
     """Final-model evidence cannot support the requested exact-count table."""
 
 
@@ -33,25 +33,25 @@ def _probability(row: Mapping[str, Any], *, program: str, replicate: int) -> flo
         or not math.isfinite(value)
         or not 0.0 <= value <= 1.0
     ):
-        raise GemTable6Error(
+        raise AssemblyCountsError(
             f"invalid exact-L1 yield for {program} seed replicate {replicate}: {value!r}"
         )
     return float(value)
 
 
-def render_gem_table6_exact_l1_counts(
+def render_assembly_counts_table(
     config_path: Path,
     repo: Path,
     row_path: Path,
     *,
     result_path: Path,
 ) -> dict[str, Any]:
-    """Generate exact numerators, denominators and percentages for GEM Table 6."""
+    """Render exact assembly counts and percentages for all three training seeds."""
 
     try:
-        heldout_by_seed, sources = load_gem_final_evaluations(config_path, repo)
+        heldout_by_seed, sources = load_final_evaluations(config_path, repo)
     except ValueError as error:
-        raise GemTable6Error(str(error)) from error
+        raise AssemblyCountsError(str(error)) from error
 
     rows: list[str] = []
     records: list[dict[str, Any]] = []
@@ -60,7 +60,7 @@ def render_gem_table6_exact_l1_counts(
             metric = seed_metrics[program]
             attempts = metric.get("samples")
             if attempts != ATTEMPTS_PER_PROGRAM:
-                raise GemTable6Error(
+                raise AssemblyCountsError(
                     f"attempt denominator changed for {program} seed replicate {replicate}"
                 )
             yield_value = _probability(metric, program=program, replicate=replicate)
@@ -71,7 +71,7 @@ def render_gem_table6_exact_l1_counts(
                 rel_tol=0.0,
                 abs_tol=1e-12,
             ):
-                raise GemTable6Error(
+                raise AssemblyCountsError(
                     f"yield does not encode an integer count for {program} seed replicate {replicate}"
                 )
             rows.append(
@@ -123,4 +123,4 @@ def render_gem_table6_exact_l1_counts(
     return result
 
 
-__all__ = ["GemTable6Error", "render_gem_table6_exact_l1_counts"]
+__all__ = ["AssemblyCountsError", "render_assembly_counts_table"]

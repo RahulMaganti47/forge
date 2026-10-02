@@ -134,6 +134,30 @@ def test_fetch_combines_committed_data_and_local_archive(archive_bundle):
     assert (root / "results/weights.bin").read_bytes() == b"weights"
 
 
+def test_restore_uses_pinned_checkout_data_and_external_weights(archive_bundle):
+    root, manifest, archive, _ = archive_bundle
+    download = archive.parent / "bundle"
+    download.mkdir()
+    (download / "weights.bin").write_bytes(b"weights")
+    (download / "training.csv").write_bytes(b"earlier archived metadata\n")
+    assert restore(root, manifest, download)["ready"]
+    assert (root / "results/training.csv").read_bytes() == b"training data\n"
+    assert (root / "results/weights.bin").read_bytes() == b"weights"
+
+
+@pytest.mark.parametrize("corrupt", ["checkout", "weights"])
+def test_restore_checks_every_source_before_writing(archive_bundle, corrupt):
+    root, manifest, archive, _ = archive_bundle
+    download = archive.parent / "bundle"
+    download.mkdir()
+    (download / "weights.bin").write_bytes(b"weights")
+    target = root / "data/training.csv" if corrupt == "checkout" else download / "weights.bin"
+    target.write_bytes(b"changed")
+    with pytest.raises(ValueError, match="incomplete or changed"):
+        restore(root, manifest, download)
+    assert not (root / "results").exists()
+
+
 def test_fetch_requires_local_archive_directory(archive_bundle):
     root, manifest, _, _ = archive_bundle
     with pytest.raises(ValueError, match="--bundle is required"):

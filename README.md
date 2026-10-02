@@ -24,7 +24,7 @@ source .venv/bin/activate
 
 ```bash
 forge artifacts install --group paper-model-v1
-forge artifacts install --group submission19337-evidence-v1
+forge artifacts install --group evidence-v1
 forge reproduce --target all --output results/tables
 ```
 
@@ -32,7 +32,7 @@ Restore the checkpoint and cache bundles supplied separately:
 
 ```bash
 forge artifacts restore --group paper-model-v1 --bundle /path/to/paper-model-v1
-forge artifacts restore --group submission19337-evidence-v1 --bundle /path/to/submission19337-evidence-v1
+forge artifacts restore --group evidence-v1 --bundle /path/to/evidence-v1
 forge generate --replicate 0 --family ugi --count 2 --seed 42 \
   --device cpu --output results/demo
 ```

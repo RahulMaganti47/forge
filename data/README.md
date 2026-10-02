@@ -1,6 +1,6 @@
 # Experiment data
 
-Processed inputs and saved results for the three-family submission are included in this checkout.
+Processed inputs and saved results for the three-family experiments are included in this checkout.
 Install [Git LFS](https://git-lfs.com/) and run `git lfs pull` to retrieve the larger files.
 
 | Directory | Contents |
@@ -20,7 +20,7 @@ Install [Git LFS](https://git-lfs.com/) and run `git lfs pull` to retrieve the l
 
 ```bash
 forge artifacts install --group paper-model-v1
-forge artifacts install --group submission19337-evidence-v1
+forge artifacts install --group evidence-v1
 forge reproduce --target all --output results/tables
 ```
 
@@ -30,19 +30,19 @@ Checkpoint and cache bundles are supplied separately. Restore them from local di
 
 ```bash
 forge artifacts restore --group paper-model-v1 --bundle /path/to/paper-model-v1
-forge artifacts restore --group submission19337-evidence-v1 --bundle /path/to/submission19337-evidence-v1
+forge artifacts restore --group evidence-v1 --bundle /path/to/evidence-v1
 ```
 
 | Bundle | Contents |
 |---|---|
 | `paper-model-v1` | Three checkpoints and the primary training cache |
-| `submission19337-evidence-v1` | Supporting cache and chemistry source PDFs |
-| `submission19337-ablations-v1` | Optional architecture-study weights for all three seeds |
+| `evidence-v1` | Supporting cache and chemistry source PDFs |
+| `ablations-v1` | Optional architecture-study weights for all three seeds |
 
 For the architecture study:
 
 ```bash
-forge artifacts restore --group submission19337-ablations-v1 --bundle /path/to/submission19337-ablations-v1
+forge artifacts restore --group ablations-v1 --bundle /path/to/ablations-v1
 ```
 
 ## HeLa predictor

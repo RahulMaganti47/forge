@@ -77,13 +77,25 @@ def _verify_files(root: Path, rows: list[dict[str, Any]], key: str) -> list[dict
 
 
 def restore(root: Path, manifest: Path, bundle: Path) -> dict[str, Any]:
-    """Check the entire source bundle and all conflicts before copying any payload."""
-    _restore_files(root, manifest_files(manifest), bundle, "bundle_path")
+    """Combine pinned checkout data and external bundle files after verifying every source."""
+    _restore_files(root, manifest_files(manifest), bundle, "bundle_path", checkout=root)
     return verify(root, manifest)
 
 
-def _restore_files(root: Path, rows: list[dict[str, Any]], bundle: Path, key: str) -> None:
-    failures = [row for row in _verify_files(bundle, rows, key) if row["status"] != "verified"]
+def _restore_files(
+    root: Path,
+    rows: list[dict[str, Any]],
+    bundle: Path,
+    key: str,
+    *,
+    checkout: Path | None = None,
+) -> None:
+    committed = [row for row in rows if checkout is not None and "checkout_path" in row]
+    external = [row for row in rows if checkout is None or "checkout_path" not in row]
+    checks = _verify_files(bundle, external, key)
+    if checkout is not None:
+        checks.extend(_verify_files(checkout, committed, "checkout_path"))
+    failures = [row for row in checks if row["status"] != "verified"]
     if failures:
         raise ValueError(f"download is incomplete or changed: {failures}")
     for row in rows:
@@ -94,7 +106,11 @@ def _restore_files(root: Path, rows: list[dict[str, Any]], bundle: Path, key: st
         target = safe_path(root, row["repo_path"])
         if target.exists():
             continue
-        source = safe_path(bundle, row[key])
+        source = (
+            safe_path(checkout, row["checkout_path"])
+            if checkout is not None and "checkout_path" in row
+            else safe_path(bundle, row[key])
+        )
         target.parent.mkdir(parents=True, exist_ok=True)
         with tempfile.NamedTemporaryFile(dir=target.parent, delete=False) as handle:
             temporary = Path(handle.name)

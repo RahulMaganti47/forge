@@ -1,6 +1,5 @@
 {
   "schema_version": "forge.release.bundle.v1",
-  "reference_pdf_sha256": "7ea7cf2e51922e5e58cd6659dc183409e465ede2eb1586fc8d0ec39935c4fd53",
   "scope": "Recovered frozen HeLa oracle checkpoint, assay data, splits, configs and calibration summaries; not a complete Table 11 rerun bundle",
   "files": [
     {

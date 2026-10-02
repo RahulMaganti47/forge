@@ -1,5 +1,5 @@
 {
-  "schema_version": "forge.gem_table7_lipid_realism_config.v1",
+  "schema_version": "forge.lipid_realism_config.v1",
   "status": "frozen_after_three_seed_aggregate",
   "aggregate": {
     "path": "results/phase1/common_lipid_realism_core_saturation_v1/final_aggregate/result.json",

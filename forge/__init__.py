@@ -1,1 +1,1 @@
-"""Submission 19337 forge components."""
+"""Reaction-guided generative design of ionizable lipids."""

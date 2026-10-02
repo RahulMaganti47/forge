@@ -18,7 +18,7 @@ Run `git lfs pull`, then restore checkpoint and cache bundles supplied separatel
 
 ```bash
 forge artifacts restore --group paper-model-v1 --bundle /path/to/paper-model-v1
-forge artifacts restore --group submission19337-evidence-v1 --bundle /path/to/submission19337-evidence-v1
+forge artifacts restore --group evidence-v1 --bundle /path/to/evidence-v1
 ```
 
 Restoration verifies every file against its pinned hash.
@@ -26,7 +26,7 @@ Restoration verifies every file against its pinned hash.
 Architecture-study weights are optional:
 
 ```bash
-forge artifacts restore --group submission19337-ablations-v1 --bundle /path/to/submission19337-ablations-v1
+forge artifacts restore --group ablations-v1 --bundle /path/to/ablations-v1
 ```
 
 For table replay without checkpoint downloads, use `forge artifacts install --group <group>` for
@@ -49,12 +49,12 @@ The expected numerical rows are in `data/table_reference.json`.
 
 | Tables | Config under `configs/reproduction/` |
 |---|---|
-| 1, 3–4: production and controls | `gem_table1_core_saturation_complete_v1.json`, `gem_table1_core_saturation_final_v1.json` |
+| 1, 3–4: production and controls | `production_comparison_v1.json`, `final_model_evaluations_v1.json` |
 | 2, 7–8: common Ugi benchmark | `common_ugi.json` |
-| 5: decoder/source ablation | `gem_table5_decoder_source_ablation_v1.json` |
-| 6: architecture ablation | `gem_table8_architecture_ablations_v1.json` |
-| 9: catalogue comparison | `gem_table9_catalogue_comparison_v1.json` |
-| 10: structural realism | `gem_table7_lipid_realism_v1.json` |
+| 5: decoder/source ablation | `decoder_ablation_v1.json` |
+| 6: architecture ablation | `architecture_ablation_v1.json` |
+| 9: catalogue comparison | `catalogue_comparison_v1.json` |
+| 10: structural realism | `lipid_realism_v1.json` |
 | 11: HeLa diagnostic | Final adjudication in the evidence bundle |
 
 Table reproduction aggregates saved evidence. It does not rerun Table 5's decoder-intervention

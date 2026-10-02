@@ -35,19 +35,19 @@
   },
   "inputs": {
     "fresh_generation": {
-      "path": "/Users/rmaganti/Desktop/thesis_projects_ML/forge/results/phase1/ugi_high_potency_challenger_terminal_generation_v1/result.json",
+      "path": "results/phase1/ugi_high_potency_challenger_terminal_generation_v1/result.json",
       "sha256": "e47ccb2c74f062bf3fa37f38d25df17deefd633ce38bd1b8e05207258a4cb606"
     },
     "fresh_ranking": {
-      "path": "/Users/rmaganti/Desktop/thesis_projects_ML/forge/results/phase1/ugi_high_potency_challenger_continuous_ranking_v1/result.json",
+      "path": "results/phase1/ugi_high_potency_challenger_continuous_ranking_v1/result.json",
       "sha256": "dc19f876235cd68c9ae36936ea53dddf0f31dc04451218c47e67dcccf01e3471"
     },
     "frozen_proposal": {
-      "path": "/Users/rmaganti/Desktop/thesis_projects_ML/forge/results/phase1/ugi_morphology_high_potency_proposal_v1/result.json",
+      "path": "results/phase1/ugi_morphology_high_potency_proposal_v1/result.json",
       "sha256": "d8117d11e06a592bc6e2a54b2b0d549f610228dc4595c97aa918e68d2f0e71bb"
     },
     "signal_audit": {
-      "path": "/Users/rmaganti/Desktop/thesis_projects_ML/forge/results/phase1/ugi_morphology_high_potency_challenger_v1_retry1/result.json",
+      "path": "results/phase1/ugi_morphology_high_potency_challenger_v1_retry1/result.json",
       "sha256": "91839b27d54bc73c55dd471eb52e125e601d4b1a2219e8fe5548cfb305df5ed8"
     }
   },

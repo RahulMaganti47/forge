@@ -1,1 +1,1 @@
-"""Frozen submission diagnostic components."""
+"""Potency-guidance diagnostic components."""

@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def test_numerical_reference_identity() -> None:
     assert sha256_file(ROOT / "data/table_reference.json") == (
-        "cc3dc02cf62a1fa54a21345917f13bf2e24b6369d422e105cd486e3e8588e015"
+        "aac0776f827eb99b5d07441e51dd8558187591d38fb89069426f4a5edcb860f0"
     )
 
 
@@ -25,7 +25,7 @@ def test_seed_summary_uses_sample_sd_and_preserves_undefined() -> None:
 
 @pytest.mark.artifacts
 def test_every_numerical_table_row_matches_saved_reference(tmp_path: Path) -> None:
-    for name in ("paper-model-v1", "submission19337-evidence-v1"):
+    for name in ("paper-model-v1", "evidence-v1"):
         report = verify(ROOT, ROOT / f"manifests/{name}.json")
         missing = [row for row in report["files"] if row["status"] == "missing"]
         mismatched = [row for row in report["files"] if row["status"] == "mismatch"]

@@ -1,5 +1,5 @@
 {
-  "schema_version": "forge.gem_table1_final_evidence_config.v1",
+  "schema_version": "forge.final_model_evaluations_config.v1",
   "final_evaluations": [
     {
       "path": "runs/phase1-shared-bias-parallel-program-role-seed0-core-saturation-h100-v2/78f43e12b12db09f4bfac272e7d8c93954a11a5d71b9008921ea944fa97c04df/stages/evaluation/artifacts/result.json",

@@ -1,4 +1,4 @@
-"""Render GEM Table 9 from final FORGE and fixed finite-catalogue evidence."""
+"""Render the catalogue comparison from final-model and finite-catalogue evidence."""
 
 from __future__ import annotations
 
@@ -13,28 +13,28 @@ from forge.core.io import atomic_write, read_json_object, write_json
 from forge.reporting.production import (
     EXPECTED_SEEDS,
     PROGRAMS,
-    load_gem_final_evaluations,
+    load_final_evaluations,
 )
 
-CONFIG_SCHEMA = "forge.gem_table9_catalogue_comparison_config.v1"
-RESULT_SCHEMA = "forge.gem_table9_catalogue_comparison_render.v1"
+CONFIG_SCHEMA = "forge.catalogue_comparison_config.v1"
+RESULT_SCHEMA = "forge.catalogue_comparison_render.v1"
 CATALOGUE_SCHEMA = "forge.final_bl_core_production_adjudication.v1"
 ATTEMPTS_PER_PROGRAM = 3072
 
 
-class GemTable9Error(ValueError):
+class CatalogueComparisonError(ValueError):
     """Final-model or finite-catalogue evidence is incomplete or inadmissible."""
 
 
 def _number(value: Any, *, label: str) -> float:
     if isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value):
-        raise GemTable9Error(f"{label} is not finite")
+        raise CatalogueComparisonError(f"{label} is not finite")
     return float(value)
 
 
 def _final_mean(rows: Sequence[Mapping[str, Any]], metric: str, *, program: str) -> float:
     if len(rows) != 3:
-        raise GemTable9Error(f"{program} does not have three final-model rows")
+        raise CatalogueComparisonError(f"{program} does not have three final-model rows")
     return statistics.fmean(
         _number(row.get(metric), label=f"FORGE.{program}.{metric}") for row in rows
     )
@@ -43,7 +43,7 @@ def _final_mean(rows: Sequence[Mapping[str, Any]], metric: str, *, program: str)
 def _catalogue_mean(metrics: Mapping[str, Any], metric: str, *, program: str) -> float:
     summary = metrics.get(metric)
     if not isinstance(summary, Mapping):
-        raise GemTable9Error(f"catalogue metric is missing: {program}.{metric}")
+        raise CatalogueComparisonError(f"catalogue metric is missing: {program}.{metric}")
     values = summary.get("by_seed")
     if (
         not isinstance(values, list)
@@ -53,7 +53,7 @@ def _catalogue_mean(metrics: Mapping[str, Any], metric: str, *, program: str) ->
         or summary.get("expected_seed_count") != 3
         or summary.get("undefined_cells_imputed") is not False
     ):
-        raise GemTable9Error(f"catalogue seed contract changed: {program}.{metric}")
+        raise CatalogueComparisonError(f"catalogue seed contract changed: {program}.{metric}")
     parsed = [_number(value, label=f"catalogue.{program}.{metric}") for value in values]
     mean = statistics.fmean(parsed)
     if not math.isclose(
@@ -62,7 +62,7 @@ def _catalogue_mean(metrics: Mapping[str, Any], metric: str, *, program: str) ->
         rel_tol=0.0,
         abs_tol=1e-12,
     ):
-        raise GemTable9Error(f"catalogue mean changed: {program}.{metric}")
+        raise CatalogueComparisonError(f"catalogue mean changed: {program}.{metric}")
     return mean
 
 
@@ -129,7 +129,7 @@ def _metric_cells(
     return render(forge), render(catalogue), {"forge": forge, "finite_catalogue": catalogue}
 
 
-def render_gem_table9_catalogue_comparison(
+def render_catalogue_table(
     config_path: Path,
     repo: Path,
     row_path: Path,
@@ -138,7 +138,9 @@ def render_gem_table9_catalogue_comparison(
 ) -> dict[str, Any]:
     """Generate the final-model versus finite-catalogue transposed table."""
 
-    config = read_json_object(config_path, error=GemTable9Error, label="GEM Table 9 config")
+    config = read_json_object(
+        config_path, error=CatalogueComparisonError, label="catalogue comparison config"
+    )
     expected_fields = {
         "schema_version",
         "status",
@@ -156,20 +158,20 @@ def render_gem_table9_catalogue_comparison(
         or config.get("expected_seeds") != list(EXPECTED_SEEDS)
         or config.get("candidate_selection") is not False
     ):
-        raise GemTable9Error("GEM Table 9 config changed")
+        raise CatalogueComparisonError("catalogue comparison config changed")
 
     final_config = resolve_pin(
-        config["final_evidence_config"], repo, label="GEM final-evidence config"
+        config["final_evidence_config"], repo, label="final-model evaluation config"
     )
     try:
-        heldout_by_seed, final_sources = load_gem_final_evaluations(final_config, repo)
+        heldout_by_seed, final_sources = load_final_evaluations(final_config, repo)
     except ValueError as error:
-        raise GemTable9Error(str(error)) from error
+        raise CatalogueComparisonError(str(error)) from error
     catalogue_path = resolve_pin(
         config["catalogue_adjudication"], repo, label="finite-catalogue adjudication"
     )
     catalogue_result = read_json_object(
-        catalogue_path, error=GemTable9Error, label="finite-catalogue adjudication"
+        catalogue_path, error=CatalogueComparisonError, label="finite-catalogue adjudication"
     )
     comparison = catalogue_result.get("finite_component_catalogue_comparison")
     catalogue = catalogue_result.get("finite_component_catalogue_arm_summary")
@@ -182,7 +184,7 @@ def render_gem_table9_catalogue_comparison(
         or not isinstance(catalogue, Mapping)
         or set(catalogue) != set(PROGRAMS)
     ):
-        raise GemTable9Error("finite-catalogue evidence is inadmissible")
+        raise CatalogueComparisonError("finite-catalogue evidence is inadmissible")
 
     metric_labels = (
         "Valid/1k",
@@ -240,4 +242,4 @@ def render_gem_table9_catalogue_comparison(
     return result
 
 
-__all__ = ["GemTable9Error", "render_gem_table9_catalogue_comparison"]
+__all__ = ["CatalogueComparisonError", "render_catalogue_table"]

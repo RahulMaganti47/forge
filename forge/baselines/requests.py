@@ -134,7 +134,7 @@ def prepare_native_baseline_run(
         raise NativeBaselinePortError(f"unsupported native profile: {profile}")
     repo = (repo or manifest_path.resolve().parents[2]).resolve()
     if not (repo / "manifests/paper-model-v1.json").is_file():
-        raise NativeBaselinePortError("repo must name this submission's release checkout")
+        raise NativeBaselinePortError("repo must name a FORGE checkout")
     if isinstance(seed, bool) or not isinstance(seed, int) or seed < 0:
         raise NativeBaselinePortError("native seed must be a non-negative integer")
     if isinstance(attempts, bool) or not isinstance(attempts, int) or attempts <= 0:

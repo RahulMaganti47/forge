@@ -38,7 +38,7 @@ COMMON_METRICS = (
 
 
 def table_reference(root: Path) -> dict[str, Any]:
-    """Load the numerical rows verified against submission 19337."""
+    """Load the numerical rows verified against the numerical reference."""
     reference = json.loads((root / "data/table_reference.json").read_text())
     rows = reference["rows"]
     if reference["schema_version"] != "forge.table_reference.v1" or set(rows) != {
@@ -161,9 +161,7 @@ def common_tables(root: Path) -> tuple[dict[int, list[str]], dict[str, Any]]:
 
 
 def realism(root: Path) -> tuple[list[str], dict[str, Any]]:
-    config = json.loads(
-        (root / "configs/reproduction/gem_table7_lipid_realism_v1.json").read_text()
-    )
+    config = json.loads((root / "configs/reproduction/lipid_realism_v1.json").read_text())
     result = _load(root, config["aggregate"])
     if result["status"] != "pass" or result["candidate_selection"] is not False:
         raise ValueError("invalid realism aggregate")
@@ -198,7 +196,7 @@ def realism(root: Path) -> tuple[list[str], dict[str, Any]]:
 def hela(root: Path) -> tuple[list[str], dict[str, Any]]:
     pin = {
         "path": "results/phase1/ugi_high_potency_challenger_adjudication_v1/result.json",
-        "sha256": "a508b45d455b7b164e54a8345b0dff1f8e4de928eec5e2f631e145dc0d981cc3",
+        "sha256": "5ca515fce3f28587382158b7b1a97ebf5788fab75a2622284c9891d80457d4f4",
     }
     record = _load(root, pin)
     gate = record["fresh_matched_terminal_gate"]
@@ -228,20 +226,20 @@ def reproduce(root: Path, output: Path, target: str = "all") -> dict[str, Any]:
     if output.exists():
         raise ValueError(f"output already exists: {output}")
     output.mkdir(parents=True)
-    from forge.reporting.architecture_ablation import render_gem_table8_architecture_ablations
-    from forge.reporting.assembly_counts import render_gem_table6_exact_l1_counts
-    from forge.reporting.catalogue import render_gem_table9_catalogue_comparison
-    from forge.reporting.controls import render_gem_table4_production_comparison
-    from forge.reporting.decoder_ablation import render_gem_table5_decoder_source_ablation
-    from forge.reporting.production import render_gem_table1_final_evidence
+    from forge.reporting.architecture_ablation import render_architecture_table
+    from forge.reporting.assembly_counts import render_assembly_counts_table
+    from forge.reporting.catalogue import render_catalogue_table
+    from forge.reporting.controls import render_controls_table
+    from forge.reporting.decoder_ablation import render_decoder_ablation_table
+    from forge.reporting.production import render_production_table
 
     renderers = {
-        1: (render_gem_table1_final_evidence, "gem_table1_core_saturation_complete_v1"),
-        3: (render_gem_table4_production_comparison, "gem_table1_core_saturation_complete_v1"),
-        4: (render_gem_table6_exact_l1_counts, "gem_table1_core_saturation_final_v1"),
-        5: (render_gem_table5_decoder_source_ablation, "gem_table5_decoder_source_ablation_v1"),
-        6: (render_gem_table8_architecture_ablations, "gem_table8_architecture_ablations_v1"),
-        9: (render_gem_table9_catalogue_comparison, "gem_table9_catalogue_comparison_v1"),
+        1: (render_production_table, "production_comparison_v1"),
+        3: (render_controls_table, "production_comparison_v1"),
+        4: (render_assembly_counts_table, "final_model_evaluations_v1"),
+        5: (render_decoder_ablation_table, "decoder_ablation_v1"),
+        6: (render_architecture_table, "architecture_ablation_v1"),
+        9: (render_catalogue_table, "catalogue_comparison_v1"),
     }
     targets = range(1, 12) if target == "all" else [int(target.removeprefix("table-"))]
     evidence = {}
@@ -275,7 +273,6 @@ def reproduce(root: Path, output: Path, target: str = "all") -> dict[str, Any]:
             "schema_version": "forge.release.table_replay.v2",
             "status": "pass",
             "scope": "reaggregation of frozen evidence, not model retraining",
-            "reference_pdf_sha256": table_reference(root)["reference_pdf_sha256"],
             "table_reference_sha256": str(sha256_file(root / "data/table_reference.json")),
             "outputs": {p.name: str(sha256_file(p)) for p in sorted(output.iterdir())},
         }

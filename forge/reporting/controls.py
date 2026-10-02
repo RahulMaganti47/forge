@@ -1,4 +1,4 @@
-"""Render GEM Table 4 from the matched three-arm production evaluations."""
+"""Render the control comparison from matched three-arm production evaluations."""
 
 from __future__ import annotations
 
@@ -14,34 +14,34 @@ from forge.reporting.production import (
     EXPECTED_SEEDS,
     FINAL_STEP,
     PROGRAMS,
-    load_gem_table1_evaluations,
+    load_production_evaluations,
 )
 
-RESULT_SCHEMA = "forge.gem_table4_production_comparison_render.v1"
+RESULT_SCHEMA = "forge.control_comparison_render.v1"
 ARMS = ("conditioned", "shared_null", "cyclic_program")
 ATTEMPTS_PER_PROGRAM = 3072
 
 
-class GemTable4Error(ValueError):
-    """Matched final-model evidence cannot support GEM Table 4."""
+class ControlComparisonError(ValueError):
+    """Matched final-model evidence cannot support the control comparison."""
 
 
 def _number(value: Any, *, label: str) -> float:
     if isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value):
-        raise GemTable4Error(f"{label} is not finite")
+        raise ControlComparisonError(f"{label} is not finite")
     return float(value)
 
 
 def _mean(rows: Sequence[Mapping[str, Any]], metric: str, *, label: str) -> float:
     if len(rows) != len(EXPECTED_SEEDS):
-        raise GemTable4Error(f"{label} does not have three training-seed rows")
+        raise ControlComparisonError(f"{label} does not have three training-seed rows")
     return statistics.fmean(_number(row.get(metric), label=f"{label}.{metric}") for row in rows)
 
 
 def _mean_sd(rows: Sequence[Mapping[str, Any]], metric: str, *, label: str) -> tuple[float, float]:
     values = [100.0 * _number(row.get(metric), label=f"{label}.{metric}") for row in rows]
     if len(values) != len(EXPECTED_SEEDS):
-        raise GemTable4Error(f"{label} does not have three training-seed rows")
+        raise ControlComparisonError(f"{label} does not have three training-seed rows")
     return statistics.fmean(values), statistics.stdev(values)
 
 
@@ -62,7 +62,7 @@ def _cells(rows: Sequence[Mapping[str, Any]], *, label: str) -> tuple[str, ...]:
     )
 
 
-def render_gem_table4_production_comparison(
+def render_controls_table(
     config_path: Path,
     repo: Path,
     row_path: Path,
@@ -72,9 +72,9 @@ def render_gem_table4_production_comparison(
     """Render the complete transposed production table from pinned seed evaluations."""
 
     try:
-        heldout_by_arm, sources = load_gem_table1_evaluations(config_path, repo)
+        heldout_by_arm, sources = load_production_evaluations(config_path, repo)
     except ValueError as error:
-        raise GemTable4Error(str(error)) from error
+        raise ControlComparisonError(str(error)) from error
 
     columns: list[tuple[str, ...]] = []
     records: dict[str, dict[str, dict[str, str]]] = {program: {} for program in PROGRAMS}
@@ -82,7 +82,7 @@ def render_gem_table4_production_comparison(
         for arm in ARMS:
             program_rows = [seed[program] for seed in heldout_by_arm[arm]]
             if any(row.get("samples") != ATTEMPTS_PER_PROGRAM for row in program_rows):
-                raise GemTable4Error(f"attempt denominator changed for {program}/{arm}")
+                raise ControlComparisonError(f"attempt denominator changed for {program}/{arm}")
             cells = _cells(program_rows, label=f"{program}.{arm}")
             columns.append(cells)
             records[program][arm] = {
@@ -154,4 +154,4 @@ def render_gem_table4_production_comparison(
     return result
 
 
-__all__ = ["GemTable4Error", "render_gem_table4_production_comparison"]
+__all__ = ["ControlComparisonError", "render_controls_table"]

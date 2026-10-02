@@ -1,10 +1,9 @@
 {
   "schema_version": "forge.release.bundle.v1",
-  "reference_pdf_sha256": "7ea7cf2e51922e5e58cd6659dc183409e465ede2eb1586fc8d0ec39935c4fd53",
   "storage": {
     "archives": [
       {
-        "name": "submission19337-evidence-v1.tar.gz",
+        "name": "evidence-v1.tar.gz",
         "bytes": 22985602,
         "sha256": "20884630d89434fa6eb5af8b3fe850b8a7e20bc6922ec5179f287fe0298bbbc4",
         "members": [

@@ -1,4 +1,4 @@
-"""Render GEM Table 5 from three pinned seed-0 evaluation artifacts."""
+"""Render decoder ablation from three pinned seed-0 evaluation artifacts."""
 
 from __future__ import annotations
 
@@ -9,18 +9,18 @@ from typing import Any
 from forge.core.hashing import artifact_record, pin_record, resolve_pin
 from forge.core.io import atomic_write, read_json_object, write_json
 
-CONFIG_SCHEMA = "forge.gem_table5_decoder_source_ablation_config.v1"
-RESULT_SCHEMA = "forge.gem_table5_decoder_source_ablation_render.v1"
+CONFIG_SCHEMA = "forge.decoder_ablation_config.v1"
+RESULT_SCHEMA = "forge.decoder_ablation_render.v1"
 EVALUATION_SCHEMA = "forge.synthesis_program_production_evaluation_result.v1"
 
 
-class GemTable5Error(ValueError):
+class DecoderAblationError(ValueError):
     """A decoder/source ablation result is missing, mismatched, or inadmissible."""
 
 
 def _format_percent(value: Any, *, label: str) -> str:
     if isinstance(value, bool) or not isinstance(value, (int, float)) or not 0 <= value <= 1:
-        raise GemTable5Error(f"{label} is not a probability")
+        raise DecoderAblationError(f"{label} is not a probability")
     return f"{100.0 * float(value):.2f}"
 
 
@@ -46,14 +46,14 @@ def _render_row(
         or payload.get("gates", {}).get("coverage_and_precision_reported") is not True
         or payload.get("gates", {}).get("reductive_amination_substructure_rate_absent") is not True
     ):
-        raise GemTable5Error(f"inadmissible Table 5 evaluation for {arm_id}")
+        raise DecoderAblationError(f"inadmissible Table 5 evaluation for {arm_id}")
     checkpoint_metrics = payload.get("checkpoint_metrics")
     try:
         metrics = checkpoint_metrics[arm_id][str(checkpoint_step)][split][program_id]
     except (KeyError, TypeError) as error:
-        raise GemTable5Error(f"Table 5 metrics are missing for {arm_id}") from error
+        raise DecoderAblationError(f"Table 5 metrics are missing for {arm_id}") from error
     if not isinstance(metrics, Mapping) or metrics.get("samples") != attempts:
-        raise GemTable5Error(f"Table 5 attempt denominator changed for {arm_id}")
+        raise DecoderAblationError(f"Table 5 attempt denominator changed for {arm_id}")
     values = {
         "valid_percent": _format_percent(
             metrics.get("raw_valid_fraction"), label=f"{arm_id} validity"
@@ -78,7 +78,7 @@ def _render_row(
     return row, values
 
 
-def render_gem_table5_decoder_source_ablation(
+def render_decoder_ablation_table(
     config_path: Path,
     repo: Path,
     row_path: Path,
@@ -87,7 +87,9 @@ def render_gem_table5_decoder_source_ablation(
 ) -> dict[str, Any]:
     """Render the completed seed-0 decoder/source ablation rows."""
 
-    config = read_json_object(config_path, error=GemTable5Error, label="GEM Table 5 config")
+    config = read_json_object(
+        config_path, error=DecoderAblationError, label="decoder ablation config"
+    )
     expected_keys = {
         "schema_version",
         "status",
@@ -108,16 +110,18 @@ def render_gem_table5_decoder_source_ablation(
         or not isinstance(rows, list)
         or len(rows) != 3
     ):
-        raise GemTable5Error("GEM Table 5 config changed")
+        raise DecoderAblationError("decoder ablation config changed")
     rendered_rows = []
     rendered_values = []
     sources = []
     checkpoint_hashes = []
     for specification in rows:
         if not isinstance(specification, Mapping):
-            raise GemTable5Error("GEM Table 5 row specification is malformed")
-        path = resolve_pin(specification.get("result"), repo, label="GEM Table 5 evaluation")
-        payload = read_json_object(path, error=GemTable5Error, label="GEM Table 5 evaluation")
+            raise DecoderAblationError("decoder ablation row specification is malformed")
+        path = resolve_pin(specification.get("result"), repo, label="decoder ablation evaluation")
+        payload = read_json_object(
+            path, error=DecoderAblationError, label="decoder ablation evaluation"
+        )
         row, values = _render_row(
             specification,
             payload,
@@ -138,10 +142,10 @@ def render_gem_table5_decoder_source_ablation(
         sources.append(pin_record(path, repo))
         checkpoint = payload.get("checkpoint_archive")
         if not isinstance(checkpoint, Mapping) or not isinstance(checkpoint.get("sha256"), str):
-            raise GemTable5Error("GEM Table 5 checkpoint receipt is missing")
+            raise DecoderAblationError("decoder ablation checkpoint receipt is missing")
         checkpoint_hashes.append(str(checkpoint["sha256"]))
     if checkpoint_hashes[0] != checkpoint_hashes[1]:
-        raise GemTable5Error("decoder ablation rows do not share trained weights")
+        raise DecoderAblationError("decoder ablation rows do not share trained weights")
 
     # Keep the terminal booktabs rule in the included fragment.  A \noalign-based
     # rule placed immediately after an alignment-ending \input is rejected by TeX.
@@ -170,4 +174,4 @@ def render_gem_table5_decoder_source_ablation(
     return result
 
 
-__all__ = ["GemTable5Error", "render_gem_table5_decoder_source_ablation"]
+__all__ = ["DecoderAblationError", "render_decoder_ablation_table"]

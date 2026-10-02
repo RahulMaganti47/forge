@@ -2,8 +2,6 @@
   "schema_version": "forge.paper_model_bundle.v1",
   "version": "paper-model-v1",
   "reference_manifest_sha256": "d64bb8691776b213e03cd8086248257b2d7f19baa0900c1ca3d8a664bcb28e80",
-  "reference_pr_commit": "2568f091ae530fa50dab24bdd5d15b231f6e1da0",
-  "repository_head": "413767a3a12df3392ebb9492522bf8f2dab68085",
   "scope": "Three historical paper model seeds, direct generation dependencies and all 72 indexed historical evidence inputs. Not a complete recursive training reproduction or qualification of current inference code.",
   "files": [
     {
@@ -35,11 +33,11 @@
       "checkout_path": "configs/multireaction/shared_bias_parallel_program_role_seed2_core_saturation_v2.json"
     },
     {
-      "repo_path": "configs/reproduction/gem_table1_core_saturation_final_v1.json",
-      "bundle_path": "evaluation-inputs/configs/reproduction/gem_table1_core_saturation_final_v1.json",
-      "bytes": 1011,
-      "sha256": "3b648226df1f904ec4d6745d1c3a8a9c9088af5e656c55740e4be713490f4f63",
-      "checkout_path": "configs/reproduction/gem_table1_core_saturation_final_v1.json"
+      "repo_path": "configs/reproduction/final_model_evaluations_v1.json",
+      "bundle_path": "evaluation-inputs/configs/reproduction/final_model_evaluations_v1.json",
+      "bytes": 1009,
+      "sha256": "164484fcc5544d62a055e0bb72cd5e8d10630904bd2882b7b156584e6e366b46",
+      "checkout_path": "configs/reproduction/final_model_evaluations_v1.json"
     },
     {
       "repo_path": "data/vendor/qualified_reaction_families_v1.json",
@@ -278,8 +276,8 @@
     {
       "repo_path": "results/phase1/transformer_mechanism_core_saturation_v1/seed_rows.jsonl",
       "bundle_path": "evaluation-inputs/results/phase1/transformer_mechanism_core_saturation_v1/seed_rows.jsonl",
-      "bytes": 15613,
-      "sha256": "39f129f295be29b89803fd4cf01f1f96904945ec0b3ce6eb52492bd7eeebf05f",
+      "bytes": 15263,
+      "sha256": "26ff13252f8542bf12fc76c3dd56482f0b0c2bb4cced1d948873e00021f75355",
       "checkout_path": "data/evaluation/transformer_mechanism_core_saturation_v1/seed_rows.jsonl"
     },
     {
@@ -292,8 +290,8 @@
     {
       "repo_path": "results/phase1/ugi_high_potency_challenger_adjudication_v1/result.json",
       "bundle_path": "evaluation-inputs/results/phase1/ugi_high_potency_challenger_adjudication_v1/result.json",
-      "bytes": 3578,
-      "sha256": "a508b45d455b7b164e54a8345b0dff1f8e4de928eec5e2f631e145dc0d981cc3",
+      "bytes": 3382,
+      "sha256": "5ca515fce3f28587382158b7b1a97ebf5788fab75a2622284c9891d80457d4f4",
       "checkout_path": "data/evaluation/ugi_high_potency_challenger_adjudication_v1/result.json"
     },
     {

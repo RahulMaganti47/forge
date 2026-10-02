@@ -1,4 +1,4 @@
-"""Small command surface for the pinned submission; expensive work is always explicit."""
+"""Small command surface for the FORGE experiments; expensive work is always explicit."""
 
 from __future__ import annotations
 
@@ -24,8 +24,8 @@ def main(argv: list[str] | None = None) -> int:
         "--group",
         choices=(
             "paper-model-v1",
-            "submission19337-evidence-v1",
-            "submission19337-ablations-v1",
+            "evidence-v1",
+            "ablations-v1",
             "hela-oracle-v1",
         ),
         required=True,
@@ -89,7 +89,7 @@ def main(argv: list[str] | None = None) -> int:
     try:
         root = args.root.resolve()
         if not (root / "manifests/paper-model-v1.json").is_file():
-            raise ValueError("--root must name this submission's release checkout")
+            raise ValueError("--root must name a FORGE checkout")
         from .commands import artifacts as store
 
         if args.command == "artifacts":

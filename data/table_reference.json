@@ -1,8 +1,5 @@
 {
   "schema_version": "forge.table_reference.v1",
-  "submission_id": 19337,
-  "reference_pdf_sha256": "7ea7cf2e51922e5e58cd6659dc183409e465ede2eb1586fc8d0ec39935c4fd53",
-  "reference_source_sha256": "36aba6ea556cc6b62a436d3b2df48d79e39813773f549592df053a163f78fafa",
   "rows": {
     "1": [
       "Ugi & $96.4\\pm2.1$ & $34.8\\pm7.1$ & $93.8\\pm4.2$ & 99.9/100.0 \\\\",

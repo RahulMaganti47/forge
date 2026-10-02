@@ -1,9 +1,9 @@
 {
-  "schema_version": "forge.gem_table8_architecture_ablations_config.v1",
+  "schema_version": "forge.architecture_ablation_config.v1",
   "status": "frozen_after_three_seed_core_saturation_evaluation",
   "mechanism_seed_rows": {
     "path": "results/phase1/transformer_mechanism_core_saturation_v1/seed_rows.jsonl",
-    "sha256": "39f129f295be29b89803fd4cf01f1f96904945ec0b3ce6eb52492bd7eeebf05f"
+    "sha256": "26ff13252f8542bf12fc76c3dd56482f0b0c2bb4cced1d948873e00021f75355"
   },
   "mechanism_training_results": [
     {

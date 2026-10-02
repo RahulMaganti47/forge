@@ -12,11 +12,11 @@ from forge.core.io import (
     read_json_object,
 )
 
-CONFIG_SCHEMA = "forge.natbiotech_v1_renderer_config.v1"
-LEDGER_SCHEMA = "forge.natbiotech_v1_result_rows.v1"
-COMMON_ROW_SCHEMA = "forge.natbiotech_v1_common_seed_row.v2"
-MECHANISM_ROW_SCHEMA = "forge.natbiotech_v1_mechanism_seed_row.v1"
-HELD_FAMILY_ROW_SCHEMA = "forge.natbiotech_v1_held_family_seed_row.v1"
+CONFIG_SCHEMA = "forge.renderer_config.v1"
+LEDGER_SCHEMA = "forge.result_rows.v1"
+COMMON_ROW_SCHEMA = "forge.common_seed_row.v2"
+MECHANISM_ROW_SCHEMA = "forge.mechanism_seed_row.v1"
+HELD_FAMILY_ROW_SCHEMA = "forge.held_family_seed_row.v1"
 
 COMMON_METRICS = (
     "valid_per_1000",

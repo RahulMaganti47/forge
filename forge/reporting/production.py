@@ -1,4 +1,4 @@
-"""Render GEM Table 1 from matched final-model and control evaluations."""
+"""Render the production comparison from final-model and control evaluations."""
 
 from __future__ import annotations
 
@@ -11,9 +11,9 @@ from typing import Any
 from forge.core.hashing import artifact_record, pin_record, resolve_pin
 from forge.core.io import atomic_write, read_json_object, write_json
 
-FINAL_CONFIG_SCHEMA = "forge.gem_table1_final_evidence_config.v1"
-TABLE_CONFIG_SCHEMA = "forge.gem_table1_complete_config.v1"
-RESULT_SCHEMA = "forge.gem_table1_final_evidence_render.v1"
+FINAL_CONFIG_SCHEMA = "forge.final_model_evaluations_config.v1"
+TABLE_CONFIG_SCHEMA = "forge.production_comparison_config.v1"
+RESULT_SCHEMA = "forge.final_model_evaluations_render.v1"
 EVALUATION_SCHEMA = "forge.synthesis_program_production_evaluation_result.v1"
 FINAL_ARM = "shared_bias_program_role_source"
 CONTROL_ARMS = {
@@ -34,8 +34,8 @@ PROGRAM_NAMES = {
 }
 
 
-class GemTable1Error(ValueError):
-    """Pinned final-model evidence is missing or inadmissible for GEM Table 1."""
+class ProductionTableError(ValueError):
+    """Pinned final-model evidence is missing or inadmissible."""
 
 
 def _all_true(value: object) -> bool:
@@ -47,13 +47,13 @@ def _all_true(value: object) -> bool:
 def _metric(row: Mapping[str, Any], name: str) -> float:
     value = row.get(name)
     if isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value):
-        raise GemTable1Error(f"final evaluation has invalid {name}: {value!r}")
+        raise ProductionTableError(f"final evaluation has invalid {name}: {value!r}")
     return float(value)
 
 
 def _mean_sd(values: Sequence[float]) -> tuple[float, float]:
     if len(values) != 3:
-        raise GemTable1Error("Table 1 requires exactly three independent training seeds")
+        raise ProductionTableError("Table 1 requires exactly three independent training seeds")
     return statistics.fmean(values), statistics.stdev(values)
 
 
@@ -62,7 +62,7 @@ def _mean_sd_tex(values: Sequence[float]) -> str:
     return f"${mean:.1f}\\pm{sd:.1f}$"
 
 
-def validate_gem_evaluation(
+def validate_evaluation(
     document: Mapping[str, Any], *, expected_replicate: int, expected_arm: str
 ) -> Mapping[str, Mapping[str, Any]]:
     selection = document.get("selection")
@@ -82,49 +82,53 @@ def validate_gem_evaluation(
         or selection.get("candidate_selection") is not False
         or selection.get("heldout_selects_model_or_threshold") is not False
     ):
-        raise GemTable1Error(
+        raise ProductionTableError(
             f"seed replicate {expected_replicate} is not an admissible {expected_arm} evaluation"
         )
     checkpoints = document["checkpoint_metrics"][expected_arm]
     final = checkpoints.get(FINAL_STEP) if isinstance(checkpoints, Mapping) else None
     heldout = final.get("heldout") if isinstance(final, Mapping) else None
     if not isinstance(heldout, Mapping) or set(heldout) != set(PROGRAMS):
-        raise GemTable1Error(f"seed replicate {expected_replicate} omits a final held-out program")
+        raise ProductionTableError(
+            f"seed replicate {expected_replicate} omits a final held-out program"
+        )
     for program in PROGRAMS:
         row = heldout[program]
         if not isinstance(row, Mapping) or int(row.get("samples", -1)) != 3072:
-            raise GemTable1Error(
+            raise ProductionTableError(
                 f"seed replicate {expected_replicate} changed the denominator for {program}"
             )
         if row.get("exact_forward_replay_precision") != 1.0:
-            raise GemTable1Error(
+            raise ProductionTableError(
                 f"seed replicate {expected_replicate} violates the replay invariant for {program}"
             )
         if "reductive_amination_substructure_hit_rate" in row:
-            raise GemTable1Error(
+            raise ProductionTableError(
                 "forbidden reductive-amination substructure statistic was reported"
             )
     return heldout
 
 
-def validate_gem_final_evaluation(
+def validate_final_evaluation(
     document: Mapping[str, Any], *, expected_replicate: int
 ) -> Mapping[str, Mapping[str, Any]]:
     """Validate one conditioned-model evaluation retained by downstream tables."""
 
-    return validate_gem_evaluation(
+    return validate_evaluation(
         document,
         expected_replicate=expected_replicate,
         expected_arm=FINAL_ARM,
     )
 
 
-def load_gem_final_evaluations(
+def load_final_evaluations(
     config_path: Path, repo: Path
 ) -> tuple[list[Mapping[str, Mapping[str, Any]]], list[dict[str, Any]]]:
     """Load and validate the three pinned final conditioned-model evaluations."""
 
-    config = read_json_object(config_path, error=GemTable1Error, label="GEM final-evidence config")
+    config = read_json_object(
+        config_path, error=ProductionTableError, label="final-model evaluation config"
+    )
     pins = config.get("final_evaluations")
     if (
         config.get("schema_version") != FINAL_CONFIG_SCHEMA
@@ -132,30 +136,30 @@ def load_gem_final_evaluations(
         or len(pins) != 3
         or config.get("candidate_selection") is not False
     ):
-        raise GemTable1Error("GEM final-evidence config is malformed")
+        raise ProductionTableError("final-model evaluation config is malformed")
 
     heldout_by_seed: list[Mapping[str, Mapping[str, Any]]] = []
     sources: list[dict[str, Any]] = []
     for replicate, pin in enumerate(pins):
         if not isinstance(pin, Mapping):
-            raise GemTable1Error(f"final evaluation pin {replicate} is malformed")
+            raise ProductionTableError(f"final evaluation pin {replicate} is malformed")
         path = resolve_pin(pin, repo, label=f"final evaluation seed replicate {replicate}")
         document = read_json_object(
-            path, error=GemTable1Error, label=f"final evaluation seed replicate {replicate}"
+            path, error=ProductionTableError, label=f"final evaluation seed replicate {replicate}"
         )
-        heldout_by_seed.append(
-            validate_gem_final_evaluation(document, expected_replicate=replicate)
-        )
+        heldout_by_seed.append(validate_final_evaluation(document, expected_replicate=replicate))
         sources.append(pin_record(path, repo))
     return heldout_by_seed, sources
 
 
-def load_gem_table1_evaluations(
+def load_production_evaluations(
     config_path: Path, repo: Path
 ) -> tuple[dict[str, list[Mapping[str, Mapping[str, Any]]]], list[dict[str, Any]]]:
     """Load the matched conditioned, null and cyclic three-seed evaluations."""
 
-    config = read_json_object(config_path, error=GemTable1Error, label="GEM Table 1 config")
+    config = read_json_object(
+        config_path, error=ProductionTableError, label="production table config"
+    )
     controls = config.get("control_evaluations")
     if (
         config.get("schema_version") != TABLE_CONFIG_SCHEMA
@@ -164,32 +168,32 @@ def load_gem_table1_evaluations(
         or not isinstance(controls, Mapping)
         or set(controls) != set(CONTROL_ARMS)
     ):
-        raise GemTable1Error("GEM Table 1 config is malformed")
+        raise ProductionTableError("production table config is malformed")
 
     final_pin = config.get("final_evidence_config")
     if not isinstance(final_pin, Mapping):
-        raise GemTable1Error("GEM Table 1 final-evidence config pin is missing")
-    final_config_path = resolve_pin(final_pin, repo, label="GEM Table 1 final-evidence config")
-    final_rows, final_sources = load_gem_final_evaluations(final_config_path, repo)
+        raise ProductionTableError("production table final-evidence config pin is missing")
+    final_config_path = resolve_pin(final_pin, repo, label="production table final-evidence config")
+    final_rows, final_sources = load_final_evaluations(final_config_path, repo)
     rows_by_arm: dict[str, list[Mapping[str, Mapping[str, Any]]]] = {"conditioned": final_rows}
     sources = [pin_record(final_config_path, repo), *final_sources]
 
     for control_name, expected_arm in CONTROL_ARMS.items():
         pins = controls[control_name]
         if not isinstance(pins, list) or len(pins) != len(EXPECTED_SEEDS):
-            raise GemTable1Error(f"{control_name} requires exactly three pinned evaluations")
+            raise ProductionTableError(f"{control_name} requires exactly three pinned evaluations")
         control_rows: list[Mapping[str, Mapping[str, Any]]] = []
         for replicate, pin in enumerate(pins):
             if not isinstance(pin, Mapping):
-                raise GemTable1Error(f"{control_name} replicate {replicate} pin is malformed")
+                raise ProductionTableError(f"{control_name} replicate {replicate} pin is malformed")
             path = resolve_pin(pin, repo, label=f"{control_name} seed replicate {replicate}")
             document = read_json_object(
                 path,
-                error=GemTable1Error,
+                error=ProductionTableError,
                 label=f"{control_name} seed replicate {replicate}",
             )
             control_rows.append(
-                validate_gem_evaluation(
+                validate_evaluation(
                     document,
                     expected_replicate=replicate,
                     expected_arm=expected_arm,
@@ -206,7 +210,7 @@ def _macro(name: str, value: str) -> str:
 
 def _paired_summary(conditioned: Sequence[float], control: Sequence[float]) -> dict[str, Any]:
     if len(conditioned) != len(control) or len(conditioned) != len(EXPECTED_SEEDS):
-        raise GemTable1Error("paired Table 1 contrast changed its seed count")
+        raise ProductionTableError("paired Table 1 contrast changed its seed count")
     differences = [left - right for left, right in zip(conditioned, control, strict=True)]
     return {
         "by_seed_percentage_points": differences,
@@ -215,7 +219,7 @@ def _paired_summary(conditioned: Sequence[float], control: Sequence[float]) -> d
     }
 
 
-def render_gem_table1_final_evidence(
+def render_production_table(
     config_path: Path,
     repo: Path,
     output_dir: Path,
@@ -224,7 +228,7 @@ def render_gem_table1_final_evidence(
 ) -> dict[str, Any]:
     """Render the complete three-arm Table 1 from nine pinned production evaluations."""
 
-    heldout_by_arm, sources = load_gem_table1_evaluations(config_path, repo)
+    heldout_by_arm, sources = load_production_evaluations(config_path, repo)
 
     summaries: dict[str, dict[str, dict[str, Any]]] = {arm: {} for arm in heldout_by_arm}
     paired_contrasts: dict[str, dict[str, Any]] = {
@@ -319,7 +323,7 @@ def render_gem_table1_final_evidence(
     output_dir.mkdir(parents=True, exist_ok=True)
     rows_path = output_dir / "shared_program_figure_rows.tex"
     atomic_write(rows_path, ("\n".join(rows) + "\n").encode("utf-8"))
-    macros_path = output_dir / "gem_table1_macros.tex"
+    macros_path = output_dir / "table1_macros.tex"
     atomic_write(
         macros_path,
         ("\n".join(_macro(name, macros[name]) for name in sorted(macros)) + "\n").encode("utf-8"),
@@ -352,10 +356,10 @@ def render_gem_table1_final_evidence(
 
 
 __all__ = [
-    "GemTable1Error",
-    "load_gem_table1_evaluations",
-    "load_gem_final_evaluations",
-    "render_gem_table1_final_evidence",
-    "validate_gem_evaluation",
-    "validate_gem_final_evaluation",
+    "ProductionTableError",
+    "load_production_evaluations",
+    "load_final_evaluations",
+    "render_production_table",
+    "validate_evaluation",
+    "validate_final_evaluation",
 ]

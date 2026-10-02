@@ -1,1 +1,1 @@
-"""Submission 19337 forge.core components."""
+"""Shared types, hashing, I/O and random seeds."""
