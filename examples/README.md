@@ -146,6 +146,3 @@ Table 10 reassessment is implemented by
 Component novelty is relative to the declared training catalogue. Exact L1 measures assembly
 consistency; it does not establish experimental synthesis or biological efficacy. Replayed metrics
 retain invalid attempts, structural zeros, and undefined values.
-
-Executed commands, environments, and verification results are recorded in
-[provenance/qualification/](../provenance/qualification/).

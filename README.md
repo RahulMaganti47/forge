@@ -40,7 +40,7 @@ examples/       # Paper experiments, table aggregation, and reproduction checks
 tests/          # Local correctness checks
 configs/        # Frozen experiment settings
 manifests/      # Checkpoint and data identities
-provenance/     # Source and result records
+provenance/     # Numerical references and input availability
 ```
 
 The primary model is [model/networks/transformer.py](forge/model/networks/transformer.py), with
@@ -54,5 +54,4 @@ uv run python examples/check_reproduction.py --output results/reproduction-check
 ```
 
 The reproduction check verifies both artifact bundles, matches 89 numerical table rows, and repeats
-two CPU Ugi attempts. Executed checks are recorded in
-[provenance/qualification/](provenance/qualification/).
+two CPU Ugi attempts.

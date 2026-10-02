@@ -28,8 +28,7 @@ def balanced_pcgrad_backward(
     an already converged family and can destabilize the remaining objectives.
 
     Submitted configs use ``backend="sequential"``. The optional ``batched_vjp`` backend has
-    an unresolved Linux bitwise-equivalence failure; see
-    ``provenance/qualification/linux_pcgrad_equivalence.json``.
+    an unresolved Linux bitwise-equivalence failure.
     """
 
     if len(losses) < 2 or scale <= 0.0:
