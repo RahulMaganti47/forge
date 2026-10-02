@@ -5,6 +5,8 @@
 Reaction-guided generative design of ionizable lipids, using AGILE-type Ugi 3CR,
 repeated aza-Michael addition, and repeated reductive amination.
 
+![FORGE generation and exact assembly verification](assets/forge_overview.png)
+
 ## Installation
 
 Use Python 3.11 and [uv](https://docs.astral.sh/uv/):
