@@ -190,7 +190,8 @@
       "repo_path": "results/phase1/shared_bias_parallel_program_role_seed0_v2/checkpoints.tar",
       "bundle_path": "seed0/checkpoints.tar",
       "bytes": 112568320,
-      "sha256": "10d77b9d8e947d40fe2aaa91ecd68448ff068e08339cecd4c47d862e96e39142"
+      "sha256": "10d77b9d8e947d40fe2aaa91ecd68448ff068e08339cecd4c47d862e96e39142",
+      "checkout_path": "model_assets/paper-model-v1/seed0/checkpoints.tar"
     },
     {
       "repo_path": "results/phase1/shared_bias_parallel_program_role_seed0_v2/study_design.json",
@@ -210,7 +211,8 @@
       "repo_path": "results/phase1/shared_bias_parallel_program_role_seed1_v2/checkpoints.tar",
       "bundle_path": "seed1/checkpoints.tar",
       "bytes": 112568320,
-      "sha256": "a3e1e15cb6d55e6a0bc8d161a0061762ef6190c22c957fd957493bbe3860d55d"
+      "sha256": "a3e1e15cb6d55e6a0bc8d161a0061762ef6190c22c957fd957493bbe3860d55d",
+      "checkout_path": "model_assets/paper-model-v1/seed1/checkpoints.tar"
     },
     {
       "repo_path": "results/phase1/shared_bias_parallel_program_role_seed1_v2/study_design.json",
@@ -230,7 +232,8 @@
       "repo_path": "results/phase1/shared_bias_parallel_program_role_seed2_v2/checkpoints.tar",
       "bundle_path": "seed2/checkpoints.tar",
       "bytes": 112568320,
-      "sha256": "f500418e7cdfe6aa59b5d1261cb68c7ff715fa1a0e06498334eb727185f74506"
+      "sha256": "f500418e7cdfe6aa59b5d1261cb68c7ff715fa1a0e06498334eb727185f74506",
+      "checkout_path": "model_assets/paper-model-v1/seed2/checkpoints.tar"
     },
     {
       "repo_path": "results/phase1/shared_bias_parallel_program_role_seed2_v2/study_design.json",
@@ -271,7 +274,8 @@
       "repo_path": "results/phase1/shared_synthesis_program_mixed_cache_v1/cache.npz",
       "bundle_path": "shared-inputs/results/phase1/shared_synthesis_program_mixed_cache_v1/cache.npz",
       "bytes": 13727905,
-      "sha256": "249b92744c22109cd5994ad831555df85575bfb6bd58010dce71517e5e881114"
+      "sha256": "249b92744c22109cd5994ad831555df85575bfb6bd58010dce71517e5e881114",
+      "checkout_path": "model_assets/paper-model-v1/shared-inputs/results/phase1/shared_synthesis_program_mixed_cache_v1/cache.npz"
     },
     {
       "repo_path": "results/phase1/transformer_mechanism_core_saturation_v1/seed_rows.jsonl",

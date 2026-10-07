@@ -26,7 +26,18 @@ forge reproduce --target all --output results/tables
 
 ## Checkpoints and caches
 
-Checkpoint and cache bundles are supplied separately. Restore them from local directories:
+The three primary checkpoint archives and matching cache are included through
+Git LFS in `model_assets/paper-model-v1/`. Install and verify them with:
+
+```bash
+git lfs pull
+forge artifacts install --group paper-model-v1
+forge artifacts verify --group paper-model-v1
+```
+
+The original payload hashes are unchanged. These are the three-family paper
+models at step 9,143 for replicates 0–2. Supporting evidence and optional
+ablation bundles are supplied separately. Existing local bundles can still be restored:
 
 ```bash
 forge artifacts restore --group paper-model-v1 --bundle /path/to/paper-model-v1

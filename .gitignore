@@ -27,6 +27,8 @@ runs/
 !/data/hela/
 !/data/hela/**
 downloads/
+!model_assets/
+!model_assets/**
 .DS_Store
 *.aux
 *.log

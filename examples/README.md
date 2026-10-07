@@ -14,10 +14,12 @@ Each command writes to a new directory under `results/`.
 ## Data and checkpoints
 
 The processed datasets, splits and saved results are included in [data/](../data/README.md).
-Run `git lfs pull`, then restore checkpoint and cache bundles supplied separately:
+Run `git lfs pull`, then install the included primary checkpoints and cache.
+The additional evidence bundle remains separately supplied:
 
 ```bash
-forge artifacts restore --group paper-model-v1 --bundle /path/to/paper-model-v1
+forge artifacts install --group paper-model-v1
+forge artifacts verify --group paper-model-v1
 forge artifacts restore --group evidence-v1 --bundle /path/to/evidence-v1
 ```
 
