@@ -26,7 +26,20 @@ forge reproduce --target all --output results/tables
 
 ## Checkpoints and caches
 
-Checkpoint and cache bundles are supplied separately. Restore them from local directories:
+The three primary checkpoint archives and matching cache are included through
+Git LFS in `model_assets/paper-model-v1/`. Install and verify them with:
+
+```bash
+git lfs pull
+forge artifacts install --group paper-model-v1
+forge artifacts verify --group paper-model-v1
+```
+
+Each archive includes all five saved steps (100, 500, 1,700, 4,500 and 9,143).
+Generation uses step 9,143 for replicates 0–2. File sizes and SHA-256 identities
+are pinned in [the model manifest](../manifests/paper-model-v1.json).
+Supporting evidence and optional
+ablation bundles are supplied separately. Existing local bundles can still be restored:
 
 ```bash
 forge artifacts restore --group paper-model-v1 --bundle /path/to/paper-model-v1
@@ -35,7 +48,7 @@ forge artifacts restore --group evidence-v1 --bundle /path/to/evidence-v1
 
 | Bundle | Contents |
 |---|---|
-| `paper-model-v1` | Three checkpoints and the primary training cache |
+| `paper-model-v1` | Three full checkpoint archives (five saved steps each) and the primary training cache; included through Git LFS |
 | `evidence-v1` | Supporting cache and chemistry source PDFs |
 | `ablations-v1` | Optional architecture-study weights for all three seeds |
 
